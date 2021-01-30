@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2H-fd-v85">
-                                <rect key="frame" x="108" y="318.5" width="159" height="30"/>
+                                <rect key="frame" x="100" y="318.5" width="175" height="30"/>
                                 <color key="backgroundColor" red="0.9013661328" green="0.20901274759999999" blue="0.2070035828" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="0.99170085990000001" green="1" blue="0.17745093549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Play sample Dicom file.">
+                                <state key="normal" title="  Play sample Dicom file.  ">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -31,8 +31,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="S2H-fd-v85" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l25-OY-jD6"/>
-                            <constraint firstItem="S2H-fd-v85" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="w2x-1p-wSk"/>
+                            <constraint firstItem="S2H-fd-v85" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="teq-Cd-dCn"/>
+                            <constraint firstItem="S2H-fd-v85" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y6S-pb-1aN"/>
                         </constraints>
                     </view>
                 </viewController>
