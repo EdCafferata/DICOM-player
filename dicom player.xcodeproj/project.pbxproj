@@ -289,6 +289,7 @@
 				DEVELOPMENT_TEAM = 9J2S23WJH3;
 				INFOPLIST_FILE = "video player/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = info.cafferata.dicomplayer;
 				PRODUCT_NAME = "Dicom Player";
 				SWIFT_VERSION = 5.0;
@@ -304,6 +305,7 @@
 				DEVELOPMENT_TEAM = 9J2S23WJH3;
 				INFOPLIST_FILE = "video player/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = info.cafferata.dicomplayer;
 				PRODUCT_NAME = "Dicom Player";
 				SWIFT_VERSION = 5.0;
