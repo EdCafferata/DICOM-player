@@ -18,6 +18,7 @@
 /* Begin PBXFileReference section */
 		6E3AB1AC2354C0B00038B14C /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		6ECC4B2125C5F316001B5D2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		6ECC4B2425C5F377001B5D2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		DE738E4C1FAC76BA00BAB85D /* Dicom Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dicom Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE738E4F1FAC76BA00BAB85D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE738E511FAC76BA00BAB85D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +155,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				DE738E541FAC76BA00BAB85D /* Base */,
+				6ECC4B2425C5F377001B5D2F /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
