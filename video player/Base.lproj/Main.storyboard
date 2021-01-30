@@ -27,18 +27,6 @@
                                     <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iYB-DP-Ept"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soa-yH-joc" userLabel="Close this application.">
-                                <rect key="frame" x="126.66666666666669" y="486" width="175" height="30"/>
-                                <color key="backgroundColor" red="0.9013661328" green="0.20901274759999999" blue="0.2070035828" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" red="0.99170085990000001" green="1" blue="0.17745093549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="  Close this application.  ">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="3oJ-wH-Wex"/>
-                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nkh-pe-iib"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2H-fd-v85">
                                 <rect key="frame" x="126.66666666666669" y="410" width="175" height="30"/>
                                 <color key="backgroundColor" red="0.9013661328" green="0.20901274759999999" blue="0.2070035828" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -55,12 +43,8 @@
                         <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Sn0-v7-efb" firstAttribute="width" secondItem="S2H-fd-v85" secondAttribute="width" id="7J5-Ac-P8L"/>
-                            <constraint firstItem="soa-yH-joc" firstAttribute="width" secondItem="S2H-fd-v85" secondAttribute="width" id="IS1-zN-Ee3"/>
-                            <constraint firstItem="soa-yH-joc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XT0-69-UAr"/>
                             <constraint firstItem="Sn0-v7-efb" firstAttribute="top" secondItem="S2H-fd-v85" secondAttribute="bottom" constant="8" symbolic="YES" id="a8b-GD-FUB"/>
-                            <constraint firstItem="soa-yH-joc" firstAttribute="height" secondItem="S2H-fd-v85" secondAttribute="height" id="f2A-Ch-NKu"/>
                             <constraint firstItem="Sn0-v7-efb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fop-5w-qkK"/>
-                            <constraint firstItem="soa-yH-joc" firstAttribute="top" secondItem="Sn0-v7-efb" secondAttribute="bottom" constant="8" symbolic="YES" id="kIV-bb-FvJ"/>
                             <constraint firstItem="S2H-fd-v85" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oRe-u1-3lh"/>
                             <constraint firstItem="Sn0-v7-efb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vNc-Ht-l9U"/>
                             <constraint firstItem="Sn0-v7-efb" firstAttribute="height" secondItem="S2H-fd-v85" secondAttribute="height" id="vgL-hc-hz0"/>
