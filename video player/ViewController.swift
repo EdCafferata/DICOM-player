@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  video player
 //
-//  Created by Shubham Chaudhary on 4/6/18
-//  Copyright © 2018 Deakin. All rights reserved.
+//  Created by Ed Cafferata on 30/01/2021
+//  Copyright © 2021 Utrecht. All rights reserved.
 //
 
 import UIKit
