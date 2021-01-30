@@ -97,7 +97,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 1230;
-				ORGANIZATIONNAME = MAGNUMIUM;
+				ORGANIZATIONNAME = Cafferata;
 				TargetAttributes = {
 					DE738E4B1FAC76BA00BAB85D = {
 						CreatedOnToolsVersion = 9.0.1;

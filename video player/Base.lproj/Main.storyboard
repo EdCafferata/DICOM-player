@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2H-fd-v85">
-                                <rect key="frame" x="126.66666666666669" y="448" width="175" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2H-fd-v85">
+                                <rect key="frame" x="127" y="410" width="175" height="30"/>
                                 <color key="backgroundColor" red="0.9013661328" green="0.20901274759999999" blue="0.2070035828" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="0.99170085990000001" green="1" blue="0.17745093549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="  Play sample Dicom file.  ">
@@ -27,18 +27,54 @@
                                     <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HXO-gQ-0in"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sn0-v7-efb">
+                                <rect key="frame" x="127" y="448" width="174" height="30"/>
+                                <color key="backgroundColor" red="0.9013661328" green="0.20901274759999999" blue="0.2070035828" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.99170085990000001" green="1" blue="0.17745093549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="  Upload an Dicom file.  ">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iYB-DP-Ept"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soa-yH-joc">
+                                <rect key="frame" x="127" y="486" width="174" height="30"/>
+                                <color key="backgroundColor" red="0.9013661328" green="0.20901274759999999" blue="0.2070035828" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.99170085990000001" green="1" blue="0.17745093549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="  Close this application.  ">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nkh-pe-iib"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="S2H-fd-v85" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="teq-Cd-dCn"/>
-                            <constraint firstItem="S2H-fd-v85" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y6S-pb-1aN"/>
+                            <constraint firstItem="Sn0-v7-efb" firstAttribute="trailing" secondItem="soa-yH-joc" secondAttribute="trailing" id="72R-h1-svN"/>
+                            <constraint firstItem="Sn0-v7-efb" firstAttribute="leading" secondItem="soa-yH-joc" secondAttribute="leading" id="7gJ-3g-0cz"/>
+                            <constraint firstItem="S2H-fd-v85" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="127" id="HMh-fa-uJK"/>
+                            <constraint firstItem="S2H-fd-v85" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="126" id="JnE-7P-E8v"/>
+                            <constraint firstItem="Sn0-v7-efb" firstAttribute="centerY" secondItem="S2H-fd-v85" secondAttribute="centerY" id="Jv0-1e-DAX"/>
+                            <constraint firstItem="Sn0-v7-efb" firstAttribute="centerX" secondItem="S2H-fd-v85" secondAttribute="centerX" id="K6a-zy-w0E"/>
+                            <constraint firstItem="S2H-fd-v85" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="366" id="Qfu-fX-duV"/>
+                            <constraint firstItem="S2H-fd-v85" firstAttribute="leading" secondItem="Sn0-v7-efb" secondAttribute="leading" id="VCZ-jU-iVI"/>
+                            <constraint firstItem="soa-yH-joc" firstAttribute="top" secondItem="Sn0-v7-efb" secondAttribute="bottom" constant="8" id="Vaw-NU-zRC"/>
+                            <constraint firstItem="soa-yH-joc" firstAttribute="centerY" secondItem="S2H-fd-v85" secondAttribute="centerY" id="W5k-1b-L3u"/>
+                            <constraint firstItem="S2H-fd-v85" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aUf-sp-6ZK"/>
+                            <constraint firstItem="Sn0-v7-efb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="126" id="acE-zQ-JEe"/>
+                            <constraint firstItem="Sn0-v7-efb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cKA-qU-NHA"/>
+                            <constraint firstItem="soa-yH-joc" firstAttribute="centerX" secondItem="S2H-fd-v85" secondAttribute="centerX" id="gIf-T7-vFg"/>
+                            <constraint firstItem="S2H-fd-v85" firstAttribute="trailing" secondItem="Sn0-v7-efb" secondAttribute="trailing" id="nE3-Jb-xs1"/>
+                            <constraint firstItem="soa-yH-joc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="126" id="vAg-4R-WDE"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-79.200000000000003" y="133.5832083958021"/>
+            <point key="canvasLocation" x="-79.906542056074755" y="133.47732181425488"/>
         </scene>
     </scenes>
     <color key="tintColor" systemColor="systemYellowColor"/>
