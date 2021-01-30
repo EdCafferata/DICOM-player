@@ -35,6 +35,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="3oJ-wH-Wex"/>
                                     <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nkh-pe-iib"/>
                                 </connections>
                             </button>
