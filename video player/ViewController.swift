@@ -1,10 +1,9 @@
 //
 //  ViewController.swift
-//  video player
+//  Dicom video player
 //
-//  Created by Ed Cafferata on 30/01/2021
-//  Copyright © 2021 Utrecht. All rights reserved.
-//
+////  Created by Ed Cafferata on 31/01/2021
+//  Copyright © 2021 Utrecht/Holland. All rights reserved.
 
 import UIKit
 import AVKit
