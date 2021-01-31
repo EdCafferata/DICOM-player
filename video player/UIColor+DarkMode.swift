@@ -9,7 +9,6 @@ import UIKit
 @available(iOS 13.0, *)
 /// To better support dark mode color switches.
 extension UIColor {
-    
     /// Main UI color
     static let mainUIColor = UIColor { (traitCollection: UITraitCollection) -> UIColor in
         switch traitCollection.userInterfaceStyle {
@@ -21,7 +20,6 @@ extension UIColor {
             return UIColor(red: 0, green: 0.61, blue: 0.86, alpha: 1)
         }
     }
-    
     /// Returns a colour opposite of trait collection (i.e. light gets black, dark gets white.)
     static let blackAndWhite = UIColor { (traitCollection: UITraitCollection) -> UIColor in
         switch traitCollection.userInterfaceStyle {
@@ -33,7 +31,6 @@ extension UIColor {
             return .systemGray
         }
     }
-
     static let keyboardColor = UIColor { (traitCollection: UITraitCollection) -> UIColor in
         switch traitCollection.userInterfaceStyle {
         case .unspecified, .light:
@@ -44,7 +41,6 @@ extension UIColor {
             return .lightKeyboard
         }
     }
-    
     static let highlightKeyboardColor = UIColor { (traitCollection: UITraitCollection) -> UIColor in
         switch traitCollection.userInterfaceStyle {
         case .unspecified, .light:
@@ -55,5 +51,4 @@ extension UIColor {
             return .highlightLightKeyboard
         }
     }
-    
 }
