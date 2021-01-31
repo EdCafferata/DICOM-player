@@ -64,7 +64,6 @@ class DicomFileManager: NSObject {
         }
         return DicomFiles
     }
-    
     ///
     /// Provides the URL in the DicomFilesFolderURL for the filename provided as argument.
     ///
@@ -80,7 +79,6 @@ class DicomFileManager: NSObject {
         }
         return fullURL
     }
-    
     ///
     /// Returns true if the file with filename exists on the default folder (DicomFilesFolderURL).
     /// False in othercase.
@@ -91,7 +89,6 @@ class DicomFileManager: NSObject {
         let fileURL = self.URLForFilename(filename)
         return FileManager.default.fileExists(atPath: fileURL.path)
     }
-    
     ///
     /// Saves the Dicomcontents to the specified URL
     /// - Parameters:
