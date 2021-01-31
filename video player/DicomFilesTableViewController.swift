@@ -8,21 +8,15 @@
 import Foundation
 import UIKit
 import MessageUI
-import WatchConnectivity
-
 /// Text displayed when there are no Dicom files in the folder.
 let kNoFiles = NSLocalizedString("NO_FILES", comment: "no comment")
 ///
 /// TableViewController that displays the list of files that have been saved in previous sessions.
-///
 /// This view controller allows users to manage their Dicom Files.
-///
 /// Currently the following actions with a file are supported
-///
 /// 1. Send it by email
 /// 2. Load in the app
 /// 3. Delete the file
-///
 /// It also displays a button "Done" in the navigation bar to return to the map.
 ///
 class DicomFilesTableViewController: UITableViewController, UINavigationBarDelegate {
@@ -36,7 +30,6 @@ class DicomFilesTableViewController: UITableViewController, UINavigationBarDeleg
     weak var delegate: DicomFilesTableViewControllerDelegate?
     ///
     /// Setups the view controller.
-    ///
     /// 1. Sets the title
     /// 2. Adds the "Done" button
     /// 3. Loads existing Dicom File list.
@@ -189,7 +182,7 @@ class DicomFilesTableViewController: UITableViewController, UINavigationBarDeleg
         tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.fade)
         tableView.reloadData()
     }
-    /// Loads the Dicom file that corresponds to rowIndex in fileList in the map.
+    /// Loads the Dicom file that corresponds to rowIndex in fileList in the app.
     internal func actionLoadFileAtIndex(_ rowIndex: Int) {
         DispatchQueue.global(qos: .userInitiated).async {
             DispatchQueue.main.sync {
@@ -276,6 +269,7 @@ extension DicomFilesTableViewController {
     /// Current implementation requests the system to notify the app:
     ///
     ///  When a file is received from an external source, (i.e AirDrop)
+    ///
     ///
     func addNotificationObservers() {
         let notificationCenter = NotificationCenter.default
