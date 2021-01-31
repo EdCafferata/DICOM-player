@@ -8,7 +8,6 @@
 import Foundation
 ///
 /// A handy way of getting info of a dicom file.
-///
 /// It gets info like filename, modified date, filesize
 ///
 class DicomFileInfo: NSObject {
@@ -38,7 +37,6 @@ class DicomFileInfo: NSObject {
     }
     ///
     /// Initializes the object with the URL of the file to get info.
-    ///
     /// - Parameters:
     ///     - fileURL: the URL of the Dicom file.
     ///
