@@ -216,7 +216,7 @@ class DicomFilesTableViewController: UITableViewController, UINavigationBarDeleg
         activityIndicatorView.style = .whiteLarge
         
         if #available(iOS 13, *) {
-            activityIndicatorView.color = .white
+            activityIndicatorView.color = .blackAndWhite
         } else {
             activityIndicatorView.color = .black
         }
