@@ -12,10 +12,11 @@ import Foundation
 let kFileExt = ["dicom", "DICOM"]
 ///
 /// Class to handle actions with Dicom files (save, delete, etc..)
-///
 /// It works on the default document directory of the app.
 ///
 class DicomFileManager: NSObject {
+    @IBAction func loadFiles(_ sender: Any) {
+    }
     ///
     /// Folder that where all Dicom files are stored
     ///

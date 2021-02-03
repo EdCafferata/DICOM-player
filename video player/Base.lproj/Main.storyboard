@@ -23,6 +23,9 @@
                                 <state key="normal" title="  Upload an Dicom file.  ">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loadFiles:" destination="hKz-77-Vhb" eventType="touchUpInside" id="2lG-JV-XaO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2H-fd-v85" userLabel="Play sample Dicom file.">
                                 <rect key="frame" x="126.66666666666669" y="410" width="175" height="30"/>
@@ -49,6 +52,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="hKz-77-Vhb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-79.906542056074755" y="133.47732181425488"/>
         </scene>
