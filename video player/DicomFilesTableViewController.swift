@@ -41,7 +41,6 @@ class DicomFilesTableViewController: UITableViewController, UINavigationBarDeleg
             self.view.frame.height - navBarFrame.height)
         self.title = NSLocalizedString("YOUR_FILES", comment: "no comment")
         // add notification observer for reloading table when file is added.
-        addNotificationObservers()
         // Button to return to the map
         let shareItem = UIBarButtonItem(title: NSLocalizedString("DONE", comment: "no comment"),
                                         style: UIBarButtonItem.Style.plain,
@@ -193,15 +192,9 @@ class DicomFilesTableViewController: UITableViewController, UINavigationBarDeleg
                 self.displayLoadingFileAlert(false)
                 return
             }
-            print("Load dicom File: \(DicomFileInfo.fileName)")
-            guard let dicom = DicomParser(withURL: DicomFileInfo.fileURL)?.parsedData() else {
-                print("DicomFileTableViewController:: actionLoadFileAtIndex(\(rowIndex)): failed to parse Dicom file")
-                self.displayLoadingFileAlert(false)
-                return
-            }
             DispatchQueue.main.sync {
                 self.displayLoadingFileAlert(false) {
-                    self.delegate?.didLoadDicomFileWithName(DicomFileInfo.fileName, dicomRoot: dicom)
+                    self.delegate?.didLoadDicomFileWithName(DicomFileInfo.fileName)
                     self.dismiss(animated: true, completion: nil)
                 }
             }
@@ -271,17 +264,19 @@ extension DicomFilesTableViewController {
     ///  When a file is received from an external source, (i.e AirDrop)
     ///
     ///
+    /*
     func addNotificationObservers() {
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self, selector: #selector(reloadTableData),
                                        name: .didReceiveFileFromURL, object: nil)
-    }
-    ///
+        notificationCenter.addObserver(self, selector: #selector(reloadTableData), name: .didReceiveFile, object: nil)    }
+     */    ///
     /// Removes the notification observers
     ///
     func removeNotificationObservers() {
         NotificationCenter.default.removeObserver(self)
     }
+ 
     ///
     /// Reload Table View data
     ///
