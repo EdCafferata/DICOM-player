@@ -27,6 +27,7 @@
                                 </state>
                                 <connections>
                                     <action selector="upload:" destination="hKz-77-Vhb" eventType="touchUpInside" id="djC-6p-OJk"/>
+                                    <action selector="uploadfile:" destination="hKz-77-Vhb" eventType="touchUpInside" id="iq8-1n-rXa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2H-fd-v85" userLabel="Play sample Dicom file.">
