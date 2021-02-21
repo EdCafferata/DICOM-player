@@ -1,7 +1,6 @@
 //
 //  UIColor+DarkMode.swift
 //  dicom player
-//
 //  Created by Ed Cafferata on 31/01/2021.
 //  Copyright © 2021 Cafferata. All rights reserved.
 //
