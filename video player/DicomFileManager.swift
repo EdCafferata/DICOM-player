@@ -14,7 +14,7 @@ let kFileExt = ["dicom", "DICOM"]
 /// It works on the default document directory of the app.
 ///
 class DicomFileManager: NSObject {
-    @IBAction func loadFiles(_ sender: Any) {
+    @IBAction func loadfiles(_ sender: Any) {
     }
     ///
     /// Folder that where all Dicom files are stored
