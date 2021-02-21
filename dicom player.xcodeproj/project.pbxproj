@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E0B286525C6116A00BE78AA /* ViewControlerFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0B286425C6116A00BE78AA /* ViewControlerFiles.swift */; };
 		6E2D2C8825C6B18300AF0F11 /* DicomFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D2C8725C6B18300AF0F11 /* DicomFileManager.swift */; };
 		6E2D2C8B25C6B59400AF0F11 /* DicomFileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D2C8A25C6B59400AF0F11 /* DicomFileInfo.swift */; };
 		6E2D2C8E25C6B70700AF0F11 /* DicomFilesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D2C8D25C6B70700AF0F11 /* DicomFilesTableViewController.swift */; };
@@ -25,7 +24,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6E0B286425C6116A00BE78AA /* ViewControlerFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControlerFiles.swift; sourceTree = "<group>"; };
 		6E2D2C8725C6B18300AF0F11 /* DicomFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicomFileManager.swift; sourceTree = "<group>"; };
 		6E2D2C8A25C6B59400AF0F11 /* DicomFileInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicomFileInfo.swift; sourceTree = "<group>"; };
 		6E2D2C8D25C6B70700AF0F11 /* DicomFilesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicomFilesTableViewController.swift; sourceTree = "<group>"; };
@@ -79,7 +77,6 @@
 			children = (
 				DE738E4F1FAC76BA00BAB85D /* AppDelegate.swift */,
 				DE738E511FAC76BA00BAB85D /* ViewController.swift */,
-				6E0B286425C6116A00BE78AA /* ViewControlerFiles.swift */,
 				DE738E531FAC76BA00BAB85D /* Main.storyboard */,
 				DE738E561FAC76BA00BAB85D /* Assets.xcassets */,
 				DE738E581FAC76BA00BAB85D /* LaunchScreen.storyboard */,
@@ -171,7 +168,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E2D2C8825C6B18300AF0F11 /* DicomFileManager.swift in Sources */,
-				6E0B286525C6116A00BE78AA /* ViewControlerFiles.swift in Sources */,
 				6E2D2C8B25C6B59400AF0F11 /* DicomFileInfo.swift in Sources */,
 				6E79D16225C753910003B749 /* UIColor+Keyboard.swift in Sources */,
 				DE738E521FAC76BA00BAB85D /* ViewController.swift in Sources */,
