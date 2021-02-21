@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sn0-v7-efb">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sn0-v7-efb" userLabel="Upload an Dicom file.">
                                 <rect key="frame" x="126.66666666666669" y="448" width="175" height="30"/>
                                 <color key="backgroundColor" red="0.9013661328" green="0.20901274759999999" blue="0.2070035828" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="0.99170085990000001" green="1" blue="0.17745093549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -24,8 +24,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="loadFiles:" destination="hKz-77-Vhb" eventType="touchUpInside" id="2lG-JV-XaO"/>
-                                    <action selector="loadfiles:" destination="hKz-77-Vhb" eventType="touchUpInside" id="wxT-eB-suN"/>
+                                    <action selector="upload:" destination="hKz-77-Vhb" eventType="touchUpInside" id="djC-6p-OJk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2H-fd-v85" userLabel="Play sample Dicom file.">
