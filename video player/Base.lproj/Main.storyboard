@@ -18,22 +18,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sn0-v7-efb" userLabel="Upload an Dicom file.">
-                                <rect key="frame" x="126.66666666666669" y="448" width="175" height="30"/>
-                                <color key="backgroundColor" red="0.9013661328" green="0.20901274759999999" blue="0.2070035828" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" red="0.99170085990000001" green="1" blue="0.17745093549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="42.666666666666657" y="437.66666666666669" width="343" height="51"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="  Upload an Dicom file.  ">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="upload:" destination="hKz-77-Vhb" eventType="touchUpInside" id="djC-6p-OJk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2H-fd-v85" userLabel="Play sample Dicom file.">
-                                <rect key="frame" x="126.66666666666669" y="410" width="175" height="30"/>
-                                <color key="backgroundColor" red="0.9013661328" green="0.20901274759999999" blue="0.2070035828" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" red="0.99170085990000001" green="1" blue="0.17745093549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="42.666666666666657" y="378.66666666666669" width="343" height="51"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="  Play sample Dicom file.  ">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mdM-se-EmM"/>
@@ -41,7 +43,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <color key="tintColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstItem="Sn0-v7-efb" firstAttribute="width" secondItem="S2H-fd-v85" secondAttribute="width" id="7J5-Ac-P8L"/>
