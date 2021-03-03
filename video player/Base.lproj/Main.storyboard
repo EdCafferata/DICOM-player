@@ -26,6 +26,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="Upload:" destination="hKz-77-Vhb" eventType="touchUpInside" id="ris-8O-3VT"/>
                                     <action selector="upload:" destination="hKz-77-Vhb" eventType="touchUpInside" id="djC-6p-OJk"/>
                                     <action selector="uploadfile:" destination="hKz-77-Vhb" eventType="touchUpInside" id="iq8-1n-rXa"/>
                                 </connections>
