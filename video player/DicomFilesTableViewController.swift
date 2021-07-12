@@ -205,7 +205,7 @@ class DicomFilesTableViewController: UITableViewController, UINavigationBarDeleg
         let alertController = UIAlertController(title: NSLocalizedString("LOADING_FILE", comment: "no comment"), message: nil, preferredStyle: .alert)
         let activityIndicatorView = UIActivityIndicatorView(frame: CGRect(x: 35, y: 30, width: 32, height: 32))
         activityIndicatorView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        activityIndicatorView.style = .whiteLarge
+        activityIndicatorView.style = .UIActivityIndicatorView.Style.large
         
         if #available(iOS 13, *) {
             activityIndicatorView.color = .blackAndWhite
