@@ -9,7 +9,7 @@ import Foundation
 /// Delegate protocol for the view controller that displays the list of files (DicomFilesTableViewController).
 /// Used to inform the main ViewController that user wants to load a Dicom File on it.
 ///
-protocol DicomFilesTableViewControllerDelegate: class {
+protocol DicomFilesTableViewControllerDelegate: AnyObject {
     ///
     /// DicomFilesTableView controller will be dismissed after calling this method
     ///
