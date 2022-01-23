@@ -57,11 +57,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E9791A62760099200B566A3 /* Controlers */ = {
+			isa = PBXGroup;
+			children = (
+				DE738E4F1FAC76BA00BAB85D /* AppDelegate.swift */,
+				6E9791A32760086900B566A3 /* UploadControler.swift */,
+				6E2D2C9025C6BD6B00AF0F11 /* DicomFilesTableViewControlllerDelegate.swift */,
+				6E2D2C8725C6B18300AF0F11 /* DicomFileManager.swift */,
+				6E2D2C8D25C6B70700AF0F11 /* DicomFilesTableViewController.swift */,
+			);
+			path = Controlers;
+			sourceTree = "<group>";
+		};
+		6E9791A72760099F00B566A3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E79D15A25C749900003B749 /* Int+asFilesize.swift */,
+				6E79D15E25C7533F0003B749 /* UIColor+DarkMode.swift */,
+				6E2D2C8A25C6B59400AF0F11 /* DicomFileInfo.swift */,
+				6E79D16125C753910003B749 /* UIColor+Keyboard.swift */,
+				6E79D15725C748D40003B749 /* Date+timeAgo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6E9791A8276009B800B566A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE738E5B1FAC76BA00BAB85D /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E9791A9276009F400B566A3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DE738E581FAC76BA00BAB85D /* LaunchScreen.storyboard */,
+				DE738E531FAC76BA00BAB85D /* Main.storyboard */,
+				DE738E561FAC76BA00BAB85D /* Assets.xcassets */,
+				6E7FE21C269CDEC9004B159E /* video.mp4 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6E9791AA27600A6E00B566A3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE738E511FAC76BA00BAB85D /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		DE738E431FAC76BA00BAB85D = {
 			isa = PBXGroup;
 			children = (
 				6E7FE21B269CD9D4004B159E /* Dicom Player.entitlements */,
-				DE738E4E1FAC76BA00BAB85D /* video player */,
+				6E9791A72760099F00B566A3 /* Models */,
+				6E9791AA27600A6E00B566A3 /* Views */,
+				6E9791A62760099200B566A3 /* Controlers */,
+				6E9791A9276009F400B566A3 /* Resources */,
+				6E9791A8276009B800B566A3 /* Supporting Files */,
 				DE738E4D1FAC76BA00BAB85D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,29 +127,6 @@
 				DE738E4C1FAC76BA00BAB85D /* Dicom Player.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		DE738E4E1FAC76BA00BAB85D /* video player */ = {
-			isa = PBXGroup;
-			children = (
-				6E7FE21C269CDEC9004B159E /* video.mp4 */,
-				DE738E4F1FAC76BA00BAB85D /* AppDelegate.swift */,
-				DE738E511FAC76BA00BAB85D /* ViewController.swift */,
-				6E9791A32760086900B566A3 /* UploadControler.swift */,
-				DE738E531FAC76BA00BAB85D /* Main.storyboard */,
-				DE738E561FAC76BA00BAB85D /* Assets.xcassets */,
-				DE738E581FAC76BA00BAB85D /* LaunchScreen.storyboard */,
-				DE738E5B1FAC76BA00BAB85D /* Info.plist */,
-				6E2D2C8725C6B18300AF0F11 /* DicomFileManager.swift */,
-				6E79D15725C748D40003B749 /* Date+timeAgo.swift */,
-				6E2D2C8D25C6B70700AF0F11 /* DicomFilesTableViewController.swift */,
-				6E79D15A25C749900003B749 /* Int+asFilesize.swift */,
-				6E2D2C9025C6BD6B00AF0F11 /* DicomFilesTableViewControlllerDelegate.swift */,
-				6E2D2C8A25C6B59400AF0F11 /* DicomFileInfo.swift */,
-				6E79D15E25C7533F0003B749 /* UIColor+DarkMode.swift */,
-				6E79D16125C753910003B749 /* UIColor+Keyboard.swift */,
-			);
-			path = "video player";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,7 +360,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Dicom Player.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9J2S23WJH3;
-				INFOPLIST_FILE = "video player/Info.plist";
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = info.cafferata.dicomplayer;
@@ -346,7 +378,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Dicom Player.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9J2S23WJH3;
-				INFOPLIST_FILE = "video player/Info.plist";
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = info.cafferata.dicomplayer;
