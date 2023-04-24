@@ -17,20 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2H-fd-v85" userLabel="Play sample Dicom file." colorLabel="IBBuiltInLabel-Green">
-                                <rect key="frame" x="42.666666666666657" y="378.66666666666669" width="343" height="51"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <color key="tintColor" systemColor="systemYellowColor"/>
-                                <state key="normal" title="  Play sample Dicom file.  ">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mdM-se-EmM"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sn0-v7-efb" userLabel="Upload an Dicom file." colorLabel="IBBuiltInLabel-Green">
-                                <rect key="frame" x="42.666666666666657" y="437.66666666666669" width="343" height="51"/>
+                                <rect key="frame" x="20" y="426" width="388" height="51"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="tintColor" systemColor="systemYellowColor"/>
@@ -43,17 +31,46 @@
                                     <action selector="uploadfile:" destination="hKz-77-Vhb" eventType="touchUpInside" id="iq8-1n-rXa"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBV-EI-1TT" userLabel="Delete an Dicom file." colorLabel="IBBuiltInLabel-Green">
+                                <rect key="frame" x="20" y="485" width="388" height="51"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <state key="normal" title="  Delete an Dicom file.  ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Upload:" destination="hKz-77-Vhb" eventType="touchUpInside" id="WVt-fS-e9A"/>
+                                    <action selector="upload:" destination="hKz-77-Vhb" eventType="touchUpInside" id="P8q-yL-fC1"/>
+                                    <action selector="uploadfile:" destination="hKz-77-Vhb" eventType="touchUpInside" id="eDN-EN-7vF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2H-fd-v85" userLabel="Play sample Dicom file." colorLabel="IBBuiltInLabel-Green">
+                                <rect key="frame" x="20" y="367" width="388" height="51"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <state key="normal" title="  Play sample Dicom file.  ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mdM-se-EmM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <color key="tintColor" systemColor="systemGreenColor"/>
                         <constraints>
-                            <constraint firstItem="Sn0-v7-efb" firstAttribute="width" secondItem="S2H-fd-v85" secondAttribute="width" id="7J5-Ac-P8L"/>
-                            <constraint firstItem="Sn0-v7-efb" firstAttribute="top" secondItem="S2H-fd-v85" secondAttribute="bottom" constant="8" symbolic="YES" id="a8b-GD-FUB"/>
-                            <constraint firstItem="Sn0-v7-efb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fop-5w-qkK"/>
-                            <constraint firstItem="S2H-fd-v85" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oRe-u1-3lh"/>
-                            <constraint firstItem="Sn0-v7-efb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vNc-Ht-l9U"/>
-                            <constraint firstItem="Sn0-v7-efb" firstAttribute="height" secondItem="S2H-fd-v85" secondAttribute="height" id="vgL-hc-hz0"/>
+                            <constraint firstItem="Sn0-v7-efb" firstAttribute="top" secondItem="S2H-fd-v85" secondAttribute="bottom" constant="8" symbolic="YES" id="Flc-bU-UdA"/>
+                            <constraint firstItem="Sn0-v7-efb" firstAttribute="trailing" secondItem="OBV-EI-1TT" secondAttribute="trailing" id="JRE-Jx-jav"/>
+                            <constraint firstItem="OBV-EI-1TT" firstAttribute="top" secondItem="Sn0-v7-efb" secondAttribute="bottom" constant="8" symbolic="YES" id="LoV-7R-dxK"/>
+                            <constraint firstItem="Sn0-v7-efb" firstAttribute="leading" secondItem="OBV-EI-1TT" secondAttribute="leading" id="Rsu-fg-zkY"/>
+                            <constraint firstItem="S2H-fd-v85" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dPR-PI-qR4"/>
+                            <constraint firstItem="S2H-fd-v85" firstAttribute="trailing" secondItem="Sn0-v7-efb" secondAttribute="trailing" id="diH-Fu-6yZ"/>
+                            <constraint firstItem="S2H-fd-v85" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="eCs-SL-OYq"/>
+                            <constraint firstItem="S2H-fd-v85" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="320" id="o3C-58-p6o"/>
+                            <constraint firstItem="S2H-fd-v85" firstAttribute="leading" secondItem="Sn0-v7-efb" secondAttribute="leading" id="r7n-9W-LJV"/>
                         </constraints>
                     </view>
                 </viewController>
