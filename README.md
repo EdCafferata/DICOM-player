@@ -8,3 +8,4 @@ Externe links
 (en) DICOM Homepage - NEMA
 (en) DICOM FAQ en referenties
 (en) DVTk, DICOM Validation Toolkit (open source)
+ 
