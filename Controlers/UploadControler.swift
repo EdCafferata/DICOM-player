@@ -1,8 +1,13 @@
-//
-//  UploadControler.swift
-//  Dicom Player
-//
-//  Created by Ed Cafferata on 07/12/2021.
-//  Copyright © 2021 The IT Crowd. All rights reserved.
-//
-import Foundation
+import SwiftUI
+import UIKit
+
+/// Wraps UIActivityViewController for sharing a file from SwiftUI.
+struct ShareSheet: UIViewControllerRepresentable {
+    let url: URL
+
+    func makeUIViewController(context: Context) -> UIActivityViewController {
+        UIActivityViewController(activityItems: [url], applicationActivities: nil)
+    }
+
+    func updateUIViewController(_ vc: UIActivityViewController, context: Context) {}
+}

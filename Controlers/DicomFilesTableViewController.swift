@@ -1,296 +1,207 @@
-//
-//  DicomFilesTableViewController.swift
-//  dicom player
-//  Created by Ed Cafferata on 31/01/2021.
-//  Copyright © 2021 Cafferata. All rights reserved.
-//
-import Foundation
-import UIKit
-import MessageUI
-/// Text displayed when there are no Dicom files in the folder.
-let kNoFiles = NSLocalizedString("NO_FILES", comment: "no comment")
-///
-/// TableViewController that displays the list of files that have been saved in previous sessions.
-/// This view controller allows users to manage their Dicom Files.
-/// Currently the following actions with a file are supported
-/// 1. Send it by email
-/// 2. Load in the app
-/// 3. Delete the file
-/// It also displays a button "Done" in the navigation bar to return to the map.
-///
-class DicomFilesTableViewController: UITableViewController, UINavigationBarDelegate {
-    /// List of strings with the filenames.
-    var fileList: NSMutableArray = [kNoFiles]
-    /// Is there any Dicom file in the directory?
-    var dicomFilesFound = false
-    /// Temporary variable to manage.
-    var selectedRowIndex = -1
-    ///
-    weak var delegate: DicomFilesTableViewControllerDelegate?
-    ///
-    /// Setups the view controller.
-    /// 1. Sets the title
-    /// 2. Adds the "Done" button
-    /// 3. Loads existing Dicom File list.
-    ///
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        let navBarFrame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 64)
-        self.tableView.frame = CGRect(x: navBarFrame.width + 1, y: 0, width: self.view.frame.width, height:
-            self.view.frame.height - navBarFrame.height)
-        self.title = NSLocalizedString("YOUR_FILES", comment: "no comment")
-        // add notification observer for reloading table when file is added.
-        // Button to return to the map
-        let shareItem = UIBarButtonItem(title: NSLocalizedString("DONE", comment: "no comment"),
-                                        style: UIBarButtonItem.Style.plain,
-                                        target: self,
-                                        action: #selector(DicomFilesTableViewController.closeDicomFilesTableViewController))
-        self.navigationItem.rightBarButtonItems = [shareItem]
-        // Get dicom files
-        let list: [DicomFileInfo] = DicomFileManager.fileList
-        if list.count != 0 {
-            self.fileList.removeAllObjects()
-            self.fileList.addObjects(from: list)
-            self.dicomFilesFound = true
-        }
+import SwiftUI
+
+struct ViewerView: View {
+    let parsed: ParsedDICOM
+    @Environment(\.dismiss) private var dismiss
+
+    // Cine
+    @State private var frameIdx  = 0
+    @State private var isPlaying = false
+    @State private var fps: Double = 10
+    @State private var cineTimer: Timer?
+
+    // Zoom / pan
+    @State private var scale: CGFloat  = 1
+    @State private var lastScale: CGFloat = 1
+    @State private var offset: CGSize  = .zero
+    @State private var lastOffset: CGSize = .zero
+
+    private var frame: CGImage? {
+        guard !parsed.frames.isEmpty else { return nil }
+        return parsed.frames[min(frameIdx, parsed.frames.count - 1)]
     }
-    /// Removes notfication observers
-    deinit {
-        removeNotificationObservers()
-    }
-    /// Closes this view controller.
-    @objc func closeDicomFilesTableViewController() {
-        print("closeDicomFIlesTableViewController()")
-        self.dismiss(animated: true, completion: { () -> Void in
-        })
-    }
-   /// Reloads data whenver the table appears.
-    override func viewDidAppear(_ animated: Bool) {
-        self.tableView.reloadData()
-    }
-    /// Disposes resources in case of a mermory warning.
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    // MARK: Table view data source
-    /// returns the number of sections. Always returns 1.
-    override func numberOfSections(in tableView: UITableView?) -> Int {
-        // Return the number of sections.
-        return 1
-    }
-    /// Returns the number of files in the section.
-    override func tableView(_ tableView: UITableView?, numberOfRowsInSection section: Int) -> Int {
-        return fileList.count
-    }
-    /// Allow edit rows? Returns true only if there are files.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        return dicomFilesFound
-    }
-    /// Displays the delete button.
-    override func tableView(_ tableView: UITableView,
-                            commit editingStyle: UITableViewCell.EditingStyle,
-                            forRowAt indexPath: IndexPath) {
-        if editingStyle == UITableViewCell.EditingStyle.delete {
-            actionDeleteFileAtIndex((indexPath as NSIndexPath).row)
-        }
-    }
-    /// Displays the name of the cell.
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as UITableViewCell
-        if dicomFilesFound {
-            let cell: UITableViewCell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: "Cell")
-            //cell.accessoryType = UITableViewCellAccessoryType.DetailDisclosureButton
-            //cell.accessoryView = [[ UIImageView alloc ] initWithImage:[UIImage imageNamed:@"Something" ]];
-            // swiftlint:disable force_cast
-            let dicomFileInfo = fileList.object(at: (indexPath as NSIndexPath).row) as! DicomFileInfo
-            let lastSaved = NSLocalizedString("LAST_SAVED", comment: "no comment")
-            cell.textLabel?.text = dicomFileInfo.fileName
-            cell.detailTextLabel?.text = String(format: lastSaved, dicomFileInfo.modifiedDatetimeAgo, dicomFileInfo.fileSizeHumanised)
-            if #available(iOS 13, *) {
-                cell.detailTextLabel?.textColor = UIColor.secondaryLabel
+
+    var body: some View {
+        ZStack {
+            Color.black.ignoresSafeArea()
+
+            if let cgImg = frame {
+                Image(uiImage: UIImage(cgImage: cgImg))
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .scaleEffect(scale)
+                    .offset(offset)
+                    .gesture(pinchGesture)
+                    .gesture(dragGesture)
+                    .onTapGesture(count: 2) { resetTransform() }
             } else {
-                cell.detailTextLabel?.textColor = UIColor.darkGray
+                Text("No image data")
+                    .foregroundColor(.gray)
             }
-            return cell
-        } else {
-            let cell: UITableViewCell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: "Cell")
-            cell.textLabel?.text = fileList.object(at: (indexPath as NSIndexPath).row) as? NSString as String? ?? ""
-            return cell
-        }
-    }
-    /// Displays an action sheet with the actions for that file (Send it by email, Load in app and Delete).
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let sheet = UIAlertController(title: nil, message: NSLocalizedString("SELECT_OPTION", comment: "no comment"), preferredStyle: .actionSheet)
-        let mapOption = UIAlertAction(title: NSLocalizedString("LOAD_IN_APP", comment: "no comment"), style: .default) { _ in
-            self.actionLoadFileAtIndex(indexPath.row)
-        }
-        let shareOption = UIAlertAction(title: NSLocalizedString("SHARE", comment: "no comment"), style: .default) { _ in
-            self.actionShareFileAtIndex(indexPath.row, tableView: tableView, indexPath: indexPath)
-        }
-        let cancelOption = UIAlertAction(title: NSLocalizedString("CANCEL", comment: "no comment"), style: .cancel) { _ in
-            self.actionSheetCancel(sheet)
-        }
-        
-        let deleteOption = UIAlertAction(title: NSLocalizedString("DELETE", comment: "no comment"), style: .destructive) { _ in
-            self.actionDeleteFileAtIndex(indexPath.row)
-        }
-        sheet.addAction(mapOption)
-        sheet.addAction(shareOption)
-        sheet.addAction(cancelOption)
-        sheet.addAction(deleteOption)
-        var cellRect = tableView.rectForRow(at: indexPath)
-        cellRect.origin = CGPoint(x: 0, y: 0) // origin must be at 0 or sheet will display offset due to height of cell
-        sheet.popoverPresentationController?.sourceView = tableView.cellForRow(at: indexPath)
-        sheet.popoverPresentationController?.sourceRect = cellRect
-        self.present(sheet, animated: true) {
-            print("Loaded actionSheet")
-        }
-    }
-    // MARK: UITableView delegate methods
-    /// Only highlight rows if there are files.
-    override func tableView(_ tableView: UITableView,
-                            shouldHighlightRowAt indexPath: IndexPath) -> Bool {
-        return dicomFilesFound
-    }
-    /// Returns the name of the file in the `rowIndex` passed as parameter.
-    internal func fileListObjectTitle(_ rowIndex: Int) -> String {
-        // swiftlint:disable force_cast
-        return (fileList.object(at: rowIndex) as! DicomFileInfo).fileName
-    }
-    //
-    // MARK: Action Sheet - Actions
-    //
-    /// Cancel button is tapped.
-    ///
-    /// Does nothing, it only displays a log message.
-    internal func actionSheetCancel(_ actionSheet: UIAlertController) {
-        print("ActionSheet cancel")
-    }
-    /// Deletes from the disk storage the file of `fileList` at `rowIndex`.
-    internal func actionDeleteFileAtIndex(_ rowIndex: Int) {
-        guard let fileURL: URL = (fileList.object(at: rowIndex) as? DicomFileInfo)?.fileURL else {
-            print("DicomFileTableViewController:: actionDeleteFileAtIndex: failed to get fileURL")
-            return
-        }
-        DicomFileManager.removeFileFromURL(fileURL)
-        //Delete from list and Table
-        fileList.removeObject(at: rowIndex)
-        let indexPath = IndexPath(row: rowIndex, section: 0)
-        tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.fade)
-        tableView.reloadData()
-    }
-    /// Loads the Dicom file that corresponds to rowIndex in fileList in the app.
-    internal func actionLoadFileAtIndex(_ rowIndex: Int) {
-        DispatchQueue.global(qos: .userInitiated).async {
-            DispatchQueue.main.sync {
-                self.displayLoadingFileAlert(true)
-            }
-            guard let DicomFileInfo: DicomFileInfo = (self.fileList.object(at: rowIndex) as? DicomFileInfo) else {
-                print("DicomFileTableViewController:: actionLoadFileAtIndex(\(rowIndex)): failed to get fileURL")
-                self.displayLoadingFileAlert(false)
-                return
-            }
-            DispatchQueue.main.sync {
-                self.displayLoadingFileAlert(false) {
-                    self.delegate?.didLoadDicomFileWithName(DicomFileInfo.fileName)
-                    self.dismiss(animated: true, completion: nil)
+
+            VStack {
+                // Top bar
+                HStack {
+                    Button {
+                        stopCine()
+                        dismiss()
+                    } label: {
+                        Image(systemName: "xmark.circle.fill")
+                            .font(.title2)
+                            .foregroundColor(.white.opacity(0.8))
+                    }
+                    .padding()
+
+                    Spacer()
+
+                    VStack(alignment: .trailing, spacing: 2) {
+                        if !parsed.patientName.isEmpty {
+                            Text(parsed.patientName)
+                                .font(.caption.bold())
+                                .foregroundColor(.white)
+                        }
+                        HStack(spacing: 6) {
+                            if !parsed.modality.isEmpty {
+                                Text(parsed.modality)
+                                    .font(.caption2)
+                                    .padding(.horizontal, 6).padding(.vertical, 2)
+                                    .background(Color.white.opacity(0.15))
+                                    .cornerRadius(4)
+                            }
+                            Text("\(parsed.columns)×\(parsed.rows)")
+                                .font(.caption2)
+                                .foregroundColor(.white.opacity(0.7))
+                        }
+                    }
+                    .padding(.trailing)
+                }
+
+                Spacer()
+
+                // Bottom bar (cine controls, shown only for multi-frame)
+                if parsed.frames.count > 1 {
+                    VStack(spacing: 8) {
+                        // Frame slider
+                        HStack {
+                            Text("1")
+                                .font(.caption2).foregroundColor(.white.opacity(0.6))
+                            Slider(
+                                value: Binding(
+                                    get: { Double(frameIdx) },
+                                    set: { frameIdx = Int($0.rounded()) }
+                                ),
+                                in: 0...Double(parsed.frames.count - 1),
+                                step: 1
+                            )
+                            .accentColor(.white)
+                            Text("\(parsed.frames.count)")
+                                .font(.caption2).foregroundColor(.white.opacity(0.6))
+                        }
+                        .padding(.horizontal)
+
+                        // Controls row
+                        HStack(spacing: 20) {
+                            // Step back
+                            Button {
+                                stopCine()
+                                frameIdx = max(0, frameIdx - 1)
+                            } label: {
+                                Image(systemName: "backward.frame.fill")
+                                    .font(.title3).foregroundColor(.white)
+                            }
+
+                            // Play / Pause
+                            Button { isPlaying ? stopCine() : startCine() } label: {
+                                Image(systemName: isPlaying ? "pause.fill" : "play.fill")
+                                    .font(.title2).foregroundColor(.white)
+                            }
+                            .frame(width: 44)
+
+                            // Step forward
+                            Button {
+                                stopCine()
+                                frameIdx = min(parsed.frames.count - 1, frameIdx + 1)
+                            } label: {
+                                Image(systemName: "forward.frame.fill")
+                                    .font(.title3).foregroundColor(.white)
+                            }
+
+                            Spacer()
+
+                            // Frame counter
+                            Text("\(frameIdx + 1) / \(parsed.frames.count)")
+                                .font(.caption.monospacedDigit())
+                                .foregroundColor(.white.opacity(0.8))
+
+                            Spacer()
+
+                            // FPS picker
+                            Menu {
+                                ForEach([5, 10, 15, 24, 30], id: \.self) { f in
+                                    Button("\(f) fps") {
+                                        fps = Double(f)
+                                        if isPlaying { stopCine(); startCine() }
+                                    }
+                                }
+                            } label: {
+                                Text("\(Int(fps)) fps")
+                                    .font(.caption)
+                                    .foregroundColor(.white.opacity(0.8))
+                                    .padding(.horizontal, 8).padding(.vertical, 4)
+                                    .background(Color.white.opacity(0.15))
+                                    .cornerRadius(6)
+                            }
+                        }
+                        .padding(.horizontal)
+                    }
+                    .padding(.bottom, 24)
+                    .background(
+                        LinearGradient(
+                            colors: [.clear, .black.opacity(0.6)],
+                            startPoint: .top, endPoint: .bottom
+                        )
+                    )
                 }
             }
         }
+        .onDisappear { stopCine() }
     }
-    /// Displays an alert with a activity indicator view to indicate loading of dicom file to the app
-    func displayLoadingFileAlert(_ loading: Bool, completion: (() -> Void)? = nil) {
-        // setup of controllers and views
-        let alertController = UIAlertController(title: NSLocalizedString("LOADING_FILE", comment: "no comment"), message: nil, preferredStyle: .alert)
-        let activityIndicatorView = UIActivityIndicatorView(frame: CGRect(x: 35, y: 30, width: 32, height: 32))
-        activityIndicatorView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        activityIndicatorView.style = .UIActivityIndicatorView.Style.large
-        
-        if #available(iOS 13, *) {
-            activityIndicatorView.color = .blackAndWhite
-        } else {
-            activityIndicatorView.color = .black
+
+    // MARK: Cine
+
+    private func startCine() {
+        isPlaying = true
+        cineTimer = Timer.scheduledTimer(withTimeInterval: 1.0 / fps, repeats: true) { _ in
+            frameIdx = (frameIdx + 1) % parsed.frames.count
         }
-        if loading { // will display alert
-            activityIndicatorView.startAnimating()
-            alertController.view.addSubview(activityIndicatorView)
-            self.present(alertController, animated: true, completion: nil)
-        } else { // will dismiss alert
-            activityIndicatorView.stopAnimating()
-            self.presentingViewController?.dismiss(animated: true, completion: nil)
-        }
-        // if completion handler is used
-        guard let completion = completion else { return }
-        completion()
     }
-    /// Shares file at `rowIndex`.
-    internal func actionShareFileAtIndex(_ rowIndex: Int, tableView: UITableView, indexPath: IndexPath) {
-        guard let dicomFileInfo: DicomFileInfo = (fileList.object(at: rowIndex) as? DicomFileInfo) else {
-            print("Unable to get filename at row \(rowIndex), cannot respond to \(type(of: self))didSelectRowAt")
-            return
-        }
-        print("DicomTableViewController: actionShareFileAtIndex")
-        let activityViewController = UIActivityViewController(activityItems: [dicomFileInfo.fileURL], applicationActivities: nil)
-        var cellRect = tableView.rectForRow(at: indexPath)
-        cellRect.origin = CGPoint(x: 0, y: 0) // origin must be at 0 or sheet will display offset due to height of cell
-        activityViewController.popoverPresentationController?.sourceView = tableView.cellForRow(at: indexPath)
-        activityViewController.popoverPresentationController?.sourceRect = cellRect
-        // NOTE: As the activity view controller can be quite tall at times,
-        //       the display of it may be offset automatically at times to ensure the activity view popup fits the screen.
-        activityViewController.completionWithItemsHandler = {
-            (activityType: UIActivity.ActivityType?, completed: Bool, returnedItems: [Any]?, error: Error?) in
-            if !completed {
-                // User canceled
-                print("actionShareAtIndex: Cancelled")
-                return
+
+    private func stopCine() {
+        isPlaying = false
+        cineTimer?.invalidate()
+        cineTimer = nil
+    }
+
+    // MARK: Gestures
+
+    private var pinchGesture: some Gesture {
+        MagnificationGesture()
+            .onChanged { v in scale = max(0.5, min(8, lastScale * v)) }
+            .onEnded   { _ in lastScale = scale }
+    }
+
+    private var dragGesture: some Gesture {
+        DragGesture()
+            .onChanged { v in
+                offset = CGSize(
+                    width:  lastOffset.width  + v.translation.width,
+                    height: lastOffset.height + v.translation.height
+                )
             }
-            // User completed activity
-            print("actionShareFileAtIndex: User completed activity")
-        }
-        self.present(activityViewController, animated: true, completion: nil)
+            .onEnded { _ in lastOffset = offset }
     }
-}
-///
-/// Handles reloading of table view when file is added while user is still in current view.
-///
-extension DicomFilesTableViewController {
-    ///
-    /// Asks the system to notify the app on some events
-    ///
-    /// Current implementation requests the system to notify the app:
-    ///
-    ///  When a file is received from an external source, (i.e AirDrop)
-    ///
-    ///
-    /*
-    func addNotificationObservers() {
-        let notificationCenter = NotificationCenter.default
-        notificationCenter.addObserver(self, selector: #selector(reloadTableData),
-                                       name: .didReceiveFileFromURL, object: nil)
-        notificationCenter.addObserver(self, selector: #selector(reloadTableData), name: .didReceiveFile, object: nil)    }
-     */    ///
-    /// Removes the notification observers
-    ///
-    func removeNotificationObservers() {
-        NotificationCenter.default.removeObserver(self)
-    }
- 
-    ///
-    /// Reload Table View data
-    ///
-    /// For reloading table when a new file is added while user is in `DicomFileTableViewController`
-    ///
-    @objc func reloadTableData() {
-        print("TableViewController: reloadTableData")
-        let list: [DicomFileInfo] = DicomFileManager.fileList
-        if self.fileList.count < list.count && list.count != 0 {
-            self.fileList.removeAllObjects()
-            self.fileList.addObjects(from: list)
-            self.dicomFilesFound = true
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
-        }
+
+    private func resetTransform() {
+        withAnimation(.spring()) { scale = 1; offset = .zero; lastScale = 1; lastOffset = .zero }
     }
 }

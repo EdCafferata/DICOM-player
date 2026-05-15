@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6E2D2C8825C6B18300AF0F11 /* DicomFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D2C8725C6B18300AF0F11 /* DicomFileManager.swift */; };
 		6E2D2C8B25C6B59400AF0F11 /* DicomFileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D2C8A25C6B59400AF0F11 /* DicomFileInfo.swift */; };
+		6E2D2C8E25C6B70700AF0F11 /* DicomFilesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D2C8D25C6B70700AF0F11 /* DicomFilesTableViewController.swift */; };
 		6E2D2C9125C6BD6B00AF0F11 /* DicomFilesTableViewControlllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2D2C9025C6BD6B00AF0F11 /* DicomFilesTableViewControlllerDelegate.swift */; };
 		6E79D15825C748D40003B749 /* Date+timeAgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E79D15725C748D40003B749 /* Date+timeAgo.swift */; };
 		6E79D15B25C749900003B749 /* Int+asFilesize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E79D15A25C749900003B749 /* Int+asFilesize.swift */; };
@@ -210,6 +211,7 @@
 				DE738E521FAC76BA00BAB85D /* ViewController.swift in Sources */,
 				6E79D15825C748D40003B749 /* Date+timeAgo.swift in Sources */,
 				6E79D15F25C7533F0003B749 /* UIColor+DarkMode.swift in Sources */,
+				6E2D2C8E25C6B70700AF0F11 /* DicomFilesTableViewController.swift in Sources */,
 				6E2D2C9125C6BD6B00AF0F11 /* DicomFilesTableViewControlllerDelegate.swift in Sources */,
 				6E79D15B25C749900003B749 /* Int+asFilesize.swift in Sources */,
 				DE738E501FAC76BA00BAB85D /* AppDelegate.swift in Sources */,
