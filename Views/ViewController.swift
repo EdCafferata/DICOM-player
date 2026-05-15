@@ -4,36 +4,30 @@ import UniformTypeIdentifiers
 struct ContentView: View {
     @StateObject private var store = FileStore.shared
 
-    @State private var showImporter   = false
+    @State private var showImporter  = false
     @State private var selectedInfo: DICOMFileInfo?
     @State private var parsedDICOM: ParsedDICOM?
     @State private var parsedImage: UIImage?
-    @State private var showViewer     = false
-    @State private var isParsing      = false
+    @State private var showViewer    = false
+    @State private var isParsing     = false
     @State private var errorMessage: String?
     @State private var shareFile: DICOMFileInfo?
 
     var body: some View {
-        NavigationView {
-            Group {
+        ZStack {
+            Med.bg.ignoresSafeArea()
+
+            VStack(spacing: 0) {
+                header
+                MedDivider()
+
                 if store.files.isEmpty {
                     emptyState
                 } else {
                     fileList
                 }
             }
-            .navigationTitle("DICOM Viewer")
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button {
-                        showImporter = true
-                    } label: {
-                        Image(systemName: "plus")
-                    }
-                }
-            }
         }
-        .navigationViewStyle(.stack)
         .fileImporter(
             isPresented: $showImporter,
             allowedContentTypes: [.data, .item],
@@ -50,12 +44,13 @@ struct ContentView: View {
                 QuickImageView(image: img, title: file.name)
             }
         }
-        .overlay {
-            if isParsing {
-                loadingOverlay
-            }
+        .sheet(item: $shareFile) { file in
+            ShareSheet(url: file.url)
         }
-        .alert("Kan bestand niet openen", isPresented: .init(
+        .overlay {
+            if isParsing { loadingOverlay }
+        }
+        .alert("Bestand niet ondersteund", isPresented: .init(
             get: { errorMessage != nil },
             set: { if !$0 { errorMessage = nil } }
         )) {
@@ -65,69 +60,168 @@ struct ContentView: View {
         }
     }
 
+    // MARK: Header
+
+    private var header: some View {
+        HStack(alignment: .center, spacing: 12) {
+            Image(systemName: "waveform.and.magnifyingglass")
+                .font(.system(size: 22, weight: .semibold))
+                .foregroundColor(Med.accent)
+
+            VStack(alignment: .leading, spacing: 1) {
+                Text("DICOM VIEWER")
+                    .font(.medLabel())
+                    .tracking(2.5)
+                    .foregroundColor(Med.textSec)
+                Text("Medical Imaging")
+                    .font(.medTitle())
+                    .foregroundColor(Med.textPri)
+            }
+
+            Spacer()
+
+            Button {
+                showImporter = true
+            } label: {
+                Image(systemName: "plus")
+                    .font(.system(size: 16, weight: .semibold))
+                    .foregroundColor(Med.accent)
+                    .frame(width: 36, height: 36)
+                    .background(Med.accent.opacity(0.12))
+                    .clipShape(Circle())
+                    .overlay(Circle().stroke(Med.accent.opacity(0.3), lineWidth: 0.5))
+            }
+        }
+        .padding(.horizontal, 20)
+        .padding(.vertical, 16)
+        .background(Med.surface)
+    }
+
     // MARK: File list
 
     private var fileList: some View {
-        List {
-            ForEach(store.files) { file in
-                FileRow(file: file)
-                    .contentShape(Rectangle())
-                    .onTapGesture { open(file) }
-                    .swipeActions(edge: .trailing, allowsFullSwipe: true) {
-                        Button(role: .destructive) {
-                            store.delete(file)
-                        } label: {
-                            Label("Verwijder", systemImage: "trash")
+        ScrollView {
+            LazyVStack(spacing: 0, pinnedViews: [.sectionHeaders]) {
+                Section {
+                    ForEach(Array(store.files.enumerated()), id: \.element.id) { idx, file in
+                        VStack(spacing: 0) {
+                            MedFileRow(file: file)
+                                .contentShape(Rectangle())
+                                .onTapGesture { open(file) }
+                                .swipeActions(edge: .trailing, allowsFullSwipe: true) {
+                                    Button(role: .destructive) {
+                                        store.delete(file)
+                                    } label: {
+                                        Label("Verwijder", systemImage: "trash")
+                                    }
+                                    Button {
+                                        shareFile = file
+                                    } label: {
+                                        Label("Deel", systemImage: "square.and.arrow.up")
+                                    }
+                                    .tint(Med.blue)
+                                }
+                            if idx < store.files.count - 1 {
+                                MedDivider().padding(.leading, 64)
+                            }
                         }
-                        Button {
-                            shareFile = file
-                        } label: {
-                            Label("Deel", systemImage: "square.and.arrow.up")
-                        }
-                        .tint(.blue)
+                        .background(Med.card)
                     }
+                } header: {
+                    HStack {
+                        Text("RECENTE SCANS")
+                            .font(.medLabel())
+                            .tracking(2)
+                            .foregroundColor(Med.textSec)
+                        Spacer()
+                        Text("\(store.files.count) BESTANDEN")
+                            .font(.medLabel())
+                            .tracking(1)
+                            .foregroundColor(Med.textDim)
+                    }
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 10)
+                    .background(Med.bg)
+                }
             }
+            .clipShape(RoundedRectangle(cornerRadius: 12))
+            .padding(.horizontal, 16)
+            .padding(.top, 12)
         }
-        .listStyle(.insetGrouped)
+        .background(Med.bg)
         .refreshable { store.reload() }
-        .sheet(item: $shareFile) { file in
-            ShareSheet(url: file.url)
-        }
     }
 
     // MARK: Empty state
 
     private var emptyState: some View {
-        VStack(spacing: 20) {
-            Image(systemName: "waveform.and.magnifyingglass")
-                .font(.system(size: 60))
-                .foregroundColor(.secondary)
-            Text("Geen bestanden")
-                .font(.title2.bold())
-            Text("Tik op + om een DICOM of medisch bestand te importeren.")
-                .font(.body)
-                .foregroundColor(.secondary)
-                .multilineTextAlignment(.center)
-                .padding(.horizontal, 40)
-            Button("Importeer bestand") { showImporter = true }
-                .buttonStyle(.borderedProminent)
+        VStack(spacing: 24) {
+            Spacer()
+
+            ZStack {
+                Circle()
+                    .fill(Med.accent.opacity(0.08))
+                    .frame(width: 100, height: 100)
+                Circle()
+                    .stroke(Med.accent.opacity(0.2), lineWidth: 1)
+                    .frame(width: 100, height: 100)
+                Image(systemName: "waveform.and.magnifyingglass")
+                    .font(.system(size: 40, weight: .light))
+                    .foregroundColor(Med.accent.opacity(0.7))
+            }
+
+            VStack(spacing: 8) {
+                Text("GEEN SCANS")
+                    .font(.medLabel())
+                    .tracking(3)
+                    .foregroundColor(Med.textSec)
+                Text("Importeer een DICOM of medisch beeldbestand om te beginnen.")
+                    .font(.medCaption())
+                    .foregroundColor(Med.textSec)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 40)
+            }
+
+            Button {
+                showImporter = true
+            } label: {
+                HStack(spacing: 8) {
+                    Image(systemName: "plus.circle.fill")
+                    Text("BESTAND IMPORTEREN")
+                        .tracking(1.2)
+                }
+                .font(.system(size: 13, weight: .semibold, design: .rounded))
+                .foregroundColor(Med.bg)
+                .padding(.horizontal, 24)
+                .padding(.vertical, 12)
+                .background(Med.accent)
+                .cornerRadius(8)
+            }
+
+            Spacer()
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Med.bg)
     }
 
     // MARK: Loading overlay
 
     private var loadingOverlay: some View {
         ZStack {
-            Color.black.opacity(0.4).ignoresSafeArea()
-            VStack(spacing: 12) {
-                ProgressView().tint(.white).scaleEffect(1.4)
-                Text("Bestand laden…")
-                    .foregroundColor(.white)
-                    .font(.callout)
+            Color.black.opacity(0.6).ignoresSafeArea()
+            VStack(spacing: 16) {
+                ProgressView()
+                    .tint(Med.accent)
+                    .scaleEffect(1.3)
+                Text("LADEN…")
+                    .font(.medLabel())
+                    .tracking(2)
+                    .foregroundColor(Med.textSec)
             }
-            .padding(28)
-            .background(Color(.systemGray5).opacity(0.95))
+            .padding(32)
+            .background(Med.surface)
             .cornerRadius(16)
+            .overlay(RoundedRectangle(cornerRadius: 16).stroke(Med.border, lineWidth: 0.5))
         }
     }
 
@@ -145,7 +239,6 @@ struct ContentView: View {
                     showViewer  = true
                 }
             } catch DICOMError.notDICOM {
-                // Try as a regular image
                 if let img = UIImage(contentsOfFile: file.url.path) {
                     await MainActor.run {
                         parsedImage = img
@@ -170,36 +263,48 @@ struct ContentView: View {
 
 // MARK: - File row
 
-private struct FileRow: View {
+private struct MedFileRow: View {
     let file: DICOMFileInfo
 
     var body: some View {
-        HStack(spacing: 12) {
-            Image(systemName: iconName)
-                .font(.title2)
-                .foregroundColor(.accentColor)
-                .frame(width: 36)
+        HStack(spacing: 14) {
+            ZStack {
+                RoundedRectangle(cornerRadius: 8)
+                    .fill(iconColor.opacity(0.12))
+                    .frame(width: 42, height: 42)
+                Image(systemName: iconName)
+                    .font(.system(size: 18, weight: .medium))
+                    .foregroundColor(iconColor)
+            }
 
-            VStack(alignment: .leading, spacing: 3) {
+            VStack(alignment: .leading, spacing: 4) {
                 Text(file.name)
-                    .font(.body.bold())
+                    .font(.medBody())
+                    .foregroundColor(Med.textPri)
                     .lineLimit(1)
-                HStack(spacing: 8) {
+
+                HStack(spacing: 6) {
+                    MedBadge(text: file.ext)
                     Text(file.sizeHuman)
+                        .font(.medMono(11))
+                        .foregroundColor(Med.textSec)
                     Text("·")
+                        .foregroundColor(Med.textDim)
                     Text(file.modifiedAgo)
+                        .font(.medCaption())
+                        .foregroundColor(Med.textSec)
                 }
-                .font(.caption)
-                .foregroundColor(.secondary)
             }
 
             Spacer()
 
             Image(systemName: "chevron.right")
-                .font(.caption)
-                .foregroundColor(.secondary)
+                .font(.system(size: 11, weight: .semibold))
+                .foregroundColor(Med.textDim)
         }
-        .padding(.vertical, 4)
+        .padding(.horizontal, 16)
+        .padding(.vertical, 13)
+        .background(Med.card)
     }
 
     private var iconName: String {
@@ -209,9 +314,17 @@ private struct FileRow: View {
         default: return "doc.fill"
         }
     }
+
+    private var iconColor: Color {
+        switch file.ext {
+        case "DCM", "DICOM": return Med.accent
+        case "PNG", "JPG", "JPEG": return Med.blue
+        default: return Med.textSec
+        }
+    }
 }
 
-// MARK: - Quick image viewer (non-DICOM fallback)
+// MARK: - Quick image viewer
 
 private struct QuickImageView: View {
     let image: UIImage
@@ -228,11 +341,15 @@ private struct QuickImageView: View {
                 HStack {
                     Button { dismiss() } label: {
                         Image(systemName: "xmark.circle.fill")
-                            .font(.title2).foregroundColor(.white.opacity(0.8))
+                            .font(.title2)
+                            .foregroundColor(.white.opacity(0.7))
                     }
                     .padding()
                     Spacer()
-                    Text(title).font(.caption).foregroundColor(.white.opacity(0.8)).padding(.trailing)
+                    Text(title)
+                        .font(.medCaption())
+                        .foregroundColor(.white.opacity(0.6))
+                        .padding(.trailing)
                 }
                 Spacer()
             }

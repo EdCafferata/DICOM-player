@@ -102,6 +102,7 @@ struct DICOMParser {
         var windowCenter      = 0.0
         var windowWidth       = 0.0
         var rawPixels: Data?  = nil
+        var encBlob: Data     = Data()
         var encapsulated      = false
         var explicitVR        = true
         var metaDone          = false
@@ -143,7 +144,7 @@ struct DICOMParser {
 
             // Skip sequences
             if vr == "SQ" || (undefined && tag != 0x7FE00010) {
-                if undefined { Self.skipToDelimiter(r) } else { r.skip(Int(valueLen)) }
+                if undefined { Self.skipToDelimiter(r, explicit: explicitVR) } else { r.skip(Int(valueLen)) }
                 continue
             }
 
@@ -151,7 +152,7 @@ struct DICOMParser {
             if tag == 0x7FE00010 {
                 if undefined {
                     encapsulated = true
-                    rawPixels = Self.extractEncapsulated(r)
+                    encBlob      = Self.extractEncapsulated(r)
                 } else {
                     rawPixels = r.readBytes(Int(valueLen))
                 }
@@ -219,25 +220,28 @@ struct DICOMParser {
             }
         }
 
-        guard let pixels = rawPixels   else { throw DICOMError.missingPixelData }
-        guard rows > 0, columns > 0    else { throw DICOMError.badDimensions }
+        guard rows > 0, columns > 0 else { throw DICOMError.badDimensions }
 
-        let isJPEG  = transferSyntax.hasPrefix("1.2.840.10008.1.2.4") || encapsulated
+        let isJPEG   = transferSyntax.hasPrefix("1.2.840.10008.1.2.4") || encapsulated
         let isSigned = pixelRep == 1
         let invert   = photometric == "MONOCHROME1"
 
-        if windowWidth <= 0 && !isJPEG {
-            (windowCenter, windowWidth) = Self.autoWindow(
-                pixels, bits: bitsAllocated, isSigned: isSigned, isColor: samplesPerPixel > 1)
+        let frames: [CGImage]
+        if encapsulated {
+            frames = Self.decodeJPEG(encBlob)
+        } else {
+            guard let pixels = rawPixels else { throw DICOMError.missingPixelData }
+            if windowWidth <= 0 {
+                (windowCenter, windowWidth) = Self.autoWindow(
+                    pixels, bits: bitsAllocated, isSigned: isSigned, isColor: samplesPerPixel > 1)
+            }
+            frames = Self.decodeRaw(pixels,
+                                    rows: rows, columns: columns, nFrames: nFrames,
+                                    bits: bitsAllocated, samples: samplesPerPixel,
+                                    isSigned: isSigned, invert: invert,
+                                    center: windowCenter, width: windowWidth)
         }
-
-        let frames: [CGImage] = isJPEG
-            ? Self.decodeJPEG(pixels)
-            : Self.decodeRaw(pixels,
-                             rows: rows, columns: columns, nFrames: nFrames,
-                             bits: bitsAllocated, samples: samplesPerPixel,
-                             isSigned: isSigned, invert: invert,
-                             center: windowCenter, width: windowWidth)
+        if frames.isEmpty { throw DICOMError.missingPixelData }
 
         return ParsedDICOM(
             patientName: patientName,
@@ -251,50 +255,103 @@ struct DICOMParser {
 
     // MARK: - Sequence helpers
 
-    private static func skipToDelimiter(_ r: ByteReader) {
+    // Skips tags until it finds a sequence delimiter (E0DD) or item delimiter (E00D),
+    // then returns. Must know whether the dataset uses explicit or implicit VR.
+    private static func skipToDelimiter(_ r: ByteReader, explicit: Bool) {
         while !r.isAtEnd {
             guard let g = r.readU16(), let e = r.readU16() else { break }
-            if g == 0xFFFE && (e == 0xE0DD || e == 0xE00D) { r.skip(4); return }
-            guard let l = r.readU32() else { break }
-            if l == 0xFFFFFFFF { skipToDelimiter(r) } else { r.skip(Int(l)) }
+
+            if g == 0xFFFE {
+                guard let l = r.readU32() else { break }
+                if e == 0xE0DD || e == 0xE00D { return }          // sequence or item end
+                if l == 0xFFFFFFFF { skipToDelimiter(r, explicit: explicit) }
+                else { r.skip(Int(l)) }
+                continue
+            }
+
+            let length: Int
+            if explicit {
+                guard let vrBytes = r.readBytes(2) else { break }
+                let vr = String(data: vrBytes, encoding: .ascii) ?? "UN"
+                let longVRs = ["OB","OD","OF","OL","OV","OW","SQ","UC","UN","UR","UT","SV","UV"]
+                if longVRs.contains(vr) {
+                    r.skip(2)
+                    guard let l = r.readU32() else { break }
+                    length = Int(l)
+                } else {
+                    guard let l = r.readU16() else { break }
+                    length = Int(l)
+                }
+            } else {
+                guard let l = r.readU32() else { break }
+                length = Int(l)
+            }
+
+            if length == Int(bitPattern: UInt(0xFFFFFFFF)) {
+                skipToDelimiter(r, explicit: explicit)
+            } else {
+                r.skip(length)
+            }
         }
     }
 
+    // Collects all encapsulated items into one concatenated blob (skipping the BOT).
+    // Items are often split across multiple FFFE,E000 chunks for one frame, so we
+    // concatenate everything and let the marker-based splitter find frame boundaries.
     private static func extractEncapsulated(_ r: ByteReader) -> Data {
-        var out = Data()
+        var blob = Data()
+        var isFirst = true
         while !r.isAtEnd {
             guard let g = r.readU16(), let e = r.readU16() else { break }
             if g == 0xFFFE && e == 0xE0DD { r.skip(4); break }   // sequence delimiter
-            guard g == 0xFFFE, e == 0xE000 else { break }         // item tag
-            guard let l = r.readU32(), l != 0xFFFFFFFF else { continue }
-            if l == 0 { continue }                                 // offset table item
-            if let item = r.readBytes(Int(l)) { out.append(item) }
+            guard g == 0xFFFE, e == 0xE000 else { break }         // must be item
+            guard let l = r.readU32() else { break }
+            if l == 0xFFFFFFFF { continue }
+            if isFirst { isFirst = false; r.skip(Int(l)); continue } // skip BOT
+            if let item = r.readBytes(Int(l)) { blob.append(item) }
         }
-        return out
+        return blob
     }
 
-    // MARK: - JPEG decode
+    // MARK: - Compressed decode (JPEG, JPEG 2000, JPEG-LS — whatever iOS supports)
 
-    private static func decodeJPEG(_ data: Data) -> [CGImage] {
+    private static func decodeJPEG(_ blob: Data) -> [CGImage] {
+        // Try direct decode first (works when blob is exactly one complete frame)
+        if let img = cgImage(from: blob) { return [img] }
+        // Fall back to marker-based splitting: handles multi-frame and chunked data
+        return splitAndDecode(blob)
+    }
+
+    // Searches for JPEG (FF D8) and JPEG 2000 (FF 4F) start markers + FF D9 end marker.
+    private static func splitAndDecode(_ data: Data) -> [CGImage] {
+        let startMarkers: [Data] = [Data([0xFF, 0xD8]), Data([0xFF, 0x4F])]
+        let endMarker = Data([0xFF, 0xD9])
         var frames: [CGImage] = []
         var pos = data.startIndex
+
         while pos < data.endIndex {
-            guard let soi = data.range(of: Data([0xFF, 0xD8]), in: pos..<data.endIndex) else { break }
-            if let eoi = data.range(of: Data([0xFF, 0xD9]), in: soi.upperBound..<data.endIndex) {
-                let jpeg = data[soi.lowerBound..<eoi.upperBound]
-                if let img = cgImage(from: jpeg) { frames.append(img) }
+            var earliest: Range<Data.Index>? = nil
+            for marker in startMarkers {
+                if let found = data.range(of: marker, in: pos..<data.endIndex) {
+                    if earliest == nil || found.lowerBound < earliest!.lowerBound { earliest = found }
+                }
+            }
+            guard let soi = earliest else { break }
+            if let eoi = data.range(of: endMarker, in: soi.upperBound..<data.endIndex) {
+                if let img = cgImage(from: Data(data[soi.lowerBound..<eoi.upperBound])) {
+                    frames.append(img)
+                }
                 pos = eoi.upperBound
             } else {
-                let jpeg = data[soi.lowerBound...]
-                if let img = cgImage(from: jpeg) { frames.append(img) }
+                if let img = cgImage(from: Data(data[soi.lowerBound...])) { frames.append(img) }
                 break
             }
         }
         return frames
     }
 
-    private static func cgImage(from jpeg: Data) -> CGImage? {
-        guard let src = CGImageSourceCreateWithData(jpeg as CFData, nil) else { return nil }
+    private static func cgImage(from data: Data) -> CGImage? {
+        guard let src = CGImageSourceCreateWithData(data as CFData, nil) else { return nil }
         return CGImageSourceCreateImageAtIndex(src, 0, nil)
     }
 
