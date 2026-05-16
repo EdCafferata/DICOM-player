@@ -222,7 +222,7 @@ struct DICOMParser {
 
         guard rows > 0, columns > 0 else { throw DICOMError.badDimensions }
 
-        let isJPEG   = transferSyntax.hasPrefix("1.2.840.10008.1.2.4") || encapsulated
+        _ = transferSyntax.hasPrefix("1.2.840.10008.1.2.4") || encapsulated // encapsulated branch handles JPEG
         let isSigned = pixelRep == 1
         let invert   = photometric == "MONOCHROME1"
 
@@ -316,10 +316,14 @@ struct DICOMParser {
     // MARK: - Compressed decode (JPEG, JPEG 2000, JPEG-LS — whatever iOS supports)
 
     private static func decodeJPEG(_ blob: Data) -> [CGImage] {
-        // Try direct decode first (works when blob is exactly one complete frame)
+        // Split on SOI/EOI markers first — handles multi-frame and single-frame equally.
+        // Direct decode is skipped because it would return only the first frame for
+        // concatenated multi-frame blobs (JPEG Lossless and JPEG 2000 multi-frame).
+        let split = splitAndDecode(blob)
+        if !split.isEmpty { return split }
+        // Fallback for blobs without standard SOI/EOI delimiters
         if let img = cgImage(from: blob) { return [img] }
-        // Fall back to marker-based splitting: handles multi-frame and chunked data
-        return splitAndDecode(blob)
+        return []
     }
 
     // Searches for JPEG (FF D8) and JPEG 2000 (FF 4F) start markers + FF D9 end marker.
@@ -351,8 +355,16 @@ struct DICOMParser {
     }
 
     private static func cgImage(from data: Data) -> CGImage? {
-        guard let src = CGImageSourceCreateWithData(data as CFData, nil) else { return nil }
-        return CGImageSourceCreateImageAtIndex(src, 0, nil)
+        // Detect JPEG Lossless (SOF3 = FF C3) in first 300 bytes → skip CGImageSource,
+        // which on iOS "succeeds" on the JFIF header but returns a black image for SOF3.
+        let probe = min(data.count - 1, 299)
+        var hasSof3 = false
+        for i in 0..<probe where data[i] == 0xFF && data[i + 1] == 0xC3 { hasSof3 = true; break }
+        if !hasSof3 {
+            if let src = CGImageSourceCreateWithData(data as CFData, nil),
+               let img = CGImageSourceCreateImageAtIndex(src, 0, nil) { return img }
+        }
+        return JpegLossless.decode(data)
     }
 
     // MARK: - Raw pixel decode
@@ -450,6 +462,179 @@ struct DICOMParser {
         case (0x0028, 0x1050), (0x0028, 0x1051):                     return "DS"
         case (0x7FE0, 0x0010):                                       return "OW"
         default:                                                      return "UN"
+        }
+    }
+}
+
+// MARK: - JPEG Lossless (SOF3) decoder
+
+private enum JpegLossless {
+
+    // Bit reader with JPEG stuffed-byte removal (ISO 10918-1 §F.1.2.3).
+    private final class Bits {
+        private let src: Data
+        private var pos: Int
+        private var buf = 0
+        private var avail = 0
+
+        init(_ src: Data, start: Int) { self.src = src; pos = start }
+
+        func read(_ n: Int) -> Int {
+            if n == 0 { return 0 }
+            while avail < n {
+                guard pos < src.count else { buf <<= 8; avail += 8; continue }
+                let b = Int(src[pos]); pos += 1
+                if b == 0xFF, pos < src.count {
+                    let nx = Int(src[pos])
+                    if nx == 0x00 { pos += 1 }
+                    else if nx >= 0xD0, nx <= 0xD7 { pos += 1; continue }
+                }
+                buf = (buf << 8) | b; avail += 8
+            }
+            avail -= n
+            return (buf >> avail) & ((1 << n) - 1)
+        }
+    }
+
+    // Huffman table with O(1) lookup via valOffset trick.
+    private struct HTable {
+        var minCode = [Int](repeating: 0,  count: 17)
+        var maxCode = [Int](repeating: -1, count: 17)
+        var valOff  = [Int](repeating: 0,  count: 17)
+        var vals    = [Int]()
+
+        mutating func build(counts: [Int], rawVals: Data, base: Int) {
+            vals = (0..<counts.reduce(0,+)).map { Int(rawVals[base + $0]) }
+            var code = 0, idx = 0
+            for b in 1...16 {
+                valOff[b] = idx - code
+                if counts[b-1] > 0 {
+                    minCode[b] = code
+                    maxCode[b] = code + counts[b-1] - 1
+                    code       += counts[b-1]
+                    idx        += counts[b-1]
+                }
+                code <<= 1
+            }
+        }
+    }
+
+    static func decode(_ jpeg: Data) -> CGImage? {
+        guard jpeg.count > 4, jpeg[0] == 0xFF, jpeg[1] == 0xD8 else { return nil }
+        var i = 2
+        var P = 8, H = 0, W = 0, Pt = 0, sel = 1
+        var htabs  = [Int: HTable]()
+        var compTd = [Int: Int]()
+        var scanAt = -1
+
+        while i + 1 < jpeg.count {
+            guard jpeg[i] == 0xFF else { i += 1; continue }
+            let m = Int(jpeg[i+1]); i += 2
+            if m == 0xD8 { continue }
+            if m == 0xD9 { break }
+            if m >= 0xD0, m <= 0xD7 { continue }
+            guard i + 2 <= jpeg.count else { break }
+            let segLen = Int(jpeg[i]) << 8 | Int(jpeg[i+1])
+            let segEnd = i + segLen; i += 2
+
+            switch m {
+            case 0xC3:  // SOF3 — lossless frame header
+                guard i + 6 <= jpeg.count else { break }
+                P = Int(jpeg[i])
+                H = Int(jpeg[i+1]) << 8 | Int(jpeg[i+2])
+                W = Int(jpeg[i+3]) << 8 | Int(jpeg[i+4])
+
+            case 0xC4:  // DHT — define Huffman table
+                var p = i
+                while p < segEnd, p < jpeg.count {
+                    let th = Int(jpeg[p]) & 0x0F; p += 1
+                    var counts = [Int](repeating: 0, count: 16)
+                    for k in 0..<16 { counts[k] = Int(jpeg[p+k]) }; p += 16
+                    var ht = HTable()
+                    ht.build(counts: counts, rawVals: jpeg, base: p)
+                    p += counts.reduce(0, +)
+                    htabs[th] = ht
+                }
+
+            case 0xDA:  // SOS — start of scan
+                guard i < jpeg.count else { break }
+                let nc = Int(jpeg[i]); var p = i + 1
+                for _ in 0..<nc {
+                    guard p + 1 < jpeg.count else { break }
+                    compTd[Int(jpeg[p])] = Int(jpeg[p+1]) >> 4; p += 2
+                }
+                if p + 2 < jpeg.count {
+                    sel = Int(jpeg[p])
+                    Pt  = Int(jpeg[p+2]) & 0x0F
+                }
+                scanAt = p + 3
+
+            default: break
+            }
+            i = segEnd
+        }
+
+        guard scanAt > 0, W > 0, H > 0 else { return nil }
+        let td = compTd.values.first ?? 0
+        guard let ht = htabs[compTd[1] ?? td] ?? htabs[td] else { return nil }
+
+        let bits   = Bits(jpeg, start: scanAt)
+        let maxVal = (1 << P) - 1
+        let initPx = 1 << (P - Pt - 1)
+        var out    = [UInt8](repeating: 0, count: W * H)
+        var Ra     = initPx
+
+        for row in 0..<H {
+            // JPEG Lossless line boundary: Ra resets to first pixel of previous row.
+            if row > 0 { Ra = Int(out[(row - 1) * W]) }
+            for col in 0..<W {
+                var code = 0, ssss = 0
+                for b in 1...16 {
+                    code = (code << 1) | bits.read(1)
+                    if code <= ht.maxCode[b] {
+                        ssss = ht.vals[ht.valOff[b] + code]
+                        break
+                    }
+                }
+                let diff: Int
+                if ssss == 0 {
+                    diff = 0
+                } else {
+                    let v = bits.read(ssss)
+                    diff = v >= (1 << (ssss - 1)) ? v : v - (1 << ssss) + 1
+                }
+                let idx  = row * W + col
+                let Rb   = row > 0 ? Int(out[idx - W]) : initPx
+                let Rc   = (row > 0 && col > 0) ? Int(out[idx - W - 1]) : initPx
+                let pred: Int
+                if row == 0, col == 0 {
+                    pred = initPx
+                } else {
+                    switch sel {
+                    case 1: pred = Ra
+                    case 2: pred = Rb
+                    case 3: pred = Rc
+                    case 4: pred = Ra + Rb - Rc
+                    case 5: pred = Ra + (Rb - Rc) / 2
+                    case 6: pred = Rb + (Ra - Rc) / 2
+                    case 7: pred = (Ra + Rb) / 2
+                    default: pred = Ra
+                    }
+                }
+                let px = (pred + diff) & maxVal
+                out[idx] = UInt8(clamping: px)
+                Ra = px
+            }
+        }
+
+        let space = CGColorSpaceCreateDeviceGray()
+        return out.withUnsafeMutableBytes { ptr -> CGImage? in
+            guard let ctx = CGContext(
+                data: ptr.baseAddress, width: W, height: H,
+                bitsPerComponent: 8, bytesPerRow: W,
+                space: space, bitmapInfo: CGImageAlphaInfo.none.rawValue
+            ) else { return nil }
+            return ctx.makeImage()
         }
     }
 }
