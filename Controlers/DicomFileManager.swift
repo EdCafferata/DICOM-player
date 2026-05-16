@@ -44,9 +44,12 @@ final class FileStore: ObservableObject {
         }
         do {
             try fm.copyItem(at: url, to: dest)
+            try? (dest as NSURL).setResourceValue(true, forKey: .isExcludedFromBackupKey)
             DispatchQueue.main.async { self.reload() }
         } catch {
+            #if DEBUG
             print("[FileStore] import failed: \(error.localizedDescription)")
+            #endif
         }
     }
 

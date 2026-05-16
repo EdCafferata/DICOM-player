@@ -1,4 +1,3 @@
-import Foundation
 import CoreGraphics
 import UIKit
 
@@ -222,7 +221,6 @@ struct DICOMParser {
 
         guard rows > 0, columns > 0 else { throw DICOMError.badDimensions }
 
-        _ = transferSyntax.hasPrefix("1.2.840.10008.1.2.4") || encapsulated // encapsulated branch handles JPEG
         let isSigned = pixelRep == 1
         let invert   = photometric == "MONOCHROME1"
 
@@ -337,7 +335,7 @@ struct DICOMParser {
             var earliest: Range<Data.Index>? = nil
             for marker in startMarkers {
                 if let found = data.range(of: marker, in: pos..<data.endIndex) {
-                    if earliest == nil || found.lowerBound < earliest!.lowerBound { earliest = found }
+                    if earliest == nil || found.lowerBound < earliest?.lowerBound ?? data.endIndex { earliest = found }
                 }
             }
             guard let soi = earliest else { break }
@@ -389,8 +387,11 @@ struct DICOMParser {
         center: Double, width: Double
     ) -> [CGImage] {
         let bytesPerSample = max(1, bits / 8)
-        let frameSize      = rows * columns * samples * bytesPerSample
-        guard frameSize > 0, data.count >= frameSize else { return [] }
+        guard rows > 0, columns > 0, rows <= 16384, columns <= 16384 else { return [] }
+        let (a, o1) = rows.multipliedReportingOverflow(by: columns)
+        let (b, o2) = a.multipliedReportingOverflow(by: samples)
+        let (frameSize, o3) = b.multipliedReportingOverflow(by: bytesPerSample)
+        guard !o1, !o2, !o3, frameSize > 0, data.count >= frameSize else { return [] }
 
         return (0..<nFrames).compactMap { f in
             let start = f * frameSize
@@ -411,8 +412,10 @@ struct DICOMParser {
     ) -> CGImage? {
         let isRGB      = samples == 3
         let bpp        = isRGB ? 3 : 1
-        let pixelCount = rows * columns
-        var out        = [UInt8](repeating: 0, count: pixelCount * bpp)
+        let (pixelCount, pcOvf) = rows.multipliedReportingOverflow(by: columns)
+        let (outCount, ocOvf)   = pixelCount.multipliedReportingOverflow(by: bpp)
+        guard !pcOvf, !ocOvf, outCount > 0 else { return nil }
+        var out = [UInt8](repeating: 0, count: outCount)
         let lo         = center - width / 2
         let scale      = 255.0 / max(1, width)
 
@@ -574,14 +577,16 @@ private enum JpegLossless {
             i = segEnd
         }
 
-        guard scanAt > 0, W > 0, H > 0 else { return nil }
+        guard scanAt > 0, W > 0, H > 0, W <= 16384, H <= 16384 else { return nil }
         let td = compTd.values.first ?? 0
         guard let ht = htabs[compTd[1] ?? td] ?? htabs[td] else { return nil }
 
+        let (wh, whOvf) = W.multipliedReportingOverflow(by: H)
+        guard !whOvf else { return nil }
         let bits   = Bits(jpeg, start: scanAt)
         let maxVal = (1 << P) - 1
         let initPx = 1 << (P - Pt - 1)
-        var out    = [UInt8](repeating: 0, count: W * H)
+        var out    = [UInt8](repeating: 0, count: wh)
         var Ra     = initPx
 
         for row in 0..<H {

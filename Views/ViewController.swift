@@ -13,6 +13,7 @@ struct ContentView: View {
     @State private var errorMessage: String?
     @State private var shareFile: DICOMFileInfo?
     @State private var fileToDelete: DICOMFileInfo?
+    @State private var showTipJar = false
     @AppStorage("demosHidden") private var demosHidden = false
 
     var body: some View {
@@ -48,6 +49,9 @@ struct ContentView: View {
         }
         .sheet(item: $shareFile) { file in
             ShareSheet(url: file.url)
+        }
+        .sheet(isPresented: $showTipJar) {
+            TipJarView()
         }
         .overlay {
             if isParsing { loadingOverlay }
@@ -94,16 +98,29 @@ struct ContentView: View {
 
             Spacer()
 
-            Button {
-                showImporter = true
-            } label: {
-                Image(systemName: "plus")
-                    .font(.system(size: 16, weight: .semibold))
-                    .foregroundColor(Med.accent)
-                    .frame(width: 36, height: 36)
-                    .background(Med.accent.opacity(0.12))
-                    .clipShape(Circle())
-                    .overlay(Circle().stroke(Med.accent.opacity(0.3), lineWidth: 0.5))
+            HStack(spacing: 10) {
+                Button {
+                    showTipJar = true
+                } label: {
+                    Image(systemName: "heart.fill")
+                        .font(.system(size: 14, weight: .semibold))
+                        .foregroundColor(Color(red: 0.8, green: 0.1, blue: 0.1))
+                        .frame(width: 36, height: 36)
+                        .background(Color(red: 0.8, green: 0.1, blue: 0.1).opacity(0.12))
+                        .clipShape(Circle())
+                        .overlay(Circle().stroke(Color(red: 0.8, green: 0.1, blue: 0.1).opacity(0.3), lineWidth: 0.5))
+                }
+                Button {
+                    showImporter = true
+                } label: {
+                    Image(systemName: "plus")
+                        .font(.system(size: 16, weight: .semibold))
+                        .foregroundColor(Med.accent)
+                        .frame(width: 36, height: 36)
+                        .background(Med.accent.opacity(0.12))
+                        .clipShape(Circle())
+                        .overlay(Circle().stroke(Med.accent.opacity(0.3), lineWidth: 0.5))
+                }
             }
         }
         .padding(.horizontal, 20)
