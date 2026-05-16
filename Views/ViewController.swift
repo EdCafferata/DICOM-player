@@ -22,7 +22,7 @@ struct ContentView: View {
                 header
                 MedDivider()
 
-                if store.files.isEmpty && store.bundledDemos.isEmpty {
+                if store.files.isEmpty {
                     emptyState
                 } else {
                     fileList
@@ -115,132 +115,136 @@ struct ContentView: View {
     private var fileList: some View {
         ScrollView {
             LazyVStack(spacing: 0, pinnedViews: [.sectionHeaders]) {
-                if !store.files.isEmpty {
-                    Section {
-                        ForEach(Array(store.files.enumerated()), id: \.element.id) { idx, file in
-                            VStack(spacing: 0) {
-                                MedFileRow(file: file, isDemo: false)
-                                    .contentShape(Rectangle())
-                                    .onTapGesture { open(file) }
-                                    .contextMenu {
-                                        Button {
-                                            shareFile = file
-                                        } label: {
-                                            Label("Deel", systemImage: "square.and.arrow.up")
-                                        }
-                                        Button(role: .destructive) {
-                                            fileToDelete = file
-                                        } label: {
-                                            Label("Verwijder", systemImage: "trash")
-                                        }
+                Section {
+                    ForEach(Array(store.files.enumerated()), id: \.element.id) { idx, file in
+                        VStack(spacing: 0) {
+                            MedFileRow(file: file, isDemo: false)
+                                .contentShape(Rectangle())
+                                .onTapGesture { open(file) }
+                                .contextMenu {
+                                    Button {
+                                        shareFile = file
+                                    } label: {
+                                        Label("Deel", systemImage: "square.and.arrow.up")
                                     }
-                                if idx < store.files.count - 1 {
-                                    MedDivider().padding(.leading, 64)
+                                    Button(role: .destructive) {
+                                        fileToDelete = file
+                                    } label: {
+                                        Label("Verwijder", systemImage: "trash")
+                                    }
                                 }
+                            if idx < store.files.count - 1 {
+                                MedDivider().padding(.leading, 64)
                             }
-                            .background(Med.card)
                         }
-                    } header: {
-                        sectionHeader(title: "RECENTE SCANS", count: store.files.count)
+                        .background(Med.card)
                     }
-                    .padding(.horizontal, 16)
-                    .padding(.top, 12)
-                }
-
-                if !store.bundledDemos.isEmpty && store.files.isEmpty {
-                    Section {
-                        ForEach(Array(store.bundledDemos.enumerated()), id: \.element.id) { idx, file in
-                            VStack(spacing: 0) {
-                                MedFileRow(file: file, isDemo: true)
-                                    .contentShape(Rectangle())
-                                    .onTapGesture { open(file) }
-                                if idx < store.bundledDemos.count - 1 {
-                                    MedDivider().padding(.leading, 64)
-                                }
-                            }
-                            .background(Med.card)
-                        }
-                    } header: {
-                        sectionHeader(title: "VOORBEELDBESTANDEN", count: nil)
+                } header: {
+                    HStack {
+                        Text("RECENTE SCANS")
+                            .font(.medLabel())
+                            .tracking(2)
+                            .foregroundColor(Med.textSec)
+                        Spacer()
+                        Text("\(store.files.count) BESTANDEN")
+                            .font(.medLabel())
+                            .tracking(1)
+                            .foregroundColor(Med.textDim)
                     }
-                    .padding(.horizontal, 16)
-                    .padding(.top, store.files.isEmpty ? 12 : 20)
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 10)
+                    .background(Med.bg)
                 }
             }
             .clipShape(RoundedRectangle(cornerRadius: 12))
+            .padding(.horizontal, 16)
+            .padding(.top, 12)
         }
         .background(Med.bg)
         .refreshable { store.reload() }
     }
 
-    private func sectionHeader(title: String, count: Int?) -> some View {
-        HStack {
-            Text(title)
-                .font(.medLabel())
-                .tracking(2)
-                .foregroundColor(Med.textSec)
-            Spacer()
-            if let n = count {
-                Text("\(n) BESTANDEN")
-                    .font(.medLabel())
-                    .tracking(1)
-                    .foregroundColor(Med.textDim)
-            }
-        }
-        .padding(.horizontal, 20)
-        .padding(.vertical, 10)
-        .background(Med.bg)
-    }
-
     // MARK: Empty state
 
     private var emptyState: some View {
-        VStack(spacing: 24) {
-            Spacer()
+        ScrollView {
+            VStack(spacing: 0) {
+                // Import CTA
+                VStack(spacing: 20) {
+                    ZStack {
+                        Circle()
+                            .fill(Med.accent.opacity(0.08))
+                            .frame(width: 80, height: 80)
+                        Circle()
+                            .stroke(Med.accent.opacity(0.2), lineWidth: 1)
+                            .frame(width: 80, height: 80)
+                        Image(systemName: "waveform.and.magnifyingglass")
+                            .font(.system(size: 32, weight: .light))
+                            .foregroundColor(Med.accent.opacity(0.7))
+                    }
 
-            ZStack {
-                Circle()
-                    .fill(Med.accent.opacity(0.08))
-                    .frame(width: 100, height: 100)
-                Circle()
-                    .stroke(Med.accent.opacity(0.2), lineWidth: 1)
-                    .frame(width: 100, height: 100)
-                Image(systemName: "waveform.and.magnifyingglass")
-                    .font(.system(size: 40, weight: .light))
-                    .foregroundColor(Med.accent.opacity(0.7))
-            }
+                    VStack(spacing: 6) {
+                        Text("EIGEN SCAN TOEVOEGEN")
+                            .font(.medLabel())
+                            .tracking(2)
+                            .foregroundColor(Med.textSec)
+                        Text("Importeer een DICOM of medisch beeldbestand.")
+                            .font(.medCaption())
+                            .foregroundColor(Med.textSec)
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal, 40)
+                    }
 
-            VStack(spacing: 8) {
-                Text("GEEN SCANS")
-                    .font(.medLabel())
-                    .tracking(3)
-                    .foregroundColor(Med.textSec)
-                Text("Importeer een DICOM of medisch beeldbestand om te beginnen.")
-                    .font(.medCaption())
-                    .foregroundColor(Med.textSec)
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal, 40)
-            }
-
-            Button {
-                showImporter = true
-            } label: {
-                HStack(spacing: 8) {
-                    Image(systemName: "plus.circle.fill")
-                    Text("BESTAND IMPORTEREN")
-                        .tracking(1.2)
+                    Button {
+                        showImporter = true
+                    } label: {
+                        HStack(spacing: 8) {
+                            Image(systemName: "plus.circle.fill")
+                            Text("BESTAND IMPORTEREN")
+                                .tracking(1.2)
+                        }
+                        .font(.system(size: 13, weight: .semibold, design: .rounded))
+                        .foregroundColor(Med.bg)
+                        .padding(.horizontal, 24)
+                        .padding(.vertical, 12)
+                        .background(Med.accent)
+                        .cornerRadius(8)
+                    }
                 }
-                .font(.system(size: 13, weight: .semibold, design: .rounded))
-                .foregroundColor(Med.bg)
-                .padding(.horizontal, 24)
-                .padding(.vertical, 12)
-                .background(Med.accent)
-                .cornerRadius(8)
-            }
+                .padding(.top, 36)
+                .padding(.bottom, 32)
 
-            Spacer()
+                // Demo files
+                if !store.bundledDemos.isEmpty {
+                    VStack(spacing: 0) {
+                        HStack {
+                            Text("VOORBEELDBESTANDEN")
+                                .font(.medLabel())
+                                .tracking(2)
+                                .foregroundColor(Med.textSec)
+                            Spacer()
+                        }
+                        .padding(.horizontal, 20)
+                        .padding(.vertical, 10)
+
+                        VStack(spacing: 0) {
+                            ForEach(Array(store.bundledDemos.enumerated()), id: \.element.id) { idx, file in
+                                VStack(spacing: 0) {
+                                    MedFileRow(file: file, isDemo: true)
+                                        .contentShape(Rectangle())
+                                        .onTapGesture { open(file) }
+                                    if idx < store.bundledDemos.count - 1 {
+                                        MedDivider().padding(.leading, 64)
+                                    }
+                                }
+                            }
+                        }
+                        .clipShape(RoundedRectangle(cornerRadius: 12))
+                        .padding(.horizontal, 16)
+                    }
+                }
+            }
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Med.bg)
     }
 

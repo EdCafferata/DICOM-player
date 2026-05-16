@@ -12,16 +12,7 @@ final class FileStore: ObservableObject {
     }
 
     init() {
-        copyBundledDemoIfNeeded()
         reload()
-    }
-
-    private func copyBundledDemoIfNeeded() {
-        let dest = docsURL.appendingPathComponent("demo_cag.dcm")
-        guard !fm.fileExists(atPath: dest.path),
-              let src = Bundle.main.url(forResource: "demo_cag", withExtension: "dcm")
-        else { return }
-        try? fm.copyItem(at: src, to: dest)
     }
 
     func reload() {
@@ -66,8 +57,7 @@ final class FileStore: ObservableObject {
 
     /// DICOM demo files bundled with the app, shown when the user has no own files.
     var bundledDemos: [DICOMFileInfo] {
-        let names = ["demo_cag"]
-        return names.compactMap { name in
+        ["demo_cag", "cag_jpeglossless"].compactMap { name in
             Bundle.main.url(forResource: name, withExtension: "dcm")
                 .map { DICOMFileInfo(url: $0) }
         }
