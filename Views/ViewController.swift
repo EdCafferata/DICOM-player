@@ -12,6 +12,7 @@ struct ContentView: View {
     @State private var isParsing     = false
     @State private var errorMessage: String?
     @State private var shareFile: DICOMFileInfo?
+    @State private var fileToDelete: DICOMFileInfo?
 
     var body: some View {
         ZStack {
@@ -49,6 +50,18 @@ struct ContentView: View {
         }
         .overlay {
             if isParsing { loadingOverlay }
+        }
+        .alert("Bestand verwijderen?", isPresented: .init(
+            get: { fileToDelete != nil },
+            set: { if !$0 { fileToDelete = nil } }
+        )) {
+            Button("Verwijder", role: .destructive) {
+                if let f = fileToDelete { store.delete(f) }
+                fileToDelete = nil
+            }
+            Button("Annuleer", role: .cancel) { fileToDelete = nil }
+        } message: {
+            Text("\(fileToDelete?.name ?? "") wordt permanent verwijderd.")
         }
         .alert("Bestand niet ondersteund", isPresented: .init(
             get: { errorMessage != nil },
@@ -108,18 +121,17 @@ struct ContentView: View {
                             MedFileRow(file: file)
                                 .contentShape(Rectangle())
                                 .onTapGesture { open(file) }
-                                .swipeActions(edge: .trailing, allowsFullSwipe: true) {
-                                    Button(role: .destructive) {
-                                        store.delete(file)
-                                    } label: {
-                                        Label("Verwijder", systemImage: "trash")
-                                    }
+                                .contextMenu {
                                     Button {
                                         shareFile = file
                                     } label: {
                                         Label("Deel", systemImage: "square.and.arrow.up")
                                     }
-                                    .tint(Med.blue)
+                                    Button(role: .destructive) {
+                                        fileToDelete = file
+                                    } label: {
+                                        Label("Verwijder", systemImage: "trash")
+                                    }
                                 }
                             if idx < store.files.count - 1 {
                                 MedDivider().padding(.leading, 64)
