@@ -17,8 +17,8 @@
 		AABB000125MED0001MED0001 /* MedTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB000025MED0001MED0001 /* MedTheme.swift */; };
 		6E79D16225C753910003B749 /* UIColor+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E79D16125C753910003B749 /* UIColor+Keyboard.swift */; };
 		6E7FE21D269CDEC9004B159E /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6E7FE21C269CDEC9004B159E /* video.mp4 */; };
-		AABB000026CAG0001CAG0001 /* demo_cag.dcm in Resources */ = {isa = PBXBuildFile; fileRef = AABB000026CAG0000CAG0000 /* demo_cag.dcm */; };
-		AABB000027CAG0001CAG0001 /* cag_jpeglossless.dcm in Resources */ = {isa = PBXBuildFile; fileRef = AABB000027CAG0000CAG0000 /* cag_jpeglossless.dcm */; };
+		AABB000026CAG0001CAG0001 /* cag_voor_ingreep.dcm in Resources */ = {isa = PBXBuildFile; fileRef = AABB000026CAG0000CAG0000 /* cag_voor_ingreep.dcm */; };
+		AABB000027CAG0001CAG0001 /* cag_na_ingreep.dcm in Resources */ = {isa = PBXBuildFile; fileRef = AABB000027CAG0000CAG0000 /* cag_na_ingreep.dcm */; };
 		6E9791A42760086900B566A3 /* UploadControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9791A32760086900B566A3 /* UploadControler.swift */; };
 		DE738E501FAC76BA00BAB85D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE738E4F1FAC76BA00BAB85D /* AppDelegate.swift */; };
 		DE738E521FAC76BA00BAB85D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE738E511FAC76BA00BAB85D /* ViewController.swift */; };
@@ -39,8 +39,8 @@
 		6E79D16125C753910003B749 /* UIColor+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Keyboard.swift"; sourceTree = "<group>"; };
 		6E7FE21B269CD9D4004B159E /* Dicom Player.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Dicom Player.entitlements"; sourceTree = "<group>"; };
 		6E7FE21C269CDEC9004B159E /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
-		AABB000026CAG0000CAG0000 /* demo_cag.dcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo_cag.dcm; sourceTree = "<group>"; };
-		AABB000027CAG0000CAG0000 /* cag_jpeglossless.dcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = cag_jpeglossless.dcm; sourceTree = "<group>"; };
+		AABB000026CAG0000CAG0000 /* cag_voor_ingreep.dcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = cag_voor_ingreep.dcm; sourceTree = "<group>"; };
+		AABB000027CAG0000CAG0000 /* cag_na_ingreep.dcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = cag_na_ingreep.dcm; sourceTree = "<group>"; };
 		6E9791A32760086900B566A3 /* UploadControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadControler.swift; sourceTree = "<group>"; };
 		6ECC4B2125C5F316001B5D2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		6ECC4B2425C5F377001B5D2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
@@ -104,8 +104,8 @@
 				DE738E531FAC76BA00BAB85D /* Main.storyboard */,
 				DE738E561FAC76BA00BAB85D /* Assets.xcassets */,
 				6E7FE21C269CDEC9004B159E /* video.mp4 */,
-				AABB000026CAG0000CAG0000 /* demo_cag.dcm */,
-				AABB000027CAG0000CAG0000 /* cag_jpeglossless.dcm */,
+				AABB000026CAG0000CAG0000 /* cag_voor_ingreep.dcm */,
+				AABB000027CAG0000CAG0000 /* cag_na_ingreep.dcm */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -201,8 +201,8 @@
 			files = (
 				DE738E5A1FAC76BA00BAB85D /* LaunchScreen.storyboard in Resources */,
 				6E7FE21D269CDEC9004B159E /* video.mp4 in Resources */,
-				AABB000026CAG0001CAG0001 /* demo_cag.dcm in Resources */,
-				AABB000027CAG0001CAG0001 /* cag_jpeglossless.dcm in Resources */,
+				AABB000026CAG0001CAG0001 /* cag_voor_ingreep.dcm in Resources */,
+				AABB000027CAG0001CAG0001 /* cag_na_ingreep.dcm in Resources */,
 				DE738E571FAC76BA00BAB85D /* Assets.xcassets in Resources */,
 				DE738E551FAC76BA00BAB85D /* Main.storyboard in Resources */,
 			);

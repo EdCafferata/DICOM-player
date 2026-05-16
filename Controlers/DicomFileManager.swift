@@ -57,7 +57,7 @@ final class FileStore: ObservableObject {
 
     /// DICOM demo files bundled with the app, shown when the user has no own files.
     var bundledDemos: [DICOMFileInfo] {
-        ["demo_cag", "cag_jpeglossless"].compactMap { name in
+        ["cag_voor_ingreep", "cag_na_ingreep"].compactMap { name in
             Bundle.main.url(forResource: name, withExtension: "dcm")
                 .map { DICOMFileInfo(url: $0) }
         }
