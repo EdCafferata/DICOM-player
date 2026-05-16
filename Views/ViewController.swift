@@ -13,6 +13,7 @@ struct ContentView: View {
     @State private var errorMessage: String?
     @State private var shareFile: DICOMFileInfo?
     @State private var fileToDelete: DICOMFileInfo?
+    @AppStorage("demosHidden") private var demosHidden = false
 
     var body: some View {
         ZStack {
@@ -223,24 +224,37 @@ struct ContentView: View {
                                 .tracking(2)
                                 .foregroundColor(Med.textSec)
                             Spacer()
+                            Button {
+                                withAnimation(.easeInOut(duration: 0.2)) {
+                                    demosHidden.toggle()
+                                }
+                            } label: {
+                                Text(demosHidden ? "TOON" : "VERBERG")
+                                    .font(.medLabel())
+                                    .tracking(1)
+                                    .foregroundColor(Med.accent)
+                            }
                         }
                         .padding(.horizontal, 20)
                         .padding(.vertical, 10)
 
-                        VStack(spacing: 0) {
-                            ForEach(Array(store.bundledDemos.enumerated()), id: \.element.id) { idx, file in
-                                VStack(spacing: 0) {
-                                    MedFileRow(file: file, isDemo: true)
-                                        .contentShape(Rectangle())
-                                        .onTapGesture { open(file) }
-                                    if idx < store.bundledDemos.count - 1 {
-                                        MedDivider().padding(.leading, 64)
+                        if !demosHidden {
+                            VStack(spacing: 0) {
+                                ForEach(Array(store.bundledDemos.enumerated()), id: \.element.id) { idx, file in
+                                    VStack(spacing: 0) {
+                                        MedFileRow(file: file, isDemo: true)
+                                            .contentShape(Rectangle())
+                                            .onTapGesture { open(file) }
+                                        if idx < store.bundledDemos.count - 1 {
+                                            MedDivider().padding(.leading, 64)
+                                        }
                                     }
                                 }
                             }
+                            .clipShape(RoundedRectangle(cornerRadius: 12))
+                            .padding(.horizontal, 16)
+                            .transition(.opacity.combined(with: .move(edge: .top)))
                         }
-                        .clipShape(RoundedRectangle(cornerRadius: 12))
-                        .padding(.horizontal, 16)
                     }
                 }
             }
