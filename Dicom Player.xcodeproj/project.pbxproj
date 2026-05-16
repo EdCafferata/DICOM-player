@@ -15,7 +15,6 @@
 		6E79D15B25C749900003B749 /* Int+asFilesize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E79D15A25C749900003B749 /* Int+asFilesize.swift */; };
 		AABB000125MED0001MED0001 /* MedTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB000025MED0001MED0001 /* MedTheme.swift */; };
 		AABB000130TIP0001TIP0001 /* TipJarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB000130TIP0000TIP0000 /* TipJarView.swift */; };
-		6E7FE21D269CDEC9004B159E /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6E7FE21C269CDEC9004B159E /* video.mp4 */; };
 		AABB000026CAG0001CAG0001 /* cag_voor_ingreep.dcm in Resources */ = {isa = PBXBuildFile; fileRef = AABB000026CAG0000CAG0000 /* cag_voor_ingreep.dcm */; };
 		AABB000028CAG0001CAG0001 /* cag_tijdens_ingreep.dcm in Resources */ = {isa = PBXBuildFile; fileRef = AABB000028CAG0000CAG0000 /* cag_tijdens_ingreep.dcm */; };
 		AABB000027CAG0001CAG0001 /* cag_na_ingreep.dcm in Resources */ = {isa = PBXBuildFile; fileRef = AABB000027CAG0000CAG0000 /* cag_na_ingreep.dcm */; };
