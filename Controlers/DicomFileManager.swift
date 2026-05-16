@@ -11,7 +11,18 @@ final class FileStore: ObservableObject {
         fm.urls(for: .documentDirectory, in: .userDomainMask)[0]
     }
 
-    init() { reload() }
+    init() {
+        copyBundledDemoIfNeeded()
+        reload()
+    }
+
+    private func copyBundledDemoIfNeeded() {
+        let dest = docsURL.appendingPathComponent("demo_cag.dcm")
+        guard !fm.fileExists(atPath: dest.path),
+              let src = Bundle.main.url(forResource: "demo_cag", withExtension: "dcm")
+        else { return }
+        try? fm.copyItem(at: src, to: dest)
+    }
 
     func reload() {
         guard let contents = try? fm.contentsOfDirectory(
