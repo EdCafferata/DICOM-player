@@ -22,7 +22,7 @@ struct ContentView: View {
                 header
                 MedDivider()
 
-                if store.files.isEmpty {
+                if store.files.isEmpty && store.bundledDemos.isEmpty {
                     emptyState
                 } else {
                     fileList
@@ -115,53 +115,81 @@ struct ContentView: View {
     private var fileList: some View {
         ScrollView {
             LazyVStack(spacing: 0, pinnedViews: [.sectionHeaders]) {
-                Section {
-                    ForEach(Array(store.files.enumerated()), id: \.element.id) { idx, file in
-                        VStack(spacing: 0) {
-                            MedFileRow(file: file)
-                                .contentShape(Rectangle())
-                                .onTapGesture { open(file) }
-                                .contextMenu {
-                                    Button {
-                                        shareFile = file
-                                    } label: {
-                                        Label("Deel", systemImage: "square.and.arrow.up")
+                if !store.files.isEmpty {
+                    Section {
+                        ForEach(Array(store.files.enumerated()), id: \.element.id) { idx, file in
+                            VStack(spacing: 0) {
+                                MedFileRow(file: file, isDemo: false)
+                                    .contentShape(Rectangle())
+                                    .onTapGesture { open(file) }
+                                    .contextMenu {
+                                        Button {
+                                            shareFile = file
+                                        } label: {
+                                            Label("Deel", systemImage: "square.and.arrow.up")
+                                        }
+                                        Button(role: .destructive) {
+                                            fileToDelete = file
+                                        } label: {
+                                            Label("Verwijder", systemImage: "trash")
+                                        }
                                     }
-                                    Button(role: .destructive) {
-                                        fileToDelete = file
-                                    } label: {
-                                        Label("Verwijder", systemImage: "trash")
-                                    }
+                                if idx < store.files.count - 1 {
+                                    MedDivider().padding(.leading, 64)
                                 }
-                            if idx < store.files.count - 1 {
-                                MedDivider().padding(.leading, 64)
                             }
+                            .background(Med.card)
                         }
-                        .background(Med.card)
+                    } header: {
+                        sectionHeader(title: "RECENTE SCANS", count: store.files.count)
                     }
-                } header: {
-                    HStack {
-                        Text("RECENTE SCANS")
-                            .font(.medLabel())
-                            .tracking(2)
-                            .foregroundColor(Med.textSec)
-                        Spacer()
-                        Text("\(store.files.count) BESTANDEN")
-                            .font(.medLabel())
-                            .tracking(1)
-                            .foregroundColor(Med.textDim)
+                    .padding(.horizontal, 16)
+                    .padding(.top, 12)
+                }
+
+                if !store.bundledDemos.isEmpty && store.files.isEmpty {
+                    Section {
+                        ForEach(Array(store.bundledDemos.enumerated()), id: \.element.id) { idx, file in
+                            VStack(spacing: 0) {
+                                MedFileRow(file: file, isDemo: true)
+                                    .contentShape(Rectangle())
+                                    .onTapGesture { open(file) }
+                                if idx < store.bundledDemos.count - 1 {
+                                    MedDivider().padding(.leading, 64)
+                                }
+                            }
+                            .background(Med.card)
+                        }
+                    } header: {
+                        sectionHeader(title: "VOORBEELDBESTANDEN", count: nil)
                     }
-                    .padding(.horizontal, 20)
-                    .padding(.vertical, 10)
-                    .background(Med.bg)
+                    .padding(.horizontal, 16)
+                    .padding(.top, store.files.isEmpty ? 12 : 20)
                 }
             }
             .clipShape(RoundedRectangle(cornerRadius: 12))
-            .padding(.horizontal, 16)
-            .padding(.top, 12)
         }
         .background(Med.bg)
         .refreshable { store.reload() }
+    }
+
+    private func sectionHeader(title: String, count: Int?) -> some View {
+        HStack {
+            Text(title)
+                .font(.medLabel())
+                .tracking(2)
+                .foregroundColor(Med.textSec)
+            Spacer()
+            if let n = count {
+                Text("\(n) BESTANDEN")
+                    .font(.medLabel())
+                    .tracking(1)
+                    .foregroundColor(Med.textDim)
+            }
+        }
+        .padding(.horizontal, 20)
+        .padding(.vertical, 10)
+        .background(Med.bg)
     }
 
     // MARK: Empty state
@@ -277,6 +305,7 @@ struct ContentView: View {
 
 private struct MedFileRow: View {
     let file: DICOMFileInfo
+    var isDemo: Bool = false
 
     var body: some View {
         HStack(spacing: 14) {
@@ -297,14 +326,18 @@ private struct MedFileRow: View {
 
                 HStack(spacing: 6) {
                     MedBadge(text: file.ext)
-                    Text(file.sizeHuman)
-                        .font(.medMono(11))
-                        .foregroundColor(Med.textSec)
-                    Text("·")
-                        .foregroundColor(Med.textDim)
-                    Text(file.modifiedAgo)
-                        .font(.medCaption())
-                        .foregroundColor(Med.textSec)
+                    if isDemo {
+                        MedBadge(text: "DEMO", color: Med.blue.opacity(0.7))
+                    } else {
+                        Text(file.sizeHuman)
+                            .font(.medMono(11))
+                            .foregroundColor(Med.textSec)
+                        Text("·")
+                            .foregroundColor(Med.textDim)
+                        Text(file.modifiedAgo)
+                            .font(.medCaption())
+                            .foregroundColor(Med.textSec)
+                    }
                 }
             }
 

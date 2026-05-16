@@ -63,4 +63,13 @@ final class FileStore: ObservableObject {
         try? fm.removeItem(at: file.url)
         reload()
     }
+
+    /// DICOM demo files bundled with the app, shown when the user has no own files.
+    var bundledDemos: [DICOMFileInfo] {
+        let names = ["demo_cag"]
+        return names.compactMap { name in
+            Bundle.main.url(forResource: name, withExtension: "dcm")
+                .map { DICOMFileInfo(url: $0) }
+        }
+    }
 }
