@@ -202,14 +202,28 @@ final class TipStore: ObservableObject {
     @Published var purchasing: String? = nil
     @Published var failed = false
 
+    private var updateListener: Task<Void, Never>?
+
     init() {
-        Task { await load() }
+        updateListener = Task { await listenForTransactions() }
+        Task {
+            await load()
+            await loadEntitlements()
+        }
+    }
+
+    deinit {
+        updateListener?.cancel()
     }
 
     func load() async {
         do {
             let fetched = try await Product.products(for: tipProductIDs)
-            products = fetched.sorted { $0.price < $1.price }
+            if fetched.isEmpty {
+                failed = true
+            } else {
+                products = fetched.sorted { $0.price < $1.price }
+            }
         } catch {
             failed = true
         }
@@ -220,10 +234,16 @@ final class TipStore: ObservableObject {
         defer { purchasing = nil }
         do {
             let result = try await product.purchase()
-            if case .success(let verification) = result,
-               case .verified(let tx) = verification {
-                purchased.insert(tx.productID)
-                await tx.finish()
+            switch result {
+            case .success(let verification):
+                if case .verified(let tx) = verification {
+                    purchased.insert(tx.productID)
+                    await tx.finish()
+                }
+            case .pending, .userCancelled:
+                break
+            @unknown default:
+                break
             }
         } catch {
             // Purchase cancelled or failed — no action needed
@@ -232,9 +252,25 @@ final class TipStore: ObservableObject {
 
     func restore() async {
         try? await AppStore.sync()
+        await loadEntitlements()
+    }
+
+    // Loads already-purchased non-consumable entitlements (survives reinstall via iCloud).
+    private func loadEntitlements() async {
         for await result in Transaction.currentEntitlements {
             if case .verified(let tx) = result {
                 purchased.insert(tx.productID)
+            }
+        }
+    }
+
+    // Handles transactions that arrive outside the purchase() call (e.g. Ask to Buy approval,
+    // interrupted purchases completing on relaunch, family sharing).
+    private func listenForTransactions() async {
+        for await result in Transaction.updates {
+            if case .verified(let tx) = result {
+                purchased.insert(tx.productID)
+                await tx.finish()
             }
         }
     }

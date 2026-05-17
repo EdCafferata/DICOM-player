@@ -507,7 +507,9 @@ private enum JpegLossless {
         var vals    = [Int]()
 
         mutating func build(counts: [Int], rawVals: Data, base: Int) {
-            vals = (0..<counts.reduce(0,+)).map { Int(rawVals[base + $0]) }
+            let total = counts.reduce(0, +)
+            guard base + total <= rawVals.count else { return }
+            vals = (0..<total).map { Int(rawVals[base + $0]) }
             var code = 0, idx = 0
             for b in 1...16 {
                 valOff[b] = idx - code
@@ -551,11 +553,14 @@ private enum JpegLossless {
                 var p = i
                 while p < segEnd, p < jpeg.count {
                     let th = Int(jpeg[p]) & 0x0F; p += 1
+                    guard p + 16 <= jpeg.count else { break }
                     var counts = [Int](repeating: 0, count: 16)
                     for k in 0..<16 { counts[k] = Int(jpeg[p+k]) }; p += 16
+                    let total = counts.reduce(0, +)
+                    guard p + total <= jpeg.count else { break }
                     var ht = HTable()
                     ht.build(counts: counts, rawVals: jpeg, base: p)
-                    p += counts.reduce(0, +)
+                    p += total
                     htabs[th] = ht
                 }
 
@@ -577,7 +582,8 @@ private enum JpegLossless {
             i = segEnd
         }
 
-        guard scanAt > 0, W > 0, H > 0, W <= 16384, H <= 16384 else { return nil }
+        guard scanAt > 0, W > 0, H > 0, W <= 16384, H <= 16384,
+              P >= 1, P <= 16, P > Pt else { return nil }
         let td = compTd.values.first ?? 0
         guard let ht = htabs[compTd[1] ?? td] ?? htabs[td] else { return nil }
 
@@ -605,8 +611,9 @@ private enum JpegLossless {
                 if ssss == 0 {
                     diff = 0
                 } else {
-                    let v = bits.read(ssss)
-                    diff = v >= (1 << (ssss - 1)) ? v : v - (1 << ssss) + 1
+                    let s = min(ssss, 16)   // clamp: prevents bit-shift overflow on malformed input
+                    let v = bits.read(s)
+                    diff = v >= (1 << (s - 1)) ? v : v - (1 << s) + 1
                 }
                 let idx  = row * W + col
                 let Rb   = row > 0 ? Int(out[idx - W]) : initPx

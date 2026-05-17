@@ -1,0 +1,90 @@
+{
+  "identifier" : "E4BE28D1-4434-4A75-872B-5C1634D97A37",
+  "nonConsumableProducts" : [
+    {
+      "displayPrice" : "0.99",
+      "familySharable" : false,
+      "internalID" : "64AC1C5C-4C84-4B7E-B728-F2EB36CA19D2",
+      "localizations" : [
+        {
+          "description" : "Een klein bedankje voor de ontwikkelaar",
+          "displayName" : "Koffie",
+          "locale" : "nl_NL"
+        }
+      ],
+      "productID" : "info.cafferata.dicomplayer.tip.small",
+      "referenceName" : "Koffie",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "2.99",
+      "familySharable" : false,
+      "internalID" : "A3B2C1D4-E5F6-7890-ABCD-EF1234567890",
+      "localizations" : [
+        {
+          "description" : "Een lekker stukje pizza voor de ontwikkelaar",
+          "displayName" : "Pizza",
+          "locale" : "nl_NL"
+        }
+      ],
+      "productID" : "info.cafferata.dicomplayer.tip.medium",
+      "referenceName" : "Pizza",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "9.99",
+      "familySharable" : false,
+      "internalID" : "B4C3D2E1-F0A1-B2C3-D4E5-F6A7B8C9D0E1",
+      "localizations" : [
+        {
+          "description" : "Een uitgebreid diner voor de ontwikkelaar",
+          "displayName" : "Diner",
+          "locale" : "nl_NL"
+        }
+      ],
+      "productID" : "info.cafferata.dicomplayer.tip.large",
+      "referenceName" : "Diner",
+      "type" : "NonConsumable"
+    }
+  ],
+  "nonRenewingSubscriptionProducts" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_failTransactionsEnabled" : false,
+    "_locale" : "nl_NL",
+    "_receiptEnabled" : false,
+    "_storeKitErrors" : [
+      {
+        "enabled" : false,
+        "error" : "Load Products: Failed"
+      },
+      {
+        "enabled" : false,
+        "error" : "Purchase: Failed"
+      },
+      {
+        "enabled" : false,
+        "error" : "Purchase: Purchas Not Allowed"
+      },
+      {
+        "enabled" : false,
+        "error" : "Purchase: Payment Cancelled"
+      },
+      {
+        "enabled" : false,
+        "error" : "Restore Purchases: Failed"
+      }
+    ]
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 2,
+    "minor" : 0
+  }
+}

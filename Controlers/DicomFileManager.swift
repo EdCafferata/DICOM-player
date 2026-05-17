@@ -34,6 +34,8 @@ final class FileStore: ObservableObject {
         defer { if accessed { url.stopAccessingSecurityScopedResource() } }
 
         var dest = docsURL.appendingPathComponent(url.lastPathComponent)
+        // Guard against path traversal (e.g. a filename of "..").
+        guard dest.path.hasPrefix(docsURL.path) else { return }
         // Avoid collisions
         var counter = 1
         while fm.fileExists(atPath: dest.path) {
