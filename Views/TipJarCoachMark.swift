@@ -7,9 +7,9 @@ struct TipJarCoachMark: View {
     @State private var pulse = false
     @State private var arrowBounce = false
 
-    // Hart zit op: X = W - 84, Y = safeAreaInset + 34
+    // Hart zit op: X = W - 84, Y = safeAreaInset + 44
     private let heartOffsetFromRight: CGFloat = 84
-    private let heartOffsetFromTop:   CGFloat = 34
+    private let heartOffsetFromTop:   CGFloat = 44
 
     var body: some View {
         GeometryReader { geo in
@@ -81,7 +81,7 @@ struct TipJarCoachMark: View {
             .frame(maxWidth: .infinity, alignment: .trailing)
             .padding(.trailing, heartOffsetFromRight)
             .padding(.top, geo.safeAreaInsets.top + heartOffsetFromTop + 6)
-            .offset(y: arrowBounce ? -5 : 0)
+            .offset(y: arrowBounce ? 6 : 0)
             .allowsHitTesting(false)
     }
 
