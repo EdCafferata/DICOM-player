@@ -80,20 +80,22 @@ struct TipJarView: View {
                 }
                 .padding(.top, 28)
 
-                // Tip opties
+                // Tip opties — altijd alle 3 zichtbaar
+                // StoreKit-product als het geladen is, anders fallback rij
                 VStack(spacing: 10) {
                     if store.products.isEmpty && !store.failed {
                         ProgressView()
                             .tint(Med.accent)
                             .padding(.vertical, 30)
-                    } else if store.products.isEmpty {
-                        // Fallback: StoreKit niet beschikbaar (producten nog niet goedgekeurd)
-                        ForEach(fallbackProducts, id: \.id) { fb in
-                            FallbackTipButton(item: fb, store: store)
-                        }
                     } else {
-                        ForEach(store.products, id: \.id) { product in
-                            TipButton(product: product, isPurchased: store.purchased.contains(product.id), store: store)
+                        ForEach(fallbackProducts, id: \.id) { fb in
+                            if let product = store.products.first(where: { $0.id == fb.id }) {
+                                TipButton(product: product,
+                                          isPurchased: store.purchased.contains(product.id),
+                                          store: store)
+                            } else {
+                                FallbackTipButton(item: fb, store: store)
+                            }
                         }
                     }
                 }
