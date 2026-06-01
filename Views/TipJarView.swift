@@ -140,14 +140,12 @@ private struct TipButton: View {
             Task { await store.purchase(product) }
         } label: {
             HStack(spacing: 14) {
-                // Gekleurde cirkel met letter — rendeert altijd goed
-                ZStack {
+                        ZStack {
                     Circle()
                         .fill(iconColor)
                         .frame(width: 44, height: 44)
-                    Text(iconLetter)
-                        .font(.system(size: 20, weight: .bold, design: .rounded))
-                        .foregroundColor(.white)
+                    Text(emoji)
+                        .font(.system(size: 22))
                 }
 
                 VStack(alignment: .leading, spacing: 2) {
@@ -188,12 +186,12 @@ private struct TipButton: View {
         .disabled(store.purchasing != nil)
     }
 
-    private var iconLetter: String {
+    private var emoji: String {
         switch true {
-        case product.id.hasSuffix(".small"):  return "K"
-        case product.id.hasSuffix(".medium"): return "L"
-        case product.id.hasSuffix(".large"):  return "D"
-        default: return "♥"
+        case product.id.hasSuffix(".small"):  return "☕"
+        case product.id.hasSuffix(".medium"): return "🍕"
+        case product.id.hasSuffix(".large"):  return "🍽️"
+        default: return "💙"
         }
     }
 

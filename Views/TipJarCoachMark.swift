@@ -7,22 +7,23 @@ struct TipJarCoachMark: View {
     @State private var pulse = false
     @State private var arrowBounce = false
 
+    // Hart zit op: X = W - 84, Y = safeAreaInset + 34
+    private let heartOffsetFromRight: CGFloat = 84
+    private let heartOffsetFromTop:   CGFloat = 34
+
     var body: some View {
         GeometryReader { geo in
             ZStack {
-                // Heel scherm klikbaar → sluit overlay
                 Color.black.opacity(0.72)
                     .ignoresSafeArea()
 
-                // Spotlight rond het hartje
                 spotlightCutout(geo: geo)
                     .allowsHitTesting(false)
 
-                // Pijl + tekst + knoppen
                 VStack(spacing: 0) {
-                    arrowLabel(geo: geo)
+                    arrowSection(geo: geo)
                     Spacer()
-                    bottomButtons
+                    donateButtons
                 }
                 .allowsHitTesting(true)
             }
@@ -41,100 +42,98 @@ struct TipJarCoachMark: View {
         }
     }
 
-    // MARK: Spotlight
+    // MARK: Spotlight — ring precies rond het hartje
 
     private func spotlightCutout(geo: GeometryProxy) -> some View {
-        let heartCY = geo.safeAreaInsets.top + 56
-        let r: CGFloat = 28
+        let hx = geo.size.width  - heartOffsetFromRight
+        let hy = geo.safeAreaInsets.top + heartOffsetFromTop
+        let r:  CGFloat = 26
 
-        return Canvas { ctx, size in
-            let heartCX = size.width - 56
-            let ring = Path(ellipseIn: CGRect(x: heartCX-r, y: heartCY-r, width: r*2, height: r*2))
+        return Canvas { ctx, _ in
+            let ring = Path(ellipseIn: CGRect(x: hx-r, y: hy-r, width: r*2, height: r*2))
             ctx.stroke(ring, with: .color(.white.opacity(0.9)), lineWidth: 2.5)
 
-            let glow = Path(ellipseIn: CGRect(x: heartCX-r-8, y: heartCY-r-8,
-                                              width: (r+8)*2, height: (r+8)*2))
+            let glow = Path(ellipseIn: CGRect(x: hx-r-9, y: hy-r-9,
+                                              width: (r+9)*2, height: (r+9)*2))
             ctx.stroke(glow,
-                       with: .color(Color(red: 0.8, green: 0.1, blue: 0.1).opacity(pulse ? 0.6 : 0.2)),
+                       with: .color(Color(red: 0.8, green: 0.1, blue: 0.1).opacity(pulse ? 0.55 : 0.15)),
                        lineWidth: pulse ? 3 : 1.5)
         }
     }
 
-    // MARK: Pijl + label
+    // MARK: Pijl — tip wijst naar het hartje
 
-    private func arrowLabel(geo: GeometryProxy) -> some View {
-        VStack(alignment: .trailing, spacing: 8) {
-            // Tekstblok
-            VStack(alignment: .trailing, spacing: 6) {
-                Text("Steun de ontwikkelaar")
-                    .font(.system(size: 22, weight: .bold, design: .rounded))
-                    .foregroundColor(.white)
-                Text("Deze app is gratis.\nEen kleine bijdrage helpt enorm.")
-                    .font(.system(size: 15, weight: .regular, design: .rounded))
-                    .foregroundColor(.white.opacity(0.75))
-                    .multilineTextAlignment(.trailing)
-            }
-            .padding(.horizontal, 20)
-            .padding(.vertical, 14)
-            .background(
-                RoundedRectangle(cornerRadius: 14)
-                    .fill(Color(red: 0.09, green: 0.14, blue: 0.22).opacity(0.95))
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 14)
-                            .stroke(Color(red: 0.8, green: 0.1, blue: 0.1).opacity(0.4), lineWidth: 1)
-                    )
+    private func arrowSection(geo: GeometryProxy) -> some View {
+        // padding(.trailing, heartOffsetFromRight + 4) → arrowhead.X = W - 84 ✓
+        // padding(.top,      heartOffsetFromTop + 6)  → arrowhead.Y ≈ safeArea + 34 ✓
+        CurvedArrow()
+            .stroke(
+                Color(red: 0.8, green: 0.1, blue: 0.1),
+                style: StrokeStyle(lineWidth: 3, lineCap: .round, lineJoin: .round)
             )
-            .padding(.trailing, 16)
-
-            // Gebogen pijl omhoog naar het hartje
-            CurvedArrow()
-                .stroke(
-                    Color(red: 0.8, green: 0.1, blue: 0.1),
-                    style: StrokeStyle(lineWidth: 3, lineCap: .round, lineJoin: .round)
-                )
-                .frame(width: 52, height: 70)
-                .overlay(alignment: .topTrailing) {
-                    Image(systemName: "arrowshape.up.fill")
-                        .font(.system(size: 16, weight: .bold))
-                        .foregroundColor(Color(red: 0.8, green: 0.1, blue: 0.1))
-                        .offset(x: 4, y: -6)
-                }
-                .padding(.trailing, 52)
-                .offset(y: arrowBounce ? -6 : 0)
-                .allowsHitTesting(false)
-        }
-        .frame(maxWidth: .infinity, alignment: .trailing)
-        .padding(.top, geo.safeAreaInsets.top + 100)
+            .frame(width: 52, height: 80)
+            .overlay(alignment: .topTrailing) {
+                Image(systemName: "arrowshape.up.fill")
+                    .font(.system(size: 16, weight: .bold))
+                    .foregroundColor(Color(red: 0.8, green: 0.1, blue: 0.1))
+                    .offset(x: 4, y: -6)
+            }
+            .frame(maxWidth: .infinity, alignment: .trailing)
+            .padding(.trailing, heartOffsetFromRight)
+            .padding(.top, geo.safeAreaInsets.top + heartOffsetFromTop + 6)
+            .offset(y: arrowBounce ? -5 : 0)
+            .allowsHitTesting(false)
     }
 
-    // MARK: Koffie-knop + sluiten hint
+    // MARK: Drie donate knoppen onderin
 
-    private var bottomButtons: some View {
-        VStack(spacing: 16) {
-            // Koffie donatie knop
-            Button {
-                dismiss()
-                onDonate?()
-            } label: {
-                HStack(spacing: 10) {
-                    Text("☕")
-                        .font(.system(size: 20))
-                    Text("Koffie trakteren — € 0,99")
-                        .font(.system(size: 16, weight: .semibold, design: .rounded))
+    private var donateButtons: some View {
+        VStack(spacing: 12) {
+            ForEach(tipOptions, id: \.id) { opt in
+                Button {
+                    dismiss()
+                    onDonate?()
+                } label: {
+                    HStack(spacing: 14) {
+                        ZStack {
+                            Circle().fill(opt.color).frame(width: 42, height: 42)
+                            Text(opt.emoji)
+                                .font(.system(size: 22))
+                        }
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text(opt.naam)
+                                .font(.system(size: 16, weight: .semibold, design: .rounded))
+                                .foregroundColor(.white)
+                            Text(opt.omschrijving)
+                                .font(.system(size: 13, design: .rounded))
+                                .foregroundColor(.white.opacity(0.6))
+                        }
+                        Spacer()
+                        Text(opt.prijs)
+                            .font(.system(size: 15, weight: .bold, design: .rounded))
+                            .foregroundColor(Color(red: 0.08, green: 0.14, blue: 0.26))
+                            .padding(.horizontal, 14)
+                            .padding(.vertical, 7)
+                            .background(Color(red: 0, green: 0.76, blue: 0.8))
+                            .clipShape(Capsule())
+                    }
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 12)
+                    .background(Color(red: 0.09, green: 0.14, blue: 0.22).opacity(0.95))
+                    .clipShape(RoundedRectangle(cornerRadius: 14))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 14)
+                            .stroke(Color(red: 0.8, green: 0.1, blue: 0.1).opacity(0.3), lineWidth: 1)
+                    )
                 }
-                .foregroundColor(Color(red: 0.08, green: 0.14, blue: 0.26))
-                .padding(.horizontal, 28)
-                .padding(.vertical, 14)
-                .background(Color(red: 0, green: 0.76, blue: 0.8))
-                .clipShape(Capsule())
-                .shadow(color: Color(red: 0, green: 0.76, blue: 0.8).opacity(0.4), radius: 12, y: 4)
             }
 
-            // Sluiten hint
             Text("of tik ergens om te sluiten")
-                .font(.system(size: 13, weight: .regular, design: .rounded))
-                .foregroundColor(.white.opacity(0.4))
+                .font(.system(size: 13, design: .rounded))
+                .foregroundColor(.white.opacity(0.35))
+                .padding(.top, 4)
         }
+        .padding(.horizontal, 20)
         .padding(.bottom, 52)
     }
 
@@ -144,6 +143,29 @@ struct TipJarCoachMark: View {
         }
     }
 }
+
+// MARK: - Tip opties (hardcoded, matchen App Store Connect)
+
+private struct TipOption: Identifiable {
+    let id: String
+    let emoji: String
+    let naam: String
+    let prijs: String
+    let omschrijving: String
+    let color: Color
+}
+
+private let tipOptions: [TipOption] = [
+    TipOption(id: "small",  emoji: "☕", naam: "Koffie", prijs: "€ 0,99",
+              omschrijving: "Kleine bijdrage, grote glimlach",
+              color: Color(red: 0.71, green: 0.47, blue: 0.24)),
+    TipOption(id: "medium", emoji: "🍕", naam: "Lunch",  prijs: "€ 2,99",
+              omschrijving: "Houd de ontwikkelaar goed gevoed",
+              color: Color(red: 0.86, green: 0.31, blue: 0.20)),
+    TipOption(id: "large",  emoji: "🍽️", naam: "Diner",  prijs: "€ 9,99",
+              omschrijving: "Echt waardevol — hartstikke bedankt!",
+              color: Color(red: 0.24, green: 0.63, blue: 0.47)),
+]
 
 // MARK: - Gebogen pijl shape
 
