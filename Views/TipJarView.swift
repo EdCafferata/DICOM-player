@@ -86,12 +86,11 @@ struct TipJarView: View {
                         ProgressView()
                             .tint(Med.accent)
                             .padding(.vertical, 30)
-                    } else if store.failed {
-                        Text("Kan producten niet laden.\nControleer je internetverbinding.")
-                            .font(.medCaption())
-                            .foregroundColor(Med.textSec)
-                            .multilineTextAlignment(.center)
-                            .padding(.vertical, 20)
+                    } else if store.products.isEmpty {
+                        // Fallback: StoreKit niet beschikbaar (producten nog niet goedgekeurd)
+                        ForEach(fallbackProducts, id: \.id) { fb in
+                            FallbackTipButton(item: fb, store: store)
+                        }
                     } else {
                         ForEach(store.products, id: \.id) { product in
                             TipButton(product: product, isPurchased: store.purchased.contains(product.id), store: store)
@@ -124,6 +123,76 @@ struct TipJarView: View {
                 .padding(.bottom, 28)
             }
         }
+    }
+}
+
+// MARK: - Fallback producten (zichtbaar als StoreKit nog niet geladen)
+
+private struct FallbackItem: Identifiable {
+    let id: String
+    let emoji: String
+    let naam: String
+    let prijs: String
+    let beschrijving: String
+    let iconColor: Color
+}
+
+private let fallbackProducts: [FallbackItem] = [
+    FallbackItem(id: "info.cafferata.dicomplayer.tip.small",
+                 emoji: "☕", naam: "Koffie", prijs: "€ 0,99",
+                 beschrijving: "Een klein bedankje voor de ontwikkelaar",
+                 iconColor: Color(red: 0.71, green: 0.47, blue: 0.24)),
+    FallbackItem(id: "info.cafferata.dicomplayer.tip.medium",
+                 emoji: "🍕", naam: "Lunch",  prijs: "€ 2,99",
+                 beschrijving: "Houd de ontwikkelaar goed gevoed",
+                 iconColor: Color(red: 0.86, green: 0.31, blue: 0.20)),
+    FallbackItem(id: "info.cafferata.dicomplayer.tip.large",
+                 emoji: "🍽️", naam: "Diner",  prijs: "€ 9,99",
+                 beschrijving: "Een uitgebreid diner voor de ontwikkelaar",
+                 iconColor: Color(red: 0.24, green: 0.63, blue: 0.47)),
+]
+
+private struct FallbackTipButton: View {
+    let item: FallbackItem
+    let store: TipStore
+
+    var body: some View {
+        Button {
+            Task { await store.purchaseByID(item.id) }
+        } label: {
+            HStack(spacing: 14) {
+                ZStack {
+                    Circle().fill(item.iconColor).frame(width: 44, height: 44)
+                    Text(item.emoji).font(.system(size: 22))
+                }
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(item.naam)
+                        .font(.medBody())
+                        .foregroundColor(Med.textPri)
+                    Text(item.beschrijving)
+                        .font(.medCaption())
+                        .foregroundColor(Med.textSec)
+                }
+                Spacer()
+                if store.purchasing == item.id {
+                    ProgressView().tint(Med.accent).scaleEffect(0.85)
+                } else {
+                    Text(item.prijs)
+                        .font(.medBody())
+                        .foregroundColor(Med.bg)
+                        .padding(.horizontal, 14)
+                        .padding(.vertical, 7)
+                        .background(Med.accent)
+                        .clipShape(Capsule())
+                }
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 14)
+            .background(Med.card)
+            .clipShape(RoundedRectangle(cornerRadius: 12))
+            .overlay(RoundedRectangle(cornerRadius: 12).stroke(Med.border, lineWidth: 0.5))
+        }
+        .disabled(store.purchasing != nil)
     }
 }
 
@@ -239,6 +308,13 @@ final class TipStore: ObservableObject {
         } catch {
             failed = true
         }
+    }
+
+    func purchaseByID(_ productID: String) async {
+        // Probeer product opnieuw te laden als het nog niet beschikbaar was
+        if products.isEmpty { await load() }
+        guard let product = products.first(where: { $0.id == productID }) else { return }
+        await purchase(product)
     }
 
     func purchase(_ product: Product) async {
