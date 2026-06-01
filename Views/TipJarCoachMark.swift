@@ -2,27 +2,32 @@ import SwiftUI
 
 struct TipJarCoachMark: View {
     @Binding var isShowing: Bool
+    var onDonate: (() -> Void)? = nil
+
     @State private var pulse = false
     @State private var arrowBounce = false
 
     var body: some View {
         GeometryReader { geo in
             ZStack {
-                // Donkere achtergrond
+                // Heel scherm klikbaar → sluit overlay
                 Color.black.opacity(0.72)
                     .ignoresSafeArea()
-                    .onTapGesture { dismiss() }
 
-                // Spotlight rond het hartje (rechtsboven)
+                // Spotlight rond het hartje
                 spotlightCutout(geo: geo)
+                    .allowsHitTesting(false)
 
-                // Pijl + tekst
+                // Pijl + tekst + knoppen
                 VStack(spacing: 0) {
                     arrowLabel(geo: geo)
                     Spacer()
-                    dismissHint
+                    bottomButtons
                 }
+                .allowsHitTesting(true)
             }
+            .contentShape(Rectangle())
+            .onTapGesture { dismiss() }
         }
         .ignoresSafeArea()
         .transition(.opacity)
@@ -39,7 +44,6 @@ struct TipJarCoachMark: View {
     // MARK: Spotlight
 
     private func spotlightCutout(geo: GeometryProxy) -> some View {
-        // Positie van het hartje: 56pt van rechts, ~56pt van top (header hoogte ~68)
         let heartCY = geo.safeAreaInsets.top + 56
         let r: CGFloat = 28
 
@@ -50,7 +54,8 @@ struct TipJarCoachMark: View {
 
             let glow = Path(ellipseIn: CGRect(x: heartCX-r-8, y: heartCY-r-8,
                                               width: (r+8)*2, height: (r+8)*2))
-            ctx.stroke(glow, with: .color(Color(red: 0.8, green: 0.1, blue: 0.1).opacity(pulse ? 0.6 : 0.2)),
+            ctx.stroke(glow,
+                       with: .color(Color(red: 0.8, green: 0.1, blue: 0.1).opacity(pulse ? 0.6 : 0.2)),
                        lineWidth: pulse ? 3 : 1.5)
         }
     }
@@ -58,11 +63,8 @@ struct TipJarCoachMark: View {
     // MARK: Pijl + label
 
     private func arrowLabel(geo: GeometryProxy) -> some View {
-        let cx = geo.size.width - 56
-        let topInset = geo.safeAreaInsets.top
-
-        return VStack(alignment: .trailing, spacing: 8) {
-            // Tekst blok
+        VStack(alignment: .trailing, spacing: 8) {
+            // Tekstblok
             VStack(alignment: .trailing, spacing: 6) {
                 Text("Steun de ontwikkelaar")
                     .font(.system(size: 22, weight: .bold, design: .rounded))
@@ -92,7 +94,6 @@ struct TipJarCoachMark: View {
                 )
                 .frame(width: 52, height: 70)
                 .overlay(alignment: .topTrailing) {
-                    // Pijlpunt
                     Image(systemName: "arrowshape.up.fill")
                         .font(.system(size: 16, weight: .bold))
                         .foregroundColor(Color(red: 0.8, green: 0.1, blue: 0.1))
@@ -100,25 +101,41 @@ struct TipJarCoachMark: View {
                 }
                 .padding(.trailing, 52)
                 .offset(y: arrowBounce ? -6 : 0)
+                .allowsHitTesting(false)
         }
         .frame(maxWidth: .infinity, alignment: .trailing)
-        .padding(.top, topInset + 100)
+        .padding(.top, geo.safeAreaInsets.top + 100)
     }
 
-    // MARK: Onderin tikken om te sluiten
+    // MARK: Koffie-knop + sluiten hint
 
-    private var dismissHint: some View {
-        Button(action: dismiss) {
-            HStack(spacing: 8) {
-                Image(systemName: "hand.tap")
-                    .font(.system(size: 14))
-                Text("TIK OM TE SLUITEN")
-                    .font(.system(size: 12, weight: .semibold, design: .rounded))
-                    .tracking(1.5)
+    private var bottomButtons: some View {
+        VStack(spacing: 16) {
+            // Koffie donatie knop
+            Button {
+                dismiss()
+                onDonate?()
+            } label: {
+                HStack(spacing: 10) {
+                    Text("☕")
+                        .font(.system(size: 20))
+                    Text("Koffie trakteren — € 0,99")
+                        .font(.system(size: 16, weight: .semibold, design: .rounded))
+                }
+                .foregroundColor(Color(red: 0.08, green: 0.14, blue: 0.26))
+                .padding(.horizontal, 28)
+                .padding(.vertical, 14)
+                .background(Color(red: 0, green: 0.76, blue: 0.8))
+                .clipShape(Capsule())
+                .shadow(color: Color(red: 0, green: 0.76, blue: 0.8).opacity(0.4), radius: 12, y: 4)
             }
-            .foregroundColor(.white.opacity(0.45))
-            .padding(.bottom, 40)
+
+            // Sluiten hint
+            Text("of tik ergens om te sluiten")
+                .font(.system(size: 13, weight: .regular, design: .rounded))
+                .foregroundColor(.white.opacity(0.4))
         }
+        .padding(.bottom, 52)
     }
 
     private func dismiss() {
@@ -133,7 +150,6 @@ struct TipJarCoachMark: View {
 private struct CurvedArrow: Shape {
     func path(in rect: CGRect) -> Path {
         var p = Path()
-        // Begint rechtsonder, buigt naar linksboven
         p.move(to: CGPoint(x: rect.maxX - 4, y: rect.maxY))
         p.addCurve(
             to:        CGPoint(x: rect.minX + 8, y: rect.minY + 16),

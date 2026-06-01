@@ -60,7 +60,7 @@ struct ContentView: View {
         }
         .overlay {
             if showCoachMark {
-                TipJarCoachMark(isShowing: $showCoachMark)
+                TipJarCoachMark(isShowing: $showCoachMark, onDonate: { showTipJar = true })
                     .zIndex(100)
             }
         }
