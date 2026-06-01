@@ -140,9 +140,15 @@ private struct TipButton: View {
             Task { await store.purchase(product) }
         } label: {
             HStack(spacing: 14) {
-                Text(emoji)
-                    .font(.system(size: 24))
-                    .frame(width: 40)
+                // Gekleurde cirkel met letter — rendeert altijd goed
+                ZStack {
+                    Circle()
+                        .fill(iconColor)
+                        .frame(width: 44, height: 44)
+                    Text(iconLetter)
+                        .font(.system(size: 20, weight: .bold, design: .rounded))
+                        .foregroundColor(.white)
+                }
 
                 VStack(alignment: .leading, spacing: 2) {
                     Text(product.displayName)
@@ -166,12 +172,11 @@ private struct TipButton: View {
                 } else {
                     Text(product.displayPrice)
                         .font(.medBody())
-                        .foregroundColor(Med.accent)
-                        .padding(.horizontal, 12)
-                        .padding(.vertical, 6)
-                        .background(Med.accent.opacity(0.12))
+                        .foregroundColor(Med.bg)
+                        .padding(.horizontal, 14)
+                        .padding(.vertical, 7)
+                        .background(Med.accent)
                         .clipShape(Capsule())
-                        .overlay(Capsule().stroke(Med.accent.opacity(0.3), lineWidth: 0.5))
                 }
             }
             .padding(.horizontal, 16)
@@ -183,12 +188,21 @@ private struct TipButton: View {
         .disabled(store.purchasing != nil)
     }
 
-    private var emoji: String {
-        switch product.id {
-        case _ where product.id.hasSuffix(".small"):  return "☕"
-        case _ where product.id.hasSuffix(".medium"): return "🍕"
-        case _ where product.id.hasSuffix(".large"):  return "🍽️"
-        default: return "💙"
+    private var iconLetter: String {
+        switch true {
+        case product.id.hasSuffix(".small"):  return "K"
+        case product.id.hasSuffix(".medium"): return "L"
+        case product.id.hasSuffix(".large"):  return "D"
+        default: return "♥"
+        }
+    }
+
+    private var iconColor: Color {
+        switch true {
+        case product.id.hasSuffix(".small"):  return Color(red: 0.71, green: 0.47, blue: 0.24)
+        case product.id.hasSuffix(".medium"): return Color(red: 0.86, green: 0.31, blue: 0.20)
+        case product.id.hasSuffix(".large"):  return Color(red: 0.24, green: 0.63, blue: 0.47)
+        default: return Med.accent
         }
     }
 }
