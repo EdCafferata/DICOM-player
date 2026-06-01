@@ -15,6 +15,8 @@ struct ContentView: View {
     @State private var fileToDelete: DICOMFileInfo?
     @State private var showTipJar = false
     @AppStorage("demosHidden") private var demosHidden = false
+    @AppStorage("tipJarCoachMarkShown") private var coachMarkShown = false
+    @State private var showCoachMark = false
 
     var body: some View {
         ZStack {
@@ -55,6 +57,20 @@ struct ContentView: View {
         }
         .overlay {
             if isParsing { loadingOverlay }
+        }
+        .overlay {
+            if showCoachMark {
+                TipJarCoachMark(isShowing: $showCoachMark)
+                    .zIndex(100)
+            }
+        }
+        .onAppear {
+            if !coachMarkShown {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+                    withAnimation { showCoachMark = true }
+                    coachMarkShown = true
+                }
+            }
         }
         .alert("Bestand verwijderen?", isPresented: .init(
             get: { fileToDelete != nil },
