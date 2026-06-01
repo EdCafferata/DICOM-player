@@ -9,7 +9,7 @@ struct TipJarCoachMark: View {
 
     // Hart zit op: X = W - 84, Y = safeAreaInset + 44
     private let heartOffsetFromRight: CGFloat = 84
-    private let heartOffsetFromTop:   CGFloat = 44
+    private let heartOffsetFromTop:   CGFloat = 85
 
     var body: some View {
         GeometryReader { geo in
