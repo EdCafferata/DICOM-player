@@ -162,6 +162,37 @@ struct ContentView: View {
     private var fileList: some View {
         ScrollView {
             LazyVStack(spacing: 0, pinnedViews: [.sectionHeaders]) {
+                // Laatst geopend (max 5)
+                if !store.recent.isEmpty {
+                    Section {
+                        ForEach(Array(store.recent.enumerated()), id: \.element.id) { idx, file in
+                            VStack(spacing: 0) {
+                                MedFileRow(file: file, isDemo: false)
+                                    .contentShape(Rectangle())
+                                    .onTapGesture { open(file) }
+                                if idx < store.recent.count - 1 {
+                                    MedDivider().padding(.leading, 64)
+                                }
+                            }
+                            .background(Med.card)
+                        }
+                    } header: {
+                        HStack {
+                            Text("LAATST GEOPEND")
+                                .font(.medLabel())
+                                .tracking(2)
+                                .foregroundColor(Med.textSec)
+                            Spacer()
+                            Image(systemName: "clock.arrow.circlepath")
+                                .font(.system(size: 11))
+                                .foregroundColor(Med.textDim)
+                        }
+                        .padding(.horizontal, 20)
+                        .padding(.vertical, 10)
+                        .background(Med.bg)
+                    }
+                }
+
                 Section {
                     // Zolang het groeperen nog loopt: platte bestandslijst
                     let groepen = store.series.isEmpty
@@ -353,6 +384,7 @@ struct ContentView: View {
     /// Opent een hele serie: parst elk bestand (in instance-volgorde) en
     /// plakt alle frames achter elkaar — de viewer toont ze met slider/cine.
     private func openSeries(_ groep: SeriesGroup) {
+        if let eerste = groep.files.first { store.registreerOpening(eerste.url) }
         isParsing = true
         Task.detached(priority: .userInitiated) {
             var alleFrames: [CGImage] = []
@@ -381,6 +413,7 @@ struct ContentView: View {
     }
 
     private func open(_ file: DICOMFileInfo) {
+        store.registreerOpening(file.url)
         selectedInfo = file
         isParsing    = true
         Task.detached(priority: .userInitiated) {

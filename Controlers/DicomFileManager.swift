@@ -16,6 +16,10 @@ struct SeriesGroup: Identifiable {
 final class FileStore: ObservableObject {
     @Published var files: [DICOMFileInfo] = []
     @Published var series: [SeriesGroup] = []
+    @Published var recent: [DICOMFileInfo] = []
+
+    private let recentKey = "recentGeopend"
+    private let maxRecent = 5
 
     static let shared = FileStore()
 
@@ -41,6 +45,26 @@ final class FileStore: ObservableObject {
             .sorted { $0.modifiedDate > $1.modifiedDate }
 
         groepeerSeries(files)
+        herlaadRecent()
+    }
+
+    // MARK: Recent geopend (laatste 5)
+
+    /// Registreert dat een bestand geopend is; bewaart alleen bestandsnamen
+    /// (geen paden — de Documents-map verhuist tussen app-updates).
+    func registreerOpening(_ url: URL) {
+        var namen = UserDefaults.standard.stringArray(forKey: recentKey) ?? []
+        namen.removeAll { $0 == url.lastPathComponent }
+        namen.insert(url.lastPathComponent, at: 0)
+        UserDefaults.standard.set(Array(namen.prefix(maxRecent)), forKey: recentKey)
+        herlaadRecent()
+    }
+
+    private func herlaadRecent() {
+        let namen = UserDefaults.standard.stringArray(forKey: recentKey) ?? []
+        recent = namen.compactMap { naam in
+            files.first { $0.url.lastPathComponent == naam }
+        }
     }
 
     /// Groepeert bestanden op Series Instance UID (achtergrond-thread; alleen
