@@ -13,6 +13,16 @@ struct ParsedDICOM {
     let windowWidth: Double
 }
 
+/// Lichtgewicht header-info voor de Series navigator — leest géén pixeldata,
+/// zodat een hele map snel gegroepeerd kan worden.
+struct DICOMHeader {
+    let patientName: String
+    let modality: String
+    let seriesUID: String          // (0020,000E) Series Instance UID
+    let seriesDescription: String  // (0008,103E)
+    let instanceNumber: Int        // (0020,0013) — volgorde binnen de serie
+}
+
 enum DICOMError: LocalizedError {
     case notDICOM
     case missingPixelData
@@ -248,6 +258,94 @@ struct DICOMParser {
             frames: frames,
             windowCenter: windowCenter,
             windowWidth: windowWidth
+        )
+    }
+
+    // MARK: - Header-only parse (Series navigator)
+
+    /// Leest alleen de metadata-tags die nodig zijn om series te groeperen.
+    /// Stopt vóór de pixeldata, dus dit is snel genoeg om bij elke reload
+    /// over alle bestanden te draaien.
+    static func parseHeader(url: URL) -> DICOMHeader? {
+        guard let data = try? Data(contentsOf: url, options: .mappedIfSafe),
+              data.count > 132,
+              data[128] == 0x44, data[129] == 0x49,
+              data[130] == 0x43, data[131] == 0x4D
+        else { return nil }
+
+        let r = ByteReader(data, offset: 132)
+
+        var transferSyntax = "1.2.840.10008.1.2.1"
+        var patientName = "", modality = ""
+        var seriesUID = "", seriesDescription = ""
+        var instanceNumber = 0
+        var explicitVR = true
+        var metaDone = false
+
+        while !r.isAtEnd {
+            guard let group = r.readU16(), let element = r.readU16() else { break }
+            if group == 0xFFFE { r.skip(4); continue }
+
+            if group > 0x0002 && !metaDone {
+                metaDone = true
+                explicitVR = transferSyntax != "1.2.840.10008.1.2"
+            }
+            // Alles wat we nodig hebben zit vóór groep 0028 — daarna stoppen.
+            if metaDone && group > 0x0020 { break }
+
+            let vr: String
+            let valueLen: UInt32
+            if explicitVR || group == 0x0002 {
+                guard let vrData = r.readBytes(2) else { break }
+                vr = String(data: vrData, encoding: .ascii) ?? "UN"
+                if ["OB","OD","OF","OL","OV","OW","SQ","UC","UN","UR","UT","SV","UV"].contains(vr) {
+                    r.skip(2)
+                    guard let l = r.readU32() else { break }
+                    valueLen = l
+                } else {
+                    guard let l = r.readU16() else { break }
+                    valueLen = UInt32(l)
+                }
+            } else {
+                vr = Self.implicitVR(group: group, element: element)
+                guard let l = r.readU32() else { break }
+                valueLen = l
+            }
+
+            let undefined = valueLen == 0xFFFFFFFF
+            if vr == "SQ" || undefined {
+                if undefined { Self.skipToDelimiter(r, explicit: explicitVR) }
+                else { r.skip(Int(valueLen)) }
+                continue
+            }
+
+            let len = Int(valueLen)
+            let tag = (UInt32(group) << 16) | UInt32(element)
+            switch tag {
+            case 0x00020010:
+                let s = r.readASCII(len)
+                if !s.isEmpty { transferSyntax = s }
+            case 0x00100010:
+                if let d = r.readBytes(len) {
+                    patientName = (String(data: d, encoding: .utf8) ?? "")
+                        .trimmingCharacters(in: .whitespacesAndNewlines)
+                        .replacingOccurrences(of: "^", with: " ")
+                        .trimmingCharacters(in: .whitespaces)
+                }
+            case 0x00080060: modality = r.readASCII(len)
+            case 0x0008103E: seriesDescription = r.readASCII(len)
+            case 0x0020000E: seriesUID = r.readASCII(len)
+            case 0x00200013: instanceNumber = Int(r.readASCII(len)) ?? 0
+            default: r.skip(len)
+            }
+        }
+
+        return DICOMHeader(
+            patientName: patientName,
+            modality: modality,
+            seriesUID: seriesUID,
+            seriesDescription: seriesDescription,
+            instanceNumber: instanceNumber
         )
     }
 

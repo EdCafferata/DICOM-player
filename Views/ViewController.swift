@@ -13,6 +13,7 @@ struct ContentView: View {
     @State private var errorMessage: String?
     @State private var shareFile: DICOMFileInfo?
     @State private var fileToDelete: DICOMFileInfo?
+    @State private var seriesToDelete: SeriesGroup?
     @State private var showTipJar = false
     @AppStorage("demosHidden") private var demosHidden = false
     @AppStorage("tipJarCoachMarkShown") private var coachMarkShown = false
@@ -84,6 +85,18 @@ struct ContentView: View {
         } message: {
             Text("\(fileToDelete?.name ?? "") wordt permanent verwijderd.")
         }
+        .alert("Serie verwijderen?", isPresented: .init(
+            get: { seriesToDelete != nil },
+            set: { if !$0 { seriesToDelete = nil } }
+        )) {
+            Button("Verwijder", role: .destructive) {
+                if let s = seriesToDelete { s.files.forEach { store.delete($0) } }
+                seriesToDelete = nil
+            }
+            Button("Annuleer", role: .cancel) { seriesToDelete = nil }
+        } message: {
+            Text("\(seriesToDelete?.description ?? "") — \(seriesToDelete?.files.count ?? 0) bestanden worden permanent verwijderd.")
+        }
         .alert("Bestand niet ondersteund", isPresented: .init(
             get: { errorMessage != nil },
             set: { if !$0 { errorMessage = nil } }
@@ -150,24 +163,41 @@ struct ContentView: View {
         ScrollView {
             LazyVStack(spacing: 0, pinnedViews: [.sectionHeaders]) {
                 Section {
-                    ForEach(Array(store.files.enumerated()), id: \.element.id) { idx, file in
+                    // Zolang het groeperen nog loopt: platte bestandslijst
+                    let groepen = store.series.isEmpty
+                        ? store.files.map { SeriesGroup(id: $0.url.path, description: $0.name, modality: "", files: [$0]) }
+                        : store.series
+                    ForEach(Array(groepen.enumerated()), id: \.element.id) { idx, groep in
                         VStack(spacing: 0) {
-                            MedFileRow(file: file, isDemo: false)
-                                .contentShape(Rectangle())
-                                .onTapGesture { open(file) }
-                                .contextMenu {
-                                    Button {
-                                        shareFile = file
-                                    } label: {
-                                        Label("Deel", systemImage: "square.and.arrow.up")
+                            if groep.isSeries {
+                                MedSeriesRow(groep: groep)
+                                    .contentShape(Rectangle())
+                                    .onTapGesture { openSeries(groep) }
+                                    .contextMenu {
+                                        Button(role: .destructive) {
+                                            seriesToDelete = groep
+                                        } label: {
+                                            Label("Verwijder serie (\(groep.files.count) bestanden)", systemImage: "trash")
+                                        }
                                     }
-                                    Button(role: .destructive) {
-                                        fileToDelete = file
-                                    } label: {
-                                        Label("Verwijder", systemImage: "trash")
+                            } else {
+                                MedFileRow(file: groep.files[0], isDemo: false)
+                                    .contentShape(Rectangle())
+                                    .onTapGesture { open(groep.files[0]) }
+                                    .contextMenu {
+                                        Button {
+                                            shareFile = groep.files[0]
+                                        } label: {
+                                            Label("Deel", systemImage: "square.and.arrow.up")
+                                        }
+                                        Button(role: .destructive) {
+                                            fileToDelete = groep.files[0]
+                                        } label: {
+                                            Label("Verwijder", systemImage: "trash")
+                                        }
                                     }
-                                }
-                            if idx < store.files.count - 1 {
+                            }
+                            if idx < groepen.count - 1 {
                                 MedDivider().padding(.leading, 64)
                             }
                         }
@@ -180,7 +210,9 @@ struct ContentView: View {
                             .tracking(2)
                             .foregroundColor(Med.textSec)
                         Spacer()
-                        Text("\(store.files.count) BESTANDEN")
+                        Text(store.series.isEmpty
+                             ? "\(store.files.count) BESTANDEN"
+                             : "\(store.series.count) ITEMS · \(store.files.count) BESTANDEN")
                             .font(.medLabel())
                             .tracking(1)
                             .foregroundColor(Med.textDim)
@@ -318,6 +350,36 @@ struct ContentView: View {
 
     // MARK: Open
 
+    /// Opent een hele serie: parst elk bestand (in instance-volgorde) en
+    /// plakt alle frames achter elkaar — de viewer toont ze met slider/cine.
+    private func openSeries(_ groep: SeriesGroup) {
+        isParsing = true
+        Task.detached(priority: .userInitiated) {
+            var alleFrames: [CGImage] = []
+            var eerste: ParsedDICOM?
+            for file in groep.files {
+                guard let parsed = try? DICOMParser.parse(url: file.url) else { continue }
+                if eerste == nil { eerste = parsed }
+                alleFrames.append(contentsOf: parsed.frames)
+            }
+            await MainActor.run {
+                isParsing = false
+                guard let basis = eerste, !alleFrames.isEmpty else {
+                    errorMessage = "Geen leesbare beelden in deze serie."
+                    return
+                }
+                parsedDICOM = ParsedDICOM(
+                    patientName: basis.patientName,
+                    modality: basis.modality,
+                    rows: basis.rows, columns: basis.columns,
+                    frames: alleFrames,
+                    windowCenter: basis.windowCenter,
+                    windowWidth: basis.windowWidth)
+                showViewer = true
+            }
+        }
+    }
+
     private func open(_ file: DICOMFileInfo) {
         selectedInfo = file
         isParsing    = true
@@ -349,6 +411,56 @@ struct ContentView: View {
                 }
             }
         }
+    }
+}
+
+// MARK: - Series row
+
+private struct MedSeriesRow: View {
+    let groep: SeriesGroup
+
+    var body: some View {
+        HStack(spacing: 14) {
+            ZStack {
+                RoundedRectangle(cornerRadius: 8)
+                    .fill(Med.blue.opacity(0.12))
+                    .frame(width: 42, height: 42)
+                Image(systemName: "square.stack.3d.up.fill")
+                    .font(.system(size: 18, weight: .medium))
+                    .foregroundColor(Med.blue)
+            }
+
+            VStack(alignment: .leading, spacing: 4) {
+                Text(groep.description)
+                    .font(.medBody())
+                    .foregroundColor(Med.textPri)
+                    .lineLimit(1)
+
+                HStack(spacing: 6) {
+                    if !groep.modality.isEmpty {
+                        MedBadge(text: groep.modality)
+                    }
+                    MedBadge(text: "SERIE", color: Med.blue.opacity(0.7))
+                    Text("\(groep.files.count) slices")
+                        .font(.medMono(11))
+                        .foregroundColor(Med.textSec)
+                    Text("·")
+                        .foregroundColor(Med.textDim)
+                    Text(groep.totalSize.asFileSize())
+                        .font(.medMono(11))
+                        .foregroundColor(Med.textSec)
+                }
+            }
+
+            Spacer()
+
+            Image(systemName: "chevron.right")
+                .font(.system(size: 11, weight: .semibold))
+                .foregroundColor(Med.textDim)
+        }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 13)
+        .background(Med.card)
     }
 }
 
