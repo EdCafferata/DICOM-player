@@ -38,6 +38,10 @@ struct ViewerView: View {
     @State private var huidigWW: Double = 0
     @State private var isRendering = false
 
+    // Frame-export
+    private struct ExportItem: Identifiable { let id = UUID(); let url: URL }
+    @State private var exportItem: ExportItem?
+
     private var frames: [CGImage] { presetFrames ?? parsed.frames }
 
     private var frame: CGImage? {
@@ -84,6 +88,9 @@ struct ViewerView: View {
             }
         }
         .onDisappear { stopCine() }
+        .sheet(item: $exportItem) { item in
+            ShareSheet(url: item.url)
+        }
     }
 
     // MARK: Top bar
@@ -176,6 +183,32 @@ struct ViewerView: View {
 
                 if isCine {
                     MedBadge(text: "\(frames.count) FRAMES", color: Med.blue)
+                }
+
+                // Frame exporteren
+                if frame != nil {
+                    Menu {
+                        Button { exporteerFrame(als: "PNG") } label: {
+                            Label("Exporteer als PNG", systemImage: "photo")
+                        }
+                        Button { exporteerFrame(als: "JPEG") } label: {
+                            Label("Exporteer als JPEG", systemImage: "photo.fill")
+                        }
+                    } label: {
+                        HStack(spacing: 5) {
+                            Image(systemName: "square.and.arrow.up")
+                                .font(.system(size: 11, weight: .semibold))
+                            Text("EXPORT")
+                                .font(.medLabel())
+                                .tracking(1)
+                        }
+                        .foregroundColor(Med.accent)
+                        .padding(.horizontal, 9)
+                        .padding(.vertical, 5)
+                        .background(Med.accent.opacity(0.12))
+                        .overlay(RoundedRectangle(cornerRadius: 5).stroke(Med.accent.opacity(0.3), lineWidth: 0.5))
+                        .cornerRadius(5)
+                    }
                 }
             }
             .padding(.trailing, 16)
@@ -307,6 +340,29 @@ struct ViewerView: View {
                 .background(Color.white.opacity(0.08))
                 .clipShape(Circle())
         }
+    }
+
+    // MARK: Frame-export
+
+    /// Exporteert het huidige frame (met actieve preset-venstering) als
+    /// PNG of JPEG via het deelvenster.
+    private func exporteerFrame(als formaat: String) {
+        guard let cg = frame else { return }
+        let img = UIImage(cgImage: cg)
+        let data: Data?
+        let ext: String
+        if formaat == "PNG" {
+            data = img.pngData(); ext = "png"
+        } else {
+            data = img.jpegData(compressionQuality: 0.92); ext = "jpg"
+        }
+        guard let d = data else { return }
+        let naam = "DICOM-frame-\(frameIdx + 1).\(ext)"
+        let url = FileManager.default.temporaryDirectory.appendingPathComponent(naam)
+        do {
+            try d.write(to: url)
+            exportItem = ExportItem(url: url)
+        } catch { /* tijdelijke map niet beschrijfbaar — stil falen */ }
     }
 
     // MARK: Window/Level presets
