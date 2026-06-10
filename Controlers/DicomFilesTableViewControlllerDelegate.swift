@@ -11,6 +11,35 @@ struct ParsedDICOM {
     let frames: [CGImage]
     let windowCenter: Double
     let windowWidth: Double
+
+    // Raw pixeldata per frame (alleen grijswaarden, niet-gecomprimeerd) zodat
+    // de viewer met Window/Level-presets opnieuw kan vensteren. Leeg bij
+    // JPEG-gecomprimeerde of kleurbeelden — presets dan niet beschikbaar.
+    var rawFrames: [Data] = []
+    var bitsAllocated: Int = 16
+    var isSigned: Bool = false
+    var invert: Bool = false
+    var rescaleSlope: Double = 1      // (0028,1053) — voor HU-conversie
+    var rescaleIntercept: Double = 0  // (0028,1052)
+
+    var kanHervensteren: Bool { !rawFrames.isEmpty }
+
+    /// Rendert de raw frames opnieuw met een ander venster (center/width in
+    /// raw pixelwaarden — gebruik huNaarRaw voor HU-presets).
+    func render(center: Double, width: Double) -> [CGImage] {
+        rawFrames.compactMap {
+            DICOMParser.renderFrame($0, rows: rows, columns: columns,
+                                    bits: bitsAllocated, isSigned: isSigned,
+                                    invert: invert, center: center, width: width)
+        }
+    }
+
+    /// Zet een venster in Hounsfield Units om naar raw pixelwaarden
+    /// via Rescale Slope/Intercept (HU = raw × slope + intercept).
+    func huNaarRaw(center hu: Double, width huWidth: Double) -> (Double, Double) {
+        let slope = rescaleSlope != 0 ? rescaleSlope : 1
+        return ((hu - rescaleIntercept) / slope, huWidth / slope)
+    }
 }
 
 /// Lichtgewicht header-info voor de Series navigator — leest géén pixeldata,
@@ -110,6 +139,8 @@ struct DICOMParser {
         var photometric       = "MONOCHROME2"
         var windowCenter      = 0.0
         var windowWidth       = 0.0
+        var rescaleSlope      = 1.0
+        var rescaleIntercept  = 0.0
         var rawPixels: Data?  = nil
         var encBlob: Data     = Data()
         var encapsulated      = false
@@ -224,6 +255,12 @@ struct DICOMParser {
                 let s = r.readASCII(len)
                 windowWidth = Double(s.components(separatedBy: "\\").first ?? s) ?? 0
 
+            case 0x00281052:
+                rescaleIntercept = Double(r.readASCII(len)) ?? 0
+
+            case 0x00281053:
+                rescaleSlope = Double(r.readASCII(len)) ?? 1
+
             default:
                 r.skip(len)
             }
@@ -235,6 +272,7 @@ struct DICOMParser {
         let invert   = photometric == "MONOCHROME1"
 
         let frames: [CGImage]
+        var rawFrames: [Data] = []
         if encapsulated {
             frames = Self.decodeJPEG(encBlob)
         } else {
@@ -248,6 +286,11 @@ struct DICOMParser {
                                     bits: bitsAllocated, samples: samplesPerPixel,
                                     isSigned: isSigned, invert: invert,
                                     center: windowCenter, width: windowWidth)
+            // Raw grijswaarden bewaren voor Window/Level-presets (geen kleur)
+            if samplesPerPixel == 1 {
+                rawFrames = Self.sliceFrames(pixels, rows: rows, columns: columns,
+                                             nFrames: nFrames, bits: bitsAllocated)
+            }
         }
         if frames.isEmpty { throw DICOMError.missingPixelData }
 
@@ -257,8 +300,38 @@ struct DICOMParser {
             rows: rows, columns: columns,
             frames: frames,
             windowCenter: windowCenter,
-            windowWidth: windowWidth
+            windowWidth: windowWidth,
+            rawFrames: rawFrames,
+            bitsAllocated: bitsAllocated,
+            isSigned: isSigned,
+            invert: invert,
+            rescaleSlope: rescaleSlope,
+            rescaleIntercept: rescaleIntercept
         )
+    }
+
+    /// Knipt het raw pixelblok in losse frames (voor hervensteren).
+    private static func sliceFrames(_ data: Data, rows: Int, columns: Int,
+                                    nFrames: Int, bits: Int) -> [Data] {
+        let bytesPerSample = max(1, bits / 8)
+        let frameSize = rows * columns * bytesPerSample
+        guard frameSize > 0, data.count >= frameSize else { return [] }
+        return (0..<nFrames).compactMap { f in
+            let start = f * frameSize
+            guard start + frameSize <= data.count else { return nil }
+            return Data(data[start..<start + frameSize])
+        }
+    }
+
+    /// Publieke render van één raw frame met opgegeven venster — gebruikt
+    /// door ParsedDICOM.render() voor de Window/Level-presets.
+    static func renderFrame(_ data: Data, rows: Int, columns: Int,
+                            bits: Int, isSigned: Bool, invert: Bool,
+                            center: Double, width: Double) -> CGImage? {
+        makeImage(data, rows: rows, columns: columns,
+                  bits: bits, samples: 1,
+                  isSigned: isSigned, invert: invert,
+                  center: center, width: width)
     }
 
     // MARK: - Header-only parse (Series navigator)

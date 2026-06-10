@@ -1,5 +1,21 @@
 import SwiftUI
 
+// Window/Level preset in Hounsfield Units (CT)
+struct WLPreset: Identifiable {
+    let id = UUID()
+    let naam: String
+    let icoon: String
+    let center: Double   // HU
+    let width: Double    // HU
+
+    static let alle: [WLPreset] = [
+        WLPreset(naam: "Abdomen",  icoon: "figure.core.training", center: 40,   width: 400),
+        WLPreset(naam: "Long",     icoon: "lungs.fill",           center: -600, width: 1500),
+        WLPreset(naam: "Bot",      icoon: "figure.stand",         center: 300,  width: 1500),
+        WLPreset(naam: "Hersenen", icoon: "brain.fill",           center: 40,   width: 80),
+    ]
+}
+
 struct ViewerView: View {
     let parsed: ParsedDICOM
     @Environment(\.dismiss) private var dismiss
@@ -15,12 +31,21 @@ struct ViewerView: View {
     @State private var offset: CGSize     = .zero
     @State private var lastOffset: CGSize = .zero
 
+    // Window/Level presets
+    @State private var presetFrames: [CGImage]? = nil   // nil = origineel venster
+    @State private var presetNaam = "Auto"
+    @State private var huidigWC: Double = 0
+    @State private var huidigWW: Double = 0
+    @State private var isRendering = false
+
+    private var frames: [CGImage] { presetFrames ?? parsed.frames }
+
     private var frame: CGImage? {
-        guard !parsed.frames.isEmpty else { return nil }
-        return parsed.frames[min(frameIdx, parsed.frames.count - 1)]
+        guard !frames.isEmpty else { return nil }
+        return frames[min(frameIdx, frames.count - 1)]
     }
 
-    private var isCine: Bool { parsed.frames.count > 1 }
+    private var isCine: Bool { frames.count > 1 }
 
     var body: some View {
         ZStack {
@@ -82,8 +107,48 @@ struct ViewerView: View {
 
                 if parsed.windowWidth > 0 {
                     VStack(alignment: .leading, spacing: 2) {
-                        medInfoRow(label: "WC", value: String(format: "%.0f", parsed.windowCenter))
-                        medInfoRow(label: "WW", value: String(format: "%.0f", parsed.windowWidth))
+                        medInfoRow(label: "WC", value: String(format: "%.0f",
+                            presetFrames == nil ? parsed.windowCenter : huidigWC))
+                        medInfoRow(label: "WW", value: String(format: "%.0f",
+                            presetFrames == nil ? parsed.windowWidth : huidigWW))
+                    }
+                }
+
+                // Window/Level presets — alleen bij raw grijswaardenbeelden
+                if parsed.kanHervensteren {
+                    Menu {
+                        Button {
+                            presetFrames = nil; presetNaam = "Auto"
+                        } label: {
+                            Label("Auto (origineel)", systemImage: "wand.and.stars")
+                        }
+                        Divider()
+                        ForEach(WLPreset.alle) { p in
+                            Button {
+                                pasPresetToe(p)
+                            } label: {
+                                Label("\(p.naam)  C\(Int(p.center)) W\(Int(p.width))",
+                                      systemImage: p.icoon)
+                            }
+                        }
+                    } label: {
+                        HStack(spacing: 5) {
+                            if isRendering {
+                                ProgressView().tint(Med.accent).scaleEffect(0.6)
+                            } else {
+                                Image(systemName: "circle.lefthalf.filled")
+                                    .font(.system(size: 11, weight: .semibold))
+                            }
+                            Text(presetNaam.uppercased())
+                                .font(.medLabel())
+                                .tracking(1)
+                        }
+                        .foregroundColor(Med.accent)
+                        .padding(.horizontal, 9)
+                        .padding(.vertical, 5)
+                        .background(Med.accent.opacity(0.12))
+                        .overlay(RoundedRectangle(cornerRadius: 5).stroke(Med.accent.opacity(0.3), lineWidth: 0.5))
+                        .cornerRadius(5)
                     }
                 }
             }
@@ -110,7 +175,7 @@ struct ViewerView: View {
                 }
 
                 if isCine {
-                    MedBadge(text: "\(parsed.frames.count) FRAMES", color: Med.blue)
+                    MedBadge(text: "\(frames.count) FRAMES", color: Med.blue)
                 }
             }
             .padding(.trailing, 16)
@@ -155,11 +220,11 @@ struct ViewerView: View {
                         get: { Double(frameIdx) },
                         set: { frameIdx = Int($0.rounded()) }
                     ),
-                    in: 0...Double(parsed.frames.count - 1),
+                    in: 0...Double(frames.count - 1),
                     step: 1
                 )
                 .tint(Med.accent)
-                Text("\(parsed.frames.count)")
+                Text("\(frames.count)")
                     .font(.medMono(10))
                     .foregroundColor(Med.textSec)
             }
@@ -188,13 +253,13 @@ struct ViewerView: View {
 
                 // Stap vooruit
                 cineButton(icon: "forward.frame.fill") {
-                    stopCine(); frameIdx = min(parsed.frames.count - 1, frameIdx + 1)
+                    stopCine(); frameIdx = min(frames.count - 1, frameIdx + 1)
                 }
 
                 Spacer()
 
                 // Frame teller
-                Text("\(frameIdx + 1) / \(parsed.frames.count)")
+                Text("\(frameIdx + 1) / \(frames.count)")
                     .font(.medMono(12))
                     .foregroundColor(.white.opacity(0.7))
 
@@ -244,12 +309,30 @@ struct ViewerView: View {
         }
     }
 
+    // MARK: Window/Level presets
+
+    private func pasPresetToe(_ p: WLPreset) {
+        isRendering = true
+        let (rawC, rawW) = parsed.huNaarRaw(center: p.center, width: p.width)
+        Task.detached(priority: .userInitiated) {
+            let nieuw = parsed.render(center: rawC, width: rawW)
+            await MainActor.run {
+                isRendering = false
+                guard !nieuw.isEmpty else { return }
+                presetFrames = p.naam == "Auto" ? nil : nieuw
+                presetNaam   = p.naam
+                huidigWC     = p.center
+                huidigWW     = p.width
+            }
+        }
+    }
+
     // MARK: Cine engine
 
     private func startCine() {
         isPlaying = true
         cineTimer = Timer.scheduledTimer(withTimeInterval: 1.0 / fps, repeats: true) { _ in
-            frameIdx = (frameIdx + 1) % parsed.frames.count
+            frameIdx = (frameIdx + 1) % frames.count
         }
     }
 
