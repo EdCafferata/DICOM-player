@@ -1,11 +1,50 @@
-DICOM
+# Dicom Player
 
-DICOM (Digital Imaging and Communications in Medicine) is een standaard die beschrijft hoe medische beeldinformatie dient te worden opgeslagen, uitgewisseld en geprint. De standaard definieert een bestandsformaat en een netwerkprotocol voor communicatie, een applicatieprotocol bovenop TCP/IP. Het copyright op de standaard is in handen van het Amerikaanse National Electrical Manufacturers Association (NEMA). De standaard werd ontwikkeld door de DICOM Standards Committee, waarvan de leden deels ook lid zijn van NEMA.
+[![App Store](https://img.shields.io/badge/App_Store-v2.0-blue?logo=apple)](https://apps.apple.com/nl/app/dicom-player/id1483496527)
+[![Platform](https://img.shields.io/badge/iOS-16.0%2B-lightgrey?logo=apple)](https://apps.apple.com/nl/app/dicom-player/id1483496527)
+[![Licentie](https://img.shields.io/badge/licentie-GPL--3.0-green)](LICENSE)
 
-In de gezondheidszorg, met name binnen de radiologieafdeling van een ziekenhuis, wordt op grote schaal gebruikgemaakt van medische beeldvormende systemen (bijvoorbeeld röntgen, CT, MRI en echografie). De beelden worden aangemaakt door beeldvormende modaliteiten en uiteindelijk in beeldarchieven (PACS systemen) opgeslagen. De gegevensuitwisseling tussen deze systemen vindt plaats door middel van het uitwisselen van elektronische berichten. De structuur van die berichten wordt gedefinieerd door standaarden zoals DICOM. Naast DICOM wordt in de gezondheidszorg eveneens gebruikgemaakt van onder andere de HL7- en EDIFACT-EDI-standaarden.
+**Dicom Player** is een native iOS-app (SwiftUI) waarmee je DICOM-bestanden — medische beelden van bijvoorbeeld röntgen, CT, MRI en echografie — direct op je iPhone of iPad bekijkt.
 
-Externe links
-(en) DICOM Homepage - NEMA
-(en) DICOM FAQ en referenties
-(en) DVTk, DICOM Validation Toolkit (open source)
- 
+📲 **[Download in de App Store](https://apps.apple.com/nl/app/dicom-player/id1483496527)** — versie 2.0 is live sinds 11 juni 2026. 🟢
+
+## Functies (v2.0)
+
+- 🩻 **Eigen DICOM-parser** — leest het DICOM-binairformaat zonder externe dependencies
+- 🖼️ **Fullscreen viewer** — pinch/zoom, slepen en dubbeltikken om te resetten
+- 🎞️ **Cine player** — speel multi-frame bestanden (series) af als video
+- 🌙 **Medisch dark theme** — UI ontworpen voor het bekijken van medische beelden
+- 📂 **Open-in ondersteuning** — open bestanden vanuit de Bestanden-app, AirDrop of e-mail
+- ☕ **Tip Jar** — steun de ontwikkelaar optioneel met een kleine bijdrage
+
+## Binnenkort (v2.1)
+
+Deze functies zijn al klaar op de `master-branch` en verschijnen in de volgende App Store-release:
+
+- 🗂️ DICOM Series navigator — slices gegroepeerd op Series Instance UID ([#2](https://github.com/EdCafferata/DICOM-player/issues/2))
+- 🎚️ Window/Level presets — Abdomen, Long, Bot, Hersenen ([#3](https://github.com/EdCafferata/DICOM-player/issues/3))
+- 💾 Exporteer frames als PNG/JPEG ([#5](https://github.com/EdCafferata/DICOM-player/issues/5))
+- 🕘 Recent geopende bestanden ([#6](https://github.com/EdCafferata/DICOM-player/issues/6))
+
+## Vereisten
+
+- iOS 16.0 of nieuwer
+- iPhone en iPad
+
+## Zelf bouwen
+
+```bash
+git clone git@github.com:EdCafferata/DICOM-player.git
+cd DICOM-player
+open "Dicom Player.xcodeproj"
+```
+
+Zie [BOUW_HANDLEIDING.md](BOUW_HANDLEIDING.md) voor uitgebreide bouwinstructies en [CONTRIBUTING.md](CONTRIBUTING.md) als je wilt bijdragen.
+
+## Over DICOM
+
+DICOM (Digital Imaging and Communications in Medicine) is de standaard voor het opslaan, uitwisselen en printen van medische beeldinformatie. De standaard definieert een bestandsformaat en een netwerkprotocol bovenop TCP/IP en wordt beheerd door de Amerikaanse [NEMA](https://www.dicomstandard.org). In de gezondheidszorg — met name op radiologieafdelingen — worden beelden van modaliteiten (röntgen, CT, MRI, echografie) via DICOM uitgewisseld en opgeslagen in PACS-beeldarchieven.
+
+## Licentie
+
+Dit project is beschikbaar onder de [GPL-3.0-licentie](LICENSE).
