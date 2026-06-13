@@ -31,7 +31,7 @@ je app zelf nomineren via **App Store Connect → Featuring nominations form**.
 - **Apple scoort op 7 criteria:** UX, UI-design, innovatie, uniekheid,
   toegankelijkheid, lokalisatie, kwaliteit van de productpagina. → zorg dat de
   en-US store-pagina (issue #8) eerst top is.
-- Link: https://developer.apple.com/help/app-store-connect/manage-featuring-nominations/nominate-your-app-for-your-app-for-featuring/
+- Link: https://developer.apple.com/help/app-store-connect/manage-featuring-nominations/nominate-your-app-for-featuring/
 
 ### 2. AlternativeTo + SaaSHub (gratis listing als alternatief)
 Mensen zoeken hier actief naar "DICOM viewer voor iPhone". Voeg Dicom Player toe als
