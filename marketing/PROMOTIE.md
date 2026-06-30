@@ -1,12 +1,12 @@
-# Promotieplan — Dicom Player
+# Promotieplan — Dicom Viewer
 
 > Onderzoek door Claude op 13 juni 2026, autonoom uitgevoerd terwijl Ed weg was.
-> Doel: concrete plekken om Dicom Player (medische DICOM-viewer, live in NL + VS)
+> Doel: concrete plekken om Dicom Viewer (medische DICOM-viewer, live in NL + VS)
 > te promoten, geprioriteerd, met de spelregels per platform en kant-en-klare teksten.
 
 ## De twee doelgroepen (belangrijk voor de toon)
 
-Dicom Player heeft twee heel verschillende publieken — richt je per kanaal op één:
+Dicom Viewer heeft twee heel verschillende publieken — richt je per kanaal op één:
 
 1. **Patiënten** — mensen die van het ziekenhuis een cd/usb met hun MRI/CT/röntgen
    meekregen en die thuis willen bekijken. Dit is de **sterkste, minst competitieve
@@ -34,7 +34,7 @@ je app zelf nomineren via **App Store Connect → Featuring nominations form**.
 - Link: https://developer.apple.com/help/app-store-connect/manage-featuring-nominations/nominate-your-app-for-featuring/
 
 ### 2. AlternativeTo + SaaSHub (gratis listing als alternatief)
-Mensen zoeken hier actief naar "DICOM viewer voor iPhone". Voeg Dicom Player toe als
+Mensen zoeken hier actief naar "DICOM viewer voor iPhone". Voeg Dicom Viewer toe als
 alternatief voor de bekende namen, dan lift je mee op hun zoekverkeer:
 - Concurrenten om je als alternatief bij te plaatsen: **RadiAnt, MicroDicom, Horos,
   IDV (IMAIOS DICOM Viewer), Medicai, MedFilm, OsiriX, xMedCon**.
@@ -102,7 +102,7 @@ Wekelijkse rubriek voor indie-apps. Indienen kan simpel per e-mail.
 ## Kant-en-klare teksten
 
 ### Korte pitch (9to5Mac / directories / Product Hunt tagline)
-> **Dicom Player** — view your MRI, CT and X-ray scans right on your iPhone or iPad.
+> **Dicom Viewer** — view your MRI, CT and X-ray scans right on your iPhone or iPad.
 > Open DICOM files straight from a hospital CD, USB drive or email. No account, no
 > cloud, no PACS — your medical images never leave your device. Native, fast, with a
 > cine player and a dark theme built for medical images.
@@ -115,7 +115,7 @@ Wekelijkse rubriek voor indie-apps. Indienen kan simpel per e-mail.
 > to help if you get stuck.
 
 ### LinkedIn-post (professioneel, vanuit The IT Crowd)
-> Trots: Dicom Player is nu ook live in de Amerikaanse App Store 🇺🇸. Een native iOS-
+> Trots: Dicom Viewer is nu ook live in de Amerikaanse App Store 🇺🇸. Een native iOS-
 > viewer voor DICOM-beelden (röntgen, CT, MRI, echo) — privacy-by-design: alles blijft
 > op het toestel, geen cloud, geen account. Met cine-loop, window/level-presets en een
 > donker thema voor medische beelden. [link] #radiology #medicalimaging #iOS #DICOM

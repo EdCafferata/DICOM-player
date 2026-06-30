@@ -1,14 +1,14 @@
-# Concurrentie & positionering — Dicom Player
+# Concurrentie & positionering — Dicom Viewer
 
 > Onderzoek door Claude, 13 juni 2026 (autonoom). App Store-landschap voor iOS
-> DICOM-viewers, en waar Dicom Player zich het beste kan positioneren.
+> DICOM-viewers, en waar Dicom Viewer zich het beste kan positioneren.
 
 ## De concurrenten (App Store, US)
 
 | App | Model | Hoek | Opmerking |
 |---|---|---|---|
 | **IDV — IMAIOS DICOM Viewer** | gratis (niet-commercieel) | professionals | 4,69★, sterk gewaardeerd, dé grote naam |
-| **DICOM Viewer: MRI CT XRAY & +** | gratis | on-device, patiënt/pro | nieuw, **zeer vergelijkbaar** met Dicom Player; folders/ZIP, window level |
+| **DICOM Viewer: MRI CT XRAY & +** | gratis | on-device, patiënt/pro | nieuw, **zeer vergelijkbaar** met Dicom Viewer; folders/ZIP, window level |
 | **Medicai DICOM Viewer & PACS** | cloud/subscription | cloud + sharing | leunt op cloud-PACS — ander model |
 | **3DICOM Mobile** | gratis app, **login vereist abo** | 3D/pro | drempel: je moet een licentie hebben |
 | **OsiriX** | Lite gratis / MD betaald | klinisch (FDA/CE) | desktop-erfenis, zwaar |
@@ -22,7 +22,7 @@ De markt valt uiteen in twee kampen:
 2. **Cloud-/PACS-apps** (Medicai) — vereisen account, upload naar de cloud.
 
 **Niemand bezet sterk de hoek "patiënt + volledig op het toestel + gratis + privacy".**
-Dat is precies waar Dicom Player zit. Dát is de wig:
+Dat is precies waar Dicom Viewer zit. Dát is de wig:
 
 - **Patiënt-vriendelijk** — opent de cd/usb van het ziekenhuis zonder medische kennis.
 - **Privacy-by-design** — geen account, geen cloud-upload, alles blijft lokaal. (Medicai
@@ -38,9 +38,9 @@ Dat is precies waar Dicom Player zit. Dát is de wig:
 
 De concurrent **"DICOM Viewer : MRI CT XRAY & +"** propt modaliteiten in de app-naam.
 Dat is een bewuste vindbaarheids-truc: mensen zoeken op "MRI viewer", "CT scan viewer",
-"x-ray app" — niet op "Dicom Player". Lessen:
+"x-ray app" — niet op "Dicom Viewer". Lessen:
 
-1. **Naam "Dicom Player" mist de zoekwoorden** die mensen intikken. Compenseer in de
+1. **Naam "Dicom Viewer" mist de zoekwoorden** die mensen intikken. Compenseer in de
    **ondertitel** en het **keyword-veld** (100 tekens) — die wegen mee voor ranking.
    - Ondertitel-idee (en-US, ≤30 tekens): `MRI, CT & X-ray DICOM viewer`
    - Sluit aan op het keyword-veld uit `AppStore/STORE_BESCHRIJVING.md`

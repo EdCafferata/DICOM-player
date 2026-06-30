@@ -1,4 +1,4 @@
-# Marketing — Dicom Player
+# Marketing — Dicom Viewer
 
 Promotie-onderzoek, autonoom uitgevoerd door Claude op 13 juni 2026 terwijl Ed weg was.
 Alles staat op GitHub zodat je het kunt oppakken wanneer het uitkomt.
@@ -18,7 +18,7 @@ Alles staat op GitHub zodat je het kunt oppakken wanneer het uitkomt.
    verkeer daarheen; een zwakke pagina verspilt het.
 2. **Het gat in de markt = patiënt + privacy + gratis.** De concurrenten zijn óf
    pro-tools (IDV, OsiriX, 3DICOM) óf cloud/PACS (Medicai). Niemand bezet "open je
-   eigen ziekenhuis-cd, volledig op je toestel, geen account". Dáár zit Dicom Player.
+   eigen ziekenhuis-cd, volledig op je toestel, geen account". Dáár zit Dicom Viewer.
 3. **Hoogste-waarde gratis kanalen:** Apple Featuring Nomination, AlternativeTo/SaaSHub,
    9to5Mac Indie Spotlight, Product Hunt, MacRumors-forum.
 4. **Reviews zijn de hefboom.** De app heeft nu **0 reviews** (geverifieerd 13 juni) —
@@ -28,7 +28,7 @@ Alles staat op GitHub zodat je het kunt oppakken wanneer het uitkomt.
 
 ## Twee dingen om zelf te verifiëren
 
-- **VS-listing:** de publieke iTunes-API toont Dicom Player (nog) niet in de VS-store
+- **VS-listing:** de publieke iTunes-API toont Dicom Viewer (nog) niet in de VS-store
   (13 juni). Mogelijk propagatie-vertraging. **Check in App Store Connect** of de app
   echt beschikbaar is in de VS vóór je de Featuring Nomination als "App Launch / nieuwe
   regio" indient.

@@ -1,4 +1,4 @@
-# Launch-kit — Dicom Player (plak-klaar)
+# Launch-kit — Dicom Viewer (plak-klaar)
 
 > Aanvulling op [PROMOTIE.md](PROMOTIE.md). Hier staan de exacte stappen + kant-en-klare
 > teksten per kanaal, zodat je alleen hoeft te kopiëren en plakken.
@@ -9,12 +9,12 @@
 
 ## A. Apple App Store — Featuring Nomination (gratis)
 
-**Pad:** App Store Connect → **Apps** → Dicom Player → zijbalk **Featuring** →
+**Pad:** App Store Connect → **Apps** → Dicom Viewer → zijbalk **Featuring** →
 **Nominations** → **"+"** → **Create Nomination**.
 **Rol nodig:** Account Holder, Admin, App Manager of Marketing.
 **Lead time:** minimaal **3 weken** vóór de gewenste publicatiedatum.
 
-- **Nomination Name:** `Dicom Player — US launch 2026`
+- **Nomination Name:** `Dicom Viewer — US launch 2026`
 - **Type:** *App Launch* (nieuwe regio = de VS)
 - **Publish date:** kies een datum ~3–4 weken vooruit
 - **Related apps:** voeg je andere apps toe (tot 10) als je wilt
@@ -22,7 +22,7 @@
 
 **Description (plak dit, pas gerust aan):**
 ```
-Dicom Player is now available in the US App Store. It's a native iOS viewer for
+Dicom Viewer is now available in the US App Store. It's a native iOS viewer for
 DICOM medical images — X-ray, CT, MRI and ultrasound — built privacy-first: every
 file is processed on-device, with no account, no cloud upload and no PACS connection.
 
@@ -45,12 +45,12 @@ application"** → vul Platforms (iOS), License, Description, Tags in → Submit
 Goedkeuring meestal binnen 1–2 dagen. Voeg jezelf daarna toe als *alternatief* bij de
 concurrenten hieronder (kan steeds opnieuw, vergroot bereik).
 
-**Plaats Dicom Player als alternatief voor:** RadiAnt · MicroDicom · Horos · OsiriX ·
+**Plaats Dicom Viewer als alternatief voor:** RadiAnt · MicroDicom · Horos · OsiriX ·
 IDV (IMAIOS DICOM Viewer) · Medicai · MedFilm · xMedCon.
 
 **Description (plak):**
 ```
-Dicom Player is a native iOS app to view DICOM medical images (X-ray, CT, MRI,
+Dicom Viewer is a native iOS app to view DICOM medical images (X-ray, CT, MRI,
 ultrasound) on iPhone and iPad. Open .dcm files from a hospital CD, USB drive, email
 or the Files app — no account, no cloud, no PACS. Everything stays on your device.
 Features: full-screen viewer with pinch-zoom and pan, cine player for multi-frame
@@ -63,12 +63,12 @@ theme built for medical images. Free, with an optional tip jar.
 
 ## C. 9to5Mac — Indie App Spotlight (gratis, per e-mail)
 
-**Naar:** michaelb@9to5mac.com — onderwerp: `Indie App Spotlight — Dicom Player`
+**Naar:** michaelb@9to5mac.com — onderwerp: `Indie App Spotlight — Dicom Viewer`
 
 ```
 Hi Michael,
 
-I'd like to suggest Dicom Player for the Indie App Spotlight. It's a native iOS
+I'd like to suggest Dicom Viewer for the Indie App Spotlight. It's a native iOS
 DICOM viewer that lets patients and clinicians open medical scans (X-ray, CT, MRI,
 ultrasound) straight from a hospital CD, USB or email — fully on-device, no account
 and no cloud. It just launched in the US App Store.
@@ -89,11 +89,11 @@ The IT Crowd
 
 ## D. Product Hunt (gratis launch)
 
-- **Naam:** Dicom Player
+- **Naam:** Dicom Viewer
 - **Tagline (max ~60 tekens):** `View your MRI, CT & X-ray scans on iPhone — privately`
 - **Beschrijving:**
 ```
-Got a CD or USB of medical scans from the hospital? Dicom Player opens DICOM files
+Got a CD or USB of medical scans from the hospital? Dicom Viewer opens DICOM files
 (X-ray, CT, MRI, ultrasound) right on your iPhone or iPad — no account, no cloud,
 nothing leaves your device. Cine player, Window/Level presets, series navigator and
 frame export, in a dark theme built for medical images. Native SwiftUI, iPhone + iPad.
@@ -107,9 +107,9 @@ frame export, in a dark theme built for medical images. Native SwiftUI, iPhone +
 ## E. MacRumors-forum (gratis, eigen thread)
 
 **Plek:** forums.macrumors.com/forums/ios-apps-and-apple-arcade.133/ → New Thread.
-Titel: `Dicom Player — native DICOM viewer for iPhone/iPad (now in the US)`
+Titel: `Dicom Viewer — native DICOM viewer for iPhone/iPad (now in the US)`
 ```
-I built Dicom Player, a native iOS viewer for DICOM medical images (X-ray, CT, MRI,
+I built Dicom Viewer, a native iOS viewer for DICOM medical images (X-ray, CT, MRI,
 ultrasound). Open scans from a hospital CD, USB or email — everything stays on your
 device, no account, no cloud. Cine player, Window/Level presets, series navigator,
 frame export, dark theme. iPhone + iPad, EN + NL. Feedback welcome!
@@ -135,7 +135,7 @@ mijn scan-cd op mijn telefoon?"-vragen in r/AskDocs, r/MRI, r/CTscan, r/cancer,
 r/braintumor:
 ```
 The files on a hospital CD/USB are usually DICOM (.dcm). On iPhone/iPad you can open
-them with a DICOM viewer app — I use Dicom Player because everything stays on the
+them with a DICOM viewer app — I use Dicom Viewer because everything stays on the
 device (no upload, no account). Copy the files to your phone via the Files app,
 AirDrop or email, then open them in the app. Happy to help if you get stuck.
 ```

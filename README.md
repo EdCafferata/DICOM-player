@@ -1,10 +1,10 @@
-# Dicom Player
+# Dicom Viewer
 
 [![App Store](https://img.shields.io/badge/App_Store-v2.0-blue?logo=apple)](https://apps.apple.com/nl/app/dicom-player/id1483496527)
 [![Platform](https://img.shields.io/badge/iOS-16.0%2B-lightgrey?logo=apple)](https://apps.apple.com/nl/app/dicom-player/id1483496527)
 [![Licentie](https://img.shields.io/badge/licentie-GPL--3.0-green)](LICENSE)
 
-**Dicom Player** is een native iOS-app (SwiftUI) waarmee je DICOM-bestanden — medische beelden van bijvoorbeeld röntgen, CT, MRI en echografie — direct op je iPhone of iPad bekijkt.
+**Dicom Viewer** is een native iOS-app (SwiftUI) waarmee je DICOM-bestanden — medische beelden van bijvoorbeeld röntgen, CT, MRI en echografie — direct op je iPhone of iPad bekijkt.
 
 📲 **[Download in de App Store](https://apps.apple.com/nl/app/dicom-player/id1483496527)** — versie 2.0 is live sinds 11 juni 2026. 🟢
 

@@ -1,4 +1,4 @@
-# In-App Purchase Metadata — Dicom Player
+# In-App Purchase Metadata — Dicom Viewer
 Guideline 2.3.2 fix: unieke namen, beschrijvingen, geen prijsverwijzingen, unieke afbeeldingen.
 
 ---
@@ -22,7 +22,7 @@ Guideline 2.3.2 fix: unieke namen, beschrijvingen, geen prijsverwijzingen, uniek
 
 ## Instructies App Store Connect
 1. Ga naar appstoreconnect.apple.com
-2. Dicom Player → In-App Purchases
+2. Dicom Viewer → In-App Purchases
 3. Per product:
    - Display Name → zie boven
    - Description → zie boven

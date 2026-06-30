@@ -29,9 +29,9 @@ mri,ct,scan,xray,x-ray,radiology,radiologist,ultrasound,pacs,dcm,cine,imaging,pa
 ### Description
 
 ```
-Dicom Player lets you view DICOM medical images — X-ray, CT, MRI and ultrasound — directly on your iPhone or iPad. No account, no cloud upload, no PACS connection required: your images never leave your device.
+Dicom Viewer lets you view DICOM medical images — X-ray, CT, MRI and ultrasound — directly on your iPhone or iPad. No account, no cloud upload, no PACS connection required: your images never leave your device.
 
-Got your scans on a CD or USB drive from the hospital? Received a study by email or AirDrop? Open the files in Dicom Player and view them instantly, in an interface designed for medical images.
+Got your scans on a CD or USB drive from the hospital? Received a study by email or AirDrop? Open the files in Dicom Viewer and view them instantly, in an interface designed for medical images.
 
 VIEWER
 • Full-screen viewer with pinch to zoom, drag to pan, double-tap to reset
@@ -52,11 +52,11 @@ WHO IS IT FOR
 • Radiologists, technologists and veterinarians who need a quick viewer on the go
 
 PRIVACY FIRST
-Everything runs on your device. Dicom Player collects no data, requires no account and uploads nothing.
+Everything runs on your device. Dicom Viewer collects no data, requires no account and uploads nothing.
 
-Dicom Player is free and open source. If you find it useful, you can support development with an optional tip.
+Dicom Viewer is free and open source. If you find it useful, you can support development with an optional tip.
 
-Note: Dicom Player is intended for viewing and education. It is not a certified medical device and should not be used for clinical diagnosis.
+Note: Dicom Viewer is intended for viewing and education. It is not a certified medical device and should not be used for clinical diagnosis.
 ```
 
 ### What's New (v2.1)
@@ -93,9 +93,9 @@ mri,ct,scan,röntgen,xray,radiologie,radioloog,echo,pacs,dcm,cine,ziekenhuis,pat
 ### Beschrijving
 
 ```
-Met Dicom Player bekijk je DICOM-beelden — röntgen, CT, MRI en echografie — rechtstreeks op je iPhone of iPad. Geen account, geen cloud-upload, geen PACS-koppeling nodig: je beelden verlaten je toestel nooit.
+Met Dicom Viewer bekijk je DICOM-beelden — röntgen, CT, MRI en echografie — rechtstreeks op je iPhone of iPad. Geen account, geen cloud-upload, geen PACS-koppeling nodig: je beelden verlaten je toestel nooit.
 
-Heb je je scans op cd of usb-stick meegekregen van het ziekenhuis? Een onderzoek ontvangen via e-mail of AirDrop? Open de bestanden in Dicom Player en bekijk ze direct, in een interface die is ontworpen voor medische beelden.
+Heb je je scans op cd of usb-stick meegekregen van het ziekenhuis? Een onderzoek ontvangen via e-mail of AirDrop? Open de bestanden in Dicom Viewer en bekijk ze direct, in een interface die is ontworpen voor medische beelden.
 
 VIEWER
 • Fullscreen viewer met knijpen om te zoomen, slepen en dubbeltikken om te resetten
@@ -116,11 +116,11 @@ VOOR WIE
 • Radiologen, laboranten en dierenartsen die onderweg een snelle viewer nodig hebben
 
 PRIVACY VOOROP
-Alles draait op je eigen toestel. Dicom Player verzamelt geen gegevens, vereist geen account en uploadt niets.
+Alles draait op je eigen toestel. Dicom Viewer verzamelt geen gegevens, vereist geen account en uploadt niets.
 
-Dicom Player is gratis en open source. Vind je de app handig, dan kun je de ontwikkeling steunen met een vrijwillige fooi.
+Dicom Viewer is gratis en open source. Vind je de app handig, dan kun je de ontwikkeling steunen met een vrijwillige fooi.
 
-Let op: Dicom Player is bedoeld voor weergave en educatie. Het is geen gecertificeerd medisch hulpmiddel en niet bedoeld voor klinische diagnose.
+Let op: Dicom Viewer is bedoeld voor weergave en educatie. Het is geen gecertificeerd medisch hulpmiddel en niet bedoeld voor klinische diagnose.
 ```
 
 ### Wat is er nieuw (v2.1)
