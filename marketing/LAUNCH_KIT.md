@@ -145,7 +145,7 @@ AirDrop or email, then open them in the app. Happy to help if you get stuck.
 
 ## Checklist (afvinken)
 - [x] en-US store-pagina af (issue #8) — ✅ ingevuld + ingediend met v2.1 (30 juni 2026)
-- [ ] Featuring Nomination ingediend (App Launch, ~3 wk vooruit)
+- [x] Featuring Nomination ingediend (App Launch, ~3 wk vooruit)
 - [ ] AlternativeTo-listing + als alternatief bij 3–4 concurrenten
 - [ ] SaaSHub-listing
 - [ ] 9to5Mac-mail verstuurd (+ screenshots)
@@ -153,7 +153,7 @@ AirDrop or email, then open them in the app. Happy to help if you get stuck.
 - [ ] MacRumors-thread aangemaakt
 - [ ] HackingWithSwift-post
 - [ ] 1–2 helpende Reddit-reacties op scan-cd-vragen
-- [ ] eerste gebruikers om een review gevraagd
+- [x] eerste gebruikers om een review gevraagd
 
 ## Bronnen
 - https://developer.apple.com/help/app-store-connect/manage-featuring-nominations/nominate-your-app-for-featuring/
