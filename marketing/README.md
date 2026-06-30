@@ -3,6 +3,17 @@
 Promotie-onderzoek, autonoom uitgevoerd door Claude op 13 juni 2026 terwijl Ed weg was.
 Alles staat op GitHub zodat je het kunt oppakken wanneer het uitkomt.
 
+## Status (bijgewerkt 30 juni 2026)
+
+- ✅ **v2.0 live** in de App Store (NL sinds 11 juni, VS sinds 12 juni 2026).
+- ✅ **v2.1 (build 9) ingediend** voor review (30 juni) — status WAITING_FOR_REVIEW.
+- ✅ **App hernoemd** naar **"Dicom Viewer by The IT Crowd"** (kale "Dicom Viewer" was
+  in de VS bezet). Alle store- en marketingteksten gebruiken nu "Dicom Viewer".
+- ✅ **en-US store-pagina af** (issue #8): beschrijving, keywords, subtitle, promo-tekst
+  en privacy-URL ingevuld in NL + EN.
+- ⏳ **Promotie nog te starten** — zie de geprioriteerde stappen hieronder en in
+  [LAUNCH_KIT.md](LAUNCH_KIT.md).
+
 ## Wat staat hier?
 
 | Bestand | Inhoud |
@@ -14,8 +25,8 @@ Alles staat op GitHub zodat je het kunt oppakken wanneer het uitkomt.
 
 ## De kern in 5 punten
 
-1. **Eerste stap = de en-US store-pagina afmaken** (issue #8). Alle promotie stuurt
-   verkeer daarheen; een zwakke pagina verspilt het.
+1. ✅ **en-US store-pagina is af** (issue #8) — ingevuld en meegestuurd met v2.1.
+   Volgende stap: Featuring Nomination + de gratis kanalen hieronder.
 2. **Het gat in de markt = patiënt + privacy + gratis.** De concurrenten zijn óf
    pro-tools (IDV, OsiriX, 3DICOM) óf cloud/PACS (Medicai). Niemand bezet "open je
    eigen ziekenhuis-cd, volledig op je toestel, geen account". Dáár zit Dicom Viewer.
@@ -26,11 +37,11 @@ Alles staat op GitHub zodat je het kunt oppakken wanneer het uitkomt.
 5. **Toon per kanaal:** patiënten = gewone taal + privacy; professionals/Reddit =
    *helpen* i.p.v. adverteren (subreddits zijn streng op zelfpromotie).
 
-## Twee dingen om zelf te verifiëren
+## Aandachtspunten
 
-- **VS-listing:** de publieke iTunes-API toont Dicom Viewer (nog) niet in de VS-store
-  (13 juni). Mogelijk propagatie-vertraging. **Check in App Store Connect** of de app
-  echt beschikbaar is in de VS vóór je de Featuring Nomination als "App Launch / nieuwe
-  regio" indient.
+- **VS-listing:** ✅ opgelost — v2.0 is sinds 12 juni 2026 live in de VS-store. De
+  Featuring Nomination kan als "App Launch / nieuwe regio" (VS) of als major update (v2.1).
 - **Prijsmodel:** de app staat als **gratis met tip jar** (IAP). Als je met "betaalde
   app" iets anders bedoelde, laat het weten — de teksten zijn nu op gratis+tips gericht.
+- **Naam in teksten:** gebruik overal **"Dicom Viewer"** (visuele merknaam); de volledige
+  store-naam is "Dicom Viewer by The IT Crowd".

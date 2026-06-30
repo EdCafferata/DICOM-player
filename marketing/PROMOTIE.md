@@ -29,8 +29,8 @@ je app zelf nomineren via **App Store Connect → Featuring nominations form**.
 - **Timing:** minimaal 2 weken vooraf, idealiter 4–6 weken voor een moment; tot 3
   maanden vooruit mag.
 - **Apple scoort op 7 criteria:** UX, UI-design, innovatie, uniekheid,
-  toegankelijkheid, lokalisatie, kwaliteit van de productpagina. → zorg dat de
-  en-US store-pagina (issue #8) eerst top is.
+  toegankelijkheid, lokalisatie, kwaliteit van de productpagina. → de en-US
+  store-pagina (issue #8) is inmiddels af (NL+EN ingevuld, ingediend met v2.1).
 - Link: https://developer.apple.com/help/app-store-connect/manage-featuring-nominations/nominate-your-app-for-featuring/
 
 ### 2. AlternativeTo + SaaSHub (gratis listing als alternatief)
@@ -110,7 +110,7 @@ Wekelijkse rubriek voor indie-apps. Indienen kan simpel per e-mail.
 ### Reddit/forum-reactie op "hoe bekijk ik mijn scan-cd?" (patiënt-hoek)
 > If you've got a CD or USB from the hospital, the files on it are usually DICOM
 > (.dcm). On iPhone/iPad you can open them with a DICOM viewer app — I use Dicom
-> Player because everything stays on the device (no upload, no account). Copy the
+> Viewer because everything stays on the device (no upload, no account). Copy the
 > files to your phone (Files app / AirDrop / email) and open them in the app. Happy
 > to help if you get stuck.
 
@@ -123,9 +123,9 @@ Wekelijkse rubriek voor indie-apps. Indienen kan simpel per e-mail.
 ---
 
 ## Volgorde van aanpak (wat eerst)
-1. **Eerst de en-US store-pagina afmaken** (issue #8) — alles hieronder stuurt verkeer
-   daarheen; een zwakke pagina verspilt het.
-2. Featuring Nomination indienen (zolang de VS-lancering "vers" is).
+1. ✅ **en-US store-pagina af** (issue #8) — NL+EN teksten, keywords, subtitle en
+   privacy-URL ingevuld; meegestuurd met de v2.1-indiening (30 juni 2026).
+2. Featuring Nomination indienen (de VS-lancering + de v2.1-update zijn het "moment").
 3. AlternativeTo + SaaSHub-listings (kost weinig tijd, blijvend zoekverkeer).
 4. 9to5Mac + Indie App Catalog mailen/indienen.
 5. MacRumors- en HackingWithSwift-thread aanmaken.

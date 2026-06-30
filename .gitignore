@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+
+# Xcode — per-user state (hoort niet in git)
+xcuserdata/
+*.xcuserstate
+
+# Xcode — build output
+build/
+DerivedData/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM
+*.dSYM.zip
+*.xcarchive
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Fastlane (indien gebruikt)
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/test_output

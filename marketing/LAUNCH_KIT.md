@@ -76,7 +76,7 @@ and no cloud. It just launched in the US App Store.
 Highlights: cine player for multi-frame studies, Window/Level presets, series
 navigator, frame export, dark medical theme, SwiftUI, iPhone + iPad, EN + NL.
 
-App Store: <link>
+App Store: https://apps.apple.com/app/id1483496527
 Site: https://cafferata.info
 A few screenshots are attached.
 
@@ -114,7 +114,7 @@ ultrasound). Open scans from a hospital CD, USB or email — everything stays on
 device, no account, no cloud. Cine player, Window/Level presets, series navigator,
 frame export, dark theme. iPhone + iPad, EN + NL. Feedback welcome!
 
-App Store: <link>
+App Store: https://apps.apple.com/app/id1483496527
 ```
 *(Afbeeldingen mag je hier direct uploaden. Houd de thread levend met updates.)*
 
@@ -144,7 +144,7 @@ AirDrop or email, then open them in the app. Happy to help if you get stuck.
 ---
 
 ## Checklist (afvinken)
-- [ ] en-US store-pagina af (issue #8) — dit eerst
+- [x] en-US store-pagina af (issue #8) — ✅ ingevuld + ingediend met v2.1 (30 juni 2026)
 - [ ] Featuring Nomination ingediend (App Launch, ~3 wk vooruit)
 - [ ] AlternativeTo-listing + als alternatief bij 3–4 concurrenten
 - [ ] SaaSHub-listing

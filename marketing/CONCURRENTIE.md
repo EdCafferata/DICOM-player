@@ -40,11 +40,13 @@ De concurrent **"DICOM Viewer : MRI CT XRAY & +"** propt modaliteiten in de app-
 Dat is een bewuste vindbaarheids-truc: mensen zoeken op "MRI viewer", "CT scan viewer",
 "x-ray app" — niet op "Dicom Viewer". Lessen:
 
-1. **Naam "Dicom Viewer" mist de zoekwoorden** die mensen intikken. Compenseer in de
-   **ondertitel** en het **keyword-veld** (100 tekens) — die wegen mee voor ranking.
-   - Ondertitel-idee (en-US, ≤30 tekens): `MRI, CT & X-ray DICOM viewer`
-   - Sluit aan op het keyword-veld uit `AppStore/STORE_BESCHRIJVING.md`
-     (`mri,ct,scan,xray,x-ray,radiology,...`). ✅ die staat al goed.
+1. **De naam "Dicom Viewer by The IT Crowd" mist de modaliteit-zoekwoorden** die mensen
+   intikken (MRI/CT/X-ray). Compenseer in de **ondertitel** en het **keyword-veld**
+   (100 tekens) — die wegen mee voor ranking.
+   - Gekozen ondertitel (en-US): `Medical image & DICOM viewer` (28/30 tekens). ✅
+   - Alternatief met meer modaliteiten als je later wilt bijsturen: `MRI, CT & X-ray DICOM viewer`.
+   - Keyword-veld uit `AppStore/STORE_BESCHRIJVING.md`
+     (`mri,ct,scan,xray,x-ray,radiology,...`) staat goed. ✅
 2. **Voeg de patiënt-zoektermen toe** die de pro-apps negeren: `hospital, cd, scan,
    patient` — daar is minder concurrentie en het sluit aan op jouw unieke hoek.
 3. **Reviews zijn de hefboom** — IDV heeft 4,69★. Een nieuwe pagina zonder ratings
