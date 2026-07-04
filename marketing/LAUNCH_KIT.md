@@ -148,7 +148,7 @@ AirDrop or email, then open them in the app. Happy to help if you get stuck.
 - [x] Featuring Nomination ingediend (App Launch, ~3 wk vooruit)
 - [ ] AlternativeTo-listing + als alternatief bij 3–4 concurrenten
 - [ ] SaaSHub-listing
-- [ ] 9to5Mac-mail verstuurd (+ screenshots)
+- [x] 9to5Mac-mail verstuurd (+ screenshots) — 4 juli 2026
 - [ ] Product Hunt-launch ingepland
 - [ ] MacRumors-thread aangemaakt
 - [ ] HackingWithSwift-post
