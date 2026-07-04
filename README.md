@@ -1,30 +1,32 @@
-# Dicom Viewer
+# Dicom Viewer by The IT Crowd
 
-[![App Store](https://img.shields.io/badge/App_Store-v2.0-blue?logo=apple)](https://apps.apple.com/nl/app/dicom-player/id1483496527)
-[![Platform](https://img.shields.io/badge/iOS-16.0%2B-lightgrey?logo=apple)](https://apps.apple.com/nl/app/dicom-player/id1483496527)
+[![App Store](https://img.shields.io/badge/App_Store-v2.1-blue?logo=apple)](https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527)
+[![Platform](https://img.shields.io/badge/iOS-16.0%2B-lightgrey?logo=apple)](https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527)
 [![Licentie](https://img.shields.io/badge/licentie-GPL--3.0-green)](LICENSE)
 
 **Dicom Viewer** is een native iOS-app (SwiftUI) waarmee je DICOM-bestanden — medische beelden van bijvoorbeeld röntgen, CT, MRI en echografie — direct op je iPhone of iPad bekijkt.
 
-📲 **[Download in de App Store](https://apps.apple.com/nl/app/dicom-player/id1483496527)** — versie 2.0 is live sinds 11 juni 2026. 🟢
+📲 **[Download in de App Store (NL)](https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527)** · **[US](https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527)** — versie 2.1 is live sinds 1 juli 2026. 🟢 Beschikbaar in het Nederlands en Engels.
 
-## Functies (v2.0)
+## Functies (v2.1)
 
 - 🩻 **Eigen DICOM-parser** — leest het DICOM-binairformaat zonder externe dependencies
 - 🖼️ **Fullscreen viewer** — pinch/zoom, slepen en dubbeltikken om te resetten
 - 🎞️ **Cine player** — speel multi-frame bestanden (series) af als video
+- 🗂️ **Series navigator** — slices automatisch gegroepeerd per serie ([#2](https://github.com/EdCafferata/DICOM-player/issues/2))
+- 🎚️ **Window/Level presets** — Abdomen, Long, Bot, Hersenen ([#3](https://github.com/EdCafferata/DICOM-player/issues/3))
+- 💾 **Exporteer frames** als PNG/JPEG ([#5](https://github.com/EdCafferata/DICOM-player/issues/5))
+- 🕘 **Recent geopende bestanden** ([#6](https://github.com/EdCafferata/DICOM-player/issues/6))
 - 🌙 **Medisch dark theme** — UI ontworpen voor het bekijken van medische beelden
 - 📂 **Open-in ondersteuning** — open bestanden vanuit de Bestanden-app, AirDrop of e-mail
 - ☕ **Tip Jar** — steun de ontwikkelaar optioneel met een kleine bijdrage
 
-## Binnenkort (v2.1)
+## Binnenkort
 
-Deze functies zijn al klaar op de `master-branch` en verschijnen in de volgende App Store-release:
+Nog open op de backlog:
 
-- 🗂️ DICOM Series navigator — slices gegroepeerd op Series Instance UID ([#2](https://github.com/EdCafferata/DICOM-player/issues/2))
-- 🎚️ Window/Level presets — Abdomen, Long, Bot, Hersenen ([#3](https://github.com/EdCafferata/DICOM-player/issues/3))
-- 💾 Exporteer frames als PNG/JPEG ([#5](https://github.com/EdCafferata/DICOM-player/issues/5))
-- 🕘 Recent geopende bestanden ([#6](https://github.com/EdCafferata/DICOM-player/issues/6))
+- 📏 Measurements — afstand meten in mm op het beeld ([#4](https://github.com/EdCafferata/DICOM-player/issues/4))
+- 📱 iPad split-view layout — bestandslijst en viewer naast elkaar ([#7](https://github.com/EdCafferata/DICOM-player/issues/7))
 
 ## Vereisten
 
