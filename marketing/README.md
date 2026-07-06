@@ -22,6 +22,7 @@ Alles staat op GitHub zodat je het kunt oppakken wanneer het uitkomt.
 | [LAUNCH_KIT.md](LAUNCH_KIT.md) | Plak-klare teksten + exacte stappen per kanaal (Featuring Nomination, AlternativeTo, 9to5Mac, Product Hunt, MacRumors, Reddit) |
 | [CONCURRENTIE.md](CONCURRENTIE.md) | Concurrentieanalyse + positionering + ASO-lessen |
 | [SITES.md](SITES.md) | Websites die over DICOM-viewers/scans schrijven (roundups, nieuws, directories) + kant-en-klare teksten |
+| [NEDERLANDSE_BRONNEN.md](NEDERLANDSE_BRONNEN.md) | Nederlandse bronnen (zorg-ICT-pers, NVvR, scancentra, community's) in gedoseerde golven + kant-en-klare teksten |
 | [FACEBOOK.md](FACEBOOK.md) | Facebook-pagina's en -groepen (professionals, patiënten, dierenartsen) + kant-en-klare teksten |
 | [STORE_BESCHRIJVING.md](../AppStore/STORE_BESCHRIJVING.md) | NL+EN store-teksten (issue #8) |
 
