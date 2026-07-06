@@ -61,7 +61,7 @@ pas bij een concrete vraag, stuur geen koude mail naar ziekenhuizen.
 
 ## Checklist
 
-- [ ] Golf 1 — zorgictzorgen.nl contactformulier ingevuld
+- [x] Golf 1 — zorgictzorgen.nl contactformulier ingevuld (6 juli 2026, "succesvol verzonden" bevestigd — wacht op reactie van Wim Jongejan voor golf 2)
 - [ ] Golf 2 — Zorgvisie/Skipr gemaild
 - [ ] Golf 2 — ICT&Health gemaild
 - [ ] Golf 3 — NVvR informatie-industrie-pagina bekeken/ingevuld
