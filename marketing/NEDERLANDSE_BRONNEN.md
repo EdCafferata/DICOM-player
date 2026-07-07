@@ -72,7 +72,7 @@ pas bij een concrete vraag, stuur geen koude mail naar ziekenhuizen.
 - [ ] Golf 2 — Zorgvisie/Skipr gemaild
 - [ ] Golf 2 — ICT&Health gemaild
 - [ ] Golf 3 — NVvR informatie-industrie-pagina bekeken/ingevuld (7 juli 2026: pagina bekeken, blijkt betaald sponsorkanaal — voorstel is een informele e-mail naar nvvr@radiologen.nl, tekst hieronder klaargezet, nog niet verzonden)
-- [ ] Golf 4 — Prescan benaderd (7 juli 2026: contactformulier op prescan.nl/contact voorbereid en klaargezet in browser — telefoonnummer en akkoord privacyverklaring nog in te vullen door Ed, daarna zelf verzenden)
+- [x] Golf 4 — Prescan benaderd (7 juli 2026: contactformulier op prescan.nl/contact verzonden door Ed)
 - [x] Golf 4 — Privatescan benaderd (7 juli 2026: contactformulier op privatescan.nl/contact verzonden door Ed)
 - [ ] Golf 4 — MRI Centrum benaderd
 - [ ] Golf 4 — ScanClinic benaderd
