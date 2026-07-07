@@ -34,6 +34,13 @@ Vakvereniging van radiologen — **geen reclame-kanaal**, wel de "informatie
 industrie"-pagina die je kunt afcheck: https://radiologen.nl/nvvr/informatie-industrie.
 Zelfde *helpende, niet-adverterende* toon als de Reddit-aanpak in PROMOTIE.md.
 - LinkedIn: https://nl.linkedin.com/company/nederlandse-vereniging-voor-radiologie
+- **Bekeken (7 juli 2026):** de "informatie industrie"-pagina blijkt puur
+  betaalde sponsorkanalen (Sandwichcursus, Radiologendagen, MemoRad-advertenties),
+  geen plek om een app gratis te laten vermelden. Geen formulier, wel
+  contactadressen: julie@bengonline.nl (congressen), miletson@cross.nl
+  (MemoRad-advertenties), nvvr@radiologen.nl (algemeen). Voorstel: in plaats van
+  te betalen voor advertentie, een korte informele e-mail naar nvvr@radiologen.nl
+  sturen (helpende toon, geen reclame) — tekst hieronder.
 
 ### Golf 4 — Particuliere scancentra (B2B, verspreid over 2-3 momenten)
 Klanten van deze bedrijven krijgen een scan mee naar huis — exact de doelgroep.
@@ -64,9 +71,9 @@ pas bij een concrete vraag, stuur geen koude mail naar ziekenhuizen.
 - [x] Golf 1 — zorgictzorgen.nl contactformulier ingevuld (6 juli 2026, "succesvol verzonden" bevestigd — wacht op reactie van Wim Jongejan voor golf 2)
 - [ ] Golf 2 — Zorgvisie/Skipr gemaild
 - [ ] Golf 2 — ICT&Health gemaild
-- [ ] Golf 3 — NVvR informatie-industrie-pagina bekeken/ingevuld
-- [ ] Golf 4 — Prescan benaderd
-- [ ] Golf 4 — Privatescan benaderd
+- [ ] Golf 3 — NVvR informatie-industrie-pagina bekeken/ingevuld (7 juli 2026: pagina bekeken, blijkt betaald sponsorkanaal — voorstel is een informele e-mail naar nvvr@radiologen.nl, tekst hieronder klaargezet, nog niet verzonden)
+- [ ] Golf 4 — Prescan benaderd (7 juli 2026: contactformulier op prescan.nl/contact voorbereid en klaargezet in browser — telefoonnummer en akkoord privacyverklaring nog in te vullen door Ed, daarna zelf verzenden)
+- [ ] Golf 4 — Privatescan benaderd (7 juli 2026: contactformulier op privatescan.nl/contact voorbereid en klaargezet in browser — telefoonnummer nog in te vullen door Ed, daarna zelf verzenden)
 - [ ] Golf 4 — MRI Centrum benaderd
 - [ ] Golf 4 — ScanClinic benaderd
 - [ ] Golf 4 — Open MRI Zen benaderd
@@ -135,3 +142,57 @@ golf voortbouwen op het bewijs van de vorige (zorgictzorgen.nl-vermelding als
 opstap naar Zorgvisie/Skipr/ICT&Health).
 **How to apply:** volg de golf-volgorde hierboven; wacht op reactie of ~3-4 dagen
 voor je de volgende golf verstuurt.
+
+---
+
+## Kant-en-klare tekst — Golf 3 (NVvR, e-mail naar nvvr@radiologen.nl)
+
+**Onderwerp:** Dicom Viewer — gratis iOS-app voor radiologiebeelden
+
+```
+Beste NVvR,
+
+Ik ben Ed Cafferata van The IT Crowd. Ik heb Dicom Viewer ontwikkeld, een
+gratis iOS-app waarmee patiënten en zorgprofessionals DICOM-beelden (röntgen,
+CT, MRI, echo) rechtstreeks op hun iPhone of iPad bekijken — zonder account,
+cloud-upload of PACS-koppeling. Alles blijft lokaal op het toestel.
+
+Geen advertentieverzoek, maar ik dacht dat dit voor jullie leden of via jullie
+kanalen interessant kan zijn, bijvoorbeeld als hulpmiddel wanneer patiënten hun
+eigen beelden willen bekijken of meenemen.
+
+App Store: https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527
+Meer info: https://cafferata.info
+
+Met vriendelijke groet,
+Ed Cafferata — The IT Crowd
+edcafferata@icloud.com
+```
+
+---
+
+## Kant-en-klare tekst — Golf 4 (Prescan / Privatescan, contactformulier)
+
+Beide formulieren vragen alleen naam, e-mail, telefoonnummer en een
+vrij-tekstveld — geen apart onderwerp. Op 7 juli 2026 al ingevuld en klaargezet
+in de browser (naam, e-mail, bericht); telefoonnummer en (bij Prescan) het
+akkoord-privacyverklaring-vinkje zijn bewust opengelaten voor Ed.
+
+```
+Beste [Prescan/Privatescan]-team,
+
+Ik ben Ed Cafferata van The IT Crowd en heb Dicom Viewer ontwikkeld: een
+gratis iOS-app waarmee mensen hun DICOM-scanbeelden (CT, MRI, echo)
+rechtstreeks op hun iPhone of iPad bekijken, zonder account, cloud-upload of
+speciale software. Alles blijft lokaal op het toestel.
+
+Dit kan handig zijn voor klanten die een scan meekrijgen op cd/usb en deze
+makkelijk willen bekijken op hun telefoon. Ik deel de app graag als suggestie
+voor jullie service-pagina of als tip aan klanten.
+
+App Store: https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527
+Meer info: https://cafferata.info
+
+Met vriendelijke groet,
+Ed Cafferata - The IT Crowd
+```
