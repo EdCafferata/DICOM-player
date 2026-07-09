@@ -76,9 +76,9 @@ pas bij een concrete vraag, stuur geen koude mail naar ziekenhuizen.
 - [x] Golf 4 — Privatescan benaderd (7 juli 2026: contactformulier op privatescan.nl/contact verzonden door Ed)
 - [ ] Golf 4 — MRI Centrum benaderd (8 juli 2026: contactformulier op mricentrum.nl/contact voorbereid — naam, e-mail en bericht ingevuld; geboortedatum en telefoonnummer bewust opengelaten voor Ed, nog niet verzonden)
 - [ ] Golf 4 — ScanClinic benaderd (8 juli 2026: geen contactformulier, alleen e-mail contact@scanclinic.nl — tekst hieronder klaargezet, Ed kan zelf mailen)
-- [ ] Golf 4 — Open MRI Zen benaderd
+- [ ] Golf 4 — Open MRI Zen benaderd (9 juli 2026: geen contactformulier, alleen e-mail info@openmrizen.com — tekst hieronder klaargezet, Ed kan zelf mailen)
 - [ ] Golf 4 — Transparant Kliniek benaderd
-- [ ] Golf 4 — DirectClinics benaderd
+- [ ] Golf 4 — DirectClinics benaderd (9 juli 2026: contactformulier op directclinics.nl/contact voorbereid — naam, e-mail en bericht ingevuld; telefoonnummer (verplicht) en reCAPTCHA bewust opengelaten voor Ed, nog niet verzonden)
 - [ ] Golf 5 — Zorginnovatie.nl LinkedIn-post geplaatst (8 juli 2026: concepttekst hieronder klaargezet, nog niet gepost)
 - [ ] Golf 6 — eerste helpende reactie richting patiënt/ziekenhuis-hoek (indien kans zich voordoet)
 
@@ -200,6 +200,20 @@ Ed Cafferata - The IT Crowd
 **ScanClinic heeft geen webformulier**, alleen e-mail: contact@scanclinic.nl
 (+3185 1155488). Zelfde tekst als hierboven, aanhef aanpassen naar "Beste
 ScanClinic-team,".
+
+**Open MRI Zen heeft ook geen webformulier**, alleen e-mail: info@openmrizen.com
+(+31 117 79 91 10). Zelfde tekst als hierboven, aanhef aanpassen naar "Beste
+Open MRI Zen-team,".
+
+**Transparant Kliniek heeft ook geen webformulier**, alleen e-mail:
+info@transparantkliniek.nl (of WhatsApp via de site). Zelfde tekst als
+hierboven, aanhef aanpassen naar "Beste Transparant Kliniek-team,".
+
+**DirectClinics** heeft wel een webformulier (directclinics.nl/contact, via de
+"Mail ons"-knop) — Naam, e-mail en Vragen-of-opmerkingen-veld zijn op 9 juli
+2026 ingevuld met bovenstaande tekst (aanhef "Beste DirectClinics-team,").
+Telefoonnummer is verplicht en het formulier heeft een reCAPTCHA — beide
+bewust opengelaten/niet ingevuld voor Ed, formulier is nog niet verzonden.
 
 ---
 
