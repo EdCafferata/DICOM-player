@@ -75,7 +75,7 @@ pas bij een concrete vraag, stuur geen koude mail naar ziekenhuizen.
 - [x] Golf 4 — Prescan benaderd (7 juli 2026: contactformulier op prescan.nl/contact verzonden door Ed)
 - [x] Golf 4 — Privatescan benaderd (7 juli 2026: contactformulier op privatescan.nl/contact verzonden door Ed)
 - [ ] Golf 4 — MRI Centrum benaderd (8 juli 2026: contactformulier op mricentrum.nl/contact voorbereid — naam, e-mail en bericht ingevuld; geboortedatum en telefoonnummer bewust opengelaten voor Ed, nog niet verzonden)
-- [ ] Golf 4 — ScanClinic benaderd (8 juli 2026: geen contactformulier, alleen e-mail contact@scanclinic.nl — tekst hieronder klaargezet, Ed kan zelf mailen)
+- [x] Golf 4 — ScanClinic benaderd (9 juli 2026: e-mail naar contact@scanclinic.nl verzonden door Ed)
 - [ ] Golf 4 — Open MRI Zen benaderd (9 juli 2026: geen contactformulier, alleen e-mail info@openmrizen.com — tekst hieronder klaargezet, Ed kan zelf mailen)
 - [ ] Golf 4 — Transparant Kliniek benaderd
 - [x] Golf 4 — DirectClinics benaderd (9 juli 2026: contactformulier op directclinics.nl/contact voorbereid door Claude en verzonden door Ed, bevestigd via bedankt-aanvraag-pagina)
