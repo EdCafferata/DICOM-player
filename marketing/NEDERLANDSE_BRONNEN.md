@@ -78,7 +78,7 @@ pas bij een concrete vraag, stuur geen koude mail naar ziekenhuizen.
 - [ ] Golf 4 — ScanClinic benaderd (8 juli 2026: geen contactformulier, alleen e-mail contact@scanclinic.nl — tekst hieronder klaargezet, Ed kan zelf mailen)
 - [ ] Golf 4 — Open MRI Zen benaderd (9 juli 2026: geen contactformulier, alleen e-mail info@openmrizen.com — tekst hieronder klaargezet, Ed kan zelf mailen)
 - [ ] Golf 4 — Transparant Kliniek benaderd
-- [ ] Golf 4 — DirectClinics benaderd (9 juli 2026: contactformulier op directclinics.nl/contact voorbereid — naam, e-mail en bericht ingevuld; telefoonnummer (verplicht) en reCAPTCHA bewust opengelaten voor Ed, nog niet verzonden)
+- [x] Golf 4 — DirectClinics benaderd (9 juli 2026: contactformulier op directclinics.nl/contact voorbereid door Claude en verzonden door Ed, bevestigd via bedankt-aanvraag-pagina)
 - [ ] Golf 5 — Zorginnovatie.nl LinkedIn-post geplaatst (8 juli 2026: concepttekst hieronder klaargezet, nog niet gepost)
 - [ ] Golf 6 — eerste helpende reactie richting patiënt/ziekenhuis-hoek (indien kans zich voordoet)
 
@@ -212,8 +212,9 @@ hierboven, aanhef aanpassen naar "Beste Transparant Kliniek-team,".
 **DirectClinics** heeft wel een webformulier (directclinics.nl/contact, via de
 "Mail ons"-knop) — Naam, e-mail en Vragen-of-opmerkingen-veld zijn op 9 juli
 2026 ingevuld met bovenstaande tekst (aanhef "Beste DirectClinics-team,").
-Telefoonnummer is verplicht en het formulier heeft een reCAPTCHA — beide
-bewust opengelaten/niet ingevuld voor Ed, formulier is nog niet verzonden.
+Telefoonnummer en reCAPTCHA waren bewust opengelaten voor Ed — hij heeft het
+formulier zelf aangevuld en verzonden, bevestigd via
+https://www.directclinics.nl/bedankt-aanvraag.
 
 ---
 
