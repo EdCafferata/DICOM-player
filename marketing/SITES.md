@@ -14,7 +14,7 @@ opleveren (goed voor SEO-verkeer).
 | Site | Artikel | Aanpak |
 |---|---|---|
 | **iMedicalApps** | imedicalapps.com — fysiek-gereviewde medische apps, 400k views/mnd | Contact via About → Contact op imedicalapps.com. Grootste vis hier — physician reviewers, dus benadruk klinisch nut + privacy |
-| **RadioGyan** | radiogyan.com/articles/dicom-viewers/ | Contactformulier: radiogyan.com/contact/ (radiologie-blog van Dr. Amar Udare) |
+done| **RadioGyan** | radiogyan.com/articles/dicom-viewers/ | Contactformulier: radiogyan.com/contact/ (radiologie-blog van Dr. Amar Udare) |
 | **MEDevel** | medevel.com (open-source healthcare tools) | Contact: medevel.com/about-contact/ — check ook hun GitHub-issues voor suggesties |
 | **IMAIOS blog** | imaios.com/en/resources/blog/mobile-dicom-viewer-apps | Bedrijf achter concurrent IDV, maar publiek roundup-artikel — reactieformulier/contact op de site |
 | **Medicai blog** | blog.medicai.io/en/mobile-dicom-viewer/ | Concurrent (cloud PACS), maar blog staat open voor vermeldingen — contact via medicai.io |
