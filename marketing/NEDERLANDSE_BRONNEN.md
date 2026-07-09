@@ -74,12 +74,12 @@ pas bij een concrete vraag, stuur geen koude mail naar ziekenhuizen.
 - [ ] Golf 3 — NVvR informatie-industrie-pagina bekeken/ingevuld (7 juli 2026: pagina bekeken, blijkt betaald sponsorkanaal — voorstel is een informele e-mail naar nvvr@radiologen.nl, tekst hieronder klaargezet, nog niet verzonden)
 - [x] Golf 4 — Prescan benaderd (7 juli 2026: contactformulier op prescan.nl/contact verzonden door Ed)
 - [x] Golf 4 — Privatescan benaderd (7 juli 2026: contactformulier op privatescan.nl/contact verzonden door Ed)
-- [ ] Golf 4 — MRI Centrum benaderd
-- [ ] Golf 4 — ScanClinic benaderd
+- [ ] Golf 4 — MRI Centrum benaderd (8 juli 2026: contactformulier op mricentrum.nl/contact voorbereid — naam, e-mail en bericht ingevuld; geboortedatum en telefoonnummer bewust opengelaten voor Ed, nog niet verzonden)
+- [ ] Golf 4 — ScanClinic benaderd (8 juli 2026: geen contactformulier, alleen e-mail contact@scanclinic.nl — tekst hieronder klaargezet, Ed kan zelf mailen)
 - [ ] Golf 4 — Open MRI Zen benaderd
 - [ ] Golf 4 — Transparant Kliniek benaderd
 - [ ] Golf 4 — DirectClinics benaderd
-- [ ] Golf 5 — Zorginnovatie.nl LinkedIn-post geplaatst
+- [ ] Golf 5 — Zorginnovatie.nl LinkedIn-post geplaatst (8 juli 2026: concepttekst hieronder klaargezet, nog niet gepost)
 - [ ] Golf 6 — eerste helpende reactie richting patiënt/ziekenhuis-hoek (indien kans zich voordoet)
 
 ---
@@ -195,4 +195,35 @@ Meer info: https://cafferata.info
 
 Met vriendelijke groet,
 Ed Cafferata - The IT Crowd
+```
+
+**ScanClinic heeft geen webformulier**, alleen e-mail: contact@scanclinic.nl
+(+3185 1155488). Zelfde tekst als hierboven, aanhef aanpassen naar "Beste
+ScanClinic-team,".
+
+---
+
+## Kant-en-klare tekst — Golf 5 (Zorginnovatie.nl, LinkedIn-post)
+
+Concept voor een organische introductiepost (geen advertentie, geen tag-spam) —
+te plaatsen door Ed op zijn eigen LinkedIn, evt. met vermelding/tag van
+Zorginnovatie.nl (13.686 volgers):
+
+```
+Als iOS-ontwikkelaar zag ik hoeveel mensen na een scan (röntgen, CT, MRI, echo)
+met een cd of usb-stick naar huis gaan en geen idee hebben hoe ze die beelden
+nog moeten bekijken. Daarom heb ik Dicom Viewer gebouwd: een gratis iOS-app die
+DICOM-bestanden rechtstreeks op iPhone of iPad toont — zonder account, zonder
+cloud-upload, zonder PACS-koppeling. Alles blijft lokaal op het toestel.
+
+Privacy-by-design leek me hier niet optioneel: medische beelden horen niet
+zomaar in een cloud-dienst te belanden.
+
+Benieuwd wat de zorginnovatie-community ervan vindt, en of dit iets is dat
+aansluit bij hoe patiënten steeds meer eigen regie krijgen over hun
+zorgdata.
+
+App Store: https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+#zorginnovatie #eHealth #patiëntdata #DICOM
 ```
