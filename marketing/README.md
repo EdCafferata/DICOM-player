@@ -3,16 +3,19 @@
 Promotie-onderzoek, autonoom uitgevoerd door Claude op 13 juni 2026 terwijl Ed weg was.
 Alles staat op GitHub zodat je het kunt oppakken wanneer het uitkomt.
 
-## Status (bijgewerkt 30 juni 2026)
+## Status (bijgewerkt 9 juli 2026)
 
-- ✅ **v2.0 live** in de App Store (NL sinds 11 juni, VS sinds 12 juni 2026).
-- ✅ **v2.1 (build 9) ingediend** voor review (30 juni) — status WAITING_FOR_REVIEW.
+- ✅ **v2.1 (build 9) LIVE** in de App Store sinds 1 juli 2026 (NL + VS).
 - ✅ **App hernoemd** naar **"Dicom Viewer by The IT Crowd"** (kale "Dicom Viewer" was
   in de VS bezet). Alle store- en marketingteksten gebruiken nu "Dicom Viewer".
 - ✅ **en-US store-pagina af** (issue #8): beschrijving, keywords, subtitle, promo-tekst
   en privacy-URL ingevuld in NL + EN.
-- ⏳ **Promotie nog te starten** — zie de geprioriteerde stappen hieronder en in
-  [LAUNCH_KIT.md](LAUNCH_KIT.md).
+- ✅ **AlternativeTo-listing LIVE** sinds 8 juli 2026:
+  https://alternativeto.net/software/dicom-viewer/
+- 🔄 **Promotie loopt** — Featuring Nomination, AlternativeTo, SaaSHub en 9to5Mac zijn
+  gedaan (zie [LAUNCH_KIT.md](LAUNCH_KIT.md)); NL-outreach loopt gedoseerd via
+  [NEDERLANDSE_BRONNEN.md](NEDERLANDSE_BRONNEN.md) (dagelijkse routine). Nog open:
+  Product Hunt, MacRumors, HackingWithSwift, helpende Reddit-reacties.
 
 ## Wat staat hier?
 
@@ -29,7 +32,7 @@ Alles staat op GitHub zodat je het kunt oppakken wanneer het uitkomt.
 ## De kern in 5 punten
 
 1. ✅ **en-US store-pagina is af** (issue #8) — ingevuld en meegestuurd met v2.1.
-   Volgende stap: Featuring Nomination + de gratis kanalen hieronder.
+   Featuring Nomination + AlternativeTo/SaaSHub zijn inmiddels ook gedaan.
 2. **Het gat in de markt = patiënt + privacy + gratis.** De concurrenten zijn óf
    pro-tools (IDV, OsiriX, 3DICOM) óf cloud/PACS (Medicai). Niemand bezet "open je
    eigen ziekenhuis-cd, volledig op je toestel, geen account". Dáár zit Dicom Viewer.

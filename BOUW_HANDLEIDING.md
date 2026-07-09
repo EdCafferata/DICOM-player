@@ -119,7 +119,7 @@ Ga naar App Store Connect → Jouw app → In-App Purchases:
 4. Prijs: €0,99
 5. Voeg localisatie toe: `nl_NL` + `en-US`
 6. Voeg IAP screenshot toe (verplicht)
-7. Herhaal voor `tip.medium` (Pizza €2,99) en `tip.large` (Diner €9,99)
+7. Herhaal voor `tip.medium` (Lunch €2,99) en `tip.large` (Diner €9,99)
 
 ### 6b. In de app (TipJarView.swift)
 
@@ -174,16 +174,16 @@ cd /Volumes/Backup-Ed/AI/DICOM-player
 DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer xcodebuild \
   -project "Dicom Player.xcodeproj" \
   -scheme "Dicom Player" \
-  -destination "id=F2532603-D618-4C2D-A0A6-4E6F9A8161F6" \
+  -destination "id=88EB08ED-92F2-440D-895D-2A7562C6F863" \
   -configuration Debug build
 ```
 
 ### Installeren + starten
 ```bash
-xcrun simctl install F2532603-D618-4C2D-A0A6-4E6F9A8161F6 \
+xcrun simctl install 88EB08ED-92F2-440D-895D-2A7562C6F863 \
   "/Users/edcafferata/Library/Developer/Xcode/DerivedData/Dicom_Player-dnpskgwspfvinfestohjmivukfmu/Build/Products/Debug-iphonesimulator/Dicom Player.app"
 
-xcrun simctl launch F2532603-D618-4C2D-A0A6-4E6F9A8161F6 info.cafferata.dicomplayer
+xcrun simctl launch 88EB08ED-92F2-440D-895D-2A7562C6F863 info.cafferata.dicomplayer
 ```
 
 > **Tip:** Als de DerivedData-map een andere naam heeft:
@@ -218,11 +218,11 @@ Daarna in Xcode:
 
 ```bash
 # Simulator opstarten en app openen
-xcrun simctl boot F2532603-D618-4C2D-A0A6-4E6F9A8161F6
+xcrun simctl boot 88EB08ED-92F2-440D-895D-2A7562C6F863
 open -a Simulator
 
 # Screenshot nemen
-xcrun simctl io F2532603-D618-4C2D-A0A6-4E6F9A8161F6 screenshot /tmp/dicom_screen.png
+xcrun simctl io 88EB08ED-92F2-440D-895D-2A7562C6F863 screenshot /tmp/dicom_screen.png
 ```
 
 Screenshot afmeting iPhone 16 simulator: **1320×2868 px** (6.9")
@@ -263,7 +263,7 @@ Het icoon wordt automatisch meegenomen vanuit `AppIcon.appiconset/Icon-1024.png`
 
 ```bash
 # Kopieer .dcm bestand naar simulator Documents map
-UDID="F2532603-D618-4C2D-A0A6-4E6F9A8161F6"
+UDID="88EB08ED-92F2-440D-895D-2A7562C6F863"
 DOCS=$(xcrun simctl get_app_container "$UDID" info.cafferata.dicomplayer data)/Documents
 cp /pad/naar/bestand.dcm "$DOCS/"
 

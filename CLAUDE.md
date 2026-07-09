@@ -13,9 +13,11 @@ Inclusief Tip Jar (StoreKit 2 IAP) voor ondersteuning van de ontwikkelaar.
 - **Project:** `/Volumes/Backup-Ed/AI/DICOM-player/`
 - **Xcode project:** `Dicom Player.xcodeproj`
 - **Bundle ID:** `info.cafferata.dicomplayer`
+- **App Store-naam:** "Dicom Viewer by The IT Crowd" (PRODUCT_NAME/scheme blijven "Dicom Player")
 - **GitHub:** https://github.com/EdCafferata/DICOM-player — branch: `master-branch`
-- **Versie:** `2.0`
-- **Simulator ID:** `F2532603-D618-4C2D-A0A6-4E6F9A8161F6` (iPhone 16, iOS 18.2)
+- **Versie:** `2.1` (build 9) — live in de App Store sinds 1 juli 2026
+- **Simulator ID:** `88EB08ED-92F2-440D-895D-2A7562C6F863` (iPhone 17e, iOS 26.5)
+- **Fysiek testapparaat:** iPhone 13 Pro Max, device ID `9DA480C9-9239-5AD3-9A1E-09E5A21AF4DA`
 
 ### Build commando's
 ```bash
@@ -23,7 +25,7 @@ Inclusief Tip Jar (StoreKit 2 IAP) voor ondersteuning van de ontwikkelaar.
 DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer xcodebuild \
   -project "Dicom Player.xcodeproj" \
   -scheme "Dicom Player" \
-  -destination "id=F2532603-D618-4C2D-A0A6-4E6F9A8161F6" \
+  -destination "id=88EB08ED-92F2-440D-895D-2A7562C6F863" \
   -configuration Debug build
 
 # TestFlight archive
@@ -37,10 +39,10 @@ DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer xcodebuild \
 
 ### Installeren + starten op simulator
 ```bash
-xcrun simctl install F2532603-D618-4C2D-A0A6-4E6F9A8161F6 \
+xcrun simctl install 88EB08ED-92F2-440D-895D-2A7562C6F863 \
   "/Users/edcafferata/Library/Developer/Xcode/DerivedData/Dicom_Player-dnpskgwspfvinfestohjmivukfmu/Build/Products/Debug-iphonesimulator/Dicom Player.app"
 
-xcrun simctl launch F2532603-D618-4C2D-A0A6-4E6F9A8161F6 info.cafferata.dicomplayer
+xcrun simctl launch 88EB08ED-92F2-440D-895D-2A7562C6F863 info.cafferata.dicomplayer
 ```
 
 ## Sessie start (ALTIJD uitvoeren)
@@ -49,11 +51,13 @@ xcrun simctl launch F2532603-D618-4C2D-A0A6-4E6F9A8161F6 info.cafferata.dicompla
 3. Meld wat er nieuw is t.o.v. vorige sessie
 
 ## App Store Connect
-- **App ID:** (zie App Store Connect → Dicom Player)
-- **Status:** Versie 2.0 ingediend voor review (2026-05-22), wacht op goedkeuring
+- **App ID:** `1483496527`
+- **Status:** Versie 2.1 (build 9) — **LIVE** sinds 1 juli 2026 🟢
+- **Promotie:** AlternativeTo-listing live sinds 8 juli 2026 (https://alternativeto.net/software/dicom-viewer/);
+  NL-outreach loopt via `marketing/NEDERLANDSE_BRONNEN.md` (dagelijkse routine)
 - **Tip Jar IAP producten:**
   - `info.cafferata.dicomplayer.tip.small` — Koffie €0,99 (Non-Consumable)
-  - `info.cafferata.dicomplayer.tip.medium` — Pizza €2,99 (Non-Consumable)
+  - `info.cafferata.dicomplayer.tip.medium` — Lunch €2,99 (Non-Consumable)
   - `info.cafferata.dicomplayer.tip.large` — Diner €9,99 (Non-Consumable)
 
 ## Sessie einde (ALTIJD uitvoeren)
@@ -131,11 +135,13 @@ Med.textSecondary = #5A7099
 - [x] Medische dark-mode UI (MedTheme design tokens)
 - [x] Demo DICOM bestanden gebundeld
 - [x] Open-in handler (andere apps kunnen .dcm naar DICOM Player sturen)
-- [x] Versie 2.0 ingediend bij Apple Review (2026-05-22)
+- [x] Series navigator — slices gegroepeerd per serie (#2)
+- [x] Window/Level presets — Abdomen, Long, Bot, Hersenen (#3)
+- [x] Export frame als PNG/JPEG (#5)
+- [x] Recent geopende bestanden (#6)
+- [x] App Store beschrijving NL + EN (#8)
+- [x] Versie 2.1 (build 9) — LIVE in de App Store sinds 1 juli 2026
 
 ## Open issues (backlog)
-- [ ] App Store review afwachten en eventuele opmerkingen afhandelen
-- [ ] Window-level aanpassen via swipe/slider (WC/WW interactief)
-- [ ] Multi-series ondersteuning (DICOM Study met meerdere series)
-- [ ] iPad-optimalisatie (split view / grote schermen)
-- [ ] Export naar PNG/JPEG vanuit viewer
+- [ ] #4 Measurements — afstand meten in mm
+- [ ] #7 iPad split-view layout (bestandslijst + viewer naast elkaar)

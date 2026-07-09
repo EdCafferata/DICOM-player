@@ -125,11 +125,12 @@ Wekelijkse rubriek voor indie-apps. Indienen kan simpel per e-mail.
 ## Volgorde van aanpak (wat eerst)
 1. ✅ **en-US store-pagina af** (issue #8) — NL+EN teksten, keywords, subtitle en
    privacy-URL ingevuld; meegestuurd met de v2.1-indiening (30 juni 2026).
-2. Featuring Nomination indienen (de VS-lancering + de v2.1-update zijn het "moment").
-3. AlternativeTo + SaaSHub-listings (kost weinig tijd, blijvend zoekverkeer).
-4. 9to5Mac + Indie App Catalog mailen/indienen.
-5. MacRumors- en HackingWithSwift-thread aanmaken.
-6. Pas daarna de medische communities, met de *helpende* toon.
+2. ✅ Featuring Nomination ingediend (de VS-lancering + de v2.1-update zijn het "moment").
+3. ✅ AlternativeTo + SaaSHub-listings — beide live (7-8 juli 2026), zie LAUNCH_KIT.md.
+4. ✅ 9to5Mac gemaild (4 juli 2026); Indie App Catalog nog te doen.
+5. MacRumors- en HackingWithSwift-thread aanmaken — nog open.
+6. Pas daarna de medische communities, met de *helpende* toon — NL-outreach loopt al
+   gedoseerd via NEDERLANDSE_BRONNEN.md.
 7. Vraag de eerste tevreden gebruikers om een **review** — een pagina zonder ratings
    converteert slecht (geldt extra voor medische apps).
 

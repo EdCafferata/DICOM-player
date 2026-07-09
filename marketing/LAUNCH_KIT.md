@@ -146,7 +146,7 @@ AirDrop or email, then open them in the app. Happy to help if you get stuck.
 ## Checklist (afvinken)
 - [x] en-US store-pagina af (issue #8) — ✅ ingevuld + ingediend met v2.1 (30 juni 2026)
 - [x] Featuring Nomination ingediend (App Launch, ~3 wk vooruit)
-- [x] AlternativeTo-listing ingediend — 8 juli 2026 (wacht op goedkeuring)
+- [x] AlternativeTo-listing LIVE — sinds 8 juli 2026: https://alternativeto.net/software/dicom-viewer/
 - [x] SaaSHub-listing (7 juli 2026)
 - [x] 9to5Mac-mail verstuurd (+ screenshots) — 4 juli 2026
 - [ ] Product Hunt-launch ingepland

@@ -116,7 +116,7 @@ Indien Ja:
   Prijs klein           : [bijv. €0,99]
 
   Product ID middel     : [bijv. com.mijninstelling.dicomplayer.tip.medium]
-  Naam middel           : [bijv. Pizza]
+  Naam middel           : [bijv. Lunch]
   Prijs middel          : [bijv. €2,99]
 
   Product ID groot      : [bijv. com.mijninstelling.dicomplayer.tip.large]
