@@ -23,11 +23,15 @@ https://zorgictzorgen.nl/contact/
 Grootste zorg-ICT-nieuwssites van Nederland, dagelijks bereik onder
 zorgprofessionals/beslissers. Zorgvisie en Skipr delen tegenwoordig één
 tech-redactie/nieuwsbrief.
-- Zorgvisie: https://www.zorgvisie.nl/
-- Skipr: https://www.skipr.nl/
-- ICT&Health: https://www.icthealth.nl/nieuws
+- Zorgvisie: https://www.zorgvisie.nl/ — redactiemail: **zorgvisie@bsl.nl**
+- Skipr: https://www.skipr.nl/ (zelfde redactie/nieuwsbrief als Zorgvisie, dus
+  één mail naar zorgvisie@bsl.nl dekt beide)
+- ICT&Health: https://www.icthealth.nl/nieuws — redactiemail:
+  **redactie@icthealth.nl**
 - **Tip:** verwijs in de mail naar de zorgictzorgen.nl-vermelding (golf 1) als
   bewijs dat het onderwerp leeft.
+- **Opgezocht 10 juli 2026:** bovenstaande redactie-e-mailadressen gevonden via
+  webzoekopdracht (geen webformulier nodig, direct e-mailen).
 
 ### 🥉 Golf 3 — NVvR (Nederlandse Vereniging voor Radiologie)
 Vakvereniging van radiologen — **geen reclame-kanaal**, wel de "informatie
@@ -69,15 +73,15 @@ pas bij een concrete vraag, stuur geen koude mail naar ziekenhuizen.
 ## Checklist
 
 - [x] Golf 1 — zorgictzorgen.nl contactformulier ingevuld (6 juli 2026, "succesvol verzonden" bevestigd — wacht op reactie van Wim Jongejan voor golf 2)
-- [ ] Golf 2 — Zorgvisie/Skipr gemaild
-- [ ] Golf 2 — ICT&Health gemaild
+- [ ] Golf 2 — Zorgvisie/Skipr gemaild (10 juli 2026: wachttijd verstreken, redactiemail zorgvisie@bsl.nl opgezocht, persbericht-tekst hieronder klaargezet, nog niet verzonden — geen browserverbinding vandaag, Ed kan zelf mailen)
+- [ ] Golf 2 — ICT&Health gemaild (10 juli 2026: redactiemail redactie@icthealth.nl opgezocht, persbericht-tekst hieronder klaargezet, nog niet verzonden — Ed kan zelf mailen)
 - [ ] Golf 3 — NVvR informatie-industrie-pagina bekeken/ingevuld (7 juli 2026: pagina bekeken, blijkt betaald sponsorkanaal — voorstel is een informele e-mail naar nvvr@radiologen.nl, tekst hieronder klaargezet, nog niet verzonden)
 - [x] Golf 4 — Prescan benaderd (7 juli 2026: contactformulier op prescan.nl/contact verzonden door Ed)
 - [x] Golf 4 — Privatescan benaderd (7 juli 2026: contactformulier op privatescan.nl/contact verzonden door Ed)
 - [ ] Golf 4 — MRI Centrum benaderd (8 juli 2026: contactformulier op mricentrum.nl/contact voorbereid — naam, e-mail en bericht ingevuld; geboortedatum en telefoonnummer bewust opengelaten voor Ed, nog niet verzonden)
 - [x] Golf 4 — ScanClinic benaderd (9 juli 2026: e-mail naar contact@scanclinic.nl verzonden door Ed)
 - [ ] Golf 4 — Open MRI Zen benaderd (9 juli 2026: geen contactformulier, alleen e-mail info@openmrizen.com — tekst hieronder klaargezet, Ed kan zelf mailen)
-- [ ] Golf 4 — Transparant Kliniek benaderd
+- [ ] Golf 4 — Transparant Kliniek benaderd (10 juli 2026: e-mailadres info@transparantkliniek.nl bevestigd via webzoekopdracht, tekst hieronder klaargezet, nog niet verzonden — Ed kan zelf mailen)
 - [x] Golf 4 — DirectClinics benaderd (9 juli 2026: contactformulier op directclinics.nl/contact voorbereid door Claude en verzonden door Ed, bevestigd via bedankt-aanvraag-pagina)
 - [ ] Golf 5 — Zorginnovatie.nl LinkedIn-post geplaatst (8 juli 2026: concepttekst hieronder klaargezet, nog niet gepost)
 - [ ] Golf 6 — eerste helpende reactie richting patiënt/ziekenhuis-hoek (indien kans zich voordoet)
@@ -115,6 +119,10 @@ Ed Cafferata — The IT Crowd
 ---
 
 ## Kant-en-klare tekst — Golf 2 (Zorgvisie/Skipr/ICT&Health, persbericht)
+
+Twee losse mails met dezelfde tekst (10 juli 2026 opgezocht):
+- **Aan:** zorgvisie@bsl.nl (dekt zowel Zorgvisie als Skipr — gedeelde redactie)
+- **Aan:** redactie@icthealth.nl
 
 **Onderwerp:** Nieuwe app: Dicom Viewer — privacy-first DICOM-viewer voor iPhone/iPad
 
