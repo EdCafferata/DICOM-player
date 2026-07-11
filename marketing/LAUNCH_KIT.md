@@ -147,7 +147,9 @@ GIF — Product Hunt-posts met een video/GIF scoren merkbaar beter.
 
 ### Launch-day checklist
 - [ ] Kies een dinsdag–donderdag (hoogste PH-verkeer), post **00:01–02:00 PT**
-      zodat je de volledige dag meedraait
+      zodat je de volledige dag meedraait. **In NL-tijd (zomer, CEST = PT + 9
+      uur): dat is 09:01–11:00 NL-tijd, dezelfde dag** — gewoon binnen
+      kantooruren, geen nachtwerk nodig.
 - [ ] Maker's comment direct bij launch plaatsen (zie hierboven)
 - [ ] Netwerk (mail/social/Slack-groepen) een uur van tevoren geven een seintje
       voor de eerste upvotes — het eerste uur bepaalt de ranking-boost
