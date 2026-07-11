@@ -15,7 +15,7 @@ opleveren (goed voor SEO-verkeer).
 |---|---|---|
 | **iMedicalApps** | imedicalapps.com — fysiek-gereviewde medische apps, 400k views/mnd | Contact via About → Contact op imedicalapps.com. Grootste vis hier — physician reviewers, dus benadruk klinisch nut + privacy |
 | **RadioGyan** ✅ | radiogyan.com/articles/dicom-viewers/ | Contactformulier: radiogyan.com/contact/ (radiologie-blog van Dr. Amar Udare) — **gemaild door Ed, 10 juli 2026** |
-| **MEDevel** ✅✅ | medevel.com (open-source healthcare tools) | Contact: medevel.com/about-contact/ — check ook hun GitHub-issues voor suggesties — **gemaild door Ed, 10 juli 2026. Reactie ontvangen 10 juli 2026: "We are ready to publish about it, please send us a full features list." Kant-en-klare featurelijst-reactie (Engels, o.b.v. README v2.1) klaargezet, nog niet verzonden — zie onder.** |
+| **MEDevel** ✅✅✅ | medevel.com (open-source healthcare tools) | Contact: medevel.com/about-contact/ — check ook hun GitHub-issues voor suggesties — **gemaild door Ed, 10 juli 2026. Reactie ontvangen 10 juli 2026: "We are ready to publish about it, please send us a full features list." Featurelijst-reactie (zie kant-en-klare tekst hieronder) verzonden door Ed, 10 juli 2026 — wacht op publicatie.** |
 | **IMAIOS blog** | imaios.com/en/resources/blog/mobile-dicom-viewer-apps | Bedrijf achter concurrent IDV, maar publiek roundup-artikel — reactieformulier/contact op de site |
 | **Medicai blog** | blog.medicai.io/en/mobile-dicom-viewer/ | Concurrent (cloud PACS), maar blog staat open voor vermeldingen — contact via medicai.io |
 | **PostDICOM blog** | postdicom.com/en/blog/top-25-free-dicom-viewers | Concurrent, roundup "Top 25 Free DICOM Viewers" — contactformulier op postdicom.com |
