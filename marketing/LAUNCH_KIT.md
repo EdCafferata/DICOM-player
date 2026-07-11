@@ -87,20 +87,74 @@ The IT Crowd
 
 ---
 
-## D. Product Hunt (gratis launch)
+## D. Product Hunt (gratis launch) — volledig kit, 10 juli 2026
 
+**Waarom nu:** hoogste kans op een echte piek in Amerikaanse downloads van alle
+resterende gratis kanalen — groot, actief Engelstalig publiek dat rechtstreeks
+naar de App Store doorklikt. Alles-of-niets per product: je hebt maar één
+"launch day", dus timing en het eerste uur bepalen of het een piek wordt.
+
+### Basisgegevens
 - **Naam:** Dicom Viewer
-- **Tagline (max ~60 tekens):** `View your MRI, CT & X-ray scans on iPhone — privately`
-- **Beschrijving:**
+- **Website/App Store-link:** https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+- **Pricing:** Free (met optionele Tip Jar)
+- **Topics (max 3):** Health & Fitness · iOS · Medical
+
+### Tagline-opties (max ~60 tekens — kies er één, of test welke beter scoort)
+1. `View your MRI, CT & X-ray scans on iPhone — privately`
+2. `A privacy-first DICOM viewer for iPhone & iPad`
+3. `Open your hospital scan CD right on your phone`
+
+### Beschrijving (het launch-bericht zelf)
 ```
-Got a CD or USB of medical scans from the hospital? Dicom Viewer opens DICOM files
-(X-ray, CT, MRI, ultrasound) right on your iPhone or iPad — no account, no cloud,
-nothing leaves your device. Cine player, Window/Level presets, series navigator and
-frame export, in a dark theme built for medical images. Native SwiftUI, iPhone + iPad.
+Got a CD or USB of medical scans from the hospital? Dicom Viewer opens DICOM
+files (X-ray, CT, MRI, ultrasound) right on your iPhone or iPad — no account,
+no cloud, nothing leaves your device.
+
+Built for two audiences at once: patients who just want to see the scans they
+were handed at the hospital, and clinicians, students or vets who need a fast,
+private viewer. Includes a cine player for multi-frame studies, Window/Level
+presets (Abdomen, Lung, Bone, Brain), an automatic series navigator, and frame
+export to PNG/JPEG — all in a dark theme built for reading medical images.
+
+Native SwiftUI, iPhone + iPad, English + Dutch. Free, with an optional tip jar.
 ```
-- **Topics:** Health & Fitness, iOS, Medical
-- **Tip:** plan een dag, post 's ochtends (PT), en mobiliseer je netwerk voor upvotes
-  in de eerste uren. Ook zonder #1 levert het SEO + een blijvende listing op.
+
+### Maker's eerste comment (direct na launch plaatsen — dit is waar mensen op reageren)
+```
+Hey Product Hunt 👋
+
+I built Dicom Viewer after realizing how many people leave a hospital with a
+CD or USB stick full of DICOM files and no easy way to actually look at them
+on anything but a hospital workstation. So I made a native iOS app that opens
+them straight on your phone — completely on-device, no account, no cloud
+upload, no PACS connection required.
+
+It turned out to serve two very different groups: patients who just want to
+see their own scans, and clinicians/students/vets who wanted something faster
+and more private than the usual desktop viewers. I wrote the DICOM parser
+myself in Swift with zero external dependencies.
+
+Would love your feedback — especially if you've ever been handed a scan CD and
+had no idea what to do with it. Happy to answer anything about how it works
+under the hood too.
+```
+
+### Galerij
+3–5 screenshots (viewer fullscreen, cine player, Window/Level presets, series
+navigator) + eventueel een korte schermopname van pinch-zoom/cine-afspelen als
+GIF — Product Hunt-posts met een video/GIF scoren merkbaar beter.
+
+### Launch-day checklist
+- [ ] Kies een dinsdag–donderdag (hoogste PH-verkeer), post **00:01–02:00 PT**
+      zodat je de volledige dag meedraait
+- [ ] Maker's comment direct bij launch plaatsen (zie hierboven)
+- [ ] Netwerk (mail/social/Slack-groepen) een uur van tevoren geven een seintje
+      voor de eerste upvotes — het eerste uur bepaalt de ranking-boost
+- [ ] Blijf de hele dag reageren op elke comment (activiteit telt mee voor
+      zichtbaarheid, niet alleen upvotes)
+- [ ] Ook zonder #1 van de dag: blijvende listing + SEO-verkeer, dus geen reden
+      om te wachten op een "perfecte" dag
 
 ---
 
