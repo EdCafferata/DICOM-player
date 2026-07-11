@@ -15,7 +15,7 @@ opleveren (goed voor SEO-verkeer).
 |---|---|---|
 | **iMedicalApps** | imedicalapps.com — fysiek-gereviewde medische apps, 400k views/mnd | Contact via About → Contact op imedicalapps.com. Grootste vis hier — physician reviewers, dus benadruk klinisch nut + privacy |
 | **RadioGyan** ✅ | radiogyan.com/articles/dicom-viewers/ | Contactformulier: radiogyan.com/contact/ (radiologie-blog van Dr. Amar Udare) — **gemaild door Ed, 10 juli 2026** |
-| **MEDevel** ✅ | medevel.com (open-source healthcare tools) | Contact: medevel.com/about-contact/ — check ook hun GitHub-issues voor suggesties — **gemaild door Ed, 10 juli 2026** |
+| **MEDevel** ✅✅ | medevel.com (open-source healthcare tools) | Contact: medevel.com/about-contact/ — check ook hun GitHub-issues voor suggesties — **gemaild door Ed, 10 juli 2026. Reactie ontvangen 10 juli 2026: "We are ready to publish about it, please send us a full features list." Kant-en-klare featurelijst-reactie (Engels, o.b.v. README v2.1) klaargezet, nog niet verzonden — zie onder.** |
 | **IMAIOS blog** | imaios.com/en/resources/blog/mobile-dicom-viewer-apps | Bedrijf achter concurrent IDV, maar publiek roundup-artikel — reactieformulier/contact op de site |
 | **Medicai blog** | blog.medicai.io/en/mobile-dicom-viewer/ | Concurrent (cloud PACS), maar blog staat open voor vermeldingen — contact via medicai.io |
 | **PostDICOM blog** | postdicom.com/en/blog/top-25-free-dicom-viewers | Concurrent, roundup "Top 25 Free DICOM Viewers" — contactformulier op postdicom.com |
@@ -106,6 +106,66 @@ Add Dicom Viewer — a native iOS app (iPhone/iPad) for viewing DICOM medical
 images (X-ray, CT, MRI, ultrasound). On-device only: no account, no cloud
 upload, no PACS connection. Includes a cine player, Window/Level presets,
 series navigator and frame export. Free, App Store: https://apps.apple.com/app/id1483496527
+```
+
+### 3b. Featurelijst voor MEDevel (reactie op hun verzoek, 10 juli 2026)
+
+Onderwerp: `Re: Dicom Viewer — full feature list`
+
+```
+Hi [naam contactpersoon],
+
+Great to hear you're ready to publish! Here's the full feature list for Dicom
+Viewer by The IT Crowd.
+
+One-liner: A native iOS app (SwiftUI) that lets patients and clinicians view
+DICOM medical images — X-ray, CT, MRI, ultrasound — directly on iPhone or iPad,
+fully on-device.
+
+App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+GitHub (open source, GPL-3.0): https://github.com/EdCafferata/DICOM-player
+Platform: iOS 16.0+, iPhone and iPad
+Languages: English, Dutch
+Price: Free, with an optional tip jar
+Current version: 2.1 (live since July 1, 2026)
+
+Why it's different
+Everything is processed entirely on-device — no account, no cloud upload, no
+PACS connection. The DICOM parser itself is custom-built with zero external
+dependencies. That matters for two audiences at once: patients who just want
+to open the scan CD/USB their hospital gave them, and clinicians/students who
+want a fast, private viewer.
+
+Full feature list (v2.1)
+- Custom DICOM parser — reads the DICOM binary format natively, no third-party
+  libraries
+- Full-screen viewer — pinch-to-zoom, pan, double-tap to reset
+- Cine player — plays multi-frame studies (series) back like a video
+- Series navigator — slices automatically grouped by series
+- Window/Level presets — Abdomen, Lung, Bone, Brain
+- Frame export — save frames as PNG/JPEG
+- Recently opened files
+- Dark medical theme — UI designed specifically for reading medical images
+- Open-in support — open files directly from the Files app, AirDrop, or email
+- Tip jar — optional way to support development, no paywall on core features
+
+On the roadmap (in progress)
+- Measurements — distance measurement in mm directly on the image
+- iPad split-view layout — file list and viewer side by side
+
+Screenshots
+Happy to send high-res screenshots (or App Store Connect access to the current
+set) — just let me know which sizes/format you need.
+
+The project is fully open source under GPL-3.0, so feel free to link the
+GitHub repo alongside the App Store listing if that fits your format.
+
+Thanks again for considering it — let me know if you need anything else!
+
+Best,
+Ed Cafferata
+The IT Crowd
+edcafferata@icloud.com
 ```
 
 ### 4. Helpende reactie voor kanker.nl / NL-forums (categorie D)
