@@ -78,7 +78,7 @@ pas bij een concrete vraag, stuur geen koude mail naar ziekenhuizen.
 - [ ] Golf 3 — NVvR informatie-industrie-pagina bekeken/ingevuld (7 juli 2026: pagina bekeken, blijkt betaald sponsorkanaal — voorstel is een informele e-mail naar nvvr@radiologen.nl, tekst hieronder klaargezet, nog niet verzonden)
 - [x] Golf 4 — Prescan benaderd (7 juli 2026: contactformulier op prescan.nl/contact verzonden door Ed)
 - [x] Golf 4 — Privatescan benaderd (7 juli 2026: contactformulier op privatescan.nl/contact verzonden door Ed)
-- [ ] Golf 4 — MRI Centrum benaderd (8 juli 2026: contactformulier op mricentrum.nl/contact voorbereid — naam, e-mail en bericht ingevuld; geboortedatum en telefoonnummer bewust opengelaten voor Ed, nog niet verzonden)
+- [ ] Golf 4 — MRI Centrum benaderd (12 juli 2026: contactformulier op mricentrum.nl/contact opnieuw ingevuld — naam, e-mail en bericht ingevuld; geboortedatum, telefoonnummer en de radio-keuze "verwijzing" bewust opengelaten voor Ed, nog niet verzonden)
 - [x] Golf 4 — ScanClinic benaderd (9 juli 2026: e-mail naar contact@scanclinic.nl verzonden door Ed)
 - [ ] Golf 4 — Open MRI Zen benaderd (9 juli 2026: geen contactformulier, alleen e-mail info@openmrizen.com — tekst hieronder klaargezet, Ed kan zelf mailen)
 - [ ] Golf 4 — Transparant Kliniek benaderd (10 juli 2026: e-mailadres info@transparantkliniek.nl bevestigd via webzoekopdracht, tekst hieronder klaargezet, nog niet verzonden — Ed kan zelf mailen)
