@@ -178,6 +178,12 @@ App Store: https://apps.apple.com/app/id1483496527
 
 ## F. HackingWithSwift — App Announcements (gratis)
 
+⚠️ **Update 13 juli 2026:** het "New Topic"-formulier op dit forum waarschuwt expliciet:
+"Posting any kind of generative AI here will lead to your account being banned." De
+kant-en-klare tekst hieronder is door Claude geschreven — dus **niet zomaar plakken**. Ed
+moet 'm zelf herschrijven in eigen woorden voordat dit kanaal gebruikt wordt. Verder is het
+forum wél expliciet welkom voor app-aankondigingen (geen anti-promo-regel zoals bij Reddit).
+
 **Plek:** hackingwithswift.com/forums/app-announcements (afbeeldingen elders hosten +
 linken, bijv. naar cafferata.info). Zelfde tekst als MacRumors kan, iets technischer
 (SwiftUI, eigen DICOM-parser zonder dependencies) want het publiek is developers.
@@ -215,7 +221,10 @@ AirDrop or email, then open them in the app. Happy to help if you get stuck.
 - [x] 9to5Mac-mail verstuurd (+ screenshots) — 4 juli 2026
 - [ ] Product Hunt-launch ingepland
 - [x] MacRumors-thread aangemaakt — 13 juli 2026, wacht op moderator-goedkeuring (nieuw account): https://forums.macrumors.com/threads/dicom-viewer-native-dicom-viewer-for-iphone-ipad-now-in-the-us.2485343/
-- [ ] HackingWithSwift-post
+- [ ] HackingWithSwift-post — geskipt (13 juli 2026): het "New Topic"-formulier waarschuwt
+  expliciet dat AI-gegenereerde posts tot een accountban leiden. De kant-en-klare tekst in
+  sectie F hierboven is door Claude geschreven, dus niet zomaar plakbaar; Ed moet 'm zelf
+  herschrijven in eigen woorden als hij dit kanaal alsnog wil gebruiken.
 - [x] Reddit — afgevinkt zonder posts (13 juli 2026): r/AskDocs, r/askdentists en r/Radiology
   verbieden zelfpromotie expliciet en zwaar (r/AskDocs: permanente ban bij elke productvermelding;
   r/askdentists + r/Radiology: "no ads/promotions of any kind"), en op r/AskDocs/r/askdentists
