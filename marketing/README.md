@@ -3,7 +3,7 @@
 Promotie-onderzoek, autonoom uitgevoerd door Claude op 13 juni 2026 terwijl Ed weg was.
 Alles staat op GitHub zodat je het kunt oppakken wanneer het uitkomt.
 
-## Status (bijgewerkt 9 juli 2026)
+## Status (bijgewerkt 13 juli 2026, laat op de avond)
 
 - ✅ **v2.1 (build 9) LIVE** in de App Store sinds 1 juli 2026 (NL + VS).
 - ✅ **App hernoemd** naar **"Dicom Viewer by The IT Crowd"** (kale "Dicom Viewer" was
@@ -50,8 +50,8 @@ Alles staat op GitHub zodat je het kunt oppakken wanneer het uitkomt.
 2. **Het gat in de markt = patiënt + privacy + gratis.** De concurrenten zijn óf
    pro-tools (IDV, OsiriX, 3DICOM) óf cloud/PACS (Medicai). Niemand bezet "open je
    eigen ziekenhuis-cd, volledig op je toestel, geen account". Dáár zit Dicom Viewer.
-3. **Hoogste-waarde gratis kanalen:** Apple Featuring Nomination, AlternativeTo/SaaSHub,
-   9to5Mac Indie Spotlight, Product Hunt, MacRumors-forum.
+3. **Hoogste-waarde gratis kanalen:** Apple Featuring Nomination (ook voor India, zie
+   INDIA_BRONNEN.md), AlternativeTo/SaaSHub, 9to5Mac Indie Spotlight, Awesome DICOM.
 4. **Reviews zijn de hefboom.** De app heeft nu **0 reviews** (geverifieerd 13 juni) —
    IDV heeft er 4,69★. Vraag je eerste gebruikers actief om een review.
 5. **Toon per kanaal:** patiënten = gewone taal + privacy; professionals/Reddit =
