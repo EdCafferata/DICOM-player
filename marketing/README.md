@@ -12,10 +12,11 @@ Alles staat op GitHub zodat je het kunt oppakken wanneer het uitkomt.
   en privacy-URL ingevuld in NL + EN.
 - ✅ **AlternativeTo-listing LIVE** sinds 8 juli 2026:
   https://alternativeto.net/software/dicom-viewer/
-- 🔄 **Promotie loopt** — Featuring Nomination, AlternativeTo, SaaSHub en 9to5Mac zijn
-  gedaan (zie [LAUNCH_KIT.md](LAUNCH_KIT.md)); NL-outreach loopt gedoseerd via
+- 🔄 **Promotie loopt** — Featuring Nomination, AlternativeTo, SaaSHub, 9to5Mac en de
+  MacRumors-thread zijn gedaan (zie [LAUNCH_KIT.md](LAUNCH_KIT.md); MacRumors wacht nog
+  op moderator-goedkeuring); NL-outreach loopt gedoseerd via
   [NEDERLANDSE_BRONNEN.md](NEDERLANDSE_BRONNEN.md) (dagelijkse routine). Nog open:
-  Product Hunt, MacRumors, HackingWithSwift, helpende Reddit-reacties.
+  Product Hunt, HackingWithSwift, helpende Reddit-reacties.
 
 ## Wat staat hier?
 

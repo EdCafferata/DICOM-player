@@ -206,7 +206,7 @@ AirDrop or email, then open them in the app. Happy to help if you get stuck.
 - [x] SaaSHub-listing (7 juli 2026)
 - [x] 9to5Mac-mail verstuurd (+ screenshots) — 4 juli 2026
 - [ ] Product Hunt-launch ingepland
-- [ ] MacRumors-thread aangemaakt
+- [x] MacRumors-thread aangemaakt — 13 juli 2026, wacht op moderator-goedkeuring (nieuw account): https://forums.macrumors.com/threads/dicom-viewer-native-dicom-viewer-for-iphone-ipad-now-in-the-us.2485343/
 - [ ] HackingWithSwift-post
 - [ ] 1–2 helpende Reddit-reacties op scan-cd-vragen
 - [x] eerste gebruikers om een review gevraagd
