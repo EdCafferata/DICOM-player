@@ -65,11 +65,15 @@ kanaal.
 - Alternatief: coverage-aanvraagformulier op
   https://www.contacts.yourstory.com/editorial-coverage-request
 
-### 🥉 Golf 3 — Analytics India Magazine (radiologie-nieuws)
-Heeft een specifieke radiologie-nieuwsrubriek:
-https://analyticsindiamag.com/news/radiology/ — contactpunt nog niet
-opgezocht, eerst de site zelf checken op een redactiemailadres of
-tip-formulier voor de volgende sessie.
+### 🥉 Golf 3 — Analytics India Magazine ⚠️ waarschijnlijk zwakke match
+Heeft een radiologie-tag (https://analyticsindiamag.com/news/radiology/),
+maar bij nader onderzoek (13 juli 2026) blijkt de redactionele focus vooral
+op **AI/data-science/enterprise-IT-nieuws** te liggen (datacenters, AI-
+investeringen, grote IT-dienstverleners) — niet op consumenten-apps. Geen
+duidelijk contactformulier gevonden (contact-us-pagina bestaat niet, redirect
+naar een artikel); wel een "Got a tip?"-optie maar zonder duidelijke
+mail/formulier-link. Lagere prioriteit — waarschijnlijk geen sterke match
+voor Dicom Viewer.
 - **ETHealthworld** (health.economictimes.indiatimes.com) — het grootste
   Indiase gezondheidszorg-vakmedium (Economic Times-vertical), maar geen
   duidelijke gratis persbericht-route gevonden bij dit onderzoek; sommige
@@ -97,9 +101,12 @@ tegengekomen) — wel gelden algemene regels: gebruik de juiste post-flair
 - Subreddit: https://reddit.com/r/developersIndia (regels:
   https://old.reddit.com/r/developersIndia/about/rules — geverifieerd, geen
   anti-zelfpromotie-regel)
-- **r/india** (algemene India-subreddit, groot bereik) — regels nog **niet**
-  gecontroleerd deze sessie, eerst checken op
-  `old.reddit.com/r/india/about/rules` vóór posten.
+- **r/india** ⛔ **ongeschikt** (regels gecontroleerd, 13 juli 2026): regel 9
+  verbiedt zelfpromotie grotendeels (slechts 1 op de 10 reacties mag
+  zelfpromotie zijn — vereist eerst een lange periode actief/oprecht
+  meedoen), én regel 10 verbiedt expliciet generatieve AI-content ("We do not
+  allow AI-generated content... ChatGPT, Copilot, Gemini..."). Zelfde valkuil
+  als HackingWithSwift eerder deze sessie — overslaan.
 
 ### Golf 5 — Inc42 ⚠️ waarschijnlijk deels betaald
 Startup-mediaplatform, groot bereik (25M+/maand), maar de submission-pagina
@@ -113,14 +120,19 @@ duidelijk "nee, dit is gratis"-check.
 ### Golf 6 — Patiëntkant (lagere prioriteit, nog te verifiëren)
 Zelfde *helpende, niet-wervende* toon als kanker.nl (NL) — pas reageren bij een
 concrete vraag over het bekijken van scanbeelden, geen koude post.
-- **India Medical Hub** (indiamedicalhub.com/health-questions) — forum waar
-  patiënten artsen online vragen kunnen stellen; regels/moderatie niet
-  gecontroleerd deze sessie.
-- **PharmD Info — Indian Patient Forum** (pharmdinfo.com) — regels niet
-  gecontroleerd.
-- Beide: **eerst forumregels checken op zelfpromotie-restricties**, zelfde les
-  als de Amerikaanse medische subreddits deze sessie (r/AskDocs e.d. bleken
-  zelfpromotie hard te verbieden, ondanks een behulpzame toon).
+- **India Medical Hub** ☠️ **NIET GEBRUIKEN** (gecheckt 13 juli 2026): het
+  domein indiamedicalhub.com blijkt gekaapt — geen medisch forum meer, maar
+  een Indonesische gokspam-pagina ("RATU11 BANDAR SLOT GACOR"). Waarschijnlijk
+  een verlopen domein dat is overgenomen. Verwijderd uit de aanbevelingen;
+  meld dit niet als bron in toekomstige sessies.
+- **PharmD Info — Indian Patient Forum** (pharmdinfo.com/indian-patient-forum-f246.html)
+  ✅ **lijkt legitiem** (gecheckt 13 juli 2026): actief forum voor Indiase
+  apothekers/patiënten, recente posts (juli 2026), subforums incl. Cancer
+  Patients Forum, Telepharmacy. Geen expliciet zelfpromotie- of AI-verbod
+  gevonden (alleen een algemene medische-disclaimer), maar de aparte
+  "algemene regels"-link opende geen leesbare pagina in deze sessie — dus
+  niet 100% zeker. **Zelfde voorzichtige aanpak:** alleen reageren op een
+  concrete vraag over het bekijken van scanbeelden, geen losse aankondiging.
 
 ---
 
@@ -129,13 +141,13 @@ concrete vraag over het bekijken van scanbeelden, geen koude post.
 - [ ] 🏆 Apple Featuring Nomination voor India ingediend in App Store Connect (Ed zelf, buiten browserbereik)
 - [ ] Golf 1 — IRIA gemaild (iria37@gmail.com) — tekst hieronder klaar, nog niet verzonden
 - [ ] Golf 2 — YourStory gemaild (editorial@yourstory.com) — tekst hieronder klaar, nog niet verzonden
-- [ ] Golf 3 — Analytics India Magazine contactpunt opzoeken
+- [x] Golf 3 — Analytics India Magazine onderzocht → ⚠️ waarschijnlijk zwakke match (focus op AI/enterprise-IT, geen contactformulier gevonden), lagere prioriteit
 - [ ] Golf 3 — ETHealthworld: eerst een echte gratis redactie-ingang vinden
 - [ ] Golf 3b — MediaNama gemaild (releases@medianama.com) — tekst hieronder klaar, nog niet verzonden
 - [ ] Golf 4 — developersIndia-post/Reddit-showcase voorbereiden
-- [ ] Golf 4 — r/india regels checken vóór posten
+- [x] Golf 4 — r/india regels gecheckt → ⛔ ongeschikt (zelfpromotie-limiet + AI-verbod), overgeslagen
 - [ ] Golf 5 — Inc42: eerst uitzoeken of gratis route echt gratis is
-- [ ] Golf 6 — patiëntforums: regels checken, dan pas *helpende* aanpak
+- [x] Golf 6 — patiëntforums gecheckt: India Medical Hub ☠️ gekaapt door gokspam (niet gebruiken), PharmD Info lijkt legitiem (wacht op concrete vraag om op te reageren)
 
 ---
 
