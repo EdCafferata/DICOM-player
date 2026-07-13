@@ -38,7 +38,7 @@ Deze schrijven radiologienieuws en nemen soms productaankondigingen op.
 
 | Site | Aanpak |
 |---|---|
-| **SourceForge / Slashdot Media** — sourceforge.net/software/dicom-viewers/ | Vendor kan eigen product claimen/toevoegen aan de vergelijkingspagina (los van open-source hosting) |
+| **SourceForge / Slashdot Media** ⏸️ — sourceforge.net/software/vendors/new | Blijkt een zwaarder B2B-leadformulier dan verwacht ("Add Your Business Software or Service", vraagt telefoonnummer/bedrijfsgegevens) — telefoonnummer bewust leeg gelaten. Formulier staat verder klaar (13 juli 2026): categorie "DICOM Viewers", Free Version, iPhone+iPad aangevinkt. **Bewust nog niet verstuurd** — de verplichte akkoord-checkbox bevat ook "I agree to receive communications from SourceForge.net" (marketing-opt-in), Ed wil dat nog even laten hangen voordat we op Submit klikken. |
 | **Awesome DICOM** ✅ — github.com/open-dicom/awesome-dicom | Curated GitHub-lijst — **PR geopend 13 juli 2026: [#27](https://github.com/open-dicom/awesome-dicom/pull/27)**, toegevoegd aan de Visualization-sectie onder Other/Combination, wacht op merge |
 | **AlternativeTo + SaaSHub** | Al gepland in LAUNCH_KIT.md sectie B |
 
