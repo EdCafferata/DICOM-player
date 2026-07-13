@@ -20,6 +20,27 @@
 
 ## Aanbevolen volgorde (golven, ~3-4 dagen ertussen)
 
+### 🏆 De grootste kans — Apple App Store Featuring Nomination voor India
+Groter dan elke individuele pers-/community-vermelding hieronder: een Apple-
+editorial-plek op de India-storefront kan in één klap veel meer bereik geven
+dan alle onderstaande golven samen, en het is een **bewezen, gratis, eigen
+kanaal** — geen afhankelijkheid van een journalist die wel of niet reageert.
+Ed heeft dit proces al eerder succesvol doorlopen voor de VS-lancering (zie
+LAUNCH_KIT.md sectie A).
+- **Pad:** App Store Connect → Dicom Viewer → Featuring → Nominations → "+"
+- **Type:** *App Launch* (nieuwe regio = India), of *In-App Event/Update* als
+  een App Launch-nominatie niet meer past qua timing
+- **Lead time:** minimaal 2 weken vooraf, idealiter 4-6 weken; tot 3 maanden
+  vooruit mag — dus zo snel mogelijk indienen
+- **Supplemental materials:** App Store India-link + cafferata.info
+- **Beschrijving:** kan grotendeels de bestaande VS-tekst uit LAUNCH_KIT.md
+  hergebruiken, met een kleine India-specifieke toevoeging over het
+  radiologentekort/teleradiologie (zie bron hierboven) als motivatie voor de
+  regionale relevantie.
+- **Nog te doen:** Ed moet dit zelf indienen in App Store Connect (buiten
+  bereik van deze browsersessie) — geen contactformulier of e-mail, dus geen
+  actie die Claude kan voorbereiden buiten deze tekst.
+
 ### 🥇 Golf 1 — IRIA (Indian Radiological & Imaging Association)
 Grootste vakvereniging voor radiologie in India (opgericht 1931), met een
 nationaal hoofdkantoor plus staatsafdelingen (Delhi, Kerala, West-Bengalen, e.a.).
@@ -49,6 +70,22 @@ Heeft een specifieke radiologie-nieuwsrubriek:
 https://analyticsindiamag.com/news/radiology/ — contactpunt nog niet
 opgezocht, eerst de site zelf checken op een redactiemailadres of
 tip-formulier voor de volgende sessie.
+- **ETHealthworld** (health.economictimes.indiatimes.com) — het grootste
+  Indiase gezondheidszorg-vakmedium (Economic Times-vertical), maar geen
+  duidelijke gratis persbericht-route gevonden bij dit onderzoek; sommige
+  zoekresultaten wijzen richting betaalde "artikel plaatsen op Economic
+  Times"-PR-diensten. **Niet gebruiken zonder eerst een échte gratis
+  redactie-ingang te vinden** (bijv. via een individuele journalist op
+  LinkedIn) — past anders mogelijk niet bij de "geen betaalde kanalen"-regel.
+
+### Golf 3b — MediaNama (tech-beleid, breed gezaghebbend)
+Bekroonde publicatie over techbeleid in India (privacy, data, digitale
+ecosystemen) — gezaghebbend bij beleidsmakers en bedrijven, minder puur
+consument-gericht maar met veel gezag. Concreet, geverifieerd contact
+(13 juli 2026): **releases@medianama.com** voor bedrijfsupdates/persberichten,
+gratis (geen betaling gevraagd). De privacy-hoek van Dicom Viewer (alles
+on-device, geen cloud) past goed bij hun focus op databeleid.
+- Contact: https://www.medianama.com/contact-us/
 
 ### Golf 4 — developersIndia (community + Reddit)
 India's grootste ontwikkelaarscommunity (1M+ leden). **Regels gecontroleerd
@@ -89,9 +126,12 @@ concrete vraag over het bekijken van scanbeelden, geen koude post.
 
 ## Checklist
 
+- [ ] 🏆 Apple Featuring Nomination voor India ingediend in App Store Connect (Ed zelf, buiten browserbereik)
 - [ ] Golf 1 — IRIA gemaild (iria37@gmail.com) — tekst hieronder klaar, nog niet verzonden
 - [ ] Golf 2 — YourStory gemaild (editorial@yourstory.com) — tekst hieronder klaar, nog niet verzonden
 - [ ] Golf 3 — Analytics India Magazine contactpunt opzoeken
+- [ ] Golf 3 — ETHealthworld: eerst een echte gratis redactie-ingang vinden
+- [ ] Golf 3b — MediaNama gemaild (releases@medianama.com) — tekst hieronder klaar, nog niet verzonden
 - [ ] Golf 4 — developersIndia-post/Reddit-showcase voorbereiden
 - [ ] Golf 4 — r/india regels checken vóór posten
 - [ ] Golf 5 — Inc42: eerst uitzoeken of gratis route echt gratis is
@@ -158,6 +198,36 @@ Happy to answer any questions or send screenshots.
 
 Best,
 Ed Cafferata — The IT Crowd
+```
+
+---
+
+## Kant-en-klare tekst — Golf 3b (MediaNama, e-mail naar releases@medianama.com)
+
+**Onderwerp:** Company update: Dicom Viewer — privacy-first DICOM viewer for iPhone/iPad, now live in India
+
+```
+Hi MediaNama team,
+
+I'm Ed Cafferata, founder of The IT Crowd. I wanted to share a company
+update that might fit your coverage of India's digital ecosystem and data
+policy: Dicom Viewer, a native iOS app for viewing DICOM medical images
+(X-ray, CT, MRI, ultrasound), is now available on the India App Store.
+
+The app is built privacy-first: every file is processed entirely on-device,
+with no account, no cloud upload and no PACS connection — given India's
+ongoing conversations around health data and digital privacy, I thought this
+architectural choice might be relevant to your readers.
+
+App Store: https://apps.apple.com/in/app/dicom-viewer-by-the-it-crowd/id1483496527
+Site: https://cafferata.info
+
+Happy to answer questions or provide more detail on how the on-device
+processing works.
+
+Best,
+Ed Cafferata — The IT Crowd
+edcafferata@icloud.com
 ```
 
 ---
