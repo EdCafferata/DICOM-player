@@ -13,12 +13,12 @@ opleveren (goed voor SEO-verkeer).
 
 | Site | Artikel | Aanpak |
 |---|---|---|
-| **iMedicalApps** | imedicalapps.com — fysiek-gereviewde medische apps, 400k views/mnd | Contact via About → Contact op imedicalapps.com. Grootste vis hier — physician reviewers, dus benadruk klinisch nut + privacy |
+| **iMedicalApps** ⚠️ | imedicalapps.com — fysiek-gereviewde medische apps, 400k views/mnd | Contactformulier (imedicalapps.com/contact/) is **kapot** (reCAPTCHA geeft "Invalid site key", 13 juli 2026 geconstateerd) en er staat geen los e-mailadres — alleen redacteursnamen (Iltifat Husain MD, Satish Misra MD). About-pagina lijkt al jaren niet bijgewerkt. Opnieuw proberen op een later moment, of via Twitter/X (@IltifatMD) |
 | **RadioGyan** ✅ | radiogyan.com/articles/dicom-viewers/ | Contactformulier: radiogyan.com/contact/ (radiologie-blog van Dr. Amar Udare) — **gemaild door Ed, 10 juli 2026** |
 | **MEDevel** ✅✅✅ | medevel.com (open-source healthcare tools) | Contact: medevel.com/about-contact/ — check ook hun GitHub-issues voor suggesties — **gemaild door Ed, 10 juli 2026. Reactie ontvangen 10 juli 2026: "We are ready to publish about it, please send us a full features list." Featurelijst-reactie (zie kant-en-klare tekst hieronder) verzonden door Ed, 10 juli 2026 — wacht op publicatie.** |
 | **IMAIOS blog** | imaios.com/en/resources/blog/mobile-dicom-viewer-apps | Bedrijf achter concurrent IDV, maar publiek roundup-artikel — reactieformulier/contact op de site |
 | **Medicai blog** | blog.medicai.io/en/mobile-dicom-viewer/ | Concurrent (cloud PACS), maar blog staat open voor vermeldingen — contact via medicai.io |
-| **PostDICOM blog** | postdicom.com/en/blog/top-25-free-dicom-viewers | Concurrent, roundup "Top 25 Free DICOM Viewers" — contactformulier op postdicom.com |
+| **PostDICOM blog** ✅ | postdicom.com/en/blog/top-25-free-dicom-viewers | Concurrent (NL bedrijf, Utrecht), roundup "Top 25 Free DICOM Viewers" — **gemaild via contactformulier door Ed, 13 juli 2026 ("Your message was sent successfully"), wacht op reactie** |
 | **Encord blog** | encord.com/blog/best-dicom-viewers/ | ML data-platform, SEO-roundup — contact via encord.com |
 | **Folio3 Digital Health** | digitalhealth.folio3.com/blog/the-best-dicom-viewer/ | Contact via folio3.com |
 | **WifiTalents** | wifitalents.com/best/dicom-viewing-software/ | Statistieken/rankings-site — contactformulier op de site |
