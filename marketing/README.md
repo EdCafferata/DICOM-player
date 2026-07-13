@@ -15,8 +15,12 @@ Alles staat op GitHub zodat je het kunt oppakken wanneer het uitkomt.
 - 🔄 **Promotie loopt** — Featuring Nomination, AlternativeTo, SaaSHub, 9to5Mac en de
   MacRumors-thread zijn gedaan (zie [LAUNCH_KIT.md](LAUNCH_KIT.md); MacRumors wacht nog
   op moderator-goedkeuring); NL-outreach loopt gedoseerd via
-  [NEDERLANDSE_BRONNEN.md](NEDERLANDSE_BRONNEN.md) (dagelijkse routine). Nog open:
-  Product Hunt, HackingWithSwift, helpende Reddit-reacties.
+  [NEDERLANDSE_BRONNEN.md](NEDERLANDSE_BRONNEN.md) (dagelijkse routine).
+- ⛔ **Product Hunt, HackingWithSwift en Reddit (r/AskDocs, r/askdentists, r/Radiology)
+  bewust overgeslagen** (13 juli 2026): Product Hunt is een betaalde site, HackingWithSwift
+  verbiedt AI-gegenereerde posts (accountban-risico), die drie subreddits verbieden
+  zelfpromotie hard. Nieuwe vaste regel voor al Ed's apps: geen betaalde kanalen, geen
+  kanalen die AI-gebruik verbieden.
 
 ## Wat staat hier?
 

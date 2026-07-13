@@ -87,9 +87,18 @@ The IT Crowd
 
 ---
 
-## D. Product Hunt (gratis launch) — volledig kit, 10 juli 2026
+## D. Product Hunt — GESKIPT (13 juli 2026)
 
-**Waarom nu:** hoogste kans op een echte piek in Amerikaanse downloads van alle
+⚠️ Bij het inloggen bleek Product Hunt in de praktijk een betaalde site (niet het gratis
+kanaal dat hieronder nog staat beschreven). Ed's instructie: nooit een betaald kanaal
+gebruiken voor marketing van welke app dan ook — zie de nieuwe basisregel
+[[feedback_marketing_channels]] in het geheugen. Kit hieronder blijft staan als referentie
+voor het geval het beleid ooit verandert, maar wordt niet gebruikt.
+
+<details>
+<summary>Oorspronkelijke kit (niet gebruiken)</summary>
+
+**Waarom toen bedacht:** hoogste kans op een echte piek in Amerikaanse downloads van alle
 resterende gratis kanalen — groot, actief Engelstalig publiek dat rechtstreeks
 naar de App Store doorklikt. Alles-of-niets per product: je hebt maar één
 "launch day", dus timing en het eerste uur bepalen of het een piek wordt.
@@ -158,6 +167,8 @@ GIF — Product Hunt-posts met een video/GIF scoren merkbaar beter.
 - [ ] Ook zonder #1 van de dag: blijvende listing + SEO-verkeer, dus geen reden
       om te wachten op een "perfecte" dag
 
+</details>
+
 ---
 
 ## E. MacRumors-forum (gratis, eigen thread)
@@ -219,7 +230,8 @@ AirDrop or email, then open them in the app. Happy to help if you get stuck.
 - [x] AlternativeTo-listing LIVE — sinds 8 juli 2026: https://alternativeto.net/software/dicom-viewer/
 - [x] SaaSHub-listing (7 juli 2026)
 - [x] 9to5Mac-mail verstuurd (+ screenshots) — 4 juli 2026
-- [ ] Product Hunt-launch ingepland
+- [x] Product Hunt — geskipt (13 juli 2026): bleek een betaalde site. Ed's beleid: geen
+  betaalde marketingkanalen voor welke app dan ook, zie geheugenregel `feedback_marketing_channels`.
 - [x] MacRumors-thread aangemaakt — 13 juli 2026, wacht op moderator-goedkeuring (nieuw account): https://forums.macrumors.com/threads/dicom-viewer-native-dicom-viewer-for-iphone-ipad-now-in-the-us.2485343/
 - [ ] HackingWithSwift-post — geskipt (13 juli 2026): het "New Topic"-formulier waarschuwt
   expliciet dat AI-gegenereerde posts tot een accountban leiden. De kant-en-klare tekst in
