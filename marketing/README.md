@@ -12,10 +12,12 @@ Alles staat op GitHub zodat je het kunt oppakken wanneer het uitkomt.
   en privacy-URL ingevuld in NL + EN.
 - ✅ **AlternativeTo-listing LIVE** sinds 8 juli 2026:
   https://alternativeto.net/software/dicom-viewer/
-- 🔄 **Promotie loopt** — Featuring Nomination, AlternativeTo, SaaSHub, 9to5Mac en de
-  MacRumors-thread zijn gedaan (zie [LAUNCH_KIT.md](LAUNCH_KIT.md); MacRumors wacht nog
-  op moderator-goedkeuring); NL-outreach loopt gedoseerd via
+- 🔄 **Promotie loopt** — Featuring Nomination, AlternativeTo en SaaSHub, 9to5Mac zijn
+  gedaan (zie [LAUNCH_KIT.md](LAUNCH_KIT.md)); NL-outreach loopt gedoseerd via
   [NEDERLANDSE_BRONNEN.md](NEDERLANDSE_BRONNEN.md) (dagelijkse routine).
+- ⚠️ **MacRumors-thread verdwenen** (13 juli 2026): eerder deze avond geplaatst, later
+  bleek de thread niet meer vindbaar — waarschijnlijk afgekeurd/verwijderd door een
+  moderator. Zie LAUNCH_KIT.md voor details en de vervolgstap (accountprofiel invullen).
 - ⛔ **Product Hunt, HackingWithSwift en Reddit (r/AskDocs, r/askdentists, r/Radiology)
   bewust overgeslagen** (13 juli 2026): Product Hunt is een betaalde site, HackingWithSwift
   verbiedt AI-gegenereerde posts (accountban-risico), die drie subreddits verbieden
