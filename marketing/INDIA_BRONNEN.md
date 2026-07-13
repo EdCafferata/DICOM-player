@@ -155,6 +155,19 @@ concrete vraag over het bekijken van scanbeelden, geen koude post.
   niet 100% zeker. **Zelfde voorzichtige aanpak:** alleen reageren op een
   concrete vraag over het bekijken van scanbeelden, geen losse aankondiging.
 
+### Golf 7 — Grote diagnostische ketens (laagste prioriteit, onzeker)
+Analoog aan de NL "particuliere scancentra"-golf, maar dan India's grootste
+ketens: **Apollo Diagnostics** (apollodiagnostics.in/contact-us) en
+**Metropolis Healthcare** (metropolisindia.com/contactus) — beide hebben
+alleen een generiek klantenservice-contactformulier gevonden, geen
+marketing/redactie-ingang. Bij zulke grote corporates komt een outreach-mail
+via het klantformulier waarschijnlijk in een support-wachtrij terecht in
+plaats van bij iemand die de app kan aanbevelen — **lagere prioriteit dan de
+Nederlandse scancentra-golf**, alleen oppakken als de eerdere golven weinig
+opleveren. Geen aparte India-veterinaire radiologie-vereniging gevonden (wel
+de internationale IVRA en een lokale hardware-speler Prognosys/ProRad in
+Bengaluru, geen duidelijk promotiekanaal).
+
 ---
 
 ## Checklist
@@ -169,6 +182,7 @@ concrete vraag over het bekijken van scanbeelden, geen koude post.
 - [x] Golf 4 — r/india regels gecheckt → ⛔ ongeschikt (zelfpromotie-limiet + AI-verbod), overgeslagen
 - [ ] Golf 5 — Inc42: eerst uitzoeken of gratis route echt gratis is
 - [x] Golf 6 — patiëntforums gecheckt: India Medical Hub ☠️ gekaapt door gokspam (niet gebruiken), PharmD Info lijkt legitiem (wacht op concrete vraag om op te reageren)
+- [x] Golf 7 — diagnostische ketens onderzocht (Apollo, Metropolis) → alleen generieke contactformulieren gevonden, laagste prioriteit
 
 ---
 
