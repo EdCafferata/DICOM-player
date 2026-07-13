@@ -18,6 +18,27 @@
 > niet volledig geverifieerd — expliciet gemarkeerd als "nog te checken" vóór
 > gebruik, niet zomaar aannemen dat het gratis/toegestaan is.
 
+## ASO-check (geen outreach nodig, puur onderzoek — 13 juli 2026)
+
+Gratis App Store-zoek-API gebruikt (itunes.apple.com/search, geen account
+nodig) om te zien waar Dicom Viewer nu al staat in India:
+- Zoekterm **"dicom viewer"**: rank **23 van 44** resultaten (vrijwel
+  identiek aan de VS: rank 24 van 46 — geen India-specifiek nadeel, maar ook
+  geen voordeel)
+- Zoekterm **"dicom"** (kaal): **niet gevonden** in de top 48 — sterke
+  aanwijzing dat "dicom" als los keyword niet (goed) in de India-locale
+  keywords staat
+- Zoekterm **"free dicom viewer"**: ook rank 23
+
+**Kans:** het India-specifieke keywordveld in App Store Connect nakijken en
+evt. aanvullen (bijv. los "dicom" toevoegen, of Hindi-transliteraties
+overwegen) kan de vindbaarheid verbeteren zonder dat daar outreach voor
+nodig is. **Blocker:** de App Store Connect API gaf bij deze sessie een
+403-fout — bleek de **al bekende, nog openstaande D&B/DUNS-accountblokkade**
+(zie geheugen `project_apple_developer_account.md`, opnieuw bevestigd 13 juli
+2026) — dus de keywords zelf nakijken/aanpassen kan pas zodra Ed die
+Apple-verificatie heeft afgerond.
+
 ## Aanbevolen volgorde (golven, ~3-4 dagen ertussen)
 
 ### 🏆 De grootste kans — Apple App Store Featuring Nomination voor India
