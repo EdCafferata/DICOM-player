@@ -47,8 +47,8 @@ Wekelijkse rubriek voor indie-apps. Indienen kan simpel per e-mail.
 - Hoek: "native, privacy-first DICOM viewer, geen cloud, nu ook in de VS".
 
 ### 4. Indie App Catalog / IndieAppsCatalog (gratis directory)
-- https://indieappcatalog.com en https://indiecatalog.app/news/submit
-- Plaats de app + een "NewsFromDevs"-update voor de VS-lancering.
+- https://indieappcatalog.com ✅ **ingediend 13 juli 2026** (App Store-URL, "App submitted successfully" — wacht op review/goedkeuring). Site vermeldt: bij een bedrijfsnaam ("The IT Crowd") kan een kort mailtje naar support@indieappcatalog.com verduidelijken dat het een indie-app is — nog niet gedaan, optioneel.
+- https://indiecatalog.app/news/submit — nog te doen
 
 ---
 
@@ -127,7 +127,7 @@ Wekelijkse rubriek voor indie-apps. Indienen kan simpel per e-mail.
    privacy-URL ingevuld; meegestuurd met de v2.1-indiening (30 juni 2026).
 2. ✅ Featuring Nomination ingediend (de VS-lancering + de v2.1-update zijn het "moment").
 3. ✅ AlternativeTo + SaaSHub-listings — beide live (7-8 juli 2026), zie LAUNCH_KIT.md.
-4. ✅ 9to5Mac gemaild (4 juli 2026); Indie App Catalog nog te doen.
+4. ✅ 9to5Mac gemaild (4 juli 2026); ✅ Indie App Catalog ingediend (13 juli 2026).
 5. MacRumors- en HackingWithSwift-thread aanmaken — nog open.
 6. Pas daarna de medische communities, met de *helpende* toon — NL-outreach loopt al
    gedoseerd via NEDERLANDSE_BRONNEN.md.
