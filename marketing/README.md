@@ -21,6 +21,12 @@ Alles staat op GitHub zodat je het kunt oppakken wanneer het uitkomt.
   verbiedt AI-gegenereerde posts (accountban-risico), die drie subreddits verbieden
   zelfpromotie hard. Nieuwe vaste regel voor al Ed's apps: geen betaalde kanalen, geen
   kanalen die AI-gebruik verbieden.
+- ✅ **Awesome DICOM PR** geopend ([#27](https://github.com/open-dicom/awesome-dicom/pull/27));
+  ✅ **PostDICOM + Indie App Catalog** ingediend; IMAIOS-pitch en SourceForge-listing staan
+  klaar maar bewust nog niet verstuurd (Ed houdt ze even open).
+- 🇮🇳 **India-aanpak toegevoegd** (13 juli 2026, autonoom): app staat al live op de
+  India-storefront — zie [INDIA_BRONNEN.md](INDIA_BRONNEN.md) voor IRIA, YourStory,
+  developersIndia en meer, in dezelfde gedoseerde golven-aanpak als NL.
 
 ## Wat staat hier?
 
@@ -31,6 +37,7 @@ Alles staat op GitHub zodat je het kunt oppakken wanneer het uitkomt.
 | [CONCURRENTIE.md](CONCURRENTIE.md) | Concurrentieanalyse + positionering + ASO-lessen |
 | [SITES.md](SITES.md) | Websites die over DICOM-viewers/scans schrijven (roundups, nieuws, directories) + kant-en-klare teksten |
 | [NEDERLANDSE_BRONNEN.md](NEDERLANDSE_BRONNEN.md) | Nederlandse bronnen (zorg-ICT-pers, NVvR, scancentra, community's) in gedoseerde golven + kant-en-klare teksten |
+| [INDIA_BRONNEN.md](INDIA_BRONNEN.md) | Indiase bronnen (IRIA, YourStory, developersIndia, patiëntforums) in gedoseerde golven + kant-en-klare teksten |
 | [FACEBOOK.md](FACEBOOK.md) | Facebook-pagina's en -groepen (professionals, patiënten, dierenartsen) + kant-en-klare teksten |
 | [STORE_BESCHRIJVING.md](../AppStore/STORE_BESCHRIJVING.md) | NL+EN store-teksten (issue #8) |
 
