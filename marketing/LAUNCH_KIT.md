@@ -186,6 +186,14 @@ linken, bijv. naar cafferata.info). Zelfde tekst als MacRumors kan, iets technis
 
 ## G. Reddit — de *helpende* aanpak (geen reclame)
 
+⚠️ **Update 13 juli 2026:** r/AskDocs, r/askdentists en r/Radiology blijken géén geschikte
+plekken — hun regels verbieden zelfpromotie hard (r/AskDocs geeft een **permanente ban** bij
+elke productvermelding, ook subtiel/helpend bedoeld) en staan alleen geverifieerde
+professionals toe om top-level te reageren. Check bij een volgende poging eerst
+`old.reddit.com/r/<sub>/about/rules` op een "no advertising/promotion"-regel vóór je post.
+Subs zónder zo'n regel (nog te checken): r/MRI, r/CTscan, r/cancer, r/braintumor, of bredere
+niet-medische subs als r/iphone/r/ios waar apps wél gedeeld mogen worden.
+
 Niet pushen; reageer op bestaande vragen. Bewaar deze reactie voor "hoe bekijk ik
 mijn scan-cd op mijn telefoon?"-vragen in r/AskDocs, r/MRI, r/CTscan, r/cancer,
 r/braintumor:
@@ -208,7 +216,13 @@ AirDrop or email, then open them in the app. Happy to help if you get stuck.
 - [ ] Product Hunt-launch ingepland
 - [x] MacRumors-thread aangemaakt — 13 juli 2026, wacht op moderator-goedkeuring (nieuw account): https://forums.macrumors.com/threads/dicom-viewer-native-dicom-viewer-for-iphone-ipad-now-in-the-us.2485343/
 - [ ] HackingWithSwift-post
-- [ ] 1–2 helpende Reddit-reacties op scan-cd-vragen
+- [x] Reddit — afgevinkt zonder posts (13 juli 2026): r/AskDocs, r/askdentists en r/Radiology
+  verbieden zelfpromotie expliciet en zwaar (r/AskDocs: permanente ban bij elke productvermelding;
+  r/askdentists + r/Radiology: "no ads/promotions of any kind"), en op r/AskDocs/r/askdentists
+  mogen alleen geverifieerde professionals top-level reageren. Twee concrete kandidaatthreads
+  gevonden (CBCT-vraag op r/askdentists, MRI-CD-vraag op r/Radiology) maar niet gebruikt vanwege
+  ban-risico op het account dat ook voor AlternativeTo/MacRumors dient. Zie sessie-notitie
+  hieronder voor wat wél zou kunnen werken.
 - [x] eerste gebruikers om een review gevraagd
 
 ## Bronnen
