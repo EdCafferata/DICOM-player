@@ -39,7 +39,7 @@ Deze schrijven radiologienieuws en nemen soms productaankondigingen op.
 | Site | Aanpak |
 |---|---|
 | **SourceForge / Slashdot Media** — sourceforge.net/software/dicom-viewers/ | Vendor kan eigen product claimen/toevoegen aan de vergelijkingspagina (los van open-source hosting) |
-| **Awesome DICOM** — github.com/open-dicom/awesome-dicom | Curated GitHub-lijst — voeg Dicom Viewer toe via een Pull Request |
+| **Awesome DICOM** ✅ — github.com/open-dicom/awesome-dicom | Curated GitHub-lijst — **PR geopend 13 juli 2026: [#27](https://github.com/open-dicom/awesome-dicom/pull/27)**, toegevoegd aan de Visualization-sectie onder Other/Combination, wacht op merge |
 | **AlternativeTo + SaaSHub** | Al gepland in LAUNCH_KIT.md sectie B |
 
 ## D. Nederlandse patiëntencommunity (helpende toon, geen reclame)
