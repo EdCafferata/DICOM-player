@@ -182,8 +182,8 @@ sterke extra vondsten voor India specifiek dit uur.
 - [ ] Hacker News Show HN — pas doen nadat een account wat historie heeft, of geaccepteerd dat een auto-kill kan gebeuren
 - [ ] iosdev.space (Mastodon) — Ed maakt zelf een account aan, daarna kan een introductiepost voorbereid worden
 - [x] AltStore PAL onderzocht → ⛔ vereist werkend Apple Developer-account, zit vast op de bekende D&B/DUNS-blokkade — pas oppakken zodra dat is opgelost
-- [ ] ACR RFS gemaild (rfs@acr.org) — tekst hieronder klaar
-- [ ] radiologysig.com benaderd (radsig2021@gmail.com of contactformulier) — tekst hieronder klaar
+- [x] ACR RFS gemaild (rfs@acr.org) — 14 juli 2026, verzonden via iCloud Mail, wacht op reactie
+- [x] radiologysig.com gemaild (radsig2021@gmail.com) — 14 juli 2026, verzonden via iCloud Mail, wacht op reactie
 - [ ] Overige verenigingen (ARRS, ASNR, SIR Medical Student Council, e.d.) — nog te onderzoeken op individuele contactpunten
 
 ---
