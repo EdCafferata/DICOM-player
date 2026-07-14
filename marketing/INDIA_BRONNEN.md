@@ -174,7 +174,7 @@ Bengaluru, geen duidelijk promotiekanaal).
 
 - [ ] 🏆 Apple Featuring Nomination voor India ingediend in App Store Connect (Ed zelf, buiten browserbereik)
 - [ ] Golf 1 — IRIA gemaild (iria37@gmail.com) — tekst hieronder klaar, nog niet verzonden
-- [ ] Golf 2 — YourStory gemaild (editorial@yourstory.com) — tekst hieronder klaar, nog niet verzonden
+- [x] Golf 2 — YourStory gemaild (editorial@yourstory.com) — 13 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Golf 3 — Analytics India Magazine onderzocht → ⚠️ waarschijnlijk zwakke match (focus op AI/enterprise-IT, geen contactformulier gevonden), lagere prioriteit
 - [ ] Golf 3 — ETHealthworld: eerst een echte gratis redactie-ingang vinden
 - [ ] Golf 3b — MediaNama gemaild (releases@medianama.com) — tekst hieronder klaar, nog niet verzonden
