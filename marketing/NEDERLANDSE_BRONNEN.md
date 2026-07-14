@@ -73,15 +73,15 @@ pas bij een concrete vraag, stuur geen koude mail naar ziekenhuizen.
 ## Checklist
 
 - [x] Golf 1 — zorgictzorgen.nl contactformulier ingevuld (6 juli 2026, "succesvol verzonden" bevestigd — wacht op reactie van Wim Jongejan voor golf 2)
-- [ ] Golf 2 — Zorgvisie/Skipr gemaild (10 juli 2026: wachttijd verstreken, redactiemail zorgvisie@bsl.nl opgezocht, persbericht-tekst hieronder klaargezet, nog niet verzonden — geen browserverbinding vandaag, Ed kan zelf mailen)
-- [ ] Golf 2 — ICT&Health gemaild (10 juli 2026: redactiemail redactie@icthealth.nl opgezocht, persbericht-tekst hieronder klaargezet, nog niet verzonden — Ed kan zelf mailen)
-- [ ] Golf 3 — NVvR informatie-industrie-pagina bekeken/ingevuld (7 juli 2026: pagina bekeken, blijkt betaald sponsorkanaal — voorstel is een informele e-mail naar nvvr@radiologen.nl, tekst hieronder klaargezet, nog niet verzonden)
+- [x] Golf 2 — Zorgvisie/Skipr gemaild (zorgvisie@bsl.nl) — 14 juli 2026, verzonden via iCloud Mail, wacht op reactie
+- [x] Golf 2 — ICT&Health gemaild (redactie@icthealth.nl) — 14 juli 2026, verzonden via iCloud Mail, wacht op reactie
+- [x] Golf 3 — NVvR gemaild (nvvr@radiologen.nl) — 14 juli 2026, verzonden via iCloud Mail, wacht op reactie
 - [x] Golf 4 — Prescan benaderd (7 juli 2026: contactformulier op prescan.nl/contact verzonden door Ed)
 - [x] Golf 4 — Privatescan benaderd (7 juli 2026: contactformulier op privatescan.nl/contact verzonden door Ed)
 - [ ] Golf 4 — MRI Centrum benaderd (12 juli 2026: contactformulier op mricentrum.nl/contact opnieuw ingevuld — naam, e-mail en bericht ingevuld; geboortedatum, telefoonnummer en de radio-keuze "verwijzing" bewust opengelaten voor Ed, nog niet verzonden)
 - [x] Golf 4 — ScanClinic benaderd (9 juli 2026: e-mail naar contact@scanclinic.nl verzonden door Ed)
-- [ ] Golf 4 — Open MRI Zen benaderd (9 juli 2026: geen contactformulier, alleen e-mail info@openmrizen.com — tekst hieronder klaargezet, Ed kan zelf mailen)
-- [ ] Golf 4 — Transparant Kliniek benaderd (10 juli 2026: e-mailadres info@transparantkliniek.nl bevestigd via webzoekopdracht, tekst hieronder klaargezet, nog niet verzonden — Ed kan zelf mailen)
+- [x] Golf 4 — Open MRI Zen gemaild (info@openmrizen.com) — 14 juli 2026, verzonden via iCloud Mail, wacht op reactie
+- [x] Golf 4 — Transparant Kliniek gemaild (info@transparantkliniek.nl) — 14 juli 2026, verzonden via iCloud Mail, wacht op reactie
 - [x] Golf 4 — DirectClinics benaderd (9 juli 2026: contactformulier op directclinics.nl/contact voorbereid door Claude en verzonden door Ed, bevestigd via bedankt-aanvraag-pagina)
 - [ ] Golf 5 — Zorginnovatie.nl LinkedIn-post geplaatst (8 juli 2026: concepttekst hieronder klaargezet, nog niet gepost)
 - [ ] Golf 6 — eerste helpende reactie richting patiënt/ziekenhuis-hoek (indien kans zich voordoet)
