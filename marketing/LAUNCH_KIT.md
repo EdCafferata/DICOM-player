@@ -232,7 +232,7 @@ AirDrop or email, then open them in the app. Happy to help if you get stuck.
 - [x] 9to5Mac-mail verstuurd (+ screenshots) — 4 juli 2026
 - [x] Product Hunt — geskipt (13 juli 2026): bleek een betaalde site. Ed's beleid: geen
   betaalde marketingkanalen voor welke app dan ook, zie geheugenregel `feedback_marketing_channels`.
-- [ ] MacRumors-thread aangemaakt — ⚠️ 13 juli 2026 geplaatst, maar later diezelfde avond bleek de thread verdwenen ("could not be found", geen threads meer onder "Started by The-IT-Crowd"). Vermoedelijk afgekeurd/verwijderd door een moderator (nieuw account, productlink). Vul eerst Website + About you in het accountprofiel in (MacRumors-regel voor developers, nog niet gedaan) voordat je het opnieuw probeert.
+- [x] MacRumors-thread aangemaakt — 13 juli 2026 geplaatst, later diezelfde avond verwijderd door moderator "chown33" (DM bevestigt: account voldeed niet aan de developer-guidelines, Website + About you-velden ontbraken). **Opgelost:** beide profielvelden ingevuld en opgeslagen (Website: cafferata.info, About you: korte ontwikkelaarsbio) — geverifieerd zichtbaar op het publieke profiel. Herstelverzoek verstuurd via het Contact-formulier (13 juli 2026, 2e poging gelukt — 1e poging werd geweigerd omdat het bericht een URL bevatte, "spam-like"). Wacht op reactie van de moderators.
 - [ ] HackingWithSwift-post — geskipt (13 juli 2026): het "New Topic"-formulier waarschuwt
   expliciet dat AI-gegenereerde posts tot een accountban leiden. De kant-en-klare tekst in
   sectie F hierboven is door Claude geschreven, dus niet zomaar plakbaar; Ed moet 'm zelf

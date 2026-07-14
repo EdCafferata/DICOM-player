@@ -15,9 +15,10 @@ Alles staat op GitHub zodat je het kunt oppakken wanneer het uitkomt.
 - 🔄 **Promotie loopt** — Featuring Nomination, AlternativeTo en SaaSHub, 9to5Mac zijn
   gedaan (zie [LAUNCH_KIT.md](LAUNCH_KIT.md)); NL-outreach loopt gedoseerd via
   [NEDERLANDSE_BRONNEN.md](NEDERLANDSE_BRONNEN.md) (dagelijkse routine).
-- ⚠️ **MacRumors-thread verdwenen** (13 juli 2026): eerder deze avond geplaatst, later
-  bleek de thread niet meer vindbaar — waarschijnlijk afgekeurd/verwijderd door een
-  moderator. Zie LAUNCH_KIT.md voor details en de vervolgstap (accountprofiel invullen).
+- 🔄 **MacRumors-thread verwijderd, herstel aangevraagd** (13 juli 2026): thread
+  verwijderd door moderator omdat het accountprofiel niet aan de developer-richtlijnen
+  voldeed. Website + About you-velden zijn nu ingevuld, en een herstelverzoek is
+  verstuurd via het Contact-formulier. Wacht op reactie.
 - ⛔ **Product Hunt, HackingWithSwift en Reddit (r/AskDocs, r/askdentists, r/Radiology)
   bewust overgeslagen** (13 juli 2026): Product Hunt is een betaalde site, HackingWithSwift
   verbiedt AI-gegenereerde posts (accountban-risico), die drie subreddits verbieden
