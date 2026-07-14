@@ -67,6 +67,45 @@ nul views organisch pakken (medische/wetenschappelijke visuals doen dat wel vake
 TikTok), maar reken niet op een gegarandeerd effect zoals bij de gerichte
 kanalen (IRIA, YourStory, developersIndia) hierboven.
 
+## VS — medische/radiologie-studenten aan universiteiten
+
+Ed vroeg specifiek naar studenten aan Amerikaanse universiteiten. Sterke vondst:
+**radiologysig.com** (Radiology Student Interest Group) is een levende hub die alle
+grote Amerikaanse radiologie-vakverenigingen met **gratis studentenlidmaatschap**
+op een rij zet — precies de doelgroep "medical students considering radiology"
+die ook in PROMOTIE.md als kansrijk staat. Contact: **radsig2021@gmail.com**, of
+hun contactformulier op radiologysig.com/resources ("Know something that should
+be added to the list?").
+
+### 🏆 ACR — American College of Radiology, Resident and Fellow Section (RFS)
+De grootste en meest gezaghebbende Amerikaanse radiologie-organisatie. Hun RFS
+(Resident and Fellow Section) is "a nationwide network of professionally
+committed radiology... trainees" met een maandelijkse eNews-nieuwsbrief.
+**Concreet contact (13/14 juli 2026 gevonden):** **rfs@acr.org** om bij te dragen
+aan de RFS eNews. ACR heeft daarnaast een apart **Medical Student Section (MSS)**
++ **Medical Student Hub**, met een eigen Bulletin/blog waar medical students aan
+mogen bijdragen — nog geen apart contactadres voor gevonden, wellicht via
+hetzelfde rfs@acr.org-kanaal te bereiken.
+
+### Overige verenigingen met gratis studentenlidmaatschap (via radiologysig.com, niet individueel onderzocht)
+American Association of Women Radiologists, American Osteopathic College of
+Radiology, American Roentgen Ray Society (ARRS), American Society of Emergency
+Radiology, American Society of Neuroradiology (heeft een "Resident and Medical
+Student Portal"), Society of Interventional Radiology (heeft een **Medical
+Student Council**), Society for Pediatric Radiology, RSNA (al genoemd in
+PROMOTIE.md). Elk van deze zou, net als ACR, een eigen nieuwsbrief/blog-ingang
+kunnen hebben — niet stuk voor stuk uitgezocht deze sessie, wel een duidelijke
+vervolgstap voor een volgende ronde.
+
+### AUR/AAR "Apps and Other Web-Based Resources" ⚠️ sterk verouderd
+Association of University Radiologists (nu omgedoopt tot **Association of
+Academic Radiology**, aarad.org) had ooit een curated app-lijst voor
+"radiology educators and radiology learners" — maar de pagina is expliciet
+gedateerd "current as of 12/30/12" (december **2012**, dus 13+ jaar oud en
+duidelijk niet bijgehouden). Niet de moeite om deze specifieke pagina te
+benaderen. De organisatie zelf is nog wel actief (info@aarad.org, X/LinkedIn/
+Instagram/Bluesky/YouTube), voor het geval een andere ingang zinvoller is.
+
 ## Extra VS-kanalen (nieuw gevonden, nog niet in SITES.md)
 
 ### TapSmart — Indie Apps Showcase ✅ gratis, contact geverifieerd
@@ -143,8 +182,57 @@ sterke extra vondsten voor India specifiek dit uur.
 - [ ] Hacker News Show HN — pas doen nadat een account wat historie heeft, of geaccepteerd dat een auto-kill kan gebeuren
 - [ ] iosdev.space (Mastodon) — Ed maakt zelf een account aan, daarna kan een introductiepost voorbereid worden
 - [x] AltStore PAL onderzocht → ⛔ vereist werkend Apple Developer-account, zit vast op de bekende D&B/DUNS-blokkade — pas oppakken zodra dat is opgelost
+- [ ] ACR RFS gemaild (rfs@acr.org) — tekst hieronder klaar
+- [ ] radiologysig.com benaderd (radsig2021@gmail.com of contactformulier) — tekst hieronder klaar
+- [ ] Overige verenigingen (ARRS, ASNR, SIR Medical Student Council, e.d.) — nog te onderzoeken op individuele contactpunten
 
 ---
+
+## Kant-en-klare tekst — ACR RFS (e-mail naar rfs@acr.org)
+
+**Onderwerp:** Free tool for radiology trainees — Dicom Viewer, native iOS DICOM viewer
+
+```
+Hi RFS team,
+
+I'm Ed Cafferata, founder of The IT Crowd. I built Dicom Viewer, a free native
+iOS app for viewing DICOM medical images (X-ray, CT, MRI, ultrasound) on
+iPhone and iPad — thought it might be worth mentioning to residents, fellows
+and medical students through the RFS eNews or blog.
+
+It's privacy-first: everything runs on-device, no account, no cloud upload,
+no PACS connection. Features include a cine player for multi-frame studies,
+Window/Level presets (Abdomen, Lung, Bone, Brain), a series navigator and
+frame export — built for quick review on the go, not as a diagnostic
+replacement for a full workstation.
+
+App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Happy to answer any questions or provide more detail. Thanks for considering it!
+
+Best,
+Ed Cafferata — The IT Crowd
+```
+
+## Kant-en-klare tekst — radiologysig.com (contactformulier of radsig2021@gmail.com)
+
+```
+Hi,
+
+I wanted to suggest a resource for your list: Dicom Viewer, a free native iOS
+app that lets medical students and residents view DICOM medical images
+(X-ray, CT, MRI, ultrasound) directly on their iPhone or iPad — useful for
+quick review of teaching cases on the go. Everything runs on-device, no
+account or cloud upload needed.
+
+App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Thought this might be a useful addition for students exploring radiology.
+Thanks for maintaining such a helpful resource!
+
+Best,
+Ed Cafferata — The IT Crowd
+```
 
 ## Kant-en-klare tekst — TapSmart (e-mail naar tomjrolfe@intelligenti.com)
 
