@@ -93,6 +93,27 @@ auto-kill een beleefde mail naar **hn@ycombinator.com** met het post-ID.
 Regels: neutrale titel zonder marketing-taal, geen vraag om upvotes. Beste
 timing: rond 9 uur Eastern (15 uur NL-tijd).
 
+## Mastodon iosdev.space en AltStore PAL (uit PROMOTIE.md, nu gecheckt)
+
+### iosdev.space ⚠️ vereist een account (kan Ed alleen zelf aanmaken)
+Mastodon-server specifiek voor Swift/iOS-developers ("a space for all swift
+developers to have a central location on the internet"), beheerd door
+@iosdevspace (iosdevspace@gmail.com). Geen expliciete zelfpromotie- of
+AI-verbodsregel gevonden op de about-pagina (volledige regels staan op hun
+GitHub, niet verder nagetrokken). Goede topische match, maar vereist eerst
+een account op deze specifieke Mastodon-instance.
+
+### AltStore PAL ⛔ zit vast op de bekende Apple-accountblokkade
+Voor ontwikkelaars gratis te gebruiken, maar vereist: (1) een **betaald**
+Apple Developer-account, (2) het ondertekenen van Apple's "Alternative EU
+Terms Addendum" (developer.apple.com/contact/request/alternative-eu-terms-addendum/),
+en (3) een API-koppeling via App Store Connect → Users and Access →
+Integrations → Marketplace. Dat laatste vereist een werkend, geverifieerd
+Apple Developer-account — en dat is precies waar Ed al sinds 6 juli 2026
+tegenaan loopt (zie geheugen `project_apple_developer_account.md`, de
+D&B/DUNS-verificatieblokkade, vanavond nogmaals bevestigd actief). **Niet
+haalbaar totdat die blokkade is opgelost.**
+
 ## India — extra gevonden, geen nieuwe aanbevelingen
 
 Gezocht naar aanvullende India-specifieke app-directories naast wat al in
@@ -120,6 +141,8 @@ sterke extra vondsten voor India specifiek dit uur.
 - [ ] TapSmart gemaild (tomjrolfe@intelligenti.com) — tekst hieronder klaar
 - [ ] r/IndieAppNews-post voorbereid — tekst hieronder klaar
 - [ ] Hacker News Show HN — pas doen nadat een account wat historie heeft, of geaccepteerd dat een auto-kill kan gebeuren
+- [ ] iosdev.space (Mastodon) — Ed maakt zelf een account aan, daarna kan een introductiepost voorbereid worden
+- [x] AltStore PAL onderzocht → ⛔ vereist werkend Apple Developer-account, zit vast op de bekende D&B/DUNS-blokkade — pas oppakken zodra dat is opgelost
 
 ---
 
