@@ -138,8 +138,8 @@ sterke extra vondsten voor India specifiek dit uur.
 - [ ] Ed maakt een X-account voor The IT Crowd (of persoonlijk) aan — vereist voor alles hierboven onder X
 - [ ] Ed maakt een Instagram-account aan
 - [ ] Ed maakt eventueel een TikTok-account aan (lagere prioriteit, onzeker rendement)
-- [ ] TapSmart gemaild (tomjrolfe@intelligenti.com) — tekst hieronder klaar
-- [ ] r/IndieAppNews-post voorbereid — tekst hieronder klaar
+- [x] TapSmart gemaild (tomjrolfe@intelligenti.com) — 14 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [x] r/IndieAppNews-post gepost — 14 juli 2026, live als u/kaffer1986 met flair "App Introduction": https://www.reddit.com/r/IndieAppNews/
 - [ ] Hacker News Show HN — pas doen nadat een account wat historie heeft, of geaccepteerd dat een auto-kill kan gebeuren
 - [ ] iosdev.space (Mastodon) — Ed maakt zelf een account aan, daarna kan een introductiepost voorbereid worden
 - [x] AltStore PAL onderzocht → ⛔ vereist werkend Apple Developer-account, zit vast op de bekende D&B/DUNS-blokkade — pas oppakken zodra dat is opgelost
