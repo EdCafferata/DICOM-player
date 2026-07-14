@@ -30,6 +30,12 @@ Alles staat op GitHub zodat je het kunt oppakken wanneer het uitkomt.
 - 🇮🇳 **India-aanpak toegevoegd** (13 juli 2026, autonoom): app staat al live op de
   India-storefront — zie [INDIA_BRONNEN.md](INDIA_BRONNEN.md) voor IRIA, YourStory,
   developersIndia en meer, in dezelfde gedoseerde golven-aanpak als NL.
+- 📱 **Social media + extra kanalen onderzocht** (13-14 juli 2026, autonoom, ~1 uur):
+  zie [SOCIAL_EN_MEER.md](SOCIAL_EN_MEER.md) — X/Instagram/TikTok-strategie
+  (#FOAMrad-community, radiologie-Instagram-accounts), plus TapSmart en
+  r/IndieAppNews als nieuwe gratis VS-kanalen. **Ed heeft nog geen X/Instagram/
+  TikTok-account** — dat moet hij eerst zelf aanmaken voordat de social-strategie
+  uitvoerbaar is.
 
 ## Wat staat hier?
 
@@ -41,6 +47,7 @@ Alles staat op GitHub zodat je het kunt oppakken wanneer het uitkomt.
 | [SITES.md](SITES.md) | Websites die over DICOM-viewers/scans schrijven (roundups, nieuws, directories) + kant-en-klare teksten |
 | [NEDERLANDSE_BRONNEN.md](NEDERLANDSE_BRONNEN.md) | Nederlandse bronnen (zorg-ICT-pers, NVvR, scancentra, community's) in gedoseerde golven + kant-en-klare teksten |
 | [INDIA_BRONNEN.md](INDIA_BRONNEN.md) | Indiase bronnen (IRIA, YourStory, developersIndia, patiëntforums) in gedoseerde golven + kant-en-klare teksten |
+| [SOCIAL_EN_MEER.md](SOCIAL_EN_MEER.md) | X/Instagram/TikTok-strategie + extra VS-kanalen (TapSmart, r/IndieAppNews, Hacker News) |
 | [FACEBOOK.md](FACEBOOK.md) | Facebook-pagina's en -groepen (professionals, patiënten, dierenartsen) + kant-en-klare teksten |
 | [STORE_BESCHRIJVING.md](../AppStore/STORE_BESCHRIJVING.md) | NL+EN store-teksten (issue #8) |
 
