@@ -103,13 +103,18 @@ voor Dicom Viewer.
   redactie-ingang te vinden** (bijv. via een individuele journalist op
   LinkedIn) — past anders mogelijk niet bij de "geen betaalde kanalen"-regel.
 
-### Golf 3b — MediaNama (tech-beleid, breed gezaghebbend)
+### Golf 3b — MediaNama ⚠️ gepubliceerd adres blijkt niet actief
 Bekroonde publicatie over techbeleid in India (privacy, data, digitale
 ecosystemen) — gezaghebbend bij beleidsmakers en bedrijven, minder puur
-consument-gericht maar met veel gezag. Concreet, geverifieerd contact
-(13 juli 2026): **releases@medianama.com** voor bedrijfsupdates/persberichten,
-gratis (geen betaling gevraagd). De privacy-hoek van Dicom Viewer (alles
-on-device, geen cloud) past goed bij hun focus op databeleid.
+consument-gericht maar met veel gezag. **Update 13 juli 2026:** de mail naar
+**releases@medianama.com** (het adres van hun eigen contactpagina) is
+**gebounced** — "550-5.1.1 The email account that you tried to reach does not
+exist". Het adres zelf was correct overgenomen, maar blijkt niet (meer)
+actief op hun mailserver, ondanks dat het nog op hun site staat. **Niet
+opnieuw proberen zonder eerst een ander contact te vinden** (bijv. rechtstreeks
+naar een van de journalisten op de contactpagina — aakriti.bansal@medianama.com,
+azdhan@medianama.com, prabhanu@medianama.com, amit@medianama.com — of via
+Nikhil Pahwa, nikhil@medianama.com).
 - Contact: https://www.medianama.com/contact-us/
 
 ### Golf 4 — developersIndia (community + Reddit)
@@ -177,7 +182,7 @@ Bengaluru, geen duidelijk promotiekanaal).
 - [x] Golf 2 — YourStory gemaild (editorial@yourstory.com) — 13 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Golf 3 — Analytics India Magazine onderzocht → ⚠️ waarschijnlijk zwakke match (focus op AI/enterprise-IT, geen contactformulier gevonden), lagere prioriteit
 - [ ] Golf 3 — ETHealthworld: eerst een echte gratis redactie-ingang vinden
-- [ ] Golf 3b — MediaNama gemaild (releases@medianama.com) — tekst hieronder klaar, nog niet verzonden
+- [ ] Golf 3b — MediaNama: eerste poging (releases@medianama.com, 13 juli 2026) gebounced — "account does not exist". Opnieuw proberen via een individuele journalist (zie sectie hierboven voor adressen)
 - [ ] Golf 4 — developersIndia-post/Reddit-showcase voorbereiden
 - [x] Golf 4 — r/india regels gecheckt → ⛔ ongeschikt (zelfpromotie-limiet + AI-verbod), overgeslagen
 - [ ] Golf 5 — Inc42: eerst uitzoeken of gratis route echt gratis is
