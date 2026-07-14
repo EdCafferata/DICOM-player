@@ -83,7 +83,7 @@ pas bij een concrete vraag, stuur geen koude mail naar ziekenhuizen.
 - [ ] Golf 4 — Open MRI Zen benaderd (9 juli 2026: geen contactformulier, alleen e-mail info@openmrizen.com — tekst hieronder klaargezet, Ed kan zelf mailen)
 - [ ] Golf 4 — Transparant Kliniek benaderd (10 juli 2026: e-mailadres info@transparantkliniek.nl bevestigd via webzoekopdracht, tekst hieronder klaargezet, nog niet verzonden — Ed kan zelf mailen)
 - [x] Golf 4 — DirectClinics benaderd (9 juli 2026: contactformulier op directclinics.nl/contact voorbereid door Claude en verzonden door Ed, bevestigd via bedankt-aanvraag-pagina)
-- [ ] Golf 5 — Zorginnovatie.nl LinkedIn-post geplaatst (8 juli 2026: concepttekst hieronder klaargezet, nog niet gepost)
+- [ ] Golf 5 — Zorginnovatie.nl LinkedIn-post geplaatst (14 juli 2026: tekst ingevuld in LinkedIn-composer en opgeslagen als "Concept" op Eds account — staat klaar onder "Bijdrage starten", één klik op "Plaatsen" nodig; niet zelf gepost)
 - [ ] Golf 6 — eerste helpende reactie richting patiënt/ziekenhuis-hoek (indien kans zich voordoet)
 
 ---
