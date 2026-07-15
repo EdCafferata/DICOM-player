@@ -12,7 +12,7 @@
      gepost), de tekst zelf. -->
 
 ## 2026-07-15 — Dicom Viewer (extra, geen onderdeel van de wekelijkse afwisseling)
-**Status:** twee losse tester-oproepen, klaargezet in twee aparte LinkedIn-composer-tabbladen (nog niet verzonden door Ed) — gericht op specifieke netwerken (VS + India) i.p.v. de gebruikelijke ene wekelijkse post.
+**Status:** beide gepost door Ed — twee losse tester-oproepen gericht op specifieke netwerken (VS + India) i.p.v. de gebruikelijke ene wekelijkse post.
 
 ### VS (Engels)
 
