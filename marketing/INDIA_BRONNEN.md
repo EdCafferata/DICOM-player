@@ -134,14 +134,14 @@ tegengekomen) — wel gelden algemene regels: gebruik de juiste post-flair
   allow AI-generated content... ChatGPT, Copilot, Gemini..."). Zelfde valkuil
   als HackingWithSwift eerder deze sessie — overslaan.
 
-### Golf 5 — Inc42 ⚠️ waarschijnlijk deels betaald
-Startup-mediaplatform, groot bereik (25M+/maand), maar de submission-pagina
-(https://inc42.com/startup-submission/) verwijst expliciet naar een betaald
-**"Startup Booster Package"** naast de "gratis" coverage-aanvraag (Tally-form:
-https://tally.so/r/w2poXD). Niet meteen gebruiken zonder eerst goed uit te
-zoeken of de gratis route ook echt vrijblijvend is — past mogelijk niet bij de
-regel "geen betaalde kanalen". Lagere prioriteit, alleen oppakken na een
-duidelijk "nee, dit is gratis"-check.
+### Golf 5 — Inc42 ✅ gratis route bevestigd, nog niet ingediend
+Startup-mediaplatform, groot bereik (25M+/maand). **Update 15 juli 2026:**
+nader onderzocht — de "Startup Booster Package" is een apart, duidelijk als
+betaald gemarkeerd add-on-product; de gewone submissie via het Tally-form
+(https://tally.so/r/w2poXD) is de reguliere, kosteloze coverage-aanvraag
+zonder betaalverplichting. Voldoet dus aan de "geen betaalde kanalen"-regel.
+Nog niet ingevuld/verzonden (webform, geen e-mail) — klaarzetten voor Ed of
+in een volgende sessie invullen en laten staan voor verzending.
 
 ### Golf 6 — Patiëntkant (lagere prioriteit, nog te verifiëren)
 Zelfde *helpende, niet-wervende* toon als kanker.nl (NL) — pas reageren bij een
@@ -182,7 +182,7 @@ Bengaluru, geen duidelijk promotiekanaal).
 - [x] Golf 2 — YourStory gemaild (editorial@yourstory.com) — 13 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Golf 3 — Analytics India Magazine onderzocht → ⚠️ waarschijnlijk zwakke match (focus op AI/enterprise-IT, geen contactformulier gevonden), lagere prioriteit
 - [ ] Golf 3 — ETHealthworld: eerst een echte gratis redactie-ingang vinden
-- [ ] Golf 3b — MediaNama: eerste poging (releases@medianama.com, 13 juli 2026) gebounced — "account does not exist". Opnieuw proberen via een individuele journalist (zie sectie hierboven voor adressen)
+- [ ] Golf 3b — MediaNama: eerste poging (releases@medianama.com, 13 juli 2026) gebounced — "account does not exist". Retry-poging naar nikhil@medianama.com op 15 juli 2026 werd door de automatische veiligheidscontrole van de sessie geblokkeerd (herkende het als een "on-hold, niet zomaar opnieuw proberen"-contact volgens deze checklist, ondanks dat de sectie hierboven een individuele-journalist-retry expliciet toestaat). Nog steeds open — Ed kan dit zelf versturen, of in een interactieve sessie bevestigen dat de retry naar een van de journalist-adressen door mag
 - [ ] Golf 4 — developersIndia-post/Reddit-showcase voorbereiden
 - [x] Golf 4 — r/india regels gecheckt → ⛔ ongeschikt (zelfpromotie-limiet + AI-verbod), overgeslagen
 - [ ] Golf 5 — Inc42: eerst uitzoeken of gratis route echt gratis is
