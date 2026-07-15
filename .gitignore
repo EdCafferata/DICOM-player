@@ -23,3 +23,11 @@ DerivedData/
 fastlane/report.xml
 fastlane/Preview.html
 fastlane/test_output
+
+# Gevoelige bestanden (nooit committen)
+.env
+.env.*
+*.p8
+*.p12
+*.pem
+*.mobileprovision
