@@ -88,8 +88,12 @@ mogen bijdragen — nog geen apart contactadres voor gevonden, wellicht via
 hetzelfde rfs@acr.org-kanaal te bereiken.
 
 ### Overige verenigingen met gratis studentenlidmaatschap (via radiologysig.com)
-Society for Pediatric Radiology, RSNA (al genoemd in PROMOTIE.md) — nog niet
-individueel uitgezocht, vervolgstap voor een volgende ronde.
+RSNA (al genoemd in PROMOTIE.md) — nog niet individueel uitgezocht,
+vervolgstap voor een volgende ronde.
+
+**Update 18 juli 2026:** contact gevonden en gemaild voor **Society for
+Pediatric Radiology (SPR)** — algemeen adres spr@acr.org (CEO Angela Davis,
+adavis@spr.org, is het alternatief indien geen reactie).
 
 **Update 16 juli 2026 — nog drie uitgezocht en gemaild:**
 - **American Association of Women Radiologists (AAWR)** ✅ gemaild
@@ -111,10 +115,10 @@ individueel uitgezocht, vervolgstap voor een volgende ronde.
 - **Society of Interventional Radiology (SIR) — Medical Student Council** ⚠️
   geen e-mailadres gevonden, alleen een algemeen contactformulier
   (sirweb.org/contact/) met onderwerp-categorieën — geen "Medical Student
-  Council"-optie herkend. Vereist het webformulier invullen (geen directe
-  mail), dus deze sessie overgeslagen — geschikte kandidaat voor een volgende
-  ronde met browser-formulier-voorbereiding (niet zelf versturen, klaarzetten
-  voor Ed).
+  Council"-optie herkend. **Update 18 juli 2026:** contactformulier volledig
+  ingevuld en klaargezet in de browser (Work email, topic "General inquiry",
+  Job title, Comments met de pitch) — bewust niet zelf verzonden, wacht op
+  Ed om op "Submit" te klikken.
 
 ### AUR/AAR "Apps and Other Web-Based Resources" ⚠️ sterk verouderd
 Association of University Radiologists (nu omgedoopt tot **Association of
@@ -233,7 +237,9 @@ sterke extra vondsten voor India specifiek dit uur.
 - [x] AAWR gemaild (info@aawr.org) — 16 juli 2026, verzonden via iCloud Mail, wacht op reactie
 - [x] AOCR gemaild (info@aocr.org) — 16 juli 2026, verzonden via iCloud Mail, wacht op reactie
 - [x] ASER gemaild (info@aser.org) — 16 juli 2026, verzonden via iCloud Mail, wacht op reactie
-- [ ] Society for Pediatric Radiology — nog te onderzoeken op individueel contactpunt
+- [x] SPR gemaild (spr@acr.org) — 18 juli 2026, verzonden via iCloud Mail, wacht op reactie
+- [x] SIR Medical Student Council — webformulier volledig ingevuld en klaargezet (18 juli 2026), wacht op Ed om te verzenden
+- [x] Indie App Catalog — App Store-URL ingevuld en klaargezet (18 juli 2026, https://indiecatalog.app/submit-app), wacht op Ed om op "Submit for Verification" te klikken
 
 ---
 
