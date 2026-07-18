@@ -168,17 +168,17 @@ contact **michaelb@9to5mac.com** (Michael Burkhardt). Geen kosten genoemd,
 geen zelfpromotie- of AI-verbod van toepassing (het is een submissie-uitnodiging,
 geen forum).
 
-## Nieuw gevonden — Indie App Catalog ⚠️ vereist app op US App Store (Dicom Viewer voldoet)
+## Nieuw gevonden — Indie App Catalog ✅ ingediend
 
 Gratis directory-listing voor indie-apps (indiecatalog.app/submit-app of
 indieappcatalog.com/news/submit). Voorwaarden: "echte, zichtbare mensen achter
 de app" (geen grote bedrijven) en beschikbaarheid op de Amerikaanse App
 Store — Dicom Viewer voldoet aan beide. Webformulier, geen e-mail.
 **Update 16 juli 2026:** velden ingevuld in de browser, maar die sessie is
-vastgelopen vóórdat dit kon worden afgerond/bevestigd — niet zeker of het al
-verzonden is. Volgende ronde: controleren of de listing al bestaat op
-indieappcatalog.com, anders formulier opnieuw invullen en klaarzetten voor Ed
-(niet zelf submitten).
+vastgelopen vóórdat dit kon worden afgerond/bevestigd — bleek bij controle op
+18 juli nooit echt verzonden (listing bestond nog niet op indieappcatalog.com).
+**Update 18 juli 2026:** App Store-URL opnieuw ingevuld en door Ed op
+"Submit for Verification" geklikt — wacht nu op review/goedkeuring.
 
 ## Mastodon iosdev.space en AltStore PAL (uit PROMOTIE.md, nu gecheckt)
 
@@ -235,13 +235,12 @@ sterke extra vondsten voor India specifiek dit uur.
 - [x] ARRS gemaild (membership@arrs.org) — 15 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] ASNR gemaild (info@asnr.org) — 15 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] 9to5Mac Indie App Spotlight gemaild (michaelb@9to5mac.com) — 15 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
-- [ ] Indie App Catalog (indiecatalog.app/submit-app) — 16 juli 2026: formulier ingevuld maar sessie liep vast, onduidelijk of verzonden — checken en evt. opnieuw klaarzetten
 - [x] AAWR gemaild (info@aawr.org) — 16 juli 2026, verzonden via iCloud Mail, wacht op reactie
 - [x] AOCR gemaild (info@aocr.org) — 16 juli 2026, verzonden via iCloud Mail, wacht op reactie
 - [x] ASER gemaild (info@aser.org) — 16 juli 2026, verzonden via iCloud Mail, wacht op reactie
 - [x] SPR gemaild (spr@acr.org) — 18 juli 2026, verzonden via iCloud Mail, wacht op reactie
 - [x] SIR Medical Student Council — webformulier klaargezet (18 juli 2026) en door Ed verzonden (na inkorten Comments-veld wegens 200-tekenslimiet)
-- [x] Indie App Catalog — App Store-URL ingevuld en klaargezet (18 juli 2026, https://indiecatalog.app/submit-app), wacht op Ed om op "Submit for Verification" te klikken
+- [x] Indie App Catalog — App Store-URL ingevuld (18 juli 2026, https://indiecatalog.app/submit-app) en door Ed op "Submit for Verification" geklikt
 
 ---
 
