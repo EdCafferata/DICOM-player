@@ -87,15 +87,41 @@ aan de RFS eNews. ACR heeft daarnaast een apart **Medical Student Section (MSS)*
 mogen bijdragen — nog geen apart contactadres voor gevonden, wellicht via
 hetzelfde rfs@acr.org-kanaal te bereiken.
 
-### Overige verenigingen met gratis studentenlidmaatschap (via radiologysig.com, niet individueel onderzocht)
-American Association of Women Radiologists, American Osteopathic College of
-Radiology, American Roentgen Ray Society (ARRS), American Society of Emergency
-Radiology, American Society of Neuroradiology (heeft een "Resident and Medical
-Student Portal"), Society of Interventional Radiology (heeft een **Medical
-Student Council**), Society for Pediatric Radiology, RSNA (al genoemd in
-PROMOTIE.md). Elk van deze zou, net als ACR, een eigen nieuwsbrief/blog-ingang
-kunnen hebben — niet stuk voor stuk uitgezocht deze sessie, wel een duidelijke
+### Overige verenigingen met gratis studentenlidmaatschap (via radiologysig.com)
+RSNA (al genoemd in PROMOTIE.md) — nog niet individueel uitgezocht,
 vervolgstap voor een volgende ronde.
+
+**Update 18 juli 2026:** contact gevonden en gemaild voor **Society for
+Pediatric Radiology (SPR)** — algemeen adres spr@acr.org (CEO Angela Davis,
+adavis@spr.org, is het alternatief indien geen reactie).
+
+**Update 16 juli 2026 — nog drie uitgezocht en gemaild:**
+- **American Association of Women Radiologists (AAWR)** ✅ gemaild
+  (info@aawr.org).
+- **American Osteopathic College of Radiology (AOCR)** ✅ gemaild
+  (info@aocr.org).
+- **American Society of Emergency Radiology (ASER)** ✅ gemaild
+  (info@aser.org).
+
+**Update 15 juli 2026 — drie uitgezocht:**
+- **American Roentgen Ray Society (ARRS)** ✅ contact gevonden en gemaild
+  (membership@arrs.org, geen apart RFS-nieuwsbriefadres gevonden — algemeen
+  membership-adres gebruikt met verzoek om doorzetten naar de Resident and
+  Fellow Section).
+- **American Society of Neuroradiology (ASNR)** ✅ heeft een "Resident/Medical
+  Student Portal" en een eigen "ASNR Insights"-nieuwsbrief voor studenten/
+  residents, maar geen apart submissie-adres gevonden — algemeen adres
+  info@asnr.org gemaild met suggestie voor de nieuwsbrief/portal.
+- **Society of Interventional Radiology (SIR) — Medical Student Council** ⚠️
+  geen e-mailadres gevonden, alleen een algemeen contactformulier
+  (sirweb.org/contact/) met onderwerp-categorieën — geen "Medical Student
+  Council"-optie herkend. **Update 18 juli 2026:** contactformulier volledig
+  ingevuld en klaargezet in de browser (Work email, topic "General inquiry",
+  Job title, Comments met de pitch) — bewust niet zelf verzonden, klaargezet
+  voor Ed. **Ed heeft het formulier verzonden** — bleef eerst hangen omdat
+  het Comments-veld (incl. achternaam "Cafferata") over de 200-tekenslimiet
+  ging; na inkorten (achternaam weggelaten) ging het door. Let hierop bij
+  toekomstige webformulieren met een korte-tekst-limiet.
 
 ### AUR/AAR "Apps and Other Web-Based Resources" ⚠️ sterk verouderd
 Association of University Radiologists (nu omgedoopt tot **Association of
@@ -105,6 +131,16 @@ gedateerd "current as of 12/30/12" (december **2012**, dus 13+ jaar oud en
 duidelijk niet bijgehouden). Niet de moeite om deze specifieke pagina te
 benaderen. De organisatie zelf is nog wel actief (info@aarad.org, X/LinkedIn/
 Instagram/Bluesky/YouTube), voor het geval een andere ingang zinvoller is.
+
+### Nieuw gevonden — AMSER (Alliance of Medical Student Educators in Radiology) ✅ gemaild (18 juli 2026)
+Landelijk netwerk van radiologie-onderwijzers onder de vlag van AARAD,
+specifiek gericht op geneeskundestudenten (Medical Student Resources-pagina,
+newsletter, Case of the Month). Sterke doelgroep-match — precies de
+"medical students considering radiology"-hoek uit PROMOTIE.md. Contact:
+**info@aarad.org** (staat achter Cloudflare-emailbescherming op de AMSER-pagina,
+gedecodeerd om het adres te vinden — zelfde adres als het al genoemde AARAD-
+contact hierboven, nu voor het eerst daadwerkelijk gebruikt).
+Gemaild in dezelfde stijl als ACR RFS/ARRS/ASNR (18 juli 2026).
 
 ## Extra VS-kanalen (nieuw gevonden, nog niet in SITES.md)
 
@@ -131,6 +167,28 @@ een tijdje normaal meedoen (comments) vóór een Show HN-post, of na een
 auto-kill een beleefde mail naar **hn@ycombinator.com** met het post-ID.
 Regels: neutrale titel zonder marketing-taal, geen vraag om upvotes. Beste
 timing: rond 9 uur Eastern (15 uur NL-tijd).
+
+## Nieuw gevonden — 9to5Mac Indie App Spotlight ✅ gratis, contact geverifieerd (15 juli 2026)
+
+Wekelijkse 9to5Mac-rubriek die indie-iOS-apps uitlicht (Apple-nieuwssite met
+groot bereik). Submissieproces bevestigd via WebFetch van de eigen
+archiefpagina (9to5mac.com/guides/indie-app-spotlight/): "If you're an indie
+iOS app developer and have recently launched a new app... let us know!" —
+contact **michaelb@9to5mac.com** (Michael Burkhardt). Geen kosten genoemd,
+geen zelfpromotie- of AI-verbod van toepassing (het is een submissie-uitnodiging,
+geen forum).
+
+## Nieuw gevonden — Indie App Catalog ✅ ingediend
+
+Gratis directory-listing voor indie-apps (indiecatalog.app/submit-app of
+indieappcatalog.com/news/submit). Voorwaarden: "echte, zichtbare mensen achter
+de app" (geen grote bedrijven) en beschikbaarheid op de Amerikaanse App
+Store — Dicom Viewer voldoet aan beide. Webformulier, geen e-mail.
+**Update 16 juli 2026:** velden ingevuld in de browser, maar die sessie is
+vastgelopen vóórdat dit kon worden afgerond/bevestigd — bleek bij controle op
+18 juli nooit echt verzonden (listing bestond nog niet op indieappcatalog.com).
+**Update 18 juli 2026:** App Store-URL opnieuw ingevuld en door Ed op
+"Submit for Verification" geklikt — wacht nu op review/goedkeuring.
 
 ## Mastodon iosdev.space en AltStore PAL (uit PROMOTIE.md, nu gecheckt)
 
@@ -184,7 +242,16 @@ sterke extra vondsten voor India specifiek dit uur.
 - [x] AltStore PAL onderzocht → ⛔ vereist werkend Apple Developer-account, zit vast op de bekende D&B/DUNS-blokkade — pas oppakken zodra dat is opgelost
 - [x] ACR RFS gemaild (rfs@acr.org) — 14 juli 2026, verzonden via iCloud Mail, wacht op reactie
 - [x] radiologysig.com gemaild (radsig2021@gmail.com) — 14 juli 2026, verzonden via iCloud Mail, wacht op reactie
-- [ ] Overige verenigingen (ARRS, ASNR, SIR Medical Student Council, e.d.) — nog te onderzoeken op individuele contactpunten
+- [x] ARRS gemaild (membership@arrs.org) — 15 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [x] ASNR gemaild (info@asnr.org) — 15 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [x] 9to5Mac Indie App Spotlight gemaild (michaelb@9to5mac.com) — 15 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [x] AAWR gemaild (info@aawr.org) — 16 juli 2026, verzonden via iCloud Mail, wacht op reactie
+- [x] AOCR gemaild (info@aocr.org) — 16 juli 2026, verzonden via iCloud Mail, wacht op reactie
+- [x] ASER gemaild (info@aser.org) — 16 juli 2026, verzonden via iCloud Mail, wacht op reactie
+- [x] SPR gemaild (spr@acr.org) — 18 juli 2026, verzonden via iCloud Mail, wacht op reactie
+- [x] SIR Medical Student Council — webformulier klaargezet (18 juli 2026) en door Ed verzonden (na inkorten Comments-veld wegens 200-tekenslimiet)
+- [x] Indie App Catalog — App Store-URL ingevuld (18 juli 2026, https://indiecatalog.app/submit-app) en door Ed op "Submit for Verification" geklikt
+- [x] AMSER gemaild (info@aarad.org) — 18 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 
 ---
 
@@ -283,3 +350,137 @@ extra platformen (X, Instagram, TikTok, VS/India-apps) terwijl hij even weg was.
 **How to apply:** social-media-strategieën zijn pas uitvoerbaar zodra Ed de
 accounts zelf heeft aangemaakt; de twee kant-en-klare teksten (TapSmart,
 r/IndieAppNews) zijn wel meteen bruikbaar.
+
+## Kant-en-klare tekst — ARRS (e-mail naar membership@arrs.org)
+
+**Onderwerp:** Free tool for radiology trainees — Dicom Viewer, native iOS DICOM viewer
+
+```
+Hi ARRS team,
+
+I'm Ed Cafferata, founder of The IT Crowd. I built Dicom Viewer, a free native
+iOS app for viewing DICOM medical images (X-ray, CT, MRI, ultrasound) on
+iPhone and iPad — thought it might be worth mentioning to residents, fellows
+and medical students, e.g. through the Resident and Fellow Section.
+
+It's privacy-first: everything runs on-device, no account, no cloud upload,
+no PACS connection. Features include a cine player for multi-frame studies,
+Window/Level presets (Abdomen, Lung, Bone, Brain), a series navigator and
+frame export — built for quick review on the go, not as a diagnostic
+replacement for a full workstation.
+
+App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Happy to answer any questions or provide more detail. Thanks for considering it!
+
+Best,
+Ed Cafferata — The IT Crowd
+```
+
+## Kant-en-klare tekst — ASNR (e-mail naar info@asnr.org)
+
+**Onderwerp:** Suggestion for the Medical Student and Resident Newsletter — free iOS DICOM viewer
+
+```
+Hi ASNR team,
+
+I'm Ed Cafferata, founder of The IT Crowd. I built Dicom Viewer, a free native
+iOS app for viewing DICOM medical images (X-ray, CT, MRI, ultrasound) on
+iPhone and iPad — thought it might be worth mentioning to medical students
+and residents through ASNR Insights or the Resident/Medical Student Portal.
+
+It's privacy-first: everything runs on-device, no account, no cloud upload,
+no PACS connection. Features include a cine player for multi-frame studies,
+Window/Level presets (Abdomen, Lung, Bone, Brain), a series navigator and
+frame export — built for quick review on the go, not as a diagnostic
+replacement for a full workstation.
+
+App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Happy to answer any questions or provide more detail. Thanks for considering it!
+
+Best,
+Ed Cafferata — The IT Crowd
+```
+
+## Kant-en-klare tekst — 9to5Mac Indie App Spotlight (e-mail naar michaelb@9to5mac.com)
+
+**Onderwerp:** Indie App Spotlight submission — Dicom Viewer (privacy-first DICOM viewer)
+
+```
+Hi Michael,
+
+I'd like to submit Dicom Viewer for Indie App Spotlight: a free native iOS app
+(iPhone/iPad) for viewing DICOM medical images (X-ray, CT, MRI, ultrasound).
+
+It's built privacy-first — everything runs on-device, no account, no cloud
+upload, no PACS connection. It serves two audiences: patients who want to
+open scans from a hospital CD/USB, and clinicians/students/vets who get a
+cine player, Window/Level presets, a series navigator and frame export. Open
+source under GPL-3.0, with a custom DICOM parser written from scratch (zero
+external dependencies).
+
+App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Happy to send screenshots or answer questions. Thanks for considering it!
+
+Best,
+Ed Cafferata — The IT Crowd
+```
+
+## Kant-en-klare tekst — AAWR / AOCR / ASER (e-mail naar info@aawr.org, info@aocr.org, info@aser.org)
+
+**Onderwerp:** Free tool for radiology trainees — Dicom Viewer, native iOS DICOM viewer
+
+```
+Hi [AAWR/AOCR/ASER] team,
+
+I'm Ed Cafferata, founder of The IT Crowd. I built Dicom Viewer, a free native
+iOS app for viewing DICOM medical images (X-ray, CT, MRI, ultrasound) on
+iPhone and iPad — thought it might be worth mentioning to your members,
+residents and medical students.
+
+It's privacy-first: everything runs on-device, no account, no cloud upload,
+no PACS connection. Features include a cine player for multi-frame studies,
+Window/Level presets (Abdomen, Lung, Bone, Brain), a series navigator and
+frame export — built for quick review on the go, not as a diagnostic
+replacement for a full workstation.
+
+App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Happy to answer any questions or provide more detail. Thanks for considering it!
+
+Best,
+Ed Cafferata — The IT Crowd
+```
+
+## Kant-en-klare tekst — AMSER (e-mail naar info@aarad.org)
+
+**Onderwerp:** Free tool for medical students — Dicom Viewer, native iOS DICOM viewer
+
+```
+Hi AMSER team,
+
+I'm Ed Cafferata, founder of The IT Crowd. I built Dicom Viewer, a free native
+iOS app for viewing DICOM medical images (X-ray, CT, MRI, ultrasound) on
+iPhone and iPad — no account, no cloud upload, no PACS connection required.
+Everything is processed on-device.
+
+I thought it might be a useful addition to the AMSER Medical Student Resources
+page or newsletter — a quick way for students to review teaching cases or
+their own scans on a phone or tablet. Features include a cine player for
+multi-frame studies, Window/Level presets (Abdomen, Lung, Bone, Brain), a
+series navigator and frame export.
+
+Not a paid promotion request — just thought it might be genuinely useful for
+the students AMSER supports.
+
+App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+More info: https://cafferata.info
+
+Happy to answer any questions. Thanks for considering it!
+
+Best,
+Ed Cafferata — The IT Crowd
+edcafferata@icloud.com
+```

@@ -15,10 +15,9 @@ Alles staat op GitHub zodat je het kunt oppakken wanneer het uitkomt.
 - 🔄 **Promotie loopt** — Featuring Nomination, AlternativeTo en SaaSHub, 9to5Mac zijn
   gedaan (zie [LAUNCH_KIT.md](LAUNCH_KIT.md)); NL-outreach loopt gedoseerd via
   [NEDERLANDSE_BRONNEN.md](NEDERLANDSE_BRONNEN.md) (dagelijkse routine).
-- 🔄 **MacRumors-thread verwijderd, herstel aangevraagd** (13 juli 2026): thread
-  verwijderd door moderator omdat het accountprofiel niet aan de developer-richtlijnen
-  voldeed. Website + About you-velden zijn nu ingevuld, en een herstelverzoek is
-  verstuurd via het Contact-formulier. Wacht op reactie.
+- ✅ **MacRumors-thread hersteld** (15 juli 2026): moderator Steve R. bevestigde
+  per mail dat de "Dicom Viewer"-thread is teruggezet nu het accountprofiel
+  (Website + About you) compleet is. Geen verdere actie nodig.
 - ⛔ **Product Hunt, HackingWithSwift en Reddit (r/AskDocs, r/askdentists, r/Radiology)
   bewust overgeslagen** (13 juli 2026): Product Hunt is een betaalde site, HackingWithSwift
   verbiedt AI-gegenereerde posts (accountban-risico), die drie subreddits verbieden
@@ -26,7 +25,11 @@ Alles staat op GitHub zodat je het kunt oppakken wanneer het uitkomt.
   kanalen die AI-gebruik verbieden.
 - ✅ **Awesome DICOM PR** geopend ([#27](https://github.com/open-dicom/awesome-dicom/pull/27));
   ✅ **PostDICOM + Indie App Catalog** ingediend; IMAIOS-pitch en SourceForge-listing staan
-  klaar maar bewust nog niet verstuurd (Ed houdt ze even open).
+  klaar maar bewust nog niet verstuurd (Ed houdt ze even open). IMAIOS bevestigde
+  15 juli 2026 (ticket #291854) dat de eerdere bugmelding over hun kapotte
+  contactformulier is ontvangen en doorgezet naar hun devteam — formulier werkte
+  overigens al bij de 3e poging (zie SITES.md), dus de partnership-pitch kan in
+  principe alsnog verstuurd worden zodra Ed daarvoor kiest.
 - 🇮🇳 **India-aanpak toegevoegd** (13 juli 2026, autonoom): app staat al live op de
   India-storefront — zie [INDIA_BRONNEN.md](INDIA_BRONNEN.md) voor IRIA, YourStory,
   developersIndia en meer, in dezelfde gedoseerde golven-aanpak als NL.

@@ -11,6 +11,33 @@
 <!-- Nieuwste bovenaan. Elke entry: datum, welke app, status (klaargezet/
      gepost), de tekst zelf. -->
 
+## 2026-07-15 — Dicom Viewer (extra, geen onderdeel van de wekelijkse afwisseling)
+**Status:** beide gepost door Ed — twee losse tester-oproepen gericht op specifieke netwerken (VS + India) i.p.v. de gebruikelijke ene wekelijkse post.
+
+### VS (Engels)
+
+A few weeks ago I built something small but useful: Dicom Viewer, an iOS app that opens the DICOM scan files hospitals hand you on a CD or USB — X-ray, CT, MRI, ultrasound — directly on your iPhone or iPad. No account, no cloud, everything stays on your own device.
+
+It's been live on the App Store (including the US) since July 1, and this week I've been reaching out to radiology communities and developer directories to get it in front of people who'd actually use it.
+
+Now I could use some help from my US network specifically: if you (or someone you know) has real DICOM files lying around — from a hospital visit, clinic, or imaging center — I'd love for you to try opening them in the app and tell me what breaks, what's confusing, or leave a quick review. It's free, with an optional Tip Jar if you want to support the work.
+
+👉 https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+#indiedev #iosdev #buildinpublic #DICOM
+
+### India (Hindi)
+
+कुछ हफ्ते पहले मैंने एक ऐप बनाया — Dicom Viewer — जो अस्पताल से मिली CD या USB पर मौजूद स्कैन (X-ray, CT, MRI, अल्ट्रासाउंड) को सीधे iPhone या iPad पर खोलने देता है। कोई अकाउंट नहीं, कोई क्लाउड नहीं — सब कुछ आपके अपने डिवाइस पर रहता है।
+
+1 जुलाई से यह ऐप App Store पर लाइव है (भारत सहित), और इस हफ्ते मैंने रेडियोलॉजी समुदायों और डेवलपर डायरेक्टरीज़ तक पहुंचने का काम किया, ताकि यह ज़्यादा सही लोगों तक पहुंच सके।
+
+अब मुझे भारत में अपने नेटवर्क से थोड़ी मदद चाहिए: अगर आपके पास (या आपके किसी परिचित के पास) असली DICOM फाइलें हैं — किसी अस्पताल, क्लिनिक या स्कैन सेंटर से — तो कृपया ऐप में खोलकर आज़माएं और बताएं क्या ठीक से काम नहीं करता, क्या समझने में मुश्किल है, या बस एक छोटा रिव्यू दें। ऐप मुफ़्त है, साथ में एक वैकल्पिक Tip Jar भी है अगर आप काम को सपोर्ट करना चाहें।
+
+👉 https://apps.apple.com/in/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+#indiedev #iosdev #buildinpublic #DICOM
+
 ## 2026-07-12 — Dicom Viewer
 **Status:** gepost door Ed (tekst iets aangepast t.o.v. het concept — zie hieronder de definitieve, gepubliceerde versie)
 

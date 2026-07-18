@@ -102,6 +102,11 @@ voor Dicom Viewer.
   Times"-PR-diensten. **Niet gebruiken zonder eerst een échte gratis
   redactie-ingang te vinden** (bijv. via een individuele journalist op
   LinkedIn) — past anders mogelijk niet bij de "geen betaalde kanalen"-regel.
+  **Update 18 juli 2026:** opnieuw gezocht — de site zelf blokkeert directe
+  toegang (403), en er is geen "write for us"/contact-e-mailadres gevonden.
+  Wel een naam: Shahid Akhter is redacteur bij ETHealthworld, maar zonder
+  geverifieerd e-mailadres is een gok te riskant (bounce-risico zoals eerder
+  bij MediaNama). Nog steeds "on hold" tot een echt adres gevonden is.
 
 ### Golf 3b — MediaNama ⚠️ gepubliceerd adres blijkt niet actief
 Bekroonde publicatie over techbeleid in India (privacy, data, digitale
@@ -134,14 +139,18 @@ tegengekomen) — wel gelden algemene regels: gebruik de juiste post-flair
   allow AI-generated content... ChatGPT, Copilot, Gemini..."). Zelfde valkuil
   als HackingWithSwift eerder deze sessie — overslaan.
 
-### Golf 5 — Inc42 ⚠️ waarschijnlijk deels betaald
-Startup-mediaplatform, groot bereik (25M+/maand), maar de submission-pagina
-(https://inc42.com/startup-submission/) verwijst expliciet naar een betaald
-**"Startup Booster Package"** naast de "gratis" coverage-aanvraag (Tally-form:
-https://tally.so/r/w2poXD). Niet meteen gebruiken zonder eerst goed uit te
-zoeken of de gratis route ook echt vrijblijvend is — past mogelijk niet bij de
-regel "geen betaalde kanalen". Lagere prioriteit, alleen oppakken na een
-duidelijk "nee, dit is gratis"-check.
+### Golf 5 — Inc42 ⛔ ongeschikt (India-vestigingseis), niet ingediend
+Startup-mediaplatform, groot bereik (25M+/maand). **Update 15 juli 2026:**
+nader onderzocht — de "Startup Booster Package" is een apart, duidelijk als
+betaald gemarkeerd add-on-product; de gewone submissie via het Tally-form
+(https://tally.so/r/w2poXD) is de reguliere, kosteloze coverage-aanvraag
+zonder betaalverplichting. Voldoet dus aan de "geen betaalde kanalen"-regel.
+**Update 16 juli 2026:** bij het daadwerkelijk openen van het formulier bleek
+shortlisting-criterium 1 te eisen dat het bedrijf **in India gevestigd is, of
+bij bedrijven buiten India minstens 60-70% van het personeel in India heeft**.
+The IT Crowd is een Nederlandse eenmanszaak — voldoet hier niet aan, ongeacht
+dat het kanaal verder gratis is. Formulier niet ingevuld/verzonden, geen
+vervolgstap voor dit kanaal.
 
 ### Golf 6 — Patiëntkant (lagere prioriteit, nog te verifiëren)
 Zelfde *helpende, niet-wervende* toon als kanker.nl (NL) — pas reageren bij een
@@ -182,10 +191,10 @@ Bengaluru, geen duidelijk promotiekanaal).
 - [x] Golf 2 — YourStory gemaild (editorial@yourstory.com) — 13 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Golf 3 — Analytics India Magazine onderzocht → ⚠️ waarschijnlijk zwakke match (focus op AI/enterprise-IT, geen contactformulier gevonden), lagere prioriteit
 - [ ] Golf 3 — ETHealthworld: eerst een echte gratis redactie-ingang vinden
-- [ ] Golf 3b — MediaNama: eerste poging (releases@medianama.com, 13 juli 2026) gebounced — "account does not exist". Opnieuw proberen via een individuele journalist (zie sectie hierboven voor adressen)
-- [ ] Golf 4 — developersIndia-post/Reddit-showcase voorbereiden
+- [ ] Golf 3b — MediaNama: eerste poging (releases@medianama.com, 13 juli 2026) gebounced — "account does not exist". Retry-pogingen naar nikhil@medianama.com op zowel 15 als 18 juli 2026 werden allebei door de automatische veiligheidscontrole van de sessie geblokkeerd (herkent het als een "on-hold, niet zomaar opnieuw proberen"-contact, ondanks dat de sectie hierboven een individuele-journalist-retry expliciet toestaat). Blijkbaar blokkeert de check dit consequent — geen automatische retry meer proberen. Ed moet dit zelf versturen, of in een interactieve sessie expliciet bevestigen dat de retry door mag
+- [x] Golf 4 — developersIndia-post gepost door Ed (18 juli 2026, "I Made This"-flair, u/kaffer1986) — ⚠️ **binnen enkele minuten automatisch verwijderd door de moderators/automod** ("Sorry, this post has been removed by the moderators of r/developersIndia"), vermoedelijk een account-leeftijd/karma-drempel of linkregel, geen inhoudelijke afkeuring gezien. Niet opnieuw proberen zonder eerst de exacte reden te achterhalen (bv. via modmail)
 - [x] Golf 4 — r/india regels gecheckt → ⛔ ongeschikt (zelfpromotie-limiet + AI-verbod), overgeslagen
-- [ ] Golf 5 — Inc42: eerst uitzoeken of gratis route echt gratis is
+- [x] Golf 5 — Inc42 onderzocht → ⛔ ongeschikt: eist India-vestiging of 60-70% India-personeel, The IT Crowd voldoet niet. Niet ingediend.
 - [x] Golf 6 — patiëntforums gecheckt: India Medical Hub ☠️ gekaapt door gokspam (niet gebruiken), PharmD Info lijkt legitiem (wacht op concrete vraag om op te reageren)
 - [x] Golf 7 — diagnostische ketens onderzocht (Apollo, Metropolis) → alleen generieke contactformulieren gevonden, laagste prioriteit
 
