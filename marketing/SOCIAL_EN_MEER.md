@@ -88,10 +88,16 @@ mogen bijdragen — nog geen apart contactadres voor gevonden, wellicht via
 hetzelfde rfs@acr.org-kanaal te bereiken.
 
 ### Overige verenigingen met gratis studentenlidmaatschap (via radiologysig.com)
-American Association of Women Radiologists, American Osteopathic College of
-Radiology, American Society of Emergency Radiology, Society for Pediatric
-Radiology, RSNA (al genoemd in PROMOTIE.md) — nog niet individueel uitgezocht,
-vervolgstap voor een volgende ronde.
+Society for Pediatric Radiology, RSNA (al genoemd in PROMOTIE.md) — nog niet
+individueel uitgezocht, vervolgstap voor een volgende ronde.
+
+**Update 16 juli 2026 — nog drie uitgezocht en gemaild:**
+- **American Association of Women Radiologists (AAWR)** ✅ gemaild
+  (info@aawr.org).
+- **American Osteopathic College of Radiology (AOCR)** ✅ gemaild
+  (info@aocr.org).
+- **American Society of Emergency Radiology (ASER)** ✅ gemaild
+  (info@aser.org).
 
 **Update 15 juli 2026 — drie uitgezocht:**
 - **American Roentgen Ray Society (ARRS)** ✅ contact gevonden en gemaild
@@ -155,15 +161,17 @@ contact **michaelb@9to5mac.com** (Michael Burkhardt). Geen kosten genoemd,
 geen zelfpromotie- of AI-verbod van toepassing (het is een submissie-uitnodiging,
 geen forum).
 
-## Nieuw gevonden — Indie App Catalog ⚠️ vereist app op US App Store (Dicom Viewer voldoet), nog niet ingediend
+## Nieuw gevonden — Indie App Catalog ⚠️ vereist app op US App Store (Dicom Viewer voldoet)
 
 Gratis directory-listing voor indie-apps (indiecatalog.app/submit-app of
 indieappcatalog.com/news/submit). Voorwaarden: "echte, zichtbare mensen achter
 de app" (geen grote bedrijven) en beschikbaarheid op de Amerikaanse App
-Store — Dicom Viewer voldoet aan beide. Webformulier, geen e-mail — deze
-sessie nog niet ingevuld; goede kandidaat om in een volgende ronde in de
-browser te openen, in te vullen en klaar te zetten voor Ed (niet zelf
-submitten, zelfde voorzichtige aanpak als bij andere webformulieren).
+Store — Dicom Viewer voldoet aan beide. Webformulier, geen e-mail.
+**Update 16 juli 2026:** velden ingevuld in de browser, maar die sessie is
+vastgelopen vóórdat dit kon worden afgerond/bevestigd — niet zeker of het al
+verzonden is. Volgende ronde: controleren of de listing al bestaat op
+indieappcatalog.com, anders formulier opnieuw invullen en klaarzetten voor Ed
+(niet zelf submitten).
 
 ## Mastodon iosdev.space en AltStore PAL (uit PROMOTIE.md, nu gecheckt)
 
@@ -221,8 +229,11 @@ sterke extra vondsten voor India specifiek dit uur.
 - [x] ASNR gemaild (info@asnr.org) — 15 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [ ] SIR Medical Student Council — alleen algemeen webformulier gevonden, geen e-mail; nog te doen (formulier klaarzetten, niet zelf versturen)
 - [x] 9to5Mac Indie App Spotlight gemaild (michaelb@9to5mac.com) — 15 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
-- [ ] Indie App Catalog (indiecatalog.app/submit-app) — nieuw gevonden gratis directory, webformulier nog niet ingevuld
-- [ ] Overige verenigingen (American Association of Women Radiologists, American Osteopathic College of Radiology, American Society of Emergency Radiology, Society for Pediatric Radiology) — nog te onderzoeken op individuele contactpunten
+- [ ] Indie App Catalog (indiecatalog.app/submit-app) — 16 juli 2026: formulier ingevuld maar sessie liep vast, onduidelijk of verzonden — checken en evt. opnieuw klaarzetten
+- [x] AAWR gemaild (info@aawr.org) — 16 juli 2026, verzonden via iCloud Mail, wacht op reactie
+- [x] AOCR gemaild (info@aocr.org) — 16 juli 2026, verzonden via iCloud Mail, wacht op reactie
+- [x] ASER gemaild (info@aser.org) — 16 juli 2026, verzonden via iCloud Mail, wacht op reactie
+- [ ] Society for Pediatric Radiology — nog te onderzoeken op individueel contactpunt
 
 ---
 
@@ -394,6 +405,32 @@ external dependencies).
 App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
 
 Happy to send screenshots or answer questions. Thanks for considering it!
+
+Best,
+Ed Cafferata — The IT Crowd
+```
+
+## Kant-en-klare tekst — AAWR / AOCR / ASER (e-mail naar info@aawr.org, info@aocr.org, info@aser.org)
+
+**Onderwerp:** Free tool for radiology trainees — Dicom Viewer, native iOS DICOM viewer
+
+```
+Hi [AAWR/AOCR/ASER] team,
+
+I'm Ed Cafferata, founder of The IT Crowd. I built Dicom Viewer, a free native
+iOS app for viewing DICOM medical images (X-ray, CT, MRI, ultrasound) on
+iPhone and iPad — thought it might be worth mentioning to your members,
+residents and medical students.
+
+It's privacy-first: everything runs on-device, no account, no cloud upload,
+no PACS connection. Features include a cine player for multi-frame studies,
+Window/Level presets (Abdomen, Lung, Bone, Brain), a series navigator and
+frame export — built for quick review on the go, not as a diagnostic
+replacement for a full workstation.
+
+App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Happy to answer any questions or provide more detail. Thanks for considering it!
 
 Best,
 Ed Cafferata — The IT Crowd
