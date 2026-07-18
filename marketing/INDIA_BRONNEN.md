@@ -102,6 +102,11 @@ voor Dicom Viewer.
   Times"-PR-diensten. **Niet gebruiken zonder eerst een échte gratis
   redactie-ingang te vinden** (bijv. via een individuele journalist op
   LinkedIn) — past anders mogelijk niet bij de "geen betaalde kanalen"-regel.
+  **Update 18 juli 2026:** opnieuw gezocht — de site zelf blokkeert directe
+  toegang (403), en er is geen "write for us"/contact-e-mailadres gevonden.
+  Wel een naam: Shahid Akhter is redacteur bij ETHealthworld, maar zonder
+  geverifieerd e-mailadres is een gok te riskant (bounce-risico zoals eerder
+  bij MediaNama). Nog steeds "on hold" tot een echt adres gevonden is.
 
 ### Golf 3b — MediaNama ⚠️ gepubliceerd adres blijkt niet actief
 Bekroonde publicatie over techbeleid in India (privacy, data, digitale
@@ -187,7 +192,7 @@ Bengaluru, geen duidelijk promotiekanaal).
 - [x] Golf 3 — Analytics India Magazine onderzocht → ⚠️ waarschijnlijk zwakke match (focus op AI/enterprise-IT, geen contactformulier gevonden), lagere prioriteit
 - [ ] Golf 3 — ETHealthworld: eerst een echte gratis redactie-ingang vinden
 - [ ] Golf 3b — MediaNama: eerste poging (releases@medianama.com, 13 juli 2026) gebounced — "account does not exist". Retry-pogingen naar nikhil@medianama.com op zowel 15 als 18 juli 2026 werden allebei door de automatische veiligheidscontrole van de sessie geblokkeerd (herkent het als een "on-hold, niet zomaar opnieuw proberen"-contact, ondanks dat de sectie hierboven een individuele-journalist-retry expliciet toestaat). Blijkbaar blokkeert de check dit consequent — geen automatische retry meer proberen. Ed moet dit zelf versturen, of in een interactieve sessie expliciet bevestigen dat de retry door mag
-- [ ] Golf 4 — developersIndia-post/Reddit-showcase voorbereiden
+- [x] Golf 4 — developersIndia-post voorbereid en als concept opgeslagen op Reddit (18 juli 2026, titel "Built a native iOS DICOM viewer with zero external dependencies — custom binary parser in Swift", flair "I Made This", tekst uit de sectie hieronder) — bewust niet zelf gepost, wacht op Ed om op "Post" te klikken in r/developersIndia
 - [x] Golf 4 — r/india regels gecheckt → ⛔ ongeschikt (zelfpromotie-limiet + AI-verbod), overgeslagen
 - [x] Golf 5 — Inc42 onderzocht → ⛔ ongeschikt: eist India-vestiging of 60-70% India-personeel, The IT Crowd voldoet niet. Niet ingediend.
 - [x] Golf 6 — patiëntforums gecheckt: India Medical Hub ☠️ gekaapt door gokspam (niet gebruiken), PharmD Info lijkt legitiem (wacht op concrete vraag om op te reageren)

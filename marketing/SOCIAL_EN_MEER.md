@@ -132,6 +132,16 @@ duidelijk niet bijgehouden). Niet de moeite om deze specifieke pagina te
 benaderen. De organisatie zelf is nog wel actief (info@aarad.org, X/LinkedIn/
 Instagram/Bluesky/YouTube), voor het geval een andere ingang zinvoller is.
 
+### Nieuw gevonden — AMSER (Alliance of Medical Student Educators in Radiology) ✅ gemaild (18 juli 2026)
+Landelijk netwerk van radiologie-onderwijzers onder de vlag van AARAD,
+specifiek gericht op geneeskundestudenten (Medical Student Resources-pagina,
+newsletter, Case of the Month). Sterke doelgroep-match — precies de
+"medical students considering radiology"-hoek uit PROMOTIE.md. Contact:
+**info@aarad.org** (staat achter Cloudflare-emailbescherming op de AMSER-pagina,
+gedecodeerd om het adres te vinden — zelfde adres als het al genoemde AARAD-
+contact hierboven, nu voor het eerst daadwerkelijk gebruikt).
+Gemaild in dezelfde stijl als ACR RFS/ARRS/ASNR (18 juli 2026).
+
 ## Extra VS-kanalen (nieuw gevonden, nog niet in SITES.md)
 
 ### TapSmart — Indie Apps Showcase ✅ gratis, contact geverifieerd
@@ -241,6 +251,7 @@ sterke extra vondsten voor India specifiek dit uur.
 - [x] SPR gemaild (spr@acr.org) — 18 juli 2026, verzonden via iCloud Mail, wacht op reactie
 - [x] SIR Medical Student Council — webformulier klaargezet (18 juli 2026) en door Ed verzonden (na inkorten Comments-veld wegens 200-tekenslimiet)
 - [x] Indie App Catalog — App Store-URL ingevuld (18 juli 2026, https://indiecatalog.app/submit-app) en door Ed op "Submit for Verification" geklikt
+- [x] AMSER gemaild (info@aarad.org) — 18 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 
 ---
 
@@ -441,4 +452,35 @@ Happy to answer any questions or provide more detail. Thanks for considering it!
 
 Best,
 Ed Cafferata — The IT Crowd
+```
+
+## Kant-en-klare tekst — AMSER (e-mail naar info@aarad.org)
+
+**Onderwerp:** Free tool for medical students — Dicom Viewer, native iOS DICOM viewer
+
+```
+Hi AMSER team,
+
+I'm Ed Cafferata, founder of The IT Crowd. I built Dicom Viewer, a free native
+iOS app for viewing DICOM medical images (X-ray, CT, MRI, ultrasound) on
+iPhone and iPad — no account, no cloud upload, no PACS connection required.
+Everything is processed on-device.
+
+I thought it might be a useful addition to the AMSER Medical Student Resources
+page or newsletter — a quick way for students to review teaching cases or
+their own scans on a phone or tablet. Features include a cine player for
+multi-frame studies, Window/Level presets (Abdomen, Lung, Bone, Brain), a
+series navigator and frame export.
+
+Not a paid promotion request — just thought it might be genuinely useful for
+the students AMSER supports.
+
+App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+More info: https://cafferata.info
+
+Happy to answer any questions. Thanks for considering it!
+
+Best,
+Ed Cafferata — The IT Crowd
+edcafferata@icloud.com
 ```

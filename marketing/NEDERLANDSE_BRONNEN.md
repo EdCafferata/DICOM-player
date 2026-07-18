@@ -86,6 +86,7 @@ pas bij een concrete vraag, stuur geen koude mail naar ziekenhuizen.
 - [ ] Golf 5 — Zorginnovatie.nl LinkedIn-post geplaatst (14 juli 2026: tekst ingevuld in LinkedIn-composer en opgeslagen als "Concept" op Eds account — staat klaar onder "Bijdrage starten", één klik op "Plaatsen" nodig; niet zelf gepost)
 - [ ] Golf 6 — eerste helpende reactie richting patiënt/ziekenhuis-hoek (indien kans zich voordoet)
 - [x] Nieuwe vondst — MedNet.nl gemaild (info@mednet.nl) — 16 juli 2026, persbericht-stijl (Golf 2-toon), verzonden via iCloud Mail, wacht op reactie
+- [x] Nieuwe vondst — Medisch Contact gemaild (nieuwsdienst@medischcontact.nl) — 18 juli 2026, persbericht-stijl (Golf 2-toon), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 
 ---
 
@@ -259,6 +260,35 @@ App Store: https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id14834965
 Nederlands medisch nieuwsplatform (onderdeel van Springer Healthcare), met een
 duidelijke gratis persbericht-ingang: info@mednet.nl. Gemaild in dezelfde
 persbericht-stijl als Golf 2 (Zorgvisie/Skipr/ICT&Health).
+
+**Onderwerp:** Nieuwe app: Dicom Viewer — privacy-first DICOM-viewer voor iPhone/iPad
+
+```
+The IT Crowd heeft Dicom Viewer uitgebracht, een native iOS-app waarmee
+patiënten en zorgprofessionals DICOM-medische beelden (röntgen, CT, MRI, echo)
+rechtstreeks op hun iPhone of iPad bekijken — zonder iets te uploaden naar een
+cloud-dienst of PACS-systeem.
+
+Belangrijkste functies: volledig-scherm viewer met pinch-zoom, cine-speler voor
+multi-frame-onderzoeken, Window/Level-presets (buik, long, bot, hersenen), een
+automatische serie-navigator en frame-export naar PNG/JPEG. Alles draait
+on-device, dus geen account en geen internetverbinding nodig na installatie.
+
+Dicom Viewer is gratis te downloaden, met een optionele fooienpot. Beschikbaar
+wereldwijd in het Engels en Nederlands.
+
+App Store: https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527
+Contact: edcafferata@icloud.com
+```
+
+---
+
+## Nieuwe vondst (18 juli 2026) — Medisch Contact
+
+Grootste Nederlandse vakblad voor artsen (van de KNMG), met een duidelijke
+gratis persbericht-ingang: nieuwsdienst@medischcontact.nl (voor artikelen zelf
+insturen is er een apart adres, kopij@medischcontact.nl, maar dat is niet van
+toepassing hier). Gemaild in dezelfde persbericht-stijl als Golf 2/MedNet.nl.
 
 **Onderwerp:** Nieuwe app: Dicom Viewer — privacy-first DICOM-viewer voor iPhone/iPad
 
