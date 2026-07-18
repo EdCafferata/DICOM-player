@@ -117,8 +117,11 @@ adavis@spr.org, is het alternatief indien geen reactie).
   (sirweb.org/contact/) met onderwerp-categorieën — geen "Medical Student
   Council"-optie herkend. **Update 18 juli 2026:** contactformulier volledig
   ingevuld en klaargezet in de browser (Work email, topic "General inquiry",
-  Job title, Comments met de pitch) — bewust niet zelf verzonden, wacht op
-  Ed om op "Submit" te klikken.
+  Job title, Comments met de pitch) — bewust niet zelf verzonden, klaargezet
+  voor Ed. **Ed heeft het formulier verzonden** — bleef eerst hangen omdat
+  het Comments-veld (incl. achternaam "Cafferata") over de 200-tekenslimiet
+  ging; na inkorten (achternaam weggelaten) ging het door. Let hierop bij
+  toekomstige webformulieren met een korte-tekst-limiet.
 
 ### AUR/AAR "Apps and Other Web-Based Resources" ⚠️ sterk verouderd
 Association of University Radiologists (nu omgedoopt tot **Association of
@@ -231,14 +234,13 @@ sterke extra vondsten voor India specifiek dit uur.
 - [x] radiologysig.com gemaild (radsig2021@gmail.com) — 14 juli 2026, verzonden via iCloud Mail, wacht op reactie
 - [x] ARRS gemaild (membership@arrs.org) — 15 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] ASNR gemaild (info@asnr.org) — 15 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
-- [ ] SIR Medical Student Council — alleen algemeen webformulier gevonden, geen e-mail; nog te doen (formulier klaarzetten, niet zelf versturen)
 - [x] 9to5Mac Indie App Spotlight gemaild (michaelb@9to5mac.com) — 15 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [ ] Indie App Catalog (indiecatalog.app/submit-app) — 16 juli 2026: formulier ingevuld maar sessie liep vast, onduidelijk of verzonden — checken en evt. opnieuw klaarzetten
 - [x] AAWR gemaild (info@aawr.org) — 16 juli 2026, verzonden via iCloud Mail, wacht op reactie
 - [x] AOCR gemaild (info@aocr.org) — 16 juli 2026, verzonden via iCloud Mail, wacht op reactie
 - [x] ASER gemaild (info@aser.org) — 16 juli 2026, verzonden via iCloud Mail, wacht op reactie
 - [x] SPR gemaild (spr@acr.org) — 18 juli 2026, verzonden via iCloud Mail, wacht op reactie
-- [x] SIR Medical Student Council — webformulier volledig ingevuld en klaargezet (18 juli 2026), wacht op Ed om te verzenden
+- [x] SIR Medical Student Council — webformulier klaargezet (18 juli 2026) en door Ed verzonden (na inkorten Comments-veld wegens 200-tekenslimiet)
 - [x] Indie App Catalog — App Store-URL ingevuld en klaargezet (18 juli 2026, https://indiecatalog.app/submit-app), wacht op Ed om op "Submit for Verification" te klikken
 
 ---
