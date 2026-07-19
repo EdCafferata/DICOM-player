@@ -540,3 +540,90 @@ Link in bio 👆
 
 #dicom #radiology #medicalimaging #iosdev #indieapp #privacyfirst
 ```
+
+## Nieuwe vondsten (19/20 juli 2026, nachtelijke sessie) — AuntMinnie.com en ACVR
+
+### AuntMinnie.com ✅ gemaild
+Grootste Amerikaanse radiologie-community/nieuwssite (kwam organisch naar boven
+in X's "You might like" na het volgen van de FOAMrad-community). Duidelijke
+gratis editorial-ingang. Contact: **eridley@auntminnie.com** (Erik L. Ridley,
+Editor in Chief) — zelfde adres wordt gebruikt voor zowel "submit content" als
+directe redactiecontact.
+**Gemaild 19/20 juli 2026** via iCloud Mail, bevestigd in Verstuurd-map.
+
+### American College of Veterinary Radiology (ACVR) ✅ gemaild
+Beroepsvereniging van 800+ veterinaire radiologen, maandelijkse nieuwsbrief
+"ACVR Insight". Relevant omdat Dicom Viewer generieke DICOM-bestanden opent
+(dus ook bruikbaar voor dierenartsen), en dit al eerder als doelgroep genoemd
+stond in de TapSmart-pitch. Geen aparte redactie/pers-ingang gevonden, alleen
+algemeen adres: **acvr@pamedsoc.org**.
+**Gemaild 19/20 juli 2026** via iCloud Mail, bevestigd in Verstuurd-map.
+
+### Overige gecheckt, niet gebruikt
+- **r/radiology** ⛔ regel 4 ("No advertising or sales") gecontroleerd via de
+  community-regels-sidebar — expliciet verboden, overgeslagen.
+- **iOS Dev Weekly** ⚠️ geen submissieformulier/duidelijke "stuur je app in"-
+  ingang gevonden — het is een sterk gecureerde technische nieuwsbrief (code/
+  architectuur-diepgang), geen platform voor app-aankondigingen. Zou wellicht
+  wel passen als Ed ooit een technisch blogartikel schrijft over het bouwen
+  van de DICOM-parser (vergelijkbaar met de Hacker News "Show HN"-insteek),
+  maar niet als directe outreach-mail.
+- **Swift Weekly** — heeft een "send link"-formulier, maar WebFetch/directe
+  toegang faalde deze sessie (SSL-fout); niet verder onderzocht, lagere
+  prioriteit dan de twee hierboven.
+
+## Kant-en-klare tekst — AuntMinnie.com (e-mail naar eridley@auntminnie.com)
+
+**Onderwerp:** Story idea: Dicom Viewer — free privacy-first DICOM viewer for iPhone/iPad
+
+```
+Hi Erik,
+
+I'm Ed Cafferata, an independent iOS developer. I built Dicom Viewer, a free
+native app for viewing DICOM medical images (X-ray, CT, MRI, ultrasound)
+directly on iPhone and iPad — no account, no cloud upload, no PACS connection
+required. Everything is processed entirely on-device.
+
+It serves two audiences: patients who want to open scans from a hospital
+CD/USB, and clinicians, students and vets who get a cine player, Window/Level
+presets, an automatic series navigator and frame export. The DICOM parser is
+written from scratch in Swift with zero external dependencies, open source
+under GPL-3.0.
+
+Given AuntMinnie's readership, I thought this might be a relevant story or
+worth a mention — happy to answer questions or send screenshots.
+
+App Store: apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Best,
+Ed Cafferata — The IT Crowd
+```
+
+## Kant-en-klare tekst — ACVR (e-mail naar acvr@pamedsoc.org)
+
+**Onderwerp:** Free tool that might be useful for ACVR members — Dicom Viewer, native iOS DICOM viewer
+
+```
+Hi ACVR team,
+
+I'm Ed Cafferata, an independent iOS developer. I built Dicom Viewer, a free
+native app for viewing DICOM medical images directly on iPhone and iPad — no
+account, no cloud upload, no PACS connection required. Everything is
+processed entirely on-device.
+
+While built with human radiology in mind, it's generic DICOM, so it works
+just as well for reviewing studies on the go. Features include a cine player
+for multi-frame studies, Window/Level presets, an automatic series navigator
+and frame export.
+
+Thought it might be worth a mention in ACVR Insight or your Students
+resources — not a paid promotion request, just thought it could be genuinely
+useful for your members.
+
+App Store: apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Happy to answer any questions. Thanks for considering it!
+
+Best,
+Ed Cafferata — The IT Crowd
+```
