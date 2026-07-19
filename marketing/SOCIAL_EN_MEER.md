@@ -239,6 +239,8 @@ sterke extra vondsten voor India specifiek dit uur.
 
 - [x] X-account ingericht (19/20 juli 2026): bestaand persoonlijk account @EdCafferata geactiveerd — bio "iOS developer · Built Dicom Viewer, a free privacy-first DICOM image viewer for iPhone/iPad 🩻" + link cafferata.info + IT Crowd-logo als profielfoto (foto door Ed zelf gezet, browserextensie mocht geen lokaal bestand uploaden). @FOAMrad, @Radiopaedia, @GlobalRadCME en @KevinRiceMD gevolgd (helpende-eerst-strategie) — let op: zoeken op exacte handle in X's zoekbalk gaf valse "no results" voor 2 van de 4 accounts, directe profiel-URL (x.com/<handle>) werkte wel betrouwbaar
 - [x] Instagram-account ingericht (19/20 juli 2026): bestaand persoonlijk account @ed_cafferata (208 volgers) hergebruikt — bio uitgebreid naar "Carpe diem · iOS dev · Built Dicom Viewer, a free privacy-first DICOM viewer 🩻", profielfoto (IT Crowd-logo) en link (cafferata.info) stonden al goed
+- [x] X eerste post live (19/20 juli 2026, tekst-only, zie hieronder). X toont bij nieuwe/inactieve accounts een "graduated access"-melding — beperkt bereik (niet in search/trends) totdat het account meer engagement toont. Als reactie een paar oude #FOAMrad-posts geliket voor wat engagement.
+- [ ] Instagram-post — caption hieronder klaargezet, **niet gepost**: het uploaden van een afbeelding via de browserextensie (`file_upload`) werd deze sessie structureel geblokkeerd ("only files the user has shared with this session"), ook voor bestanden die Ed zelf in de chat deelde. Aanbevolen beeld: `AppStore/02_viewer.png` of `03_viewer_clean.png` (laat de echte viewer-UI zien). Ed moet dit zelf posten vanaf telefoon/computer.
 - [ ] Ed maakt eventueel een TikTok-account aan (lagere prioriteit, onzeker rendement)
 - [x] TapSmart gemaild (tomjrolfe@intelligenti.com) — 14 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] r/IndieAppNews-post gepost — 14 juli 2026, live als u/kaffer1986 met flair "App Introduction": https://www.reddit.com/r/IndieAppNews/
@@ -515,4 +517,26 @@ Happy to answer any questions or provide more detail. Thanks for considering it!
 
 Best,
 Ed Cafferata — The IT Crowd
+```
+
+## Kant-en-klare tekst — X post 1 (19/20 juli 2026, LIVE)
+
+```
+Most patients leave a scan with a CD or USB stick and no way to actually view it. I built Dicom Viewer — a free iOS app that opens DICOM files (X-ray, CT, MRI, ultrasound) on iPhone/iPad. No account, no cloud, no PACS — everything stays on-device.
+
+apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+```
+
+## Kant-en-klare tekst — Instagram post (klaar, nog niet gepost — beeld nodig)
+
+Aanbevolen beeld: `AppStore/02_viewer.png` of `03_viewer_clean.png`.
+
+```
+Most people get handed a CD or USB after a scan — and then can't actually open it.
+
+I built Dicom Viewer: a free iOS app that opens DICOM medical images (X-ray, CT, MRI, ultrasound) straight on your iPhone or iPad. No account, no cloud upload — everything stays on your device.
+
+Link in bio 👆
+
+#dicom #radiology #medicalimaging #iosdev #indieapp #privacyfirst
 ```
