@@ -240,6 +240,7 @@ sterke extra vondsten voor India specifiek dit uur.
 - [x] X-account ingericht (19/20 juli 2026): bestaand persoonlijk account @EdCafferata geactiveerd — bio "iOS developer · Built Dicom Viewer, a free privacy-first DICOM image viewer for iPhone/iPad 🩻" + link cafferata.info + IT Crowd-logo als profielfoto (foto door Ed zelf gezet, browserextensie mocht geen lokaal bestand uploaden). @FOAMrad, @Radiopaedia, @GlobalRadCME en @KevinRiceMD gevolgd (helpende-eerst-strategie) — let op: zoeken op exacte handle in X's zoekbalk gaf valse "no results" voor 2 van de 4 accounts, directe profiel-URL (x.com/<handle>) werkte wel betrouwbaar
 - [x] Instagram-account ingericht (19/20 juli 2026): bestaand persoonlijk account @ed_cafferata (208 volgers) hergebruikt — bio uitgebreid naar "Carpe diem · iOS dev · Built Dicom Viewer, a free privacy-first DICOM viewer 🩻", profielfoto (IT Crowd-logo) en link (cafferata.info) stonden al goed
 - [x] X eerste post live (19/20 juli 2026, tekst-only, zie hieronder). X toont bij nieuwe/inactieve accounts een "graduated access"-melding — beperkt bereik (niet in search/trends) totdat het account meer engagement toont. Als reactie een paar oude #FOAMrad-posts geliket voor wat engagement.
+- [x] X tweede post live (19/20 juli 2026, build-in-public/technische invalshoek — DICOM-parser from scratch, GitHub-link, #buildinpublic #iOSDev)
 - [ ] Instagram-post — caption hieronder klaargezet, **niet gepost**: het uploaden van een afbeelding via de browserextensie (`file_upload`) werd deze sessie structureel geblokkeerd ("only files the user has shared with this session"), ook voor bestanden die Ed zelf in de chat deelde. Aanbevolen beeld: `AppStore/02_viewer.png` of `03_viewer_clean.png` (laat de echte viewer-UI zien). Ed moet dit zelf posten vanaf telefoon/computer.
 - [ ] Ed maakt eventueel een TikTok-account aan (lagere prioriteit, onzeker rendement)
 - [x] TapSmart gemaild (tomjrolfe@intelligenti.com) — 14 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
@@ -626,4 +627,15 @@ Happy to answer any questions. Thanks for considering it!
 
 Best,
 Ed Cafferata — The IT Crowd
+```
+
+## Kant-en-klare tekst — X post 2 (19/20 juli 2026, LIVE, build-in-public invalshoek)
+
+```
+Spent the last few months writing a DICOM parser from scratch in Swift for Dicom Viewer — zero external dependencies. Free iOS app, on-device only, open source (GPL-3.0).
+
+github.com/EdCafferata/DICOM-player
+apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+#buildinpublic #iOSDev
 ```
