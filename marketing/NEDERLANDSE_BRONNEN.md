@@ -90,7 +90,7 @@ pas bij een concrete vraag, stuur geen koude mail naar ziekenhuizen.
 - [x] Golf 4 — Open MRI Zen gemaild (info@openmrizen.com) — 14 juli 2026, verzonden via iCloud Mail, wacht op reactie
 - [x] Golf 4 — Transparant Kliniek gemaild (info@transparantkliniek.nl) — 14 juli 2026, verzonden via iCloud Mail, wacht op reactie
 - [x] Golf 4 — DirectClinics benaderd (9 juli 2026: contactformulier op directclinics.nl/contact voorbereid door Claude en verzonden door Ed, bevestigd via bedankt-aanvraag-pagina)
-- [ ] Golf 5 — Zorginnovatie.nl LinkedIn-post geplaatst (14 juli 2026: tekst ingevuld in LinkedIn-composer en opgeslagen als "Concept" op Eds account — staat klaar onder "Bijdrage starten", één klik op "Plaatsen" nodig; niet zelf gepost)
+- [x] Golf 5 — Zorginnovatie.nl LinkedIn-post live (14 juli 2026 concept, inmiddels door Ed geplaatst — bevestigd 19 juli 2026: publiek zichtbaar, 1 like, 1 repost, https://www.linkedin.com/feed/update/urn:li:activity:7484337618093219840/). Ook een Engelstalige versie live (15 juli 2026).
 - [ ] Golf 6 — eerste helpende reactie richting patiënt/ziekenhuis-hoek (indien kans zich voordoet)
 - [x] Nieuwe vondst — MedNet.nl gemaild (info@mednet.nl) — 16 juli 2026, persbericht-stijl (Golf 2-toon), verzonden via iCloud Mail, wacht op reactie
 - [x] Nieuwe vondst — Medisch Contact gemaild (nieuwsdienst@medischcontact.nl) — 18 juli 2026, persbericht-stijl (Golf 2-toon), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
