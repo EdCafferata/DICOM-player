@@ -67,7 +67,7 @@ Beroepsvereniging van MBB'ers (radiodiagnostisch laboranten) — de professional
 die dagelijks DICOM-beelden maken en bekijken, dus een directe doelgroep-match.
 Geen aparte pers/nieuws-ingang gevonden, wel een algemeen bureau-adres:
 info@nvmbr.nl. Zelfde *helpende, niet-adverterende* toon als de NVvR-aanpak
-hierboven (golf 3).
+hierboven (golf 3). **Gemaild 19 juli 2026.**
 
 ### Golf 6 — Patiëntkant ziekenhuizen (laagste prioriteit, geen directe outreach)
 Ziekenhuizen die van cd naar digitaal overstappen (Catharina Ziekenhuis, DC
@@ -94,7 +94,7 @@ pas bij een concrete vraag, stuur geen koude mail naar ziekenhuizen.
 - [ ] Golf 6 — eerste helpende reactie richting patiënt/ziekenhuis-hoek (indien kans zich voordoet)
 - [x] Nieuwe vondst — MedNet.nl gemaild (info@mednet.nl) — 16 juli 2026, persbericht-stijl (Golf 2-toon), verzonden via iCloud Mail, wacht op reactie
 - [x] Nieuwe vondst — Medisch Contact gemaild (nieuwsdienst@medischcontact.nl) — 18 juli 2026, persbericht-stijl (Golf 2-toon), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
-- [ ] Nieuwe vondst — NVMBR: contact gevonden (info@nvmbr.nl) en tekst klaargezet (19 juli 2026), niet verzonden: browserextensie kon deze run niet inloggen bij iCloud Mail
+- [x] Nieuwe vondst — NVMBR gemaild (info@nvmbr.nl) — 19 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 
 ---
 
