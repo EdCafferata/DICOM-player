@@ -197,6 +197,12 @@ Bengaluru, geen duidelijk promotiekanaal).
 - [x] Golf 5 — Inc42 onderzocht → ⛔ ongeschikt: eist India-vestiging of 60-70% India-personeel, The IT Crowd voldoet niet. Niet ingediend.
 - [x] Golf 6 — patiëntforums gecheckt: India Medical Hub ☠️ gekaapt door gokspam (niet gebruiken), PharmD Info lijkt legitiem (wacht op concrete vraag om op te reageren)
 - [x] Golf 7 — diagnostische ketens onderzocht (Apollo, Metropolis) → alleen generieke contactformulieren gevonden, laagste prioriteit
+- [x] Nieuwe vondst — MSAI (Medical Students' Association of India, 20.000+ leden) gemaild (vpi@msaindia.org) — 19/20 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [x] Nieuwe vondst — ISVIR (Indian Society for Vascular and Interventional Radiology) gemaild (info.isvir@gmail.com) — 19/20 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [x] Nieuwe vondst — RadioGyan.com (Indiase radiologie-onderwijs-nieuwsbrief, 15.000+ abonnees, Dr. Amar Udare) gemaild (admin@radiogyan.com) — 19/20 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [ ] Nieuwe vondst — The Better India (250M+ lezers/maand, "world's largest impact-driven positive stories platform", eerder al healthtech/radiologie-AI gedekt) — pitch klaargezet, **niet verzonden**: hun richtlijnen eisen verplicht een afbeelding bij de inzending, en het uploaden van bestanden via de browserextensie was deze sessie geblokkeerd. Contact: editorial@thebetterindia.com. Ed moet dit zelf versturen met een screenshot bijgevoegd (bv. AppStore/02_viewer.png uit de DICOM-player-repo)
+- [x] Onderzocht, niet gebruikt — Startup India Showcase (overheidsplatform) ⛔ alleen voor DPIIT-erkende Indiase bedrijven, The IT Crowd voldoet niet (zelfde blokkade als Inc42/Swadeshi Apps eerder)
+- [x] Onderzocht, niet gebruikt — IRIA state-chapters (Karnataka/Kerala/Maharashtra) alleen postadressen gevonden, geen e-mail; bovendien nog te vroeg om te escaleren zolang IRIA-hoofdkantoor (gemaild 13 juli) nog niet gereageerd heeft
 
 ---
 
@@ -321,3 +327,108 @@ groot potentieel publiek, weinig concurrentie van de bekende namen daar.
 niet alles tegelijk versturen. Check bij golf 3, 5 en 6 eerst de regels/het
 prijsmodel voordat je iets verstuurt (les uit de VS-sessie: Product Hunt en
 enkele subreddits bleken achteraf niet gratis of niet toegestaan).
+
+## Kant-en-klare tekst — MSAI (e-mail naar vpi@msaindia.org)
+
+**Onderwerp:** Free tool for medical students — Dicom Viewer, native iOS DICOM viewer
+
+```
+Hi MSAI team,
+
+I'm Ed Cafferata, an independent iOS developer. I built Dicom Viewer, a free
+native app for viewing DICOM medical images (X-ray, CT, MRI, ultrasound)
+directly on iPhone and iPad — no account, no cloud upload, no PACS connection
+required. Everything is processed entirely on-device.
+
+I thought it might be a useful resource for medical students exploring
+radiology or reviewing teaching cases on the go — features include a cine
+player for multi-frame studies, Window/Level presets, an automatic series
+navigator and frame export.
+
+Not a paid promotion request — just thought it might be genuinely useful for
+the students MSAI represents.
+
+App Store: apps.apple.com/in/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Happy to answer any questions. Thanks for considering it!
+
+Best,
+Ed Cafferata — The IT Crowd
+```
+
+## Kant-en-klare tekst — ISVIR (e-mail naar info.isvir@gmail.com)
+
+**Onderwerp:** Dicom Viewer — free iOS app for viewing DICOM images
+
+```
+Dear ISVIR team,
+
+I'm Ed Cafferata, an independent iOS developer. I built Dicom Viewer, a free
+native app that lets clinicians and patients view DICOM medical images
+(X-ray, CT, MRI, ultrasound) directly on iPhone or iPad — no account, no
+cloud upload, no PACS connection required. Everything is processed
+on-device.
+
+Given the growing role of mobile access to imaging, I thought this might be
+useful to share with your members, or as a resource for patients who want to
+view scans they've been given on a CD or USB drive.
+
+Not a paid promotion request — just thought it might be a genuinely useful
+tool for the community you represent.
+
+App Store: apps.apple.com/in/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Best regards,
+Ed Cafferata — The IT Crowd
+```
+
+## Kant-en-klare tekst — RadioGyan (e-mail naar admin@radiogyan.com)
+
+**Onderwerp:** Suggestion for RadioGyan — free iOS DICOM viewer
+
+```
+Hi,
+
+I'm Ed Cafferata, an independent iOS developer. I wanted to suggest a
+resource for RadioGyan: Dicom Viewer, a free native iOS app that lets medical
+students and residents view DICOM medical images (X-ray, CT, MRI, ultrasound)
+directly on their iPhone or iPad — useful for quick review of teaching cases
+on the go. Everything runs on-device, no account or cloud upload needed.
+
+App Store: apps.apple.com/in/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Thought this might be a useful addition for your residents and students.
+Thanks for maintaining such a helpful resource!
+
+Best,
+Ed Cafferata — The IT Crowd
+```
+
+## Kant-en-klare tekst — The Better India (klaar, nog niet verzonden — beeld verplicht)
+
+**Onderwerp:** Positive story idea: privacy-first DICOM viewer built by an indie developer
+
+```
+Hi team,
+
+I'm Ed Cafferata, an independent iOS developer based in the Netherlands. I
+built Dicom Viewer, a free native app that lets anyone view DICOM medical
+images (X-ray, CT, MRI, ultrasound) directly on their iPhone or iPad — no
+account, no cloud upload, no PACS connection required. Everything is
+processed entirely on-device.
+
+The app is aimed at patients who are handed a CD or USB after a scan and have
+no easy way to open it, as well as clinicians and students who need a quick
+way to review studies on the go. It's also open source (GPL-3.0), built with
+a DICOM parser written from scratch.
+
+Given India's growing focus on accessible diagnostics and digital health, I
+thought this might fit your healthtech coverage.
+
+App Store: apps.apple.com/in/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Happy to answer any questions or send more screenshots.
+
+Best,
+Ed Cafferata — The IT Crowd
+```
