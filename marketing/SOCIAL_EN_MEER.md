@@ -88,8 +88,14 @@ mogen bijdragen — nog geen apart contactadres voor gevonden, wellicht via
 hetzelfde rfs@acr.org-kanaal te bereiken.
 
 ### Overige verenigingen met gratis studentenlidmaatschap (via radiologysig.com)
-RSNA (al genoemd in PROMOTIE.md) — nog niet individueel uitgezocht,
-vervolgstap voor een volgende ronde.
+**Update 19 juli 2026:** RSNA uitgezocht. Contactpagina (rsna.org/about/contact)
+geeft geen apart adres voor "stuur een tool/resource ter suggestie", maar wel
+**onlineeducation@rsna.org** (RSNA EdCentral & Course Catalog) als beste match —
+gericht op educatieve tools voor trainees, net als de andere gemailde
+verenigingen. Alternatief: media@rsna.org (persrelaties) als onlineeducation
+niet reageert. Tekst hieronder klaargezet, **nog niet verzonden** — de
+claude-in-chrome-browserextensie was deze sessie niet verbonden met iCloud
+Mail, dus verzending moet in een volgende run (of door Ed zelf).
 
 **Update 18 juli 2026:** contact gevonden en gemaild voor **Society for
 Pediatric Radiology (SPR)** — algemeen adres spr@acr.org (CEO Angela Davis,
@@ -252,6 +258,7 @@ sterke extra vondsten voor India specifiek dit uur.
 - [x] SIR Medical Student Council — webformulier klaargezet (18 juli 2026) en door Ed verzonden (na inkorten Comments-veld wegens 200-tekenslimiet)
 - [x] Indie App Catalog — App Store-URL ingevuld (18 juli 2026, https://indiecatalog.app/submit-app) en door Ed op "Submit for Verification" geklikt
 - [x] AMSER gemaild (info@aarad.org) — 18 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [ ] RSNA — contact gevonden (onlineeducation@rsna.org) en tekst klaargezet (19 juli 2026), niet verzonden: browserextensie kon deze run niet inloggen bij iCloud Mail
 
 ---
 
@@ -483,4 +490,30 @@ Happy to answer any questions. Thanks for considering it!
 Best,
 Ed Cafferata — The IT Crowd
 edcafferata@icloud.com
+```
+
+## Kant-en-klare tekst — RSNA (e-mail naar onlineeducation@rsna.org)
+
+**Onderwerp:** Free tool for radiology trainees — Dicom Viewer, native iOS DICOM viewer
+
+```
+Hi RSNA team,
+
+I'm Ed Cafferata, founder of The IT Crowd. I built Dicom Viewer, a free native
+iOS app for viewing DICOM medical images (X-ray, CT, MRI, ultrasound) on
+iPhone and iPad — thought it might be worth mentioning to trainees and medical
+students through EdCentral or the Course Catalog.
+
+It's privacy-first: everything runs on-device, no account, no cloud upload,
+no PACS connection. Features include a cine player for multi-frame studies,
+Window/Level presets (Abdomen, Lung, Bone, Brain), a series navigator and
+frame export — built for quick review on the go, not as a diagnostic
+replacement for a full workstation.
+
+App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Happy to answer any questions or provide more detail. Thanks for considering it!
+
+Best,
+Ed Cafferata — The IT Crowd
 ```

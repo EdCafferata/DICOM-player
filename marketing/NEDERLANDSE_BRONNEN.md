@@ -62,6 +62,13 @@ Community/platform voor zorginnovatie-cocreatie, 13.686 volgers op LinkedIn.
 Gewoon een introductiepost plaatsen/taggen, geen persbericht nodig.
 https://www.linkedin.com/company/zorginnovatie-nl/
 
+### Nieuwe vondst (19 juli 2026) — NVMBR (Nederlandse Vereniging Medische Beeldvorming en Radiotherapie)
+Beroepsvereniging van MBB'ers (radiodiagnostisch laboranten) — de professionals
+die dagelijks DICOM-beelden maken en bekijken, dus een directe doelgroep-match.
+Geen aparte pers/nieuws-ingang gevonden, wel een algemeen bureau-adres:
+info@nvmbr.nl. Zelfde *helpende, niet-adverterende* toon als de NVvR-aanpak
+hierboven (golf 3).
+
 ### Golf 6 — Patiëntkant ziekenhuizen (laagste prioriteit, geen directe outreach)
 Ziekenhuizen die van cd naar digitaal overstappen (Catharina Ziekenhuis, DC
 Klinieken, ViaSana) zijn geen outreach-doelwit, maar wel een goede hoek voor content
@@ -87,6 +94,7 @@ pas bij een concrete vraag, stuur geen koude mail naar ziekenhuizen.
 - [ ] Golf 6 — eerste helpende reactie richting patiënt/ziekenhuis-hoek (indien kans zich voordoet)
 - [x] Nieuwe vondst — MedNet.nl gemaild (info@mednet.nl) — 16 juli 2026, persbericht-stijl (Golf 2-toon), verzonden via iCloud Mail, wacht op reactie
 - [x] Nieuwe vondst — Medisch Contact gemaild (nieuwsdienst@medischcontact.nl) — 18 juli 2026, persbericht-stijl (Golf 2-toon), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [ ] Nieuwe vondst — NVMBR: contact gevonden (info@nvmbr.nl) en tekst klaargezet (19 juli 2026), niet verzonden: browserextensie kon deze run niet inloggen bij iCloud Mail
 
 ---
 
@@ -308,4 +316,31 @@ wereldwijd in het Engels en Nederlands.
 
 App Store: https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527
 Contact: edcafferata@icloud.com
+```
+
+---
+
+## Kant-en-klare tekst — NVMBR (e-mail naar info@nvmbr.nl)
+
+**Onderwerp:** Dicom Viewer — gratis iOS-app voor het bekijken van DICOM-beelden
+
+```
+Beste NVMBR,
+
+Ik ben Ed Cafferata van The IT Crowd. Ik heb Dicom Viewer ontwikkeld, een
+gratis iOS-app waarmee DICOM-beelden (röntgen, CT, MRI, echo) rechtstreeks op
+iPhone of iPad bekeken kunnen worden — zonder account, cloud-upload of
+PACS-koppeling. Alles blijft lokaal op het toestel.
+
+Geen advertentieverzoek, maar ik dacht dat dit voor MBB'ers of via jullie
+kanalen interessant kan zijn, bijvoorbeeld als hulpmiddel om onderweg snel een
+serie te bekijken, of als tip aan patiënten die hun eigen beelden willen
+meenemen.
+
+App Store: https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527
+Meer info: https://cafferata.info
+
+Met vriendelijke groet,
+Ed Cafferata — The IT Crowd
+edcafferata@icloud.com
 ```
