@@ -237,8 +237,8 @@ sterke extra vondsten voor India specifiek dit uur.
 
 ## Checklist
 
-- [ ] Ed maakt een X-account voor The IT Crowd (of persoonlijk) aan — vereist voor alles hierboven onder X
-- [ ] Ed maakt een Instagram-account aan
+- [x] X-account ingericht (19/20 juli 2026): bestaand persoonlijk account @EdCafferata geactiveerd — bio "iOS developer · Built Dicom Viewer, a free privacy-first DICOM image viewer for iPhone/iPad 🩻" + link cafferata.info. Profielfoto nog niet gezet (browserextensie kan geen lokale bestanden uploaden — Ed moet dit zelf doen of het bestand in de chat delen). @FOAMrad, @Radiopaedia, @GlobalRadCME en @KevinRiceMD gevolgd (helpende-eerst-strategie) — let op: zoeken op exacte handle in X's zoekbalk gaf valse "no results" voor 2 van de 4 accounts, directe profiel-URL (x.com/<handle>) werkte wel betrouwbaar
+- [x] Instagram-account ingericht (19/20 juli 2026): bestaand persoonlijk account @ed_cafferata (208 volgers) hergebruikt — bio uitgebreid naar "Carpe diem · iOS dev · Built Dicom Viewer, a free privacy-first DICOM viewer 🩻", profielfoto (IT Crowd-logo) en link (cafferata.info) stonden al goed
 - [ ] Ed maakt eventueel een TikTok-account aan (lagere prioriteit, onzeker rendement)
 - [x] TapSmart gemaild (tomjrolfe@intelligenti.com) — 14 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] r/IndieAppNews-post gepost — 14 juli 2026, live als u/kaffer1986 met flair "App Introduction": https://www.reddit.com/r/IndieAppNews/
