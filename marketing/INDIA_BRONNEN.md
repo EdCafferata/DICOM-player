@@ -184,6 +184,13 @@ Bengaluru, geen duidelijk promotiekanaal).
 
 ---
 
+### Nieuwe vondst (20 juli 2026) — ISRT (Indian Society of Radiographers and Technologists)
+Beroepsvereniging van radiodiagnostisch laboranten/technologen in India (gevestigd
+in Thiruvananthapuram, Kerala) — de professionals die dagelijks DICOM-beelden maken
+en bekijken, zelfde doelgroep-logica als NVMBR in NEDERLANDSE_BRONNEN.md. Geen
+zelfpromotie- of AI-verbod gevonden bij onderzoek van de site. Contact:
+info@isrt.org.in. **Gemaild 20 juli 2026.**
+
 ## Checklist
 
 - [ ] 🏆 Apple Featuring Nomination voor India ingediend in App Store Connect (Ed zelf, buiten browserbereik)
@@ -200,6 +207,7 @@ Bengaluru, geen duidelijk promotiekanaal).
 - [x] Nieuwe vondst — MSAI (Medical Students' Association of India, 20.000+ leden) gemaild (vpi@msaindia.org) — 19/20 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Nieuwe vondst — ISVIR (Indian Society for Vascular and Interventional Radiology) gemaild (info.isvir@gmail.com) — 19/20 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Nieuwe vondst — RadioGyan.com (Indiase radiologie-onderwijs-nieuwsbrief, 15.000+ abonnees, Dr. Amar Udare) gemaild (admin@radiogyan.com) — 19/20 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [x] Nieuwe vondst — ISRT (Indian Society of Radiographers and Technologists) gemaild (info@isrt.org.in) — 20 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [ ] Nieuwe vondst — The Better India (250M+ lezers/maand, "world's largest impact-driven positive stories platform", eerder al healthtech/radiologie-AI gedekt) — pitch klaargezet, **niet verzonden**: hun richtlijnen eisen verplicht een afbeelding bij de inzending, en het uploaden van bestanden via de browserextensie was deze sessie geblokkeerd. Contact: editorial@thebetterindia.com. Ed moet dit zelf versturen met een screenshot bijgevoegd (bv. AppStore/02_viewer.png uit de DICOM-player-repo)
 - [x] Onderzocht, niet gebruikt — Startup India Showcase (overheidsplatform) ⛔ alleen voor DPIIT-erkende Indiase bedrijven, The IT Crowd voldoet niet (zelfde blokkade als Inc42/Swadeshi Apps eerder)
 - [x] Onderzocht, niet gebruikt — IRIA state-chapters (Karnataka/Kerala/Maharashtra) alleen postadressen gevonden, geen e-mail; bovendien nog te vroeg om te escaleren zolang IRIA-hoofdkantoor (gemaild 13 juli) nog niet gereageerd heeft
@@ -430,5 +438,31 @@ App Store: apps.apple.com/in/app/dicom-viewer-by-the-it-crowd/id1483496527
 Happy to answer any questions or send more screenshots.
 
 Best,
+Ed Cafferata — The IT Crowd
+```
+
+## Kant-en-klare tekst — ISRT (e-mail naar info@isrt.org.in)
+
+**Onderwerp:** Dicom Viewer — free iOS app for viewing DICOM images
+
+```
+Dear ISRT team,
+
+I'm Ed Cafferata, an independent iOS developer. I built Dicom Viewer, a free
+native app that lets clinicians and patients view DICOM medical images
+(X-ray, CT, MRI, ultrasound) directly on iPhone or iPad — no account, no
+cloud upload, no PACS connection required. Everything is processed
+on-device.
+
+Given the growing role of mobile access to imaging, I thought this might be
+useful to share with your members, or as a resource for patients who want to
+view scans they've been given on a CD or USB drive.
+
+Not a paid promotion request — just thought it might be a genuinely useful
+tool for the community you represent.
+
+App Store: apps.apple.com/in/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Best regards,
 Ed Cafferata — The IT Crowd
 ```

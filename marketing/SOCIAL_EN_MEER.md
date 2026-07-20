@@ -261,6 +261,7 @@ sterke extra vondsten voor India specifiek dit uur.
 - [x] Indie App Catalog — App Store-URL ingevuld (18 juli 2026, https://indiecatalog.app/submit-app) en door Ed op "Submit for Verification" geklikt
 - [x] AMSER gemaild (info@aarad.org) — 18 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] RSNA gemaild (onlineeducation@rsna.org) — 19 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [x] ASRT gemaild (publications@asrt.org) — 20 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 
 ---
 
@@ -560,6 +561,16 @@ stond in de TapSmart-pitch. Geen aparte redactie/pers-ingang gevonden, alleen
 algemeen adres: **acvr@pamedsoc.org**.
 **Gemaild 19/20 juli 2026** via iCloud Mail, bevestigd in Verstuurd-map.
 
+## Nieuw gevonden — ASRT (American Society of Radiologic Technologists) ✅ gemaild (20 juli 2026)
+Grootste Amerikaanse beroepsvereniging van radiologisch laboranten/technologen
+(niet te verwarren met de artsen-organisaties hierboven) — precies de doelgroep
+die dagelijks DICOM-beelden maakt en bekijkt. Contactpagina gebruikt
+Cloudflare-emailbescherming; na decoderen bleken o.a. deze adressen te bestaan:
+publications@asrt.org, education@asrt.org, marketing@asrt.org, pr@asrt.org.
+Gemaild naar **publications@asrt.org** (meest relevant voor een vermelding in
+Scanner/Radiologic Technology of het ASRT Student Center), in dezelfde stijl als
+de andere Amerikaanse verenigingen.
+
 ### Overige gecheckt, niet gebruikt
 - **r/radiology** ⛔ regel 4 ("No advertising or sales") gecontroleerd via de
   community-regels-sidebar — expliciet verboden, overgeslagen.
@@ -638,4 +649,31 @@ github.com/EdCafferata/DICOM-player
 apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
 
 #buildinpublic #iOSDev
+```
+
+## Kant-en-klare tekst — ASRT (e-mail naar publications@asrt.org)
+
+**Onderwerp:** Free tool for radiologic technologists — Dicom Viewer, native iOS DICOM viewer
+
+```
+Hi ASRT team,
+
+I'm Ed Cafferata, founder of The IT Crowd. I built Dicom Viewer, a free native
+iOS app for viewing DICOM medical images (X-ray, CT, MRI, ultrasound) on
+iPhone and iPad — thought it might be worth mentioning to radiologic
+technologists and students through the ASRT Student Center or a publication
+such as Scanner or Radiologic Technology.
+
+It's privacy-first: everything runs on-device, no account, no cloud upload,
+no PACS connection. Features include a cine player for multi-frame studies,
+Window/Level presets (Abdomen, Lung, Bone, Brain), a series navigator and
+frame export — built for quick review on the go, not as a diagnostic
+replacement for a full workstation.
+
+App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Happy to answer any questions or provide more detail. Thanks for considering it!
+
+Best,
+Ed Cafferata — The IT Crowd
 ```

@@ -69,6 +69,15 @@ Geen aparte pers/nieuws-ingang gevonden, wel een algemeen bureau-adres:
 info@nvmbr.nl. Zelfde *helpende, niet-adverterende* toon als de NVvR-aanpak
 hierboven (golf 3). **Gemaild 19 juli 2026.**
 
+### Nieuwe vondst (20 juli 2026) — The Radiology Assistant ⚠️ geen geschikt contactkanaal
+Bekende Nederlandse/internationale radiologie-onderwijssite (radiologyassistant.nl,
+initiatief van radioloog Robin Smithuis), gericht op radiologie-assistenten en
+-residenten — inhoudelijk een goede match. Bij onderzoek (20 juli 2026) bleek het
+contactformulier (radiologyassistant.nl/contact-us) echter uitsluitend bedoeld voor
+AVG/privacyverzoeken (opties: "Request for information", "Request of my data",
+"Report data leak" e.d.) — geen categorie voor een algemene suggestie/pitch. Geen los
+e-mailadres gevonden. Niet gebruikt voor outreach; formulier is niet ingevuld/verzonden.
+
 ### Golf 6 — Patiëntkant ziekenhuizen (laagste prioriteit, geen directe outreach)
 Ziekenhuizen die van cd naar digitaal overstappen (Catharina Ziekenhuis, DC
 Klinieken, ViaSana) zijn geen outreach-doelwit, maar wel een goede hoek voor content
