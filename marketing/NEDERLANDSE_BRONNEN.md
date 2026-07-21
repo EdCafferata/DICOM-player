@@ -69,6 +69,13 @@ Geen aparte pers/nieuws-ingang gevonden, wel een algemeen bureau-adres:
 info@nvmbr.nl. Zelfde *helpende, niet-adverterende* toon als de NVvR-aanpak
 hierboven (golf 3). **Gemaild 19 juli 2026.**
 
+### Nieuwe vondst (21 juli 2026) — FMT Gezondheidszorg
+Nederlands vakblad voor de gezondheidszorgsector (facility management, techniek en
+ICT in de zorg) — kwam naar boven bij zoeken naar aanvullende Nederlandse
+zorg-ICT-nieuwssites. Redactiecontact: Wilma Schreiber (waarnemend hoofdredacteur),
+info@fmtgezondheidszorg.nl. Gemaild in dezelfde persbericht-stijl als Golf 2
+(Zorgvisie/Skipr/ICT&Health/MedNet/Medisch Contact).
+
 ### Nieuwe vondst (20 juli 2026) — The Radiology Assistant ⚠️ geen geschikt contactkanaal
 Bekende Nederlandse/internationale radiologie-onderwijssite (radiologyassistant.nl,
 initiatief van radioloog Robin Smithuis), gericht op radiologie-assistenten en
@@ -104,6 +111,7 @@ pas bij een concrete vraag, stuur geen koude mail naar ziekenhuizen.
 - [x] Nieuwe vondst — MedNet.nl gemaild (info@mednet.nl) — 16 juli 2026, persbericht-stijl (Golf 2-toon), verzonden via iCloud Mail, wacht op reactie
 - [x] Nieuwe vondst — Medisch Contact gemaild (nieuwsdienst@medischcontact.nl) — 18 juli 2026, persbericht-stijl (Golf 2-toon), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Nieuwe vondst — NVMBR gemaild (info@nvmbr.nl) — 19 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [x] Nieuwe vondst — FMT Gezondheidszorg gemaild (info@fmtgezondheidszorg.nl) — 21 juli 2026, persbericht-stijl (Golf 2-toon), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 
 ---
 
