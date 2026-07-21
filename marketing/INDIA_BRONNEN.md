@@ -184,6 +184,12 @@ Bengaluru, geen duidelijk promotiekanaal).
 
 ---
 
+### Nieuwe vondst (21 juli 2026) — Medical Dialogues
+Grote Indiase medische-journalistiek-nieuwssite (Minerva Medical Treatment Pvt
+Ltd, Delhi) gericht op zorgprofessionals en het publiek. Duidelijke gratis
+persbericht-ingang: info@medicaldialogues.in. Gemaild in de Engelstalige
+persbericht-stijl (zelfde toon als YourStory/MediaNama-tekst).
+
 ### Nieuwe vondst (20 juli 2026) — ISRT (Indian Society of Radiographers and Technologists)
 Beroepsvereniging van radiodiagnostisch laboranten/technologen in India (gevestigd
 in Thiruvananthapuram, Kerala) — de professionals die dagelijks DICOM-beelden maken
@@ -208,6 +214,7 @@ info@isrt.org.in. **Gemaild 20 juli 2026.**
 - [x] Nieuwe vondst — ISVIR (Indian Society for Vascular and Interventional Radiology) gemaild (info.isvir@gmail.com) — 19/20 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Nieuwe vondst — RadioGyan.com (Indiase radiologie-onderwijs-nieuwsbrief, 15.000+ abonnees, Dr. Amar Udare) gemaild (admin@radiogyan.com) — 19/20 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Nieuwe vondst — ISRT (Indian Society of Radiographers and Technologists) gemaild (info@isrt.org.in) — 20 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [x] Nieuwe vondst — Medical Dialogues gemaild (info@medicaldialogues.in) — 21 juli 2026, persbericht-stijl (Engelstalig), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Nieuwe vondst — The Better India (250M+ lezers/maand, "world's largest impact-driven positive stories platform") gemaild (editorial@thebetterindia.com) — 20 juli 2026, tekst door Claude klaargezet, screenshot (eigen app-screenshot van Ed, angiografie-beeld met WC/WW/frame-teller) toegevoegd en verzonden door Ed, bevestigd in Verstuurd-map met bijlage
 - [x] Onderzocht, niet gebruikt — Startup India Showcase (overheidsplatform) ⛔ alleen voor DPIIT-erkende Indiase bedrijven, The IT Crowd voldoet niet (zelfde blokkade als Inc42/Swadeshi Apps eerder)
 - [x] Onderzocht, niet gebruikt — IRIA state-chapters (Karnataka/Kerala/Maharashtra) alleen postadressen gevonden, geen e-mail; bovendien nog te vroeg om te escaleren zolang IRIA-hoofdkantoor (gemaild 13 juli) nog niet gereageerd heeft
