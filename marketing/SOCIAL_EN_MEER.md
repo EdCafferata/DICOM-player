@@ -262,6 +262,8 @@ sterke extra vondsten voor India specifiek dit uur.
 - [x] AMSER gemaild (info@aarad.org) — 18 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] RSNA gemaild (onlineeducation@rsna.org) — 19 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] ASRT gemaild (publications@asrt.org) — 20 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [x] APDR (Association of Program Directors in Radiology) gemaild (info@apdr.org) — 21 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [x] AIUM (American Institute of Ultrasound in Medicine) gemaild (aiumpartnerships@aium.org) — 21 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 
 ---
 
@@ -649,6 +651,76 @@ github.com/EdCafferata/DICOM-player
 apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
 
 #buildinpublic #iOSDev
+```
+
+## Nieuwe vondsten (21 juli 2026) — APDR en AIUM
+
+### Association of Program Directors in Radiology (APDR) ✅ gemaild
+Vakvereniging van radiologie-programmadirecteuren in de VS (aparte organisatie
+van AAR/AARAD, Warrenville IL) — bereikt via program directors direct de
+residents/fellows die ze opleiden. Contact-e-mail stond achter Cloudflare-
+emailbescherming op de contactpagina, gedecodeerd tot **info@apdr.org**.
+Gemaild in dezelfde stijl als ACR RFS/ARRS/ASNR/AAWR.
+
+### American Institute of Ultrasound in Medicine (AIUM) ✅ gemaild
+Grootste Amerikaanse vakvereniging voor ultrageluid in de geneeskunde — relevant
+omdat Dicom Viewer ook ultrasound-DICOM-bestanden opent (niet alleen röntgen/CT/
+MRI). Beste gevonden ingang: de Partnerships-afdeling, **aiumpartnerships@aium.org**
+(via aium.org/contact-us). Gemaild met een op ultrasound toegespitste versie van
+de standaardpitch.
+
+## Kant-en-klare tekst — APDR (e-mail naar info@apdr.org)
+
+**Onderwerp:** Free tool for radiology trainees — Dicom Viewer, native iOS DICOM viewer
+
+```
+Hi APDR team,
+
+I'm Ed Cafferata, founder of The IT Crowd. I built Dicom Viewer, a free native
+iOS app for viewing DICOM medical images (X-ray, CT, MRI, ultrasound) on
+iPhone and iPad — thought it might be worth mentioning to program directors,
+residents and fellows as a resource for trainees.
+
+It's privacy-first: everything runs on-device, no account, no cloud upload,
+no PACS connection. Features include a cine player for multi-frame studies,
+Window/Level presets (Abdomen, Lung, Bone, Brain), a series navigator and
+frame export — built for quick review on the go, not as a diagnostic
+replacement for a full workstation.
+
+App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Happy to answer any questions or provide more detail. Thanks for considering it!
+
+Best,
+Ed Cafferata — The IT Crowd
+```
+
+## Kant-en-klare tekst — AIUM (e-mail naar aiumpartnerships@aium.org)
+
+**Onderwerp:** Free tool for ultrasound trainees — Dicom Viewer, native iOS DICOM viewer
+
+```
+Hi AIUM team,
+
+I'm Ed Cafferata, founder of The IT Crowd. I built Dicom Viewer, a free
+native iOS app for viewing DICOM medical images — including ultrasound —
+directly on iPhone and iPad, no account, no cloud upload, no PACS connection
+required. Everything is processed on-device.
+
+I thought it might be a useful resource to share with your members, e.g.
+sonographers and trainees who want a quick, private way to review a study on
+the go. Features include a cine player for multi-frame studies, Window/Level
+presets, a series navigator and frame export.
+
+Not a paid promotion request — just thought it might be genuinely useful for
+the community AIUM represents.
+
+App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Happy to answer any questions. Thanks for considering it!
+
+Best,
+Ed Cafferata — The IT Crowd
 ```
 
 ## Kant-en-klare tekst — ASRT (e-mail naar publications@asrt.org)
