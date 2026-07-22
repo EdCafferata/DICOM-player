@@ -85,6 +85,14 @@ AVG/privacyverzoeken (opties: "Request for information", "Request of my data",
 "Report data leak" e.d.) — geen categorie voor een algemene suggestie/pitch. Geen los
 e-mailadres gevonden. Niet gebruikt voor outreach; formulier is niet ingevuld/verzonden.
 
+### Nieuwe vondst (22 juli 2026) — NVvR Sectie Juniorleden (AIOS radiologie)
+Aparte juniorafdeling van de NVvR voor AIOS radiologie (in opleiding), naast
+De Jonge Specialist. Los contact van het al gemailde algemene NVvR-adres
+(golf 3, 14 juli 2026) — direct de doelgroep die dagelijks met DICOM-beelden
+werkt en er onderwijscasuïstiek mee bekijkt. Contact: **juniornvvr@gmail.com**
+(gevonden via radiologen.nl/secties/sectie-juniorleden). Zelfde *helpende,
+niet-adverterende* toon als golf 3. **Gemaild 22 juli 2026.**
+
 ### Golf 6 — Patiëntkant ziekenhuizen (laagste prioriteit, geen directe outreach)
 Ziekenhuizen die van cd naar digitaal overstappen (Catharina Ziekenhuis, DC
 Klinieken, ViaSana) zijn geen outreach-doelwit, maar wel een goede hoek voor content
@@ -112,6 +120,7 @@ pas bij een concrete vraag, stuur geen koude mail naar ziekenhuizen.
 - [x] Nieuwe vondst — Medisch Contact gemaild (nieuwsdienst@medischcontact.nl) — 18 juli 2026, persbericht-stijl (Golf 2-toon), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Nieuwe vondst — NVMBR gemaild (info@nvmbr.nl) — 19 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Nieuwe vondst — FMT Gezondheidszorg gemaild (info@fmtgezondheidszorg.nl) — 21 juli 2026, persbericht-stijl (Golf 2-toon), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [x] Nieuwe vondst — NVvR Sectie Juniorleden gemaild (juniornvvr@gmail.com) — 22 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 
 ---
 
@@ -195,6 +204,32 @@ cloud-upload of PACS-koppeling. Alles blijft lokaal op het toestel.
 Geen advertentieverzoek, maar ik dacht dat dit voor jullie leden of via jullie
 kanalen interessant kan zijn, bijvoorbeeld als hulpmiddel wanneer patiënten hun
 eigen beelden willen bekijken of meenemen.
+
+App Store: https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527
+Meer info: https://cafferata.info
+
+Met vriendelijke groet,
+Ed Cafferata — The IT Crowd
+edcafferata@icloud.com
+```
+
+---
+
+## Kant-en-klare tekst — NVvR Sectie Juniorleden (e-mail naar juniornvvr@gmail.com)
+
+**Onderwerp:** Dicom Viewer — gratis iOS-app voor radiologiebeelden
+
+```
+Beste Sectie Juniorleden,
+
+Ik ben Ed Cafferata van The IT Crowd. Ik heb Dicom Viewer ontwikkeld, een
+gratis iOS-app waarmee patiënten en zorgprofessionals DICOM-beelden (röntgen,
+CT, MRI, echo) rechtstreeks op hun iPhone of iPad bekijken — zonder account,
+cloud-upload of PACS-koppeling. Alles blijft lokaal op het toestel.
+
+Geen advertentieverzoek, maar ik dacht dat dit voor AIOS radiologie
+interessant kan zijn, bijvoorbeeld als handig hulpmiddel om
+onderwijscasuïstiek of eigen beelden onderweg te bekijken.
 
 App Store: https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527
 Meer info: https://cafferata.info

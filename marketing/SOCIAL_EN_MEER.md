@@ -264,6 +264,7 @@ sterke extra vondsten voor India specifiek dit uur.
 - [x] ASRT gemaild (publications@asrt.org) — 20 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] APDR (Association of Program Directors in Radiology) gemaild (info@apdr.org) — 21 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] AIUM (American Institute of Ultrasound in Medicine) gemaild (aiumpartnerships@aium.org) — 21 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [x] MedImaging.net gemaild (edit@globetech.net) — 22 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 
 ---
 
@@ -669,6 +670,15 @@ MRI). Beste gevonden ingang: de Partnerships-afdeling, **aiumpartnerships@aium.o
 (via aium.org/contact-us). Gemaild met een op ultrasound toegespitste versie van
 de standaardpitch.
 
+## Nieuw gevonden (22 juli 2026) — MedImaging.net ✅ gemaild
+Wereldwijde dagelijkse radiologie-/medical-imaging-nieuwssite (onderdeel van
+Globetech Media), gevonden bij het zoeken naar aanvullende algemene
+(niet-regiospecifieke) radiologie-persplekken. Duidelijke gratis
+editorial-ingang voor persberichten: **edit@globetech.net** (apart van
+info@/subs@/ads@globetech.net voor resp. algemeen, abonnementen en
+advertenties — dus geen betaald kanaal nodig). Gemaild in dezelfde
+persbericht-stijl als Golf 2 (NEDERLANDSE_BRONNEN.md) / YourStory.
+
 ## Kant-en-klare tekst — APDR (e-mail naar info@apdr.org)
 
 **Onderwerp:** Free tool for radiology trainees — Dicom Viewer, native iOS DICOM viewer
@@ -748,4 +758,36 @@ Happy to answer any questions or provide more detail. Thanks for considering it!
 
 Best,
 Ed Cafferata — The IT Crowd
+```
+
+## Kant-en-klare tekst — MedImaging.net (e-mail naar edit@globetech.net)
+
+**Onderwerp:** New app: Dicom Viewer — privacy-first DICOM viewer for iPhone/iPad
+
+```
+Hi MedImaging.net team,
+
+I'm Ed Cafferata, founder of The IT Crowd. I'd like to share a company update
+that might fit your imaging IT coverage: Dicom Viewer, a free native iOS app
+for viewing DICOM medical images (X-ray, CT, MRI, ultrasound) directly on
+iPhone and iPad.
+
+The app is built privacy-first: everything is processed entirely on-device,
+with no account, no cloud upload and no PACS connection required. Features
+include a full-screen viewer with pinch-zoom, a cine player for multi-frame
+studies, Window/Level presets (abdomen, lung, bone, brain), an automatic
+series navigator and frame export to PNG/JPEG. The DICOM parser was written
+from scratch in Swift, with zero external dependencies, and the project is
+open source under GPL-3.0.
+
+Dicom Viewer is free to download, available worldwide.
+
+App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+More info: https://cafferata.info
+
+Happy to answer any questions or send screenshots.
+
+Best regards,
+Ed Cafferata — The IT Crowd
+edcafferata@icloud.com
 ```

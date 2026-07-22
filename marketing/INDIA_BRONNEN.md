@@ -197,6 +197,13 @@ en bekijken, zelfde doelgroep-logica als NVMBR in NEDERLANDSE_BRONNEN.md. Geen
 zelfpromotie- of AI-verbod gevonden bij onderzoek van de site. Contact:
 info@isrt.org.in. **Gemaild 20 juli 2026.**
 
+### Nieuwe vondst (22 juli 2026) — AMPI (Association of Medical Physicists of India)
+Beroepsvereniging van medisch fysici in India (~800 leden: fysici, radiotherapeuten,
+radiologen, engineers) — aanpalende doelgroep bij IRIA/ISRT: medisch fysici werken
+dagelijks met beeldvormingsdata en QA van imaging-apparatuur, dus generieke
+DICOM-viewing is relevant. Geen zelfpromotie- of AI-verbod gevonden. Contact:
+**secretary@ampi.org.in** (via ampi.org.in/contact-us). **Gemaild 22 juli 2026.**
+
 ## Checklist
 
 - [ ] 🏆 Apple Featuring Nomination voor India ingediend in App Store Connect (Ed zelf, buiten browserbereik)
@@ -215,6 +222,7 @@ info@isrt.org.in. **Gemaild 20 juli 2026.**
 - [x] Nieuwe vondst — RadioGyan.com (Indiase radiologie-onderwijs-nieuwsbrief, 15.000+ abonnees, Dr. Amar Udare) gemaild (admin@radiogyan.com) — 19/20 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Nieuwe vondst — ISRT (Indian Society of Radiographers and Technologists) gemaild (info@isrt.org.in) — 20 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Nieuwe vondst — Medical Dialogues gemaild (info@medicaldialogues.in) — 21 juli 2026, persbericht-stijl (Engelstalig), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [x] Nieuwe vondst — AMPI (Association of Medical Physicists of India) gemaild (secretary@ampi.org.in) — 22 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Nieuwe vondst — The Better India (250M+ lezers/maand, "world's largest impact-driven positive stories platform") gemaild (editorial@thebetterindia.com) — 20 juli 2026, tekst door Claude klaargezet, screenshot (eigen app-screenshot van Ed, angiografie-beeld met WC/WW/frame-teller) toegevoegd en verzonden door Ed, bevestigd in Verstuurd-map met bijlage
 - [x] Onderzocht, niet gebruikt — Startup India Showcase (overheidsplatform) ⛔ alleen voor DPIIT-erkende Indiase bedrijven, The IT Crowd voldoet niet (zelfde blokkade als Inc42/Swadeshi Apps eerder)
 - [x] Onderzocht, niet gebruikt — IRIA state-chapters (Karnataka/Kerala/Maharashtra) alleen postadressen gevonden, geen e-mail; bovendien nog te vroeg om te escaleren zolang IRIA-hoofdkantoor (gemaild 13 juli) nog niet gereageerd heeft
@@ -472,4 +480,32 @@ App Store: apps.apple.com/in/app/dicom-viewer-by-the-it-crowd/id1483496527
 
 Best regards,
 Ed Cafferata — The IT Crowd
+```
+
+## Kant-en-klare tekst — AMPI (e-mail naar secretary@ampi.org.in)
+
+**Onderwerp:** Dicom Viewer — free iOS app for viewing DICOM images
+
+```
+Dear AMPI team,
+
+I'm Ed Cafferata, an independent iOS developer. I built Dicom Viewer, a free
+native app that lets clinicians, physicists and patients view DICOM medical
+images (X-ray, CT, MRI, ultrasound) directly on iPhone or iPad — no account,
+no cloud upload, no PACS connection required. Everything is processed
+on-device.
+
+Given AMPI's work at the intersection of physics, imaging technology and
+medicine, I thought this might be a useful resource to share with your
+members, or as a tool for reviewing teaching cases and QA reference images
+on the go.
+
+Not a paid promotion request — just thought it might be genuinely useful for
+the community you represent.
+
+App Store: https://apps.apple.com/in/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Best regards,
+Ed Cafferata — The IT Crowd
+edcafferata@icloud.com
 ```
