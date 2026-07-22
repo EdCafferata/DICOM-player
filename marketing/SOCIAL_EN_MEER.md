@@ -245,7 +245,7 @@ sterke extra vondsten voor India specifiek dit uur.
 - [x] TikTok-account aangemaakt (22 juli 2026): @ed.cafferata (https://www.tiktok.com/@ed.cafferata) — zelfde naamgeving als Instagram (@ed_cafferata), gekozen na beschikbaarheidscheck (@ed_cafferata was op TikTok al bezet, @ed.cafferata niet)
 - [x] TikTok-profielfoto ingesteld (22 juli 2026): zelfde IT Crowd-logo als X/Instagram
 - [x] TikTok-bio ingesteld (22 juli 2026): "iOS dev · Built Dicom Viewer, a free privacy-first DICOM viewer 🫁"
-- [ ] TikTok eerste video — vereist een korte schermopname van de app (bv. scrollen door een cine-loop of een Window/Level-preset toepassen), die kan Claude niet zelf maken. Bijschrift-tekst staat al klaar (zie hieronder), Ed neemt de video zelf op
+- [x] TikTok eerste video live (22 juli 2026): geen zelfgemaakte schermopname nodig — Ed vond het bestaande Apple App Preview-bestand ("Dicom Viewer by The IT Crowd (Nieuwste iOS-versie).mp4", 12 sec, 1080×1920) in zijn Downloads-map en gebruikte dat. Geüpload via TikTok Studio, bijschrift + hashtags toegevoegd (zie hieronder). Zichtbaarheid stond na plaatsen automatisch op "Alleen ik" (standaard bij een nieuw account) — omgezet naar "Iedereen"
 - [x] TapSmart gemaild (tomjrolfe@intelligenti.com) — 14 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] r/IndieAppNews-post gepost — 14 juli 2026, live als u/kaffer1986 met flair "App Introduction": https://www.reddit.com/r/IndieAppNews/
 - [ ] Hacker News Show HN — pas doen nadat een account wat historie heeft, of geaccepteerd dat een auto-kill kan gebeuren
@@ -549,7 +549,7 @@ Link in bio 👆
 #dicom #radiology #medicalimaging #iosdev #indieapp #privacyfirst
 ```
 
-## Kant-en-klare tekst — TikTok eerste video (klaar, nog niet gepost — schermopname nodig)
+## Kant-en-klare tekst — TikTok eerste video (LIVE, 22 juli 2026)
 
 Aanbevolen shot: scrollen door een cine-loop of een Window/Level-preset
 toepassen — het "oddly satisfying"-effect dat medische scans "scrollen"
