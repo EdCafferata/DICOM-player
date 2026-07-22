@@ -268,6 +268,8 @@ sterke extra vondsten voor India specifiek dit uur.
 - [x] APDR (Association of Program Directors in Radiology) gemaild (info@apdr.org) — 21 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] AIUM (American Institute of Ultrasound in Medicine) gemaild (aiumpartnerships@aium.org) — 21 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] MedImaging.net gemaild (edit@globetech.net) — 22 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [x] ESR (European Society of Radiology) gemaild (communications@myesr.org) — 22 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [x] AuntMinnieEurope gemaild (philip.ward@scienceandmedicinegroup.com) — 22 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 
 ---
 
@@ -697,6 +699,25 @@ info@/subs@/ads@globetech.net voor resp. algemeen, abonnementen en
 advertenties — dus geen betaald kanaal nodig). Gemaild in dezelfde
 persbericht-stijl als Golf 2 (NEDERLANDSE_BRONNEN.md) / YourStory.
 
+## Nieuwe vondsten (22 juli 2026) — ESR en AuntMinnieEurope
+
+### ESR (European Society of Radiology) ✅ gemaild
+Grootste Europese radiologie-vakvereniging (gevestigd in Wenen, organiseert
+o.a. het jaarlijkse ECR-congres) — veel groter Europees bereik dan de
+Nederlandse NVvR alleen, en tot nu toe ontbrak er nog een pan-Europees
+kanaal in de checklists. Contact: **communications@myesr.org** (via
+myesr.org/contact — algemene contactroute, geen apart persadres gevonden op
+de contactpagina zelf, wel via aanvullende zoekopdracht gevonden). Gemaild
+in dezelfde stijl als ACR RFS/ARRS/ASNR.
+
+### AuntMinnieEurope ✅ gemaild
+Aparte Europese editie van AuntMinnie.com (VS-editie al gemaild op 19/20
+juli 2026), met een eigen hoofdredacteur: **Philip Ward**. E-mailadres
+(**philip.ward@scienceandmedicinegroup.com**, AuntMinnie's moederbedrijf)
+gevonden door de Cloudflare-e-mailbescherming op zijn contactpagina te
+decoderen — geen apart persbericht-adres nodig, rechtstreeks naar de
+hoofdredacteur. Gemaild in dezelfde stijl als de AuntMinnie.com-tekst.
+
 ## Kant-en-klare tekst — APDR (e-mail naar info@apdr.org)
 
 **Onderwerp:** Free tool for radiology trainees — Dicom Viewer, native iOS DICOM viewer
@@ -806,6 +827,62 @@ More info: https://cafferata.info
 Happy to answer any questions or send screenshots.
 
 Best regards,
+Ed Cafferata — The IT Crowd
+edcafferata@icloud.com
+```
+
+## Kant-en-klare tekst — ESR (e-mail naar communications@myesr.org)
+
+**Onderwerp:** Free tool for radiology trainees — Dicom Viewer, native iOS DICOM viewer
+
+```
+Hi ESR team,
+
+I'm Ed Cafferata, founder of The IT Crowd. I built Dicom Viewer, a free native
+iOS app for viewing DICOM medical images (X-ray, CT, MRI, ultrasound) on
+iPhone and iPad — thought it might be worth mentioning to trainees and members
+through your education channels or Trainees in Focus resources.
+
+It's privacy-first: everything runs on-device, no account, no cloud upload,
+no PACS connection. Features include a cine player for multi-frame studies,
+Window/Level presets (Abdomen, Lung, Bone, Brain), a series navigator and
+frame export — built for quick review on the go, not as a diagnostic
+replacement for a full workstation.
+
+App Store: https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Happy to answer any questions or provide more detail. Thanks for considering it!
+
+Best regards,
+Ed Cafferata — The IT Crowd
+edcafferata@icloud.com
+```
+
+## Kant-en-klare tekst — AuntMinnieEurope (e-mail naar philip.ward@scienceandmedicinegroup.com)
+
+**Onderwerp:** Story idea: Dicom Viewer — free privacy-first DICOM viewer for iPhone/iPad
+
+```
+Hi Philip,
+
+I'm Ed Cafferata, an independent iOS developer based in the Netherlands. I
+built Dicom Viewer, a free native app for viewing DICOM medical images
+(X-ray, CT, MRI, ultrasound) directly on iPhone and iPad — no account, no
+cloud upload, no PACS connection required. Everything is processed entirely
+on-device.
+
+It serves two audiences: patients who want to open scans from a hospital
+CD/USB, and clinicians, students and vets who get a cine player, Window/Level
+presets, an automatic series navigator and frame export. The DICOM parser is
+written from scratch in Swift with zero external dependencies, open source
+under GPL-3.0.
+
+Given AuntMinnieEurope's readership, I thought this might be a relevant story
+or worth a mention — happy to answer questions or send screenshots.
+
+App Store: https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Best,
 Ed Cafferata — The IT Crowd
 edcafferata@icloud.com
 ```
