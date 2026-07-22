@@ -242,7 +242,10 @@ sterke extra vondsten voor India specifiek dit uur.
 - [x] X eerste post live (19/20 juli 2026, tekst-only, zie hieronder). X toont bij nieuwe/inactieve accounts een "graduated access"-melding — beperkt bereik (niet in search/trends) totdat het account meer engagement toont. Als reactie een paar oude #FOAMrad-posts geliket voor wat engagement.
 - [x] X tweede post live (19/20 juli 2026, build-in-public/technische invalshoek — DICOM-parser from scratch, GitHub-link, #buildinpublic #iOSDev)
 - [x] Instagram-post live (20 juli 2026, ochtend) — door Ed zelf gepost nadat het uploaden van een afbeelding via de browserextensie de hele nacht geblokkeerd bleef. Bevestigd: exacte kant-en-klare tekst hieronder, beeld = DICOM-scan-screenshot, https://www.instagram.com/p/DbB7gk7iCG3/
-- [x] TikTok-account aangemaakt (22 juli 2026): @ed.cafferata (https://www.tiktok.com/@ed.cafferata) — zelfde naamgeving als Instagram (@ed_cafferata), gekozen na beschikbaarheidscheck (@ed_cafferata was op TikTok al bezet, @ed.cafferata niet). Nog leeg: geen bio, geen profielfoto, geen eerste post
+- [x] TikTok-account aangemaakt (22 juli 2026): @ed.cafferata (https://www.tiktok.com/@ed.cafferata) — zelfde naamgeving als Instagram (@ed_cafferata), gekozen na beschikbaarheidscheck (@ed_cafferata was op TikTok al bezet, @ed.cafferata niet)
+- [x] TikTok-profielfoto ingesteld (22 juli 2026): zelfde IT Crowd-logo als X/Instagram
+- [x] TikTok-bio ingesteld (22 juli 2026): "iOS dev · Built Dicom Viewer, a free privacy-first DICOM viewer 🫁"
+- [ ] TikTok eerste video — vereist een korte schermopname van de app (bv. scrollen door een cine-loop of een Window/Level-preset toepassen), die kan Claude niet zelf maken. Bijschrift-tekst staat al klaar (zie hieronder), Ed neemt de video zelf op
 - [x] TapSmart gemaild (tomjrolfe@intelligenti.com) — 14 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] r/IndieAppNews-post gepost — 14 juli 2026, live als u/kaffer1986 met flair "App Introduction": https://www.reddit.com/r/IndieAppNews/
 - [ ] Hacker News Show HN — pas doen nadat een account wat historie heeft, of geaccepteerd dat een auto-kill kan gebeuren
@@ -542,6 +545,21 @@ Most people get handed a CD or USB after a scan — and then can't actually open
 I built Dicom Viewer: a free iOS app that opens DICOM medical images (X-ray, CT, MRI, ultrasound) straight on your iPhone or iPad. No account, no cloud upload — everything stays on your device.
 
 Link in bio 👆
+
+#dicom #radiology #medicalimaging #iosdev #indieapp #privacyfirst
+```
+
+## Kant-en-klare tekst — TikTok eerste video (klaar, nog niet gepost — schermopname nodig)
+
+Aanbevolen shot: scrollen door een cine-loop of een Window/Level-preset
+toepassen — het "oddly satisfying"-effect dat medische scans "scrollen"
+oplevert, toont meteen de functionaliteit zonder woorden (zie sectie TikTok
+hierboven).
+
+```
+Most people get handed a CD or USB after a scan — and then can't actually open it.
+
+I built Dicom Viewer: a free iOS app that opens DICOM medical images (X-ray, CT, MRI, ultrasound) straight on your iPhone or iPad. No account, no cloud — everything stays on-device.
 
 #dicom #radiology #medicalimaging #iosdev #indieapp #privacyfirst
 ```
