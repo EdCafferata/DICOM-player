@@ -52,6 +52,7 @@ Alles staat op GitHub zodat je het kunt oppakken wanneer het uitkomt.
 | [INDIA_BRONNEN.md](INDIA_BRONNEN.md) | Indiase bronnen (IRIA, YourStory, developersIndia, patiëntforums) in gedoseerde golven + kant-en-klare teksten |
 | [SOCIAL_EN_MEER.md](SOCIAL_EN_MEER.md) | X/Instagram/TikTok-strategie + extra VS-kanalen (TapSmart, r/IndieAppNews, Hacker News) |
 | [FACEBOOK.md](FACEBOOK.md) | Facebook-pagina's en -groepen (professionals, patiënten, dierenartsen) + kant-en-klare teksten |
+| [PATIENTEN_VS.md](PATIENTEN_VS.md) | VS-patiëntenorganisaties hart- en vaatziekten (Mended Hearts, WomenHeart, CardioSmart, Vascular Cures) + kant-en-klare teksten |
 | [STORE_BESCHRIJVING.md](../AppStore/STORE_BESCHRIJVING.md) | NL+EN store-teksten (issue #8) |
 
 ## De kern in 5 punten
