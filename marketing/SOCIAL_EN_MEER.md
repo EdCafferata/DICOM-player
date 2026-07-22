@@ -242,7 +242,7 @@ sterke extra vondsten voor India specifiek dit uur.
 - [x] X eerste post live (19/20 juli 2026, tekst-only, zie hieronder). X toont bij nieuwe/inactieve accounts een "graduated access"-melding — beperkt bereik (niet in search/trends) totdat het account meer engagement toont. Als reactie een paar oude #FOAMrad-posts geliket voor wat engagement.
 - [x] X tweede post live (19/20 juli 2026, build-in-public/technische invalshoek — DICOM-parser from scratch, GitHub-link, #buildinpublic #iOSDev)
 - [x] Instagram-post live (20 juli 2026, ochtend) — door Ed zelf gepost nadat het uploaden van een afbeelding via de browserextensie de hele nacht geblokkeerd bleef. Bevestigd: exacte kant-en-klare tekst hieronder, beeld = DICOM-scan-screenshot, https://www.instagram.com/p/DbB7gk7iCG3/
-- [ ] Ed maakt eventueel een TikTok-account aan (lagere prioriteit, onzeker rendement)
+- [x] TikTok-account aangemaakt (22 juli 2026): @ed.cafferata (https://www.tiktok.com/@ed.cafferata) — zelfde naamgeving als Instagram (@ed_cafferata), gekozen na beschikbaarheidscheck (@ed_cafferata was op TikTok al bezet, @ed.cafferata niet). Nog leeg: geen bio, geen profielfoto, geen eerste post
 - [x] TapSmart gemaild (tomjrolfe@intelligenti.com) — 14 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] r/IndieAppNews-post gepost — 14 juli 2026, live als u/kaffer1986 met flair "App Introduction": https://www.reddit.com/r/IndieAppNews/
 - [ ] Hacker News Show HN — pas doen nadat een account wat historie heeft, of geaccepteerd dat een auto-kill kan gebeuren
