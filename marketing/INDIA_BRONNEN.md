@@ -204,6 +204,15 @@ dagelijks met beeldvormingsdata en QA van imaging-apparatuur, dus generieke
 DICOM-viewing is relevant. Geen zelfpromotie- of AI-verbod gevonden. Contact:
 **secretary@ampi.org.in** (via ampi.org.in/contact-us). **Gemaild 22 juli 2026.**
 
+### Nieuwe vondst (23 juli 2026) — IRIA-nieuwsbrief (apart van het al gemailde hoofdadres)
+Los van het algemene IRIA-hoofdkantooradres (iria37@gmail.com, golf 1, 13 juli
+2026, nog geen reactie), bleek er een apart, specifiek nieuwsbrief-inzendadres
+te bestaan: **irianewsletter@gmail.com** (voor aankondigingen, verslagen en
+foto's voor de IRIA Insights-nieuwsbrief). Andere ingang dan de golf 1-mail,
+dus een legitieme aanvullende poging in plaats van een dubbele. Tekst hieronder
+is voorbereid maar **nog niet verzonden** — zie notitie onderaan de checklist
+over een mailclient-storing deze sessie.
+
 ## Checklist
 
 - [ ] 🏆 Apple Featuring Nomination voor India ingediend in App Store Connect (Ed zelf, buiten browserbereik)
@@ -226,6 +235,7 @@ DICOM-viewing is relevant. Geen zelfpromotie- of AI-verbod gevonden. Contact:
 - [x] Nieuwe vondst — The Better India (250M+ lezers/maand, "world's largest impact-driven positive stories platform") gemaild (editorial@thebetterindia.com) — 20 juli 2026, tekst door Claude klaargezet, screenshot (eigen app-screenshot van Ed, angiografie-beeld met WC/WW/frame-teller) toegevoegd en verzonden door Ed, bevestigd in Verstuurd-map met bijlage
 - [x] Onderzocht, niet gebruikt — Startup India Showcase (overheidsplatform) ⛔ alleen voor DPIIT-erkende Indiase bedrijven, The IT Crowd voldoet niet (zelfde blokkade als Inc42/Swadeshi Apps eerder)
 - [x] Onderzocht, niet gebruikt — IRIA state-chapters (Karnataka/Kerala/Maharashtra) alleen postadressen gevonden, geen e-mail; bovendien nog te vroeg om te escaleren zolang IRIA-hoofdkantoor (gemaild 13 juli) nog niet gereageerd heeft
+- [ ] Nieuwe vondst — IRIA-nieuwsbrief (irianewsletter@gmail.com) — 23 juli 2026 tekst voorbereid, **nog niet verzonden**: tijdens deze sessie raakte iCloud Mail's webinterface in een onduidelijke staat (Verstuurd-map en Concepten toonden plotseling 0 berichten na het versturen van de NVRO-mail, zie NEDERLANDSE_BRONNEN.md) — uit voorzorg geen verdere mails verstuurd deze run. Tekst staat klaar hieronder, kan een volgende sessie of Ed alsnog versturen zodra bevestigd is dat de mailbox weer normaal werkt.
 
 ---
 
@@ -248,6 +258,36 @@ for patients who want to view scans they've been given on a CD or USB drive.
 
 Not a paid promotion request — just thought it might be a genuinely useful
 tool for the community you represent.
+
+App Store: https://apps.apple.com/in/app/dicom-viewer-by-the-it-crowd/id1483496527
+More info: https://cafferata.info
+
+Best regards,
+Ed Cafferata — The IT Crowd
+edcafferata@icloud.com
+```
+
+---
+
+## Kant-en-klare tekst — IRIA-nieuwsbrief (e-mail naar irianewsletter@gmail.com, voorbereid, nog niet verzonden)
+
+**Onderwerp:** Suggestion for the IRIA newsletter — free iOS DICOM viewer
+
+```
+Hi IRIA Newsletter team,
+
+I'm Ed Cafferata, an independent iOS developer (previously reached out to
+iria37@gmail.com). I built Dicom Viewer, a free native iOS app that lets
+patients and clinicians view DICOM medical images (X-ray, CT, MRI,
+ultrasound) directly on iPhone or iPad — no account, no cloud upload, no
+PACS connection required. Everything is processed on-device.
+
+I thought it might be a useful resource to mention in the newsletter for
+members and residents, e.g. as a way to quickly review teaching cases or a
+patient's own scans on the go.
+
+Not a paid promotion request — just thought it might be genuinely useful for
+the community IRIA represents.
 
 App Store: https://apps.apple.com/in/app/dicom-viewer-by-the-it-crowd/id1483496527
 More info: https://cafferata.info

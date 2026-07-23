@@ -270,6 +270,7 @@ sterke extra vondsten voor India specifiek dit uur.
 - [x] MedImaging.net gemaild (edit@globetech.net) — 22 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] ESR (European Society of Radiology) gemaild (communications@myesr.org) — 22 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] AuntMinnieEurope gemaild (philip.ward@scienceandmedicinegroup.com) — 22 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [ ] AAPM (newsletter@aapm.org) — 23 juli 2026 tekst voorbereid, **nog niet verzonden**: tijdens deze sessie raakte iCloud Mail's webinterface in een onduidelijke staat na het versturen van de NVRO-mail (Verstuurd-map en Concepten toonden plotseling 0 berichten, ook na page-reload) — uit voorzorg geen verdere mails verstuurd deze run. Tekst staat klaar hieronder.
 
 ---
 
@@ -718,6 +719,14 @@ gevonden door de Cloudflare-e-mailbescherming op zijn contactpagina te
 decoderen — geen apart persbericht-adres nodig, rechtstreeks naar de
 hoofdredacteur. Gemaild in dezelfde stijl als de AuntMinnie.com-tekst.
 
+## Nieuw gevonden (23 juli 2026) — AAPM (American Association of Physicists in Medicine)
+Vakvereniging van medisch fysici in de VS — aanpalende doelgroep bij ACR/ARRS/
+ASNR/AIUM: medisch fysici werken dagelijks met beeldvormingsdata en QA van
+imaging-apparatuur. Newsletter Editor accepteert expliciet ook inzendingen van
+niet-leden ("reviewed on a case-by-case basis"). Contact:
+**newsletter@aapm.org**. Tekst voorbereid, **nog niet verzonden** — zie notitie
+bij de checklist over een mailclient-storing tijdens deze sessie.
+
 ## Kant-en-klare tekst — APDR (e-mail naar info@apdr.org)
 
 **Onderwerp:** Free tool for radiology trainees — Dicom Viewer, native iOS DICOM viewer
@@ -881,6 +890,35 @@ Given AuntMinnieEurope's readership, I thought this might be a relevant story
 or worth a mention — happy to answer questions or send screenshots.
 
 App Store: https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Best,
+Ed Cafferata — The IT Crowd
+edcafferata@icloud.com
+```
+
+## Kant-en-klare tekst — AAPM (e-mail naar newsletter@aapm.org, voorbereid, nog niet verzonden)
+
+**Onderwerp:** Free tool for medical physics community — Dicom Viewer, native iOS DICOM viewer
+
+```
+Hi AAPM Newsletter team,
+
+I'm Ed Cafferata, founder of The IT Crowd. I built Dicom Viewer, a free
+native iOS app for viewing DICOM medical images (X-ray, CT, MRI, ultrasound)
+directly on iPhone and iPad — no account, no cloud upload, no PACS connection
+required. Everything is processed on-device.
+
+Given AAPM's work at the intersection of physics, imaging technology and
+medicine, I thought this might be a useful resource to share with your
+members, or as a tool for reviewing QA reference images or teaching cases on
+the go.
+
+Not a paid promotion request — just thought it might be genuinely useful for
+the community AAPM represents.
+
+App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Happy to answer any questions. Thanks for considering it!
 
 Best,
 Ed Cafferata — The IT Crowd
