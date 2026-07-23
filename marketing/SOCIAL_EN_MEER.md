@@ -270,7 +270,7 @@ sterke extra vondsten voor India specifiek dit uur.
 - [x] MedImaging.net gemaild (edit@globetech.net) — 22 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] ESR (European Society of Radiology) gemaild (communications@myesr.org) — 22 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] AuntMinnieEurope gemaild (philip.ward@scienceandmedicinegroup.com) — 22 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
-- [ ] AAPM (newsletter@aapm.org) — 23 juli 2026 tekst voorbereid, **nog niet verzonden**: tijdens deze sessie raakte iCloud Mail's webinterface in een onduidelijke staat na het versturen van de NVRO-mail (Verstuurd-map en Concepten toonden plotseling 0 berichten, ook na page-reload) — uit voorzorg geen verdere mails verstuurd deze run. Tekst staat klaar hieronder.
+- [x] AAPM gemaild (newsletter@aapm.org) — 23 juli 2026, verzonden via iCloud Mail (na akkoord van Ed — de eerdere "lege Verstuurd-map" bleek geen storing maar Eds eigen opschoon-workflow naar de Coding-map, zie geheugen `feedback_mail_coding_folder`), wacht op reactie
 
 ---
 
@@ -724,8 +724,7 @@ Vakvereniging van medisch fysici in de VS — aanpalende doelgroep bij ACR/ARRS/
 ASNR/AIUM: medisch fysici werken dagelijks met beeldvormingsdata en QA van
 imaging-apparatuur. Newsletter Editor accepteert expliciet ook inzendingen van
 niet-leden ("reviewed on a case-by-case basis"). Contact:
-**newsletter@aapm.org**. Tekst voorbereid, **nog niet verzonden** — zie notitie
-bij de checklist over een mailclient-storing tijdens deze sessie.
+**newsletter@aapm.org**. **Gemaild 23 juli 2026** via iCloud Mail.
 
 ## Kant-en-klare tekst — APDR (e-mail naar info@apdr.org)
 
@@ -896,7 +895,7 @@ Ed Cafferata — The IT Crowd
 edcafferata@icloud.com
 ```
 
-## Kant-en-klare tekst — AAPM (e-mail naar newsletter@aapm.org, voorbereid, nog niet verzonden)
+## Kant-en-klare tekst — AAPM (e-mail naar newsletter@aapm.org, gemaild 23 juli 2026)
 
 **Onderwerp:** Free tool for medical physics community — Dicom Viewer, native iOS DICOM viewer
 
