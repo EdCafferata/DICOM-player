@@ -271,6 +271,7 @@ sterke extra vondsten voor India specifiek dit uur.
 - [x] ESR (European Society of Radiology) gemaild (communications@myesr.org) — 22 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] AuntMinnieEurope gemaild (philip.ward@scienceandmedicinegroup.com) — 22 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] AAPM gemaild (newsletter@aapm.org) — 23 juli 2026, verzonden via iCloud Mail (na akkoord van Ed — de eerdere "lege Verstuurd-map" bleek geen storing maar Eds eigen opschoon-workflow naar de Coding-map, zie geheugen `feedback_mail_coding_folder`), wacht op reactie
+- [x] Indie Dev Monday gemaild (lookatme@indiedevmonday.com) — 24 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 
 ---
 
@@ -719,6 +720,15 @@ gevonden door de Cloudflare-e-mailbescherming op zijn contactpagina te
 decoderen — geen apart persbericht-adres nodig, rechtstreeks naar de
 hoofdredacteur. Gemaild in dezelfde stijl als de AuntMinnie.com-tekst.
 
+## Nieuw gevonden (24 juli 2026) — Indie Dev Monday
+Wekelijkse Engelstalige newsletter die indie-devs en hun apps uitlicht ("bite
+sized newsletter spotlighting indie devs"). Gecheckt (24 juli 2026): geen
+formulier, gewoon een e-mail naar **lookatme@indiedevmonday.com** met app-naam,
+one-liner, wat nieuw is, App Store/TestFlight-link en dev-naam/social links —
+"no forms, no accounts", gratis, de maker leest alles zelf persoonlijk.
+Expliciet bedoeld als zelfpromotie-kanaal (de pagina heet letterlijk "Look At
+Me"), dus geen twijfel over de regels. **Gemaild 24 juli 2026.**
+
 ## Nieuw gevonden (23 juli 2026) — AAPM (American Association of Physicists in Medicine)
 Vakvereniging van medisch fysici in de VS — aanpalende doelgroep bij ACR/ARRS/
 ASNR/AIUM: medisch fysici werken dagelijks met beeldvormingsdata en QA van
@@ -922,4 +932,35 @@ Happy to answer any questions. Thanks for considering it!
 Best,
 Ed Cafferata — The IT Crowd
 edcafferata@icloud.com
+```
+
+## Kant-en-klare tekst — Indie Dev Monday (e-mail naar lookatme@indiedevmonday.com, gemaild 24 juli 2026)
+
+**Onderwerp:** App update — Dicom Viewer, free privacy-first DICOM viewer for iPhone/iPad
+
+```
+Hi,
+
+App name: Dicom Viewer
+One-sentence description: A free native iOS app (SwiftUI) that lets patients
+and clinicians view DICOM medical images (X-ray, CT, MRI, ultrasound)
+directly on iPhone/iPad — privacy-first, everything on-device, no account,
+no cloud upload, no PACS connection.
+
+What's new: I wrote the DICOM parser myself from scratch in Swift, zero
+external dependencies. Current version (2.1) adds a cine player for
+multi-frame studies, Window/Level presets, an automatic series navigator and
+frame export.
+
+App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+Website: https://cafferata.info
+GitHub (open source, GPL-3.0): https://github.com/EdCafferata/DICOM-player
+
+Developer: Ed Cafferata (The IT Crowd)
+Twitter/X: @EdCafferata
+
+Happy to send screenshots or answer anything about building it. Thanks for reading!
+
+Best,
+Ed
 ```

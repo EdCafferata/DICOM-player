@@ -100,6 +100,22 @@ generieke DICOM-viewing is relevant voor deze beroepsgroep. Geen zelfpromotie- o
 AI-verbod gevonden. Contact: **secretariaat@nvro.nl** (via nvro.nl/vereniging/contact).
 **Gemaild 23 juli 2026.**
 
+### Nieuwe vondst (24 juli 2026) — iCulture
+Grootste Applesite van de Benelux, met een expliciete "app- of gametip"-ingang
+in het contactformulier (redactie@iculture.nl) — een directe consumenten-
+tech-invalshoek naast de zorg-ICT-kanalen hierboven, en een goede match omdat
+Dicom Viewer nu eenmaal een iOS/iPadOS-app is. Geen kosten of zelfpromotie-
+verbod gevonden. **Gemaild 24 juli 2026.**
+
+### Nieuwe vondst (24 juli 2026) — Emerce (redactie, niet de betaalde Wire)
+Groot Nederlands zakelijk tech-/digital-platform met een aparte "Emerce
+Health"-rubriek. Emerce heeft ook een "Wire"-persberichtenservice
+(wire-bericht-aanmelden), maar die vraagt overdracht van publicatierechten en
+het kostenmodel was niet duidelijk gratis — daarom bewust niet gebruikt.
+In plaats daarvan rechtstreeks naar de reguliere redactie gemaild
+(redactie@emerce.nl), zelfde aanpak als bij MedNet/Medisch Contact hierboven.
+**Gemaild 24 juli 2026.**
+
 ### Golf 6 — Patiëntkant ziekenhuizen (laagste prioriteit, geen directe outreach)
 Ziekenhuizen die van cd naar digitaal overstappen (Catharina Ziekenhuis, DC
 Klinieken, ViaSana) zijn geen outreach-doelwit, maar wel een goede hoek voor content
@@ -129,6 +145,8 @@ pas bij een concrete vraag, stuur geen koude mail naar ziekenhuizen.
 - [x] Nieuwe vondst — FMT Gezondheidszorg gemaild (info@fmtgezondheidszorg.nl) — 21 juli 2026, persbericht-stijl (Golf 2-toon), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Nieuwe vondst — NVvR Sectie Juniorleden gemaild (juniornvvr@gmail.com) — 22 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Nieuwe vondst — NVRO gemaild (secretariaat@nvro.nl) — 23 juli 2026, verzonden via iCloud Mail (bevestigd door verzendknop + "undo send"-melding op het moment zelf). **Let op:** kort na verzenden bleek de Verstuurd-map in deze browsersessie leeg te zijn getoond (0 berichten, ook na volledige page-reload) — leek een client-side sync-glitch in iCloud Mail's webapp, geen bericht teruggevonden in Prullenmand. De mail zelf is wel degelijk verzonden (verzendactie voltooid vóór het folder-probleem optrad); Ed raadt aan dit zelf even te controleren in Mail.app of bij een volgende login.
+- [x] Nieuwe vondst — iCulture gemaild (redactie@iculture.nl) — 24 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [x] Nieuwe vondst — Emerce gemaild (redactie@emerce.nl) — 24 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 
 ---
 
@@ -430,4 +448,59 @@ Meer info: https://cafferata.info
 Met vriendelijke groet,
 Ed Cafferata — The IT Crowd
 edcafferata@icloud.com
+```
+
+---
+
+## Kant-en-klare tekst — iCulture (e-mail naar redactie@iculture.nl, gemaild 24 juli 2026)
+
+**Onderwerp:** App-tip: Dicom Viewer — privacy-first DICOM-viewer voor iPhone/iPad
+
+```
+Hallo,
+
+Ik wil graag Dicom Viewer onder de aandacht brengen: een native iOS-app
+(iPhone/iPad) waarmee patiënten en zorgprofessionals DICOM-medische beelden
+(röntgen, CT, MRI, echo) rechtstreeks op hun toestel bekijken.
+
+Bewust privacy-by-design: alles wordt lokaal verwerkt, geen account, geen
+cloud-upload, geen PACS-koppeling nodig. Functies: volledig-scherm viewer met
+pinch-zoom, cine-speler voor multi-frame-onderzoeken, Window/Level-presets
+(buik, long, bot, hersenen), automatische serie-navigator en frame-export naar
+PNG/JPEG. De DICOM-parser is vanaf nul zelf geschreven in Swift, zonder
+externe dependencies, en het project is open source (GPL-3.0).
+
+App Store: https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527
+Site: https://cafferata.info
+
+Ik deel 'm graag als app-tip. Laat het weten als er nog iets nodig is,
+bijvoorbeeld screenshots.
+
+Met vriendelijke groet,
+Ed Cafferata — The IT Crowd
+edcafferata@icloud.com
+```
+
+---
+
+## Kant-en-klare tekst — Emerce (e-mail naar redactie@emerce.nl, gemaild 24 juli 2026)
+
+**Onderwerp:** Nieuwe app: Dicom Viewer — privacy-first DICOM-viewer voor iPhone/iPad
+
+```
+The IT Crowd heeft Dicom Viewer uitgebracht, een native iOS-app waarmee
+patiënten en zorgprofessionals DICOM-medische beelden (röntgen, CT, MRI, echo)
+rechtstreeks op hun iPhone of iPad bekijken — zonder iets te uploaden naar een
+cloud-dienst of PACS-systeem.
+
+Belangrijkste functies: volledig-scherm viewer met pinch-zoom, cine-speler voor
+multi-frame-onderzoeken, Window/Level-presets (buik, long, bot, hersenen), een
+automatische serie-navigator en frame-export naar PNG/JPEG. Alles draait
+on-device, dus geen account en geen internetverbinding nodig na installatie.
+
+Dicom Viewer is gratis te downloaden, met een optionele fooienpot. Beschikbaar
+wereldwijd in het Engels en Nederlands.
+
+App Store: https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527
+Contact: edcafferata@icloud.com
 ```

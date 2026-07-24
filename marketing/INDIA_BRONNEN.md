@@ -107,6 +107,10 @@ voor Dicom Viewer.
   Wel een naam: Shahid Akhter is redacteur bij ETHealthworld, maar zonder
   geverifieerd e-mailadres is een gok te riskant (bounce-risico zoals eerder
   bij MediaNama). Nog steeds "on hold" tot een echt adres gevonden is.
+  **Update 24 juli 2026:** opnieuw gezocht — WebFetch van de contactpagina
+  (health.economictimes.indiatimes.com/contact-us) faalde net als eerder
+  (site blijft ontoegankelijk voor geautomatiseerde toegang). Geen nieuw
+  e-mailadres gevonden. Blijft "on hold".
 
 ### Golf 3b — MediaNama ⚠️ gepubliceerd adres blijkt niet actief
 Bekroonde publicatie over techbeleid in India (privacy, data, digitale
