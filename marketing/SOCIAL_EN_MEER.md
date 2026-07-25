@@ -272,7 +272,7 @@ sterke extra vondsten voor India specifiek dit uur.
 - [x] AuntMinnieEurope gemaild (philip.ward@scienceandmedicinegroup.com) — 22 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] AAPM gemaild (newsletter@aapm.org) — 23 juli 2026, verzonden via iCloud Mail (na akkoord van Ed — de eerdere "lege Verstuurd-map" bleek geen storing maar Eds eigen opschoon-workflow naar de Coding-map, zie geheugen `feedback_mail_coding_folder`), wacht op reactie
 - [x] Indie Dev Monday gemaild (lookatme@indiedevmonday.com) — 24 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
-- [ ] Nieuwe vondst — Society of Breast Imaging (info@sbi-online.org) — 25 juli 2026, tekst klaargezet, voorbereid, wacht op verzending door Ed (iCloud Mail niet ingelogd deze run)
+- [x] Nieuwe vondst — Society of Breast Imaging gemaild (info@sbi-online.org) — 25 juli 2026, verzonden via iCloud Mail, wacht op reactie
 
 ---
 
@@ -735,9 +735,8 @@ Amerikaanse vakvereniging voor borstbeeldvorming (mammografie/echo/MRI van de
 borst) — zelfde profiel als eerder gemailde verenigingen (AAWR/AOCR/ASER):
 een aanpalende radiologie-subspecialisme-doelgroep die nog niet eerder apart
 benaderd was. Contact: **info@sbi-online.org** (algemeen ledencontact, site
-sbi-online.org). Geen zelfpromotie- of AI-verbod gevonden. Tekst klaargezet in
-dezelfde stijl als AAWR/AOCR/ASER, **nog niet verzonden** — iCloud Mail was
-deze sessie niet ingelogd in de browser.
+sbi-online.org). Geen zelfpromotie- of AI-verbod gevonden. Tekst in
+dezelfde stijl als AAWR/AOCR/ASER. **Gemaild 25 juli 2026.**
 
 ## Nieuw gevonden (23 juli 2026) — AAPM (American Association of Physicists in Medicine)
 Vakvereniging van medisch fysici in de VS — aanpalende doelgroep bij ACR/ARRS/
@@ -975,7 +974,7 @@ Best,
 Ed
 ```
 
-## Kant-en-klare tekst — Society of Breast Imaging (e-mail naar info@sbi-online.org, klaargezet 25 juli 2026)
+## Kant-en-klare tekst — Society of Breast Imaging (e-mail naar info@sbi-online.org, gemaild 25 juli 2026)
 
 **Onderwerp:** Free tool for breast imaging trainees — Dicom Viewer, native iOS DICOM viewer
 

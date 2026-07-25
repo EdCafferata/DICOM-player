@@ -123,8 +123,7 @@ zorg-ICT-outlets. Behandelt ook ziekenhuis-IT-nieuws (bijv. eerder over de
 MijnZuyderland-app). Duidelijke gratis "tip de redactie"-ingang:
 **redactie@dutchitchannel.nl** (alternatief: w.kepinski@dutchitchannel.nl,
 hoofdredacteur Witold Kepinski). Geen kosten of zelfpromotie-verbod gevonden.
-Tekst klaargezet in persbericht-stijl (Golf 2-toon), **nog niet verzonden** —
-iCloud Mail was deze sessie niet ingelogd in de browser.
+Tekst in persbericht-stijl (Golf 2-toon). **Gemaild 25 juli 2026.**
 
 ### Golf 6 — Patiëntkant ziekenhuizen (laagste prioriteit, geen directe outreach)
 Ziekenhuizen die van cd naar digitaal overstappen (Catharina Ziekenhuis, DC
@@ -157,7 +156,7 @@ pas bij een concrete vraag, stuur geen koude mail naar ziekenhuizen.
 - [x] Nieuwe vondst — NVRO gemaild (secretariaat@nvro.nl) — 23 juli 2026, verzonden via iCloud Mail (bevestigd door verzendknop + "undo send"-melding op het moment zelf). **Let op:** kort na verzenden bleek de Verstuurd-map in deze browsersessie leeg te zijn getoond (0 berichten, ook na volledige page-reload) — leek een client-side sync-glitch in iCloud Mail's webapp, geen bericht teruggevonden in Prullenmand. De mail zelf is wel degelijk verzonden (verzendactie voltooid vóór het folder-probleem optrad); Ed raadt aan dit zelf even te controleren in Mail.app of bij een volgende login.
 - [x] Nieuwe vondst — iCulture gemaild (redactie@iculture.nl) — 24 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Nieuwe vondst — Emerce gemaild (redactie@emerce.nl) — 24 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
-- [ ] Nieuwe vondst — Dutch IT Channel (redactie@dutchitchannel.nl) — 25 juli 2026, tekst klaargezet, voorbereid, wacht op verzending door Ed (iCloud Mail niet ingelogd deze run)
+- [x] Nieuwe vondst — Dutch IT Channel gemaild (redactie@dutchitchannel.nl) — 25 juli 2026, verzonden via iCloud Mail, wacht op reactie
 
 ---
 
@@ -518,7 +517,7 @@ Contact: edcafferata@icloud.com
 
 ---
 
-## Kant-en-klare tekst — Dutch IT Channel (e-mail naar redactie@dutchitchannel.nl, klaargezet 25 juli 2026)
+## Kant-en-klare tekst — Dutch IT Channel (e-mail naar redactie@dutchitchannel.nl, gemaild 25 juli 2026)
 
 **Onderwerp:** Nieuwe app: Dicom Viewer — privacy-first DICOM-viewer voor iPhone/iPad
 
