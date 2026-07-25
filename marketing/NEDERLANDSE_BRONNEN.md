@@ -116,6 +116,16 @@ In plaats daarvan rechtstreeks naar de reguliere redactie gemaild
 (redactie@emerce.nl), zelfde aanpak als bij MedNet/Medisch Contact hierboven.
 **Gemaild 24 juli 2026.**
 
+### Nieuwe vondst (25 juli 2026) — Dutch IT Channel
+Nederlands zakelijk IT-nieuwsplatform (B2B, gericht op IT-kanaal/resellers/
+system-integrators), kwam naar boven bij zoeken naar aanvullende Nederlandse
+zorg-ICT-outlets. Behandelt ook ziekenhuis-IT-nieuws (bijv. eerder over de
+MijnZuyderland-app). Duidelijke gratis "tip de redactie"-ingang:
+**redactie@dutchitchannel.nl** (alternatief: w.kepinski@dutchitchannel.nl,
+hoofdredacteur Witold Kepinski). Geen kosten of zelfpromotie-verbod gevonden.
+Tekst klaargezet in persbericht-stijl (Golf 2-toon), **nog niet verzonden** —
+iCloud Mail was deze sessie niet ingelogd in de browser.
+
 ### Golf 6 — Patiëntkant ziekenhuizen (laagste prioriteit, geen directe outreach)
 Ziekenhuizen die van cd naar digitaal overstappen (Catharina Ziekenhuis, DC
 Klinieken, ViaSana) zijn geen outreach-doelwit, maar wel een goede hoek voor content
@@ -147,6 +157,7 @@ pas bij een concrete vraag, stuur geen koude mail naar ziekenhuizen.
 - [x] Nieuwe vondst — NVRO gemaild (secretariaat@nvro.nl) — 23 juli 2026, verzonden via iCloud Mail (bevestigd door verzendknop + "undo send"-melding op het moment zelf). **Let op:** kort na verzenden bleek de Verstuurd-map in deze browsersessie leeg te zijn getoond (0 berichten, ook na volledige page-reload) — leek een client-side sync-glitch in iCloud Mail's webapp, geen bericht teruggevonden in Prullenmand. De mail zelf is wel degelijk verzonden (verzendactie voltooid vóór het folder-probleem optrad); Ed raadt aan dit zelf even te controleren in Mail.app of bij een volgende login.
 - [x] Nieuwe vondst — iCulture gemaild (redactie@iculture.nl) — 24 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Nieuwe vondst — Emerce gemaild (redactie@emerce.nl) — 24 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [ ] Nieuwe vondst — Dutch IT Channel (redactie@dutchitchannel.nl) — 25 juli 2026, tekst klaargezet, voorbereid, wacht op verzending door Ed (iCloud Mail niet ingelogd deze run)
 
 ---
 
@@ -484,6 +495,30 @@ edcafferata@icloud.com
 ---
 
 ## Kant-en-klare tekst — Emerce (e-mail naar redactie@emerce.nl, gemaild 24 juli 2026)
+
+**Onderwerp:** Nieuwe app: Dicom Viewer — privacy-first DICOM-viewer voor iPhone/iPad
+
+```
+The IT Crowd heeft Dicom Viewer uitgebracht, een native iOS-app waarmee
+patiënten en zorgprofessionals DICOM-medische beelden (röntgen, CT, MRI, echo)
+rechtstreeks op hun iPhone of iPad bekijken — zonder iets te uploaden naar een
+cloud-dienst of PACS-systeem.
+
+Belangrijkste functies: volledig-scherm viewer met pinch-zoom, cine-speler voor
+multi-frame-onderzoeken, Window/Level-presets (buik, long, bot, hersenen), een
+automatische serie-navigator en frame-export naar PNG/JPEG. Alles draait
+on-device, dus geen account en geen internetverbinding nodig na installatie.
+
+Dicom Viewer is gratis te downloaden, met een optionele fooienpot. Beschikbaar
+wereldwijd in het Engels en Nederlands.
+
+App Store: https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527
+Contact: edcafferata@icloud.com
+```
+
+---
+
+## Kant-en-klare tekst — Dutch IT Channel (e-mail naar redactie@dutchitchannel.nl, klaargezet 25 juli 2026)
 
 **Onderwerp:** Nieuwe app: Dicom Viewer — privacy-first DICOM-viewer voor iPhone/iPad
 

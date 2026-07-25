@@ -272,6 +272,7 @@ sterke extra vondsten voor India specifiek dit uur.
 - [x] AuntMinnieEurope gemaild (philip.ward@scienceandmedicinegroup.com) — 22 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] AAPM gemaild (newsletter@aapm.org) — 23 juli 2026, verzonden via iCloud Mail (na akkoord van Ed — de eerdere "lege Verstuurd-map" bleek geen storing maar Eds eigen opschoon-workflow naar de Coding-map, zie geheugen `feedback_mail_coding_folder`), wacht op reactie
 - [x] Indie Dev Monday gemaild (lookatme@indiedevmonday.com) — 24 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [ ] Nieuwe vondst — Society of Breast Imaging (info@sbi-online.org) — 25 juli 2026, tekst klaargezet, voorbereid, wacht op verzending door Ed (iCloud Mail niet ingelogd deze run)
 
 ---
 
@@ -729,6 +730,15 @@ one-liner, wat nieuw is, App Store/TestFlight-link en dev-naam/social links —
 Expliciet bedoeld als zelfpromotie-kanaal (de pagina heet letterlijk "Look At
 Me"), dus geen twijfel over de regels. **Gemaild 24 juli 2026.**
 
+## Nieuw gevonden (25 juli 2026) — Society of Breast Imaging (SBI)
+Amerikaanse vakvereniging voor borstbeeldvorming (mammografie/echo/MRI van de
+borst) — zelfde profiel als eerder gemailde verenigingen (AAWR/AOCR/ASER):
+een aanpalende radiologie-subspecialisme-doelgroep die nog niet eerder apart
+benaderd was. Contact: **info@sbi-online.org** (algemeen ledencontact, site
+sbi-online.org). Geen zelfpromotie- of AI-verbod gevonden. Tekst klaargezet in
+dezelfde stijl als AAWR/AOCR/ASER, **nog niet verzonden** — iCloud Mail was
+deze sessie niet ingelogd in de browser.
+
 ## Nieuw gevonden (23 juli 2026) — AAPM (American Association of Physicists in Medicine)
 Vakvereniging van medisch fysici in de VS — aanpalende doelgroep bij ACR/ARRS/
 ASNR/AIUM: medisch fysici werken dagelijks met beeldvormingsdata en QA van
@@ -963,4 +973,34 @@ Happy to send screenshots or answer anything about building it. Thanks for readi
 
 Best,
 Ed
+```
+
+## Kant-en-klare tekst — Society of Breast Imaging (e-mail naar info@sbi-online.org, klaargezet 25 juli 2026)
+
+**Onderwerp:** Free tool for breast imaging trainees — Dicom Viewer, native iOS DICOM viewer
+
+```
+Hi SBI team,
+
+I'm Ed Cafferata, founder of The IT Crowd. I built Dicom Viewer, a free
+native iOS app for viewing DICOM medical images (X-ray, CT, MRI, ultrasound)
+directly on iPhone and iPad — no account, no cloud upload, no PACS connection
+required. Everything is processed on-device.
+
+I thought it might be a useful resource to share with your members and
+Resident & Fellow Section, e.g. as a quick way to review teaching cases or
+mammography/breast MRI studies on the go. Features include a cine player for
+multi-frame studies, Window/Level presets, an automatic series navigator and
+frame export.
+
+Not a paid promotion request — just thought it might be genuinely useful for
+the community SBI represents.
+
+App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Happy to answer any questions. Thanks for considering it!
+
+Best,
+Ed Cafferata — The IT Crowd
+edcafferata@icloud.com
 ```

@@ -216,6 +216,17 @@ foto's voor de IRIA Insights-nieuwsbrief). Andere ingang dan de golf 1-mail,
 dus een legitieme aanvullende poging in plaats van een dubbele. **Gemaild
 23 juli 2026** via iCloud Mail.
 
+### Nieuwe zoektocht (25 juli 2026) — geen nieuwe onafhankelijke kanalen gevonden
+Gezocht naar aanvullende India-specifieke kanalen (studentenorganisaties,
+teleradiologie-nieuwssites, colleges). Enige serieuze kandidaat was **ICRI
+(Indian College of Radiology & Imaging)** — bleek bij nader onderzoek de
+academische tak van IRIA zelf te zijn, met hetzelfde hoofdkantoor-telefoonnummer
+(+91 9318435313) als het al gemailde IRIA-hoofdkantoor (golf 1, 13 juli 2026).
+Geen apart e-mailadres gevonden en te weinig onderscheid van het al benaderde
+contact om als een echt nieuw kanaal te tellen — niet gemaild. Geen andere
+kansrijke vondsten deze ronde; bestaande India-aanpak dekt de kansrijke
+kanalen nog steeds goed.
+
 ## Checklist
 
 - [ ] 🏆 Apple Featuring Nomination voor India ingediend in App Store Connect (Ed zelf, buiten browserbereik)
