@@ -273,6 +273,9 @@ sterke extra vondsten voor India specifiek dit uur.
 - [x] AAPM gemaild (newsletter@aapm.org) — 23 juli 2026, verzonden via iCloud Mail (na akkoord van Ed — de eerdere "lege Verstuurd-map" bleek geen storing maar Eds eigen opschoon-workflow naar de Coding-map, zie geheugen `feedback_mail_coding_folder`), wacht op reactie
 - [x] Indie Dev Monday gemaild (lookatme@indiedevmonday.com) — 24 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Nieuwe vondst — Society of Breast Imaging gemaild (info@sbi-online.org) — 25 juli 2026, verzonden via iCloud Mail, wacht op reactie
+- [x] Nieuwe vondst — ACVR (American College of Veterinary Radiology) gemaild (acvr@pamedsoc.org) — 26 juli 2026, verzonden via iCloud Mail, wacht op reactie. Nieuwe hoek: Dicom Viewer wordt ook door dierenartsen gebruikt (staat al in de bestaande VS-tekst), maar er was tot nu toe geen enkele veterinaire-radiologie-organisatie benaderd
+- [ ] Nieuwe vondst — IVRA (International Veterinary Radiology Association) — geen los e-mailadres gevonden (alleen contactformulier via ivraimaging.org/joining, gericht aan de Treasurer), dus voorbereid maar niet verzonden. Webformulier moet door Ed zelf ingevuld/verzonden worden
+- [ ] Nieuwe vondst — AAVR (veterinary association for veterinarians & technicians) — alleen een "Contact Us"-link gevonden, geen los e-mailadres nog opgehaald; nog te checken in een volgende run
 
 ---
 
@@ -1002,4 +1005,69 @@ Happy to answer any questions. Thanks for considering it!
 Best,
 Ed Cafferata — The IT Crowd
 edcafferata@icloud.com
+```
+
+## Nieuwe vondst (26 juli 2026) — Veterinaire radiologie-organisaties
+
+Gezocht naar een hoek die nog niet gedekt was: Dicom Viewer wordt in de bestaande
+VS-teksten al genoemd als bruikbaar voor "clinicians, students and veterinarians",
+maar er was nog geen enkele veterinaire-radiologie-organisatie zelf benaderd.
+Twee gevonden, geen zelfpromotie- of AI-verbod aangetroffen:
+- **ACVR (American College of Veterinary Radiology)** — contact
+  acvr@pamedsoc.org (via acvr.org/contact/). **Gemaild 26 juli 2026.**
+- **IVRA (International Veterinary Radiology Association)** — geen los
+  e-mailadres gevonden, alleen een contactformulier gericht aan de Treasurer
+  (ivraimaging.org/joining). Tekst hieronder klaargezet, webformulier moet
+  door Ed zelf ingevuld/verzonden worden.
+- **AAVR** (veterinary association for veterinarians & technicians) — alleen
+  een "Contact Us"-link gezien, nog geen e-mailadres opgehaald; kandidaat voor
+  een volgende run.
+
+## Kant-en-klare tekst — ACVR (e-mail naar acvr@pamedsoc.org, gemaild 26 juli 2026)
+
+**Onderwerp:** Free tool for veterinary radiologists — Dicom Viewer, native iOS DICOM viewer
+
+```
+Hi ACVR team,
+
+I'm Ed Cafferata, founder of The IT Crowd. I built Dicom Viewer, a free native
+iOS app for viewing DICOM medical images (X-ray, CT, MRI, ultrasound) on
+iPhone and iPad. Alongside human medicine, it's also used by veterinary
+clinicians and students to review imaging studies on the go.
+
+It's privacy-first: everything runs on-device, no account, no cloud upload,
+no PACS connection. Features include a cine player for multi-frame studies,
+Window/Level presets, a series navigator and frame export — built for quick
+review, not as a diagnostic replacement for a full workstation.
+
+Not a paid promotion request — just thought it might be a genuinely useful
+free resource to share with your members.
+
+App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Happy to answer any questions. Thanks for considering it!
+
+Best,
+Ed Cafferata — The IT Crowd
+```
+
+## Kant-en-klare tekst — IVRA (contactformulier ivraimaging.org/joining, nog niet verzonden)
+
+```
+Hi IVRA team,
+
+I'm Ed Cafferata, an independent iOS developer. I built Dicom Viewer, a free
+native app for viewing DICOM medical images (X-ray, CT, MRI, ultrasound)
+directly on iPhone or iPad — no account, no cloud upload, no PACS connection
+required. Everything is processed on-device.
+
+Alongside human medicine, it's also used by veterinary clinicians and
+students to review imaging studies on the go. Not a paid promotion request —
+just thought it might be a genuinely useful free resource to share with your
+members.
+
+App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Best regards,
+Ed Cafferata — The IT Crowd
 ```

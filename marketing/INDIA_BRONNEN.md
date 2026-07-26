@@ -227,6 +227,12 @@ contact om als een echt nieuw kanaal te tellen — niet gemaild. Geen andere
 kansrijke vondsten deze ronde; bestaande India-aanpak dekt de kansrijke
 kanalen nog steeds goed.
 
+### Nieuwe zoektocht (26 juli 2026) — opnieuw geen nieuwe onafhankelijke kanalen
+Nogmaals gezocht (studentenverenigingen radiologie, teleradiologie-startupnieuws).
+Resultaten wezen vooral naar al bekende namen (IRIA, YourStory) of naar teleradiologie-
+bedrijven zelf (5C Network, DeepTek, Qure.ai — dit zijn commerciële concurrenten/
+partijen, geen promotiekanaal). Geen nieuwe geschikte vondst deze ronde.
+
 ## Checklist
 
 - [ ] 🏆 Apple Featuring Nomination voor India ingediend in App Store Connect (Ed zelf, buiten browserbereik)

@@ -125,6 +125,13 @@ MijnZuyderland-app). Duidelijke gratis "tip de redactie"-ingang:
 hoofdredacteur Witold Kepinski). Geen kosten of zelfpromotie-verbod gevonden.
 Tekst in persbericht-stijl (Golf 2-toon). **Gemaild 25 juli 2026.**
 
+### Nieuwe zoektocht (26 juli 2026) — geen nieuwe kanalen gevonden
+Gezocht naar aanvullende Nederlandse bronnen (studentenverenigingen radiodiagnostisch
+laboranten, nieuwe teleradiologie-nieuwssites). Geen concrete nieuwe kanalen gevonden —
+alleen algemene opleidingspagina's van ziekenhuizen (Erasmus MC, Amsterdam UMC e.d.),
+geen studentenvereniging of nieuw contactpunt. De bestaande NL-aanpak dekt de
+kansrijke kanalen nog steeds goed; vrijwel de hele checklist staat al op afgerond.
+
 ### Golf 6 — Patiëntkant ziekenhuizen (laagste prioriteit, geen directe outreach)
 Ziekenhuizen die van cd naar digitaal overstappen (Catharina Ziekenhuis, DC
 Klinieken, ViaSana) zijn geen outreach-doelwit, maar wel een goede hoek voor content
