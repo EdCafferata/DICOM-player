@@ -276,6 +276,7 @@ sterke extra vondsten voor India specifiek dit uur.
 - [x] Nieuwe vondst — ACVR (American College of Veterinary Radiology) gemaild (acvr@pamedsoc.org) — 26 juli 2026, verzonden via iCloud Mail, wacht op reactie. Nieuwe hoek: Dicom Viewer wordt ook door dierenartsen gebruikt (staat al in de bestaande VS-tekst), maar er was tot nu toe geen enkele veterinaire-radiologie-organisatie benaderd
 - [ ] Nieuwe vondst — IVRA (International Veterinary Radiology Association) — geen los e-mailadres gevonden (alleen contactformulier via ivraimaging.org/joining, gericht aan de Treasurer), dus voorbereid maar niet verzonden. Webformulier moet door Ed zelf ingevuld/verzonden worden
 - [ ] Nieuwe vondst — AAVR (veterinary association for veterinarians & technicians) — alleen een "Contact Us"-link gevonden, geen los e-mailadres nog opgehaald; nog te checken in een volgende run
+- [x] Nieuwe vondst (26 juli 2026, op verzoek van Ed: universiteiten/medical students VS+India) — ACR Medical Student Radiology Interest Group (RIG) regionale coördinatoren gemaild: **WestRIG@acr.org**, **MidwestRIG@acr.org**, **SouthRIG@acr.org**, **NortheastRIG@acr.org** — allen verzonden via iCloud Mail, wacht op reactie. Dit is een apart kanaal van het al eerder gemailde rfs@acr.org (Resident and Fellow Section) en dekt in één keer alle aangesloten universitaire RIG-chapters in de VS, in plaats van losse individuele universiteiten (McGovern/UTHealth, UAMS, UC Davis, Howard, UCF, WashU, Buffalo e.d.) een voor een te moeten benaderen
 
 ---
 
@@ -1042,6 +1043,43 @@ review, not as a diagnostic replacement for a full workstation.
 
 Not a paid promotion request — just thought it might be a genuinely useful
 free resource to share with your members.
+
+App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Happy to answer any questions. Thanks for considering it!
+
+Best,
+Ed Cafferata — The IT Crowd
+```
+
+## Kant-en-klare tekst — ACR Medical Student Radiology Interest Groups (RIG's, regionale coördinatoren, gemaild 26 juli 2026)
+
+Gevonden via acr.org/Membership/Member-Sections/medical-students/for-students/radiology-interest-groups:
+regionale coördinatoren die alle aangesloten universitaire RIG-chapters in hun regio
+bereiken — West (Alaska t/m Wyoming), Midwest (Illinois t/m Wisconsin), South
+(Alabama t/m West Virginia + Puerto Rico), Northeast (Connecticut t/m Vermont).
+Zelfde vier losse mails, elk naar het eigen regio-adres:
+WestRIG@acr.org, MidwestRIG@acr.org, SouthRIG@acr.org, NortheastRIG@acr.org.
+
+**Onderwerp:** Free tool for your Radiology Interest Group — Dicom Viewer, native iOS DICOM viewer
+
+```
+Hi RIG coordinators,
+
+I'm Ed Cafferata, founder of The IT Crowd. I built Dicom Viewer, a free native
+iOS app for viewing DICOM medical images (X-ray, CT, MRI, ultrasound) on
+iPhone and iPad — thought it might be worth sharing with your Radiology
+Interest Group members.
+
+It's privacy-first: everything runs on-device, no account, no cloud upload,
+no PACS connection. Features include a cine player for multi-frame studies,
+Window/Level presets (Abdomen, Lung, Bone, Brain), a series navigator and
+frame export — built for quick review on the go, not as a diagnostic
+replacement for a full workstation. It can be a handy way for students to
+review teaching cases between rotations.
+
+Not a paid promotion request — just thought it might be genuinely useful for
+the students you support.
 
 App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
 

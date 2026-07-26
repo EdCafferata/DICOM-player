@@ -233,6 +233,18 @@ Resultaten wezen vooral naar al bekende namen (IRIA, YourStory) of naar teleradi
 bedrijven zelf (5C Network, DeepTek, Qure.ai — dit zijn commerciële concurrenten/
 partijen, geen promotiekanaal). Geen nieuwe geschikte vondst deze ronde.
 
+### Nieuwe vondst (26 juli 2026, op verzoek van Ed: universiteiten/medical students) — AIIMS Radiodiagnosis
+AIIMS New Delhi (All India Institute of Medical Sciences) is India's meest
+prestigieuze medische universiteit/ziekenhuis. Het Department of Radiodiagnosis &
+Interventional Radiology heeft een eigen contact: **radiodiagnosis@aiims.edu**.
+Geen zelfpromotie- of AI-verbod gevonden (het is een ziekenhuisafdeling, geen
+forum). Zelfde *helpende, niet-adverterende* toon als bij IRIA/NVvR. **Gemaild
+26 juli 2026.** Twee andere top-instituten (PGIMER Chandigarh, CMC Vellore)
+onderzocht maar nog geen bruikbaar departement-e-mailadres gevonden — alleen
+algemene instituutstelefoonnummers resp. individuele-faculteitsadressen; niet
+gebruikt (bounce-/te-persoonlijk-risico), kandidaat voor een volgende run als
+een beter contact opduikt.
+
 ## Checklist
 
 - [ ] 🏆 Apple Featuring Nomination voor India ingediend in App Store Connect (Ed zelf, buiten browserbereik)
@@ -256,6 +268,8 @@ partijen, geen promotiekanaal). Geen nieuwe geschikte vondst deze ronde.
 - [x] Onderzocht, niet gebruikt — Startup India Showcase (overheidsplatform) ⛔ alleen voor DPIIT-erkende Indiase bedrijven, The IT Crowd voldoet niet (zelfde blokkade als Inc42/Swadeshi Apps eerder)
 - [x] Onderzocht, niet gebruikt — IRIA state-chapters (Karnataka/Kerala/Maharashtra) alleen postadressen gevonden, geen e-mail; bovendien nog te vroeg om te escaleren zolang IRIA-hoofdkantoor (gemaild 13 juli) nog niet gereageerd heeft
 - [x] Nieuwe vondst — IRIA-nieuwsbrief gemaild (irianewsletter@gmail.com) — 23 juli 2026, verzonden via iCloud Mail (na akkoord van Ed — de eerdere "lege Verstuurd-map" bleek geen storing maar Eds eigen opschoon-workflow naar de Coding-map, zie geheugen `feedback_mail_coding_folder`), wacht op reactie
+- [x] Nieuwe vondst (26 juli 2026, universiteiten) — AIIMS Radiodiagnosis gemaild (radiodiagnosis@aiims.edu), verzonden via iCloud Mail, wacht op reactie
+- [ ] Onderzocht, nog geen bruikbaar contact — PGIMER Chandigarh (alleen algemeen instituuttelefoonnummer) en CMC Vellore (alleen individuele-faculteitsadressen, geen departement-e-mail) — kandidaten voor een volgende run als een beter contact opduikt
 
 ---
 
@@ -568,4 +582,32 @@ App Store: https://apps.apple.com/in/app/dicom-viewer-by-the-it-crowd/id14834965
 Best regards,
 Ed Cafferata — The IT Crowd
 edcafferata@icloud.com
+```
+
+## Kant-en-klare tekst — AIIMS Radiodiagnosis (e-mail naar radiodiagnosis@aiims.edu, gemaild 26 juli 2026)
+
+**Onderwerp:** Dicom Viewer — free iOS app for viewing DICOM images
+
+```
+Dear AIIMS Radiodiagnosis team,
+
+I'm Ed Cafferata, an independent iOS developer. I built Dicom Viewer, a free
+native app that lets clinicians, residents and patients view DICOM medical
+images (X-ray, CT, MRI, ultrasound) directly on iPhone or iPad — no account,
+no cloud upload, no PACS connection required. Everything is processed
+on-device.
+
+Given the growing role of mobile access to imaging in teaching and patient
+care, I thought this might be a useful resource to share with your residents
+and students, e.g. as a quick way to review teaching cases or a patient's own
+scans on the go.
+
+Not a paid promotion request — just thought it might be a genuinely useful
+free tool for the department.
+
+App Store: https://apps.apple.com/in/app/dicom-viewer-by-the-it-crowd/id1483496527
+More info: https://cafferata.info
+
+Best regards,
+Ed Cafferata — The IT Crowd
 ```
