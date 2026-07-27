@@ -270,6 +270,7 @@ een beter contact opduikt.
 - [x] Nieuwe vondst — IRIA-nieuwsbrief gemaild (irianewsletter@gmail.com) — 23 juli 2026, verzonden via iCloud Mail (na akkoord van Ed — de eerdere "lege Verstuurd-map" bleek geen storing maar Eds eigen opschoon-workflow naar de Coding-map, zie geheugen `feedback_mail_coding_folder`), wacht op reactie
 - [x] Nieuwe vondst (26 juli 2026, universiteiten) — AIIMS Radiodiagnosis gemaild (radiodiagnosis@aiims.edu), verzonden via iCloud Mail, wacht op reactie
 - [ ] Onderzocht, nog geen bruikbaar contact — PGIMER Chandigarh (alleen algemeen instituuttelefoonnummer) en CMC Vellore (alleen individuele-faculteitsadressen, geen departement-e-mail) — kandidaten voor een volgende run als een beter contact opduikt
+- [ ] Nieuwe zoektocht (27 juli 2026) — opnieuw gezocht naar contact voor PGIMER Chandigarh en CMC Vellore: CMC Vellore heeft een eigen radiologie-site (cmcvelloreradiology.org/contact-us.php) maar ook die toont alleen telefoonnummers, geen e-mail. PGIMER: alleen het algemene instituutadres (pgimer@chd.nic.in). ETHealthworld opnieuw gecheckt: nog steeds geen gratis redactie-ingang gevonden. Alle drie blijven "on hold"
 
 ---
 

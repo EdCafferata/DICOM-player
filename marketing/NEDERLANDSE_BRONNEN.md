@@ -125,6 +125,13 @@ MijnZuyderland-app). Duidelijke gratis "tip de redactie"-ingang:
 hoofdredacteur Witold Kepinski). Geen kosten of zelfpromotie-verbod gevonden.
 Tekst in persbericht-stijl (Golf 2-toon). **Gemaild 25 juli 2026.**
 
+### Nieuwe zoektocht (27 juli 2026) — geen nieuwe kanalen gevonden
+Opnieuw gezocht naar aanvullende Nederlandse zorg-ICT- en teleradiologie-
+nieuwssites. Resultaten wezen vooral naar het Zorg & ICT-vakbeursevenement
+(april 2026, geen outreach-kanaal) en naar Dutch IT Channel (al gemaild op
+25 juli 2026). Geen nieuw, nog niet benaderd kanaal gevonden deze ronde — de
+bestaande NL-checklist dekt de kansrijke kanalen nog steeds goed.
+
 ### Nieuwe zoektocht (26 juli 2026) — geen nieuwe kanalen gevonden
 Gezocht naar aanvullende Nederlandse bronnen (studentenverenigingen radiodiagnostisch
 laboranten, nieuwe teleradiologie-nieuwssites). Geen concrete nieuwe kanalen gevonden —

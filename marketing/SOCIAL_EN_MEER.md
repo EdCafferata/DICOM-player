@@ -277,6 +277,9 @@ sterke extra vondsten voor India specifiek dit uur.
 - [ ] Nieuwe vondst — IVRA (International Veterinary Radiology Association) — geen los e-mailadres gevonden (alleen contactformulier via ivraimaging.org/joining, gericht aan de Treasurer), dus voorbereid maar niet verzonden. Webformulier moet door Ed zelf ingevuld/verzonden worden
 - [ ] Nieuwe vondst — AAVR (veterinary association for veterinarians & technicians) — alleen een "Contact Us"-link gevonden, geen los e-mailadres nog opgehaald; nog te checken in een volgende run
 - [x] Nieuwe vondst (26 juli 2026, op verzoek van Ed: universiteiten/medical students VS+India) — ACR Medical Student Radiology Interest Group (RIG) regionale coördinatoren gemaild: **WestRIG@acr.org**, **MidwestRIG@acr.org**, **SouthRIG@acr.org**, **NortheastRIG@acr.org** — allen verzonden via iCloud Mail, wacht op reactie. Dit is een apart kanaal van het al eerder gemailde rfs@acr.org (Resident and Fellow Section) en dekt in één keer alle aangesloten universitaire RIG-chapters in de VS, in plaats van losse individuele universiteiten (McGovern/UTHealth, UAMS, UC Davis, Howard, UCF, WashU, Buffalo e.d.) een voor een te moeten benaderen
+- [x] Nieuwe vondst (27 juli 2026) — Society of Skeletal Radiology (SSR) gemaild (info@skeletalrad.org), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [x] Nieuwe vondst (27 juli 2026) — ASHNR gemaild (ashnr@asnr.org), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [ ] Nieuwe vondst (27 juli 2026) — AAVR: geen los e-mailadres gevonden (alleen webformulier + postadres op aavr.org/contact-us), niet gemaild, kandidaat voor een volgende run
 
 ---
 
@@ -1023,6 +1026,82 @@ Twee gevonden, geen zelfpromotie- of AI-verbod aangetroffen:
 - **AAVR** (veterinary association for veterinarians & technicians) — alleen
   een "Contact Us"-link gezien, nog geen e-mailadres opgehaald; kandidaat voor
   een volgende run.
+
+## Nieuwe vondsten (27 juli 2026) — SSR, ASHNR en AAVR (contact nog niet compleet)
+
+Gezocht naar radiologie-subspecialisme-verenigingen die nog niet eerder benaderd
+waren, zelfde logica als AAWR/AOCR/ASER/SBI hierboven:
+- **Society of Skeletal Radiology (SSR)** — vakvereniging voor musculoskeletale
+  radiologie, 1500+ leden. Contact geverifieerd via skeletalrad.org/about-membership:
+  **info@skeletalrad.org**. Geen zelfpromotie- of AI-verbod gevonden. **Gemaild
+  27 juli 2026.**
+- **ASHNR (American Society of Head and Neck Radiology)** — wordt organisatorisch
+  gehost door ASNR (al eerder gemaild op info@asnr.org, 15 juli 2026), maar heeft
+  een eigen ledenbestand/nieuwsbrief. Apart contact gevonden via de ASHNR
+  contactpagina: **ashnr@asnr.org** (Algemene Operations-mailbox, apart van het
+  algemene ASNR-adres). **Gemaild 27 juli 2026.**
+- **AAVR (veterinary association for veterinarians & technicians)** — contactpagina
+  (aavr.org/contact-us) bleek bij nader onderzoek geen los e-mailadres te bevatten,
+  alleen een webformulier en een postadres (San Diego). Niet gemaild deze run —
+  webformulier is niet ingevuld (geen tekst klaargezet, aparte vervolgstap indien
+  Ed dit alsnog wil laten voorbereiden).
+
+Ook gezocht naar bruikbare departement-contacten voor **PGIMER Chandigarh** en
+**CMC Vellore** (India, zie INDIA_BRONNEN.md) — beide hebben eigen radiologie-
+paginas (PGIMER telefoondirectory, cmcvelloreradiology.org/contact-us.php) maar
+nog steeds geen los e-mailadres, alleen telefoonnummers. Blijft "on hold".
+
+## Kant-en-klare tekst — SSR (e-mail naar info@skeletalrad.org, gemaild 27 juli 2026)
+
+**Onderwerp:** Free tool for skeletal radiology community — Dicom Viewer, native iOS DICOM viewer
+
+```
+Hi SSR team,
+
+I'm Ed Cafferata, founder of The IT Crowd. I built Dicom Viewer, a free native
+iOS app for viewing DICOM medical images (X-ray, CT, MRI, ultrasound) on
+iPhone and iPad — thought it might be worth mentioning to your members and
+fellows as a resource for reviewing studies on the go.
+
+It's privacy-first: everything runs on-device, no account, no cloud upload,
+no PACS connection. Features include a cine player for multi-frame studies,
+Window/Level presets (Abdomen, Lung, Bone, Brain), a series navigator and
+frame export — built for quick review, not as a diagnostic replacement for a
+full workstation.
+
+App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Happy to answer any questions or provide more detail. Thanks for considering it!
+
+Best,
+Ed Cafferata — The IT Crowd
+```
+
+## Kant-en-klare tekst — ASHNR (e-mail naar ashnr@asnr.org, gemaild 27 juli 2026)
+
+**Onderwerp:** Free tool for head and neck radiology community — Dicom Viewer, native iOS DICOM viewer
+
+```
+Hi ASHNR team,
+
+I'm Ed Cafferata, founder of The IT Crowd. I built Dicom Viewer, a free native
+iOS app for viewing DICOM medical images (X-ray, CT, MRI, ultrasound) on
+iPhone and iPad — thought it might be worth mentioning to your members and
+fellows as a resource for reviewing studies on the go.
+
+It's privacy-first: everything runs on-device, no account, no cloud upload,
+no PACS connection. Features include a cine player for multi-frame studies,
+Window/Level presets (Abdomen, Lung, Bone, Brain), a series navigator and
+frame export — built for quick review, not as a diagnostic replacement for a
+full workstation.
+
+App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Happy to answer any questions or provide more detail. Thanks for considering it!
+
+Best,
+Ed Cafferata — The IT Crowd
+```
 
 ## Kant-en-klare tekst — ACVR (e-mail naar acvr@pamedsoc.org, gemaild 26 juli 2026)
 
