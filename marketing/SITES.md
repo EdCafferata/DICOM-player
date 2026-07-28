@@ -22,7 +22,7 @@ opleveren (goed voor SEO-verkeer).
 | **Encord blog** | encord.com/blog/best-dicom-viewers/ | ML data-platform, SEO-roundup — contact via encord.com |
 | **Folio3 Digital Health** | digitalhealth.folio3.com/blog/the-best-dicom-viewer/ | Contact via folio3.com |
 | **WifiTalents** | wifitalents.com/best/dicom-viewing-software/ | Statistieken/rankings-site — contactformulier op de site |
-| **Radiology Cafe** ✅ nieuw (28 juli 2026) | radiologycafe.com/radiology-trainees/dicom-viewers/ — UK-site van Dr Christopher Clarke (Consultant Radiologist, Nottingham), lijst met gratis DICOM-viewers (Horos, WEASIS, RadiAnt, Pacsbin, Collective Minds) incl. één iOS-app (Horos iOS) — Dicom Viewer staat er nog niet bij. Pagina nodigt expliciet uit: "Please send us your suggestions for other great free DICOM viewers!" | Alleen webformulier gevonden (radiologycafe.com/contact-us/ — Naam/E-mail/Bericht/"How did you hear about us"), geen los e-mailadres. Tekst hieronder klaargezet, **niet verzonden** (webformulier, moet door Ed zelf ingevuld/verzonden worden zoals bij WifiTalents/Encord/Folio3) |
+| **Radiology Cafe** ✅✅ | radiologycafe.com/radiology-trainees/dicom-viewers/ — UK-site van Dr Christopher Clarke (Consultant Radiologist, Nottingham), lijst met gratis DICOM-viewers (Horos, WEASIS, RadiAnt, Pacsbin, Collective Minds) incl. één iOS-app (Horos iOS) — Dicom Viewer stond er nog niet bij. Pagina nodigde expliciet uit: "Please send us your suggestions for other great free DICOM viewers!" | Alleen webformulier (radiologycafe.com/contact-us/), geen los e-mailadres. Tekst door Claude ingevuld en klaargezet (28 juli 2026), **door Ed ingevuld gecontroleerd en verzonden**, wacht op reactie |
 
 ## B. Nieuwssites (persbericht-aanpak)
 
@@ -79,10 +79,9 @@ Best,
 Ed — The IT Crowd
 ```
 
-**Radiology Cafe (radiologycafe.com/contact-us/, klaargezet 28 juli 2026):** bovenstaande
-tekst past direct in het Bericht-veld van het webformulier (Naam: Ed Cafferata,
-E-mail: edcafferata@icloud.com) — nog niet verzonden, webformulier moet door Ed
-zelf ingevuld/verzonden worden.
+**Radiology Cafe (radiologycafe.com/contact-us/):** bovenstaande tekst is gebruikt
+in het Bericht-veld van het webformulier (Naam: Ed Cafferata, E-mail:
+edcafferata@icloud.com) — ingevuld door Claude, verzonden door Ed, 28 juli 2026.
 
 ### 2. Persbericht/mail aan nieuwssites (categorie B)
 
