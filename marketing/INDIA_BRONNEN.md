@@ -216,6 +216,15 @@ foto's voor de IRIA Insights-nieuwsbrief). Andere ingang dan de golf 1-mail,
 dus een legitieme aanvullende poging in plaats van een dubbele. **Gemaild
 23 juli 2026** via iCloud Mail.
 
+### Nieuwe zoektocht (28 juli 2026) — geen nieuwe onafhankelijke kanalen gevonden
+Gezocht naar Indiase radiologie-studentenverenigingen/newsletter-contacten
+(RSSDI-achtige student-organisaties, staats-chapters) en een lijst van
+radiologieverenigingen (rtstudents.com) doorzocht op nog niet benaderde Indiase
+namen. Enige Indiase vermelding daar was de Radiology Education Foundation
+(refindia.net) — geen contactadres gevonden bij dit onderzoek, kandidaat voor
+een volgende run als er tijd is om dieper te zoeken. Verder alleen al bekende
+namen (IRIA, ISRT) teruggevonden. Geen nieuw kanaal deze ronde.
+
 ### Nieuwe zoektocht (25 juli 2026) — geen nieuwe onafhankelijke kanalen gevonden
 Gezocht naar aanvullende India-specifieke kanalen (studentenorganisaties,
 teleradiologie-nieuwssites, colleges). Enige serieuze kandidaat was **ICRI

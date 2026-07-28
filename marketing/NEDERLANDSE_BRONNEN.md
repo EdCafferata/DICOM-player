@@ -125,6 +125,17 @@ MijnZuyderland-app). Duidelijke gratis "tip de redactie"-ingang:
 hoofdredacteur Witold Kepinski). Geen kosten of zelfpromotie-verbod gevonden.
 Tekst in persbericht-stijl (Golf 2-toon). **Gemaild 25 juli 2026.**
 
+### Nieuwe vondst (28 juli 2026) — NVKF (Nederlandse Vereniging voor Klinische Fysica)
+Beroepsvereniging van klinisch fysici in Nederland, met radiologie als een van de
+vijf specialisatiegebieden (naast nucleaire geneeskunde, radiotherapie,
+audiologie/videologie, algemene klinische fysica) — aanpalende doelgroep bij
+NVvR/NVMBR: klinisch fysici werken dagelijks met beeldvormingsapparatuur en
+-data (QA, dosimetrie). Geen zelfpromotie- of AI-verbod gevonden. Contact:
+**secretariaat@nvkf.nl** (algemeen, via nvkf.nl/contact-0; alternatief pr@nvkf.nl
+voor mediavragen). Tekst klaargezet, **nog niet verzonden** — iCloud Mail was
+deze run niet ingelogd in de browsersessie (alleen het inlogscherm, wachtwoord
+niet ingevuld). Wacht op verzending door Ed of een volgende run met geldige login.
+
 ### Nieuwe zoektocht (27 juli 2026) — geen nieuwe kanalen gevonden
 Opnieuw gezocht naar aanvullende Nederlandse zorg-ICT- en teleradiologie-
 nieuwssites. Resultaten wezen vooral naar het Zorg & ICT-vakbeursevenement
@@ -162,6 +173,7 @@ pas bij een concrete vraag, stuur geen koude mail naar ziekenhuizen.
 - [x] Golf 4 — DirectClinics benaderd (9 juli 2026: contactformulier op directclinics.nl/contact voorbereid door Claude en verzonden door Ed, bevestigd via bedankt-aanvraag-pagina)
 - [x] Golf 5 — Zorginnovatie.nl LinkedIn-post live (14 juli 2026 concept, inmiddels door Ed geplaatst — bevestigd 19 juli 2026: publiek zichtbaar, 1 like, 1 repost, https://www.linkedin.com/feed/update/urn:li:activity:7484337618093219840/). Ook een Engelstalige versie live (15 juli 2026).
 - [ ] Golf 6 — eerste helpende reactie richting patiënt/ziekenhuis-hoek (indien kans zich voordoet)
+- [ ] Nieuwe vondst — NVKF: tekst klaargezet (secretariaat@nvkf.nl), nog niet verzonden — iCloud Mail-login ontbrak deze run
 - [x] Nieuwe vondst — MedNet.nl gemaild (info@mednet.nl) — 16 juli 2026, persbericht-stijl (Golf 2-toon), verzonden via iCloud Mail, wacht op reactie
 - [x] Nieuwe vondst — Medisch Contact gemaild (nieuwsdienst@medischcontact.nl) — 18 juli 2026, persbericht-stijl (Golf 2-toon), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Nieuwe vondst — NVMBR gemaild (info@nvmbr.nl) — 19 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
@@ -448,6 +460,30 @@ Contact: edcafferata@icloud.com
 ```
 
 ---
+
+## Kant-en-klare tekst — NVKF (e-mail naar secretariaat@nvkf.nl, klaargezet 28 juli 2026, nog niet verzonden)
+
+**Onderwerp:** Dicom Viewer — gratis iOS-app voor het bekijken van DICOM-beelden
+
+```
+Beste NVKF,
+
+Ik ben Ed Cafferata van The IT Crowd. Ik heb Dicom Viewer ontwikkeld, een
+gratis iOS-app waarmee DICOM-beelden (röntgen, CT, MRI, echo) rechtstreeks op
+iPhone of iPad bekeken kunnen worden — zonder account, cloud-upload of
+PACS-koppeling. Alles blijft lokaal op het toestel.
+
+Geen advertentieverzoek, maar ik dacht dat dit voor klinisch fysici in de
+radiologie of via jullie kanalen interessant kan zijn, bijvoorbeeld als
+hulpmiddel om snel een referentiebeeld of QA-scan te bekijken onderweg.
+
+App Store: https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527
+Meer info: https://cafferata.info
+
+Met vriendelijke groet,
+Ed Cafferata — The IT Crowd
+edcafferata@icloud.com
+```
 
 ## Kant-en-klare tekst — NVMBR (e-mail naar info@nvmbr.nl)
 
