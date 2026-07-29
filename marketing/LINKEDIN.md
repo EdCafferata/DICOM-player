@@ -11,6 +11,21 @@
 <!-- Nieuwste bovenaan. Elke entry: datum, welke app, status (klaargezet/
      gepost), de tekst zelf. -->
 
+## 2026-07-29 — Dicom Viewer
+**Status:** klaargezet in composer (nog niet verzonden door Ed) — Duski is nog steeds niet live in de App Store (Apple Developer-accountverificatie nog geblokkeerd), dus de beurt ging automatisch weer naar Dicom Viewer.
+
+Wist je dat DICOM — het bestandsformaat van medische scans — niet alleen bij mensen wordt gebruikt, maar ook in de diergeneeskunde? Deze week ontdekte ik dat dierenartsen en veterinaire radiologen precies hetzelfde probleem hebben als menselijke patiënten: een CD of USB met scanbestanden die nergens fatsoenlijk op open gaan.
+
+Daarom bouwde ik Dicom Viewer: een iOS-app die DICOM-bestanden — röntgen, CT, MRI, echo — rechtstreeks op je iPhone of iPad opent. Geen account, geen cloud, alles blijft op je eigen toestel.
+
+Deze week heb ik naast de gebruikelijke radiologieverenigingen ook de veterinaire hoek verkend (ACVR) en universiteiten in de VS en India benaderd (ACR-regio's, AIIMS) — steeds op zoek naar mensen die de app echt kunnen gebruiken en testen.
+
+De app is gratis, met een eigen on-device DICOM-parser en een optionele Tip Jar voor wie het werk wil steunen.
+
+👉 https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+#indiedev #iosdev #buildinpublic #DICOM
+
 ## 2026-07-22 — Dicom Viewer
 **Status:** klaargezet in composer (nog niet verzonden door Ed) — Duski is nog steeds niet live in de App Store (Apple Developer-accountverificatie nog geblokkeerd), dus de beurt ging automatisch weer naar Dicom Viewer.
 
