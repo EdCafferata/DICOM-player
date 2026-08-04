@@ -280,6 +280,8 @@ sterke extra vondsten voor India specifiek dit uur.
 - [x] Nieuwe vondst (27 juli 2026) — Society of Skeletal Radiology (SSR) gemaild (info@skeletalrad.org), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Nieuwe vondst (27 juli 2026) — ASHNR gemaild (ashnr@asnr.org), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [ ] Nieuwe vondst (27 juli 2026) — AAVR: geen los e-mailadres gevonden (alleen webformulier + postadres op aavr.org/contact-us), niet gemaild, kandidaat voor een volgende run
+- [x] AAVR opnieuw gecheckt (4 augustus 2026) — bevestigd: geen e-mailadres beschikbaar, alleen contactformulier (aavr.org/contact-us). De pagina noemt daarnaast dat "unrelated and related company products may be mentioned and/or paid advertising may be displayed" — geen expliciet zelfpromotie-verbod, maar wel een signaal dat het kanaal primair sponsorship-georiënteerd is. Blijft "on hold": webformulier moet door Ed zelf ingevuld/verzonden worden, niet automatisch te benaderen via e-mail
+- [x] Nieuwe vondst (4 augustus 2026) — AAOMR (American Academy of Oral and Maxillofacial Radiology) gemaild (info@aaomr.org), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 
 ---
 
@@ -1027,6 +1029,14 @@ Twee gevonden, geen zelfpromotie- of AI-verbod aangetroffen:
   een "Contact Us"-link gezien, nog geen e-mailadres opgehaald; kandidaat voor
   een volgende run.
 
+## Nieuw gevonden (4 augustus 2026) — AAOMR (American Academy of Oral and Maxillofacial Radiology)
+Amerikaanse vakvereniging voor tandheelkundige/maxillofaciale radiologie — een hoek
+die nog niet gedekt was: Dicom Viewer opent generieke DICOM-bestanden, dus ook
+dental/CBCT-scans, niet alleen algemene radiologie. Contact via aaomr.org gevonden
+(aaomr.org/contact-us gaf een 403 bij direct ophalen, adres via zoekopdracht
+gevonden): **info@aaomr.org** (alternatieven: admin@aaomr.org, support@aaomr.org).
+Geen zelfpromotie- of AI-verbod gevonden. **Gemaild 4 augustus 2026.**
+
 ## Nieuwe vondsten (27 juli 2026) — SSR, ASHNR en AAVR (contact nog niet compleet)
 
 Gezocht naar radiologie-subspecialisme-verenigingen die nog niet eerder benaderd
@@ -1187,4 +1197,35 @@ App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id14834965
 
 Best regards,
 Ed Cafferata — The IT Crowd
+```
+
+## Kant-en-klare tekst — AAOMR (e-mail naar info@aaomr.org, gemaild 4 augustus 2026)
+
+**Onderwerp:** Free tool for dental/maxillofacial radiology community — Dicom Viewer
+
+```
+Hi AAOMR team,
+
+I'm Ed Cafferata, founder of The IT Crowd. I built Dicom Viewer, a free
+native iOS app for viewing DICOM medical images directly on iPhone and
+iPad — no account, no cloud upload, no PACS connection required. Everything
+is processed on-device. Alongside general radiology, it opens dental/CBCT
+DICOM studies just as well, so I thought it might be worth mentioning to
+your members and residents.
+
+It's privacy-first: everything runs on-device, no account, no cloud upload,
+no PACS connection. Features include a cine player for multi-frame studies,
+Window/Level presets, a series navigator and frame export — built for quick
+review on the go, not as a diagnostic replacement for a full workstation.
+
+Not a paid promotion request — just thought it might be genuinely useful for
+the community AAOMR represents.
+
+App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Happy to answer any questions. Thanks for considering it!
+
+Best,
+Ed Cafferata — The IT Crowd
+edcafferata@icloud.com
 ```

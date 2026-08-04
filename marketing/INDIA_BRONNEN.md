@@ -254,6 +254,13 @@ algemene instituutstelefoonnummers resp. individuele-faculteitsadressen; niet
 gebruikt (bounce-/te-persoonlijk-risico), kandidaat voor een volgende run als
 een beter contact opduikt.
 
+### Nieuwe vondst (4 augustus 2026) — SNMI (Society of Nuclear Medicine, India)
+Beroepsvereniging van nucleair geneeskundigen in India (gevestigd bij Tata Memorial
+Hospital, Mumbai) — aanpalende doelgroep bij IRIA/ISRT/AMPI: nucleaire scans (SPECT,
+PET) zijn ook DICOM-bestanden, dus generieke DICOM-viewing is relevant voor deze
+beroepsgroep. Geen zelfpromotie- of AI-verbod gevonden. Contact:
+**snmindiasecretary@gmail.com**. **Gemaild 4 augustus 2026.**
+
 ## Checklist
 
 - [ ] 🏆 Apple Featuring Nomination voor India ingediend in App Store Connect (Ed zelf, buiten browserbereik)
@@ -280,6 +287,7 @@ een beter contact opduikt.
 - [x] Nieuwe vondst (26 juli 2026, universiteiten) — AIIMS Radiodiagnosis gemaild (radiodiagnosis@aiims.edu), verzonden via iCloud Mail, wacht op reactie
 - [ ] Onderzocht, nog geen bruikbaar contact — PGIMER Chandigarh (alleen algemeen instituuttelefoonnummer) en CMC Vellore (alleen individuele-faculteitsadressen, geen departement-e-mail) — kandidaten voor een volgende run als een beter contact opduikt
 - [ ] Nieuwe zoektocht (27 juli 2026) — opnieuw gezocht naar contact voor PGIMER Chandigarh en CMC Vellore: CMC Vellore heeft een eigen radiologie-site (cmcvelloreradiology.org/contact-us.php) maar ook die toont alleen telefoonnummers, geen e-mail. PGIMER: alleen het algemene instituutadres (pgimer@chd.nic.in). ETHealthworld opnieuw gecheckt: nog steeds geen gratis redactie-ingang gevonden. Alle drie blijven "on hold"
+- [x] Nieuwe vondst — SNMI (Society of Nuclear Medicine, India) gemaild (snmindiasecretary@gmail.com) — 4 augustus 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 
 ---
 
@@ -620,4 +628,32 @@ More info: https://cafferata.info
 
 Best regards,
 Ed Cafferata — The IT Crowd
+```
+
+## Kant-en-klare tekst — SNMI (e-mail naar snmindiasecretary@gmail.com, gemaild 4 augustus 2026)
+
+**Onderwerp:** Dicom Viewer — free iOS app for viewing DICOM images
+
+```
+Dear SNMI team,
+
+I'm Ed Cafferata, an independent iOS developer. I built Dicom Viewer, a free
+native app that lets clinicians and patients view DICOM medical images
+(X-ray, CT, MRI, ultrasound, nuclear medicine studies) directly on iPhone or
+iPad — no account, no cloud upload, no PACS connection required. Everything
+is processed on-device.
+
+Given the growing role of mobile access to imaging, I thought this might be
+useful to share with your members, or as a resource for patients who want to
+view scans they've been given on a CD or USB drive.
+
+Not a paid promotion request — just thought it might be a genuinely useful
+tool for the community you represent.
+
+App Store: https://apps.apple.com/in/app/dicom-viewer-by-the-it-crowd/id1483496527
+More info: https://cafferata.info
+
+Best regards,
+Ed Cafferata — The IT Crowd
+edcafferata@icloud.com
 ```
