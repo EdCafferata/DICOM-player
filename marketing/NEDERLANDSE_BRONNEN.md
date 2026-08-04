@@ -189,6 +189,7 @@ pas bij een concrete vraag, stuur geen koude mail naar ziekenhuizen.
 - [x] Nieuwe vondst — Emerce gemaild (redactie@emerce.nl) — 24 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Nieuwe vondst — Dutch IT Channel gemaild (redactie@dutchitchannel.nl) — 25 juli 2026, verzonden via iCloud Mail, wacht op reactie
 - [x] Nieuwe vondst — NVNG gemaild (info@nvng.nl) — 4 augustus 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [ ] Nieuwe vondst (4 augustus 2026, avondronde) — BEN (Beroepsvereniging Echoscopisten Nederland) gevonden, contact secretariaat@echoscopisten.nl — aanpalende doelgroep bij NVMBR/NVKF: echoscopisten maken/bekijken dagelijks echobeelden (ook DICOM). Geen zelfpromotie-verbod gevonden. Tekst hieronder klaargezet, **nog niet verzonden** (dagquotum voor 4 augustus al gehaald met NVNG + AAVR/PGIMER/CMC Vellore-retries), kandidaat voor de volgende run
 
 ---
 
@@ -613,6 +614,33 @@ Geen advertentieverzoek, maar ik dacht dat dit voor nucleair geneeskundigen
 of via jullie kanalen interessant kan zijn, bijvoorbeeld als hulpmiddel om
 snel een scan of referentiebeeld onderweg te bekijken, of als tip aan
 patiënten die hun eigen beelden willen meenemen.
+
+App Store: https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527
+Meer info: https://cafferata.info
+
+Met vriendelijke groet,
+Ed Cafferata — The IT Crowd
+edcafferata@icloud.com
+```
+
+---
+
+## Kant-en-klare tekst — BEN (e-mail naar secretariaat@echoscopisten.nl, klaargezet 4 augustus 2026, nog niet verzonden)
+
+**Onderwerp:** Dicom Viewer — gratis iOS-app voor het bekijken van DICOM-beelden
+
+```
+Beste BEN,
+
+Ik ben Ed Cafferata van The IT Crowd. Ik heb Dicom Viewer ontwikkeld, een
+gratis iOS-app waarmee DICOM-beelden (röntgen, CT, MRI, echo) rechtstreeks op
+iPhone of iPad bekeken kunnen worden — zonder account, cloud-upload of
+PACS-koppeling. Alles blijft lokaal op het toestel.
+
+Geen advertentieverzoek, maar ik dacht dat dit voor echoscopisten of via
+jullie kanalen interessant kan zijn, bijvoorbeeld als hulpmiddel om snel een
+referentiebeeld te bekijken onderweg, of als tip aan patiënten die hun eigen
+echobeelden willen meenemen.
 
 App Store: https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527
 Meer info: https://cafferata.info

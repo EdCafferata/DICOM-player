@@ -290,6 +290,7 @@ beroepsgroep. Geen zelfpromotie- of AI-verbod gevonden. Contact:
 - [x] PGIMER Chandigarh gemaild (4 augustus 2026, op tip van Ed: bij geen departement-e-mail het algemene instituutadres proberen) — pgimer@chd.nic.in, verzonden via iCloud Mail, met verzoek om doorsturen naar Radiodiagnosis-afdeling, bevestigd in Verstuurd-map, (nog) geen bounce ontvangen, wacht op reactie
 - [x] CMC Vellore Radiology — eerste poging info@cmcvelloreradiology.org (4 augustus 2026) **gebounced**: "550 No Such User Here" — dat adres bestaat niet. Ed vond zelf twee echte adressen op cmcvelloreradiology.org/interventional-radiology.php: **radio@cmcvellore.ac.in** (algemeen, Division of Clinical Radiology) en **interventionalradiology@cmcvellore.ac.in** (specifiek IR). Opnieuw gemaild naar radio@cmcvellore.ac.in (4 augustus 2026), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Nieuwe vondst — SNMI (Society of Nuclear Medicine, India) gemaild (snmindiasecretary@gmail.com) — 4 augustus 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [ ] Nieuwe vondst (4 augustus 2026, avondronde) — SIR (Society of Indian Radiographers, opgericht 2001, hoofdkantoor NIMHANS Bengaluru) gevonden, contact info@radiographers.org — geverifieerd een aparte organisatie van het al gemailde ISRT (20 juli 2026), geen fusie/rebranding. Geen zelfpromotie- of AI-verbod gevonden. Tekst hieronder klaargezet, **nog niet verzonden** (dagquotum voor 4 augustus al gehaald), kandidaat voor de volgende run
 
 ---
 
@@ -654,6 +655,33 @@ tool for the community you represent.
 
 App Store: https://apps.apple.com/in/app/dicom-viewer-by-the-it-crowd/id1483496527
 More info: https://cafferata.info
+
+Best regards,
+Ed Cafferata — The IT Crowd
+edcafferata@icloud.com
+```
+
+## Kant-en-klare tekst — SIR (e-mail naar info@radiographers.org, klaargezet 4 augustus 2026, nog niet verzonden)
+
+**Onderwerp:** Dicom Viewer — free iOS app for viewing DICOM images
+
+```
+Dear SIR team,
+
+I'm Ed Cafferata, an independent iOS developer. I built Dicom Viewer, a free
+native app that lets clinicians, radiographers and patients view DICOM
+medical images (X-ray, CT, MRI, ultrasound) directly on iPhone or iPad — no
+account, no cloud upload, no PACS connection required. Everything is
+processed on-device.
+
+Given the growing role of mobile access to imaging, I thought this might be
+useful to share with your members, or as a resource for patients who want to
+view scans they've been given on a CD or USB drive.
+
+Not a paid promotion request — just thought it might be a genuinely useful
+tool for the community you represent.
+
+App Store: https://apps.apple.com/in/app/dicom-viewer-by-the-it-crowd/id1483496527
 
 Best regards,
 Ed Cafferata — The IT Crowd
