@@ -287,6 +287,8 @@ beroepsgroep. Geen zelfpromotie- of AI-verbod gevonden. Contact:
 - [x] Nieuwe vondst (26 juli 2026, universiteiten) — AIIMS Radiodiagnosis gemaild (radiodiagnosis@aiims.edu), verzonden via iCloud Mail, wacht op reactie
 - [ ] Onderzocht, nog geen bruikbaar contact — PGIMER Chandigarh (alleen algemeen instituuttelefoonnummer) en CMC Vellore (alleen individuele-faculteitsadressen, geen departement-e-mail) — kandidaten voor een volgende run als een beter contact opduikt
 - [ ] Nieuwe zoektocht (27 juli 2026) — opnieuw gezocht naar contact voor PGIMER Chandigarh en CMC Vellore: CMC Vellore heeft een eigen radiologie-site (cmcvelloreradiology.org/contact-us.php) maar ook die toont alleen telefoonnummers, geen e-mail. PGIMER: alleen het algemene instituutadres (pgimer@chd.nic.in). ETHealthworld opnieuw gecheckt: nog steeds geen gratis redactie-ingang gevonden. Alle drie blijven "on hold"
+- [x] PGIMER Chandigarh gemaild (4 augustus 2026, op tip van Ed: bij geen departement-e-mail het algemene instituutadres proberen) — pgimer@chd.nic.in, verzonden via iCloud Mail, met verzoek om doorsturen naar Radiodiagnosis-afdeling, bevestigd in Verstuurd-map, (nog) geen bounce ontvangen, wacht op reactie
+- [x] CMC Vellore Radiology gemaild (4 augustus 2026, zelfde info@domain-aanpak) — info@cmcvelloreradiology.org, verzonden via iCloud Mail, bevestigd in Verstuurd-map, (nog) geen bounce ontvangen, wacht op reactie
 - [x] Nieuwe vondst — SNMI (Society of Nuclear Medicine, India) gemaild (snmindiasecretary@gmail.com) — 4 augustus 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 
 ---
