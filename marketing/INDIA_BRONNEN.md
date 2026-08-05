@@ -290,7 +290,8 @@ beroepsgroep. Geen zelfpromotie- of AI-verbod gevonden. Contact:
 - [x] PGIMER Chandigarh gemaild (4 augustus 2026, op tip van Ed: bij geen departement-e-mail het algemene instituutadres proberen) — pgimer@chd.nic.in, verzonden via iCloud Mail, met verzoek om doorsturen naar Radiodiagnosis-afdeling, bevestigd in Verstuurd-map, (nog) geen bounce ontvangen, wacht op reactie
 - [x] CMC Vellore Radiology — eerste poging info@cmcvelloreradiology.org (4 augustus 2026) **gebounced**: "550 No Such User Here" — dat adres bestaat niet. Ed vond zelf twee echte adressen op cmcvelloreradiology.org/interventional-radiology.php: **radio@cmcvellore.ac.in** (algemeen, Division of Clinical Radiology) en **interventionalradiology@cmcvellore.ac.in** (specifiek IR). Opnieuw gemaild naar radio@cmcvellore.ac.in (4 augustus 2026), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Nieuwe vondst — SNMI (Society of Nuclear Medicine, India) gemaild (snmindiasecretary@gmail.com) — 4 augustus 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
-- [ ] Nieuwe vondst (4 augustus 2026, avondronde) — SIR (Society of Indian Radiographers, opgericht 2001, hoofdkantoor NIMHANS Bengaluru) gevonden, contact info@radiographers.org — geverifieerd een aparte organisatie van het al gemailde ISRT (20 juli 2026), geen fusie/rebranding. Geen zelfpromotie- of AI-verbod gevonden. Tekst hieronder klaargezet, **nog niet verzonden** (dagquotum voor 4 augustus al gehaald), kandidaat voor de volgende run
+- [x] Nieuwe vondst — SIR (Society of Indian Radiographers) gemaild (info@radiographers.org) — 5 augustus 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [x] Nieuwe zoektocht (5 augustus 2026) — gezocht naar aanvullende India-kanalen (teleradiologie-nieuwssites, startup-persplatforms, app-directories). IJRI (Indian Journal of Radiology and Imaging, IRIA's eigen wetenschappelijke tijdschrift) gevonden maar **niet gebruikt**: is een peer-reviewed vaktijdschrift voor artikel-inzendingen, geen persbericht-/app-tip-kanaal, en IRIA zelf is al gemaild (13 juli 2026). Entrackr/TechCircle (startup-nieuws) en IndianAIapps opnieuw bekeken, geen bruikbare gratis-en-passende ingang gevonden (IndianAIapps al eerder afgewezen wegens AI-focus). Geen nieuw geschikt kanaal deze ronde
 
 ---
 
@@ -661,7 +662,7 @@ Ed Cafferata — The IT Crowd
 edcafferata@icloud.com
 ```
 
-## Kant-en-klare tekst — SIR (e-mail naar info@radiographers.org, klaargezet 4 augustus 2026, nog niet verzonden)
+## Kant-en-klare tekst — SIR (e-mail naar info@radiographers.org, gemaild 5 augustus 2026)
 
 **Onderwerp:** Dicom Viewer — free iOS app for viewing DICOM images
 

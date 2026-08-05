@@ -155,6 +155,15 @@ nucleaire scans (SPECT, PET) zijn ook DICOM-bestanden, dus generieke DICOM-viewi
 relevant voor deze beroepsgroep. Geen zelfpromotie- of AI-verbod gevonden. Contact:
 **info@nvng.nl** (algemeen, via nvng.nl). **Gemaild 4 augustus 2026.**
 
+### Nieuwe vondst (5 augustus 2026) — Tijdschrift voor Nucleaire Geneeskunde
+Los van de NVNG-vereniging zelf (hierboven, gemaild 4 augustus) blijkt er een apart
+vakblad te bestaan met een eigen uitgever/redactie (Kloosterhof Neer B.V.) — een
+persbericht-kanaal in dezelfde stijl als Golf 2 (Zorgvisie/Skipr/ICT&Health), niet
+een dubbele poging bij dezelfde vereniging. Geen kosten of zelfpromotie-verbod
+gevonden bij de redactie-/kopij-pagina's. Contact: **info@kloosterhof.nl** (algemene
+redactie-/uitgeversmailbox, via tijdschriftvoornucleairegeneeskunde.nl/kopij/).
+**Gemaild 5 augustus 2026.**
+
 ### Golf 6 — Patiëntkant ziekenhuizen (laagste prioriteit, geen directe outreach)
 Ziekenhuizen die van cd naar digitaal overstappen (Catharina Ziekenhuis, DC
 Klinieken, ViaSana) zijn geen outreach-doelwit, maar wel een goede hoek voor content
@@ -189,7 +198,8 @@ pas bij een concrete vraag, stuur geen koude mail naar ziekenhuizen.
 - [x] Nieuwe vondst — Emerce gemaild (redactie@emerce.nl) — 24 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Nieuwe vondst — Dutch IT Channel gemaild (redactie@dutchitchannel.nl) — 25 juli 2026, verzonden via iCloud Mail, wacht op reactie
 - [x] Nieuwe vondst — NVNG gemaild (info@nvng.nl) — 4 augustus 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
-- [ ] Nieuwe vondst (4 augustus 2026, avondronde) — BEN (Beroepsvereniging Echoscopisten Nederland) gevonden, contact secretariaat@echoscopisten.nl — aanpalende doelgroep bij NVMBR/NVKF: echoscopisten maken/bekijken dagelijks echobeelden (ook DICOM). Geen zelfpromotie-verbod gevonden. Tekst hieronder klaargezet, **nog niet verzonden** (dagquotum voor 4 augustus al gehaald met NVNG + AAVR/PGIMER/CMC Vellore-retries), kandidaat voor de volgende run
+- [x] Nieuwe vondst — BEN (Beroepsvereniging Echoscopisten Nederland) gemaild (secretariaat@echoscopisten.nl) — 5 augustus 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [x] Nieuwe vondst (5 augustus 2026) — Tijdschrift voor Nucleaire Geneeskunde gemaild (info@kloosterhof.nl) — verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 
 ---
 
@@ -625,7 +635,7 @@ edcafferata@icloud.com
 
 ---
 
-## Kant-en-klare tekst — BEN (e-mail naar secretariaat@echoscopisten.nl, klaargezet 4 augustus 2026, nog niet verzonden)
+## Kant-en-klare tekst — BEN (e-mail naar secretariaat@echoscopisten.nl, gemaild 5 augustus 2026)
 
 **Onderwerp:** Dicom Viewer — gratis iOS-app voor het bekijken van DICOM-beelden
 
@@ -641,6 +651,34 @@ Geen advertentieverzoek, maar ik dacht dat dit voor echoscopisten of via
 jullie kanalen interessant kan zijn, bijvoorbeeld als hulpmiddel om snel een
 referentiebeeld te bekijken onderweg, of als tip aan patiënten die hun eigen
 echobeelden willen meenemen.
+
+App Store: https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527
+Meer info: https://cafferata.info
+
+Met vriendelijke groet,
+Ed Cafferata — The IT Crowd
+edcafferata@icloud.com
+```
+
+---
+
+## Kant-en-klare tekst — Tijdschrift voor Nucleaire Geneeskunde (e-mail naar info@kloosterhof.nl, gemaild 5 augustus 2026)
+
+**Onderwerp:** Suggestie voor het Tijdschrift voor Nucleaire Geneeskunde — gratis iOS DICOM-viewer
+
+```
+Beste redactie,
+
+Ik ben Ed Cafferata van The IT Crowd. Ik heb Dicom Viewer ontwikkeld, een
+gratis iOS-app waarmee DICOM-beelden (röntgen, CT, MRI, echo, nucleaire
+scans zoals SPECT/PET) rechtstreeks op iPhone of iPad bekeken kunnen worden
+— zonder account, cloud-upload of PACS-koppeling. Alles blijft lokaal op
+het toestel.
+
+Geen advertentieverzoek, maar ik dacht dat dit voor nucleair geneeskundigen
+of via jullie kanalen interessant kan zijn, bijvoorbeeld als hulpmiddel om
+snel een referentiebeeld of scan onderweg te bekijken, of als tip aan
+patiënten die hun eigen beelden willen meenemen.
 
 App Store: https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527
 Meer info: https://cafferata.info

@@ -282,7 +282,8 @@ sterke extra vondsten voor India specifiek dit uur.
 - [ ] Nieuwe vondst (27 juli 2026) — AAVR: geen los e-mailadres gevonden (alleen webformulier + postadres op aavr.org/contact-us), niet gemaild, kandidaat voor een volgende run
 - [x] AAVR opnieuw gecheckt (4 augustus 2026) — bevestigd: geen e-mailadres beschikbaar, alleen contactformulier (aavr.org/contact-us). De pagina noemt daarnaast dat "unrelated and related company products may be mentioned and/or paid advertising may be displayed" — geen expliciet zelfpromotie-verbod, maar wel een signaal dat het kanaal primair sponsorship-georiënteerd is. Blijft "on hold": webformulier moet door Ed zelf ingevuld/verzonden worden, niet automatisch te benaderen via e-mail
 - [x] Nieuwe vondst (4 augustus 2026) — AAOMR (American Academy of Oral and Maxillofacial Radiology) gemaild (info@aaomr.org), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
-- [ ] Nieuwe vondst (4 augustus 2026, avondronde) — SNMMI (Society of Nuclear Medicine and Molecular Imaging, VS) gevonden, contact salexand@snmmi.org (Susan Alexander, Associate Director of Publications) — parallel aan de al gemailde NVNG (NL) en SNMI (India). Tekst hieronder klaargezet, **nog niet verzonden** (dagquotum voor 4 augustus al gehaald met NVNG/SNMI/AAOMR + AAVR/PGIMER/CMC Vellore-retries), kandidaat voor de volgende run
+- [x] Nieuwe vondst — SNMMI (Society of Nuclear Medicine and Molecular Imaging, VS) gemaild (salexand@snmmi.org) — 5 augustus 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [ ] Nieuwe vondst (5 augustus 2026) — Student Doctor Network (forums.studentdoctor.net), radiologieforum (forums.studentdoctor.net/forums/radiology.42/) — grote Amerikaanse community van medisch studenten/residents/fellows. Regels gecontroleerd: zelfpromotie is toegestaan zolang je transparant bent over dat je een product/bedrijf vertegenwoordigt (geen algeheel verbod zoals bij r/india of r/radiology). Vereist wel een eigen forumaccount om te posten — dat kan Claude niet zelf aanmaken (accounts aanmaken is niet toegestaan). Geen tekst voorbereid; als Ed hier wil posten moet hij zelf een account aanmaken, daarna kan een introductiepost worden voorbereid
 - [x] AAVR — info@aavr.org-poging (4 augustus 2026, op tip van Ed: bij geen bekend adres een info@domain proberen) **gebounced**: "550-Please turn on SMTP Authentication in your mail client" van hun mailhost (orangina.asoshared.com) — het domein accepteert kennelijk geen onbeauthenticeerde inkomende mail op dit adres. info@aavr.org bestaat dus niet (of niet zo), **niet opnieuw proberen** — enige overgebleven route is het webformulier (aavr.org/contact-us), door Ed zelf in te vullen
 - [x] SAR (Society of Abdominal Radiology) — retroactief gelogd: gemaild op education@abdominalradiology.org (30 juli 2026, ontbrak per abuis in deze checklist). **Reactie ontvangen 3 augustus 2026** van Shannon Cook, MHA (Program Manager, Veritas Association Management, scook@veritasamc.com): "Thank you for reaching out. I have forwarded your information to leadership for review." — positieve reactie, geen verdere actie nodig, wacht op besluit van SAR-leiderschap
 
@@ -1233,7 +1234,7 @@ Ed Cafferata — The IT Crowd
 edcafferata@icloud.com
 ```
 
-## Kant-en-klare tekst — SNMMI (e-mail naar salexand@snmmi.org, klaargezet 4 augustus 2026, nog niet verzonden)
+## Kant-en-klare tekst — SNMMI (e-mail naar salexand@snmmi.org, gemaild 5 augustus 2026)
 
 **Onderwerp:** Free tool for the nuclear medicine community — Dicom Viewer
 
