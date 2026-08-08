@@ -287,6 +287,7 @@ sterke extra vondsten voor India specifiek dit uur.
 - [x] AAVR — info@aavr.org-poging (4 augustus 2026, op tip van Ed: bij geen bekend adres een info@domain proberen) **gebounced**: "550-Please turn on SMTP Authentication in your mail client" van hun mailhost (orangina.asoshared.com) — het domein accepteert kennelijk geen onbeauthenticeerde inkomende mail op dit adres. info@aavr.org bestaat dus niet (of niet zo), **niet opnieuw proberen** — enige overgebleven route is het webformulier (aavr.org/contact-us), door Ed zelf in te vullen
 - [x] SAR (Society of Abdominal Radiology) — retroactief gelogd: gemaild op education@abdominalradiology.org (30 juli 2026, ontbrak per abuis in deze checklist). **Reactie ontvangen 3 augustus 2026** van Shannon Cook, MHA (Program Manager, Veritas Association Management, scook@veritasamc.com): "Thank you for reaching out. I have forwarded your information to leadership for review." — positieve reactie, geen verdere actie nodig, wacht op besluit van SAR-leiderschap
 - [x] Nieuwe vondst (8 augustus 2026) — Springboard "App Picks" (Daryl Baxter) gemaild (springboard@darylbaxter.com), verzonden via iCloud Mail, wacht op reactie
+- [x] Nieuwe vondst (8 augustus 2026, tweede ronde) — SIIM (Society for Imaging Informatics in Medicine) gemaild (info@siim.org), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 
 ---
 
@@ -752,6 +753,17 @@ iOS/Mac-apps uitlicht (zie bijv. de mei/juli/augustus 2026-edities). Contact:
 zelfde profiel als TapSmart/Indie Dev Monday/9to5Mac Indie App Spotlight
 hierboven (freelance schrijver, eigen contact-e-mailadres, geen formulier).
 **Gemaild 8 augustus 2026.**
+
+## Nieuw gevonden (8 augustus 2026, tweede ronde) — SIIM (Society for Imaging Informatics in Medicine)
+
+Amerikaanse vakvereniging specifiek gericht op imaging informatics — een directe
+inhoudelijke match voor een DICOM-viewer-app, en nog niet eerder benaderd.
+Contact geverifieerd via siim.org/about-siim/contact-us/: **info@siim.org**
+(algemene inbox, geen aparte pers-/nieuwsbrief-adressen gevonden). SIIM heeft
+een eigen studenten-/resident-lidmaatschapscategorie (residents, fellows,
+PhD-kandidaten, MBB-studenten, IT/informatica-studenten met interesse in
+imaging informatics). Geen zelfpromotie- of AI-verbod gevonden, geen betaalde
+gate op het contactkanaal. **Gemaild 8 augustus 2026.**
 
 ## Nieuw gevonden (25 juli 2026) — Society of Breast Imaging (SBI)
 Amerikaanse vakvereniging voor borstbeeldvorming (mammografie/echo/MRI van de
@@ -1288,4 +1300,23 @@ Happy to send screenshots or answer any questions. Thanks for considering it!
 Best,
 Ed Cafferata — The IT Crowd
 edcafferata@icloud.com
+```
+
+## Kant-en-klare tekst — SIIM (e-mail naar info@siim.org, gemaild 8 augustus 2026)
+
+**Onderwerp:** Free tool for imaging informatics students — Dicom Viewer, native iOS DICOM viewer
+
+```
+Hi SIIM team,
+
+I'm Ed Cafferata, founder of The IT Crowd. I built Dicom Viewer, a free native iOS app for viewing DICOM medical images (X-ray, CT, MRI, ultrasound) on iPhone and iPad — thought it might be worth mentioning to your student and resident members interested in imaging informatics.
+
+It's privacy-first: everything runs on-device, no account, no cloud upload, no PACS connection. Features include a cine player for multi-frame studies, Window/Level presets (Abdomen, Lung, Bone, Brain), a series navigator and frame export — built for quick review and learning on the go, not as a diagnostic replacement for a full workstation.
+
+App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Happy to answer any questions or provide more detail. Thanks for considering it!
+
+Best,
+Ed Cafferata — The IT Crowd
 ```
