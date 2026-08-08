@@ -286,6 +286,7 @@ sterke extra vondsten voor India specifiek dit uur.
 - [ ] Nieuwe vondst (5 augustus 2026) — Student Doctor Network (forums.studentdoctor.net), radiologieforum (forums.studentdoctor.net/forums/radiology.42/) — grote Amerikaanse community van medisch studenten/residents/fellows. Regels gecontroleerd: zelfpromotie is toegestaan zolang je transparant bent over dat je een product/bedrijf vertegenwoordigt (geen algeheel verbod zoals bij r/india of r/radiology). Vereist wel een eigen forumaccount om te posten — dat kan Claude niet zelf aanmaken (accounts aanmaken is niet toegestaan). Geen tekst voorbereid; als Ed hier wil posten moet hij zelf een account aanmaken, daarna kan een introductiepost worden voorbereid
 - [x] AAVR — info@aavr.org-poging (4 augustus 2026, op tip van Ed: bij geen bekend adres een info@domain proberen) **gebounced**: "550-Please turn on SMTP Authentication in your mail client" van hun mailhost (orangina.asoshared.com) — het domein accepteert kennelijk geen onbeauthenticeerde inkomende mail op dit adres. info@aavr.org bestaat dus niet (of niet zo), **niet opnieuw proberen** — enige overgebleven route is het webformulier (aavr.org/contact-us), door Ed zelf in te vullen
 - [x] SAR (Society of Abdominal Radiology) — retroactief gelogd: gemaild op education@abdominalradiology.org (30 juli 2026, ontbrak per abuis in deze checklist). **Reactie ontvangen 3 augustus 2026** van Shannon Cook, MHA (Program Manager, Veritas Association Management, scook@veritasamc.com): "Thank you for reaching out. I have forwarded your information to leadership for review." — positieve reactie, geen verdere actie nodig, wacht op besluit van SAR-leiderschap
+- [x] Nieuwe vondst (8 augustus 2026) — Springboard "App Picks" (Daryl Baxter) gemaild (springboard@darylbaxter.com), verzonden via iCloud Mail, wacht op reactie
 
 ---
 
@@ -742,6 +743,15 @@ one-liner, wat nieuw is, App Store/TestFlight-link en dev-naam/social links —
 "no forms, no accounts", gratis, de maker leest alles zelf persoonlijk.
 Expliciet bedoeld als zelfpromotie-kanaal (de pagina heet letterlijk "Look At
 Me"), dus geen twijfel over de regels. **Gemaild 24 juli 2026.**
+
+## Nieuw gevonden (8 augustus 2026) — Springboard "App Picks" (Daryl Baxter)
+Fortnightly Engelstalige tech/cultuur-newsletter van freelance journalist Daryl
+Baxter (darylbaxter.com), met een terugkerende "App Picks"-rubriek die indie
+iOS/Mac-apps uitlicht (zie bijv. de mei/juli/augustus 2026-edities). Contact:
+**springboard@darylbaxter.com**. Geen kosten of zelfpromotie-verbod gevonden —
+zelfde profiel als TapSmart/Indie Dev Monday/9to5Mac Indie App Spotlight
+hierboven (freelance schrijver, eigen contact-e-mailadres, geen formulier).
+**Gemaild 8 augustus 2026.**
 
 ## Nieuw gevonden (25 juli 2026) — Society of Breast Imaging (SBI)
 Amerikaanse vakvereniging voor borstbeeldvorming (mammografie/echo/MRI van de
@@ -1254,6 +1264,26 @@ a reference image or teaching case on the go.
 App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
 
 Happy to answer any questions. Thanks for considering it!
+
+Best,
+Ed Cafferata — The IT Crowd
+edcafferata@icloud.com
+```
+
+## Kant-en-klare tekst — Springboard "App Picks" (e-mail naar springboard@darylbaxter.com, gemaild 8 augustus 2026)
+
+**Onderwerp:** Indie app for App Picks — Dicom Viewer (privacy-first DICOM viewer)
+
+```
+Hi Daryl,
+
+I came across your App Picks series and wanted to suggest Dicom Viewer: a free native iOS app (iPhone/iPad) for viewing DICOM medical images (X-ray, CT, MRI, ultrasound).
+
+It's built privacy-first — everything runs on-device, no account, no cloud upload, no PACS connection. It serves two audiences: patients who want to open scans from a hospital CD/USB, and clinicians/students/vets who get a cine player, Window/Level presets, a series navigator and frame export. Open source under GPL-3.0, with a DICOM parser written from scratch (zero external dependencies).
+
+App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Happy to send screenshots or answer any questions. Thanks for considering it!
 
 Best,
 Ed Cafferata — The IT Crowd
