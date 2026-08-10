@@ -261,6 +261,19 @@ PET) zijn ook DICOM-bestanden, dus generieke DICOM-viewing is relevant voor deze
 beroepsgroep. Geen zelfpromotie- of AI-verbod gevonden. Contact:
 **snmindiasecretary@gmail.com**. **Gemaild 4 augustus 2026.**
 
+### Nieuwe zoektocht (9 augustus 2026) — geen nieuwe onafhankelijke kanalen gevonden
+Gezocht naar Indiase radiologie-studentenverenigingen/teleradiologie-nieuws en
+naar een India-specifieke veterinaire-radiologie-vereniging. Resultaten wezen
+vooral naar al bekende namen (IRIA, ISRT, IVRA). Wel een aangrenzende vondst:
+**AAVDI (Australasian Association of Veterinary Diagnostic Imaging,
+aavdi.org)** — internationale (niet India-specifieke) Engelstalige
+veterinaire-radiologie-vereniging, aanpalend aan de al gemailde ACVR (VS) en
+de nog te verzenden IVRA (internationaal). Alleen een webformulier
+(aavdi.org/contact-us/), geen los e-mailadres gevonden. Lagere prioriteit
+(niet India-specifiek, kleine vereniging) — niet benaderd deze sessie, staat
+hier als kandidaat voor een latere ronde als de VS/India-veterinaire hoek
+verder wordt uitgebreid.
+
 ## Checklist
 
 - [ ] 🏆 Apple Featuring Nomination voor India ingediend in App Store Connect (Ed zelf, buiten browserbereik)

@@ -13,10 +13,10 @@ opleveren (goed voor SEO-verkeer).
 
 | Site | Artikel | Aanpak |
 |---|---|---|
-| **iMedicalApps** ⚠️ | imedicalapps.com — fysiek-gereviewde medische apps, 400k views/mnd | Contactformulier (imedicalapps.com/contact/) is **kapot** (reCAPTCHA geeft "Invalid site key", 13 juli 2026 geconstateerd) en er staat geen los e-mailadres — alleen redacteursnamen (Iltifat Husain MD, Satish Misra MD). About-pagina lijkt al jaren niet bijgewerkt. Opnieuw proberen op een later moment, of via Twitter/X (@IltifatMD) |
+| **iMedicalApps** ⚠️ | imedicalapps.com — fysiek-gereviewde medische apps, 400k views/mnd | Contactformulier (imedicalapps.com/contact/) is **kapot** (reCAPTCHA geeft "Invalid site key", 13 juli 2026 geconstateerd) en er staat geen los e-mailadres — alleen redacteursnamen (Iltifat Husain MD, Satish Misra MD). About-pagina lijkt al jaren niet bijgewerkt. **Update 9 augustus 2026:** opnieuw gecontroleerd — nog steeds exact dezelfde "Invalid site key"-fout, dus nog steeds niet bruikbaar. Alternatief blijft Twitter/X (@IltifatMD, hoofdredacteur) — niet geprobeerd deze sessie, kandidaat voor Ed zelf |
 | **RadioGyan** ✅ | radiogyan.com/articles/dicom-viewers/ | Contactformulier: radiogyan.com/contact/ (radiologie-blog van Dr. Amar Udare) — **gemaild door Ed, 10 juli 2026** |
 | **MEDevel** ✅✅✅ | medevel.com (open-source healthcare tools) | Contact: medevel.com/about-contact/ — check ook hun GitHub-issues voor suggesties — **gemaild door Ed, 10 juli 2026. Reactie ontvangen 10 juli 2026: "We are ready to publish about it, please send us a full features list." Featurelijst-reactie (zie kant-en-klare tekst hieronder) verzonden door Ed, 10 juli 2026 — wacht op publicatie.** |
-| **IMAIOS blog** ⚠️ | imaios.com/en/resources/blog/mobile-dicom-viewer-apps | Bedrijf achter concurrent IDV. **Sterke pitch:** hun artikel zegt letterlijk "we did not find any other iOS applications that are free" (alleen Horos $14,99/jr en Osirix $9,99/mnd genoemd) — Dicom Viewer is precies die ontbrekende gratis iOS-app. Contactformulier faalde 2x met HTTP 400 (13 juli 2026, reCAPTCHA gaf 503) — bleek tijdelijk: een bugmelding over dat probleem is bij de 3e poging wél gelukt ("Your message has been sent successfully"). IMAIOS (Hyeyeon Chotard) bevestigde 15 juli 2026 (ticket #291854) dat de bugmelding is doorgezet naar hun devteam. **De eigenlijke content-suggestie (Partnership-categorie) is nog niet successvol verzonden** — het formulier werkte al bij de 3e poging, dus die kan alsnog verstuurd worden. |
+| **IMAIOS blog** ⚠️ | imaios.com/en/resources/blog/mobile-dicom-viewer-apps | Bedrijf achter concurrent IDV. **Sterke pitch:** hun artikel zegt letterlijk "we did not find any other iOS applications that are free" (alleen Horos $14,99/jr en Osirix $9,99/mnd genoemd) — Dicom Viewer is precies die ontbrekende gratis iOS-app. Contactformulier faalde 2x met HTTP 400 (13 juli 2026, reCAPTCHA gaf 503) — bleek tijdelijk: een bugmelding over dat probleem is bij de 3e poging wél gelukt ("Your message has been sent successfully"). IMAIOS (Hyeyeon Chotard) bevestigde 15 juli 2026 (ticket #291854) dat de bugmelding is doorgezet naar hun devteam. **Update 9 augustus 2026:** artikel opnieuw gecontroleerd — pitch nog steeds geldig (nog steeds geen gratis iOS-viewer genoemd). Contactformulier (imaios.com/en/contact-us, categorie "Partnership") volledig ingevuld met de content-suggestie-tekst (zie hieronder) — **bewust niet verzonden**, form heeft een zichtbare reCAPTCHA-badge en Claude klikt niet op verzendknoppen achter een CAPTCHA. Staat klaar voor Ed om te controleren en te versturen. |
 | **Medicai blog** | blog.medicai.io/en/mobile-dicom-viewer/ | Concurrent (cloud PACS), maar blog staat open voor vermeldingen — contact via medicai.io |
 | **PostDICOM blog** ✅ | postdicom.com/en/blog/top-25-free-dicom-viewers | Concurrent (NL bedrijf, Utrecht), roundup "Top 25 Free DICOM Viewers" — **gemaild via contactformulier door Ed, 13 juli 2026 ("Your message was sent successfully"), wacht op reactie** |
 | **Encord blog** | encord.com/blog/best-dicom-viewers/ | ML data-platform, SEO-roundup — contact via encord.com |
@@ -171,6 +171,40 @@ Best,
 Ed Cafferata
 The IT Crowd
 edcafferata@icloud.com
+```
+
+### 3c. IMAIOS-contactformulier (categorie Partnership) — klaargezet 9 augustus 2026, niet verzonden
+
+Ingevuld op imaios.com/en/contact-us (Voornaam: Ed, Achternaam: Cafferata, E-mail:
+edcafferata@icloud.com, categorie: Partnership). **Niet verzonden** — het formulier
+heeft een zichtbare reCAPTCHA-badge, en Claude klikt niet op verzendknoppen achter
+een CAPTCHA. Ed kan dit zelf controleren en versturen op de bovenstaande URL.
+
+Onderwerp: `Free native iOS DICOM viewer — for your "Best mobile DICOM viewer" article`
+
+```
+Hi IMAIOS team,
+
+I enjoyed your "Best mobile DICOM viewer" article. You note that you didn't
+find any free iOS DICOM viewer apps (only Horos Mobile at $14.99/yr and
+Osirix HD at $9.99/mo are listed for iOS). I built exactly that: Dicom
+Viewer, a free native iOS app for viewing DICOM medical images (X-ray, CT,
+MRI, ultrasound) on iPhone and iPad.
+
+It's privacy-first: everything runs on-device, no account, no cloud upload,
+no PACS connection required. Features include a cine player for multi-frame
+studies, Window/Level presets (Abdomen, Lung, Bone, Brain), an automatic
+series navigator, and frame export to PNG/JPEG. Open source under GPL-3.0,
+with a custom DICOM parser written from scratch.
+
+App Store: https://apps.apple.com/app/id1483496527
+Site: https://cafferata.info
+
+Would be great if it could be added to your comparison table as a free iOS
+option. Happy to answer any questions or send screenshots.
+
+Best,
+Ed Cafferata — The IT Crowd
 ```
 
 ### 4. Helpende reactie voor kanker.nl / NL-forums (categorie D)

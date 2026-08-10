@@ -142,6 +142,14 @@ nieuwssites. Resultaten wezen vooral naar het Zorg & ICT-vakbeursevenement
 25 juli 2026). Geen nieuw, nog niet benaderd kanaal gevonden deze ronde — de
 bestaande NL-checklist dekt de kansrijke kanalen nog steeds goed.
 
+### Nieuwe zoektocht (9 augustus 2026) — geen nieuwe kanalen gevonden
+Gezocht naar een Nederlandse studentenvereniging voor radiodiagnostisch
+laboranten/MBB'ers (opleiding MBRT bij Hanze, Fontys, Inholland, Amstel
+Academie). Geen aparte studentenvereniging gevonden — alleen de reguliere
+opleidingspagina's van de hogescholen/ziekenhuizen, geen nieuw
+outreach-kanaal. De bestaande NL-checklist dekt de kansrijke kanalen nog
+steeds goed; vrijwel de hele lijst staat al op afgerond.
+
 ### Nieuwe zoektocht (26 juli 2026) — geen nieuwe kanalen gevonden
 Gezocht naar aanvullende Nederlandse bronnen (studentenverenigingen radiodiagnostisch
 laboranten, nieuwe teleradiologie-nieuwssites). Geen concrete nieuwe kanalen gevonden —

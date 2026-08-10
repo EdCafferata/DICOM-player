@@ -235,6 +235,18 @@ sterke extra vondsten voor India specifiek dit uur.
 
 ---
 
+### Nieuwe zoektocht (9 augustus 2026) — geen nieuwe onafhankelijke kanalen gevonden
+Gezocht naar een apart ASRT-studentenafdeling-nieuwsbrief-inzendadres (los van
+het al gemailde publications@asrt.org, 20 juli 2026) en naar nieuwe radiologie-
+app-reviewsites. Geen apart studentenkanaal gevonden bij ASRT. Twee sites
+onderzocht: **doRadiology.com** blijkt een bedrijf dat eigen betaalde
+radiologie-apps verkoopt, geen review/submissie-ingang voor andermans apps —
+niet bruikbaar. **SoftwareWorld.co** (radiology-mobile-apps-lijst) blokkeerde
+geautomatiseerde toegang (403) en is naar alle waarschijnlijkheid, net als
+eerder afgewezen SEO-directory's (asoeshop.com e.d.), een generieke
+betaald-georiënteerde lijst-site — niet nagejaagd. Geen nieuw geschikt kanaal
+deze ronde.
+
 ## Checklist
 
 - [x] X-account ingericht (19/20 juli 2026): bestaand persoonlijk account @EdCafferata geactiveerd — bio "iOS developer · Built Dicom Viewer, a free privacy-first DICOM image viewer for iPhone/iPad 🩻" + link cafferata.info + IT Crowd-logo als profielfoto (foto door Ed zelf gezet, browserextensie mocht geen lokaal bestand uploaden). @FOAMrad, @Radiopaedia, @GlobalRadCME en @KevinRiceMD gevolgd (helpende-eerst-strategie) — let op: zoeken op exacte handle in X's zoekbalk gaf valse "no results" voor 2 van de 4 accounts, directe profiel-URL (x.com/<handle>) werkte wel betrouwbaar
