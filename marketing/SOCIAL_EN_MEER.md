@@ -300,6 +300,7 @@ deze ronde.
 - [x] SAR (Society of Abdominal Radiology) — retroactief gelogd: gemaild op education@abdominalradiology.org (30 juli 2026, ontbrak per abuis in deze checklist). **Reactie ontvangen 3 augustus 2026** van Shannon Cook, MHA (Program Manager, Veritas Association Management, scook@veritasamc.com): "Thank you for reaching out. I have forwarded your information to leadership for review." — positieve reactie, geen verdere actie nodig, wacht op besluit van SAR-leiderschap
 - [x] Nieuwe vondst (8 augustus 2026) — Springboard "App Picks" (Daryl Baxter) gemaild (springboard@darylbaxter.com), verzonden via iCloud Mail, wacht op reactie
 - [x] Nieuwe vondst (8 augustus 2026, tweede ronde) — SIIM (Society for Imaging Informatics in Medicine) gemaild (info@siim.org), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [x] Nieuwe vondst (10 augustus 2026) — AHRA (The Association for Medical Imaging Management) gemaild (memberservices@ahra.org), verzonden via iCloud Mail, wacht op reactie
 
 ---
 
@@ -1308,6 +1309,53 @@ It's built privacy-first — everything runs on-device, no account, no cloud upl
 App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
 
 Happy to send screenshots or answer any questions. Thanks for considering it!
+
+Best,
+Ed Cafferata — The IT Crowd
+edcafferata@icloud.com
+```
+
+## Nieuw gevonden (10 augustus 2026) — AHRA (The Association for Medical Imaging Management)
+Amerikaanse vakvereniging voor management van beeldvormingsafdelingen (ziekenhuisafdelingen,
+zelfstandige imaging centers, groepspraktijken) — een hoek die nog niet gedekt was: eerdere
+VS-outreach ging vooral naar clinici/technologen/studenten, niet naar de managementkant van
+imaging-departementen. Contact: **memberservices@ahra.org** (algemeen ledencontact, via
+ahra.org/home/contact-us). Geen zelfpromotie- of AI-verbod gevonden bij onderzoek van de site.
+**Gemaild 10 augustus 2026.**
+
+Ook gezocht naar een geverifieerd algemeen contact voor **IAOMR** (Indian Academy of Oral
+Medicine and Radiology, India) — alleen een gedeeltelijk gemaskeerd Honorary Secretary-adres
+en een curriculum-specifiek adres (omrcurriculum@gmail.com) gevonden, geen betrouwbaar
+algemeen contactadres. Niet gemaild deze ronde (bounce-risico), kandidaat voor een volgende
+run als een beter contact opduikt. Nederlandse zoektocht (teleradiologie-nieuwssites,
+patiëntenorganisaties) leverde deze ronde geen nieuw bruikbaar kanaal op — alleen al bekende
+namen (Zorg-ICT Zorgen, PostDICOM) en concurrenten (arQive, Medicai, Siemens Healthineers).
+
+## Kant-en-klare tekst — AHRA (e-mail naar memberservices@ahra.org, gemaild 10 augustus 2026)
+
+**Onderwerp:** Free tool for imaging management community — Dicom Viewer, native iOS DICOM viewer
+
+```
+Hi AHRA team,
+
+I'm Ed Cafferata, founder of The IT Crowd. I built Dicom Viewer, a free native
+iOS app for viewing DICOM medical images (X-ray, CT, MRI, ultrasound) on
+iPhone and iPad — thought it might be worth mentioning to your members who
+manage imaging departments, freestanding imaging centers or group practices,
+e.g. as a resource for staff or patients.
+
+It's privacy-first: everything runs on-device, no account, no cloud upload,
+no PACS connection. Features include a cine player for multi-frame studies,
+Window/Level presets (Abdomen, Lung, Bone, Brain), a series navigator and
+frame export — built for quick review on the go, not as a diagnostic
+replacement for a full workstation.
+
+Not a paid promotion request — just thought it might be genuinely useful for
+the community AHRA represents.
+
+App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Happy to answer any questions. Thanks for considering it!
 
 Best,
 Ed Cafferata — The IT Crowd

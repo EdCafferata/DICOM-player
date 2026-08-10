@@ -150,6 +150,12 @@ opleidingspagina's van de hogescholen/ziekenhuizen, geen nieuw
 outreach-kanaal. De bestaande NL-checklist dekt de kansrijke kanalen nog
 steeds goed; vrijwel de hele lijst staat al op afgerond.
 
+### Nieuwe zoektocht (10 augustus 2026) — geen nieuwe kanalen gevonden
+Gezocht naar Nederlandse teleradiologie-nieuwssites en patiëntenorganisaties die over
+DICOM/scans schrijven. Resultaten wezen vooral naar al bekende namen (Zorg-ICT Zorgen,
+PostDICOM) en naar concurrenten/leveranciers (arQive, Medicai, Siemens Healthineers) —
+geen nieuw, nog niet benaderd redactioneel kanaal gevonden deze ronde.
+
 ### Nieuwe zoektocht (26 juli 2026) — geen nieuwe kanalen gevonden
 Gezocht naar aanvullende Nederlandse bronnen (studentenverenigingen radiodiagnostisch
 laboranten, nieuwe teleradiologie-nieuwssites). Geen concrete nieuwe kanalen gevonden —

@@ -261,6 +261,15 @@ PET) zijn ook DICOM-bestanden, dus generieke DICOM-viewing is relevant voor deze
 beroepsgroep. Geen zelfpromotie- of AI-verbod gevonden. Contact:
 **snmindiasecretary@gmail.com**. **Gemaild 4 augustus 2026.**
 
+### Nieuwe zoektocht (10 augustus 2026) — IAOMR gevonden, geen betrouwbaar contact
+Gezocht naar Indiase studentenorganisaties/nieuwsbrief-contacten en naar een India-specifieke
+dental/maxillofacial-radiologiehoek. **IAOMR (Indian Academy of Oral Medicine and Radiology)**
+gevonden (iaomr.org) — relevant omdat Dicom Viewer ook dental/CBCT-DICOM opent, maar alleen
+een gedeeltelijk gemaskeerd Honorary Secretary-adres en een curriculum-specifiek adres
+(omrcurriculum@gmail.com) gevonden — geen betrouwbaar algemeen contact, dus niet gemaild
+(bounce-risico zoals eerder bij ETHealthworld/MediaNama). Kandidaat voor een volgende run
+als een beter contact opduikt. Verder geen nieuwe onafhankelijke kanalen gevonden.
+
 ### Nieuwe zoektocht (9 augustus 2026) — geen nieuwe onafhankelijke kanalen gevonden
 Gezocht naar Indiase radiologie-studentenverenigingen/teleradiologie-nieuws en
 naar een India-specifieke veterinaire-radiologie-vereniging. Resultaten wezen
