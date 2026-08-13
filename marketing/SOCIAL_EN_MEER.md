@@ -303,6 +303,7 @@ deze ronde.
 - [x] Nieuwe vondst (10 augustus 2026) — AHRA (The Association for Medical Imaging Management) gemaild (memberservices@ahra.org), verzonden via iCloud Mail, wacht op reactie
 - [x] Nieuwe vondst (13 augustus 2026) — Society of Thoracic Radiology (STR) gemaild (str@thoracicrad.org), verzonden via iCloud Mail, wacht op reactie
 - [x] Nieuwe zoektocht (13 augustus 2026) — American Society of Spine Radiology (ASSR) onderzocht: blijkt organisatorisch door ASNR beheerd te worden (membership@asnr.org, "ASSR Membership is processed by the ASNR") — geen eigen contentcontact zoals bij ASHNR, alleen een membership/billing-mailbox. Niet gemaild om dubbele/verkeerd-gerichte outreach richting een operationele mailbox te voorkomen; ASNR zelf is al gemaild (15 juli 2026). Verder gezocht naar Nederlandse teleradiologie-nieuwssites en een India-radiologieresidenten-nieuwsbriefcontact — geen nieuw bruikbaar kanaal gevonden (zie ook NEDERLANDSE_BRONNEN.md en INDIA_BRONNEN.md)
+- [x] Nieuwe vondst (13 augustus 2026, tweede ronde) — RadFYI (wekelijkse nieuwsbrief van ARRS, apart van het al op 15 juli gemailde algemene membership@arrs.org-adres) gemaild (lyoung@arrs.org, Logan Young), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 
 ---
 
@@ -1418,4 +1419,42 @@ Happy to answer any questions or provide more detail. Thanks for considering it!
 
 Best,
 Ed Cafferata — The IT Crowd
+```
+
+## Nieuw gevonden (13 augustus 2026, tweede ronde) — RadFYI
+Wekelijkse nieuwsbrief van ARRS ("scannable info built for radiologists"), organisatorisch
+onderdeel van ARRS maar met een eigen redactiecontact — apart van het algemene
+membership@arrs.org-adres dat op 15 juli 2026 al gemaild is, dus een legitieme aanvullende
+ingang in plaats van een dubbele poging (zelfde logica als de IRIA-nieuwsbrief in
+INDIA_BRONNEN.md). Contact: **Logan Young, lyoung@arrs.org** (via radfyi.org/contact-us/).
+Geen zelfpromotie- of AI-verbod gevonden. **Gemaild 13 augustus 2026.**
+
+## Kant-en-klare tekst — RadFYI (e-mail naar lyoung@arrs.org, gemaild 13 augustus 2026)
+
+**Onderwerp:** Content suggestion for RadFYI — free iOS DICOM viewer
+
+```
+Hi Logan,
+
+I'm Ed Cafferata, founder of The IT Crowd. I previously reached out to ARRS
+membership (membership@arrs.org) about Dicom Viewer, a free native iOS app
+for viewing DICOM medical images (X-ray, CT, MRI, ultrasound) on iPhone and
+iPad — no account, no cloud upload, no PACS connection, everything processed
+on-device.
+
+I thought it might be a nice fit as a quick scannable item in RadFYI — a free
+tool radiologists can use to review a study on the go, e.g. Window/Level
+presets (Abdomen, Lung, Bone, Brain), a cine player for multi-frame studies,
+and frame export.
+
+Not a paid promotion request — just thought it might be genuinely useful for
+RadFYI readers.
+
+App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Happy to answer any questions. Thanks for considering it!
+
+Best,
+Ed Cafferata — The IT Crowd
+edcafferata@icloud.com
 ```
