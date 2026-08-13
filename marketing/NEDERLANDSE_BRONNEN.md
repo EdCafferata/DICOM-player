@@ -184,6 +184,13 @@ Klinieken, ViaSana) zijn geen outreach-doelwit, maar wel een goede hoek voor con
 ("van cd naar telefoon"). Zelfde *helpende* toon als kanker.nl in SITES.md — reageer
 pas bij een concrete vraag, stuur geen koude mail naar ziekenhuizen.
 
+### Nieuwe zoektocht (13 augustus 2026) — geen nieuwe kanalen gevonden
+Gezocht naar aanvullende Nederlandse teleradiologie-nieuwssites en een Nictiz-persingang.
+Nictiz (kennisorganisatie voor zorg-ICT-standaarden) bleek bij nader onderzoek geen
+persbericht-/redactie-ingang te hebben, alleen een algemeen postadres/telefoonnummer —
+niet gebruikt. Verder alleen al bekende namen (NVvR, Zorg-ICT Zorgen) teruggevonden. Geen
+nieuw kanaal deze ronde; de bestaande NL-checklist staat vrijwel volledig op afgerond.
+
 ---
 
 ## Checklist

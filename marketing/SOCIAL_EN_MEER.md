@@ -301,6 +301,8 @@ deze ronde.
 - [x] Nieuwe vondst (8 augustus 2026) — Springboard "App Picks" (Daryl Baxter) gemaild (springboard@darylbaxter.com), verzonden via iCloud Mail, wacht op reactie
 - [x] Nieuwe vondst (8 augustus 2026, tweede ronde) — SIIM (Society for Imaging Informatics in Medicine) gemaild (info@siim.org), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Nieuwe vondst (10 augustus 2026) — AHRA (The Association for Medical Imaging Management) gemaild (memberservices@ahra.org), verzonden via iCloud Mail, wacht op reactie
+- [x] Nieuwe vondst (13 augustus 2026) — Society of Thoracic Radiology (STR) gemaild (str@thoracicrad.org), verzonden via iCloud Mail, wacht op reactie
+- [x] Nieuwe zoektocht (13 augustus 2026) — American Society of Spine Radiology (ASSR) onderzocht: blijkt organisatorisch door ASNR beheerd te worden (membership@asnr.org, "ASSR Membership is processed by the ASNR") — geen eigen contentcontact zoals bij ASHNR, alleen een membership/billing-mailbox. Niet gemaild om dubbele/verkeerd-gerichte outreach richting een operationele mailbox te voorkomen; ASNR zelf is al gemaild (15 juli 2026). Verder gezocht naar Nederlandse teleradiologie-nieuwssites en een India-radiologieresidenten-nieuwsbriefcontact — geen nieuw bruikbaar kanaal gevonden (zie ook NEDERLANDSE_BRONNEN.md en INDIA_BRONNEN.md)
 
 ---
 
@@ -1372,6 +1374,43 @@ Hi SIIM team,
 I'm Ed Cafferata, founder of The IT Crowd. I built Dicom Viewer, a free native iOS app for viewing DICOM medical images (X-ray, CT, MRI, ultrasound) on iPhone and iPad — thought it might be worth mentioning to your student and resident members interested in imaging informatics.
 
 It's privacy-first: everything runs on-device, no account, no cloud upload, no PACS connection. Features include a cine player for multi-frame studies, Window/Level presets (Abdomen, Lung, Bone, Brain), a series navigator and frame export — built for quick review and learning on the go, not as a diagnostic replacement for a full workstation.
+
+App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Happy to answer any questions or provide more detail. Thanks for considering it!
+
+Best,
+Ed Cafferata — The IT Crowd
+```
+
+## Nieuw gevonden (13 augustus 2026) — Society of Thoracic Radiology (STR)
+Amerikaanse vakvereniging voor thoraxradiologie — een subspecialisme-hoek die nog niet
+eerder benaderd was (zelfde logica als SSR/ASHNR/SBI hierboven). Contact geverifieerd via
+thoracicrad.org/?page_id=529: **str@thoracicrad.org**. Geen zelfpromotie- of AI-verbod
+gevonden. **Gemaild 13 augustus 2026.**
+
+Ook onderzocht: **American Society of Spine Radiology (ASSR)** — blijkt geen eigen
+redactie-/contentcontact te hebben, alleen membership@asnr.org (ASSR-lidmaatschap wordt
+volledig door ASNR verwerkt). Niet gemaild — ASNR zelf is al gemaild (15 juli 2026) en een
+membership/billing-mailbox is niet de juiste ingang voor een productsuggestie.
+
+## Kant-en-klare tekst — STR (e-mail naar str@thoracicrad.org, gemaild 13 augustus 2026)
+
+**Onderwerp:** Free tool for thoracic radiology trainees — Dicom Viewer, native iOS DICOM viewer
+
+```
+Hi STR team,
+
+I'm Ed Cafferata, founder of The IT Crowd. I built Dicom Viewer, a free native
+iOS app for viewing DICOM medical images (X-ray, CT, MRI, ultrasound) on
+iPhone and iPad — thought it might be worth mentioning to your members and
+fellows as a resource for reviewing chest imaging studies on the go.
+
+It's privacy-first: everything runs on-device, no account, no cloud upload,
+no PACS connection. Features include a cine player for multi-frame studies,
+Window/Level presets (Abdomen, Lung, Bone, Brain), a series navigator and
+frame export — built for quick review, not as a diagnostic replacement for a
+full workstation.
 
 App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
 

@@ -283,6 +283,14 @@ de nog te verzenden IVRA (internationaal). Alleen een webformulier
 hier als kandidaat voor een latere ronde als de VS/India-veterinaire hoek
 verder wordt uitgebreid.
 
+### Nieuwe zoektocht (13 augustus 2026) — geen nieuwe onafhankelijke kanalen gevonden
+Gezocht naar een Indiase radiologie-residenten-nieuwsbrief en departement-contacten bij
+grote ziekenhuizen (Tata Memorial Hospital Mumbai, NIMHANS Bangalore) — geen van beide
+had een vindbaar afdelings-e-mailadres (alleen algemene telefoonnummers). IRIA-staatschapters
+(Karnataka, Kerala, Tamil Nadu) opnieuw bekeken — nog steeds alleen postadressen, geen
+e-mail. Geen nieuw geschikt kanaal deze ronde; de bestaande India-checklist staat vrijwel
+volledig op afgerond of "on hold" in afwachting van een betere contactroute.
+
 ## Checklist
 
 - [ ] 🏆 Apple Featuring Nomination voor India ingediend in App Store Connect (Ed zelf, buiten browserbereik)
