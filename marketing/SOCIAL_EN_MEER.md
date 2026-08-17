@@ -282,7 +282,7 @@ edcafferata@icloud.com
 - [ ] radiologysig.com — radsig2021@gmail.com
 - [ ] ARRS — membership@arrs.org
 - [ ] ASNR — info@asnr.org
-- [ ] 9to5Mac Indie App Spotlight — michaelb@9to5mac.com
+- [x] 9to5Mac Indie App Spotlight — michaelb@9to5mac.com — 17 augustus 2026, verzonden via iCloud Mail
 - [ ] AAWR — info@aawr.org
 - [ ] AOCR — info@aocr.org
 - [ ] ASER — info@aser.org
@@ -312,8 +312,8 @@ edcafferata@icloud.com
 - [ ] AHRA — memberservices@ahra.org
 - [ ] STR — str@thoracicrad.org
 - [ ] RadFYI (ARRS) — lyoung@arrs.org
-- [ ] AuntMinnie.com — eridley@auntminnie.com
-- [ ] SAR (had al positief gereageerd 3 aug — persoonlijke bedank+update-mail) — scook@veritasamc.com
+- [x] AuntMinnie.com — eridley@auntminnie.com — 17 augustus 2026, verzonden via iCloud Mail
+- [x] SAR (had al positief gereageerd 3 aug — persoonlijke bedank+update-mail) — scook@veritasamc.com — 17 augustus 2026, verzonden via iCloud Mail
 
 ---
 
