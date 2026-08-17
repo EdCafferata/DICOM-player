@@ -247,6 +247,76 @@ eerder afgewezen SEO-directory's (asoeshop.com e.d.), een generieke
 betaald-georiënteerde lijst-site — niet nagejaagd. Geen nieuw geschikt kanaal
 deze ronde.
 
+## Android-heruitnodiging (17 augustus 2026) — alle eerder gemailde VS/internationale contacten
+
+Op verzoek van Ed: Dicom Viewer is sinds 9 augustus 2026 ook gratis beschikbaar op
+Google Play (`info.cafferata.dicomviewer`, live geverifieerd). Alle eerder gemailde
+contacten krijgen een korte update-mail — geen nieuwe pitch, alleen het Android-nieuws.
+Gedoseerd verstuurd, voortgezet in volgende dagelijkse runs.
+
+**Kant-en-klare tekst (EN):**
+
+**Onderwerp:** Dicom Viewer — now also available on Android
+
+```
+Hi [team],
+
+I previously reached out about Dicom Viewer, my free privacy-first DICOM
+viewer for iPhone and iPad. It's now also available as a free Android app,
+so it's accessible regardless of which device someone uses.
+
+Same principles as the iOS version: everything stays on-device, no account,
+no cloud upload, no PACS connection required.
+
+Android (Google Play): https://play.google.com/store/apps/details?id=info.cafferata.dicomviewer
+iOS (App Store): https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Best,
+Ed Cafferata — The IT Crowd
+edcafferata@icloud.com
+```
+
+**Voortgang:**
+- [ ] TapSmart — tomjrolfe@intelligenti.com
+- [ ] ACR RFS — rfs@acr.org
+- [ ] radiologysig.com — radsig2021@gmail.com
+- [ ] ARRS — membership@arrs.org
+- [ ] ASNR — info@asnr.org
+- [ ] 9to5Mac Indie App Spotlight — michaelb@9to5mac.com
+- [ ] AAWR — info@aawr.org
+- [ ] AOCR — info@aocr.org
+- [ ] ASER — info@aser.org
+- [ ] SPR — spr@acr.org
+- [ ] AMSER/AARAD — info@aarad.org
+- [ ] RSNA — onlineeducation@rsna.org
+- [ ] ASRT — publications@asrt.org
+- [ ] APDR — info@apdr.org
+- [ ] AIUM — aiumpartnerships@aium.org
+- [ ] MedImaging.net — edit@globetech.net
+- [ ] ESR — communications@myesr.org
+- [ ] AuntMinnieEurope — philip.ward@scienceandmedicinegroup.com
+- [ ] AAPM — newsletter@aapm.org
+- [ ] Indie Dev Monday — lookatme@indiedevmonday.com
+- [ ] Society of Breast Imaging — info@sbi-online.org
+- [ ] ACVR — acvr@pamedsoc.org
+- [ ] ACR RIG West — WestRIG@acr.org
+- [ ] ACR RIG Midwest — MidwestRIG@acr.org
+- [ ] ACR RIG South — SouthRIG@acr.org
+- [ ] ACR RIG Northeast — NortheastRIG@acr.org
+- [ ] SSR — info@skeletalrad.org
+- [ ] ASHNR — ashnr@asnr.org
+- [ ] AAOMR — info@aaomr.org
+- [ ] SNMMI — salexand@snmmi.org
+- [ ] Springboard App Picks — springboard@darylbaxter.com
+- [ ] SIIM — info@siim.org
+- [ ] AHRA — memberservices@ahra.org
+- [ ] STR — str@thoracicrad.org
+- [ ] RadFYI (ARRS) — lyoung@arrs.org
+- [ ] AuntMinnie.com — eridley@auntminnie.com
+- [ ] SAR (had al positief gereageerd 3 aug — persoonlijke bedank+update-mail) — scook@veritasamc.com
+
+---
+
 ## Checklist
 
 - [x] X-account ingericht (19/20 juli 2026): bestaand persoonlijk account @EdCafferata geactiveerd — bio "iOS developer · Built Dicom Viewer, a free privacy-first DICOM image viewer for iPhone/iPad 🩻" + link cafferata.info + IT Crowd-logo als profielfoto (foto door Ed zelf gezet, browserextensie mocht geen lokaal bestand uploaden). @FOAMrad, @Radiopaedia, @GlobalRadCME en @KevinRiceMD gevolgd (helpende-eerst-strategie) — let op: zoeken op exacte handle in X's zoekbalk gaf valse "no results" voor 2 van de 4 accounts, directe profiel-URL (x.com/<handle>) werkte wel betrouwbaar

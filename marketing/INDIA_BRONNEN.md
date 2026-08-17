@@ -291,6 +291,55 @@ had een vindbaar afdelings-e-mailadres (alleen algemene telefoonnummers). IRIA-s
 e-mail. Geen nieuw geschikt kanaal deze ronde; de bestaande India-checklist staat vrijwel
 volledig op afgerond of "on hold" in afwachting van een betere contactroute.
 
+## Android-heruitnodiging (17 augustus 2026) — alle eerder gemailde India-contacten
+
+Op verzoek van Ed: Dicom Viewer is sinds 9 augustus 2026 ook gratis beschikbaar op
+Google Play (`info.cafferata.dicomviewer`, live geverifieerd) — extra relevant voor
+India gezien het grote Android-marktaandeel daar. Alle eerder gemailde India-contacten
+krijgen een korte update-mail — geen nieuwe pitch, alleen het Android-nieuws. Gedoseerd
+verstuurd, voortgezet in volgende dagelijkse runs.
+
+**Kant-en-klare tekst (EN):**
+
+**Onderwerp:** Dicom Viewer — now also available on Android
+
+```
+Hi [team],
+
+I previously reached out about Dicom Viewer, my free privacy-first DICOM
+viewer for iPhone and iPad. It's now also available as a free Android app,
+so it's accessible regardless of which device someone uses.
+
+Same principles as the iOS version: everything stays on-device, no account,
+no cloud upload, no PACS connection required.
+
+Android (Google Play): https://play.google.com/store/apps/details?id=info.cafferata.dicomviewer
+iOS (App Store): https://apps.apple.com/in/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Best regards,
+Ed Cafferata — The IT Crowd
+edcafferata@icloud.com
+```
+
+**Voortgang:**
+- [ ] IRIA — iria37@gmail.com
+- [ ] YourStory — editorial@yourstory.com
+- [ ] MSAI — vpi@msaindia.org
+- [ ] ISVIR — info.isvir@gmail.com
+- [ ] RadioGyan — admin@radiogyan.com
+- [ ] ISRT — info@isrt.org.in
+- [ ] Medical Dialogues — info@medicaldialogues.in
+- [ ] AMPI — secretary@ampi.org.in
+- [ ] The Better India — editorial@thebetterindia.com
+- [ ] IRIA-nieuwsbrief — irianewsletter@gmail.com
+- [ ] AIIMS Radiodiagnosis — radiodiagnosis@aiims.edu
+- [ ] CMC Vellore Radiology — radio@cmcvellore.ac.in
+- [ ] SNMI — snmindiasecretary@gmail.com
+- [ ] SIR (Society of Indian Radiographers) — info@radiographers.org
+- [ ] PGIMER Chandigarh — pgimer@chd.nic.in
+
+---
+
 ## Checklist
 
 - [ ] 🏆 Apple Featuring Nomination voor India ingediend in App Store Connect (Ed zelf, buiten browserbereik)

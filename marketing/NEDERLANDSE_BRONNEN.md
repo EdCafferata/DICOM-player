@@ -193,6 +193,59 @@ nieuw kanaal deze ronde; de bestaande NL-checklist staat vrijwel volledig op afg
 
 ---
 
+## Android-heruitnodiging (17 augustus 2026) — alle eerder gemailde NL-contacten
+
+Op verzoek van Ed: Dicom Viewer is sinds 9 augustus 2026 ook gratis beschikbaar op
+Google Play (`info.cafferata.dicomviewer`, live geverifieerd). Alle eerder gemailde
+NL-contacten krijgen een korte update-mail — geen nieuwe pitch, alleen het
+Android-nieuws. Gedoseerd verstuurd (niet alle 18 in één dag), voortgezet in
+volgende dagelijkse runs zolang er nog open items staan.
+
+**Kant-en-klare tekst (NL):**
+
+**Onderwerp:** Dicom Viewer nu ook beschikbaar voor Android
+
+```
+Beste [naam/team],
+
+Eerder liet ik jullie weten over Dicom Viewer, mijn gratis privacy-first
+DICOM-viewer voor iPhone en iPad. Sinds kort is er ook een gratis
+Android-versie, dus de app is nu toegankelijk ongeacht welk toestel iemand
+gebruikt.
+
+Zelfde uitgangspunten als de iOS-versie: alles blijft lokaal op het toestel,
+geen account, geen cloud-upload, geen PACS-koppeling nodig.
+
+Android (Google Play): https://play.google.com/store/apps/details?id=info.cafferata.dicomviewer
+iOS (App Store): https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Met vriendelijke groet,
+Ed Cafferata — The IT Crowd
+edcafferata@icloud.com
+```
+
+**Voortgang:**
+- [ ] Zorgvisie/Skipr — zorgvisie@bsl.nl
+- [ ] ICT&Health — redactie@icthealth.nl
+- [ ] NVvR — nvvr@radiologen.nl
+- [ ] Open MRI Zen — info@openmrizen.com
+- [ ] Transparant Kliniek — info@transparantkliniek.nl
+- [ ] NVKF — secretariaat@nvkf.nl
+- [ ] MedNet.nl — info@mednet.nl
+- [ ] Medisch Contact — nieuwsdienst@medischcontact.nl
+- [ ] NVMBR — info@nvmbr.nl
+- [ ] FMT Gezondheidszorg — info@fmtgezondheidszorg.nl
+- [ ] NVvR Sectie Juniorleden — juniornvvr@gmail.com
+- [ ] NVRO — secretariaat@nvro.nl
+- [ ] iCulture — redactie@iculture.nl
+- [ ] Emerce — redactie@emerce.nl
+- [ ] Dutch IT Channel — redactie@dutchitchannel.nl
+- [ ] NVNG — info@nvng.nl
+- [ ] BEN (Beroepsvereniging Echoscopisten) — secretariaat@echoscopisten.nl
+- [ ] Tijdschrift voor Nucleaire Geneeskunde — info@kloosterhof.nl
+
+---
+
 ## Checklist
 
 - [x] Golf 1 — zorgictzorgen.nl contactformulier ingevuld (6 juli 2026, "succesvol verzonden" bevestigd — wacht op reactie van Wim Jongejan voor golf 2)
