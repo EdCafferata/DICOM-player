@@ -278,10 +278,10 @@ edcafferata@icloud.com
 
 **Voortgang:**
 - [ ] TapSmart — tomjrolfe@intelligenti.com
-- [ ] ACR RFS — rfs@acr.org
+- [x] ACR RFS — rfs@acr.org — 17 augustus 2026, verzonden via iCloud Mail
 - [ ] radiologysig.com — radsig2021@gmail.com
-- [ ] ARRS — membership@arrs.org
-- [ ] ASNR — info@asnr.org
+- [x] ARRS — membership@arrs.org — 17 augustus 2026, verzonden via iCloud Mail
+- [x] ASNR — info@asnr.org — 17 augustus 2026, verzonden via iCloud Mail
 - [x] 9to5Mac Indie App Spotlight — michaelb@9to5mac.com — 17 augustus 2026, verzonden via iCloud Mail
 - [ ] AAWR — info@aawr.org
 - [ ] AOCR — info@aocr.org

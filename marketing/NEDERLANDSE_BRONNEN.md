@@ -236,10 +236,10 @@ edcafferata@icloud.com
 - [ ] NVMBR — info@nvmbr.nl
 - [ ] FMT Gezondheidszorg — info@fmtgezondheidszorg.nl
 - [ ] NVvR Sectie Juniorleden — juniornvvr@gmail.com
-- [ ] NVRO — secretariaat@nvro.nl
+- [x] NVRO — secretariaat@nvro.nl — 17 augustus 2026, verzonden via iCloud Mail
 - [x] iCulture — redactie@iculture.nl — 17 augustus 2026, verzonden via iCloud Mail
-- [ ] Emerce — redactie@emerce.nl
-- [ ] Dutch IT Channel — redactie@dutchitchannel.nl
+- [x] Emerce — redactie@emerce.nl — 17 augustus 2026, verzonden via iCloud Mail
+- [x] Dutch IT Channel — redactie@dutchitchannel.nl — 17 augustus 2026, verzonden via iCloud Mail
 - [ ] NVNG — info@nvng.nl
 - [ ] BEN (Beroepsvereniging Echoscopisten) — secretariaat@echoscopisten.nl
 - [ ] Tijdschrift voor Nucleaire Geneeskunde — info@kloosterhof.nl
