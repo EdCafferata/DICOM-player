@@ -283,9 +283,9 @@ edcafferata@icloud.com
 - [x] ARRS — membership@arrs.org — 17 augustus 2026, verzonden via iCloud Mail
 - [x] ASNR — info@asnr.org — 17 augustus 2026, verzonden via iCloud Mail
 - [x] 9to5Mac Indie App Spotlight — michaelb@9to5mac.com — 17 augustus 2026, verzonden via iCloud Mail
-- [ ] AAWR — info@aawr.org
-- [ ] AOCR — info@aocr.org
-- [ ] ASER — info@aser.org
+- [x] AAWR — info@aawr.org — 18 augustus 2026, verzonden via iCloud Mail
+- [x] AOCR — info@aocr.org — 18 augustus 2026, verzonden via iCloud Mail
+- [x] ASER — info@aser.org — 18 augustus 2026, verzonden via iCloud Mail
 - [ ] SPR — spr@acr.org
 - [ ] AMSER/AARAD — info@aarad.org
 - [ ] RSNA — onlineeducation@rsna.org

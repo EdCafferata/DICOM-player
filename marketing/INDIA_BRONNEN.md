@@ -325,11 +325,11 @@ edcafferata@icloud.com
 - [x] IRIA — iria37@gmail.com — 17 augustus 2026, verzonden via iCloud Mail
 - [x] YourStory — editorial@yourstory.com — 17 augustus 2026, verzonden via iCloud Mail
 - [x] MSAI — vpi@msaindia.org — 17 augustus 2026, verzonden via iCloud Mail
-- [ ] ISVIR — info.isvir@gmail.com
-- [ ] RadioGyan — admin@radiogyan.com
+- [x] ISVIR — info.isvir@gmail.com — 18 augustus 2026, verzonden via iCloud Mail
+- [x] RadioGyan — admin@radiogyan.com — 18 augustus 2026, verzonden via iCloud Mail
 - [x] ISRT — info@isrt.org.in — 17 augustus 2026, verzonden via iCloud Mail
 - [x] Medical Dialogues — info@medicaldialogues.in — 17 augustus 2026, verzonden via iCloud Mail
-- [ ] AMPI — secretary@ampi.org.in
+- [x] AMPI — secretary@ampi.org.in — 18 augustus 2026, verzonden via iCloud Mail
 - [x] The Better India — editorial@thebetterindia.com — 17 augustus 2026, verzonden via iCloud Mail
 - [ ] IRIA-nieuwsbrief — irianewsletter@gmail.com
 - [ ] AIIMS Radiodiagnosis — radiodiagnosis@aiims.edu

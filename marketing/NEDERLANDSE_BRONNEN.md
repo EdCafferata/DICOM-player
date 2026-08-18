@@ -228,12 +228,12 @@ edcafferata@icloud.com
 - [x] Zorgvisie/Skipr — zorgvisie@bsl.nl — 17 augustus 2026, verzonden via iCloud Mail
 - [x] ICT&Health — redactie@icthealth.nl — 17 augustus 2026, verzonden via iCloud Mail (samen met Zorgvisie/Skipr)
 - [x] NVvR — nvvr@radiologen.nl — 17 augustus 2026, verzonden via iCloud Mail
-- [ ] Open MRI Zen — info@openmrizen.com
-- [ ] Transparant Kliniek — info@transparantkliniek.nl
+- [x] Open MRI Zen — info@openmrizen.com — 18 augustus 2026, verzonden via iCloud Mail
+- [x] Transparant Kliniek — info@transparantkliniek.nl — 18 augustus 2026, verzonden via iCloud Mail
 - [x] NVKF — secretariaat@nvkf.nl — 17 augustus 2026, verzonden via iCloud Mail
 - [x] MedNet.nl — info@mednet.nl — 17 augustus 2026, verzonden via iCloud Mail
 - [x] Medisch Contact — nieuwsdienst@medischcontact.nl — 17 augustus 2026, verzonden via iCloud Mail
-- [ ] NVMBR — info@nvmbr.nl
+- [x] NVMBR — info@nvmbr.nl — 18 augustus 2026, verzonden via iCloud Mail
 - [ ] FMT Gezondheidszorg — info@fmtgezondheidszorg.nl
 - [ ] NVvR Sectie Juniorleden — juniornvvr@gmail.com
 - [x] NVRO — secretariaat@nvro.nl — 17 augustus 2026, verzonden via iCloud Mail
