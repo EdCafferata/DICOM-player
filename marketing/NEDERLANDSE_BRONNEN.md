@@ -57,6 +57,14 @@ Verstuur niet alle 7 tegelijk; 2 per golf, begin met de grootste:
 - **Transparant Kliniek** — https://www.transparantkliniek.nl/
 - **DirectClinics** — https://www.directclinics.nl/
 
+**Update 18 augustus 2026:** nieuwe, vereenvoudigde flyer beschikbaar —
+[Dicom_Viewer_Flyer_A4_Simpel.pdf](Dicom_Viewer_Flyer_A4_Simpel.pdf). Geen
+technisch jargon, QR-codes voor zowel App Store als Google Play, bedoeld om
+klinieken te kunnen meegeven aan patiënten of op te hangen. **Voeg deze flyer
+als bijlage toe** bij nieuwe of vervolg-mails naar Golf 4-klinieken (en andere
+B2B/patiëntgerichte contacten) — makkelijker voor hen om 'm direct door te
+zetten dan zelf de tekst te moeten samenvatten.
+
 ### Golf 5 — Zorginnovatie.nl (organische LinkedIn-post, geen outreach-mail)
 Community/platform voor zorginnovatie-cocreatie, 13.686 volgers op LinkedIn.
 Gewoon een introductiepost plaatsen/taggen, geen persbericht nodig.
