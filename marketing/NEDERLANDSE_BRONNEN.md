@@ -191,6 +191,27 @@ persbericht-/redactie-ingang te hebben, alleen een algemeen postadres/telefoonnu
 niet gebruikt. Verder alleen al bekende namen (NVvR, Zorg-ICT Zorgen) teruggevonden. Geen
 nieuw kanaal deze ronde; de bestaande NL-checklist staat vrijwel volledig op afgerond.
 
+### Nieuwe zoektocht (18 augustus 2026, op verzoek van Ed) — particuliere bodyscan-/scanklinieken, geen nieuwe bruikbare kanalen
+Gericht gezocht naar particuliere klinieken die zelf scans (MRI/CT "bodyscan")
+aanbieden, naast de al bestaande Golf 4-lijst hierboven (Prescan, Privatescan,
+MRI Centrum, ScanClinic, Open MRI Zen, Transparant Kliniek, DirectClinics — die
+zijn allemaal al benaderd, zie Voortgang/Checklist). Twee nieuwe namen gevonden,
+beide afgevallen na controle:
+- **Body-Scan.NL** (Heerhugowaard) ⛔ blijkt bij nader onderzoek een
+  complementaire/alternatieve praktijk (aangesloten bij NWP, natuurgeneeskunde)
+  met "computerdiagnostiek"/energiescans — geen echte MRI/CT/DICOM-beeldvorming,
+  dus geen passende doelgroep voor Dicom Viewer. Niet benaderd.
+- **Kliniekbeleving.nl** ⛔ blijkt een leadgeneration-/vergelijkingssite
+  ("vergelijk 4 klinieken, gratis prijsopgaven") die bezoekers doorverwijst naar
+  klinieken tegen betaling — geen redactionele plek voor een app-vermelding,
+  geen passend kanaal. Niet benaderd.
+- "Prognos" (genoemd in een zoekresultaat-samenvatting) bleek geen vindbare
+  zelfstandige Nederlandse scankliniek — waarschijnlijk een onjuiste
+  naamsuggestie, niet verder nagetrokken.
+
+Conclusie: de particuliere-scancentra-hoek (Golf 4) is met de bestaande 7 klinieken
+vrijwel compleet gedekt; geen nieuw kanaal deze ronde.
+
 ---
 
 ## Android-heruitnodiging (17 augustus 2026) — alle eerder gemailde NL-contacten
