@@ -11,6 +11,19 @@
 <!-- Nieuwste bovenaan. Elke entry: datum, welke app, status (klaargezet/
      gepost), de tekst zelf. -->
 
+## 2026-08-19 — Dicom Viewer
+**Status:** klaargezet in composer (nog niet verzonden door Ed) — Duski is nog steeds niet live in de App Store (App Store-indiening voorbereid, wacht op afronding Apple Developer-accountverificatie), dus de beurt ging automatisch weer naar Dicom Viewer.
+
+Deze week verschoof de focus bij Dicom Viewer even van artsen en radiologen naar de patiënt zelf. Ik maakte een simpele A4-flyer die scancentra kunnen ophangen of meegeven: in gewone taal uitgelegd hoe je de scan die je op cd of USB meekrijgt, meteen op je eigen iPhone of Android-telefoon bekijkt.
+
+Dicom Viewer is een gratis app die röntgen-, CT-, MRI- en echobeelden rechtstreeks op je telefoon of tablet opent — met een eigen on-device DICOM-parser, cine-player en window/level-presets. Geen account, geen cloud, alles blijft op je eigen toestel. Inmiddels ook live op Android naast iOS.
+
+Live sinds 1 juli, met een optionele Tip Jar voor wie het werk wil steunen.
+
+👉 https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+#indiedev #iosdev #buildinpublic #DICOM
+
 ## 2026-08-12 — Dicom Viewer
 **Status:** gepost door Ed — Duski is nog steeds niet live in de App Store (App Store-indiening voorbereid, wacht op afronding Apple Developer-accountverificatie), dus de beurt ging automatisch weer naar Dicom Viewer.
 
