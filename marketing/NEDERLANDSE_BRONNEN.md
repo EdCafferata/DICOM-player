@@ -263,13 +263,13 @@ edcafferata@icloud.com
 - [x] MedNet.nl — info@mednet.nl — 17 augustus 2026, verzonden via iCloud Mail
 - [x] Medisch Contact — nieuwsdienst@medischcontact.nl — 17 augustus 2026, verzonden via iCloud Mail
 - [x] NVMBR — info@nvmbr.nl — 18 augustus 2026, verzonden via iCloud Mail
-- [ ] FMT Gezondheidszorg — info@fmtgezondheidszorg.nl
-- [ ] NVvR Sectie Juniorleden — juniornvvr@gmail.com
+- [x] FMT Gezondheidszorg — info@fmtgezondheidszorg.nl — 20 augustus 2026, verzonden via iCloud Mail
+- [x] NVvR Sectie Juniorleden — juniornvvr@gmail.com — 20 augustus 2026, verzonden via iCloud Mail
 - [x] NVRO — secretariaat@nvro.nl — 17 augustus 2026, verzonden via iCloud Mail
 - [x] iCulture — redactie@iculture.nl — 17 augustus 2026, verzonden via iCloud Mail
 - [x] Emerce — redactie@emerce.nl — 17 augustus 2026, verzonden via iCloud Mail
 - [x] Dutch IT Channel — redactie@dutchitchannel.nl — 17 augustus 2026, verzonden via iCloud Mail
-- [ ] NVNG — info@nvng.nl
+- [x] NVNG — info@nvng.nl — 20 augustus 2026, verzonden via iCloud Mail
 - [ ] BEN (Beroepsvereniging Echoscopisten) — secretariaat@echoscopisten.nl
 - [ ] Tijdschrift voor Nucleaire Geneeskunde — info@kloosterhof.nl
 
