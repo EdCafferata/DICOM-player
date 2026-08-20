@@ -20,9 +20,10 @@ Dicom Viewer is een gratis app die röntgen-, CT-, MRI- en echobeelden rechtstre
 
 Live sinds 1 juli, met een optionele Tip Jar voor wie het werk wil steunen.
 
-👉 https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527
+👉 iOS: https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527
+👉 Android: https://play.google.com/store/apps/details?id=info.cafferata.dicomviewer
 
-#indiedev #iosdev #buildinpublic #DICOM
+#indiedev #iosdev #androiddev #buildinpublic #DICOM
 
 ## 2026-08-12 — Dicom Viewer
 **Status:** gepost door Ed — Duski is nog steeds niet live in de App Store (App Store-indiening voorbereid, wacht op afronding Apple Developer-accountverificatie), dus de beurt ging automatisch weer naar Dicom Viewer.
