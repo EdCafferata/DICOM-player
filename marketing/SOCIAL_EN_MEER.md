@@ -1437,6 +1437,20 @@ Ed Cafferata — The IT Crowd
 edcafferata@icloud.com
 ```
 
+## Update 20 augustus 2026 — Engelse patiëntflyer beschikbaar
+Naast de Nederlandse patiëntgerichte A4-flyer (zie NEDERLANDSE_BRONNEN.md, Golf 4)
+is er nu ook een Engelse versie: **`marketing/Dicom_Viewer_Flyer_A4_Simpel_EN.pdf`**.
+Zelfde ontwerp/opzet, QR-codes voor zowel de (US) App Store als Google Play. **Voeg
+deze toe als bijlage** bij nieuwe of vervolg-mails naar Engelstalige B2B/
+patiëntgerichte contacten — bijvoorbeeld imaging-management-verenigingen zoals AHRA
+(zie hierboven) als die ooit doorverwijzen naar leden-imaging centers, of toekomstige
+Amerikaanse/Indiase zelfstandige imaging centers/klinieken (nog geen aparte
+golf/checklist voor, alleen bij een geschikte vondst gebruiken). Niet nodig bij mails
+naar vakverenigingen/pers/redacties zelf (SIIM, AHRA, STR e.d.) — daar is de brieftekst
+voldoende, zoals ook bij de Nederlandse Golf 3-regel. Zie het bijvoegmechanisme
+(via `mcp__claude-in-chrome__file_upload`, niet de paperclip-klik) in
+`~/.claude/scheduled-tasks/daily-promotions/SKILL.md`.
+
 ## Kant-en-klare tekst — SIIM (e-mail naar info@siim.org, gemaild 8 augustus 2026)
 
 **Onderwerp:** Free tool for imaging informatics students — Dicom Viewer, native iOS DICOM viewer
