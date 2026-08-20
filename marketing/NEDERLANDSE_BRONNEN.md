@@ -270,8 +270,8 @@ edcafferata@icloud.com
 - [x] Emerce — redactie@emerce.nl — 17 augustus 2026, verzonden via iCloud Mail
 - [x] Dutch IT Channel — redactie@dutchitchannel.nl — 17 augustus 2026, verzonden via iCloud Mail
 - [x] NVNG — info@nvng.nl — 20 augustus 2026, verzonden via iCloud Mail
-- [ ] BEN (Beroepsvereniging Echoscopisten) — secretariaat@echoscopisten.nl
-- [ ] Tijdschrift voor Nucleaire Geneeskunde — info@kloosterhof.nl
+- [x] BEN (Beroepsvereniging Echoscopisten) — secretariaat@echoscopisten.nl — 20 augustus 2026, verzonden via iCloud Mail
+- [x] Tijdschrift voor Nucleaire Geneeskunde — info@kloosterhof.nl — 20 augustus 2026, verzonden via iCloud Mail
 
 ---
 

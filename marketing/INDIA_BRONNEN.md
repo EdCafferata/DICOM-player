@@ -333,10 +333,10 @@ edcafferata@icloud.com
 - [x] The Better India — editorial@thebetterindia.com — 17 augustus 2026, verzonden via iCloud Mail
 - [x] IRIA-nieuwsbrief — irianewsletter@gmail.com — 20 augustus 2026, verzonden via iCloud Mail
 - [x] AIIMS Radiodiagnosis — radiodiagnosis@aiims.edu — 20 augustus 2026, verzonden via iCloud Mail
-- [ ] CMC Vellore Radiology — radio@cmcvellore.ac.in
+- [x] CMC Vellore Radiology — radio@cmcvellore.ac.in — 20 augustus 2026, verzonden via iCloud Mail
 - [x] SNMI — snmindiasecretary@gmail.com — 20 augustus 2026, verzonden via iCloud Mail
-- [ ] SIR (Society of Indian Radiographers) — info@radiographers.org
-- [ ] PGIMER Chandigarh — pgimer@chd.nic.in
+- [x] SIR (Society of Indian Radiographers) — info@radiographers.org — 20 augustus 2026, verzonden via iCloud Mail
+- [x] PGIMER Chandigarh — pgimer@chd.nic.in — 20 augustus 2026, verzonden via iCloud Mail (met verzoek om doorsturen naar Radiodiagnosis-afdeling)
 
 ---
 

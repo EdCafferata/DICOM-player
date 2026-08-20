@@ -287,23 +287,23 @@ edcafferata@icloud.com
 - [x] AOCR — info@aocr.org — 18 augustus 2026, verzonden via iCloud Mail
 - [x] ASER — info@aser.org — 18 augustus 2026, verzonden via iCloud Mail
 - [x] SPR — spr@acr.org — 20 augustus 2026, verzonden via iCloud Mail
-- [ ] AMSER/AARAD — info@aarad.org
+- [x] AMSER/AARAD — info@aarad.org — 20 augustus 2026, verzonden via iCloud Mail
 - [x] RSNA — onlineeducation@rsna.org — 20 augustus 2026, verzonden via iCloud Mail
 - [x] ASRT — publications@asrt.org — 20 augustus 2026, verzonden via iCloud Mail
-- [ ] APDR — info@apdr.org
-- [ ] AIUM — aiumpartnerships@aium.org
+- [x] APDR — info@apdr.org — 20 augustus 2026, verzonden via iCloud Mail
+- [x] AIUM — aiumpartnerships@aium.org — 20 augustus 2026, verzonden via iCloud Mail
 - [ ] MedImaging.net — edit@globetech.net
 - [ ] ESR — communications@myesr.org
 - [ ] AuntMinnieEurope — philip.ward@scienceandmedicinegroup.com
 - [ ] AAPM — newsletter@aapm.org
 - [ ] Indie Dev Monday — lookatme@indiedevmonday.com
-- [ ] Society of Breast Imaging — info@sbi-online.org
+- [x] Society of Breast Imaging — info@sbi-online.org — 20 augustus 2026, verzonden via iCloud Mail
 - [ ] ACVR — acvr@pamedsoc.org
 - [ ] ACR RIG West — WestRIG@acr.org
 - [ ] ACR RIG Midwest — MidwestRIG@acr.org
 - [ ] ACR RIG South — SouthRIG@acr.org
 - [ ] ACR RIG Northeast — NortheastRIG@acr.org
-- [ ] SSR — info@skeletalrad.org
+- [x] SSR — info@skeletalrad.org — 20 augustus 2026, verzonden via iCloud Mail
 - [ ] ASHNR — ashnr@asnr.org
 - [ ] AAOMR — info@aaomr.org
 - [ ] SNMMI — salexand@snmmi.org
@@ -375,6 +375,7 @@ edcafferata@icloud.com
 - [x] Nieuwe zoektocht (20 augustus 2026) — Imaging Technology News (itnonline.com) onderzocht → ⛔ ongeschikt: groot B2B-vakblad gericht op ziekenhuisapparatuur (PACS/CT/MRI-vendors), contactpagina gaf "access denied" (bot-blokkade), en de site heeft een expliciete "Advertise"-ingang — waarschijnlijk geen gratis redactionele plek voor een individuele consumenten-app. Niet benaderd, geen nieuw geschikt kanaal deze ronde
 - [x] Nieuwe zoektocht (13 augustus 2026) — American Society of Spine Radiology (ASSR) onderzocht: blijkt organisatorisch door ASNR beheerd te worden (membership@asnr.org, "ASSR Membership is processed by the ASNR") — geen eigen contentcontact zoals bij ASHNR, alleen een membership/billing-mailbox. Niet gemaild om dubbele/verkeerd-gerichte outreach richting een operationele mailbox te voorkomen; ASNR zelf is al gemaild (15 juli 2026). Verder gezocht naar Nederlandse teleradiologie-nieuwssites en een India-radiologieresidenten-nieuwsbriefcontact — geen nieuw bruikbaar kanaal gevonden (zie ook NEDERLANDSE_BRONNEN.md en INDIA_BRONNEN.md)
 - [x] Nieuwe vondst (13 augustus 2026, tweede ronde) — RadFYI (wekelijkse nieuwsbrief van ARRS, apart van het al op 15 juli gemailde algemene membership@arrs.org-adres) gemaild (lyoung@arrs.org, Logan Young), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [x] Nieuwe zoektocht (20 augustus 2026) — Applied Radiology (appliedradiology.com) onderzocht → ⛔ ongeschikt: peer-reviewed vaktijdschrift voor klinische review-artikelen/case reports van radiologen zelf, geen nieuws-/persberichtenkanaal voor een app-aankondiging. Editorial-contact wel gevonden (kieran@appliedradiology.com) maar niet benaderd — verkeerde ingang. AppHunt (verschillende gelijknamige sites: prijsvergelijkers, een iOS-gerichte nieuwsbrief) ook bekeken → te ambigu/onduidelijk of er een echt gratis, Android-geschikt indie-app-kanaal achter zit, niet benaderd
 
 ---
 
