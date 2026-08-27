@@ -292,13 +292,17 @@ edcafferata@icloud.com
 - [x] ASRT — publications@asrt.org — 20 augustus 2026, verzonden via iCloud Mail
 - [x] APDR — info@apdr.org — 20 augustus 2026, verzonden via iCloud Mail
 - [x] AIUM — aiumpartnerships@aium.org — 20 augustus 2026, verzonden via iCloud Mail
-- [ ] MedImaging.net — edit@globetech.net
-- [ ] ESR — communications@myesr.org
-- [ ] AuntMinnieEurope — philip.ward@scienceandmedicinegroup.com
-- [ ] AAPM — newsletter@aapm.org
-- [ ] Indie Dev Monday — lookatme@indiedevmonday.com
+- [x] MedImaging.net — edit@globetech.net — reeds gemaild 22 juli 2026 (zie done-log
+  hieronder). ⚠️ Deze open checkbox stond ten onrechte nog open en werd op 27 aug 2026
+  per abuis opnieuw gemaild (dubbele outreach). NIET nog eens mailen.
+- [x] ESR — communications@myesr.org — reeds gemaild 22 juli 2026 (zie done-log). Niet opnieuw.
+- [x] AuntMinnieEurope — philip.ward@scienceandmedicinegroup.com — reeds gemaild 22 juli 2026. Niet opnieuw.
+- [x] AAPM — newsletter@aapm.org — reeds gemaild 23 juli 2026. Niet opnieuw.
+- [x] Indie Dev Monday — lookatme@indiedevmonday.com — reeds gemaild 24 juli 2026 (zie done-log).
+  ⚠️ Open checkbox stond ten onrechte nog open, op 27 aug 2026 per abuis opnieuw gemaild
+  (dubbele outreach). NIET nog eens mailen.
 - [x] Society of Breast Imaging — info@sbi-online.org — 20 augustus 2026, verzonden via iCloud Mail
-- [ ] ACVR — acvr@pamedsoc.org
+- [x] ACVR — acvr@pamedsoc.org — reeds gemaild 26 juli 2026 (zie done-log). Niet opnieuw.
 - [ ] ACR RIG West — WestRIG@acr.org
 - [ ] ACR RIG Midwest — MidwestRIG@acr.org
 - [ ] ACR RIG South — SouthRIG@acr.org
@@ -307,7 +311,7 @@ edcafferata@icloud.com
 - [ ] ASHNR — ashnr@asnr.org
 - [ ] AAOMR — info@aaomr.org
 - [ ] SNMMI — salexand@snmmi.org
-- [ ] Springboard App Picks — springboard@darylbaxter.com
+- [x] Springboard App Picks — springboard@darylbaxter.com — 27 augustus 2026, verzonden via Apple Mail (the-it-crowd@cafferata.info)
 - [ ] SIIM — info@siim.org
 - [ ] AHRA — memberservices@ahra.org
 - [ ] STR — str@thoracicrad.org
