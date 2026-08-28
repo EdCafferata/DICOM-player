@@ -283,6 +283,17 @@ de nog te verzenden IVRA (internationaal). Alleen een webformulier
 hier als kandidaat voor een latere ronde als de VS/India-veterinaire hoek
 verder wordt uitgebreid.
 
+### Nieuwe zoektocht (28 augustus 2026) — geen nieuwe onafhankelijke kanalen gevonden
+Gezocht naar een India-specifieke dental/maxillofacial-radiologiehoek (CBCT-DICOM
+is ook relevant voor Dicom Viewer) en naar teleradiologie-nieuwsportals. IAOMR
+(al eerder gevonden, 10 augustus) opnieuw bekeken: nog steeds geen betrouwbaar
+e-mailadres. **Indian Academy of Dental & Maxillofacial Radiology** (dmfrindia.org)
+gevonden maar het domein was deze sessie niet bereikbaar (DNS-fout) en er is geen
+e-mailadres gevonden via websearch — niet gebruikt (bounce-risico), kandidaat voor
+een volgende run. Teleradiologie-zoekresultaten wezen alleen naar commerciële
+teleradiologie-aanbieders (5C Network, Teleradio, Global TeleRadiology e.d.) —
+geen persplek. Geen nieuw geschikt kanaal deze ronde.
+
 ### Nieuwe zoektocht (13 augustus 2026) — geen nieuwe onafhankelijke kanalen gevonden
 Gezocht naar een Indiase radiologie-residenten-nieuwsbrief en departement-contacten bij
 grote ziekenhuizen (Tata Memorial Hospital Mumbai, NIMHANS Bangalore) — geen van beide

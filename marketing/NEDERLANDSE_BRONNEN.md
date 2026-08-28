@@ -199,6 +199,12 @@ persbericht-/redactie-ingang te hebben, alleen een algemeen postadres/telefoonnu
 niet gebruikt. Verder alleen al bekende namen (NVvR, Zorg-ICT Zorgen) teruggevonden. Geen
 nieuw kanaal deze ronde; de bestaande NL-checklist staat vrijwel volledig op afgerond.
 
+### Nieuwe zoektocht (28 augustus 2026) — geen nieuwe kanalen gevonden
+Gezocht naar Nederlandse patiëntenorganisaties/radiologie-gerelateerde
+kanker.nl-achtige kanalen. Resultaten wezen alleen naar al bekende namen
+(NVvR, NVRO, kanker.nl/NFK — laatste blijft "geen koude outreach", Golf 6-logica)
+— geen nieuw redactioneel kanaal gevonden deze ronde.
+
 ### Nieuwe zoektocht (18 augustus 2026, op verzoek van Ed) — particuliere bodyscan-/scanklinieken, geen nieuwe bruikbare kanalen
 Gericht gezocht naar particuliere klinieken die zelf scans (MRI/CT "bodyscan")
 aanbieden, naast de al bestaande Golf 4-lijst hierboven (Prescan, Privatescan,
