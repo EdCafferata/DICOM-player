@@ -380,6 +380,7 @@ edcafferata@icloud.com
 - [x] Nieuwe zoektocht (13 augustus 2026) — American Society of Spine Radiology (ASSR) onderzocht: blijkt organisatorisch door ASNR beheerd te worden (membership@asnr.org, "ASSR Membership is processed by the ASNR") — geen eigen contentcontact zoals bij ASHNR, alleen een membership/billing-mailbox. Niet gemaild om dubbele/verkeerd-gerichte outreach richting een operationele mailbox te voorkomen; ASNR zelf is al gemaild (15 juli 2026). Verder gezocht naar Nederlandse teleradiologie-nieuwssites en een India-radiologieresidenten-nieuwsbriefcontact — geen nieuw bruikbaar kanaal gevonden (zie ook NEDERLANDSE_BRONNEN.md en INDIA_BRONNEN.md)
 - [x] Nieuwe vondst (13 augustus 2026, tweede ronde) — RadFYI (wekelijkse nieuwsbrief van ARRS, apart van het al op 15 juli gemailde algemene membership@arrs.org-adres) gemaild (lyoung@arrs.org, Logan Young), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Nieuwe zoektocht (20 augustus 2026) — Applied Radiology (appliedradiology.com) onderzocht → ⛔ ongeschikt: peer-reviewed vaktijdschrift voor klinische review-artikelen/case reports van radiologen zelf, geen nieuws-/persberichtenkanaal voor een app-aankondiging. Editorial-contact wel gevonden (kieran@appliedradiology.com) maar niet benaderd — verkeerde ingang. AppHunt (verschillende gelijknamige sites: prijsvergelijkers, een iOS-gerichte nieuwsbrief) ook bekeken → te ambigu/onduidelijk of er een echt gratis, Android-geschikt indie-app-kanaal achter zit, niet benaderd
+- [ ] Nieuwe vondst (30 augustus 2026) — New York State Society of Radiologic Sciences (NYSSRS), studentenhoek — tekst klaar (members.nyssrs@gmail.com), kon niet verzonden worden deze run (Mail-toegang niet beschikbaar tijdens een scheduled run/interactieve sessie zonder losse goedkeuring). Klaar om te versturen in een volgende sessie met Mail-toegang
 
 ---
 
@@ -1543,6 +1544,41 @@ RadFYI readers.
 App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
 
 Happy to answer any questions. Thanks for considering it!
+
+Best,
+Ed Cafferata — The IT Crowd
+edcafferata@icloud.com
+```
+
+## Nieuw gevonden (30 augustus 2026) — New York State Society of Radiologic Sciences (NYSSRS)
+Staatsniveau-vakvereniging voor radiologisch laboranten/technologen in New York
+(nyssrs.org), met een eigen studentenpagina. Aanvullend op de al gemailde landelijke
+ASRT (technologen-hoek, 20 juli 2026) — dit is een apart, kleiner staatskanaal dat nog
+niet eerder benaderd is. Contact: **members.nyssrs@gmail.com** ("If you wish to
+contact a NYSSRS, send an e-mail to..." op nyssrs.org/Contact). Geen zelfpromotie- of
+AI-verbod gevonden, geen betaalmuur.
+
+## Kant-en-klare tekst — NYSSRS (e-mail naar members.nyssrs@gmail.com)
+
+**Onderwerp:** Free tool for radiologic technology students — Dicom Viewer, native iOS DICOM viewer
+
+```
+Hi NYSSRS team,
+
+I'm Ed Cafferata, founder of The IT Crowd. I built Dicom Viewer, a free native
+iOS app for viewing DICOM medical images (X-ray, CT, MRI, ultrasound) on
+iPhone and iPad — thought it might be worth mentioning to your student members
+as a resource for reviewing teaching cases on the go.
+
+It's privacy-first: everything runs on-device, no account, no cloud upload,
+no PACS connection. Features include a cine player for multi-frame studies,
+Window/Level presets (Abdomen, Lung, Bone, Brain), a series navigator and
+frame export.
+
+App Store: https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527
+
+Not a paid promotion request — just thought it might be genuinely useful for
+your students. Happy to answer any questions. Thanks for considering it!
 
 Best,
 Ed Cafferata — The IT Crowd
