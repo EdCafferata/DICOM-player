@@ -303,19 +303,22 @@ edcafferata@icloud.com
   (dubbele outreach). NIET nog eens mailen.
 - [x] Society of Breast Imaging — info@sbi-online.org — 20 augustus 2026, verzonden via iCloud Mail
 - [x] ACVR — acvr@pamedsoc.org — reeds gemaild 26 juli 2026 (zie done-log). Niet opnieuw.
-- [ ] ACR RIG West — WestRIG@acr.org
-- [ ] ACR RIG Midwest — MidwestRIG@acr.org
-- [ ] ACR RIG South — SouthRIG@acr.org
-- [ ] ACR RIG Northeast — NortheastRIG@acr.org
+- [x] ACR RIG West — WestRIG@acr.org — reeds gemaild 26 juli 2026 (zie done-log
+  regel hierboven). Checkbox stond ten onrechte nog open — gecorrigeerd 31
+  augustus 2026, NIET opnieuw mailen
+- [x] ACR RIG Midwest — MidwestRIG@acr.org — reeds gemaild 26 juli 2026, zelfde correctie
+- [x] ACR RIG South — SouthRIG@acr.org — reeds gemaild 26 juli 2026, zelfde correctie
+- [x] ACR RIG Northeast — NortheastRIG@acr.org — reeds gemaild 26 juli 2026, zelfde correctie
 - [x] SSR — info@skeletalrad.org — 20 augustus 2026, verzonden via iCloud Mail
-- [ ] ASHNR — ashnr@asnr.org
-- [ ] AAOMR — info@aaomr.org
-- [ ] SNMMI — salexand@snmmi.org
+- [x] ASHNR — ashnr@asnr.org — reeds gemaild 27 juli 2026 (zie done-log). Checkbox
+  gecorrigeerd 31 augustus 2026, NIET opnieuw mailen
+- [x] AAOMR — info@aaomr.org — reeds gemaild 4 augustus 2026, zelfde correctie
+- [x] SNMMI — salexand@snmmi.org — reeds gemaild 5 augustus 2026, zelfde correctie
 - [x] Springboard App Picks — springboard@darylbaxter.com — 27 augustus 2026, verzonden via Apple Mail (the-it-crowd@cafferata.info)
-- [ ] SIIM — info@siim.org
-- [ ] AHRA — memberservices@ahra.org
-- [ ] STR — str@thoracicrad.org
-- [ ] RadFYI (ARRS) — lyoung@arrs.org
+- [x] SIIM — info@siim.org — reeds gemaild 8 augustus 2026, zelfde correctie
+- [x] AHRA — memberservices@ahra.org — reeds gemaild 10 augustus 2026, zelfde correctie
+- [x] STR — str@thoracicrad.org — reeds gemaild 13 augustus 2026, zelfde correctie
+- [x] RadFYI (ARRS) — lyoung@arrs.org — reeds gemaild 13 augustus 2026, zelfde correctie
 - [x] AuntMinnie.com — eridley@auntminnie.com — 17 augustus 2026, verzonden via iCloud Mail
 - [x] SAR (had al positief gereageerd 3 aug — persoonlijke bedank+update-mail) — scook@veritasamc.com — 17 augustus 2026, verzonden via iCloud Mail
 
