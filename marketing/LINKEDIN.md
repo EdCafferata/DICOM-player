@@ -12,7 +12,7 @@
      gepost), de tekst zelf. -->
 
 ## 2026-09-02 — Dicom Viewer
-**Status:** alleen tekst klaargezet (geen browserverbinding) — Duski is nog steeds niet live in de App Store (App Store-lookup op de bundle-id levert nog altijd 0 resultaten op), dus de beurt ging automatisch weer naar Dicom Viewer.
+**Status:** gepost door Ed — Duski is nog steeds niet live in de App Store (App Store-lookup op de bundle-id levert nog altijd 0 resultaten op), dus de beurt ging automatisch weer naar Dicom Viewer.
 
 Vorige week deelde ik hier de Nederlandse patiëntflyer voor Dicom Viewer — een simpel A4'tje dat scancentra kunnen ophangen, met uitleg hoe je de scan die je op cd of USB meekrijgt, meteen op je eigen telefoon bekijkt. Deze week is daar de Engelse versie bijgekomen, met QR-codes naar zowel de App Store (VS) als Google Play — zodat ook scancentra buiten Nederland 'm kunnen ophangen.
 
