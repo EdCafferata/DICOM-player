@@ -205,6 +205,14 @@ kanker.nl-achtige kanalen. Resultaten wezen alleen naar al bekende namen
 (NVvR, NVRO, kanker.nl/NFK — laatste blijft "geen koude outreach", Golf 6-logica)
 — geen nieuw redactioneel kanaal gevonden deze ronde.
 
+### Nieuwe vondst (6 september 2026) — VMBv (Vereniging van Medisch Beeldvormers, België) ✅ gemaild
+Belgische zusterorganisatie van NVMBR — beroepsvereniging voor medische
+beeldvormers (medical imaging technologists/nurses), gevestigd in Leuven.
+Nederlandstalig, aanpalende doelgroep die nog niet eerder benaderd was (eerdere
+zoekrondes bleven NL-gericht). Contact: **info@vmbv.org** (via vmbv.org/contact).
+Geen zelfpromotie- of AI-verbod gevonden. Zelfde *helpende, niet-adverterende*
+toon als de NVMBR-mail. **Gemaild 6 september 2026** via het SMTP-script.
+
 ### Nieuwe zoektocht (18 augustus 2026, op verzoek van Ed) — particuliere bodyscan-/scanklinieken, geen nieuwe bruikbare kanalen
 Gericht gezocht naar particuliere klinieken die zelf scans (MRI/CT "bodyscan")
 aanbieden, naast de al bestaande Golf 4-lijst hierboven (Prescan, Privatescan,
@@ -278,6 +286,7 @@ edcafferata@icloud.com
 - [x] NVNG — info@nvng.nl — 20 augustus 2026, verzonden via iCloud Mail
 - [x] BEN (Beroepsvereniging Echoscopisten) — secretariaat@echoscopisten.nl — 20 augustus 2026, verzonden via iCloud Mail
 - [x] Tijdschrift voor Nucleaire Geneeskunde — info@kloosterhof.nl — 20 augustus 2026, verzonden via iCloud Mail
+- [x] VMBv (België) — info@vmbv.org — 6 september 2026, verzonden via het SMTP-script
 
 ---
 
@@ -627,6 +636,33 @@ Geen advertentieverzoek, maar ik dacht dat dit voor MBB'ers of via jullie
 kanalen interessant kan zijn, bijvoorbeeld als hulpmiddel om onderweg snel een
 serie te bekijken, of als tip aan patiënten die hun eigen beelden willen
 meenemen.
+
+App Store: https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527
+Meer info: https://cafferata.info
+
+Met vriendelijke groet,
+Ed Cafferata — The IT Crowd
+edcafferata@icloud.com
+```
+
+---
+
+## Kant-en-klare tekst — VMBv (e-mail naar info@vmbv.org, gemaild 6 september 2026)
+
+**Onderwerp:** Dicom Viewer — gratis iOS-app voor het bekijken van DICOM-beelden
+
+```
+Beste VMBv,
+
+Ik ben Ed Cafferata van The IT Crowd. Ik heb Dicom Viewer ontwikkeld, een
+gratis iOS-app waarmee DICOM-beelden (röntgen, CT, MRI, echo) rechtstreeks op
+iPhone of iPad bekeken kunnen worden — zonder account, cloud-upload of
+PACS-koppeling. Alles blijft lokaal op het toestel.
+
+Geen advertentieverzoek, maar ik dacht dat dit voor medisch beeldvormers of
+via jullie kanalen interessant kan zijn, bijvoorbeeld als hulpmiddel om
+onderweg snel een serie te bekijken, of als tip aan patiënten die hun eigen
+beelden willen meenemen.
 
 App Store: https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527
 Meer info: https://cafferata.info
