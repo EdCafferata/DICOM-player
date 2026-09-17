@@ -1589,3 +1589,15 @@ Best,
 Ed Cafferata — The IT Crowd
 edcafferata@icloud.com
 ```
+
+### Nieuwe zoektocht (17 september 2026) — geen nieuw geschikt kanaal gevonden
+Gezocht naar Amerikaanse radiologie-podcasts als extra outreach-hoek (naast de
+al gemailde verenigingen/nieuwssites). **A Couple of Rad Techs Podcast**
+(gericht op radiologisch laboranten/technologen, dus dezelfde doelgroep als
+ASRT/NYSSRS) kwam naar boven, maar geen verifieerbaar contact-e-mailadres
+gevonden — alleen een gedeeltelijk gemaskeerd adres in een directory-listing en
+een site zonder zichtbare contactpagina (a-couple-of-rad-techs.captivate.fm).
+Niet benaderd, zelfde bounce-risico-logica als eerder bij ETHealthworld/
+MediaNama — geen gok op een ongeverifieerd adres. Verder alleen al bekende
+grote podcasts (RSNA Radiology Podcast, Radiology Review) gevonden, geen van
+alle met een duidelijke "app-tip insturen"-ingang. Geen nieuw kanaal deze ronde.
