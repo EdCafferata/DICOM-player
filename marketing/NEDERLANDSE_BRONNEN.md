@@ -236,6 +236,12 @@ vrijwel compleet gedekt; geen nieuw kanaal deze ronde.
 
 ---
 
+### Nieuwe zoektocht (18 september 2026) — geen nieuwe kanalen gevonden
+Gezocht naar aanvullende Nederlandse teleradiologie-/patiëntenportaal-nieuwssites.
+Resultaten wezen alleen naar al bekende namen (NVvR, PostDICOM — laatste is de
+concurrent, geen promotiekanaal). Geen nieuw redactioneel kanaal gevonden deze
+ronde; de bestaande NL-checklist staat vrijwel volledig op afgerond.
+
 ## Android-heruitnodiging (17 augustus 2026) — alle eerder gemailde NL-contacten
 
 Op verzoek van Ed: Dicom Viewer is sinds 9 augustus 2026 ook gratis beschikbaar op

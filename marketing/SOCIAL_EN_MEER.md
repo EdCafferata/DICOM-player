@@ -339,6 +339,7 @@ edcafferata@icloud.com
 - [x] r/IndieAppNews-post gepost — 14 juli 2026, live als u/kaffer1986 met flair "App Introduction": https://www.reddit.com/r/IndieAppNews/
 - [ ] Hacker News Show HN — pas doen nadat een account wat historie heeft, of geaccepteerd dat een auto-kill kan gebeuren
 - [ ] iosdev.space (Mastodon) — Ed maakt zelf een account aan, daarna kan een introductiepost voorbereid worden
+- [ ] Bluesky (nieuwe vondst 18 september 2026) — Ed maakt zelf een account aan, daarna kan een introductiepost voorbereid worden (zelfde build-in-public-invalshoek als X)
 - [x] AltStore PAL onderzocht → ⛔ vereist werkend Apple Developer-account, zit vast op de bekende D&B/DUNS-blokkade — pas oppakken zodra dat is opgelost
 - [x] ACR RFS gemaild (rfs@acr.org) — 14 juli 2026, verzonden via iCloud Mail, wacht op reactie
 - [x] radiologysig.com gemaild (radsig2021@gmail.com) — 14 juli 2026, verzonden via iCloud Mail, wacht op reactie
@@ -1589,6 +1590,16 @@ Best,
 Ed Cafferata — The IT Crowd
 edcafferata@icloud.com
 ```
+
+### Nieuwe vondst (18 september 2026) — Bluesky, kandidaat-platform (nog geen account)
+Op verzoek van Ed (16 september 2026: periodiek kijken naar nog niet ingezette
+platforms) onderzocht: Bluesky heeft een actieve, groeiende "indie
+hacker/building in public"-gemeenschap met starter packs voor ontwikkelaars,
+geen zelfpromotie-verbod, en past qua toon bij de bestaande X-aanpak
+(build-in-public-invalshoek, DICOM-parser-verhaal). Claude maakt geen accounts
+aan — kandidaat voor Ed om zelf een account aan te maken, daarna kan een
+introductiepost worden voorbereid (zelfde aanpak als eerder bij iosdev.space en
+Student Doctor Network).
 
 ### Nieuwe zoektocht (17 september 2026) — geen nieuw geschikt kanaal gevonden
 Gezocht naar Amerikaanse radiologie-podcasts als extra outreach-hoek (naast de

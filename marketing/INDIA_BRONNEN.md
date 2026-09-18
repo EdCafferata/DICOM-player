@@ -302,6 +302,13 @@ had een vindbaar afdelings-e-mailadres (alleen algemene telefoonnummers). IRIA-s
 e-mail. Geen nieuw geschikt kanaal deze ronde; de bestaande India-checklist staat vrijwel
 volledig op afgerond of "on hold" in afwachting van een betere contactroute.
 
+### Nieuwe zoektocht (18 september 2026) — geen nieuwe onafhankelijke kanalen gevonden
+Gezocht naar aanvullende India-ziekenhuis-/radiologieafdelingscontacten naast de
+al gemailde AIIMS/PGIMER/CMC Vellore. Resultaten wezen alleen naar commerciële
+teleradiologie-dienstverleners (Manipal, Radever, Gujarat Imaging Centre e.d.) —
+dat zijn potentiële concurrenten/leveranciers, geen promotiekanaal. Geen nieuw
+geschikt kanaal deze ronde.
+
 ## Android-heruitnodiging (17 augustus 2026) — alle eerder gemailde India-contacten
 
 Op verzoek van Ed: Dicom Viewer is sinds 9 augustus 2026 ook gratis beschikbaar op
