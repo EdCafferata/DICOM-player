@@ -388,6 +388,7 @@ edcafferata@icloud.com
 - [x] CMC Vellore Radiology — eerste poging info@cmcvelloreradiology.org (4 augustus 2026) **gebounced**: "550 No Such User Here" — dat adres bestaat niet. Ed vond zelf twee echte adressen op cmcvelloreradiology.org/interventional-radiology.php: **radio@cmcvellore.ac.in** (algemeen, Division of Clinical Radiology) en **interventionalradiology@cmcvellore.ac.in** (specifiek IR). Opnieuw gemaild naar radio@cmcvellore.ac.in (4 augustus 2026), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Nieuwe vondst — SNMI (Society of Nuclear Medicine, India) gemaild (snmindiasecretary@gmail.com) — 4 augustus 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Nieuwe vondst — SIR (Society of Indian Radiographers) gemaild (info@radiographers.org) — 5 augustus 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [x] Nieuwe vondst (24 september 2026) — ISNR (Indian Society of Neuroradiology) gemaild (contact@isnr.in) — 24 september 2026, verzonden via het SMTP-script, Google Play + App Store-link
 - [x] Nieuwe zoektocht (5 augustus 2026) — gezocht naar aanvullende India-kanalen (teleradiologie-nieuwssites, startup-persplatforms, app-directories). IJRI (Indian Journal of Radiology and Imaging, IRIA's eigen wetenschappelijke tijdschrift) gevonden maar **niet gebruikt**: is een peer-reviewed vaktijdschrift voor artikel-inzendingen, geen persbericht-/app-tip-kanaal, en IRIA zelf is al gemaild (13 juli 2026). Entrackr/TechCircle (startup-nieuws) en IndianAIapps opnieuw bekeken, geen bruikbare gratis-en-passende ingang gevonden (IndianAIapps al eerder afgewezen wegens AI-focus). Geen nieuw geschikt kanaal deze ronde
 
 ---
@@ -785,3 +786,11 @@ Best regards,
 Ed Cafferata — The IT Crowd
 edcafferata@icloud.com
 ```
+
+### Nieuwe vondst (24 september 2026) — ISNR (Indian Society of Neuroradiology) ✅ gemaild
+Landelijke vereniging voor neuroradiologie (isnr.in, secretariaat PGIMER Chandigarh),
+met een "Young Neuroradiology Forum" voor trainees en maandelijkse webinars.
+Contact **contact@isnr.in** (op de homepage). Geen zelfpromotie-/AI-verbod of
+betaalmuur gevonden. Gemaild op 24 september 2026 via het SMTP-script, gericht op
+residents/YNRF, met Google Play- én App Store-link (Android eerst, gezien het
+Indiase marktaandeel).

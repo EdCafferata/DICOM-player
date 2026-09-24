@@ -378,6 +378,7 @@ edcafferata@icloud.com
 - [x] SAR (Society of Abdominal Radiology) — retroactief gelogd: gemaild op education@abdominalradiology.org (30 juli 2026, ontbrak per abuis in deze checklist). **Reactie ontvangen 3 augustus 2026** van Shannon Cook, MHA (Program Manager, Veritas Association Management, scook@veritasamc.com): "Thank you for reaching out. I have forwarded your information to leadership for review." — positieve reactie, geen verdere actie nodig, wacht op besluit van SAR-leiderschap
 - [x] Nieuwe vondst (8 augustus 2026) — Springboard "App Picks" (Daryl Baxter) gemaild (springboard@darylbaxter.com), verzonden via iCloud Mail, wacht op reactie
 - [x] Nieuwe vondst (8 augustus 2026, tweede ronde) — SIIM (Society for Imaging Informatics in Medicine) gemaild (info@siim.org), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
+- [x] Nieuwe vondst (24 september 2026) — NCSRT (North Carolina Society of Radiologic Technologists) gemaild (office@ncsrt.org) — 24 september 2026, verzonden via het SMTP-script, App Store + Google Play-link
 - [x] Nieuwe vondst (10 augustus 2026) — AHRA (The Association for Medical Imaging Management) gemaild (memberservices@ahra.org), verzonden via iCloud Mail, wacht op reactie
 - [x] Nieuwe vondst (13 augustus 2026) — Society of Thoracic Radiology (STR) gemaild (str@thoracicrad.org), verzonden via iCloud Mail, wacht op reactie
 - [x] Nieuwe zoektocht (20 augustus 2026) — Imaging Technology News (itnonline.com) onderzocht → ⛔ ongeschikt: groot B2B-vakblad gericht op ziekenhuisapparatuur (PACS/CT/MRI-vendors), contactpagina gaf "access denied" (bot-blokkade), en de site heeft een expliciete "Advertise"-ingang — waarschijnlijk geen gratis redactionele plek voor een individuele consumenten-app. Niet benaderd, geen nieuw geschikt kanaal deze ronde
@@ -1613,3 +1614,18 @@ Niet benaderd, zelfde bounce-risico-logica als eerder bij ETHealthworld/
 MediaNama — geen gok op een ongeverifieerd adres. Verder alleen al bekende
 grote podcasts (RSNA Radiology Podcast, Radiology Review) gevonden, geen van
 alle met een duidelijke "app-tip insturen"-ingang. Geen nieuw kanaal deze ronde.
+
+### Nieuwe vondst (24 september 2026) — NCSRT ✅ gemaild
+North Carolina Society of Radiologic Technologists (ncsrt.org) — staatsvereniging
+van radiologisch laboranten, zelfde invalshoek als NYSSRS (30 augustus 2026), met
+actieve studentenprogramma's (Quiz Bowl, beurzen, SLDP, "RT Schools"-overzicht).
+Contact **office@ncsrt.org** (ncsrt.org/contact). Geen zelfpromotie-/AI-verbod of
+betaalmuur gevonden. Gemaild met de NYSSRS-tekst, aangevuld met de Google Play-link.
+Ook gevonden maar niet gebruikt: Indiana SRT (imaging@isort.org) — site gaf 403,
+adres niet zelf kunnen verifiëren; kandidaat voor een volgende run. Andere
+staatsverenigingen (Minnesota, Massachusetts, South Dakota) zijn ook kandidaten,
+max. 1 per run.
+
+Social (periodieke check 24 september 2026): geen nieuwe post mogelijk zonder
+Ed — iosdev.space en Bluesky wachten nog op een account van Ed; X/Instagram/TikTok
+vergen handmatig posten. Geen nieuw platform toegevoegd deze run.
