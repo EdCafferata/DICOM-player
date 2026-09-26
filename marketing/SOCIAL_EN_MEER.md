@@ -379,6 +379,7 @@ edcafferata@icloud.com
 - [x] Nieuwe vondst (8 augustus 2026) — Springboard "App Picks" (Daryl Baxter) gemaild (springboard@darylbaxter.com), verzonden via iCloud Mail, wacht op reactie
 - [x] Nieuwe vondst (8 augustus 2026, tweede ronde) — SIIM (Society for Imaging Informatics in Medicine) gemaild (info@siim.org), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Nieuwe vondst (24 september 2026) — NCSRT (North Carolina Society of Radiologic Technologists) gemaild (office@ncsrt.org) — 24 september 2026, verzonden via het SMTP-script, App Store + Google Play-link
+- [x] Nieuwe vondst (26 september 2026) — MSRT-MA (Massachusetts Society of Radiologic Technologists) — info@msrt-ma.org — 26 september 2026, verzonden via het SMTP-script, App Store + Google Play-link
 - [x] Nieuwe vondst (25 september 2026) — MSRT (Minnesota Society of Radiologic Technologists), nieuwsbrief *Roentgen Reader* + MARS-studenten — roentgenreader@mnsrt.com — 25 september 2026, verzonden via het SMTP-script, App Store + Google Play-link
 - [x] Nieuwe vondst (10 augustus 2026) — AHRA (The Association for Medical Imaging Management) gemaild (memberservices@ahra.org), verzonden via iCloud Mail, wacht op reactie
 - [x] Nieuwe vondst (13 augustus 2026) — Society of Thoracic Radiology (STR) gemaild (str@thoracicrad.org), verzonden via iCloud Mail, wacht op reactie
@@ -1640,6 +1641,17 @@ zelfpromotie-/AI-verbod of betaalmuur gevonden (sponsor@ bestaat, maar dit is ge
 advertentieverzoek). Gemaild met de NYSSRS/NCSRT-tekst, licht aangepast (nieuwsbrief +
 MARS, iOS én Android). Volgende kandidaten, max. 1 per run: Massachusetts, South
 Dakota, Indiana SRT (imaging@isort.org nog niet geverifieerd).
+
+### Nieuwe vondst (26 september 2026) — MSRT-MA (Massachusetts) ✅ gemaild
+Massachusetts Society of Radiologic Technologists (msrt-ma.org, ledenportaal op
+Wild Apricot). **info@msrt-ma.org** staat op de eigen verenigingssite
+(msrt-ma.wildapricot.org), dus geverifieerd. Geen zelfpromotie-/AI-verbod of
+betaalmuur gevonden. Gemaild met de NYSSRS/MSRT-tekst (iOS + Android, leden én
+studenten, "not a paid promotion request"). Indiana SRT (isort.org) gaf opnieuw
+403 — blijft ongeverifieerd. Volgende kandidaat, max. 1 per run: South Dakota SRT.
+
+Social (periodieke check 26 september 2026): ongewijzigd — iosdev.space en Bluesky
+wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten.
 
 Social (periodieke check 25 september 2026): ongewijzigd t.o.v. 24 september —
 iosdev.space en Bluesky wachten op een account van Ed, X/Instagram/TikTok vergen
