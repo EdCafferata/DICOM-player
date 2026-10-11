@@ -380,6 +380,7 @@ edcafferata@icloud.com
 - [x] Nieuwe vondst (8 augustus 2026, tweede ronde) — SIIM (Society for Imaging Informatics in Medicine) gemaild (info@siim.org), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Nieuwe vondst (24 september 2026) — NCSRT (North Carolina Society of Radiologic Technologists) gemaild (office@ncsrt.org) — 24 september 2026, verzonden via het SMTP-script, App Store + Google Play-link
 - [x] Nieuwe vondst (26 september 2026) — MSRT-MA (Massachusetts Society of Radiologic Technologists) — info@msrt-ma.org — 26 september 2026, verzonden via het SMTP-script, App Store + Google Play-link
+- [x] Nieuwe vondst (11 oktober 2026) — SDSRT (South Dakota Society of Radiologic Technologists) — sdsrtradtechs@gmail.com — 11 oktober 2026, verzonden via het SMTP-script, App Store + Google Play-link
 - [x] Nieuwe vondst (25 september 2026) — MSRT (Minnesota Society of Radiologic Technologists), nieuwsbrief *Roentgen Reader* + MARS-studenten — roentgenreader@mnsrt.com — 25 september 2026, verzonden via het SMTP-script, App Store + Google Play-link
 - [x] Nieuwe vondst (10 augustus 2026) — AHRA (The Association for Medical Imaging Management) gemaild (memberservices@ahra.org), verzonden via iCloud Mail, wacht op reactie
 - [x] Nieuwe vondst (13 augustus 2026) — Society of Thoracic Radiology (STR) gemaild (str@thoracicrad.org), verzonden via iCloud Mail, wacht op reactie
@@ -1656,3 +1657,19 @@ wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten.
 Social (periodieke check 25 september 2026): ongewijzigd t.o.v. 24 september —
 iosdev.space en Bluesky wachten op een account van Ed, X/Instagram/TikTok vergen
 handmatig posten. Geen nieuw platform toegevoegd deze run.
+
+### Nieuwe vondst (11 oktober 2026) — SDSRT (South Dakota) ✅ gemaild
+South Dakota Society of Radiologic Technologists (sdsrt.org, bereikt via de
+affiliate-lijst van ASRT) — staatsvereniging met eigen studentenpagina.
+**sdsrtradtechs@gmail.com** staat op de eigen contactpagina (sdsrt.org/contact-us,
+naast een reCAPTCHA-formulier), dus geverifieerd. Geen zelfpromotie-/AI-verbod of
+betaalmuur gevonden. Gemaild met de NYSSRS/MSRT-tekst (iOS + Android, leden én
+studenten, "not a paid promotion request"). De ASRT-affiliatelijst
+(asrt.org/main/about-asrt/affiliates/affiliate-websites) is de bron voor volgende
+kandidaten, max. 1 per run: Ohio (osrt.org) en Virginia (vsrt.org) tonen geen
+e-mailadres op de homepage — contactpagina nog nalopen; Wisconsin (wsrt.net) nog
+niet bekeken; Indiana blijft ongeverifieerd (403).
+
+Social (periodieke check 11 oktober 2026): ongewijzigd — iosdev.space en Bluesky
+wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
+nieuw platform toegevoegd deze run.
