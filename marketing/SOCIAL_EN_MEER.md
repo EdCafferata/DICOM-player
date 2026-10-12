@@ -1673,3 +1673,17 @@ niet bekeken; Indiana blijft ongeverifieerd (403).
 Social (periodieke check 11 oktober 2026): ongewijzigd — iosdev.space en Bluesky
 wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
 nieuw platform toegevoegd deze run.
+
+### Nieuwe vondst (12 oktober 2026) — WSRT (Wisconsin) ✅ gemaild
+Wisconsin Society of Radiologic Technologists (wsrt.net, uit de ASRT-affiliatelijst).
+**webmaster.wsrt@gmail.com** is het enige adres op de eigen contactpagina
+(wsrt.net/contact, bedoeld voor feedback/leden-/evenementvragen), dus geverifieerd.
+Geen zelfpromotie-/AI-verbod of betaalmuur gevonden. Gemaild via het SMTP-script met
+de NYSSRS/MSRT-tekst (iOS + Android, leden én studenten, "not a paid promotion
+request"). Ohio (osrt.org/contact) en Virginia (vsrt.org/contact) geven een 404 —
+contactpagina's staan op een ander pad, volgende run opnieuw zoeken; Indiana blijft
+ongeverifieerd. Max. 1 staatsvereniging per run.
+
+Social (periodieke check 12 oktober 2026): ongewijzigd — iosdev.space en Bluesky
+wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
+nieuw platform toegevoegd deze run.
