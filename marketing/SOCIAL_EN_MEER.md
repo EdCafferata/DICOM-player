@@ -379,6 +379,7 @@ edcafferata@icloud.com
 - [x] Nieuwe vondst (8 augustus 2026) — Springboard "App Picks" (Daryl Baxter) gemaild (springboard@darylbaxter.com), verzonden via iCloud Mail, wacht op reactie
 - [x] Nieuwe vondst (8 augustus 2026, tweede ronde) — SIIM (Society for Imaging Informatics in Medicine) gemaild (info@siim.org), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Nieuwe vondst (24 september 2026) — NCSRT (North Carolina Society of Radiologic Technologists) gemaild (office@ncsrt.org) — 24 september 2026, verzonden via het SMTP-script, App Store + Google Play-link
+- [x] Nieuwe vondst (14 oktober 2026, tweede run) — MSRT (Michigan Society of Radiologic Technologists) — info@msrt.org — 14 oktober 2026, verzonden via het SMTP-script, App Store + Google Play-link
 - [x] Nieuwe vondst (26 september 2026) — MSRT-MA (Massachusetts Society of Radiologic Technologists) — info@msrt-ma.org — 26 september 2026, verzonden via het SMTP-script, App Store + Google Play-link
 - [x] Nieuwe vondst (11 oktober 2026) — SDSRT (South Dakota Society of Radiologic Technologists) — sdsrtradtechs@gmail.com — 11 oktober 2026, verzonden via het SMTP-script, App Store + Google Play-link
 - [x] Nieuwe vondst (25 september 2026) — MSRT (Minnesota Society of Radiologic Technologists), nieuwsbrief *Roentgen Reader* + MARS-studenten — roentgenreader@mnsrt.com — 25 september 2026, verzonden via het SMTP-script, App Store + Google Play-link
@@ -1704,3 +1705,15 @@ Social (periodieke check 14 oktober 2026): ongewijzigd — iosdev.space en Blues
 wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
 nieuw platform toegevoegd deze run.
 
+### Nieuwe vondst (14 oktober 2026, tweede run) — MSRT (Michigan) ✅ gemaild
+Michigan Society of Radiologic Technologists (msrt.org). **info@msrt.org** staat in de
+header/footer van de homepage én op msrt.org/contact/ ("membership, event information,
+general inquiries"), dus geverifieerd. Studentenhoek: beurzen + Student of the Year Award.
+Er is een apart sponsors-/vendorformulier; geen zelfpromotie-/AI-verbod of betaalmuur
+gevonden. Gemaild met de NYSSRS/MSRT-tekst (iOS + Android, leden én studenten, beurzen/
+Student of the Year genoemd, "not a paid promotion or vendor request"). Volgende
+kandidaten, max. 1 per run: Ohio (osrt.org, nog geen zichtbaar adres), Virginia (geen
+contactpagina gevonden), Indiana blijft ongeverifieerd.
+
+Social (periodieke check 14 oktober 2026, tweede run): ongewijzigd — iosdev.space en
+Bluesky wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten.
