@@ -1687,3 +1687,20 @@ ongeverifieerd. Max. 1 staatsvereniging per run.
 Social (periodieke check 12 oktober 2026): ongewijzigd — iosdev.space en Bluesky
 wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
 nieuw platform toegevoegd deze run.
+
+### Nieuwe vondst (14 oktober 2026) — TxSRT (Texas) ✅ gemaild
+Texas Society of Radiologic Technologists (txsrt.org, uit de ASRT-affiliatelijst) —
+staatsvereniging met studentenprogramma's (beurzen, SLDP, studentenwedstrijden) en de
+nieuwsbrief *TEXRays*. **tsrtinc@outlook.com** staat op de eigen homepage en contactpagina
+(txsrt.org/contact-us), dus geverifieerd. Sponsor-/vendorpagina's bestaan apart; geen
+zelfpromotie-/AI-verbod of betaalmuur gevonden. Gemaild via het SMTP-script met de
+NYSSRS/MSRT-tekst (iOS + Android, leden én studenten, TEXRays genoemd, "not a paid
+promotion or vendor request"). Volgende kandidaten, max. 1 per run: Michigan (msrt.org
+toont info@msrt.org op de homepage, contactpagina nog nalopen), Ohio (osrt.org/contact-us
+heeft alleen contactkaarten zonder zichtbaar adres), Virginia (geen contactpagina
+gevonden), Indiana blijft ongeverifieerd.
+
+Social (periodieke check 14 oktober 2026): ongewijzigd — iosdev.space en Bluesky
+wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
+nieuw platform toegevoegd deze run.
+
