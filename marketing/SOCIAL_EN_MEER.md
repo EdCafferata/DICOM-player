@@ -379,6 +379,7 @@ edcafferata@icloud.com
 - [x] Nieuwe vondst (8 augustus 2026) — Springboard "App Picks" (Daryl Baxter) gemaild (springboard@darylbaxter.com), verzonden via iCloud Mail, wacht op reactie
 - [x] Nieuwe vondst (8 augustus 2026, tweede ronde) — SIIM (Society for Imaging Informatics in Medicine) gemaild (info@siim.org), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Nieuwe vondst (24 september 2026) — NCSRT (North Carolina Society of Radiologic Technologists) gemaild (office@ncsrt.org) — 24 september 2026, verzonden via het SMTP-script, App Store + Google Play-link
+- [x] Nieuwe vondst (16 oktober 2026) — SCSRT (South Carolina Society of Radiologic Technologists) — scsrt.executivesecretary@gmail.com — 16 oktober 2026, verzonden via het SMTP-script, App Store + Google Play
 - [x] Nieuwe vondst (14 oktober 2026, tweede run) — MSRT (Michigan Society of Radiologic Technologists) — info@msrt.org — 14 oktober 2026, verzonden via het SMTP-script, App Store + Google Play-link
 - [x] Nieuwe vondst (26 september 2026) — MSRT-MA (Massachusetts Society of Radiologic Technologists) — info@msrt-ma.org — 26 september 2026, verzonden via het SMTP-script, App Store + Google Play-link
 - [x] Nieuwe vondst (11 oktober 2026) — SDSRT (South Dakota Society of Radiologic Technologists) — sdsrtradtechs@gmail.com — 11 oktober 2026, verzonden via het SMTP-script, App Store + Google Play-link
@@ -1717,3 +1718,22 @@ contactpagina gevonden), Indiana blijft ongeverifieerd.
 
 Social (periodieke check 14 oktober 2026, tweede run): ongewijzigd — iosdev.space en
 Bluesky wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten.
+
+### Nieuwe vondst (16 oktober 2026) — SCSRT (South Carolina) ✅ gemaild
+South Carolina Society of Radiologic Technologists (scsrt.org, ASRT-affiliate) —
+jaarlijkse Annual Meeting voor studenten én technologen (2026: Trident Technical
+College), beurzen, "Schools"-pagina met de opleidingen in de staat.
+**scsrt.executivesecretary@gmail.com** staat in de "Contact Us"-sectie van de eigen
+homepage (in de paginabron gecontroleerd), dus geverifieerd. Vendors worden alleen
+bedankt met logo's; geen zelfpromotie-/AI-verbod of betaalmuur gevonden. Gemaild via
+het SMTP-script met de NYSSRS/MSRT-tekst (iOS + Android, leden én studenten, "not a
+paid promotion or vendor request"). Ook bekeken: Georgia (gsrt.org/page-7742 heeft
+alleen postadres + telefoon, geen e-mail of formulier → overgeslagen), Pennsylvania
+(psrt.org is een geparkeerd domein), New Jersey (njsrt.org resolvet niet), Arizona
+(azsrt.org onbereikbaar). Volgende kandidaten, max. 1 per run: Illinois (issrt.org),
+Tennessee, Kansas, Utah — contactpagina's nog nalopen; Ohio/Virginia/Indiana
+ongewijzigd.
+
+Social (periodieke check 16 oktober 2026): ongewijzigd — iosdev.space en Bluesky
+wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
+nieuw platform toegevoegd deze run.
