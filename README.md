@@ -1,6 +1,6 @@
 # Dicom Viewer by The IT Crowd
 
-🔒 Laatste security check: 2026-10-15 18:15 CEST
+🔒 Laatste security check: 2026-10-16 23:26 CEST
 
 [![App Store](https://img.shields.io/badge/App_Store-v2.1-blue?logo=apple)](https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527)
 [![Platform](https://img.shields.io/badge/iOS-16.0%2B-lightgrey?logo=apple)](https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527)
