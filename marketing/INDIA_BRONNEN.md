@@ -794,3 +794,14 @@ Contact **contact@isnr.in** (op de homepage). Geen zelfpromotie-/AI-verbod of
 betaalmuur gevonden. Gemaild op 24 september 2026 via het SMTP-script, gericht op
 residents/YNRF, met Google Play- én App Store-link (Android eerst, gezien het
 Indiase marktaandeel).
+
+### Nieuwe vondst (17 oktober 2026) — BISI (Breast Imaging Society, India) ✅ gemaild
+Landelijke vereniging voor mammografie/borstbeeldvorming (bisi.co.in, opgericht 2013,
+ca. 800 leden en 40 fellows), met BISICON, CME's, webinars, een online journal club en
+teaching case submissions. Contact **breastimagingsociety@gmail.com** staat onder
+"Contact Us" in de footer van de eigen site. Geen zelfpromotie-/AI-verbod of betaalmuur
+gevonden (wel een standpunt tegen AI-thermografie als screeningsmiddel — niet van
+toepassing op een DICOM-viewer). Gemaild op 17 oktober 2026 via het SMTP-script, gericht
+op leden/fellows en teaching cases, Google Play- én App Store-link (Android eerst).
+Ook gezocht, nog geen geverifieerd adres: ISPR (Indian Society of Pediatric Radiology,
+geen eigen site gevonden), ISER (iser.org.in, achter een botcheck).
