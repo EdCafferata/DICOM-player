@@ -805,3 +805,12 @@ toepassing op een DICOM-viewer). Gemaild op 17 oktober 2026 via het SMTP-script,
 op leden/fellows en teaching cases, Google Play- én App Store-link (Android eerst).
 Ook gezocht, nog geen geverifieerd adres: ISPR (Indian Society of Pediatric Radiology,
 geen eigen site gevonden), ISER (iser.org.in, achter een botcheck).
+
+### Zoekronde 18 oktober 2026 — geen nieuw contact gemaild
+Gezocht naar Indiase subspecialisatie-verenigingen (musculoskeletaal, spoed-, hoofd-hals-
+radiologie). Alleen de Musculoskeletal Society of India (MSS) gevonden, die geen eigen
+verenigingssite lijkt te hebben; het enige adres is **editor@mss-ijmsr.com** van het
+Indian Journal of Musculoskeletal Radiology (wetenschappelijk tijdschrift → geen goede
+ingang voor een app-tip, niet gemaild). Kandidaat zodra er een verenigings-/secretariaatsadres
+opduikt (bv. via het jaarcongres MSS/AMS, Ahmedabad).
+

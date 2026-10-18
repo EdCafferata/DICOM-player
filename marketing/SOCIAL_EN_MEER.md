@@ -379,6 +379,7 @@ edcafferata@icloud.com
 - [x] Nieuwe vondst (8 augustus 2026) — Springboard "App Picks" (Daryl Baxter) gemaild (springboard@darylbaxter.com), verzonden via iCloud Mail, wacht op reactie
 - [x] Nieuwe vondst (8 augustus 2026, tweede ronde) — SIIM (Society for Imaging Informatics in Medicine) gemaild (info@siim.org), verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] Nieuwe vondst (24 september 2026) — NCSRT (North Carolina Society of Radiologic Technologists) gemaild (office@ncsrt.org) — 24 september 2026, verzonden via het SMTP-script, App Store + Google Play-link
+- [x] Nieuwe vondst (18 oktober 2026) — AEIRS (Association of Educators in Imaging and Radiologic Sciences) — info@aeirs.org — 18 oktober 2026, verzonden via het SMTP-script, App Store + Google Play
 - [x] Nieuwe vondst (17 oktober 2026) — CSRT (California Society of Radiologic Technologists) — info@csrt.org — 17 oktober 2026, verzonden via het SMTP-script, App Store + Google Play
 - [x] Nieuwe vondst (16 oktober 2026) — SCSRT (South Carolina Society of Radiologic Technologists) — scsrt.executivesecretary@gmail.com — 16 oktober 2026, verzonden via het SMTP-script, App Store + Google Play
 - [x] Nieuwe vondst (14 oktober 2026, tweede run) — MSRT (Michigan Society of Radiologic Technologists) — info@msrt.org — 14 oktober 2026, verzonden via het SMTP-script, App Store + Google Play-link
@@ -1753,5 +1754,26 @@ max. 1 per run: Ohio (osrt.org) en Virginia (vsrt.org) — sites bereikbaar, maa
 adres op de homepage; contactpagina's nog nalopen.
 
 Social (periodieke check 17 oktober 2026): ongewijzigd — iosdev.space en Bluesky
+wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
+nieuw platform toegevoegd deze run.
+
+### Nieuwe vondst (18 oktober 2026) — AEIRS ✅ gemaild
+Association of Educators in Imaging and Radiologic Sciences (aeirs.org): landelijke
+vereniging van docenten radiologische technologie/medische beeldvorming in de VS
+(curricula, Educator Practice Standards, webinars, jaarcongres). Andere invalshoek dan
+de staatsverenigingen: via docenten bij de opleidingen terecht. **info@aeirs.org** staat
+als mailto op de eigen contactpagina (aeirs.org/contact). Er is een homepage-sponsor en
+een advertentiepagina (loopt apart); geen zelfpromotie-/AI-verbod of betaalmuur gevonden.
+Gemaild via het SMTP-script, gericht op docenten + studenten en geanonimiseerde
+teaching cases (on-device, geen account/cloud), iOS + Android, "not a paid promotion or
+vendor request". Niet nogmaals mailen zonder reactie.
+Ook nagelopen en overgeslagen: Ohio (osrt.org: adressen achter Joomla-spambotbescherming,
+alleen telefoon Operations Manager zichtbaar) en Virginia (vsrt.org: alleen
+contactformulier). Florida, Wisconsin en Iowa: geen eigen site met adres bereikbaar
+(wsrt.net achter Cloudflare-botcheck). De Amerikaanse staatsverenigingen met een
+zichtbaar adres zijn daarmee grotendeels benaderd; volgende runs liever andere VS-hoeken
+(opleidings-/docentennetwerken, vakmedia) dan nog meer staten raden.
+
+Social (periodieke check 18 oktober 2026): ongewijzigd — iosdev.space en Bluesky
 wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
 nieuw platform toegevoegd deze run.
