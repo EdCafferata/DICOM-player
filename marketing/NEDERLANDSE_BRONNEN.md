@@ -242,6 +242,17 @@ Resultaten wezen alleen naar al bekende namen (NVvR, PostDICOM — laatste is de
 concurrent, geen promotiekanaal). Geen nieuw redactioneel kanaal gevonden deze
 ronde; de bestaande NL-checklist staat vrijwel volledig op afgerond.
 
+### Nieuwe vondst (23 oktober 2026) — BSR Young Radiologist Section (België) ✅ gemaild
+Belgian Society of Radiology (bsr-web.be, landelijke radiologenvereniging, sinds 2013)
+heeft een eigen **Young Radiologist Section (YRS)** voor AIOS/jonge radiologen —
+vergelijkbaar met de NVvR Sectie Juniorleden. **youngradiologistsection@gmail.com**
+staat op de eigen YRS-pagina (bsr-web.be/yrs); algemeen adres info@bsr-web.be staat op
+bsr-web.be/contact (niet apart gemaild, om dubbel contact te vermijden). Sponsorlogo's
+op de site, maar geen zelfpromotie-/AI-verbod of betaalmuur gevonden. Gemaild op
+23 oktober 2026 via het SMTP-script (Engels, gezien tweetalig België), gericht op
+jonge radiologen + teaching cases, App Store (BE) én Google Play. Niet nogmaals mailen
+zonder reactie.
+
 ## Android-heruitnodiging (17 augustus 2026) — alle eerder gemailde NL-contacten
 
 Op verzoek van Ed: Dicom Viewer is sinds 9 augustus 2026 ook gratis beschikbaar op

@@ -814,3 +814,15 @@ Indian Journal of Musculoskeletal Radiology (wetenschappelijk tijdschrift → ge
 ingang voor een app-tip, niet gemaild). Kandidaat zodra er een verenigings-/secretariaatsadres
 opduikt (bv. via het jaarcongres MSS/AMS, Ahmedabad).
 
+### Zoekronde 23 oktober 2026 — geen nieuw contact gemaild
+- **ISPR** (Indian Society of Paediatric Radiology): het in het WFPI-ledenprofiel genoemde
+  domein ispronline.com is **gekaapt** (nu een casino-promotiepagina) → niet gebruiken.
+  Nationale secretaris volgens een CME-brochure 2025: Dr. Sridhar Gibikote (CMC Vellore) —
+  geen verenigingsadres gevonden; CMC Vellore Radiologie is al eerder gemaild.
+- **ISGAR** (Indian Society of Gastrointestinal & Abdominal Radiology, isgar.org, actief —
+  10e congres aug. 2027 in CMC Vellore): contactpagina toont alleen het adres van het
+  webbureau (support@cubegrfx.com) + een contactformulier, en persoonlijke adressen van
+  bestuursleden → niet gemaild. Kandidaat voor een **webformulier** (voorbereiden voor
+  Ed) als er geen beter India-kanaal opduikt.
+- ICRI (Indian College of Radiology & Imaging): geen eigen site/adres gevonden.
+

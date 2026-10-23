@@ -1777,3 +1777,25 @@ zichtbaar adres zijn daarmee grotendeels benaderd; volgende runs liever andere V
 Social (periodieke check 18 oktober 2026): ongewijzigd — iosdev.space en Bluesky
 wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
 nieuw platform toegevoegd deze run.
+
+### Nieuwe vondst (23 oktober 2026) — SRU (Society of Radiologists in Ultrasound) ✅ gemaild
+Amerikaanse vakvereniging voor echo-radiologen (sru.org, Tampa FL) met een Early Career
+Interest Group en Early Career-grants — nieuwe subspecialisatiehoek (echo) na de
+staatsverenigingen. **info@sru.org** is het enige adres op de eigen contactpagina
+(sru.org/contact). Sponsorlogo's, maar geen zelfpromotie-/AI-verbod of betaalmuur gevonden.
+Gemaild op 23 oktober 2026 via het SMTP-script, gericht op leden + early-career/trainees en
+teaching cases, iOS + Android, "not a paid promotion or vendor request". Niet nogmaals
+mailen zonder reactie.
+
+- [ ] Kandidaat (23 oktober 2026) — **SDMS** (Society of Diagnostic Medical Sonography,
+  sdms.org, grote VS-vereniging voor echografisten incl. studentleden): contactpagina heeft
+  alleen een webformulier (max. 600 tekens) + telefoon; membership@sdms.org staat alleen op
+  het lidmaatschapsformulier (niet voor dit doel). Tekst kan als ingekorte SRU-pitch worden
+  voorbereid; formulier verzendt Ed zelf.
+- AMSER (medical student educators, onder AUR/aarad.org): geen algemeen adres, alleen oude
+  persoonlijke adressen in nieuwsbrieven; AUR (info@aarad.org) is al eerder gemaild → overgeslagen.
+
+Social (periodieke check 23 oktober 2026): ongewijzigd — iosdev.space en Bluesky
+wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
+nieuw platform toegevoegd deze run.
+
