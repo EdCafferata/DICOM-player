@@ -1674,6 +1674,12 @@ kandidaten, max. 1 per run: Ohio (osrt.org) en Virginia (vsrt.org) tonen geen
 e-mailadres op de homepage — contactpagina nog nalopen; Wisconsin (wsrt.net) nog
 niet bekeken; Indiana blijft ongeverifieerd (403).
 
+**Vervolg SDSRT (22–23 oktober 2026):** Kylie English (kyengl01@gmail.com) stuurde het
+vendor-formulier voor de conferentie 22–24 april 2027 (Mitchell SD; tiers $350–$1.500).
+Ed besloot 23 okt: geen betaalde sponsoring. Op 23 okt 21:15 beantwoord (Eds akkoord op het
+voorstel): gratis vermelding/QR-code in het programma of delen met leden/studenten
+gevraagd, one-pager/slide aangeboden. Wacht op reactie — bij "ja" een one-pager/QR-slide maken.
+
 Social (periodieke check 11 oktober 2026): ongewijzigd — iosdev.space en Bluesky
 wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
 nieuw platform toegevoegd deze run.
