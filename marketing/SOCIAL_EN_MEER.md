@@ -1805,3 +1805,21 @@ Social (periodieke check 23 oktober 2026): ongewijzigd — iosdev.space en Blues
 wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
 nieuw platform toegevoegd deze run.
 
+
+### Nieuwe vondst (26 oktober 2026) — SCCT (Society of Cardiovascular Computed Tomography) ✅ gemaild
+Internationale vakvereniging voor cardiale CT (scct.org, VS), met de FiRST-commissie
+(Fellow and Resident Leaders of SCCT) voor trainees. Dat is een nieuwe hoek: cardiale
+beeldvorming, na thorax (STR), echo (SRU) en de staatsverenigingen. **info@scct.org**: de
+eigen congrespagina (scct.org/SCCT2026) verwijst daarnaar voor algemene vragen. Gezien via
+de zoekindex, want scct.org geeft 403 aan geautomatiseerde toegang. Exposanten en sponsoring
+lopen apart; geen zelfpromotie-/AI-verbod of betaalmuur gevonden. Gemaild op 26 oktober 2026
+via het SMTP-script, gericht op leden en FiRST-trainees en op geanonimiseerde cardiale
+CT-teaching cases, iOS + Android, "not a paid promotion or vendor request". Bounct het,
+noteer het hier dan. Niet nogmaals mailen zonder reactie.
+- Kandidaat, niet gemaild: **SCMR** (Society for Cardiovascular Magnetic Resonance, scmr.org).
+  Het contactadres was niet te verifiëren (504 en geen adres in de paginabron). Volgende run
+  opnieuw proberen.
+
+Social (periodieke check 26 oktober 2026): ongewijzigd — iosdev.space en Bluesky
+wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
+nieuw platform toegevoegd deze run.
