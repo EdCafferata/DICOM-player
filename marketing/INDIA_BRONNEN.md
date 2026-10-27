@@ -826,3 +826,12 @@ opduikt (bv. via het jaarcongres MSS/AMS, Ahmedabad).
   Ed) als er geen beter India-kanaal opduikt.
 - ICRI (Indian College of Radiology & Imaging): geen eigen site/adres gevonden.
 
+
+### Nieuwe vondst (27 oktober 2026) — ISVIR (Indian Society of Vascular & Interventional Radiology) ✅ gemaild
+Nationale vereniging voor interventieradiologie (isvirindia.org, New Delhi) — nieuwe subspecialisatiehoek. De eigen
+contactpagina (isvirindia.org/contact) toont **info.isvir@gmail.com** als "Express Helpline" / "Do you have a
+Question?" (plus officeexecutive@isvirindia.org en een persoonlijk secretaris-adres, niet gebruikt). Geen
+zelfpromotie-/AI-verbod of betaalmuur gevonden. Gemaild op 27 oktober 2026 via het SMTP-script, gericht op leden,
+residents/fellows en teaching cases, Google Play- én App Store (IN)-link (Android eerst), "not a paid promotion or
+vendor/sponsorship request". Niet nogmaals mailen zonder reactie.
+- Ook gezocht: ISNR (neuroradiologie, India) — geen eigen site/adres gevonden.

@@ -1823,3 +1823,14 @@ noteer het hier dan. Niet nogmaals mailen zonder reactie.
 Social (periodieke check 26 oktober 2026): ongewijzigd — iosdev.space en Bluesky
 wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
 nieuw platform toegevoegd deze run.
+
+### Nieuwe vondst (27 oktober 2026) — SCMR (Society for Cardiovascular Magnetic Resonance) ✅ gemaild
+Het kandidaat-adres van 26 oktober is nu geverifieerd: de eigen contactpagina (scmr.org/contact-hq/) noemt
+**hq@scmr.org** voor membership/algemeen (naast meetings@ en sponsorship@ — die bewust niet gebruikt). Geen
+zelfpromotie-/AI-verbod of betaalmuur gevonden. Gemaild op 27 oktober 2026 via het SMTP-script, gericht op leden +
+fellows/trainees en cine-CMR/teaching cases, iOS + Android, "not a paid promotion or vendor/sponsorship request".
+Niet nogmaals mailen zonder reactie.
+
+Social (periodieke check 27 oktober 2026): ongewijzigd — iosdev.space en Bluesky
+wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
+nieuw platform toegevoegd deze run.
