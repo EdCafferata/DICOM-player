@@ -1834,3 +1834,17 @@ Niet nogmaals mailen zonder reactie.
 Social (periodieke check 27 oktober 2026): ongewijzigd — iosdev.space en Bluesky
 wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
 nieuw platform toegevoegd deze run.
+
+### Nieuwe vondst (29 oktober 2026) — ISMRM & ISMRT (International Society for Magnetic Resonance in Medicine + de MR-technologistensectie) ✅ gemaild
+Nieuwe hoek: internationale MRI-vereniging (artsen, fysici, trainees/junior fellows) met een eigen sectie voor
+MR-laboranten (ISMRT), één gedeeld Central Office (Concord, CA). De eigen contactpagina (ismrm.org/contact/) noemt
+alleen **info@ismrm.org** als algemeen adres; geen zelfpromotie-/AI-verbod of betaalmuur gevonden. Gemaild op
+29 oktober 2026 via het SMTP-script, gericht op trainees, junior fellows en MR-technologists (teaching cases,
+anonieme voorbeeldseries), App Store + Google Play, "not a paid promotion or vendor/sponsorship request".
+Niet nogmaals mailen zonder reactie.
+- Ook bekeken: FSRT (Florida, fsrt.org — TLS-certificaat verlopen, site niet te verifiëren) en ISSRT (Illinois,
+  geen site/adres gevonden) → overgeslagen.
+
+Social (periodieke check 29 oktober 2026): ongewijzigd — iosdev.space en Bluesky
+wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
+nieuw platform toegevoegd deze run.
