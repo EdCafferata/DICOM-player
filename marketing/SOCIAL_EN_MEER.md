@@ -1848,3 +1848,22 @@ Niet nogmaals mailen zonder reactie.
 Social (periodieke check 29 oktober 2026): ongewijzigd — iosdev.space en Bluesky
 wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
 nieuw platform toegevoegd deze run.
+
+### Nieuwe vondst (30 oktober 2026) — ISRRT (International Society of Radiographers and Radiological Technologists) ✅ gemaild
+Wereldwijde koepel van nationale radiographer-verenigingen (non-profit, sinds 1962). Nieuwe hoek: internationaal
+laboranten/radiographers + studenten. De eigen contactpagina (isrrt.org/contact) noemt **admin@isrrt.org** als algemeen
+adres (ceo@ bewust niet gebruikt). Geen zelfpromotie-/AI-verbod of betaalmuur gevonden; corporate membership bestaat
+apart en is niet gevraagd. Gemaild op 30 oktober 2026 via het SMTP-script, App Store + Google Play, "not a paid
+promotion or a corporate membership request". Niet nogmaals mailen zonder reactie.
+
+### Nieuwe vondst (30 oktober 2026) — CIRSE European Trainee Forum (interventieradiologie, Europa) ✅ gemaild
+Traineeforum van CIRSE (Wenen). Nieuwe hoek: Europese IR-trainees. De eigen pagina (cirse.org/trainees/connect/) geeft
+**etf@cirse.org** (versleuteld in de paginabron, zelf gedecodeerd) en nodigt uit om contact op te nemen. Geen
+zelfpromotie-/AI-verbod of betaalmuur gevonden. Gemaild op 30 oktober 2026 via het SMTP-script, gericht op teaching
+cases, App Store + Google Play, "not a paid promotion or a vendor/sponsorship request". Niet nogmaals mailen zonder reactie.
+- Kandidaat, niet gemaild: **EFRS** (European Federation of Radiographer Societies): contactpagina gaf geen bruikbare
+  inhoud, adres nog verifiëren.
+
+Social (periodieke check 30 oktober 2026): ongewijzigd — iosdev.space en Bluesky
+wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
+nieuw platform toegevoegd deze run.
