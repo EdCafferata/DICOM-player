@@ -1867,3 +1867,16 @@ cases, App Store + Google Play, "not a paid promotion or a vendor/sponsorship re
 Social (periodieke check 30 oktober 2026): ongewijzigd — iosdev.space en Bluesky
 wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
 nieuw platform toegevoegd deze run.
+
+### Nieuwe vondst (31 oktober 2026) — Junior ESPR / JESPeR (jonge kinderradiologen, Europa) ✅ gemaild
+Juniorgroep van de European Society of Paediatric Radiology, voor kinderradiologen met minder dan vijf jaar ervaring.
+Nieuwe hoek: Europese kinderradiologie (SPR is de VS-tegenhanger). De eigen pagina (espr.org/junior-espr) noemt onder
+"Contact us" **jesper@espr.org**; office@espr.org bewust niet gebruikt. Geen zelfpromotie-/AI-verbod of betaalmuur
+gevonden. Gemaild op 31 oktober 2026 via het SMTP-script, gericht op geanonimiseerde teaching cases, App Store + Google
+Play, "not a paid promotion or a vendor/sponsorship request". Niet nogmaals mailen zonder reactie.
+- Kandidaat, nog steeds niet gemaild: **EFRS**: efrs.eu is een JavaScript-app zonder adres in de paginabron, en de
+  zoekindex geeft geen adres. Alleen via de browser nog te verifiëren.
+
+Social (periodieke check 31 oktober 2026): ongewijzigd — iosdev.space en Bluesky
+wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
+nieuw platform toegevoegd deze run.
