@@ -1880,3 +1880,16 @@ Play, "not a paid promotion or a vendor/sponsorship request". Niet nogmaals mail
 Social (periodieke check 31 oktober 2026): ongewijzigd — iosdev.space en Bluesky
 wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
 nieuw platform toegevoegd deze run.
+
+### Nieuwe vondst (1 november 2026) — ESSR Young Club (jonge MSK-radiologen, Europa) ✅ gemaild
+Juniorgroep van de European Society of Musculoskeletal Radiology (Wenen), voor residents, promovendi en medisch
+studenten. Nieuwe hoek: Europese MSK-radiologie. De eigen pagina (essr.org/young-club/) noemt **youngclub@essr.org**;
+office@essr.org bewust niet gebruikt. Geen zelfpromotie-/AI-verbod of betaalmuur gevonden. Gemaild op 1 november 2026
+via het SMTP-script, gericht op geanonimiseerde teaching cases, App Store + Google Play, "not a paid promotion or a
+vendor/sponsorship request". Niet nogmaals mailen zonder reactie.
+- Kandidaat, niet gemaild: **EUSOBI Young Club** (borstbeeldvorming): geen eigen adres gevonden, alleen office@eusobi.org.
+  **ESNR Juniors Connect** (neuroradiologie): adres nog niet gevonden.
+
+Social (periodieke check 1 november 2026): ongewijzigd — iosdev.space en Bluesky
+wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
+nieuw platform toegevoegd deze run.
