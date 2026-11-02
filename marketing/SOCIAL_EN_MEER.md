@@ -1893,3 +1893,18 @@ vendor/sponsorship request". Niet nogmaals mailen zonder reactie.
 Social (periodieke check 1 november 2026): ongewijzigd — iosdev.space en Bluesky
 wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
 nieuw platform toegevoegd deze run.
+
+### Nieuwe vondst (2 november 2026) — Young ESR Committee (jonge radiologen, Europa) ✅ gemaild
+Commissie van de European Society of Radiology voor residents en jonge radiologen (Wenen). Los van de eerdere ESR-mail
+aan communications@myesr.org (22 juli 2026): ander publiek en eigen inbox. De pagina myesr.org/young-esr/ nodigt uit om
+"questions or ideas" te mailen naar **youngcommittee@myesr.org** (adres achter Cloudflare-codering, gedecodeerd). Geen
+zelfpromotie-/AI-verbod of betaalmuur gevonden. Gemaild op 2 november 2026 via het SMTP-script, gericht op trainees en
+teaching cases, App Store + Google Play, "not a paid promotion or a vendor/sponsorship request". Niet nogmaals mailen
+zonder reactie.
+- Opnieuw gezocht, niet gemaild: **ESNR Juniors Connect** (pagina laadt alleen via JavaScript, geen adres gevonden),
+  **ESUR Junior Network** (alleen het secretariaat esursecretary@esur.org), **ESGAR Young Club** (alleen het centrale
+  ESGAR-kantoor). Geen ESTI-/ESCR-juniorgroep met eigen adres gevonden.
+
+Social (periodieke check 2 november 2026): ongewijzigd — iosdev.space en Bluesky
+wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
+nieuw platform toegevoegd deze run.
