@@ -1908,3 +1908,18 @@ zonder reactie.
 Social (periodieke check 2 november 2026): ongewijzigd — iosdev.space en Bluesky
 wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
 nieuw platform toegevoegd deze run.
+
+### Nieuwe vondst (7 november 2026) — EFSUMB (European Federation of Societies for Ultrasound in Medicine and Biology) ✅ gemaild
+Europese koepel van de nationale echografieverenigingen, met een "Young EFSUMB Student Committee", een nieuwsbrief
+en e-letters. Echo was nog niet apart benaderd op Europees niveau (wel AIUM in de VS). Contactpagina efsumb.org/contact
+noemt **efsumb@efsumb.org** (algemeen, secretaris-generaal) en admin@efsumb.org. Geen zelfpromotie-/AI-verbod
+gevonden; "Partnerships"/"Educational Partner Membership" is een aparte route en is niet gebruikt. Gemaild op
+7 november 2026 via het SMTP-script naar efsumb@efsumb.org, met de vraag het door te sturen naar nieuwsbrief/Young
+EFSUMB; gericht op studenten en trainees (echo-cine-loops, anonieme teaching cases), App Store + Google Play, niet
+diagnostisch, "not a paid promotion or a vendor/sponsorship request". Niet nogmaals mailen zonder reactie.
+- Kandidaten voor een volgende run: **WFUMB** (wereldkoepel echografie) en **ISUOG** (obstetrische echo) — nog niet
+  op adres en regels gecontroleerd.
+
+Social (periodieke check 7 november 2026): ongewijzigd — iosdev.space en Bluesky
+wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
+nieuw platform toegevoegd deze run.
