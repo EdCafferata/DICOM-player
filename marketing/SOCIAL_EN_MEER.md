@@ -1923,3 +1923,19 @@ diagnostisch, "not a paid promotion or a vendor/sponsorship request". Niet nogma
 Social (periodieke check 7 november 2026): ongewijzigd — iosdev.space en Bluesky
 wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
 nieuw platform toegevoegd deze run.
+
+### Nieuwe vondst (11 november 2026) — WFUMB (World Federation for Ultrasound in Medicine and Biology) ✅ gemaild
+Wereldkoepel van de echografieverenigingen (kandidaat uit de run van 7 november). Heeft een nieuwsbrief *Echoes*, een
+Student Education Task Force, webinars, Image of the Month en Interactive Case of the Month. Contactpagina
+wfumb.org/contact noemt **admin@wfumb.org** (Administration Team). Geen zelfpromotie-/AI-verbod gevonden; er is een
+Conflict of Interest-beleid en een aparte "Industry Resources"-route, die is niet gebruikt. Gemaild op 11 november
+2026 via het SMTP-script naar admin@wfumb.org, met de vraag het in *Echoes* te noemen of door te sturen naar de
+Student Education Task Force; gericht op studenten en trainees (echo-cine-loops, anonieme teaching cases),
+App Store + Google Play, niet diagnostisch, "not a paid promotion or a vendor/sponsorship request". Niet nogmaals
+mailen zonder reactie.
+- **ISUOG** (obstetrische echo): contactpagina isuog.org/contact-us.html toont geen e-mailadres in de paginabron;
+  nog niet nagelopen via de browser. Kandidaat voor een volgende run.
+
+Social (periodieke check 11 november 2026): ongewijzigd — iosdev.space en Bluesky
+wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
+nieuw platform toegevoegd deze run.
