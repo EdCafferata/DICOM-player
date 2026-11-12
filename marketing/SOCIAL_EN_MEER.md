@@ -1939,3 +1939,16 @@ mailen zonder reactie.
 Social (periodieke check 11 november 2026): ongewijzigd — iosdev.space en Bluesky
 wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
 nieuw platform toegevoegd deze run.
+
+### Nieuwe vondst (12 november 2026) — ISUOG (International Society of Ultrasound in Obstetrics & Gynecology) ✅ gemaild
+Kandidaat uit de run van 11 november. De contactpagina (isuog.org/contact-us.html) geeft nu 404; via de ISUOG-
+traineeflyer en partnerpagina is **info@isuog.org** het algemene adres, ook voor trainee-zaken (Trainee Hub, gratis
+online lidmaatschap voor trainees). Daarnaast bestaan education@isuog.org (cursussen) en outreach@isuog.org — niet
+gebruikt. Corporate partnerships zijn betaald; die route is niet gebruikt. Geen zelfpromotie-/AI-verbod gevonden.
+Gemaild op 12 november 2026 via het SMTP-script naar info@isuog.org, met de vraag het via de Trainee Hub te noemen of
+door te sturen naar wie trainee-resources coördineert; echo-cine-loops, anonieme teaching cases, App Store + Google
+Play, niet diagnostisch, "not a paid promotion or a vendor/sponsorship request". Niet nogmaals mailen zonder reactie.
+
+Social (periodieke check 12 november 2026): ongewijzigd — iosdev.space en Bluesky
+wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
+nieuw platform toegevoegd deze run.
