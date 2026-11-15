@@ -1991,3 +1991,7 @@ instelling is niet gewijzigd.
 - (Derde post van die avond was Duski, zie duski-repo `marketing/SOCIAL_EN_MEER.md`.)
 - Reacties gecheckt: geen reacties op eerdere posts; 3 nieuwe volgers sinds 15 oktober (o.a. sasa_alli, 2 dagen
   geleden). Geen berichtverzoeken.
+- [x] Facebook (15 november 2026): één openbare post op Eds persoonlijke profiel (Ed Cafferata) met beide apps
+  (Dicom Viewer + Duski, elk App Store + Google Play) en dezelfde drie beelden als Instagram. Tekst door Claude
+  klaargezet in de ingebouwde browser, foto's toegevoegd en geplaatst door Ed. Tekst ook in
+  `scratch_marketing/instagram-2026-11-15/facebook-post.txt` op de NAS.
