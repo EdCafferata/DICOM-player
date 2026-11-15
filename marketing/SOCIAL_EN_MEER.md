@@ -1952,3 +1952,20 @@ Play, niet diagnostisch, "not a paid promotion or a vendor/sponsorship request".
 Social (periodieke check 12 november 2026): ongewijzigd — iosdev.space en Bluesky
 wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
 nieuw platform toegevoegd deze run.
+
+### Nieuwe vondst (15 november 2026) — BMUS (British Medical Ultrasound Society) ✅ gemaild
+Britse echografievereniging (charity, Londen) met een eigen **Student and Trainee Community** (leer- en
+onderzoeksbronnen, quiz, vrijwilligersprogramma) en de BMUS & EFSUMB-nieuwsbrieven. Nieuwe hoek: echo in het VK
+(EFSUMB/WFUMB/ISUOG waren de Europese/wereldkoepels). De contactpagina (bmus.org/contact-us/) heeft alleen een
+formulier; het Charity Commission-register noemt **office@bmus.org** als officieel contactadres. Geen
+zelfpromotie-/AI-verbod gevonden; er is een "Support & Endorsement Policy" — expliciet géén endorsement gevraagd.
+Gemaild op 15 november 2026 via het SMTP-script naar office@bmus.org, met de vraag het in een nieuwsbrief of bij de
+student-/trainee-resources te noemen of door te sturen; echo-cine-loops, anonieme teaching cases, App Store (UK) +
+Google Play, niet diagnostisch, "not a paid promotion or a vendor/sponsorship request, and not a request for
+endorsement". Niet nogmaals mailen zonder reactie.
+- Kandidaat voor een volgende run: **ASUM** (Australasian Society for Ultrasound in Medicine) — adres en regels nog
+  controleren.
+
+Social (periodieke check 15 november 2026): ongewijzigd — iosdev.space en Bluesky
+wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
+nieuw platform toegevoegd deze run.
