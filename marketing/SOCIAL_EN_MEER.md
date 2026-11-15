@@ -338,8 +338,16 @@ edcafferata@icloud.com
 - [x] TapSmart gemaild (tomjrolfe@intelligenti.com) — 14 juli 2026, verzonden via iCloud Mail, bevestigd in Verstuurd-map, wacht op reactie
 - [x] r/IndieAppNews-post gepost — 14 juli 2026, live als u/kaffer1986 met flair "App Introduction": https://www.reddit.com/r/IndieAppNews/
 - [ ] Hacker News Show HN — pas doen nadat een account wat historie heeft, of geaccepteerd dat een auto-kill kan gebeuren
-- [ ] iosdev.space (Mastodon) — Ed maakt zelf een account aan, daarna kan een introductiepost voorbereid worden
-- [ ] Bluesky (nieuwe vondst 18 september 2026) — Ed maakt zelf een account aan, daarna kan een introductiepost voorbereid worden (zelfde build-in-public-invalshoek als X)
+- [ ] iosdev.space (Mastodon) — **account aangevraagd 15 november 2026** door Ed (e-mail the-it-crowd@cafferata.info; regels gelezen: geen zelfpromotie-/AI-verbod, 18+). Wacht op e-mailbevestiging + handmatige goedkeuring door de moderators. Daarna: profiel invullen (zelfde bio als Bluesky) en een introductiepost (Swift/DICOM-parser-invalshoek, past bij de instance) voorbereiden.
+- [x] Bluesky-account aangemaakt (15 november 2026): **@the-it-crowd.bsky.social** (https://bsky.app/profile/the-it-crowd.bsky.social), merkaccount voor Dicom Viewer + Duski, e-mail the-it-crowd@cafferata.info, IT Crowd-logo als avatar. Ed deed wachtwoord/geboortedatum/voorwaarden/verificatie; Claude zette weergavenaam "The IT Crowd" + bio ("Indie iOS & Android apps from the Netherlands, by Ed Cafferata. 🩻 Dicom Viewer: free, privacy-first DICOM viewer 🌙 Duski: calm sleep sounds & sleep timer. Building in public. cafferata.info").
+- [ ] Bluesky-introductiepost — voorbereid, wacht op posten door Ed (Duski mag erin: v1.1 met Engelse UI is live sinds 13 oktober 2026):
+  > Hi Bluesky 👋 We're The IT Crowd, a tiny indie studio from the Netherlands.
+  > 🩻 Dicom Viewer: open CT/MRI/ultrasound DICOM files on your phone, offline, no account, no uploads. Free.
+  > 🌙 Duski: calm sleep sounds with a timer that fades out gently.
+  > Building both in public, happy to talk Swift, Kotlin and DICOM parsing. Links below 👇
+  (Max. 300 tekens per post, dus de store-links als reply eronder: App Store
+  https://apps.apple.com/us/app/dicom-viewer-by-the-it-crowd/id1483496527 + Google Play
+  https://play.google.com/store/apps/details?id=info.cafferata.dicomviewer)
 - [x] AltStore PAL onderzocht → ⛔ vereist werkend Apple Developer-account, zit vast op de bekende D&B/DUNS-blokkade — pas oppakken zodra dat is opgelost
 - [x] ACR RFS gemaild (rfs@acr.org) — 14 juli 2026, verzonden via iCloud Mail, wacht op reactie
 - [x] radiologysig.com gemaild (radsig2021@gmail.com) — 14 juli 2026, verzonden via iCloud Mail, wacht op reactie
