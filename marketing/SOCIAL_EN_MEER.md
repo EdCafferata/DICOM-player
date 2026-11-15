@@ -1977,3 +1977,17 @@ endorsement". Niet nogmaals mailen zonder reactie.
 Social (periodieke check 15 november 2026): ongewijzigd — iosdev.space en Bluesky
 wachten op een account van Ed, X/Instagram/TikTok vergen handmatig posten. Geen
 nieuw platform toegevoegd deze run.
+
+### Instagram (15 november 2026) — twee nieuwe posts op @ed_cafferata ✅ gepost
+Op verzoek van Ed (interactieve sessie) via Claude in Chrome geplaatst. Nederlandstalig, omdat de app-screenshots
+Nederlands zijn en het publiek van @ed_cafferata vooral Nederlands is. Beeld: 1080×1350 (4:5), gemaakt van de
+App Store-screenshots met een kop erboven (bestanden in `scratch_marketing/instagram-2026-11-15/` op de NAS).
+"Delen via Facebook (Openbaar)" stond standaard aan; per post uitgezet ("Dit bericht niet delen"), de algemene
+instelling is niet gewijzigd.
+- [x] Post "Je scan gewoon op je telefoon": cd/usb na een scan, cine-loop van Eds eigen hartkatheterisatie,
+  gratis/geen account/offline: https://www.instagram.com/p/DfxokF8hQo1/
+- [x] Post "Dicom Viewer, nu ook op Android": Android-aankondiging + voorbeeldbestanden, voor patiënten en
+  studenten, "niet bedoeld voor diagnose": https://www.instagram.com/p/Dfxo3zthAhH/
+- (Derde post van die avond was Duski, zie duski-repo `marketing/SOCIAL_EN_MEER.md`.)
+- Reacties gecheckt: geen reacties op eerdere posts; 3 nieuwe volgers sinds 15 oktober (o.a. sasa_alli, 2 dagen
+  geleden). Geen berichtverzoeken.
