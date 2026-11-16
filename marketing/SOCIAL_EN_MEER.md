@@ -1995,3 +1995,20 @@ instelling is niet gewijzigd.
   (Dicom Viewer + Duski, elk App Store + Google Play) en dezelfde drie beelden als Instagram. Tekst door Claude
   klaargezet in de ingebouwde browser, foto's toegevoegd en geplaatst door Ed. Tekst ook in
   `scratch_marketing/instagram-2026-11-15/facebook-post.txt` op de NAS.
+
+### Nieuwe vondst (16 november 2026) — ASUM (Australasian Society for Ultrasound in Medicine) ✅ gemaild
+Kandidaat uit de run van 15 november. Echografievereniging voor Australië en Nieuw-Zeeland (Chatswood, NSW), met
+eigen opleidingen (DDU, CCPU, CAHPU), eLearning-modules en een studenten-/associate-lidmaatschap. Nieuwe regio
+(Oceanië) na EFSUMB/WFUMB/ISUOG/BMUS. De contactpagina (asum.com.au/contact-asum/) noemt asum@ (algemeen),
+membership@ en **education@asum.com.au**. Gekozen voor education@ omdat de pitch over studenten en trainees gaat.
+"Corporate Partners" is een (betaalde) partnerroute en is niet gebruikt. Geen zelfpromotie-/AI-verbod gevonden.
+Gemaild op 16 november 2026 via het SMTP-script, met de vraag het te noemen bij de eLearning-modules of in een
+ledenupdate. Inhoud: echo-cine-loops, Window/Level-presets, voorbeeldbestanden, geen account/offline, App Store
+(AU) + Google Play, niet diagnostisch, "not a paid promotion, a sponsorship or partnership request, or a request
+for endorsement". Niet nogmaals mailen zonder reactie.
+- Kandidaat voor een volgende run: **SDMS** (Society of Diagnostic Medical Sonography, VS) of **CSDMS/Sonography
+  Canada**. Adres en regels nog controleren.
+
+Social (periodieke check 16 november 2026): Instagram, Facebook en Bluesky zijn op 15 november net gepost.
+iosdev.space wacht nog op goedkeuring door de moderator. Geen nieuwe post deze run, en geen nieuw platform
+toegevoegd.
