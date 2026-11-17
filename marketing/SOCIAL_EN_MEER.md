@@ -2012,3 +2012,22 @@ for endorsement". Niet nogmaals mailen zonder reactie.
 Social (periodieke check 16 november 2026): Instagram, Facebook en Bluesky zijn op 15 november net gepost.
 iosdev.space wacht nog op goedkeuring door de moderator. Geen nieuwe post deze run, en geen nieuw platform
 toegevoegd.
+
+### Nieuwe vondst (17 november 2026) — Sonography Canada ✅ gemaild
+Kandidaat uit de run van 16 november. Nationale beroepsvereniging voor echografisten in Canada (Ottawa), met gratis
+studentlidmaatschap via de opleidingen, CPD en het jaarcongres SonoCon. Nieuwe regio (Canada) na
+EFSUMB/WFUMB/ISUOG/BMUS/ASUM. De contactpagina (sonographycanada.ca/about-us/contact) noemt
+**info@sonographycanada.ca** ("General Information and Membership"), plus examinfo@, profpractice@ en cpd@.
+"Advertising & Sponsorship Opportunities" is een betaalde route en is niet gebruikt. Geen zelfpromotie-/AI-verbod
+gevonden. Gemaild op 17 november 2026 via het SMTP-script, met de vraag het in een nieuwsbrief of bij de
+student-resources te noemen. Inhoud: echo-cine-loops, Window/Level-presets, voorbeeldbestanden, geen account/offline,
+App Store (CA) + Google Play, niet diagnostisch, "not a paid promotion, a sponsorship or advertising request, or a
+request for endorsement". Niet nogmaals mailen zonder reactie.
+- **SDMS** (VS) opnieuw bekeken: nog steeds geen e-mailadres, alleen webformulieren per afdeling (o.a.
+  /contact-us/communications-marketing voor media). Blijft een formulierkandidaat voor Ed (zie de kandidaat van
+  23 oktober hierboven).
+- Kandidaat voor een volgende run: **SoR** (Society of Radiographers, VK) of een Canadese radiologievereniging
+  (CAR / CAMRT). Adres en regels nog controleren.
+
+Social (periodieke check 17 november 2026): ongewijzigd sinds de posts van 15 november. iosdev.space wacht nog op
+de moderator. Geen nieuwe post en geen nieuw platform deze run.
