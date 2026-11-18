@@ -11,6 +11,22 @@
 <!-- Nieuwste bovenaan. Elke entry: datum, welke app, status (klaargezet/
      gepost), de tekst zelf. -->
 
+## 2026-11-18 — Dicom Viewer
+**Status:** alleen tekst klaargezet (geen browserverbinding) — Chrome-extensie was verbonden, maar de toestemmingsprompt voor linkedin.com bleef 5 minuten onbeantwoord (onbemande run), dus de composer is niet geopend. NB: de wekelijkse runs van 29 okt t/m 11 nov zijn gemist (geen log-entries).
+
+Wie een scan krijgt, krijgt vaak nog steeds een cd of USB-stick mee. En dan? Veel mensen hebben geen computer met cd-speler meer, en de meegeleverde viewer werkt niet op een Mac.
+
+Daarvoor bouwde ik Dicom Viewer: een gratis app die röntgen-, CT-, MRI- en echobeelden rechtstreeks op je telefoon of tablet opent. Met een eigen on-device DICOM-parser, een cine-player voor bewegende beelden en window/level-presets. Geen account, geen cloud: alles blijft op je eigen toestel.
+
+De afgelopen weken heb ik de app voorgesteld aan echografie-verenigingen in het VK, Australië/Nieuw-Zeeland en Canada, en staat The IT Crowd nu ook op Bluesky.
+
+Wie het werk wil steunen, kan dat via de optionele Tip Jar.
+
+👉 iOS: https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527
+👉 Android: https://play.google.com/store/apps/details?id=info.cafferata.dicomviewer
+
+#indiedev #iosdev #androiddev #buildinpublic #DICOM
+
 ## 2026-09-24 — Dicom Viewer
 **Status:** alleen tekst klaargezet (geen browserverbinding) — Duski is nog steeds niet live in de App Store (App Store-lookup op `info.cafferata.duski` levert nog altijd 0 resultaten op), dus de beurt ging automatisch weer naar Dicom Viewer. NB: de wekelijkse runs van 9 en 16 september zijn gemist (geen log-entries).
 
