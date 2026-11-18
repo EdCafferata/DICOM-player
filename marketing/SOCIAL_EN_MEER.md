@@ -2031,3 +2031,18 @@ request for endorsement". Niet nogmaals mailen zonder reactie.
 
 Social (periodieke check 17 november 2026): ongewijzigd sinds de posts van 15 november. iosdev.space wacht nog op
 de moderator. Geen nieuwe post en geen nieuw platform deze run.
+
+### Nieuwe vondst (18 november 2026) — CAMRT ✅ gemaild
+Kandidaat uit de run van 17 november. CAMRT (Canadian Association of Medical Radiation Technologists) is de nationale
+beroepsvereniging voor MRT's in Canada, met studentleden. Na Sonography Canada is dit de tweede Canadese ingang. De
+contactpagina (camrt.ca/contact-us) noemt **info@camrt.ca** ("All other inquiries"), plus membership@, cpd@,
+certification@ en iemrt@. "Partnership Opportunities" en het CPD-sponsorprogramma zijn betaalde of zakelijke routes
+en zijn niet gebruikt. Geen zelfpromotie- of AI-verbod gevonden. Gemaild op 18 november 2026 via het SMTP-script, met
+de vraag het in een leden- of studentennieuwsbrief of bij de student-resources te noemen. Inhoud: CT/MR/röntgen/echo,
+Window/Level-presets, voorbeeldbestanden, geen account en offline, App Store (CA) + Google Play, niet diagnostisch,
+"not a paid promotion, sponsorship or advertising request". Niet nogmaals mailen zonder reactie.
+- Kandidaat voor een volgende run: **SoR** (Society of Radiographers, VK) of **CAR** (Canadian Association of
+  Radiologists). Adres en regels nog controleren.
+
+Social (periodieke check 18 november 2026): ongewijzigd. iosdev.space wacht nog op de moderator. Geen nieuwe post en
+geen nieuw platform deze run.
