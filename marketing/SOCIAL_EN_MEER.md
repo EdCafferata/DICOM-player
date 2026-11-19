@@ -2046,3 +2046,21 @@ Window/Level-presets, voorbeeldbestanden, geen account en offline, App Store (CA
 
 Social (periodieke check 18 november 2026): ongewijzigd. iosdev.space wacht nog op de moderator. Geen nieuwe post en
 geen nieuw platform deze run.
+
+### Nieuwe vondst (19 november 2026) — SoR (Society of Radiographers, VK) ✅ gemaild
+Kandidaat uit de run van 18 november. SoR is de beroepsvereniging en vakbond voor radiographers in het VK, met
+studentleden en het ledenblad Synergy News. Geen apart redactieadres te vinden: het oude
+editorial@synergymagazine.co.uk (uit een overheidsdocument van 2020-21) is niet gebruikt omdat het mogelijk niet
+meer gelezen wordt. Het septembernummer van 2026 noemt **info@sor.org** als algemeen adres. Gemaild op 19 november
+2026 via het SMTP-script, met het verzoek het door te sturen naar de redacteur van Synergy News of naar wie de
+student-resources beheert. Adverteren in Synergy is een betaalde route en is niet gebruikt. Geen zelfpromotie- of
+AI-verbod gevonden. Inhoud: CT/MR/röntgen/echo, Window/Level-presets, voorbeeldbestanden, geen account en offline,
+App Store (GB) + Google Play, niet diagnostisch, "not a paid promotion, a sponsorship or advertising request".
+- ⚠️ De eerste mail noemde per vergissing "measurements". Afstand meten is nog niet gebouwd (issue #4, zie README).
+  Een paar minuten later is een korte correctie naar hetzelfde adres gestuurd. **Les:** noem in pitches geen
+  "measurements" totdat #4 klaar is. Niet nogmaals mailen zonder reactie.
+- Kandidaat voor een volgende run: **CAR** (Canadian Association of Radiologists) of de Ierse **IIRRT** (Irish
+  Institute of Radiography and Radiation Therapy). Adres en regels nog controleren.
+
+Social (periodieke check 19 november 2026): ongewijzigd. iosdev.space wacht nog op de moderator. Geen nieuwe post en
+geen nieuw platform deze run.
