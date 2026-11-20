@@ -2064,3 +2064,18 @@ App Store (GB) + Google Play, niet diagnostisch, "not a paid promotion, a sponso
 
 Social (periodieke check 19 november 2026): ongewijzigd. iosdev.space wacht nog op de moderator. Geen nieuwe post en
 geen nieuw platform deze run.
+
+### Nieuwe vondst (20 november 2026) — IIRRT (Irish Institute of Radiography and Radiation Therapy, Ierland) ✅ gemaild
+Kandidaat uit de run van 19 november. IIRRT is de beroepsvereniging voor radiographers en radiation therapists in
+Ierland, met een studentenhoek en een CPD-programma. De eigen contactpagina (iirrt.ie/contact-us/) noemt voor
+"General & Membership Enquiries" **iirrtoffice@gmail.com** (office manager). Een apart CPD-adres bestaat ook, maar is
+niet gebruikt. Er is geen nieuwsbrief- of redactieadres. Geen zelfpromotie- of AI-verbod gevonden; de voorwaarden van
+de site gaan alleen over hergebruik van de eigen content. Gemaild op 20 november 2026 via het SMTP-script, met het
+verzoek de mail door te sturen naar wie het ledennieuws, de studentenhoek of de CPD-resources beheert. **Eerste
+contact.** Inhoud: CT/MR/röntgen/echo, Window/Level-presets, voorbeeldbestanden, geen account en offline, App Store
+(IE) + Google Play, niet diagnostisch, "not a paid promotion, a sponsorship or an advertising request". Bewust geen
+"measurements" genoemd (issue #4). Niet nogmaals mailen zonder reactie.
+- Kandidaat voor een volgende run: **CAR** (Canadian Association of Radiologists). Adres en regels nog controleren.
+
+Social (periodieke check 20 november 2026): ongewijzigd. iosdev.space wacht nog op de moderator. Geen nieuwe post en
+geen nieuw platform deze run.
