@@ -2079,3 +2079,18 @@ contact.** Inhoud: CT/MR/röntgen/echo, Window/Level-presets, voorbeeldbestanden
 
 Social (periodieke check 20 november 2026): ongewijzigd. iosdev.space wacht nog op de moderator. Geen nieuwe post en
 geen nieuw platform deze run.
+
+### Nieuwe vondst (21 november 2026) — CAR (Canadian Association of Radiologists) ✅ gemaild
+Kandidaat uit de vorige runs. CAR is de beroepsvereniging voor radiologen in Canada, met residents en studenten als
+leden. De footer van car.ca noemt als algemeen adres **info@car.ca**; de contactpagina en het communicatiebeleid
+gaven een 404. In de jaarverslagen staat een marketing- en communicatieadres op naam, maar dat is niet gebruikt.
+Geen zelfpromotie- of AI-verbod gevonden. Gemaild op 21 november 2026 via het SMTP-script, met het verzoek de mail
+door te sturen naar wie het ledennieuws, de resident-resources of de communicatie beheert. **Eerste contact.** Inhoud:
+CT/MR/röntgen/echo, Window/Level-presets, voorbeeldbestanden, geen account en offline, App Store (CA) + Google Play,
+niet diagnostisch, "not a paid promotion, a sponsorship or an advertising request". Er staat een afmeldregel in
+vanwege CASL (de Canadese antispamwet). Bewust geen "measurements" genoemd (issue #4). Niet nogmaals mailen zonder
+reactie.
+- Kandidaat voor een volgende run: **RANZCR** (Australië/Nieuw-Zeeland) of **ASMIRT** (Australische radiographers).
+  Adres en regels nog controleren.
+
+Social (periodieke check 21 november 2026): niet bekeken, want de run liep ver over de tijdslimiet. Geen nieuwe post.
