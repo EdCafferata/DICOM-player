@@ -2094,3 +2094,17 @@ reactie.
   Adres en regels nog controleren.
 
 Social (periodieke check 21 november 2026): niet bekeken, want de run liep ver over de tijdslimiet. Geen nieuwe post.
+
+### Nieuwe vondst (22 november 2026) — ASMIRT (Australian Society of Medical Imaging and Radiation Therapy) ✅ gemaild
+Kandidaat uit de run van 21 november. ASMIRT is de beroepsvereniging voor radiographers en radiation therapists in
+Australië, met studenten als leden (onder meer de RadPod-podcast voor studenten). De homepage asmirt.org noemt
+**info@asmirt.org** als algemeen adres. Er is ook een betaalde advertentiepagina, maar die is bewust niet gebruikt.
+Geen zelfpromotie- of AI-verbod gevonden. Gemaild op 22 november 2026 via het SMTP-script, met het verzoek de mail
+door te sturen naar wie het ledennieuws, de studentenresources of de communicatie beheert. **Eerste contact.** Inhoud:
+CT/MR/röntgen/echo, Window/Level-presets, voorbeeldbestanden, geen account en offline, App Store (AU) + Google Play,
+niet diagnostisch, "not a paid promotion, a sponsorship or an advertising request", met een afmeldregel. Bewust geen
+"measurements" genoemd (issue #4). Niet nogmaals mailen zonder reactie.
+- Kandidaat voor een volgende run: **RANZCR** (radiologen in Australië/Nieuw-Zeeland). Adres en regels nog controleren.
+
+Social (periodieke check 22 november 2026): niet bekeken in deze run. Geen nieuwe post. iosdev.space wacht nog op de
+moderator.
