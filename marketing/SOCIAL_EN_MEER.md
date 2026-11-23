@@ -2108,3 +2108,21 @@ niet diagnostisch, "not a paid promotion, a sponsorship or an advertising reques
 
 Social (periodieke check 22 november 2026): niet bekeken in deze run. Geen nieuwe post. iosdev.space wacht nog op de
 moderator.
+
+### Nieuwe vondst (23 november 2026) — NZSMIRT (New Zealand Society of Medical Imaging and Radiation Therapy) ✅ gemaild
+- **RANZCR** ⛔ (kandidaat uit de vorige run): de contactpagina heeft alleen een formulier en telefoonnummers voor
+  media, geen e-mailadres. Overgeslagen.
+- In plaats daarvan **NZSMIRT**, de beroepsvereniging voor medical imaging technologists en radiation therapists in
+  Nieuw-Zeeland. Dit is het voormalige NZIMRT: nzimrt.co.nz verwijst door naar nzsmirt.co.nz, en het e-mailadres
+  gebruikt nog het oude domein. De contactpagina (nzsmirt.co.nz/contact/) noemt **nzimrt@nzimrt.co.nz** als
+  algemeen adres. Er gaat elke maand een ledennieuwsbrief uit. Betaald adverteren (vacatures, cursussen) bestaat,
+  maar is bewust niet gebruikt. Geen zelfpromotie- of AI-verbod gevonden. Gemaild op 23 november 2026 via het
+  SMTP-script, met het verzoek de mail door te sturen naar wie de ledennieuwsbrief of de communicatie beheert.
+  **Eerste contact.** Inhoud: CT/MR/röntgen/echo, Window/Level-presets, voorbeeldbestanden, geen account en offline,
+  App Store (NZ) + Google Play, niet diagnostisch, "not a paid promotion, a sponsorship or an advertising request",
+  met een afmeldregel. Bewust geen "measurements" genoemd (issue #4). Niet nogmaals mailen zonder reactie.
+- Kandidaat voor een volgende run: **SoMIT** of een Zuid-Afrikaanse vereniging (**SORSA**). Adres en regels nog
+  controleren.
+
+Social (periodieke check 23 november 2026): niet bekeken in deze run. Geen nieuwe post. iosdev.space wacht nog op de
+moderator.
