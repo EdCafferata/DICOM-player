@@ -2126,3 +2126,20 @@ moderator.
 
 Social (periodieke check 23 november 2026): niet bekeken in deze run. Geen nieuwe post. iosdev.space wacht nog op de
 moderator.
+
+### Nieuwe vondst (24 november 2026) — SORSA (Society of Radiographers of South Africa) ✅ gemaild
+Kandidaat uit de vorige run. SORSA is de beroepsvereniging (non-profit) voor radiographers in Zuid-Afrika, in alle vier
+de richtingen (diagnostiek, nucleaire geneeskunde, radiotherapie, echografie), met CPD-activiteiten, nieuwsbrieven
+("Letters & Newsletters") en een eigen tijdschrift (*The South African Radiographer*). De contactpagina
+(sorsa.org.za/Contact_Us/Contact_details) noemt **sorsaoffice@gmail.com** als algemeen adres; het membership-adres is
+alleen voor betalingen en is niet gebruikt. Geen zelfpromotie- of AI-verbod gevonden; de gebruiksvoorwaarden gaan
+alleen over hergebruik van de eigen content. Gemaild op 24 november 2026 via het SMTP-script, met het verzoek de mail
+door te sturen naar wie de nieuwsbrief, de studenten-/CPD-resources of de communicatie beheert. **Eerste contact.**
+Inhoud: CT/MR/röntgen/echo, Window/Level-presets, voorbeeldbestanden, geen account en offline, App Store (ZA) + Google
+Play, niet diagnostisch, "not a paid promotion, a sponsorship or an advertising request", met een afmeldregel. Bewust
+geen "measurements" genoemd (issue #4). Niet nogmaals mailen zonder reactie.
+- **SoMIT** (kandidaat uit de vorige run): via zoeken geen organisatie met die naam gevonden. De Singaporese
+  tegenhanger is de **Singapore Society of Radiographers**; adres en regels nog controleren (kandidaat volgende run).
+
+Social (periodieke check 24 november 2026): niet bekeken in deze run. Geen nieuwe post. iosdev.space wacht nog op de
+moderator.
