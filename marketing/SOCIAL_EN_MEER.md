@@ -2143,3 +2143,29 @@ geen "measurements" genoemd (issue #4). Niet nogmaals mailen zonder reactie.
 
 Social (periodieke check 24 november 2026): niet bekeken in deze run. Geen nieuwe post. iosdev.space wacht nog op de
 moderator.
+
+### Nieuwe vondst (25 november 2026) — HKRA (Hong Kong Radiographers' Association) ✅ gemaild
+HKRA is de vakbond/beroepsvereniging voor radiographers (diagnostiek en radiotherapie) in Hongkong, lid van ISRRT, met
+een nieuwsbrief (editie 2026 op 22 november) en e-Bulletins. De homepage hkra.org.hk noemt **info@hkra.org.hk** als
+enige adres (geen aparte contactpagina). Er zijn betaalde CPD-promotiepakketten en "Sponsoring Vendors", die bewust niet
+gebruikt zijn. Geen zelfpromotie- of AI-verbod gevonden. Gemaild op 25 november 2026 via het SMTP-script, met het
+verzoek de mail door te sturen naar wie de nieuwsbrief, e-Bulletins of CPD-resources beheert. **Eerste contact.**
+Inhoud: CT/MR/röntgen/echo, Window/Level-presets, voorbeeldbestanden, geen account en offline, niet diagnostisch, "not a
+paid promotion, a sponsorship or an advertising request", met een afmeldregel. Geen "measurements" genoemd (issue #4).
+- **Fout en correctie:** de eerste mail bevatte een App Store-link voor Hongkong, maar die geeft een 404. Direct daarna
+  een korte correctiemail gestuurd met alleen de Google Play-link. Niet nogmaals mailen zonder reactie.
+- [ ] **Singapore Society of Radiographers** (ssr.org.sg): alleen een "General Enquiry"-webformulier
+  (ssr.org.sg/Contact-Us), geen algemeen e-mailadres (exco@ is alleen voor fellowship-aanvragen). Nieuwsbrief
+  *Promontory*. Geen verbod gevonden, maar de voorwaardenpagina gaf een 404. Niet gemaild. **Let op:** de iOS-app staat
+  ook niet in de App Store van Singapore (zie hieronder), dus pas zinvol als Ed die regio openzet of met alleen de
+  Android-link.
+
+#### ⚠️ App Store-beschikbaarheid iOS (gecontroleerd 25 november 2026 via de iTunes-lookup-API)
+Dicom Viewer voor iOS staat alleen in de App Store van **NL, IN, US en CA**. Niet in ZA, NZ, AU, IE, GB, SG of HK.
+Daardoor werkten de App Store-links niet lokaal in de recente pitches aan **SORSA (ZA), NZSMIRT (NZ), ASMIRT (AU) en
+IIRRT (IE)** (Google Play wel). Geen correctiemails gestuurd aan deze vier: dat zijn vier extra mails voor iets dat Ed
+beter kan oplossen door in App Store Connect meer landen open te zetten (Pricing and Availability). Dan werken de
+links alsnog. **Beslissing van Ed nodig.** Tot dan: bij nieuwe pitches buiten NL/IN/US/CA alleen de Google Play-link
+noemen, of de iOS-app als "available in selected countries" omschrijven.
+
+Social (periodieke check 25 november 2026): niet bekeken in deze run. Geen nieuwe post.
