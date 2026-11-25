@@ -41,3 +41,7 @@ App Review Guidelines "Last Updated: October 16, 2026", gelijk aan de baseline. 
 - Getest op een emulator (Pixel 8, Android 16): scans met miniaturen, viewer, meten (85,1 mm klopt met de rekensom), Leren, Over, fooien-hulpje.
 - AAB: `/Volumes/Backup-Ed/AI/android-release-aab/dicom-viewer-1.1.0-vc5.aab`. **Ed sleept het zelf in Play Console**; releasenotes staan in `dicom-viewer-android/fastlane/metadata/android/*/changelogs/5.txt`.
 - Nog niet gedaan: Play-winkelvermelding in de 10 nieuwe talen en nieuwe Play-screenshots.
+- Handmatig vóór Play-productie: **test op een echt Android-toestel** (alleen de emulator is getest), en laat het
+  data-safety-formulier op "geen gegevens verzameld" staan (de app verzamelt nog steeds niets). Target SDK 36.
+- Debug-testhulp (`-demoOpen`, `-meetTest`, `-startTab`, `-aantalStarts`) zit alleen in DEBUG-builds, niet in de
+  release (geen verborgen functies, 2.5.19).
