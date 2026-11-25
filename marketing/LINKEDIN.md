@@ -11,6 +11,22 @@
 <!-- Nieuwste bovenaan. Elke entry: datum, welke app, status (klaargezet/
      gepost), de tekst zelf. -->
 
+## 2026-11-25 — Dicom Viewer
+**Status:** alleen tekst klaargezet (geen browserverbinding) — Chrome-extensie was verbonden, maar de toestemmingsprompt voor linkedin.com bleef opnieuw 5 minuten onbeantwoord (onbemande run), dus de composer is niet geopend. Beurt via gelijke stand: Dicom Viewer en Riskonacci stonden allebei op 18 nov, en bij gelijke stand gaat Dicom Viewer voor.
+
+Radiologisch laboranten krijgen vaak als eersten de vraag: "Hoe bekijk ik deze scan thuis?" Het antwoord is meestal een cd, terwijl bijna niemand nog een cd-speler heeft.
+
+Dicom Viewer opent röntgen-, CT-, MRI- en echobeelden direct op je telefoon of tablet. De DICOM-parser draait volledig op het toestel, er is een cine-player voor bewegende reeksen en je hebt window/level-presets. Geen account, geen cloud.
+
+De afgelopen week heb ik de app voorgelegd aan beroepsverenigingen van radiographers in het VK, Ierland, Canada, Australië, Nieuw-Zeeland en Zuid-Afrika. Ik ben benieuwd of hij zo bij meer patiënten terechtkomt.
+
+De app is gratis. Wie het werk wil steunen, kan dat via de optionele Tip Jar.
+
+👉 iOS: https://apps.apple.com/nl/app/dicom-viewer-by-the-it-crowd/id1483496527
+👉 Android: https://play.google.com/store/apps/details?id=info.cafferata.dicomviewer
+
+#indiedev #buildinpublic #radiography #DICOM
+
 ## 2026-11-18 — Dicom Viewer
 **Status:** alleen tekst klaargezet (geen browserverbinding) — Chrome-extensie was verbonden, maar de toestemmingsprompt voor linkedin.com bleef 5 minuten onbeantwoord (onbemande run), dus de composer is niet geopend. NB: de wekelijkse runs van 29 okt t/m 11 nov zijn gemist (geen log-entries).
 
