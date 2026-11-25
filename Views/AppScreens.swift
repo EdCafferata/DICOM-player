@@ -285,7 +285,7 @@ private struct ModaliteitSheet: View {
 // MARK: - Over
 
 private let fooien: [(id: String, naam: LocalizedStringResource, prijs: String)] = [
-    ("info.cafferata.dicomplayer.tip.small", "Koffie", "€ 0,99"),
+    ("info.cafferata.dicomplayer.tip.smal", "Koffie", "€ 0,99"),
     ("info.cafferata.dicomplayer.tip.medium", "Lunch", "€ 2,99"),
     ("info.cafferata.dicomplayer.tip.large", "Diner", "€ 9,99"),
 ]

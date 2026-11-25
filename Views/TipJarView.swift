@@ -2,8 +2,10 @@ import SwiftUI
 import StoreKit
 
 // MARK: - Product IDs (must match App Store Connect)
+// Let op: het kleine product heet in App Store Connect echt "tip.smal" (zonder tweede l) en is
+// daar niet te hernoemen. Tot 2.2 zocht de app "tip.small", waardoor de koffie-fooi niet te koop was.
 private let tipProductIDs = [
-    "info.cafferata.dicomplayer.tip.small",
+    "info.cafferata.dicomplayer.tip.smal",
     "info.cafferata.dicomplayer.tip.medium",
     "info.cafferata.dicomplayer.tip.large",
 ]
@@ -163,7 +165,7 @@ private struct FallbackItem: Identifiable {
 }
 
 private let fallbackProducts: [FallbackItem] = [
-    FallbackItem(id: "info.cafferata.dicomplayer.tip.small",
+    FallbackItem(id: "info.cafferata.dicomplayer.tip.smal",
                  emoji: "☕", naam: "Koffie", prijs: "€ 0,99",
                  beschrijving: "Een klein bedankje voor de ontwikkelaar",
                  iconColor: Color(red: 0.71, green: 0.47, blue: 0.24)),
@@ -278,7 +280,7 @@ private struct TipButton: View {
 
     private var emoji: String {
         switch true {
-        case product.id.hasSuffix(".small"):  return "☕"
+        case product.id.hasSuffix(".smal"):  return "☕"
         case product.id.hasSuffix(".medium"): return "🍕"
         case product.id.hasSuffix(".large"):  return "🍽️"
         default: return "💙"
@@ -287,7 +289,7 @@ private struct TipButton: View {
 
     private var iconColor: Color {
         switch true {
-        case product.id.hasSuffix(".small"):  return Color(red: 0.71, green: 0.47, blue: 0.24)
+        case product.id.hasSuffix(".smal"):  return Color(red: 0.71, green: 0.47, blue: 0.24)
         case product.id.hasSuffix(".medium"): return Color(red: 0.86, green: 0.31, blue: 0.20)
         case product.id.hasSuffix(".large"):  return Color(red: 0.24, green: 0.63, blue: 0.47)
         default: return Med.accent

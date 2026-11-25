@@ -30,6 +30,8 @@
 	<true/>
 	<key>UIFileSharingEnabled</key>
 	<true/>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Dicom Viewer only saves an exported image to your photo library when you choose to.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
