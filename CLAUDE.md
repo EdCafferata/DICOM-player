@@ -156,5 +156,5 @@ Med.textSecondary = #5A7099
 - #11 fooienpot vanzelf elke 50e start, alleen als nog nooit getipt (`heeftGetipt`) en niet 'niet meer tonen' (`fooienpotNietMeerTonen`)
 
 ## Open issues (backlog)
-- [x] #4 Meten — liniaal in de viewer, mm uit Pixel Spacing (0028,0030) of Imager Pixel Spacing (0018,1164, 'op detector'); anders px. In 2.2, issue open tot Ed test
-- [x] #7 iPad split-view layout (bestandslijst + viewer naast elkaar) — in 2.2, issue nog open tot Ed het op een echt toestel heeft getest
+- [x] #4 Meten — liniaal in de viewer, mm uit Pixel Spacing (0028,0030) of Imager Pixel Spacing (0018,1164, 'op detector'); anders px. In 2.2, getest door Ed en gesloten
+- [x] #7 iPad split-view layout (bestandslijst + viewer naast elkaar) — in 2.2, getest door Ed en gesloten (26 nov 2026)
