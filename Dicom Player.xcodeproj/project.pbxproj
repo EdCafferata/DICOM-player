@@ -27,6 +27,7 @@
 		DE738E521FAC76BA00BAB85D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE738E511FAC76BA00BAB85D /* ViewController.swift */; };
 		DE738E551FAC76BA00BAB85D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE738E531FAC76BA00BAB85D /* Main.storyboard */; };
 		DE738E571FAC76BA00BAB85D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE738E561FAC76BA00BAB85D /* Assets.xcassets */; };
+		AABB000150LOC0001LOC0001 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = AABB000150LOC0000LOC0000 /* Localizable.xcstrings */; };
 		DE738E5A1FAC76BA00BAB85D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE738E581FAC76BA00BAB85D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		DE738E511FAC76BA00BAB85D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DE738E541FAC76BA00BAB85D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE738E561FAC76BA00BAB85D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AABB000150LOC0000LOC0000 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		DE738E591FAC76BA00BAB85D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE738E5B1FAC76BA00BAB85D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +110,7 @@
 				DE738E581FAC76BA00BAB85D /* LaunchScreen.storyboard */,
 				DE738E531FAC76BA00BAB85D /* Main.storyboard */,
 				DE738E561FAC76BA00BAB85D /* Assets.xcassets */,
+				AABB000150LOC0000LOC0000 /* Localizable.xcstrings */,
 				AABB000026CAG0000CAG0000 /* cag_voor_ingreep.dcm */,
 				AABB000028CAG0000CAG0000 /* cag_tijdens_ingreep.dcm */,
 				AABB000027CAG0000CAG0000 /* cag_na_ingreep.dcm */,
@@ -201,6 +204,17 @@
 			knownRegions = (
 				en,
 				Base,
+				nl,
+				de,
+				fr,
+				es,
+				it,
+				pt,
+				ja,
+				ko,
+				"zh-Hans",
+				ru,
+				hi,
 			);
 			mainGroup = DE738E431FAC76BA00BAB85D;
 			productRefGroup = DE738E4D1FAC76BA00BAB85D /* Products */;
@@ -222,6 +236,7 @@
 				AABB000028CAG0001CAG0001 /* cag_tijdens_ingreep.dcm in Resources */,
 				AABB000027CAG0001CAG0001 /* cag_na_ingreep.dcm in Resources */,
 				DE738E571FAC76BA00BAB85D /* Assets.xcassets in Resources */,
+				AABB000150LOC0001LOC0001 /* Localizable.xcstrings in Resources */,
 				DD93EAA72FBA5E05001C2B46 /* PrivacyInfo.xcprivacy in Resources */,
 				DE738E551FAC76BA00BAB85D /* Main.storyboard in Resources */,
 			);

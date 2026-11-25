@@ -151,6 +151,7 @@ Med.textSecondary = #5A7099
 - `-meetTest YES` zet in de viewer meten aan met twee vaste punten; `-aantalStarts 49` laat de fooienpot (#11) bij deze start verschijnen
 
 ## Ook in 2.2
+- #12 Lokalisatie: `Resources/Localizable.xcstrings` (bron-sleutels zijn de Nederlandse teksten; 12 talen: en, nl, de, fr, es, it, pt, ja, ko, zh-Hans, ru, hi). Nieuwe tekst? Bouw met `SWIFT_EMIT_LOC_STRINGS=YES` en `xcrun xcstringstool sync` met de .stringsdata, of Xcode doet het zelf; vul dan alle talen.
 - #10 'Beoordeel Dicom Viewer'-knop (requestReview) in de fooienpot
 - #11 fooienpot vanzelf elke 50e start, alleen als nog nooit getipt (`heeftGetipt`) en niet 'niet meer tonen' (`fooienpotNietMeerTonen`)
 

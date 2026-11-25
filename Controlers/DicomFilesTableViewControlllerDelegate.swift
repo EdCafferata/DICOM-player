@@ -83,9 +83,9 @@ enum DICOMError: LocalizedError {
 
     var errorDescription: String? {
         switch self {
-        case .notDICOM:          return "Not a valid DICOM file"
-        case .missingPixelData:  return "No pixel data found"
-        case .badDimensions:     return "Invalid image dimensions"
+        case .notDICOM:          return String(localized: "Dit is geen geldig DICOM-bestand.")
+        case .missingPixelData:  return String(localized: "Geen beelddata gevonden in dit bestand.")
+        case .badDimensions:     return String(localized: "De afmetingen van het beeld kloppen niet.")
         case .parseError(let s): return s
         }
     }

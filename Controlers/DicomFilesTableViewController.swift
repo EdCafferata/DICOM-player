@@ -3,16 +3,17 @@ import SwiftUI
 // Window/Level preset in Hounsfield Units (CT)
 struct WLPreset: Identifiable {
     let id = UUID()
-    let naam: String
+    let naam: String                    // vaste sleutel (niet vertaald)
+    let titel: LocalizedStringResource  // getoonde naam
     let icoon: String
     let center: Double   // HU
     let width: Double    // HU
 
     static let alle: [WLPreset] = [
-        WLPreset(naam: "Abdomen",  icoon: "figure.core.training", center: 40,   width: 400),
-        WLPreset(naam: "Long",     icoon: "lungs.fill",           center: -600, width: 1500),
-        WLPreset(naam: "Bot",      icoon: "figure.stand",         center: 300,  width: 1500),
-        WLPreset(naam: "Hersenen", icoon: "brain.fill",           center: 40,   width: 80),
+        WLPreset(naam: "Abdomen",  titel: "Abdomen",  icoon: "figure.core.training", center: 40,   width: 400),
+        WLPreset(naam: "Long",     titel: "Long",     icoon: "lungs.fill",           center: -600, width: 1500),
+        WLPreset(naam: "Bot",      titel: "Bot",      icoon: "figure.stand",         center: 300,  width: 1500),
+        WLPreset(naam: "Hersenen", titel: "Hersenen", icoon: "brain.fill",           center: 40,   width: 80),
     ]
 }
 
@@ -62,14 +63,14 @@ struct ViewerView: View {
 
     private var kopTitel: String {
         if !titel.isEmpty { return titel }
-        return parsed.modality.isEmpty ? "Scan" : parsed.modality
+        return parsed.modality.isEmpty ? String(localized: "Scan") : parsed.modality
     }
 
     private var kopDetails: String {
         var delen: [String] = []
         if !parsed.modality.isEmpty { delen.append(parsed.modality) }
         delen.append("\(parsed.columns) × \(parsed.rows)")
-        if isCine { delen.append("\(frames.count) beelden") }
+        if isCine { delen.append(String(localized: "\(frames.count) beelden")) }
         return delen.joined(separator: " · ")
     }
 
@@ -212,11 +213,11 @@ struct ViewerView: View {
             if parsed.kanHervensteren {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 8) {
-                        presetChip("Auto", actief: presetFrames == nil) {
+                        presetChip(String(localized: "Auto"), actief: presetFrames == nil) {
                             presetFrames = nil; presetNaam = "Auto"
                         }
                         ForEach(WLPreset.alle) { p in
-                            presetChip(p.naam, actief: presetNaam == p.naam && presetFrames != nil) {
+                            presetChip(String(localized: p.titel), actief: presetNaam == p.naam && presetFrames != nil) {
                                 pasPresetToe(p)
                             }
                         }
@@ -435,14 +436,14 @@ struct ViewerView: View {
 
     private var meetUitleg: String {
         if meetPunten.count < 2 {
-            return meetPunten.isEmpty ? "Tik op het beginpunt" : "Tik op het eindpunt"
+            return meetPunten.isEmpty ? String(localized: "Tik op het beginpunt") : String(localized: "Tik op het eindpunt")
         }
         guard let ps = parsed.pixelSpacing else {
-            return "Geen pixelafstand in dit bestand, dus afstand in pixels"
+            return String(localized: "Geen pixelafstand in dit bestand, dus afstand in pixels")
         }
         return ps.opDetector
-            ? "Gemeten op de detector; in het lichaam is het iets kleiner"
-            : "Afstand volgens de pixelafstand in het bestand"
+            ? String(localized: "Gemeten op de detector; in het lichaam is het iets kleiner")
+            : String(localized: "Afstand volgens de pixelafstand in het bestand")
     }
 
     // MARK: Info-sheet (gegevens + export)

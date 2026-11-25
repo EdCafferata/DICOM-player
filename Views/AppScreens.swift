@@ -33,8 +33,8 @@ struct RootTabView: View {
 // MARK: - Gedeelde schermkop
 
 struct MedScreenHeader<Trailing: View>: View {
-    let title: String
-    let subtitle: String
+    let title: LocalizedStringKey
+    let subtitle: LocalizedStringKey
     @ViewBuilder var trailing: () -> Trailing
 
     var body: some View {
@@ -55,7 +55,7 @@ struct MedScreenHeader<Trailing: View>: View {
 }
 
 extension MedScreenHeader where Trailing == EmptyView {
-    init(title: String, subtitle: String) {
+    init(title: LocalizedStringKey, subtitle: LocalizedStringKey) {
         self.init(title: title, subtitle: subtitle, trailing: { EmptyView() })
     }
 }
@@ -64,9 +64,9 @@ extension MedScreenHeader where Trailing == EmptyView {
 
 private struct Modaliteit: Identifiable {
     let id: String      // DICOM-code
-    let naam: String
-    let kort: String
-    let uitleg: String
+    let naam: LocalizedStringResource
+    let kort: LocalizedStringResource
+    let uitleg: LocalizedStringResource
 }
 
 private let modaliteiten: [Modaliteit] = [
@@ -173,10 +173,7 @@ struct LerenView: View {
                 .foregroundColor(Med.textSec)
             }
 
-            (Text("Window").bold().foregroundColor(Med.textPri)
-             + Text(" bepaalt het contrast: hoe breed het grijsbereik is. ")
-             + Text("Level").bold().foregroundColor(Med.textPri)
-             + Text(" bepaalt de helderheid: waar het midden ligt."))
+            Text("**Window** bepaalt het contrast: hoe breed het grijsbereik is. **Level** bepaalt de helderheid: waar het midden ligt.")
                 .font(.system(size: 14))
                 .foregroundColor(Color(hex: "C3CEDF"))
                 .lineSpacing(2)
@@ -220,7 +217,7 @@ struct LerenView: View {
         .padding(.top, 6)
     }
 
-    private func tipRij(_ icoon: String, _ tekst: String) -> some View {
+    private func tipRij(_ icoon: String, _ tekst: LocalizedStringKey) -> some View {
         HStack(spacing: 12) {
             Image(systemName: icoon)
                 .font(.system(size: 15, weight: .semibold))
@@ -287,7 +284,7 @@ private struct ModaliteitSheet: View {
 
 // MARK: - Over
 
-private let fooien: [(id: String, naam: String, prijs: String)] = [
+private let fooien: [(id: String, naam: LocalizedStringResource, prijs: String)] = [
     ("info.cafferata.dicomplayer.tip.small", "Koffie", "€ 0,99"),
     ("info.cafferata.dicomplayer.tip.medium", "Lunch", "€ 2,99"),
     ("info.cafferata.dicomplayer.tip.large", "Diner", "€ 9,99"),
@@ -298,8 +295,7 @@ struct OverView: View {
     @Environment(\.openURL) private var openURL
 
     private var versie: String {
-        let v = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? ""
-        return "versie \(v)"
+        Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? ""
     }
 
     var body: some View {
@@ -316,7 +312,7 @@ struct OverView: View {
                         Text("Dicom Viewer")
                             .font(.system(size: 26, weight: .heavy))
                             .foregroundColor(Med.textPri)
-                        Text("by The IT Crowd · \(versie)")
+                        Text("by The IT Crowd · versie \(versie)")
                             .font(.system(size: 14))
                             .foregroundColor(Med.textSec)
                     }
@@ -359,7 +355,7 @@ struct OverView: View {
         .medGlow(Med.accent, alignment: .topLeading)
     }
 
-    private func feitRij(_ titel: String, _ sub: String) -> some View {
+    private func feitRij(_ titel: LocalizedStringKey, _ sub: LocalizedStringKey) -> some View {
         HStack(spacing: 12) {
             Image(systemName: "checkmark")
                 .font(.system(size: 14, weight: .bold))
@@ -376,7 +372,7 @@ struct OverView: View {
         .padding(.vertical, 12)
     }
 
-    private func linkRij(_ titel: String, _ adres: String) -> some View {
+    private func linkRij(_ titel: LocalizedStringKey, _ adres: String) -> some View {
         Button {
             if let url = URL(string: adres) { openURL(url) }
         } label: {

@@ -156,9 +156,9 @@ struct TipJarView: View {
 private struct FallbackItem: Identifiable {
     let id: String
     let emoji: String
-    let naam: String
+    let naam: LocalizedStringResource
     let prijs: String
-    let beschrijving: String
+    let beschrijving: LocalizedStringResource
     let iconColor: Color
 }
 

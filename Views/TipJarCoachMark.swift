@@ -149,9 +149,9 @@ struct TipJarCoachMark: View {
 private struct TipOption: Identifiable {
     let id: String
     let emoji: String
-    let naam: String
+    let naam: LocalizedStringResource
     let prijs: String
-    let omschrijving: String
+    let omschrijving: LocalizedStringResource
     let color: Color
 }
 

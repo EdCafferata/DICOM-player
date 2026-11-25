@@ -206,7 +206,7 @@ struct ScansView: View {
 
     // MARK: Header
 
-    private var ondertitel: String {
+    private var ondertitel: LocalizedStringKey {
         let demos = store.bundledDemos.count
         if store.files.isEmpty { return "\(demos) voorbeeldscans" }
         let n = store.series.isEmpty ? store.files.count : store.series.count
@@ -366,9 +366,9 @@ struct ScansView: View {
     /// Korte titel voor in de lijst.
     private func demoTitel(_ file: DICOMFileInfo) -> String {
         switch file.name {
-        case "cag_voor_ingreep":    return "Vóór de ingreep"
-        case "cag_tijdens_ingreep": return "Tijdens de ingreep"
-        case "cag_na_ingreep":      return "Na de ingreep"
+        case "cag_voor_ingreep":    return String(localized: "Vóór de ingreep")
+        case "cag_tijdens_ingreep": return String(localized: "Tijdens de ingreep")
+        case "cag_na_ingreep":      return String(localized: "Na de ingreep")
         default: return file.name
         }
     }
@@ -378,7 +378,7 @@ struct ScansView: View {
         demoTitel(file)
     }
 
-    private func sectieKop(_ tekst: String) -> some View {
+    private func sectieKop(_ tekst: LocalizedStringKey) -> some View {
         Text(tekst)
             .font(.medTitle())
             .foregroundColor(Med.textPri)
@@ -393,8 +393,7 @@ struct ScansView: View {
                 Image(systemName: "lightbulb")
                     .font(.system(size: 18, weight: .semibold))
                     .foregroundColor(Color(hex: "8DB8FF"))
-                (Text("Wat doet Window/Level met een scan? ")
-                 + Text("Lees het in Leren").bold())
+                Text("Wat doet Window/Level met een scan? **Lees het in Leren**")
                     .font(.system(size: 14))
                     .foregroundColor(Color(hex: "D6E4FF"))
                     .multilineTextAlignment(.leading)
@@ -446,7 +445,7 @@ struct ScansView: View {
             await MainActor.run {
                 isParsing = false
                 guard let basis = eerste, !alleFrames.isEmpty else {
-                    errorMessage = "Geen leesbare beelden in deze serie."
+                    errorMessage = String(localized: "Geen leesbare beelden in deze serie.")
                     return
                 }
                 parsedDICOM = ParsedDICOM(
@@ -491,7 +490,7 @@ struct ScansView: View {
                 } else {
                     await MainActor.run {
                         isParsing    = false
-                        errorMessage = "Dit bestandsformaat wordt niet ondersteund."
+                        errorMessage = String(localized: "Dit bestandsformaat wordt niet ondersteund.")
                     }
                 }
             } catch {
@@ -569,10 +568,10 @@ private struct ScanRow: View {
 
     private var meta: String {
         if let s = serie {
-            return "Serie · \(s.files.count) slices · \(s.totalSize.asFileSize())"
+            return String(localized: "Serie · \(s.files.count) slices · \(s.totalSize.asFileSize())")
         }
         var delen: [String] = []
-        if let n = info?.frames, n > 1 { delen.append("Cine · \(n) beelden") }
+        if let n = info?.frames, n > 1 { delen.append(String(localized: "Cine · \(n) beelden")) }
         else if let sz = info?.size, !sz.isEmpty { delen.append(sz) }
         if !file.url.path.hasPrefix(Bundle.main.bundlePath) {
             delen.append(file.modifiedAgo)
