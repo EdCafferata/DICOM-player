@@ -82,7 +82,7 @@ xcrun simctl launch 88EB08ED-92F2-440D-895D-2A7562C6F863 info.cafferata.dicompla
 ```
 Dicom Player/
   Controlers/
-    AppDelegate.swift                         ← UIHostingController(ContentView), open-in handler
+    AppDelegate.swift                         ← SwiftUI @main App (scenes, nodig voor iOS 27) + onOpenURL voor open-in
     DicomFileManager.swift                    ← FileStore ObservableObject: scan, import, delete
     DicomFilesTableViewController.swift       ← ViewerView: zoom, drag, cine player
     DicomFilesTableViewControlllerDelegate.swift ← DICOMParser: binary DICOM parser
