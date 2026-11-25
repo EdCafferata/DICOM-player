@@ -1,11 +1,16 @@
 import SwiftUI
 import UniformTypeIdentifiers
 
-struct ContentView: View {
+/// Beginscherm (tab "Scans"): eigen scans, laatst geopend en voorbeeldscans.
+struct ScansView: View {
+    var openLeren: () -> Void = {}
+
     @StateObject private var store = FileStore.shared
+    @StateObject private var thumbs = ThumbCache.shared
 
     @State private var showImporter  = false
     @State private var selectedInfo: DICOMFileInfo?
+    @State private var viewerTitel = ""
     @State private var parsedDICOM: ParsedDICOM?
     @State private var parsedImage: UIImage?
     @State private var showViewer    = false
@@ -18,22 +23,86 @@ struct ContentView: View {
     @AppStorage("demosHidden") private var demosHidden = false
     @AppStorage("tipJarCoachMarkShown") private var coachMarkShown = false
     @State private var showCoachMark = false
+    @State private var viewerID = UUID()
+    @Environment(\.horizontalSizeClass) private var sizeClass
+
+    /// iPad (en grote vensters): lijst links, viewer rechts (issue #7).
+    private var isSplit: Bool { sizeClass == .regular }
 
     var body: some View {
-        ZStack {
-            Med.bg.ignoresSafeArea()
+        metModifiers(Group {
+            if isSplit {
+                NavigationSplitView {
+                    lijst
+                        .toolbar(.hidden, for: .navigationBar)
+                        .navigationSplitViewColumnWidth(min: 340, ideal: 380, max: 440)
+                } detail: {
+                    detail
+                }
+                .navigationSplitViewStyle(.balanced)
+            } else {
+                lijst
+            }
+        })
+    }
 
-            VStack(spacing: 0) {
+    private var lijst: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 18) {
                 header
-                MedDivider()
 
                 if store.files.isEmpty {
-                    emptyState
+                    importKaart
                 } else {
-                    fileList
+                    eigenScans
+                }
+
+                if !store.bundledDemos.isEmpty {
+                    voorbeelden
+                }
+
+                lerenTip
+            }
+            .padding(.horizontal, 20)
+            .padding(.top, 8)
+            .padding(.bottom, 24)
+        }
+        .refreshable { store.reload() }
+        .background(Med.bg.ignoresSafeArea())
+        .medGlow(Med.accent)
+    }
+
+    // MARK: Detail (iPad)
+
+    @ViewBuilder
+    private var detail: some View {
+        if let parsed = parsedDICOM {
+            ViewerView(parsed: parsed, titel: viewerTitel, ingebed: true)
+                .id(viewerID)
+        } else if let img = parsedImage, let file = selectedInfo {
+            QuickImageView(image: img, title: file.name, ingebed: true)
+                .id(viewerID)
+        } else {
+            ZStack {
+                Med.bg.ignoresSafeArea()
+                VStack(spacing: 14) {
+                    Image(systemName: "waveform.and.magnifyingglass")
+                        .font(.system(size: 44, weight: .light))
+                        .foregroundColor(Med.accentText)
+                    Text("Kies een scan")
+                        .font(.medTitle())
+                        .foregroundColor(Med.textPri)
+                    Text("Tik links op een scan om hem hier te bekijken.")
+                        .font(.system(size: 15))
+                        .foregroundColor(Med.textSec)
                 }
             }
         }
+    }
+
+    /// Alle sheets, alerts en overlays van het Scans-scherm.
+    private func metModifiers<V: View>(_ inhoud: V) -> some View {
+        inhoud
         .fileImporter(
             isPresented: $showImporter,
             allowedContentTypes: [.data, .item],
@@ -43,9 +112,10 @@ struct ContentView: View {
                 store.importFile(from: url)
             }
         }
-        .sheet(isPresented: $showViewer, onDismiss: { parsedDICOM = nil; parsedImage = nil }) {
+        .fullScreenCover(isPresented: Binding(get: { showViewer && !isSplit }, set: { showViewer = $0 }),
+                         onDismiss: { if !isSplit { parsedDICOM = nil; parsedImage = nil } }) {
             if let parsed = parsedDICOM {
-                ViewerView(parsed: parsed)
+                ViewerView(parsed: parsed, titel: viewerTitel)
             } else if let img = parsedImage, let file = selectedInfo {
                 QuickImageView(image: img, title: file.name)
             }
@@ -66,6 +136,14 @@ struct ContentView: View {
             }
         }
         .onAppear {
+            #if DEBUG
+            // Testhulp: `-demoOpen <n>` opent direct voorbeeldscan n (alleen debug-builds).
+            if UserDefaults.standard.object(forKey: "demoOpen") != nil {
+                let n = UserDefaults.standard.integer(forKey: "demoOpen")
+                let demos = store.bundledDemos
+                if demos.indices.contains(n) { open(demos[n], titel: demoViewerTitel(demos[n])) }
+            }
+            #endif
             if !coachMarkShown {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
                     withAnimation { showCoachMark = true }
@@ -107,275 +185,229 @@ struct ContentView: View {
         }
     }
 
+    private func isGekozen(_ url: URL) -> Bool {
+        isSplit && selectedInfo?.url == url && (parsedDICOM != nil || parsedImage != nil)
+    }
+
     // MARK: Header
 
+    private var ondertitel: String {
+        let demos = store.bundledDemos.count
+        if store.files.isEmpty { return "\(demos) voorbeeldscans" }
+        let n = store.series.isEmpty ? store.files.count : store.series.count
+        return n == 1 ? "1 eigen scan" : "\(n) eigen scans"
+    }
+
     private var header: some View {
-        HStack(alignment: .center, spacing: 12) {
-            Image(systemName: "waveform.and.magnifyingglass")
-                .font(.system(size: 22, weight: .semibold))
-                .foregroundColor(Med.accent)
-
-            VStack(alignment: .leading, spacing: 1) {
-                Text("DICOM VIEWER")
-                    .font(.medLabel())
-                    .tracking(2.5)
-                    .foregroundColor(Med.textSec)
-                Text("Medical Imaging")
-                    .font(.medTitle())
-                    .foregroundColor(Med.textPri)
-            }
-
-            Spacer()
-
+        MedScreenHeader(title: "Scans", subtitle: ondertitel) {
             HStack(spacing: 10) {
-                Button {
-                    showTipJar = true
-                } label: {
+                Button { showTipJar = true } label: {
                     Image(systemName: "heart.fill")
-                        .font(.system(size: 14, weight: .semibold))
-                        .foregroundColor(Color(red: 0.8, green: 0.1, blue: 0.1))
-                        .frame(width: 36, height: 36)
-                        .background(Color(red: 0.8, green: 0.1, blue: 0.1).opacity(0.12))
-                        .clipShape(Circle())
-                        .overlay(Circle().stroke(Color(red: 0.8, green: 0.1, blue: 0.1).opacity(0.3), lineWidth: 0.5))
+                        .font(.system(size: 17, weight: .semibold))
+                        .foregroundColor(Med.heart)
+                        .medGlassCircle()
                 }
-                Button {
-                    showImporter = true
-                } label: {
+                .accessibilityLabel("Fooienpot")
+                Button { showImporter = true } label: {
                     Image(systemName: "plus")
-                        .font(.system(size: 16, weight: .semibold))
-                        .foregroundColor(Med.accent)
-                        .frame(width: 36, height: 36)
-                        .background(Med.accent.opacity(0.12))
-                        .clipShape(Circle())
-                        .overlay(Circle().stroke(Med.accent.opacity(0.3), lineWidth: 0.5))
+                        .font(.system(size: 18, weight: .semibold))
+                        .foregroundColor(Med.textPri)
+                        .medGlassCircle()
                 }
+                .accessibilityLabel("Scan importeren")
             }
         }
-        .padding(.horizontal, 20)
-        .padding(.vertical, 16)
-        .background(Med.surface)
     }
 
-    // MARK: File list
+    // MARK: Import (lege staat)
 
-    private var fileList: some View {
-        ScrollView {
-            LazyVStack(spacing: 0, pinnedViews: [.sectionHeaders]) {
-                // Laatst geopend (max 5)
-                if !store.recent.isEmpty {
-                    Section {
-                        ForEach(Array(store.recent.enumerated()), id: \.element.id) { idx, file in
-                            VStack(spacing: 0) {
-                                MedFileRow(file: file, isDemo: false)
-                                    .contentShape(Rectangle())
-                                    .onTapGesture { open(file) }
-                                if idx < store.recent.count - 1 {
-                                    MedDivider().padding(.leading, 64)
-                                }
-                            }
-                            .background(Med.card)
-                        }
-                    } header: {
-                        HStack {
-                            Text("LAATST GEOPEND")
-                                .font(.medLabel())
-                                .tracking(2)
-                                .foregroundColor(Med.textSec)
-                            Spacer()
-                            Image(systemName: "clock.arrow.circlepath")
-                                .font(.system(size: 11))
-                                .foregroundColor(Med.textDim)
-                        }
-                        .padding(.horizontal, 20)
-                        .padding(.vertical, 10)
-                        .background(Med.bg)
-                    }
-                }
-
-                Section {
-                    // Zolang het groeperen nog loopt: platte bestandslijst
-                    let groepen = store.series.isEmpty
-                        ? store.files.map { SeriesGroup(id: $0.url.path, description: $0.name, modality: "", files: [$0]) }
-                        : store.series
-                    ForEach(Array(groepen.enumerated()), id: \.element.id) { idx, groep in
-                        VStack(spacing: 0) {
-                            if groep.isSeries {
-                                MedSeriesRow(groep: groep)
-                                    .contentShape(Rectangle())
-                                    .onTapGesture { openSeries(groep) }
-                                    .contextMenu {
-                                        Button(role: .destructive) {
-                                            seriesToDelete = groep
-                                        } label: {
-                                            Label("Verwijder serie (\(groep.files.count) bestanden)", systemImage: "trash")
-                                        }
-                                    }
-                            } else {
-                                MedFileRow(file: groep.files[0], isDemo: false)
-                                    .contentShape(Rectangle())
-                                    .onTapGesture { open(groep.files[0]) }
-                                    .contextMenu {
-                                        Button {
-                                            shareFile = groep.files[0]
-                                        } label: {
-                                            Label("Deel", systemImage: "square.and.arrow.up")
-                                        }
-                                        Button(role: .destructive) {
-                                            fileToDelete = groep.files[0]
-                                        } label: {
-                                            Label("Verwijder", systemImage: "trash")
-                                        }
-                                    }
-                            }
-                            if idx < groepen.count - 1 {
-                                MedDivider().padding(.leading, 64)
-                            }
-                        }
-                        .background(Med.card)
-                    }
-                } header: {
-                    HStack {
-                        Text("RECENTE SCANS")
-                            .font(.medLabel())
-                            .tracking(2)
-                            .foregroundColor(Med.textSec)
-                        Spacer()
-                        Text(store.series.isEmpty
-                             ? "\(store.files.count) BESTANDEN"
-                             : "\(store.series.count) ITEMS · \(store.files.count) BESTANDEN")
-                            .font(.medLabel())
-                            .tracking(1)
-                            .foregroundColor(Med.textDim)
-                    }
-                    .padding(.horizontal, 20)
-                    .padding(.vertical, 10)
-                    .background(Med.bg)
+    private var importKaart: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            HStack(spacing: 14) {
+                Image(systemName: "doc.badge.plus")
+                    .font(.system(size: 24, weight: .semibold))
+                    .foregroundColor(Med.accentText)
+                    .frame(width: 52, height: 52)
+                    .background(Med.accent.opacity(0.16), in: RoundedRectangle(cornerRadius: 16))
+                VStack(alignment: .leading, spacing: 3) {
+                    Text("Eigen scan openen")
+                        .font(.system(size: 17, weight: .bold))
+                        .foregroundColor(Med.textPri)
+                    Text("Uit Bestanden, Mail of AirDrop. Blijft alleen op je toestel.")
+                        .font(.system(size: 14))
+                        .foregroundColor(Med.textSec)
+                        .fixedSize(horizontal: false, vertical: true)
                 }
             }
-            .clipShape(RoundedRectangle(cornerRadius: 12))
-            .padding(.horizontal, 16)
-            .padding(.top, 12)
+            Button { showImporter = true } label: {
+                Text("Kies een DICOM-bestand")
+                    .font(.system(size: 16, weight: .bold))
+                    .foregroundColor(Med.onAccent)
+                    .frame(maxWidth: .infinity, minHeight: 50)
+                    .background(Med.accent, in: Capsule())
+            }
         }
-        .background(Med.bg)
-        .refreshable { store.reload() }
+        .padding(20)
+        .medCard(cornerRadius: 24)
     }
 
-    // MARK: Empty state
+    // MARK: Eigen scans
 
-    private var emptyState: some View {
-        ScrollView {
-            VStack(spacing: 0) {
-                // Import CTA
-                VStack(spacing: 20) {
-                    ZStack {
-                        Circle()
-                            .fill(Med.accent.opacity(0.08))
-                            .frame(width: 80, height: 80)
-                        Circle()
-                            .stroke(Med.accent.opacity(0.2), lineWidth: 1)
-                            .frame(width: 80, height: 80)
-                        Image(systemName: "waveform.and.magnifyingglass")
-                            .font(.system(size: 32, weight: .light))
-                            .foregroundColor(Med.accent.opacity(0.7))
-                    }
-
-                    VStack(spacing: 6) {
-                        Text("EIGEN SCAN TOEVOEGEN")
-                            .font(.medLabel())
-                            .tracking(2)
-                            .foregroundColor(Med.textSec)
-                        Text("Importeer een DICOM of medisch beeldbestand.")
-                            .font(.medCaption())
-                            .foregroundColor(Med.textSec)
-                            .multilineTextAlignment(.center)
-                            .padding(.horizontal, 40)
-                    }
-
-                    Button {
-                        showImporter = true
-                    } label: {
-                        HStack(spacing: 8) {
-                            Image(systemName: "plus.circle.fill")
-                            Text("BESTAND IMPORTEREN")
-                                .tracking(1.2)
+    private var eigenScans: some View {
+        VStack(alignment: .leading, spacing: 18) {
+            if !store.recent.isEmpty {
+                sectieKop("Laatst geopend")
+                VStack(spacing: 10) {
+                    ForEach(store.recent) { file in
+                        Button { open(file) } label: {
+                            ScanRow(file: file, titel: file.name, thumbs: thumbs, gekozen: isGekozen(file.url))
                         }
-                        .font(.system(size: 13, weight: .semibold, design: .rounded))
-                        .foregroundColor(Med.bg)
-                        .padding(.horizontal, 24)
-                        .padding(.vertical, 12)
-                        .background(Med.accent)
-                        .cornerRadius(8)
+                        .buttonStyle(.plain)
                     }
                 }
-                .padding(.top, 36)
-                .padding(.bottom, 32)
+            }
 
-                // Demo files
-                if !store.bundledDemos.isEmpty {
-                    VStack(spacing: 0) {
-                        HStack {
-                            Text("VOORBEELDBESTANDEN")
-                                .font(.medLabel())
-                                .tracking(2)
-                                .foregroundColor(Med.textSec)
-                            Spacer()
-                            Button {
-                                withAnimation(.easeInOut(duration: 0.2)) {
-                                    demosHidden.toggle()
-                                }
+            sectieKop("Mijn scans")
+            // Zolang het groeperen nog loopt: platte bestandslijst
+            let groepen = store.series.isEmpty
+                ? store.files.map { SeriesGroup(id: $0.url.path, description: $0.name, modality: "", files: [$0]) }
+                : store.series
+            VStack(spacing: 10) {
+                ForEach(groepen) { groep in
+                    if groep.isSeries {
+                        Button { openSeries(groep) } label: {
+                            ScanRow(file: groep.files[0], titel: groep.description, thumbs: thumbs,
+                                    serie: groep, gekozen: isGekozen(groep.files[0].url))
+                        }
+                        .buttonStyle(.plain)
+                        .contextMenu {
+                            Button(role: .destructive) {
+                                seriesToDelete = groep
                             } label: {
-                                Text(demosHidden ? "TOON" : "VERBERG")
-                                    .font(.medLabel())
-                                    .tracking(1)
-                                    .foregroundColor(Med.accent)
+                                Label("Verwijder serie (\(groep.files.count) bestanden)", systemImage: "trash")
                             }
                         }
-                        .padding(.horizontal, 20)
-                        .padding(.vertical, 10)
-
-                        if !demosHidden {
-                            VStack(spacing: 0) {
-                                ForEach(Array(store.bundledDemos.enumerated()), id: \.element.id) { idx, file in
-                                    VStack(spacing: 0) {
-                                        MedFileRow(file: file, isDemo: true)
-                                            .contentShape(Rectangle())
-                                            .onTapGesture { open(file) }
-                                        if idx < store.bundledDemos.count - 1 {
-                                            MedDivider().padding(.leading, 64)
-                                        }
-                                    }
-                                }
+                    } else {
+                        Button { open(groep.files[0]) } label: {
+                            ScanRow(file: groep.files[0], titel: groep.files[0].name, thumbs: thumbs, gekozen: isGekozen(groep.files[0].url))
+                        }
+                        .buttonStyle(.plain)
+                        .contextMenu {
+                            Button {
+                                shareFile = groep.files[0]
+                            } label: {
+                                Label("Deel", systemImage: "square.and.arrow.up")
                             }
-                            .clipShape(RoundedRectangle(cornerRadius: 12))
-                            .padding(.horizontal, 16)
-                            .transition(.opacity.combined(with: .move(edge: .top)))
+                            Button(role: .destructive) {
+                                fileToDelete = groep.files[0]
+                            } label: {
+                                Label("Verwijder", systemImage: "trash")
+                            }
                         }
                     }
                 }
             }
         }
-        .background(Med.bg)
+    }
+
+    // MARK: Voorbeeldscans
+
+    private var voorbeelden: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            HStack(alignment: .firstTextBaseline) {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Voorbeeldscans")
+                        .font(.medTitle())
+                        .foregroundColor(Med.textPri)
+                    Text("Hartkatheterisatie: de kransslagaders in beeld")
+                        .font(.system(size: 13))
+                        .foregroundColor(Med.textSec)
+                }
+                Spacer()
+                Button {
+                    withAnimation(.easeInOut(duration: 0.2)) { demosHidden.toggle() }
+                } label: {
+                    Text(demosHidden ? "Toon" : "Verberg")
+                        .font(.system(size: 15, weight: .medium))
+                        .foregroundColor(Med.accentText)
+                }
+            }
+            .padding(.top, 6)
+
+            if !demosHidden {
+                VStack(spacing: 10) {
+                    ForEach(store.bundledDemos) { file in
+                        Button { open(file, titel: demoViewerTitel(file)) } label: {
+                            ScanRow(file: file, titel: demoTitel(file), thumbs: thumbs, gekozen: isGekozen(file.url))
+                        }
+                        .buttonStyle(.plain)
+                    }
+                }
+                .transition(.opacity.combined(with: .move(edge: .top)))
+            }
+        }
+    }
+
+    /// Korte titel voor in de lijst.
+    private func demoTitel(_ file: DICOMFileInfo) -> String {
+        switch file.name {
+        case "cag_voor_ingreep":    return "Vóór de ingreep"
+        case "cag_tijdens_ingreep": return "Tijdens de ingreep"
+        case "cag_na_ingreep":      return "Na de ingreep"
+        default: return file.name
+        }
+    }
+
+    /// Volledige titel voor in de viewer.
+    private func demoViewerTitel(_ file: DICOMFileInfo) -> String {
+        demoTitel(file)
+    }
+
+    private func sectieKop(_ tekst: String) -> some View {
+        Text(tekst)
+            .font(.medTitle())
+            .foregroundColor(Med.textPri)
+            .padding(.top, 6)
+    }
+
+    // MARK: Tip naar Leren
+
+    private var lerenTip: some View {
+        Button(action: openLeren) {
+            HStack(spacing: 12) {
+                Image(systemName: "lightbulb")
+                    .font(.system(size: 18, weight: .semibold))
+                    .foregroundColor(Color(hex: "8DB8FF"))
+                (Text("Wat doet Window/Level met een scan? ")
+                 + Text("Lees het in Leren").bold())
+                    .font(.system(size: 14))
+                    .foregroundColor(Color(hex: "D6E4FF"))
+                    .multilineTextAlignment(.leading)
+                Spacer(minLength: 0)
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 14)
+            .background(Med.blue.opacity(0.14), in: RoundedRectangle(cornerRadius: 20))
+            .overlay(RoundedRectangle(cornerRadius: 20).stroke(Med.blue.opacity(0.30), lineWidth: 1))
+        }
+        .buttonStyle(.plain)
     }
 
     // MARK: Loading overlay
 
     private var loadingOverlay: some View {
         ZStack {
-            Color.black.opacity(0.6).ignoresSafeArea()
-            VStack(spacing: 16) {
+            Color.black.opacity(0.5).ignoresSafeArea()
+            VStack(spacing: 14) {
                 ProgressView()
-                    .tint(Med.accent)
+                    .tint(Med.accentText)
                     .scaleEffect(1.3)
-                Text("LADEN…")
-                    .font(.medLabel())
-                    .tracking(2)
-                    .foregroundColor(Med.textSec)
+                Text("Scan laden…")
+                    .font(.system(size: 15, weight: .medium))
+                    .foregroundColor(Med.textPri)
             }
-            .padding(32)
-            .background(Med.surface)
-            .cornerRadius(16)
-            .overlay(RoundedRectangle(cornerRadius: 16).stroke(Med.border, lineWidth: 0.5))
+            .padding(28)
+            .medGlass(cornerRadius: 24)
         }
     }
 
@@ -385,6 +417,8 @@ struct ContentView: View {
     /// plakt alle frames achter elkaar — de viewer toont ze met slider/cine.
     private func openSeries(_ groep: SeriesGroup) {
         if let eerste = groep.files.first { store.registreerOpening(eerste.url) }
+        selectedInfo = groep.files.first
+        viewerTitel = groep.description
         isParsing = true
         Task.detached(priority: .userInitiated) {
             var alleFrames: [CGImage] = []
@@ -407,20 +441,25 @@ struct ContentView: View {
                     frames: alleFrames,
                     windowCenter: basis.windowCenter,
                     windowWidth: basis.windowWidth)
+                parsedImage = nil
+                viewerID = UUID()
                 showViewer = true
             }
         }
     }
 
-    private func open(_ file: DICOMFileInfo) {
+    private func open(_ file: DICOMFileInfo, titel: String? = nil) {
         store.registreerOpening(file.url)
         selectedInfo = file
+        viewerTitel  = titel ?? file.name
         isParsing    = true
         Task.detached(priority: .userInitiated) {
             do {
                 let parsed = try DICOMParser.parse(url: file.url)
                 await MainActor.run {
                     parsedDICOM = parsed
+                    parsedImage = nil
+                    viewerID    = UUID()
                     isParsing   = false
                     showViewer  = true
                 }
@@ -428,6 +467,8 @@ struct ContentView: View {
                 if let img = UIImage(contentsOfFile: file.url.path) {
                     await MainActor.run {
                         parsedImage = img
+                        parsedDICOM = nil
+                        viewerID    = UUID()
                         isParsing   = false
                         showViewer  = true
                     }
@@ -447,121 +488,80 @@ struct ContentView: View {
     }
 }
 
-// MARK: - Series row
+// MARK: - Scan-rij (kaart met miniatuur)
 
-private struct MedSeriesRow: View {
-    let groep: SeriesGroup
-
-    var body: some View {
-        HStack(spacing: 14) {
-            ZStack {
-                RoundedRectangle(cornerRadius: 8)
-                    .fill(Med.blue.opacity(0.12))
-                    .frame(width: 42, height: 42)
-                Image(systemName: "square.stack.3d.up.fill")
-                    .font(.system(size: 18, weight: .medium))
-                    .foregroundColor(Med.blue)
-            }
-
-            VStack(alignment: .leading, spacing: 4) {
-                Text(groep.description)
-                    .font(.medBody())
-                    .foregroundColor(Med.textPri)
-                    .lineLimit(1)
-
-                HStack(spacing: 6) {
-                    if !groep.modality.isEmpty {
-                        MedBadge(text: groep.modality)
-                    }
-                    MedBadge(text: "SERIE", color: Med.blue.opacity(0.7))
-                    Text("\(groep.files.count) slices")
-                        .font(.medMono(11))
-                        .foregroundColor(Med.textSec)
-                    Text("·")
-                        .foregroundColor(Med.textDim)
-                    Text(groep.totalSize.asFileSize())
-                        .font(.medMono(11))
-                        .foregroundColor(Med.textSec)
-                }
-            }
-
-            Spacer()
-
-            Image(systemName: "chevron.right")
-                .font(.system(size: 11, weight: .semibold))
-                .foregroundColor(Med.textDim)
-        }
-        .padding(.horizontal, 16)
-        .padding(.vertical, 13)
-        .background(Med.card)
-    }
-}
-
-// MARK: - File row
-
-private struct MedFileRow: View {
+private struct ScanRow: View {
     let file: DICOMFileInfo
-    var isDemo: Bool = false
+    let titel: String
+    @ObservedObject var thumbs: ThumbCache
+    var serie: SeriesGroup? = nil
+    var gekozen: Bool = false
+
+    private var info: ThumbCache.Info? { thumbs.info[file.url] }
 
     var body: some View {
         HStack(spacing: 14) {
             ZStack {
-                RoundedRectangle(cornerRadius: 8)
-                    .fill(iconColor.opacity(0.12))
-                    .frame(width: 42, height: 42)
-                Image(systemName: iconName)
-                    .font(.system(size: 18, weight: .medium))
-                    .foregroundColor(iconColor)
+                RoundedRectangle(cornerRadius: 14)
+                    .fill(Color(hex: "0B0F16"))
+                if let img = info?.image {
+                    Image(uiImage: img)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                } else {
+                    Image(systemName: serie != nil ? "square.stack.3d.up" : "waveform.and.magnifyingglass")
+                        .font(.system(size: 22, weight: .medium))
+                        .foregroundColor(Med.accentText)
+                }
             }
+            .frame(width: 64, height: 64)
+            .clipShape(RoundedRectangle(cornerRadius: 14))
+            .overlay(RoundedRectangle(cornerRadius: 14).stroke(Color.white.opacity(0.08), lineWidth: 1))
 
-            VStack(alignment: .leading, spacing: 4) {
-                Text(file.name)
-                    .font(.medBody())
+            VStack(alignment: .leading, spacing: 6) {
+                Text(titel)
+                    .font(.system(size: 16, weight: .semibold))
                     .foregroundColor(Med.textPri)
                     .lineLimit(1)
-
                 HStack(spacing: 6) {
-                    MedBadge(text: file.ext)
-                    if isDemo {
-                        MedBadge(text: "DEMO", color: Med.blue.opacity(0.7))
-                    } else {
-                        Text(file.sizeHuman)
-                            .font(.medMono(11))
-                            .foregroundColor(Med.textSec)
-                        Text("·")
-                            .foregroundColor(Med.textDim)
-                        Text(file.modifiedAgo)
-                            .font(.medCaption())
-                            .foregroundColor(Med.textSec)
-                    }
+                    if !modaliteit.isEmpty { MedBadge(text: modaliteit) }
+                    Text(meta)
+                        .font(.system(size: 13))
+                        .foregroundColor(Med.textSec)
+                        .lineLimit(1)
                 }
             }
 
-            Spacer()
+            Spacer(minLength: 0)
 
             Image(systemName: "chevron.right")
-                .font(.system(size: 11, weight: .semibold))
+                .font(.system(size: 13, weight: .semibold))
                 .foregroundColor(Med.textDim)
         }
-        .padding(.horizontal, 16)
-        .padding(.vertical, 13)
-        .background(Med.card)
+        .padding(10)
+        .medCard()
+        .overlay(RoundedRectangle(cornerRadius: 20).stroke(Med.accent, lineWidth: gekozen ? 2 : 0))
+        .contentShape(Rectangle())
+        .onAppear { thumbs.laad(file.url) }
     }
 
-    private var iconName: String {
-        switch file.ext {
-        case "DCM", "DICOM": return "waveform.and.magnifyingglass"
-        case "PNG", "JPG", "JPEG": return "photo"
-        default: return "doc.fill"
-        }
+    private var modaliteit: String {
+        if let s = serie, !s.modality.isEmpty { return s.modality }
+        if let m = info?.modality, !m.isEmpty { return m }
+        return file.ext == "DCM" || file.ext == "DICOM" ? "" : file.ext
     }
 
-    private var iconColor: Color {
-        switch file.ext {
-        case "DCM", "DICOM": return Med.accent
-        case "PNG", "JPG", "JPEG": return Med.blue
-        default: return Med.textSec
+    private var meta: String {
+        if let s = serie {
+            return "Serie · \(s.files.count) slices · \(s.totalSize.asFileSize())"
         }
+        var delen: [String] = []
+        if let n = info?.frames, n > 1 { delen.append("Cine · \(n) beelden") }
+        else if let sz = info?.size, !sz.isEmpty { delen.append(sz) }
+        if !file.url.path.hasPrefix(Bundle.main.bundlePath) {
+            delen.append(file.modifiedAgo)
+        }
+        return delen.isEmpty ? file.sizeHuman : delen.joined(separator: " · ")
     }
 }
 
@@ -570,30 +570,38 @@ private struct MedFileRow: View {
 private struct QuickImageView: View {
     let image: UIImage
     let title: String
+    var ingebed = false
     @Environment(\.dismiss) private var dismiss
 
     var body: some View {
-        ZStack {
+        ZStack(alignment: .top) {
             Color.black.ignoresSafeArea()
             Image(uiImage: image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-            VStack {
-                HStack {
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+            HStack(spacing: 10) {
+                if !ingebed {
                     Button { dismiss() } label: {
-                        Image(systemName: "xmark.circle.fill")
-                            .font(.title2)
-                            .foregroundColor(.white.opacity(0.7))
+                        Image(systemName: "xmark")
+                            .font(.system(size: 16, weight: .semibold))
+                            .foregroundColor(Med.textPri)
+                            .medGlassCircle()
                     }
-                    .padding()
-                    Spacer()
-                    Text(title)
-                        .font(.medCaption())
-                        .foregroundColor(.white.opacity(0.6))
-                        .padding(.trailing)
+                    .accessibilityLabel("Sluiten")
                 }
-                Spacer()
+                Text(title)
+                    .font(.system(size: 14, weight: .semibold))
+                    .foregroundColor(Med.textPri)
+                    .lineLimit(1)
+                    .padding(.horizontal, 16)
+                    .frame(height: 44)
+                    .medGlass(cornerRadius: 22)
+                Spacer(minLength: 0)
             }
+            .padding(.horizontal, 16)
+            .padding(.top, 8)
         }
     }
 }
+

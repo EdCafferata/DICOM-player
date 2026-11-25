@@ -20,6 +20,7 @@
 		AABB000028CAG0001CAG0001 /* cag_tijdens_ingreep.dcm in Resources */ = {isa = PBXBuildFile; fileRef = AABB000028CAG0000CAG0000 /* cag_tijdens_ingreep.dcm */; };
 		AABB000125MED0001MED0001 /* MedTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB000025MED0001MED0001 /* MedTheme.swift */; };
 		AABB000130TIP0001TIP0001 /* TipJarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB000130TIP0000TIP0000 /* TipJarView.swift */; };
+		AABB000140APS0001APS0001 /* AppScreens.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB000140APS0000APS0000 /* AppScreens.swift */; };
 		DD93EAA72FBA5E05001C2B46 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = DD93EAA62FBA5E05001C2B46 /* PrivacyInfo.xcprivacy */; };
 		DDED0CDC2FCCC34F008F9E92 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDED0CDB2FCCC34F008F9E92 /* StoreKit.framework */; };
 		DE738E501FAC76BA00BAB85D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE738E4F1FAC76BA00BAB85D /* AppDelegate.swift */; };
@@ -46,6 +47,7 @@
 		AABB000027CAG0000CAG0000 /* cag_na_ingreep.dcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = cag_na_ingreep.dcm; sourceTree = "<group>"; };
 		AABB000028CAG0000CAG0000 /* cag_tijdens_ingreep.dcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = cag_tijdens_ingreep.dcm; sourceTree = "<group>"; };
 		AABB000130TIP0000TIP0000 /* TipJarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipJarView.swift; sourceTree = "<group>"; };
+		AABB000140APS0000APS0000 /* AppScreens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScreens.swift; sourceTree = "<group>"; };
 		DD93EAA62FBA5E05001C2B46 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		DDED0CDB2FCCC34F008F9E92 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		DE738E4C1FAC76BA00BAB85D /* Dicom Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dicom Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +120,7 @@
 			children = (
 				DE738E511FAC76BA00BAB85D /* ViewController.swift */,
 				AABB000130TIP0000TIP0000 /* TipJarView.swift */,
+				AABB000140APS0000APS0000 /* AppScreens.swift */,
 				AA381D7E956D8FFF23C3D9A6 /* TipJarCoachMark.swift */,
 			);
 			path = Views;
@@ -236,6 +239,7 @@
 				6E2D2C8B25C6B59400AF0F11 /* DicomFileInfo.swift in Sources */,
 				DE738E521FAC76BA00BAB85D /* ViewController.swift in Sources */,
 				AABB000130TIP0001TIP0001 /* TipJarView.swift in Sources */,
+				AABB000140APS0001APS0001 /* AppScreens.swift in Sources */,
 				6E79D15825C748D40003B749 /* Date+timeAgo.swift in Sources */,
 				AABB000125MED0001MED0001 /* MedTheme.swift in Sources */,
 				6E2D2C8E25C6B70700AF0F11 /* DicomFilesTableViewController.swift in Sources */,
@@ -412,7 +416,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1;
+				MARKETING_VERSION = 2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = info.cafferata.dicomplayer;
 				PRODUCT_NAME = "Dicom Player";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -444,7 +448,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1;
+				MARKETING_VERSION = 2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = info.cafferata.dicomplayer;
 				PRODUCT_NAME = "Dicom Player";
 				PROVISIONING_PROFILE_SPECIFIER = "";

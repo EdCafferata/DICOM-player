@@ -16,6 +16,7 @@ Inclusief Tip Jar (StoreKit 2 IAP) voor ondersteuning van de ontwikkelaar.
 - **App Store-naam:** "Dicom Viewer by The IT Crowd" (PRODUCT_NAME/scheme blijven "Dicom Player")
 - **GitHub:** https://github.com/EdCafferata/DICOM-player — branch: `master-branch`
 - **Versie:** `2.1` (build 9) — live in de App Store sinds 1 juli 2026
+- **In ontwikkeling:** `2.2` (build 10) — nieuwe look (Liquid Glass, tabbalk Scans/Leren/Over) + iPad split-view (#7), nog niet ingediend
 - **Simulator ID:** `88EB08ED-92F2-440D-895D-2A7562C6F863` (iPhone 17e, iOS 26.5)
 - **Fysiek testapparaat:** iPhone 13 Pro Max, device ID `9DA480C9-9239-5AD3-9A1E-09E5A21AF4DA`
 
@@ -69,8 +70,9 @@ xcrun simctl launch 88EB08ED-92F2-440D-895D-2A7562C6F863 info.cafferata.dicompla
 
 ## Stack
 - **Taal:** Swift, SwiftUI + UIKit bridge
-- **Main view:** `Views/ViewController.swift` — `ContentView` (bestandslijst, dark medical theme)
-- **Viewer:** `Controlers/DicomFilesTableViewController.swift` — `ViewerView` (SwiftUI fullscreen viewer)
+- **Root:** `Views/AppScreens.swift` — `RootTabView` (tabs Scans · Leren · Over), `LerenView`, `OverView`, `ThumbCache` (miniaturen, schijfcache in Caches/Miniaturen)
+- **Scans-tab:** `Views/ViewController.swift` — `ScansView` (kaarten met miniaturen; iPad: `NavigationSplitView` lijst + viewer)
+- **Viewer:** `Controlers/DicomFilesTableViewController.swift` — `ViewerView` (glazen bedieningspaneel, presets als chips, omkeren, info-sheet met export; `ingebed: true` op iPad)
 - **Parser:** `Controlers/DicomFilesTableViewControlllerDelegate.swift` — `DICOMParser`
 - **Bestanden:** `Controlers/DicomFileManager.swift` — `FileStore: ObservableObject`
 - **IAP:** `Views/TipJarView.swift` — `TipJarView` + `TipStore` (StoreKit 2)
@@ -141,7 +143,12 @@ Med.textSecondary = #5A7099
 - [x] Recent geopende bestanden (#6)
 - [x] App Store beschrijving NL + EN (#8)
 - [x] Versie 2.1 (build 9) — LIVE in de App Store sinds 1 juli 2026
+- [x] 2.2: nieuwe look (Liquid Glass op iOS 26, materiaal-fallback op iOS 16–18), tabs Scans/Leren/Over, miniaturen, contrast omkeren, info-sheet
+
+## Debug-testhulp (alleen DEBUG-builds)
+- `-demoOpen <n>` opent voorbeeldscan n direct; `-startTab <n>` start op tab n (0 Scans, 1 Leren, 2 Over)
+- `-tipJarCoachMarkShown NO` toont het fooien-hulpje opnieuw
 
 ## Open issues (backlog)
 - [ ] #4 Measurements — afstand meten in mm
-- [ ] #7 iPad split-view layout (bestandslijst + viewer naast elkaar)
+- [x] #7 iPad split-view layout (bestandslijst + viewer naast elkaar) — in 2.2, issue nog open tot Ed het op een echt toestel heeft getest

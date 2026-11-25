@@ -18,6 +18,9 @@ struct WLPreset: Identifiable {
 
 struct ViewerView: View {
     let parsed: ParsedDICOM
+    var titel: String = ""
+    /// true op iPad: de viewer staat naast de lijst, dus geen sluitknop.
+    var ingebed: Bool = false
     @Environment(\.dismiss) private var dismiss
 
     @State private var frameIdx   = 0
@@ -25,6 +28,8 @@ struct ViewerView: View {
     @State private var fps: Double = 10
     @State private var cineTimer: Timer?
     @State private var showOverlay = true
+    @State private var inverted = false
+    @State private var showInfo = false
 
     @State private var scale: CGFloat     = 1
     @State private var lastScale: CGFloat = 1
@@ -51,6 +56,19 @@ struct ViewerView: View {
 
     private var isCine: Bool { frames.count > 1 }
 
+    private var kopTitel: String {
+        if !titel.isEmpty { return titel }
+        return parsed.modality.isEmpty ? "Scan" : parsed.modality
+    }
+
+    private var kopDetails: String {
+        var delen: [String] = []
+        if !parsed.modality.isEmpty { delen.append(parsed.modality) }
+        delen.append("\(parsed.columns) × \(parsed.rows)")
+        if isCine { delen.append("\(frames.count) beelden") }
+        return delen.joined(separator: " · ")
+    }
+
     var body: some View {
         ZStack {
             Color.black.ignoresSafeArea()
@@ -59,6 +77,7 @@ struct ViewerView: View {
                 Image(uiImage: UIImage(cgImage: cgImg))
                     .resizable()
                     .aspectRatio(contentMode: .fit)
+                    .modifier(InvertIf(on: inverted))
                     .scaleEffect(scale)
                     .offset(offset)
                     .gesture(pinchGesture)
@@ -67,14 +86,14 @@ struct ViewerView: View {
                     .onTapGesture(count: 1) {
                         withAnimation(.easeInOut(duration: 0.2)) { showOverlay.toggle() }
                     }
+                    .accessibilityLabel("Medisch beeld")
             } else {
                 VStack(spacing: 12) {
                     Image(systemName: "exclamationmark.triangle")
                         .font(.system(size: 36))
                         .foregroundColor(Med.warn)
-                    Text("GEEN BEELDDATA")
-                        .font(.medLabel())
-                        .tracking(2)
+                    Text("Geen beelddata in dit bestand")
+                        .font(.system(size: 15, weight: .medium))
                         .foregroundColor(Med.textSec)
                 }
             }
@@ -83,263 +102,277 @@ struct ViewerView: View {
                 VStack(spacing: 0) {
                     topBar
                     Spacer()
-                    if isCine { cineBar }
+                    bedieningsPaneel
                 }
+                .transition(.opacity)
             }
         }
+        .preferredColorScheme(.dark)
         .onDisappear { stopCine() }
         .sheet(item: $exportItem) { item in
             ShareSheet(url: item.url)
+        }
+        .sheet(isPresented: $showInfo) {
+            infoSheet
         }
     }
 
     // MARK: Top bar
 
     private var topBar: some View {
-        HStack(alignment: .top, spacing: 0) {
-            // Links: sluiten + window/level
-            VStack(alignment: .leading, spacing: 8) {
-                Button {
-                    stopCine(); dismiss()
-                } label: {
-                    ZStack {
-                        Circle()
-                            .fill(Color.white.opacity(0.1))
-                            .frame(width: 34, height: 34)
-                        Image(systemName: "xmark")
-                            .font(.system(size: 13, weight: .semibold))
-                            .foregroundColor(.white.opacity(0.8))
-                    }
-                }
-
-                if parsed.windowWidth > 0 {
-                    VStack(alignment: .leading, spacing: 2) {
-                        medInfoRow(label: "WC", value: String(format: "%.0f",
-                            presetFrames == nil ? parsed.windowCenter : huidigWC))
-                        medInfoRow(label: "WW", value: String(format: "%.0f",
-                            presetFrames == nil ? parsed.windowWidth : huidigWW))
-                    }
-                }
-
-                // Window/Level presets — alleen bij raw grijswaardenbeelden
-                if parsed.kanHervensteren {
-                    Menu {
-                        Button {
-                            presetFrames = nil; presetNaam = "Auto"
-                        } label: {
-                            Label("Auto (origineel)", systemImage: "wand.and.stars")
-                        }
-                        Divider()
-                        ForEach(WLPreset.alle) { p in
-                            Button {
-                                pasPresetToe(p)
-                            } label: {
-                                Label("\(p.naam)  C\(Int(p.center)) W\(Int(p.width))",
-                                      systemImage: p.icoon)
-                            }
-                        }
-                    } label: {
-                        HStack(spacing: 5) {
-                            if isRendering {
-                                ProgressView().tint(Med.accent).scaleEffect(0.6)
-                            } else {
-                                Image(systemName: "circle.lefthalf.filled")
-                                    .font(.system(size: 11, weight: .semibold))
-                            }
-                            Text(presetNaam.uppercased())
-                                .font(.medLabel())
-                                .tracking(1)
-                        }
-                        .foregroundColor(Med.accent)
-                        .padding(.horizontal, 9)
-                        .padding(.vertical, 5)
-                        .background(Med.accent.opacity(0.12))
-                        .overlay(RoundedRectangle(cornerRadius: 5).stroke(Med.accent.opacity(0.3), lineWidth: 0.5))
-                        .cornerRadius(5)
-                    }
-                }
-            }
-            .padding(.leading, 16)
-            .padding(.top, 14)
-
-            Spacer()
-
-            // Rechts: patiënt + modaliteit
-            VStack(alignment: .trailing, spacing: 6) {
-                if !parsed.patientName.isEmpty {
-                    Text(parsed.patientName)
-                        .font(.system(size: 13, weight: .semibold, design: .rounded))
-                        .foregroundColor(.white)
-                }
-
-                HStack(spacing: 6) {
-                    if !parsed.modality.isEmpty {
-                        MedBadge(text: parsed.modality, color: Med.accent)
-                    }
-                    Text("\(parsed.columns)×\(parsed.rows)")
-                        .font(.medMono(11))
-                        .foregroundColor(.white.opacity(0.5))
-                }
-
-                if isCine {
-                    MedBadge(text: "\(frames.count) FRAMES", color: Med.blue)
-                }
-
-                // Frame exporteren
-                if frame != nil {
-                    Menu {
-                        Button { exporteerFrame(als: "PNG") } label: {
-                            Label("Exporteer als PNG", systemImage: "photo")
-                        }
-                        Button { exporteerFrame(als: "JPEG") } label: {
-                            Label("Exporteer als JPEG", systemImage: "photo.fill")
-                        }
-                    } label: {
-                        HStack(spacing: 5) {
-                            Image(systemName: "square.and.arrow.up")
-                                .font(.system(size: 11, weight: .semibold))
-                            Text("EXPORT")
-                                .font(.medLabel())
-                                .tracking(1)
-                        }
-                        .foregroundColor(Med.accent)
-                        .padding(.horizontal, 9)
-                        .padding(.vertical, 5)
-                        .background(Med.accent.opacity(0.12))
-                        .overlay(RoundedRectangle(cornerRadius: 5).stroke(Med.accent.opacity(0.3), lineWidth: 0.5))
-                        .cornerRadius(5)
-                    }
-                }
-            }
-            .padding(.trailing, 16)
-            .padding(.top, 14)
-        }
-        .background(
-            LinearGradient(
-                colors: [.black.opacity(0.7), .clear],
-                startPoint: .top, endPoint: .bottom
-            )
-            .ignoresSafeArea()
-        )
-    }
-
-    private func medInfoRow(label: String, value: String) -> some View {
-        HStack(spacing: 4) {
-            Text(label)
-                .font(.medLabel())
-                .tracking(1)
-                .foregroundColor(Med.textSec)
-            Text(value)
-                .font(.medMono(11))
-                .foregroundColor(.white.opacity(0.7))
-        }
-        .padding(.horizontal, 7)
-        .padding(.vertical, 3)
-        .background(Color.black.opacity(0.45))
-        .cornerRadius(4)
-    }
-
-    // MARK: Cine bar
-
-    private var cineBar: some View {
-        VStack(spacing: 10) {
-            // Slider
+        VStack(alignment: .leading, spacing: 10) {
             HStack(spacing: 10) {
-                Text("1")
-                    .font(.medMono(10))
-                    .foregroundColor(Med.textSec)
-                Slider(
-                    value: Binding(
-                        get: { Double(frameIdx) },
-                        set: { frameIdx = Int($0.rounded()) }
-                    ),
-                    in: 0...Double(frames.count - 1),
-                    step: 1
-                )
-                .tint(Med.accent)
-                Text("\(frames.count)")
-                    .font(.medMono(10))
-                    .foregroundColor(Med.textSec)
-            }
-            .padding(.horizontal, 20)
-
-            // Knoppen
-            HStack(spacing: 0) {
-                // Stap terug
-                cineButton(icon: "backward.frame.fill") {
-                    stopCine(); frameIdx = max(0, frameIdx - 1)
+                if !ingebed {
+                    Button {
+                        stopCine(); dismiss()
+                    } label: {
+                        Image(systemName: "xmark")
+                            .font(.system(size: 16, weight: .semibold))
+                            .foregroundColor(Med.textPri)
+                            .medGlassCircle()
+                    }
+                    .accessibilityLabel("Sluiten")
                 }
 
-                // Play/Pause
-                Button { isPlaying ? stopCine() : startCine() } label: {
-                    ZStack {
-                        Circle()
-                            .fill(Med.accent)
-                            .frame(width: 48, height: 48)
-                        Image(systemName: isPlaying ? "pause.fill" : "play.fill")
-                            .font(.system(size: 18, weight: .semibold))
-                            .foregroundColor(Med.bg)
-                            .offset(x: isPlaying ? 0 : 2)
-                    }
+                VStack(alignment: .leading, spacing: 1) {
+                    Text(kopTitel)
+                        .font(.system(size: 14, weight: .bold))
+                        .foregroundColor(Med.textPri)
+                        .lineLimit(1)
+                    Text(kopDetails)
+                        .font(.system(size: 11))
+                        .foregroundColor(Color(hex: "AEB9CB"))
+                        .lineLimit(1)
                 }
                 .padding(.horizontal, 16)
+                .frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
+                .medGlass(cornerRadius: 22)
 
-                // Stap vooruit
-                cineButton(icon: "forward.frame.fill") {
-                    stopCine(); frameIdx = min(frames.count - 1, frameIdx + 1)
+                Button { showInfo = true } label: {
+                    Image(systemName: "info")
+                        .font(.system(size: 17, weight: .semibold))
+                        .foregroundColor(Med.textPri)
+                        .medGlassCircle()
                 }
+                .accessibilityLabel("Scangegevens en exporteren")
+            }
 
-                Spacer()
-
-                // Frame teller
-                Text("\(frameIdx + 1) / \(frames.count)")
-                    .font(.medMono(12))
-                    .foregroundColor(.white.opacity(0.7))
-
-                Spacer()
-
-                // FPS menu
-                Menu {
-                    ForEach([5, 10, 15, 24, 30], id: \.self) { f in
-                        Button("\(f) fps") {
-                            fps = Double(f)
-                            if isPlaying { stopCine(); startCine() }
-                        }
+            if parsed.windowWidth > 0 {
+                HStack(spacing: 8) {
+                    wlChip("W", presetFrames == nil ? parsed.windowWidth : huidigWW)
+                    wlChip("L", presetFrames == nil ? parsed.windowCenter : huidigWC)
+                    if inverted {
+                        Text("Omgekeerd")
+                            .font(.system(size: 12, weight: .semibold))
+                            .foregroundColor(Med.textPri)
+                            .padding(.horizontal, 10)
+                            .padding(.vertical, 6)
+                            .medGlass(cornerRadius: 12)
                     }
-                } label: {
-                    Text("\(Int(fps)) FPS")
-                        .font(.medLabel())
-                        .tracking(1)
-                        .foregroundColor(Med.accent)
-                        .padding(.horizontal, 10)
-                        .padding(.vertical, 5)
-                        .background(Med.accent.opacity(0.12))
-                        .overlay(RoundedRectangle(cornerRadius: 5).stroke(Med.accent.opacity(0.3), lineWidth: 0.5))
-                        .cornerRadius(5)
                 }
             }
-            .padding(.horizontal, 20)
         }
-        .padding(.top, 12)
-        .padding(.bottom, 32)
-        .background(
-            LinearGradient(
-                colors: [.clear, .black.opacity(0.8)],
-                startPoint: .top, endPoint: .bottom
-            )
-            .ignoresSafeArea()
-        )
+        .padding(.horizontal, 16)
+        .padding(.top, 8)
     }
 
-    private func cineButton(icon: String, action: @escaping () -> Void) -> some View {
-        Button(action: action) {
-            Image(systemName: icon)
-                .font(.system(size: 16, weight: .medium))
-                .foregroundColor(.white.opacity(0.8))
-                .frame(width: 40, height: 40)
-                .background(Color.white.opacity(0.08))
-                .clipShape(Circle())
+    private func wlChip(_ label: String, _ waarde: Double) -> some View {
+        HStack(spacing: 4) {
+            Text(label).foregroundColor(Med.textPri)
+            Text(String(format: "%.0f", waarde)).foregroundColor(Med.accentText)
         }
+        .font(.system(size: 12, weight: .semibold).monospacedDigit())
+        .padding(.horizontal, 10)
+        .padding(.vertical, 6)
+        .medGlass(cornerRadius: 12)
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel(label == "W" ? "Window \(Int(waarde))" : "Level \(Int(waarde))")
+    }
+
+    // MARK: Bedieningspaneel (glas, onderin)
+
+    private var bedieningsPaneel: some View {
+        VStack(spacing: 14) {
+            if parsed.kanHervensteren {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 8) {
+                        presetChip("Auto", actief: presetFrames == nil) {
+                            presetFrames = nil; presetNaam = "Auto"
+                        }
+                        ForEach(WLPreset.alle) { p in
+                            presetChip(p.naam, actief: presetNaam == p.naam && presetFrames != nil) {
+                                pasPresetToe(p)
+                            }
+                        }
+                        if isRendering {
+                            ProgressView().tint(Med.accentText).padding(.leading, 4)
+                        }
+                    }
+                }
+            }
+
+            if isCine {
+                VStack(spacing: 4) {
+                    Slider(
+                        value: Binding(
+                            get: { Double(frameIdx) },
+                            set: { frameIdx = Int($0.rounded()) }
+                        ),
+                        in: 0...Double(frames.count - 1),
+                        step: 1
+                    )
+                    .tint(Med.accent)
+                    .accessibilityLabel("Beeld")
+                    HStack {
+                        Text("Beeld \(frameIdx + 1) van \(frames.count)")
+                        Spacer()
+                        Text("\(Int(fps)) bps")
+                    }
+                    .font(.system(size: 12).monospacedDigit())
+                    .foregroundColor(Color(hex: "AEB9CB"))
+                }
+            }
+
+            HStack {
+                Button { inverted.toggle() } label: {
+                    Image(systemName: "circle.lefthalf.filled")
+                        .font(.system(size: 18, weight: .semibold))
+                        .foregroundColor(inverted ? Med.onAccent : Med.textPri)
+                        .frame(width: 44, height: 44)
+                        .background(inverted ? Med.accent : Color.white.opacity(0.10), in: Circle())
+                }
+                .accessibilityLabel("Contrast omkeren")
+
+                Spacer()
+
+                if isCine {
+                    HStack(spacing: 14) {
+                        rondeKnop("backward.frame.fill", label: "Vorig beeld") {
+                            stopCine(); frameIdx = max(0, frameIdx - 1)
+                        }
+                        Button { isPlaying ? stopCine() : startCine() } label: {
+                            Image(systemName: isPlaying ? "pause.fill" : "play.fill")
+                                .font(.system(size: 24, weight: .semibold))
+                                .foregroundColor(Med.onAccent)
+                                .offset(x: isPlaying ? 0 : 2)
+                                .frame(width: 64, height: 64)
+                                .background(Med.accent, in: Circle())
+                        }
+                        .accessibilityLabel(isPlaying ? "Pauzeren" : "Afspelen")
+                        rondeKnop("forward.frame.fill", label: "Volgend beeld") {
+                            stopCine(); frameIdx = min(frames.count - 1, frameIdx + 1)
+                        }
+                    }
+
+                    Spacer()
+
+                    Menu {
+                        ForEach([5, 10, 15, 24, 30], id: \.self) { f in
+                            Button("\(f) beelden per seconde") {
+                                fps = Double(f)
+                                if isPlaying { stopCine(); startCine() }
+                            }
+                        }
+                    } label: {
+                        Text("\(Int(fps))")
+                            .font(.system(size: 14, weight: .bold).monospacedDigit())
+                            .foregroundColor(Med.textPri)
+                            .frame(width: 44, height: 44)
+                            .background(Color.white.opacity(0.10), in: Circle())
+                    }
+                    .accessibilityLabel("Snelheid")
+                } else {
+                    Text("Knijp om te zoomen · dubbeltik om terug te zetten")
+                        .font(.system(size: 12))
+                        .foregroundColor(Color(hex: "AEB9CB"))
+                    Spacer()
+                }
+            }
+        }
+        .padding(14)
+        .padding(.bottom, 2)
+        .medGlass(cornerRadius: 30)
+        .padding(.horizontal, 12)
+        .padding(.bottom, 8)
+    }
+
+    private func presetChip(_ naam: String, actief: Bool, actie: @escaping () -> Void) -> some View {
+        Button(action: actie) {
+            Text(naam)
+                .font(.system(size: 13, weight: .semibold))
+                .foregroundColor(actief ? Color(hex: "0A0E15") : Color(hex: "DCE3EE"))
+                .padding(.horizontal, 14)
+                .frame(height: 36)
+                .background(actief ? Med.textPri : Color.clear, in: Capsule())
+                .overlay(Capsule().stroke(actief ? Color.clear : Color.white.opacity(0.18), lineWidth: 1))
+        }
+        .disabled(isRendering)
+    }
+
+    private func rondeKnop(_ icoon: String, label: String, actie: @escaping () -> Void) -> some View {
+        Button(action: actie) {
+            Image(systemName: icoon)
+                .font(.system(size: 18, weight: .medium))
+                .foregroundColor(Med.textPri)
+                .frame(width: 48, height: 48)
+                .background(Color.white.opacity(0.10), in: Circle())
+        }
+        .accessibilityLabel(label)
+    }
+
+    // MARK: Info-sheet (gegevens + export)
+
+    private var infoSheet: some View {
+        NavigationStack {
+            List {
+                Section("Scan") {
+                    if !parsed.patientName.isEmpty {
+                        LabeledContent("Patiënt", value: parsed.patientName)
+                    }
+                    if !parsed.modality.isEmpty {
+                        LabeledContent("Modaliteit", value: parsed.modality)
+                    }
+                    LabeledContent("Afmeting", value: "\(parsed.columns) × \(parsed.rows)")
+                    LabeledContent("Beelden", value: "\(frames.count)")
+                    if parsed.windowWidth > 0 {
+                        LabeledContent("Window / Level",
+                                       value: String(format: "%.0f / %.0f",
+                                                     presetFrames == nil ? parsed.windowWidth : huidigWW,
+                                                     presetFrames == nil ? parsed.windowCenter : huidigWC))
+                    }
+                }
+                if frame != nil {
+                    Section {
+                        Button {
+                            showInfo = false
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) { exporteerFrame(als: "PNG") }
+                        } label: {
+                            Label("Dit beeld exporteren als PNG", systemImage: "photo")
+                        }
+                        Button {
+                            showInfo = false
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) { exporteerFrame(als: "JPEG") }
+                        } label: {
+                            Label("Dit beeld exporteren als JPEG", systemImage: "photo.fill")
+                        }
+                    } header: {
+                        Text("Exporteren")
+                    } footer: {
+                        Text("Het beeld wordt geëxporteerd met het gekozen venster (zonder omkeren).")
+                    }
+                }
+            }
+            .navigationTitle(kopTitel)
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("Klaar") { showInfo = false }
+                }
+            }
+        }
+        .tint(Med.accentText)
+        .presentationDetents([.medium, .large])
+        .preferredColorScheme(.dark)
     }
 
     // MARK: Frame-export
@@ -422,5 +455,13 @@ struct ViewerView: View {
             scale = 1; offset = .zero
             lastScale = 1; lastOffset = .zero
         }
+    }
+}
+
+/// Keert de grijswaarden om (wit ↔ zwart) als `on` waar is.
+private struct InvertIf: ViewModifier {
+    let on: Bool
+    func body(content: Content) -> some View {
+        if on { content.colorInvert() } else { content }
     }
 }

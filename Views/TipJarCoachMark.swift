@@ -7,9 +7,9 @@ struct TipJarCoachMark: View {
     @State private var pulse = false
     @State private var arrowBounce = false
 
-    // Hart zit op: X = W - 84, Y = safeAreaInset + 44
-    private let heartOffsetFromRight: CGFloat = 84
-    private let heartOffsetFromTop:   CGFloat = 85
+    // Hart zit op: X = W - 97 (naast de plus-knop in de Scans-kop)
+    private let heartOffsetFromRight: CGFloat = 97
+    private let heartOffsetFromTop:   CGFloat = 90
 
     var body: some View {
         GeometryReader { geo in
