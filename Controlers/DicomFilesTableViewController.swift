@@ -31,6 +31,10 @@ struct ViewerView: View {
     @State private var inverted = false
     @State private var showInfo = false
 
+    // Meten (#4): punten in beeldpixels (x = kolom, y = rij)
+    @State private var meten = false
+    @State private var meetPunten: [CGPoint] = []
+
     @State private var scale: CGFloat     = 1
     @State private var lastScale: CGFloat = 1
     @State private var offset: CGSize     = .zero
@@ -78,6 +82,7 @@ struct ViewerView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .modifier(InvertIf(on: inverted))
+                    .overlay { meetLaag }
                     .scaleEffect(scale)
                     .offset(offset)
                     .gesture(pinchGesture)
@@ -108,6 +113,15 @@ struct ViewerView: View {
             }
         }
         .preferredColorScheme(.dark)
+        .onAppear {
+            #if DEBUG
+            // Testhulp: `-meetTest YES` zet meten aan met twee vaste punten (alleen debug-builds).
+            if UserDefaults.standard.bool(forKey: "meetTest") {
+                meten = true
+                meetPunten = [CGPoint(x: 150, y: 150), CGPoint(x: 350, y: 300)]
+            }
+            #endif
+        }
         .onDisappear { stopCine() }
         .sheet(item: $exportItem) { item in
             ShareSheet(url: item.url)
@@ -171,6 +185,8 @@ struct ViewerView: View {
                     }
                 }
             }
+
+            if meten { meetBanner }
         }
         .padding(.horizontal, 16)
         .padding(.top, 8)
@@ -242,6 +258,18 @@ struct ViewerView: View {
                         .background(inverted ? Med.accent : Color.white.opacity(0.10), in: Circle())
                 }
                 .accessibilityLabel("Contrast omkeren")
+
+                Button {
+                    meten.toggle()
+                    if !meten { meetPunten = [] }
+                } label: {
+                    Image(systemName: "ruler")
+                        .font(.system(size: 17, weight: .semibold))
+                        .foregroundColor(meten ? Med.onAccent : Med.textPri)
+                        .frame(width: 44, height: 44)
+                        .background(meten ? Med.accent : Color.white.opacity(0.10), in: Circle())
+                }
+                .accessibilityLabel(meten ? "Meten uitzetten" : "Afstand meten")
 
                 Spacer()
 
@@ -320,6 +348,103 @@ struct ViewerView: View {
         .accessibilityLabel(label)
     }
 
+    // MARK: Meten (#4)
+
+    /// Tekenlaag over het beeld; vangt tikken alleen op als meten aan staat.
+    private var meetLaag: some View {
+        GeometryReader { geo in
+            let sx = geo.size.width / CGFloat(max(parsed.columns, 1))
+            let sy = geo.size.height / CGFloat(max(parsed.rows, 1))
+            let schermPunten = meetPunten.map { CGPoint(x: $0.x * sx, y: $0.y * sy) }
+            let dikte = 2 / max(scale, 1)
+            let straal = 7 / max(scale, 1)
+
+            ZStack(alignment: .topLeading) {
+                if meten {
+                    Color.clear
+                        .contentShape(Rectangle())
+                        .gesture(SpatialTapGesture().onEnded { v in
+                            let p = CGPoint(x: min(max(v.location.x / sx, 0), CGFloat(parsed.columns)),
+                                            y: min(max(v.location.y / sy, 0), CGFloat(parsed.rows)))
+                            meetPunten = meetPunten.count >= 2 ? [p] : meetPunten + [p]
+                        })
+                }
+                if schermPunten.count == 2 {
+                    Path { pad in
+                        pad.move(to: schermPunten[0])
+                        pad.addLine(to: schermPunten[1])
+                    }
+                    .stroke(Color(hex: "FFD166"), lineWidth: dikte)
+                }
+                ForEach(Array(schermPunten.enumerated()), id: \.offset) { _, p in
+                    Circle()
+                        .stroke(Color(hex: "FFD166"), lineWidth: dikte)
+                        .background(Circle().fill(Color.black.opacity(0.35)))
+                        .frame(width: straal * 2, height: straal * 2)
+                        .position(p)
+                }
+                if schermPunten.count == 2, let tekst = afstandTekst {
+                    Text(tekst)
+                        .font(.system(size: 13, weight: .bold).monospacedDigit())
+                        .foregroundColor(.black)
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 4)
+                        .background(Color(hex: "FFD166"), in: Capsule())
+                        .scaleEffect(1 / max(scale, 1))
+                        .position(x: (schermPunten[0].x + schermPunten[1].x) / 2,
+                                  y: (schermPunten[0].y + schermPunten[1].y) / 2 - 18 / max(scale, 1))
+                        .allowsHitTesting(false)
+                }
+            }
+        }
+        .allowsHitTesting(meten)
+    }
+
+    /// Afstand tussen de twee punten: in mm als de pixelafstand bekend is, anders in pixels.
+    private var afstandTekst: String? {
+        guard meetPunten.count == 2 else { return nil }
+        let dx = Double(meetPunten[1].x - meetPunten[0].x)
+        let dy = Double(meetPunten[1].y - meetPunten[0].y)
+        if let ps = parsed.pixelSpacing {
+            let mm = ((dx * ps.kolom) * (dx * ps.kolom) + (dy * ps.rij) * (dy * ps.rij)).squareRoot()
+            return mm.formatted(.number.precision(.fractionLength(1))) + " mm"
+        }
+        let px = (dx * dx + dy * dy).squareRoot()
+        return px.formatted(.number.precision(.fractionLength(0))) + " px"
+    }
+
+    private var meetBanner: some View {
+        HStack(spacing: 10) {
+            Image(systemName: "ruler")
+                .foregroundColor(Color(hex: "FFD166"))
+            Text(meetUitleg)
+                .font(.system(size: 13))
+                .foregroundColor(Med.textPri)
+                .fixedSize(horizontal: false, vertical: true)
+            Spacer(minLength: 0)
+            if !meetPunten.isEmpty {
+                Button("Wis") { meetPunten = [] }
+                    .font(.system(size: 13, weight: .semibold))
+                    .foregroundColor(Med.accentText)
+            }
+        }
+        .padding(.horizontal, 14)
+        .padding(.vertical, 10)
+        .medGlass(cornerRadius: 18)
+    }
+
+    private var meetUitleg: String {
+        if meetPunten.count < 2 {
+            return meetPunten.isEmpty ? "Tik op het beginpunt" : "Tik op het eindpunt"
+        }
+        guard let ps = parsed.pixelSpacing else {
+            return "Geen pixelafstand in dit bestand, dus afstand in pixels"
+        }
+        return ps.opDetector
+            ? "Gemeten op de detector; in het lichaam is het iets kleiner"
+            : "Afstand volgens de pixelafstand in het bestand"
+    }
+
     // MARK: Info-sheet (gegevens + export)
 
     private var infoSheet: some View {
@@ -334,6 +459,10 @@ struct ViewerView: View {
                     }
                     LabeledContent("Afmeting", value: "\(parsed.columns) × \(parsed.rows)")
                     LabeledContent("Beelden", value: "\(frames.count)")
+                    if let ps = parsed.pixelSpacing {
+                        LabeledContent(ps.opDetector ? "Pixelafstand (detector)" : "Pixelafstand",
+                                       value: ps.kolom.formatted(.number.precision(.fractionLength(3))) + " mm")
+                    }
                     if parsed.windowWidth > 0 {
                         LabeledContent("Window / Level",
                                        value: String(format: "%.0f / %.0f",

@@ -22,6 +22,10 @@ struct ParsedDICOM {
     var rescaleSlope: Double = 1      // (0028,1053) — voor HU-conversie
     var rescaleIntercept: Double = 0  // (0028,1052)
 
+    /// Afstand tussen pixels in mm (rij, kolom) voor metingen (#4).
+    /// Uit Pixel Spacing (0028,0030), anders Imager Pixel Spacing (0018,1164).
+    var pixelSpacing: PixelSpacing? = nil
+
     var kanHervensteren: Bool { !rawFrames.isEmpty }
 
     /// Rendert de raw frames opnieuw met een ander venster (center/width in
@@ -39,6 +43,25 @@ struct ParsedDICOM {
     func huNaarRaw(center hu: Double, width huWidth: Double) -> (Double, Double) {
         let slope = rescaleSlope != 0 ? rescaleSlope : 1
         return ((hu - rescaleIntercept) / slope, huWidth / slope)
+    }
+}
+
+/// Pixelafstand in mm. `opDetector` = waar het uit Imager Pixel Spacing komt:
+/// dan geldt de maat op het vlak van de detector, niet in de patiënt
+/// (bij röntgen/angio is het echte formaat door vergroting iets kleiner).
+struct PixelSpacing {
+    let rij: Double      // mm tussen rijen (verticaal)
+    let kolom: Double    // mm tussen kolommen (horizontaal)
+    let opDetector: Bool
+
+    /// Leest een DS-waarde als "0.308\\0.308".
+    static func lees(_ tekst: String, opDetector: Bool) -> PixelSpacing? {
+        let delen = tekst.split(separator: "\\").compactMap {
+            Double($0.trimmingCharacters(in: .whitespaces))
+        }
+        guard let r = delen.first, r > 0 else { return nil }
+        let k = delen.count > 1 && delen[1] > 0 ? delen[1] : r
+        return PixelSpacing(rij: r, kolom: k, opDetector: opDetector)
     }
 }
 
@@ -141,6 +164,8 @@ struct DICOMParser {
         var windowWidth       = 0.0
         var rescaleSlope      = 1.0
         var rescaleIntercept  = 0.0
+        var pixelSpacing: PixelSpacing? = nil
+        var imagerSpacing: PixelSpacing? = nil
         var rawPixels: Data?  = nil
         var encBlob: Data     = Data()
         var encapsulated      = false
@@ -261,6 +286,12 @@ struct DICOMParser {
             case 0x00281053:
                 rescaleSlope = Double(r.readASCII(len)) ?? 1
 
+            case 0x00280030:
+                pixelSpacing = PixelSpacing.lees(r.readASCII(len), opDetector: false)
+
+            case 0x00181164:
+                imagerSpacing = PixelSpacing.lees(r.readASCII(len), opDetector: true)
+
             default:
                 r.skip(len)
             }
@@ -306,7 +337,8 @@ struct DICOMParser {
             isSigned: isSigned,
             invert: invert,
             rescaleSlope: rescaleSlope,
-            rescaleIntercept: rescaleIntercept
+            rescaleIntercept: rescaleIntercept,
+            pixelSpacing: pixelSpacing ?? imagerSpacing
         )
     }
 
@@ -633,7 +665,8 @@ struct DICOMParser {
         case (0x0028, 0x0002), (0x0028, 0x0010), (0x0028, 0x0011),
              (0x0028, 0x0100), (0x0028, 0x0101), (0x0028, 0x0103): return "US"
         case (0x0028, 0x0008):                                       return "IS"
-        case (0x0028, 0x1050), (0x0028, 0x1051):                     return "DS"
+        case (0x0028, 0x1050), (0x0028, 0x1051),
+             (0x0028, 0x0030), (0x0018, 0x1164):                     return "DS"
         case (0x7FE0, 0x0010):                                       return "OW"
         default:                                                      return "UN"
         }

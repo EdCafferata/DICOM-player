@@ -11,7 +11,11 @@ private let tipProductIDs = [
 // MARK: - TipJarView
 
 struct TipJarView: View {
+    /// true als de fooienpot vanzelf verschijnt (elke 50e start, #11).
+    var automatisch = false
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.requestReview) private var requestReview
+    @AppStorage("fooienpotNietMeerTonen") private var nietMeerTonen = false
     @StateObject private var store = TipStore()
 
     var body: some View {
@@ -20,7 +24,6 @@ struct TipJarView: View {
 
             VStack(spacing: 0) {
                 header
-                MedDivider()
                 content
             }
         }
@@ -29,26 +32,22 @@ struct TipJarView: View {
     // MARK: Header
 
     private var header: some View {
-        HStack {
-            VStack(alignment: .leading, spacing: 2) {
-                Text("SUPPORT")
-                    .font(.medLabel())
-                    .tracking(2.5)
-                    .foregroundColor(Med.textSec)
-                Text("Steun de ontwikkelaar")
-                    .font(.medTitle())
-                    .foregroundColor(Med.textPri)
-            }
+        HStack(alignment: .center) {
+            Text("Steun de maker")
+                .font(.system(size: 28, weight: .heavy))
+                .foregroundColor(Med.textPri)
             Spacer()
             Button { dismiss() } label: {
-                Image(systemName: "xmark.circle.fill")
-                    .font(.system(size: 22))
-                    .foregroundColor(Med.textDim)
+                Image(systemName: "xmark")
+                    .font(.system(size: 15, weight: .semibold))
+                    .foregroundColor(Med.textPri)
+                    .medGlassCircle()
             }
+            .accessibilityLabel("Sluiten")
         }
         .padding(.horizontal, 20)
-        .padding(.vertical, 16)
-        .background(Med.surface)
+        .padding(.top, 20)
+        .padding(.bottom, 4)
     }
 
     // MARK: Content
@@ -66,13 +65,12 @@ struct TipJarView: View {
                             .font(.system(size: 38))
                     }
                     VStack(spacing: 6) {
-                        Text("BEDANKT VOOR JE VERTROUWEN")
-                            .font(.medLabel())
-                            .tracking(2)
-                            .foregroundColor(Med.textSec)
+                        Text("Bedankt voor je vertrouwen")
+                            .font(.system(size: 17, weight: .bold))
+                            .foregroundColor(Med.textPri)
                             .multilineTextAlignment(.center)
                         Text("Deze app is gratis en zonder advertenties.\nEen kleine bijdrage helpt enorm.")
-                            .font(.medCaption())
+                            .font(.system(size: 15))
                             .foregroundColor(Med.textSec)
                             .multilineTextAlignment(.center)
                             .padding(.horizontal, 24)
@@ -113,16 +111,41 @@ struct TipJarView: View {
                     .padding(.bottom, 4)
                 }
 
+                // Beoordelen (#10): Apple bepaalt zelf of en wanneer de prompt verschijnt.
+                Button {
+                    requestReview()
+                } label: {
+                    Label("Beoordeel Dicom Viewer", systemImage: "star.fill")
+                        .font(.system(size: 15, weight: .semibold))
+                        .foregroundColor(Med.textPri)
+                        .frame(maxWidth: .infinity, minHeight: 48)
+                        .background(Color.white.opacity(0.07), in: Capsule())
+                        .overlay(Capsule().stroke(Color.white.opacity(0.14), lineWidth: 1))
+                }
+                .padding(.horizontal, 20)
+
                 // Restore
                 Button {
                     Task { await store.restore() }
                 } label: {
                     Text("Aankopen herstellen")
                         .font(.medCaption())
-                        .foregroundColor(Med.textDim)
+                        .foregroundColor(Med.textSec)
                         .underline()
                 }
-                .padding(.bottom, 28)
+
+                if automatisch {
+                    Button {
+                        nietMeerTonen = true
+                        dismiss()
+                    } label: {
+                        Text("Niet meer vanzelf tonen")
+                            .font(.medCaption())
+                            .foregroundColor(Med.textSec)
+                    }
+                }
+
+                Spacer().frame(height: 12)
             }
         }
     }
@@ -190,9 +213,7 @@ private struct FallbackTipButton: View {
             }
             .padding(.horizontal, 16)
             .padding(.vertical, 14)
-            .background(Med.card)
-            .clipShape(RoundedRectangle(cornerRadius: 12))
-            .overlay(RoundedRectangle(cornerRadius: 12).stroke(Med.border, lineWidth: 0.5))
+            .medCard()
         }
         .disabled(store.purchasing != nil)
     }
@@ -250,9 +271,7 @@ private struct TipButton: View {
             }
             .padding(.horizontal, 16)
             .padding(.vertical, 14)
-            .background(Med.card)
-            .clipShape(RoundedRectangle(cornerRadius: 12))
-            .overlay(RoundedRectangle(cornerRadius: 12).stroke(Med.border, lineWidth: 0.5))
+            .medCard()
         }
         .disabled(store.purchasing != nil)
     }
@@ -328,6 +347,7 @@ final class TipStore: ObservableObject {
             case .success(let verification):
                 if case .verified(let tx) = verification {
                     purchased.insert(tx.productID)
+                    UserDefaults.standard.set(true, forKey: "heeftGetipt")
                     await tx.finish()
                 }
             case .pending, .userCancelled:
@@ -350,6 +370,7 @@ final class TipStore: ObservableObject {
         for await result in Transaction.currentEntitlements {
             if case .verified(let tx) = result {
                 purchased.insert(tx.productID)
+                UserDefaults.standard.set(true, forKey: "heeftGetipt")
             }
         }
     }
@@ -360,6 +381,7 @@ final class TipStore: ObservableObject {
         for await result in Transaction.updates {
             if case .verified(let tx) = result {
                 purchased.insert(tx.productID)
+                UserDefaults.standard.set(true, forKey: "heeftGetipt")
                 await tx.finish()
             }
         }

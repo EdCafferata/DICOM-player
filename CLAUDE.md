@@ -148,7 +148,12 @@ Med.textSecondary = #5A7099
 ## Debug-testhulp (alleen DEBUG-builds)
 - `-demoOpen <n>` opent voorbeeldscan n direct; `-startTab <n>` start op tab n (0 Scans, 1 Leren, 2 Over)
 - `-tipJarCoachMarkShown NO` toont het fooien-hulpje opnieuw
+- `-meetTest YES` zet in de viewer meten aan met twee vaste punten; `-aantalStarts 49` laat de fooienpot (#11) bij deze start verschijnen
+
+## Ook in 2.2
+- #10 'Beoordeel Dicom Viewer'-knop (requestReview) in de fooienpot
+- #11 fooienpot vanzelf elke 50e start, alleen als nog nooit getipt (`heeftGetipt`) en niet 'niet meer tonen' (`fooienpotNietMeerTonen`)
 
 ## Open issues (backlog)
-- [ ] #4 Measurements — afstand meten in mm
+- [x] #4 Meten — liniaal in de viewer, mm uit Pixel Spacing (0028,0030) of Imager Pixel Spacing (0018,1164, 'op detector'); anders px. In 2.2, issue open tot Ed test
 - [x] #7 iPad split-view layout (bestandslijst + viewer naast elkaar) — in 2.2, issue nog open tot Ed het op een echt toestel heeft getest

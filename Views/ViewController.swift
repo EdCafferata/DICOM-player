@@ -20,6 +20,9 @@ struct ScansView: View {
     @State private var fileToDelete: DICOMFileInfo?
     @State private var seriesToDelete: SeriesGroup?
     @State private var showTipJar = false
+    @State private var showTipJarAuto = false
+    /// Eén keer per app-start kijken of de fooienpot vanzelf moet verschijnen.
+    private static var fooienpotGecontroleerd = false
     @AppStorage("demosHidden") private var demosHidden = false
     @AppStorage("tipJarCoachMarkShown") private var coachMarkShown = false
     @State private var showCoachMark = false
@@ -126,6 +129,11 @@ struct ScansView: View {
         .sheet(isPresented: $showTipJar) {
             TipJarView()
         }
+        .background(
+            EmptyView().sheet(isPresented: $showTipJarAuto) {
+                TipJarView(automatisch: true)
+            }
+        )
         .overlay {
             if isParsing { loadingOverlay }
         }
@@ -144,6 +152,13 @@ struct ScansView: View {
                 if demos.indices.contains(n) { open(demos[n], titel: demoViewerTitel(demos[n])) }
             }
             #endif
+            // #11: elke 50e start de fooienpot (niet bij de eerste start: dan is er het hulpje).
+            if coachMarkShown, !Self.fooienpotGecontroleerd {
+                Self.fooienpotGecontroleerd = true
+                if AppStart.toonFooienpot {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { showTipJarAuto = true }
+                }
+            }
             if !coachMarkShown {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
                     withAnimation { showCoachMark = true }
@@ -440,7 +455,8 @@ struct ScansView: View {
                     rows: basis.rows, columns: basis.columns,
                     frames: alleFrames,
                     windowCenter: basis.windowCenter,
-                    windowWidth: basis.windowWidth)
+                    windowWidth: basis.windowWidth,
+                    pixelSpacing: basis.pixelSpacing)
                 parsedImage = nil
                 viewerID = UUID()
                 showViewer = true
