@@ -2169,3 +2169,18 @@ links alsnog. **Beslissing van Ed nodig.** Tot dan: bij nieuwe pitches buiten NL
 noemen, of de iOS-app als "available in selected countries" omschrijven.
 
 Social (periodieke check 25 november 2026): niet bekeken in deze run. Geen nieuwe post.
+
+### Nieuwe vondst (26 november 2026) — OAMRS (Ontario Association of Medical Radiation Sciences) ✅ gemaild
+Provinciale beroepsvereniging voor MRT's in Ontario (Canada, waar de iOS-app wél in de App Store staat), met de
+nieuwsbrief **FILTER**. Aanvulling op de nationale CAMRT (18 november). De FAQ-pagina (oamrs.imiscloud.com/Web/Support/FAQ.aspx)
+noemt als enig e-mailadres **membership@oamrs.org** (Cloudflare-versleuteld, gedecodeerd en gecontroleerd); de
+contactpagina toont hetzelfde. Geen advertentie-/vendorbeleid, zelfpromotie- of AI-verbod gevonden. Gemaild op
+26 november 2026 via het SMTP-script, met de vraag het in FILTER of bij de student-resources te noemen of door te
+sturen naar wie de ledencommunicatie beheert. **Eerste contact.** Inhoud: CT/MR/röntgen/echo, Window/Level-presets,
+voorbeeldbestanden, geen account en offline, niet diagnostisch, App Store (CA, gecontroleerd via de iTunes-lookup) +
+Google Play, "not a paid promotion, a sponsorship or an advertising request", met afmeldregel. Geen "measurements"
+genoemd (issue #4). Geen flyer (vereniging, geen kliniek). Niet nogmaals mailen zonder reactie.
+- Kandidaat voor een volgende run: andere Canadese provinciale MRT-verenigingen (bv. Alberta ACMDTT, BCAMRT, OTIMROEPMQ
+  in Québec, FR-talig). Adressen en regels nog controleren. iOS-beschikbaarheid buiten NL/IN/US/CA wacht nog op Ed.
+
+Social (periodieke check 26 november 2026): niet bekeken in deze run. Geen nieuwe post.
