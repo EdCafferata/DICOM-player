@@ -2184,3 +2184,26 @@ genoemd (issue #4). Geen flyer (vereniging, geen kliniek). Niet nogmaals mailen 
   in Québec, FR-talig). Adressen en regels nog controleren. iOS-beschikbaarheid buiten NL/IN/US/CA wacht nog op Ed.
 
 Social (periodieke check 26 november 2026): niet bekeken in deze run. Geen nieuwe post.
+
+### Nieuwe vondst (28 november 2026) — KSRT (Kentucky Society of Radiologic Technologists) ✅ gemaild
+Eerst de Canadese provinciale hoek uit de vorige run nagelopen: **CAMRT-BC** (vroeger BCAMRT), **CAMRT-ATL** (Atlantic)
+en **CAMRT-MB** (Manitoba) zijn onderdelen van de CAMRT, die al op 18 november is gemaild → niet apart gemaild.
+Alberta (ACMDTT), New Brunswick (NBAMRT), Nova Scotia (NSCMIRTP) en Québec (OTIMROEPMQ) zijn toezichthouders/ordes,
+geen ledenvereniging voor tips → overgeslagen. De Canadese provinciale hoek is daarmee uitgeput.
+Daarna terug naar de VS-staatsverenigingen die nog niet in dit bestand stonden:
+- [x] **KSRT** (ksrtinc.wildapricot.org, ASRT-affiliate, met een studentenseminar en een 2026-eventspagina): de
+  contactpagina (page-7742) noemt **ksrt.information@ksrtinc.com** als enige adres. Geen vendor-/advertentiebeleid,
+  zelfpromotie- of AI-verbod gevonden. Gemaild op 28 november 2026 via het SMTP-script. **Eerste contact.** Inhoud:
+  CT/MR/röntgen/echo, cine player, Window/Level-presets, series navigator, frame-export, voorbeeldbestanden, geen
+  account en offline, niet diagnostisch, App Store (US, gecontroleerd via de iTunes-lookup) + Google Play, "not a
+  paid promotion, a sponsorship or an advertising request", met afmeldregel. Geen "measurements" genoemd (issue #4).
+  Geen flyer (vereniging). Niet nogmaals mailen zonder reactie.
+- **Colorado SRT** (csrt.net) ⛔: site lijkt verlaten (laatste post juni 2024, placeholdertekst zoals info@email.com),
+  alleen een gmail-adres → niet gemaild.
+- **MoSRT** (Missouri) ⚠️: actief (deadlines 30 november 2026), maar geen e-mailadres (contactpagina 404) en
+  standen/vermelding alleen via betaalde sponsorpakketten → overgeslagen.
+- **Washington** / **Oregon**: geen eigen site of adres van een staatsvereniging voor technologen gevonden.
+- Kandidaten voor een volgende run, max. 1 per run: Tennessee, Kansas, Iowa of Alabama (adres en regels nog
+  controleren). iOS-beschikbaarheid buiten NL/IN/US/CA wacht nog op Ed.
+
+Social (periodieke check 28 november 2026): niet bekeken in deze run. Geen nieuwe post.
