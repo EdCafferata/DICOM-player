@@ -2138,6 +2138,9 @@ door te sturen naar wie de nieuwsbrief, de studenten-/CPD-resources of de commun
 Inhoud: CT/MR/röntgen/echo, Window/Level-presets, voorbeeldbestanden, geen account en offline, App Store (ZA) + Google
 Play, niet diagnostisch, "not a paid promotion, a sponsorship or an advertising request", met een afmeldregel. Bewust
 geen "measurements" genoemd (issue #4). Niet nogmaals mailen zonder reactie.
+- **Reactie 28 november 2026 (15:25):** de president van SORSA antwoordde (cc sorsaoffice@) dat SORSA **weigert de mail
+  door te sturen** naar de leden. ❌ Afgewezen. Niet beantwoord (de pitch beloofde niet opnieuw te schrijven) en
+  **SORSA niet meer mailen**.
 - **SoMIT** (kandidaat uit de vorige run): via zoeken geen organisatie met die naam gevonden. De Singaporese
   tegenhanger is de **Singapore Society of Radiographers**; adres en regels nog controleren (kandidaat volgende run).
 
